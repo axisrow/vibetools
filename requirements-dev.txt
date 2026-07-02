@@ -1,0 +1,7 @@
+# Dev/test dependencies. Install with: pip install -r requirements-dev.txt
+pytest>=8.0
+pyyaml>=6.0
+requests>=2.31
+responses>=0.25          # mock requests.get for unit + integration tests
+pytest-httpserver>=1.1   # local HTTP server for e2e mock-GitHub
+pytest-cov>=4.1          # optional coverage reporting

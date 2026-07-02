@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+markers = [
+    "live: hits the real GitHub API (deselect with -m 'not live')",
+]
+addopts = "-ra --strict-markers"

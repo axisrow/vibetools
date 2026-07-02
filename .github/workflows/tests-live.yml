@@ -1,0 +1,29 @@
+name: Tests (live GitHub API)
+
+# Nightly-прогон тестов с маркером @pytest.mark.live против реального GitHub.
+# По умолчанию live-тесты пропускаются (см. tests/conftest.py).
+
+on:
+  schedule:
+    # 04:37 UTC — ночью, после update-stars (03:17). Смещение от :00.
+    - cron: "37 4 * * *"
+  workflow_dispatch: # ручной запуск
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Live E2E
+        env:
+          # Автовыдаётся GitHub Actions; 5000 req/h — для 1-2 репо более чем достаточно.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pytest -m live -v

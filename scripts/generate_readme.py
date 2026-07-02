@@ -23,6 +23,11 @@ try:
 except ImportError:  # pragma: no cover
     sys.exit("PyYAML не найден. Установите: pip install pyyaml")
 
+# Импортируем общую функцию. Скрипты лежат в той же директории (scripts/),
+# поэтому добавляем её в sys.path при запуске как `python scripts/generate_readme.py`.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import github_slug  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"  # кэш звёзд от update-stars.py (опционален)
@@ -72,9 +77,9 @@ OWNER_REPO_TEMPLATE = "https://github.com/{owner}/{repo}"
 SHIELDS_STARS = "https://img.shields.io/github/stars/{owner}/{repo}?style=flat&color=yellow"
 
 
-def load_tools() -> list[dict]:
+def load_tools(tools_yml: Path = TOOLS_YML) -> list[dict]:
     """Загружает и валидирует утилиты из YAML."""
-    with TOOLS_YML.open(encoding="utf-8") as fh:
+    with tools_yml.open(encoding="utf-8") as fh:
         data = yaml.safe_load(fh)
     tools = data.get("tools", []) if isinstance(data, dict) else (data or [])
     for t in tools:
@@ -88,26 +93,15 @@ def load_tools() -> list[dict]:
     return tools
 
 
-def load_stars() -> dict[str, int]:
+def load_stars(stars_file: Path = STARS_FILE) -> dict[str, int]:
     """Загружает кэш звёзд (url -> stars), если он есть."""
-    if not STARS_FILE.exists():
+    if not stars_file.exists():
         return {}
     try:
-        with STARS_FILE.open(encoding="utf-8") as fh:
+        with stars_file.open(encoding="utf-8") as fh:
             return json.load(fh)
     except (json.JSONDecodeError, OSError):
         return {}
-
-
-def github_slug(url: str) -> tuple[str, str] | None:
-    """Достаёт (owner, repo) из GitHub URL, иначе None (бейдж не рисуем)."""
-    if "github.com/" not in url:
-        return None
-    parts = url.split("github.com/", 1)[1].split("/")
-    if len(parts) < 2:
-        return None
-    owner, repo = parts[0], parts[1].removesuffix(".git")
-    return owner, repo
 
 
 def render_line(tool: dict, lang: str) -> str:
@@ -223,9 +217,13 @@ def build_toc(groups, lang) -> str:
     return "\n".join(items)
 
 
-def main() -> None:
-    tools = load_tools()
-    stars = load_stars()
+def main(
+    tools_yml: Path = TOOLS_YML,
+    stars_file: Path = STARS_FILE,
+    out_dir: Path = ROOT,
+) -> None:
+    tools = load_tools(tools_yml)
+    stars = load_stars(stars_file)
     groups = group_by_category(tools, stars)
 
     for lang, header, footer, out_name in (
@@ -235,7 +233,7 @@ def main() -> None:
         toc = build_toc(groups, lang)
         body = render_section(groups, lang)
         content = header.format(toc=toc) + "\n" + body + footer
-        out_path = ROOT / out_name
+        out_path = out_dir / out_name
         out_path.write_text(content, encoding="utf-8")
         print(f"✓ {out_name}: {len(tools)} утилит, {len([c for c in CATEGORIES if groups[c[0]]])} категорий")
 

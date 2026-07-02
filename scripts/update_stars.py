@@ -28,14 +28,9 @@ TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"
 API = "https://api.github.com/repos/{owner}/{repo}"
 
-
-def github_slug(url: str) -> tuple[str, str] | None:
-    if "github.com/" not in url:
-        return None
-    parts = url.split("github.com/", 1)[1].split("/")
-    if len(parts) < 2:
-        return None
-    return parts[0], parts[1].removesuffix(".git")
+# Общий github_slug — та же реализация, что в generate_readme.py.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import github_slug  # noqa: E402
 
 
 def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
@@ -57,21 +52,26 @@ def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
     return None
 
 
-def main() -> int:
+def main(
+    tools_yml: Path = TOOLS_YML,
+    stars_file: Path = STARS_FILE,
+    regenerate: bool = True,
+    out_dir: Path = ROOT,
+) -> int:
     token = os.environ.get("GITHUB_TOKEN")
     headers = {"Accept": "application/vnd.github+json"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    with TOOLS_YML.open(encoding="utf-8") as fh:
+    with tools_yml.open(encoding="utf-8") as fh:
         data = yaml.safe_load(fh)
     tools = data.get("tools", []) if isinstance(data, dict) else (data or [])
 
     # Сохраняем прежний кэш, чтобы не терять данные при разовых сбоях запроса.
     cache: dict[str, int] = {}
-    if STARS_FILE.exists():
+    if stars_file.exists():
         try:
-            cache = json.loads(STARS_FILE.read_text(encoding="utf-8"))
+            cache = json.loads(stars_file.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             cache = {}
 
@@ -90,18 +90,17 @@ def main() -> int:
             updated += 1
             print(f"  ✓ {tool['name']}: {stars}")
 
-    STARS_FILE.write_text(
+    stars_file.write_text(
         json.dumps(cache, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
         encoding="utf-8",
     )
     print(f"\nОбновлено: {updated}, не удалось получить: {missing}")
 
-    # Перегенерируем README — генератор сам подхватит stars.json.
-    import subprocess
-    subprocess.run(
-        [sys.executable, str(ROOT / "scripts" / "generate_readme.py")],
-        check=True,
-    )
+    # Перегенерируем README — прямой вызов (быстрее и тестируемее subprocess).
+    # out_dir пробрасывается, чтобы при вызове из тестов README писался в tmp.
+    if regenerate:
+        from generate_readme import main as gen_main
+        gen_main(tools_yml, stars_file, out_dir)
     return 0
 
 

@@ -1,0 +1,28 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Unit + Integration + Smoke + E2E (mock)
+        # Live-файл (test_live_github.py) намеренно НЕ включён в список путей —
+        # он ходит в реальный GitHub и живёт в отдельном nightly workflow.
+        run: pytest tests/unit tests/integration tests/smoke tests/e2e/test_update_stars_mock_server.py -v
+
+      - name: Coverage
+        run: pytest tests/ --cov=scripts --cov-report=term-missing -m "not live"
