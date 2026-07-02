@@ -42,3 +42,49 @@ def test_render_line_dot_git_url():
     # ...а бейдж строится из github_slug, который .git убирает.
     assert "repo.git?" not in line
     assert SHIELDS_STARS.format(owner="owner", repo="repo") in line
+
+
+# --- Пороги звёзд (эмодзи-префиксы ⭐/🌟/✨) ---
+
+def test_render_line_star_tier_50k():
+    line = render_line(sample_tool_github(), "en", stars=50000)
+    assert "⭐" in line
+
+
+def test_render_line_star_tier_10k():
+    line = render_line(sample_tool_github(), "en", stars=10000)
+    assert "🌟" in line
+    assert "⭐" not in line
+
+
+def test_render_line_star_tier_1k():
+    line = render_line(sample_tool_github(), "en", stars=1000)
+    assert "✨" in line
+
+
+def test_render_line_star_tier_below_1k():
+    line = render_line(sample_tool_github(), "en", stars=999)
+    assert "✨" not in line and "🌟" not in line and "⭐" not in line
+
+
+# --- Отметки (🏆/📅/🏅/🆕) ---
+
+def test_render_line_marks_day_week():
+    line = render_line(sample_tool_github(), "en", marks={"day", "week"})
+    assert "🏆" in line and "📅" in line
+
+
+def test_render_line_mark_verified():
+    line = render_line(sample_tool_github(), "en", marks={"verified"})
+    assert "🏅" in line
+
+
+def test_render_line_mark_new():
+    line = render_line(sample_tool_github(), "en", marks={"new"})
+    assert "🆕" in line
+
+
+def sample_tool_github():
+    return {"name": "Aider", "url": "https://github.com/Aider-AI/aider",
+            "category": "cli-agents",
+            "description": {"en": "AI pair programming", "ru": "AI-парное программирование"}}

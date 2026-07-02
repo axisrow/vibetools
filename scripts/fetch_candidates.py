@@ -13,6 +13,7 @@ queries: список (запрос, категория). Репозитории
 from __future__ import annotations
 
 import sys
+import datetime
 import time
 from pathlib import Path
 
@@ -80,6 +81,7 @@ def main() -> int:
                 "name": it["name"],
                 "url": it["html_url"],
                 "category": category,
+                "added": datetime.date.today().isoformat(),  # 🆕 в первые 14 дней
                 "description": {
                     "en": (it.get("description") or "TODO: description").strip(),
                     "ru": "TODO: перевод",
