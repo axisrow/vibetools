@@ -1,26 +1,8 @@
-"""Тесты выбора репо дня/недели и отметок: tier_emoji, is_new, pick_featured, render_featured."""
+"""Тесты выбора репо дня/недели и отметок: is_new, pick_featured, render_featured."""
 import datetime
 
-import pytest
-
 from generate_readme import (HISTORY_FILE, is_new, pick_featured,
-                             render_featured, tier_emoji)
-
-
-# --- tier_emoji ---
-
-@pytest.mark.parametrize("stars, expected", [
-    (100000, "⭐"),
-    (50000, "⭐"),
-    (49999, "🌟"),
-    (10000, "🌟"),
-    (9999, "✨"),
-    (1000, "✨"),
-    (999, ""),
-    (0, ""),
-])
-def test_tier_emoji(stars, expected):
-    assert tier_emoji(stars) == expected
+                             render_featured)
 
 
 # --- is_new ---
@@ -101,7 +83,7 @@ def test_render_featured_day_only():
     by_url = {"u1": _tool("u1")}
     out = render_featured(featured, by_url, "en")
     assert "## Featured" in out
-    assert "🏆 Repo of the day" in out
+    assert "Repo of the day" in out
     assert "u1" in out
 
 
@@ -109,15 +91,15 @@ def test_render_featured_ru():
     featured = {"u1": {"week"}}
     by_url = {"u1": _tool("u1")}
     out = render_featured(featured, by_url, "ru")
-    assert "📅 Репозиторий недели" in out
+    assert "Репозиторий недели" in out
 
 
 def test_render_featured_day_and_week_same_repo():
     featured = {"u1": {"day", "week"}}
     by_url = {"u1": _tool("u1")}
     out = render_featured(featured, by_url, "en")
-    assert "🏆 Repo of the day" in out
-    assert "📅 Repo of the week" in out
+    assert "Repo of the day" in out
+    assert "Repo of the week" in out
 
 
 def test_history_file_constant():

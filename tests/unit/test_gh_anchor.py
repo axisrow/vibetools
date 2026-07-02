@@ -53,7 +53,7 @@ def test_gh_anchor(text, expected):
 
 
 def test_gh_anchor_toc_consistency():
-    """Для каждой категории gh_anchor(emoji+title) должен совпадать с якорем,
+    """Для каждой категории gh_anchor(title) должен совпадать с якорем,
     который реально стоит в закоммиченном README TOC.
 
     Ловит regression: кто-то поменял gh_anchor или title и забыл
@@ -65,7 +65,7 @@ def test_gh_anchor_toc_consistency():
         toc_anchors = set(re.findall(r"\(#([^)]+)\)", readme))
         title_key = f"title_{lang}"
         expected_anchors = {
-            gh_anchor(f"{meta['emoji']} {meta[title_key]}")
+            gh_anchor(meta[title_key])
             for _, meta in CATEGORIES
         }
         # Каждый ожидаемый якорь должен присутствовать среди TOC-ссылок.
