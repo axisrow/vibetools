@@ -16,7 +16,6 @@ data/tools.yml НЕ модифицируется — он остаётся чи�
 from __future__ import annotations
 
 import json
-import os
 import sys
 from pathlib import Path
 
@@ -28,9 +27,9 @@ TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"
 API = "https://api.github.com/repos/{owner}/{repo}"
 
-# Общий github_slug — та же реализация, что в generate_readme.py.
+# Общий github_slug и github_headers — единые реализации для всех скриптов.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import github_slug  # noqa: E402
+from common import github_headers, github_slug  # noqa: E402
 
 
 def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
@@ -58,10 +57,7 @@ def main(
     regenerate: bool = True,
     out_dir: Path = ROOT,
 ) -> int:
-    token = os.environ.get("GITHUB_TOKEN")
-    headers = {"Accept": "application/vnd.github+json"}
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
+    headers = github_headers()
 
     with tools_yml.open(encoding="utf-8") as fh:
         data = yaml.safe_load(fh)

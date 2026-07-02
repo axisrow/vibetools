@@ -1,9 +1,12 @@
 """Общий код для скриптов проекта.
 
-Здесь живут функции, которые нужны и generate_readme, и update_stars,
-чтобы избежать дублирования. Импортируется обоими скриптами и тестами.
+Здесь живут функции, которые нужны нескольким скриптам, чтобы избежать
+дублирования. Импортируется generate_readme, update_stars, fetch_candidates
+и тестами.
 """
 from __future__ import annotations
+
+import os
 
 
 def github_slug(url: str) -> tuple[str, str] | None:
@@ -24,3 +27,18 @@ def github_slug(url: str) -> tuple[str, str] | None:
         return None
     owner, repo = parts[0], parts[1].removesuffix(".git")
     return owner, repo
+
+
+def github_headers() -> dict:
+    """Заголовки для запросов к GitHub API: Accept + опциональный токен.
+
+    GITHUB_TOKEN берётся из окружения (если есть) для более высокого
+    rate-лимита. Единое место — чтобы все скрипты и тесты использовали
+    один рецепт аутентификации и не разъезжались.
+    """
+    h = {"Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        h["Authorization"] = f"Bearer {token}"
+    return h
+
