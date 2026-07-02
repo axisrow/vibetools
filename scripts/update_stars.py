@@ -127,6 +127,10 @@ def main(
     if regenerate:
         from generate_readme import main as gen_main
         gen_main(tools_yml, stars_file, out_dir, history_file)
+        # Статический сайт (docs/index.html) — тоже из обновлённых данных.
+        # out_dir/docs/... для тестовой изоляции, иначе ROOT/docs.
+        from generate_site import main as site_main
+        site_main(tools_yml, stars_file, out_file=(out_dir / "docs" / "index.html"))
     return 0
 
 

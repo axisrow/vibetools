@@ -1,6 +1,6 @@
 # Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily.
+> A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily. **[Browse the searchable site →](https://axisrow.github.io/vibetools/)**
 
 A list should be a **curation, not a collection**: every entry is hand-picked, has a live repository, and is relevant to AI-assisted development. See CONTRIBUTING.md to add a tool. Русская версия: README.ru.md.
 
