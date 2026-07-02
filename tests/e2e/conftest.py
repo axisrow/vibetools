@@ -7,12 +7,15 @@ import yaml
 def tmp_repo(tmp_path):
     """Готовое мини-репо для e2e: 3 github-утилиты + 1 не-github.
 
-    Возвращает dict: {tools_yml, stars_file, root, tools}.
+    Возвращает dict: {tools_yml, stars_file, history_file, root, tools}.
+    history_file указывает в tmp, чтобы тесты не писали mock-данные в
+    реальный source tree.
     """
     data_dir = tmp_path / "data"
     data_dir.mkdir()
     tools_yml = data_dir / "tools.yml"
     stars_file = data_dir / "stars.json"
+    history_file = data_dir / "stars-history.json"
 
     tools = [
         {"name": "HiStars", "url": "https://github.com/a/hi",
@@ -32,7 +35,8 @@ def tmp_repo(tmp_path):
         yaml.safe_dump({"tools": tools}, allow_unicode=True, sort_keys=False),
         encoding="utf-8",
     )
-    return {"tools_yml": tools_yml, "stars_file": stars_file, "root": tmp_path, "tools": tools}
+    return {"tools_yml": tools_yml, "stars_file": stars_file,
+            "history_file": history_file, "root": tmp_path, "tools": tools}
 
 
 @pytest.fixture

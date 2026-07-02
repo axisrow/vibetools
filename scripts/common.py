@@ -6,7 +6,10 @@
 """
 from __future__ import annotations
 
+import json
 import os
+from pathlib import Path
+from typing import Any
 
 
 def github_slug(url: str) -> tuple[str, str] | None:
@@ -41,4 +44,20 @@ def github_headers() -> dict:
     if token:
         h["Authorization"] = f"Bearer {token}"
     return h
+
+
+def load_json_or_default(path: Path, default: Any) -> Any:
+    """Читает JSON-файл, при отсутствии/битом возвращает default.
+
+    Единое место для толерантной загрузки опциональных JSON-кэшей
+    (stars.json, stars-history.json). Устраняет копирование блока
+    try/except (JSONDecodeError, OSError) по скриптам.
+    """
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return default
+
 

@@ -23,7 +23,7 @@ def test_e2e_full_pipeline_success(tmp_repo, mock_github, monkeypatch):
     mock_github.register("b", "editor", stars=50)
     _patch_api(monkeypatch, mock_github)
 
-    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
+    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"])
     cache = _cache(tmp_repo)
     assert rc == 0
     assert cache["https://github.com/a/hi"] == 100
@@ -43,7 +43,7 @@ def test_e2e_one_repo_404_does_not_break_run(tmp_repo, mock_github, monkeypatch)
     mock_github.register("b", "editor", stars=50)
     _patch_api(monkeypatch, mock_github)
 
-    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
+    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"])
     cache = _cache(tmp_repo)
     assert rc == 0
     assert cache["https://github.com/a/hi"] == 100
@@ -59,7 +59,7 @@ def test_e2e_rate_limit_429_keeps_cache(tmp_repo, mock_github, monkeypatch):
     mock_github.register("b", "editor", stars=50)
     _patch_api(monkeypatch, mock_github)
 
-    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
+    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"])
     cache = _cache(tmp_repo)
     assert cache["https://github.com/a/hi"] == 42  # кэш сохранён при 429
     assert cache["https://github.com/a/lo"] == 5
@@ -72,7 +72,7 @@ def test_e2e_connection_refused(tmp_repo, monkeypatch):
     # Несуществующий локальный порт → connection refused.
     monkeypatch.setattr(update_stars, "API", "http://127.0.0.1:1/repos/{owner}/{repo}")
 
-    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
+    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"])
     cache = _cache(tmp_repo)
     assert rc == 0
     assert cache["https://github.com/a/hi"] == 7  # прежний кэш уцелел
@@ -86,6 +86,6 @@ def test_e2e_token_passed_as_header(tmp_repo, mock_github, monkeypatch):
     _patch_api(monkeypatch, mock_github)
     monkeypatch.setenv("GITHUB_TOKEN", "ghp_test_token_123")
 
-    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
+    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"])
     sent = mock_github.log[0][0]  # (Request, Response)
     assert sent.headers["Authorization"] == "Bearer ghp_test_token_123"
