@@ -10,12 +10,15 @@ def tmp_repo(tmp_path):
     """Создаёт мини-репо: tmp_path/data/tools.yml (3 записи 2 категорий,
     одна не-github), tmp_path/data/stars.json.
 
-    Возвращает dict с путями: {tools_yml, stars_file, root}.
+    Возвращает dict с путями: {tools_yml, stars_file, history_file, root}.
+    history_file указывает в tmp, чтобы тесты не писали mock-данные в
+    реальный source tree (data/stars-history.json).
     """
     data_dir = tmp_path / "data"
     data_dir.mkdir()
     tools_yml = data_dir / "tools.yml"
     stars_file = data_dir / "stars.json"
+    history_file = data_dir / "stars-history.json"
 
     tools = [
         {"name": "HiStars", "url": "https://github.com/a/hi",
@@ -41,4 +44,5 @@ def tmp_repo(tmp_path):
         "https://github.com/a/lo": 10,
     }), encoding="utf-8")
 
-    return {"tools_yml": tools_yml, "stars_file": stars_file, "root": tmp_path, "tools": tools}
+    return {"tools_yml": tools_yml, "stars_file": stars_file,
+            "history_file": history_file, "root": tmp_path, "tools": tools}
