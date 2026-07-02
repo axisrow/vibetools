@@ -1,0 +1,248 @@
+# Awesome Vibe Coding Tools — источник правды
+#
+# Каждая запись = одна утилита. Все URL проверены живыми (HTTP 200).
+# Звёзды НЕ хранятся здесь — они кэшируются в data/stars.json и обновляются
+# отдельным GitHub Action (.github/workflows/update-stars.yml), а в README
+# рендерятся бейджем shields.io.
+#
+# Правила добавления новой записи — см. CONTRIBUTING.md.
+# Категории и их порядок/подписи задаются в scripts/generate_readme.py.
+
+tools:
+  # ───────────────────────────────────────────────────────────
+  # 🤖 AI Coding Agents / CLI
+  # ───────────────────────────────────────────────────────────
+  - name: Claude Code
+    url: https://github.com/anthropics/claude-code
+    category: cli-agents
+    description:
+      en: "Agentic coding tool that lives in the terminal and understands your codebase"
+      ru: "Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу"
+
+  - name: OpenCode
+    url: https://github.com/sst/opencode
+    category: cli-agents
+    description:
+      en: "Open-source terminal AI coding agent with multi-provider model support"
+      ru: "Open-source AI-агент для терминала с поддержкой любых провайдеров моделей"
+
+  - name: Aider
+    url: https://github.com/Aider-AI/aider
+    category: cli-agents
+    description:
+      en: "AI pair programming in the terminal that edits code in any git repo"
+      ru: "AI-парное программирование в терминале, правит код в любом git-репозитории"
+
+  - name: Goose
+    url: https://github.com/block/goose
+    category: cli-agents
+    description:
+      en: "Open-source extensible AI agent that can install, execute, edit and test code"
+      ru: "Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код"
+
+  - name: llm
+    url: https://github.com/simonw/llm
+    category: cli-agents
+    description:
+      en: "Access large language models from the command line and pipe data into them"
+      ru: "Доступ к большим языковым моделям из командной строки и пайплайнов"
+
+  - name: OpenHands
+    url: https://github.com/All-Hands-AI/OpenHands
+    category: cli-agents
+    description:
+      en: "Autonomous coding agent that runs as a self-hosted always-on engineering team"
+      ru: "Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7"
+
+  # ───────────────────────────────────────────────────────────
+  # ⚡ Editor Integrations
+  # ───────────────────────────────────────────────────────────
+  - name: Cline
+    url: https://github.com/cline/cline
+    category: editor-integrations
+    description:
+      en: "Autonomous coding agent that runs as a VS Code extension"
+      ru: "Автономный агент-кодер в виде расширения для VS Code"
+
+  - name: Roo Code
+    url: https://github.com/RooCodeInc/Roo-Code
+    category: editor-integrations
+    description:
+      en: "AI-powered coding agent for VS Code with custom modes and tool control"
+      ru: "AI-агент-кодер для VS Code с кастомными режимами и контролем инструментов"
+
+  - name: Continue
+    url: https://github.com/continuedev/continue
+    category: editor-integrations
+    description:
+      en: "Open-source AI code assistant extension for VS Code and JetBrains"
+      ru: "Открытый AI-ассистент для кода в VS Code и JetBrains"
+
+  - name: avante.nvim
+    url: https://github.com/yetone/avante.nvim
+    category: editor-integrations
+    description:
+      en: "Cursor-like AI coding experience inside Neovim"
+      ru: "AI-кодинг в духе Cursor прямо внутри Neovim"
+
+  # ───────────────────────────────────────────────────────────
+  # 🧠 Context / Memory
+  # ───────────────────────────────────────────────────────────
+  - name: Repomix
+    url: https://github.com/yamadashy/repomix
+    category: context-memory
+    description:
+      en: "Pack your whole repository into a single file for AI consumption"
+      ru: "Упаковывает весь репозиторий в один файл для подсчёта контекста AI"
+
+  - name: code2prompt
+    url: https://github.com/mufeedvh/code2prompt
+    category: context-memory
+    description:
+      en: "CLI that converts a codebase into a single Markdown prompt for LLMs"
+      ru: "CLI: превращает кодовую базу в один Markdown-промпт для LLM"
+
+  - name: Zep
+    url: https://github.com/getzep/zep
+    category: context-memory
+    description:
+      en: "Long-term memory service for conversational and agentic AI"
+      ru: "Сервис долговременной памяти для диалогового и агентного AI"
+
+  # ───────────────────────────────────────────────────────────
+  # 🔧 Prompts / MCP
+  # ───────────────────────────────────────────────────────────
+  - name: MCP Servers
+    url: https://github.com/modelcontextprotocol/servers
+    category: prompt-mcp
+    description:
+      en: "Reference implementations of Model Context Protocol servers"
+      ru: "Эталонные реализации серверов Model Context Protocol"
+
+  - name: awesome-mcp-servers
+    url: https://github.com/punkpeye/awesome-mcp-servers
+    category: prompt-mcp
+    description:
+      en: "Curated collection of Model Context Protocol servers"
+      ru: "Кураторская подборка серверов Model Context Protocol"
+
+  - name: GitHub MCP Server
+    url: https://github.com/github/github-mcp-server
+    category: prompt-mcp
+    description:
+      en: "GitHub's official MCP server for interacting with repos, issues and PRs"
+      ru: "Официальный MCP-сервер GitHub для работы с репозиториями, issues и PR"
+
+  - name: FastMCP
+    url: https://github.com/PrefectHQ/fastmcp
+    category: prompt-mcp
+    description:
+      en: "Fast, Pythonic framework for building MCP servers and clients"
+      ru: "Быстрый питонический фреймворк для создания MCP-серверов и клиентов"
+
+  - name: Sunbeam
+    url: https://github.com/pomdtr/sunbeam
+    category: prompt-mcp
+    description:
+      en: "Browse and search prompt libraries and convert them to any format"
+      ru: "Просмотр и поиск библиотек промптов с конвертацией в любой формат"
+
+  # ───────────────────────────────────────────────────────────
+  # 📊 Observability / Eval
+  # ───────────────────────────────────────────────────────────
+  - name: Langfuse
+    url: https://github.com/langfuse/langfuse
+    category: observability-eval
+    description:
+      en: "Open-source LLM observability, evals, prompt management and tracing"
+      ru: "Open-source наблюдаемость для LLM: трейсинг, оценка и управление промптами"
+
+  - name: Promptfoo
+    url: https://github.com/promptfoo/promptfoo
+    category: observability-eval
+    description:
+      en: "Test and red-team prompts, agents and RAG across many providers"
+      ru: "Тестирование и редтим промптов, агентов и RAG для разных провайдеров"
+
+  - name: Helicone
+    url: https://github.com/Helicone/helicone
+    category: observability-eval
+    description:
+      en: "Open-source LLM observability with monitoring, eval and experiments"
+      ru: "Open-source наблюдаемость LLM: мониторинг, оценка и эксперименты"
+
+  - name: OpenLit
+    url: https://github.com/openlit/openlit
+    category: observability-eval
+    description:
+      en: "OpenTelemetry-native LLM observability, GPU monitoring and guardrails"
+      ru: "LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы"
+
+  - name: Inspect
+    url: https://github.com/UKGovernmentBEIS/inspect_ai
+    category: observability-eval
+    description:
+      en: "Framework for large language model evaluations by the AI Safety Institute"
+      ru: "Фреймворк для оценки LLM от Института безопасности ИИ"
+
+  # ───────────────────────────────────────────────────────────
+  # 🛠️ Workflow / Automation
+  # ───────────────────────────────────────────────────────────
+  - name: Claude Code Action
+    url: https://github.com/anthropics/claude-code-action
+    category: workflow-automation
+    description:
+      en: "GitHub Action that lets Claude review PRs and fix issues in CI"
+      ru: "GitHub Action: Claude ревьюит PR и фикcит issues прямо в CI"
+
+  - name: Claude Flow
+    url: https://github.com/ruvnet/claude-flow
+    category: workflow-automation
+    description:
+      en: "Orchestrate swarms of Claude Code agents on complex tasks"
+      ru: "Оркестрация роя агентов Claude Code для сложных задач"
+
+  - name: wshobson/agents
+    url: https://github.com/wshobson/agents
+    category: workflow-automation
+    description:
+      en: "Library of specialized Claude Code subagents for agentic workflows"
+      ru: "Библиотека специализированных сабагентов Claude Code для агентных воркфлоу"
+
+  - name: Bolt.new
+    url: https://github.com/stackblitz/bolt.new
+    category: workflow-automation
+    description:
+      en: "Prompt, run, edit and deploy full-stack web apps from the browser"
+      ru: "Создание, запуск, правка и деплой full-stack веб-приложений из браузера"
+
+  - name: Stagehand
+    url: https://github.com/browserbase/stagehand
+    category: workflow-automation
+    description:
+      en: "SDK for building reliable browser agents with simple AI primitives"
+      ru: "SDK для надёжных браузерных агентов на простых AI-примитивах"
+
+  - name: 12-Factor Agents
+    url: https://github.com/humanlayer/12-factor-agents
+    category: workflow-automation
+    description:
+      en: "Principles for building production-grade LLM-powered agent software"
+      ru: "Принципы создания production-готового ПО на LLM-агентах"
+
+  # ───────────────────────────────────────────────────────────
+  # 📚 Learning / Resources
+  # ───────────────────────────────────────────────────────────
+  - name: BMAD-METHOD
+    url: https://github.com/bmad-code-org/bmad-method
+    category: learning
+    description:
+      en: "Agentic methodology and IDE prompts for full-cycle AI product development"
+      ru: "Агентная методология и IDE-промпты для полного цикла AI-разработки продукта"
+
+  - name: awesome-ai-agents
+    url: https://github.com/e2b-dev/awesome-ai-agents
+    category: learning
+    description:
+      en: "Curated list of autonomous AI agents and agent frameworks"
+      ru: "Кураторский список автономных AI-агентов и агентных фреймворков"

@@ -1,0 +1,44 @@
+name: Update Stars
+
+# Раз в сутки обновляет число звёзд для каждой утилиты в data/tools.yml
+# через GitHub API, перегенерирует README.md / README.ru.md и коммитит изменения.
+# Работает и по ручному запуску (workflow_dispatch).
+
+on:
+  schedule:
+    # ~03:17 UTC ежедневно (смещение от :00, чтобы не нагружать API в пиковое время)
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml requests
+
+      - name: Fetch stars and regenerate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_stars.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stars.json README.md README.ru.md
+          if git diff --cached --quiet; then
+            echo "No star changes today."
+          else
+            git commit -m "chore: refresh star counts [skip ci]"
+            git push
+          fi
