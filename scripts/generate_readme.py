@@ -273,9 +273,7 @@ def render_section(groups, lang, stars=None, featured=None):
     return "\n".join(lines).rstrip() + "\n"
 
 
-HEADER_EN = """# Awesome Vibe Coding Tools
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+HEADER_EN = """# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily.
 
@@ -287,9 +285,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 """
 
-HEADER_RU = """# Awesome Vibe Coding Tools
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+HEADER_RU = """# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Кураторский список инструментов для **вайбкодеров** — разработчиков, которые пишут код с AI-ассистентами (Claude Code, Cursor, Copilot и компания). Число звёзд обновляется автоматически раз в сутки.
 

@@ -1,6 +1,4 @@
-# Awesome Vibe Coding Tools
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily.
 

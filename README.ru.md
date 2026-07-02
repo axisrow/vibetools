@@ -1,6 +1,4 @@
-# Awesome Vibe Coding Tools
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Кураторский список инструментов для **вайбкодеров** — разработчиков, которые пишут код с AI-ассистентами (Claude Code, Cursor, Copilot и компания). Число звёзд обновляется автоматически раз в сутки.
 
