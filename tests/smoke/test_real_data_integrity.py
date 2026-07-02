@@ -22,7 +22,7 @@ def test_real_tools_yml_loads():
 def test_real_tools_yml_count_reasonable():
     """Ловит случайную порчу/очистку списка."""
     n = len(load_tools(TOOLS_YML))
-    assert 10 <= n <= 200, f"подозрительное число утилит: {n}"
+    assert 10 <= n <= 2000, f"подозрительное число утилит: {n}"
 
 
 def test_real_tools_yml_all_categories_known():

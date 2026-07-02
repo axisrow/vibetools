@@ -70,6 +70,11 @@ CATEGORIES = [
         "title_en": "Learning / Resources",
         "title_ru": "Обучение / Ресурсы",
     }),
+    ("other", {
+        "emoji": "📦",
+        "title_en": "Other / Adjacent",
+        "title_ru": "Прочее / Смежное",
+    }),
 ]
 CATEGORY_MAP = {key: meta for key, meta in CATEGORIES}
 
