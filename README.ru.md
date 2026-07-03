@@ -65,8 +65,8 @@
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - TODO: перевод.
 - [ai-berkshire](https://github.com/xbtlin/ai-berkshire) ![](https://img.shields.io/github/stars/xbtlin/ai-berkshire?style=flat&color=yellow) - TODO: перевод.
 - [codeburn](https://github.com/getagentseal/codeburn) ![](https://img.shields.io/github/stars/getagentseal/codeburn?style=flat&color=yellow) - TODO: перевод.
-- [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - TODO: перевод.
 - [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - TODO: перевод.
+- [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - TODO: перевод.
 - [claude-squad](https://github.com/smtg-ai/claude-squad) ![](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat&color=yellow) - TODO: перевод.
 - [html-anything](https://github.com/nexu-io/html-anything) ![](https://img.shields.io/github/stars/nexu-io/html-anything?style=flat&color=yellow) - TODO: перевод.
 - [cursor-talk-to-figma-mcp](https://github.com/grab/cursor-talk-to-figma-mcp) ![](https://img.shields.io/github/stars/grab/cursor-talk-to-figma-mcp?style=flat&color=yellow) - TODO: перевод.
