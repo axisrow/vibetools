@@ -1,0 +1,29 @@
+{
+  "https://github.com/a/hi": {
+    "archived": false,
+    "createdAt": null,
+    "forks": null,
+    "openIssues": null,
+    "pushedAt": null,
+    "stars": 100,
+    "topics": []
+  },
+  "https://github.com/a/lo": {
+    "archived": false,
+    "createdAt": null,
+    "forks": null,
+    "openIssues": null,
+    "pushedAt": null,
+    "stars": 5,
+    "topics": []
+  },
+  "https://github.com/b/editor": {
+    "archived": false,
+    "createdAt": null,
+    "forks": null,
+    "openIssues": null,
+    "pushedAt": null,
+    "stars": 50,
+    "topics": []
+  }
+}

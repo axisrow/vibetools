@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"
 HISTORY_FILE = ROOT / "data" / "stars-history.json"  # dated-срезы для дельт 1d/7d
+META_FILE = ROOT / "data" / "repos-meta.json"  # метаданные репо (forks/createdAt/topics/...)
 HISTORY_DAYS = 8  # сколько последних срезов хранить (8 = сегодня + 7 дней назад)
 API = "https://api.github.com/repos/{owner}/{repo}"
 
@@ -38,7 +39,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import github_headers, github_slug, load_json_or_default  # noqa: E402
 
 
-def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
+def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
+    """Полный объект репо из GitHub API → нормализованный meta-словарь.
+
+    Возвращает {stars, forks, openIssues, pushedAt, createdAt, topics, archived}
+    или None при ошибке/rate-limit (звёзды при этом сохраняем из прежнего кэша
+    вызывающей стороной, чтобы не терять данные).
+    """
     owner, repo = slug
     url = API.format(owner=owner, repo=repo)
     try:
@@ -47,7 +54,16 @@ def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
         print(f"  ! {owner}/{repo}: сетевая ошибка {exc}", file=sys.stderr)
         return None
     if r.status_code == 200:
-        return r.json().get("stargazers_count")
+        j = r.json()
+        return {
+            "stars": j.get("stargazers_count"),
+            "forks": j.get("forks_count"),
+            "openIssues": j.get("open_issues_count"),
+            "pushedAt": j.get("pushed_at"),
+            "createdAt": j.get("created_at"),
+            "topics": j.get("topics", []) or [],
+            "archived": bool(j.get("archived")),
+        }
     if r.status_code in (403, 429):
         print(f"  ! {owner}/{repo}: rate limit ({r.status_code}), пропускаю", file=sys.stderr)
     elif r.status_code == 404:
@@ -55,6 +71,12 @@ def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
     else:
         print(f"  ! {owner}/{repo}: HTTP {r.status_code}", file=sys.stderr)
     return None
+
+
+def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
+    """Совместимость: только stargazers_count (используется в unit/e2e тестах)."""
+    meta = fetch_repo(slug, headers)
+    return meta.get("stars") if meta else None
 
 
 def update_history(history_file: Path, today: str, cache: dict[str, int]) -> dict:
@@ -86,6 +108,7 @@ def main(
     regenerate: bool = True,
     out_dir: Path = ROOT,
     history_file: Path = HISTORY_FILE,
+    meta_file: Path = META_FILE,
 ) -> int:
     headers = github_headers()
 
@@ -93,8 +116,9 @@ def main(
         data = yaml.safe_load(fh)
     tools = data.get("tools", []) if isinstance(data, dict) else (data or [])
 
-    # Сохраняем прежний кэш, чтобы не терять данные при разовых сбоях запроса.
+    # Прежние кэши — не теряем данные при разовых сбоях запроса.
     cache: dict[str, int] = load_json_or_default(stars_file, {}) or {}
+    meta: dict[str, dict] = load_json_or_default(meta_file, {}) or {}
 
     updated = 0
     missing = 0
@@ -102,17 +126,23 @@ def main(
         slug = github_slug(tool["url"])
         if not slug:
             continue
-        stars = fetch_stars(slug, headers)
-        if stars is None:
+        repo_meta = fetch_repo(slug, headers)
+        if repo_meta is None or repo_meta.get("stars") is None:
             missing += 1
             continue
+        stars = repo_meta["stars"]
         if cache.get(tool["url"]) != stars:
             cache[tool["url"]] = stars
             updated += 1
             print(f"  ✓ {tool['name']}: {stars}")
+        meta[tool["url"]] = repo_meta
 
     stars_file.write_text(
         json.dumps(cache, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    meta_file.write_text(
+        json.dumps(meta, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
         encoding="utf-8",
     )
 
@@ -128,9 +158,9 @@ def main(
         from generate_readme import main as gen_main
         gen_main(tools_yml, stars_file, out_dir, history_file)
         # Статический сайт (docs/index.html) — тоже из обновлённых данных.
-        # out_dir/docs/... для тестовой изоляции, иначе ROOT/docs.
         from generate_site import main as site_main
-        site_main(tools_yml, stars_file, out_file=(out_dir / "docs" / "index.html"))
+        site_main(tools_yml, stars_file, out_file=(out_dir / "docs" / "index.html"),
+                  meta_file=(out_dir / "data" / "repos-meta.json"))
     return 0
 
 

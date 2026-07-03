@@ -100,10 +100,48 @@ def test_site_cjk_search(tmp_tools_yml, tmp_path):
 
 
 def test_build_data_json_structure(tmp_repo):
-    """build_data_json возвращает ожидаемую структуру."""
+    """build_data_json возвращает ожидаемую структуру (без verified/added)."""
     data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
     assert set(data.keys()) >= {"generatedAt", "categories", "tools"}
     tool = data["tools"][0]
+    # verified/added убраны; добавлены forks/createdAt/topics/rank/starsPerWeek.
     assert set(tool.keys()) >= {
-        "name", "url", "category", "verified", "isNew", "added",
-        "stars", "starsUrl", "desc", "search"}
+        "name", "url", "category", "isNew",
+        "stars", "starsPerWeek", "starsUrl", "forks", "openIssues",
+        "createdAt", "archived", "topics", "rank", "desc", "search"}
+    assert "verified" not in tool and "added" not in tool
+
+
+def test_build_data_json_no_verified_anywhere(tmp_repo):
+    """verified полностью отсутствует в данных сайта (на star-history его нет)."""
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
+    blob = json.dumps(data, ensure_ascii=False)
+    assert "verified" not in blob
+
+
+def test_build_data_json_rank_by_stars(tmp_repo):
+    """rank — ранг по звёздам: топ базы (#1) = максимум звёзд."""
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
+    with_stars = [t for t in data["tools"] if t["stars"] is not None]
+    ranked = sorted(with_stars, key=lambda t: t["rank"])
+    assert ranked[0]["rank"] == 1
+    # HiStars (1000★) должен быть выше LoStars (10★).
+    names_by_rank = [t["name"] for t in ranked]
+    assert names_by_rank.index("HiStars") < names_by_rank.index("LoStars")
+
+
+def test_build_data_json_meta_enriches(tmp_repo, tmp_path):
+    """Если есть repos-meta.json — forks/createdAt/topics подставляются."""
+    meta_file = tmp_path / "repos-meta.json"
+    url = "https://github.com/a/hi"
+    import json as _json
+    meta_file.write_text(_json.dumps({url: {
+        "stars": 1000, "forks": 42, "openIssues": 3,
+        "pushedAt": "2026-07-01T00:00:00Z", "createdAt": "2026-06-25T00:00:00Z",
+        "topics": ["ai", "agent"], "archived": False}}), encoding="utf-8")
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"], meta_file=meta_file)
+    hi = next(t for t in data["tools"] if t["name"] == "HiStars")
+    assert hi["forks"] == 42
+    assert hi["createdAt"] == "2026-06-25T00:00:00Z"
+    assert "agent" in hi["topics"]
+    assert hi["isNew"] is True  # 2026-06-25 в пределах 14д от сегодня

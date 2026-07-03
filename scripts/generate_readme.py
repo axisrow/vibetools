@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"  # кэш звёзд от update-stars.py (опционален)
 HISTORY_FILE = ROOT / "data" / "stars-history.json"  # срезы 1d/7d для дельт
+META_FILE = ROOT / "data" / "repos-meta.json"  # метаданные (createdAt и т.п.) от update-stars
 
 # Порядок и подписи категорий. Каждый ключ должен совпадать со значениями
 # поля `category` в tools.yml.
@@ -193,20 +194,24 @@ def _is_emoji(c: str) -> bool:
 
 
 def is_new(tool: dict, today=None) -> bool:
-    """[new] если поле added есть и дата в пределах NEW_DAYS дней от today.
+    """[new] если репо создано за последние NEW_DAYS дней.
 
-    today передаётся для детерминированности в тестах; по умолчанию —
-    datetime.date.today(). Толерантна к отсутствию/битому полю added.
+    Дата берётся из created_at (ISO-datetime из repos-meta, поле GitHub API);
+    для совместимости принимает и устаревшее поле added. Толерантна к
+    отсутствию/битому значению. today — для детерминированности в тестах.
     """
-    added = tool.get("added")
-    if not added:
+    raw = tool.get("created_at") or tool.get("added")
+    if not raw:
         return False
     today = today or datetime.date.today()
+    # created_at — ISO datetime ('2024-01-15T...'); берём дату до 'T'.
+    date_part = str(raw)[:10]
     try:
-        d = datetime.date.fromisoformat(str(added))
+        d = datetime.date.fromisoformat(date_part)
     except ValueError:
         return False
-    return 0 <= (today - d).days <= NEW_DAYS
+    age = (today - d).days
+    return 0 <= age <= NEW_DAYS
 
 
 def render_line(tool: dict, lang: str, stars: int = 0, marks: set[str] | None = None) -> str:
@@ -215,8 +220,8 @@ def render_line(tool: dict, lang: str, stars: int = 0, marks: set[str] | None = 
         - [Name](url) <badge> - Description.
 
     stars/marks не выводятся в строке (awesome-lint диктует строгий формат);
-    stars влияют только на сортировку (group_by_category), verified/new/day/week
-    хранятся в data и используются блоком Featured, но не инлайн-метками.
+    stars влияют только на сортировку (group_by_category), new/day/week
+    вычисляются и используются блоком Featured, но не инлайн-метками.
     """
     del stars, marks  # не используются в выводе; в сигнатуре для совместимости
     name = tool["name"]
@@ -272,8 +277,6 @@ def render_section(groups, lang, stars=None, featured=None):
         for tool in items:
             url = tool["url"]
             marks = set(featured.get(url, ()))
-            if tool.get("verified"):
-                marks.add("verified")
             if is_new(tool):
                 marks.add("new")
             lines.append(render_line(tool, lang, stars.get(url, 0), marks))
@@ -283,7 +286,7 @@ def render_section(groups, lang, stars=None, featured=None):
 
 HEADER_EN = """# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily. **[Browse the searchable site →](https://axisrow.github.io/vibetools/)**
+> A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily. **[Browse the searchable site →](https://axisrow.github.io/vibetools/)** · Built with GLM-5.2.
 
 A list should be a **curation, not a collection**: every entry is hand-picked, has a live repository, and is relevant to AI-assisted development. See CONTRIBUTING.md to add a tool. Русская версия: README.ru.md.
 
@@ -295,7 +298,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 HEADER_RU = """# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Кураторский список инструментов для **вайбкодеров** — разработчиков, которые пишут код с AI-ассистентами (Claude Code, Cursor, Copilot и компания). Число звёзд обновляется автоматически раз в сутки. **[Открыть сайт с поиском →](https://axisrow.github.io/vibetools/)**
+> Кураторский список инструментов для **вайбкодеров** — разработчиков, которые пишут код с AI-ассистентами (Claude Code, Cursor, Copilot и компания). Число звёзд обновляется автоматически раз в сутки. **[Открыть сайт с поиском →](https://axisrow.github.io/vibetools/)** · Создано на GLM-5.2.
 
 Список должен быть **кураторским, а не коллекционным**: каждая запись отобрана вручную, репозиторий жив, и инструмент относится к AI-разработке. Как добавить утилиту — см. CONTRIBUTING.md. English version: README.md.
 
@@ -346,10 +349,17 @@ def main(
     stars_file: Path = STARS_FILE,
     out_dir: Path = ROOT,
     history_file: Path = HISTORY_FILE,
+    meta_file: Path = META_FILE,
 ) -> None:
     tools = load_tools(tools_yml)
     stars = load_stars(stars_file)
     history = load_history(history_file)
+    meta = load_json_or_default(meta_file, {}) or {}
+    # Обогащаем tool-dict созданием created_at из repos-meta (для is_new).
+    for t in tools:
+        m = meta.get(t["url"])
+        if isinstance(m, dict) and m.get("createdAt"):
+            t["created_at"] = m["createdAt"]
     groups = group_by_category(tools, stars)
     featured = pick_featured(tools, stars, history)
     tools_by_url = {t["url"]: t for t in tools}

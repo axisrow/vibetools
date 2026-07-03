@@ -3,7 +3,7 @@
 Генератор статического сайта docs/index.html из data/tools.yml.
 
 Сайт — user-friendly альтернатива плоскому README: полнотекстовый поиск,
-фильтр по категориям/verified/new, сортировка, i18n (EN/RU/ZH).
+фильтр по категориям/new, сортировка, i18n (EN/RU/ZH).
 
 Данные встраиваются inline как window.__DATA__ (без fetch/CORS — работает
 на GitHub Pages как есть). Переиспует парсинг из generate_readme (load_tools,
@@ -21,54 +21,92 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import github_slug  # noqa: E402
+from common import github_slug, load_json_or_default  # noqa: E402
 from generate_readme import (  # noqa: E402
-    CATEGORIES, ROOT, SHIELDS_STARS, is_new, load_stars, load_tools,
+    CATEGORIES, ROOT, SHIELDS_STARS, is_new, load_history, load_stars, load_tools,
 )
 
 TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"
+META_FILE = ROOT / "data" / "repos-meta.json"
+HISTORY_FILE = ROOT / "data" / "stars-history.json"
 OUT_FILE = ROOT / "docs" / "index.html"
 INDEX_TEMPLATE = ROOT / "scripts" / "site_template.html"
+
+
+def _stars_per_week(url: str, history: dict) -> int | None:
+    """Рост звёзд за последние 7 дней из stars-history (None если данных нет)."""
+    import datetime
+    snaps = history.get(url, {})
+    if not snaps:
+        return None
+    today = datetime.date.today()
+    week_ago = (today - datetime.timedelta(days=7)).isoformat()
+    today_iso = today.isoformat()
+    cur = snaps.get(today_iso)
+    prev = snaps.get(week_ago)
+    if not isinstance(cur, int) or not isinstance(prev, int):
+        return None
+    return max(0, cur - prev)
 
 
 def build_data_json(
     tools_yml: Path = TOOLS_YML,
     stars_file: Path = STARS_FILE,
+    meta_file: Path = META_FILE,
+    history_file: Path = HISTORY_FILE,
 ) -> dict:
     """Собирает единый объект данных для встраивания в index.html.
 
-    stars: int из stars.json (None, если файла нет/нет записи).
-    isNew: precomputed через is_new (окно 14д от сегодня).
-    search: lowercase name+en+ru — для мгновенного client-side includes().
+    Все метрики автоматические (из stars.json/repos-meta.json/stars-history.json):
+    stars, forks, openIssues, createdAt, archived, topics, rank (по звёздам),
+    starsPerWeek (рост за 7д), isNew (createdAt ≤14д). Ручных меток нет.
+    search: lowercase name+en+ru+topics — для мгновенного client-side includes().
     """
     tools = load_tools(tools_yml)
     stars = load_stars(stars_file)
+    meta = load_json_or_default(meta_file, {}) or {}
+    history = load_history(history_file)
     today = datetime.date.today()
+
     out_tools = []
     for t in tools:
         url = t["url"]
+        m = meta.get(url) if isinstance(meta.get(url), dict) else {}
         slug = github_slug(url)
         stars_url = ""
         if slug:
             owner, repo = slug
             stars_url = SHIELDS_STARS.format(owner=owner, repo=repo)
         star_count = stars.get(url) if isinstance(stars.get(url), int) else None
+        # Обогащаем tool-dict created_at для is_new (как в generate_readme.main).
+        t["created_at"] = m.get("createdAt")
         desc_en = t["description"].get("en", "")
         desc_ru = t["description"].get("ru", "")
+        topics = m.get("topics", []) or []
         out_tools.append({
             "name": t["name"],
             "url": url,
             "category": t["category"],
-            "verified": bool(t.get("verified")),
             "isNew": is_new(t, today),
-            "added": t.get("added"),
             "stars": star_count,
+            "starsPerWeek": _stars_per_week(url, history),
             "starsUrl": stars_url,
+            "forks": m.get("forks"),
+            "openIssues": m.get("openIssues"),
+            "createdAt": m.get("createdAt"),
+            "archived": bool(m.get("archived")),
+            "topics": topics,
             "desc": {"en": desc_en, "ru": desc_ru},
-            # lowercase haystack для поиска (Unicode/CJK-aware через str.lower).
-            "search": f"{t['name']} {desc_en} {desc_ru}".lower(),
+            # lowercase haystack (Unicode/CJK-aware): name + desc + topics.
+            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)}".lower(),
         })
+
+    # Global rank по звёздам (1 = топ базы); null-stars в конце.
+    ranked = sorted(out_tools, key=lambda t: (t["stars"] or -1), reverse=True)
+    for i, t in enumerate(ranked, 1):
+        t["rank"] = i if t["stars"] is not None else None
+
     return {
         "generatedAt": today.isoformat(),
         "categories": [{"key": k, **m} for k, m in CATEGORIES],
@@ -89,8 +127,10 @@ def main(
     stars_file: Path = STARS_FILE,
     out_file: Path = OUT_FILE,
     template: Path = INDEX_TEMPLATE,
+    meta_file: Path = META_FILE,
+    history_file: Path = HISTORY_FILE,
 ) -> None:
-    data = build_data_json(tools_yml, stars_file)
+    data = build_data_json(tools_yml, stars_file, meta_file, history_file)
     html = render_index_html(data, template)
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html, encoding="utf-8")
