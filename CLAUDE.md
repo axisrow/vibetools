@@ -8,7 +8,7 @@ A curated awesome-list of **383 vibe-coding tools** (AI-assisted development: Cl
 - **README.md / README.ru.md** — canonical awesome-list (passes `awesome-lint`), for GitHub/awesome-index.
 - **docs/index.html** — a user-friendly searchable static site (GitHub Pages at `https://axisrow.github.io/vibetools/`): full-text search, category/`new` filters, sort, i18n EN/RU/ZH, star-history-style metric cards.
 
-The golden rule: **`data/tools.yml` contains only human-curated data** — `name`, `url`, `category`, `description{en,ru}`. Everything else (stars, forks, `createdAt`, rank, growth, `new` flag, repo-of-day/week) is **generated automatically** from the GitHub API and cached in `data/*.json`. Never add manual flags like `verified`/`added` to `tools.yml`.
+The golden rule: **`data/tools.yml` contains only human-curated data** — `name`, `url`, `category`, `description{en,ru}`. Everything else (stars, forks, `createdAt`, rank, growth, `new` flag, repo-of-day/week) is **generated automatically** from the GitHub API and cached in `data/*.json`. Never add manual status flags to `tools.yml` — there is intentionally no `verified` field (it doesn't exist on star-history.com, so it doesn't exist here); `new` and `rank` are computed, not stored.
 
 ## Architecture: one data source, three generators
 
@@ -38,7 +38,7 @@ data/tools.yml  (source of truth — human-edited only)
 
 - **awesome-lint format.** `render_line()` MUST emit `- [Name](url) <badge> - Capitalized description.` — dash separator, capitalized first letter, trailing period, no inline marks/emoji. `awesome-lint` runs in CI (`.github/workflows/awesome-lint.yml`) and fails the build otherwise. The Awesome badge must sit **inside the H1 line** (not a separate paragraph) — `remark-lint:awesome-badge` requires it in the heading node.
 - **History ↔ featured window contract.** `HISTORY_DAYS` (in update_stars) must be ≥ `max(FEATURED_WINDOWS.values()) + 1` (= 8) so the 7-day delta always has a snapshot. Repo-of-day/week needs **≥2 distinct dates** in stars-history.json — it's empty until the second daily run (not a bug).
-- **Test isolation.** Every `update_stars.main(...)` call in tests MUST pass `out_dir=`, `history_file=`, and (via generate_site) paths under `tmp_path`. The `tmp_repo` fixtures (`tests/integration/conftest.py`, `tests/e2e/conftest.py`) provide `history_file` — passing it is what prevents mock data leaking into the real `data/*.json` source tree.
+- **Test isolation (mock-leak trap).** Every `update_stars.main(...)` call in tests MUST pass `meta_file=`, `history_file=`, `stars_file=`, and `out_dir=` pointing under `tmp_path` — otherwise `update_stars` writes to its module-level defaults (`ROOT/data/*.json`) and pollutes the real source tree with fixture URLs (`github.com/a/hi`, `a/lo`, `b/editor`). The `tmp_repo` fixtures (`tests/integration/conftest.py`, `tests/e2e/conftest.py`) provide all four keys including `meta_file` — use them. `tests/smoke/test_no_mock_leak.py` is a tripwire that fails CI if any of `data/{repos-meta,stars,stars-history}.json` contains those mock markers; it never `skip`s on a missing file (missing = no leak = pass). If you add a new `update_stars.main`/`generate_site.main` call, pass the tmp paths — the trap will catch you otherwise.
 
 ## Commands
 
