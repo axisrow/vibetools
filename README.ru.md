@@ -17,20 +17,19 @@
 
 ## AI-агенты кодинга и CLI
 
-- [Claude Code](https://github.com/anthropics/claude-code) ![](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&color=yellow) - Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу.
 - [OpenCode](https://github.com/sst/opencode) ![](https://img.shields.io/github/stars/sst/opencode?style=flat&color=yellow) - Open-source AI-агент для терминала с поддержкой любых провайдеров моделей.
-- [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI-парное программирование в терминале, правит код в любом git-репозитории.
-- [Goose](https://github.com/block/goose) ![](https://img.shields.io/github/stars/block/goose?style=flat&color=yellow) - Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код.
-- [llm](https://github.com/simonw/llm) ![](https://img.shields.io/github/stars/simonw/llm?style=flat&color=yellow) - Доступ к большим языковым моделям из командной строки и пайплайнов.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) ![](https://img.shields.io/github/stars/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat&color=yellow) - TODO: перевод.
+- [Claude Code](https://github.com/anthropics/claude-code) ![](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&color=yellow) - Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу.
 - [claude-mem](https://github.com/thedotmack/claude-mem) ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&color=yellow) - TODO: перевод.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [ponytail](https://github.com/DietrichGebert/ponytail) ![](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=flat&color=yellow) - TODO: перевод.
 - [agent-skills](https://github.com/addyosmani/agent-skills) ![](https://img.shields.io/github/stars/addyosmani/agent-skills?style=flat&color=yellow) - TODO: перевод.
 - [pi](https://github.com/earendil-works/pi) ![](https://img.shields.io/github/stars/earendil-works/pi?style=flat&color=yellow) - TODO: перевод.
 - [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - TODO: перевод.
 - [taste-skill](https://github.com/Leonxlnx/taste-skill) ![](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat&color=yellow) - TODO: перевод.
+- [Goose](https://github.com/block/goose) ![](https://img.shields.io/github/stars/block/goose?style=flat&color=yellow) - Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код.
 - [goose](https://github.com/aaif-goose/goose) ![](https://img.shields.io/github/stars/aaif-goose/goose?style=flat&color=yellow) - TODO: перевод.
+- [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI-парное программирование в терминале, правит код в любом git-репозитории.
 - [LibreChat](https://github.com/danny-avila/LibreChat) ![](https://img.shields.io/github/stars/danny-avila/LibreChat?style=flat&color=yellow) - TODO: перевод.
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - TODO: перевод.
 - [OpenMontage](https://github.com/calesthio/OpenMontage) ![](https://img.shields.io/github/stars/calesthio/OpenMontage?style=flat&color=yellow) - TODO: перевод.
@@ -58,6 +57,7 @@
 - [cc-connect](https://github.com/chenhg5/cc-connect) ![](https://img.shields.io/github/stars/chenhg5/cc-connect?style=flat&color=yellow) - TODO: перевод.
 - [infracost](https://github.com/infracost/infracost) ![](https://img.shields.io/github/stars/infracost/infracost?style=flat&color=yellow) - TODO: перевод.
 - [superset](https://github.com/superset-sh/superset) ![](https://img.shields.io/github/stars/superset-sh/superset?style=flat&color=yellow) - TODO: перевод.
+- [llm](https://github.com/simonw/llm) ![](https://img.shields.io/github/stars/simonw/llm?style=flat&color=yellow) - Доступ к большим языковым моделям из командной строки и пайплайнов.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - TODO: перевод.
 - [humanlayer](https://github.com/humanlayer/humanlayer) ![](https://img.shields.io/github/stars/humanlayer/humanlayer?style=flat&color=yellow) - TODO: перевод.
 - [gsap-skills](https://github.com/greensock/gsap-skills) ![](https://img.shields.io/github/stars/greensock/gsap-skills?style=flat&color=yellow) - TODO: перевод.
@@ -84,16 +84,16 @@
 
 ## Интеграции в редакторы
 
-- [Cline](https://github.com/cline/cline) ![](https://img.shields.io/github/stars/cline/cline?style=flat&color=yellow) - Автономный агент-кодер в виде расширения для VS Code.
-- [Roo Code](https://github.com/RooCodeInc/Roo-Code) ![](https://img.shields.io/github/stars/RooCodeInc/Roo-Code?style=flat&color=yellow) - AI-агент-кодер для VS Code с кастомными режимами и контролем инструментов.
-- [Continue](https://github.com/continuedev/continue) ![](https://img.shields.io/github/stars/continuedev/continue?style=flat&color=yellow) - Открытый AI-ассистент для кода в VS Code и JetBrains.
-- [avante.nvim](https://github.com/yetone/avante.nvim) ![](https://img.shields.io/github/stars/yetone/avante.nvim?style=flat&color=yellow) - AI-кодинг в духе Cursor прямо внутри Neovim.
 - [cc-switch](https://github.com/farion1231/cc-switch) ![](https://img.shields.io/github/stars/farion1231/cc-switch?style=flat&color=yellow) - TODO: перевод.
 - [graphify](https://github.com/safishamsi/graphify) ![](https://img.shields.io/github/stars/safishamsi/graphify?style=flat&color=yellow) - TODO: перевод.
+- [Cline](https://github.com/cline/cline) ![](https://img.shields.io/github/stars/cline/cline?style=flat&color=yellow) - Автономный агент-кодер в виде расширения для VS Code.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - TODO: перевод.
 - [posthog](https://github.com/PostHog/posthog) ![](https://img.shields.io/github/stars/PostHog/posthog?style=flat&color=yellow) - TODO: перевод.
+- [Continue](https://github.com/continuedev/continue) ![](https://img.shields.io/github/stars/continuedev/continue?style=flat&color=yellow) - Открытый AI-ассистент для кода в VS Code и JetBrains.
 - [tabby](https://github.com/TabbyML/tabby) ![](https://img.shields.io/github/stars/TabbyML/tabby?style=flat&color=yellow) - TODO: перевод.
 - [AionUi](https://github.com/iOfficeAI/AionUi) ![](https://img.shields.io/github/stars/iOfficeAI/AionUi?style=flat&color=yellow) - TODO: перевод.
+- [Roo Code](https://github.com/RooCodeInc/Roo-Code) ![](https://img.shields.io/github/stars/RooCodeInc/Roo-Code?style=flat&color=yellow) - AI-агент-кодер для VS Code с кастомными режимами и контролем инструментов.
+- [avante.nvim](https://github.com/yetone/avante.nvim) ![](https://img.shields.io/github/stars/yetone/avante.nvim?style=flat&color=yellow) - AI-кодинг в духе Cursor прямо внутри Neovim.
 - [CVPR2024-Paper-Code-Interpretation](https://github.com/extreme-assistant/CVPR2024-Paper-Code-Interpretation) ![](https://img.shields.io/github/stars/extreme-assistant/CVPR2024-Paper-Code-Interpretation?style=flat&color=yellow) - TODO: перевод.
 - [sweep](https://github.com/sweepai/sweep) ![](https://img.shields.io/github/stars/sweepai/sweep?style=flat&color=yellow) - TODO: перевод.
 - [CopilotForXcode](https://github.com/github/CopilotForXcode) ![](https://img.shields.io/github/stars/github/CopilotForXcode?style=flat&color=yellow) - TODO: перевод.
@@ -138,15 +138,12 @@
 
 ## Промпты и MCP
 
-- [MCP Servers](https://github.com/modelcontextprotocol/servers) ![](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&color=yellow) - Эталонные реализации серверов Model Context Protocol.
-- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) ![](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat&color=yellow) - Кураторская подборка серверов Model Context Protocol.
-- [GitHub MCP Server](https://github.com/github/github-mcp-server) ![](https://img.shields.io/github/stars/github/github-mcp-server?style=flat&color=yellow) - Официальный MCP-сервер GitHub для работы с репозиториями, issues и PR.
-- [FastMCP](https://github.com/PrefectHQ/fastmcp) ![](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=flat&color=yellow) - Быстрый питонический фреймворк для создания MCP-серверов и клиентов.
-- [Sunbeam](https://github.com/pomdtr/sunbeam) ![](https://img.shields.io/github/stars/pomdtr/sunbeam?style=flat&color=yellow) - Просмотр и поиск библиотек промптов с конвертацией в любой формат.
 - [n8n](https://github.com/n8n-io/n8n) ![](https://img.shields.io/github/stars/n8n-io/n8n?style=flat&color=yellow) - TODO: перевод.
 - [prompts.chat](https://github.com/f/prompts.chat) ![](https://img.shields.io/github/stars/f/prompts.chat?style=flat&color=yellow) - TODO: перевод.
 - [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) ![](https://img.shields.io/github/stars/microsoft/generative-ai-for-beginners?style=flat&color=yellow) - TODO: перевод.
 - [gemini-cli](https://github.com/google-gemini/gemini-cli) ![](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat&color=yellow) - TODO: перевод.
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) ![](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat&color=yellow) - Кураторская подборка серверов Model Context Protocol.
+- [MCP Servers](https://github.com/modelcontextprotocol/servers) ![](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&color=yellow) - Эталонные реализации серверов Model Context Protocol.
 - [caveman](https://github.com/JuliusBrussee/caveman) ![](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat&color=yellow) - TODO: перевод.
 - [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - TODO: перевод.
 - [Scrapling](https://github.com/D4Vinci/Scrapling) ![](https://img.shields.io/github/stars/D4Vinci/Scrapling?style=flat&color=yellow) - TODO: перевод.
@@ -159,8 +156,10 @@
 - [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - TODO: перевод.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - TODO: перевод.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - TODO: перевод.
+- [GitHub MCP Server](https://github.com/github/github-mcp-server) ![](https://img.shields.io/github/stars/github/github-mcp-server?style=flat&color=yellow) - Официальный MCP-сервер GitHub для работы с репозиториями, issues и PR.
 - [gpt-researcher](https://github.com/assafelovic/gpt-researcher) ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&color=yellow) - TODO: перевод.
 - [mlflow](https://github.com/mlflow/mlflow) ![](https://img.shields.io/github/stars/mlflow/mlflow?style=flat&color=yellow) - TODO: перевод.
+- [FastMCP](https://github.com/PrefectHQ/fastmcp) ![](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=flat&color=yellow) - Быстрый питонический фреймворк для создания MCP-серверов и клиентов.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - TODO: перевод.
 - [activepieces](https://github.com/activepieces/activepieces) ![](https://img.shields.io/github/stars/activepieces/activepieces?style=flat&color=yellow) - TODO: перевод.
 - [n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ![](https://img.shields.io/github/stars/czlonkowski/n8n-mcp?style=flat&color=yellow) - TODO: перевод.
@@ -186,8 +185,8 @@
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - TODO: перевод.
 - [phoenix](https://github.com/Arize-ai/phoenix) ![](https://img.shields.io/github/stars/Arize-ai/phoenix?style=flat&color=yellow) - TODO: перевод.
 - [mcp-use](https://github.com/mcp-use/mcp-use) ![](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat&color=yellow) - TODO: перевод.
-- [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - TODO: перевод.
 - [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - TODO: перевод.
+- [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - TODO: перевод.
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - TODO: перевод.
 - [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) ![](https://img.shields.io/github/stars/xinnan-tech/xiaozhi-esp32-server?style=flat&color=yellow) - TODO: перевод.
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - TODO: перевод.
@@ -228,23 +227,24 @@
 - [deep-research](https://github.com/u14app/deep-research) ![](https://img.shields.io/github/stars/u14app/deep-research?style=flat&color=yellow) - TODO: перевод.
 - [ENScan_GO](https://github.com/wgpsec/ENScan_GO) ![](https://img.shields.io/github/stars/wgpsec/ENScan_GO?style=flat&color=yellow) - TODO: перевод.
 - [kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) ![](https://img.shields.io/github/stars/containers/kubernetes-mcp-server?style=flat&color=yellow) - TODO: перевод.
+- [Sunbeam](https://github.com/pomdtr/sunbeam) ![](https://img.shields.io/github/stars/pomdtr/sunbeam?style=flat&color=yellow) - Просмотр и поиск библиотек промптов с конвертацией в любой формат.
 - [claude-debugs-for-you](https://github.com/jasonjmcghee/claude-debugs-for-you) ![](https://img.shields.io/github/stars/jasonjmcghee/claude-debugs-for-you?style=flat&color=yellow) - TODO: перевод.
 
 ## Наблюдаемость и оценка
 
 - [Langfuse](https://github.com/langfuse/langfuse) ![](https://img.shields.io/github/stars/langfuse/langfuse?style=flat&color=yellow) - Open-source наблюдаемость для LLM: трейсинг, оценка и управление промптами.
 - [Promptfoo](https://github.com/promptfoo/promptfoo) ![](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat&color=yellow) - Тестирование и редтим промптов, агентов и RAG для разных провайдеров.
-- [Helicone](https://github.com/Helicone/helicone) ![](https://img.shields.io/github/stars/Helicone/helicone?style=flat&color=yellow) - Open-source наблюдаемость LLM: мониторинг, оценка и эксперименты.
-- [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
-- [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) ![](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=flat&color=yellow) - Фреймворк для оценки LLM от Института безопасности ИИ.
 - [openobserve](https://github.com/openobserve/openobserve) ![](https://img.shields.io/github/stars/openobserve/openobserve?style=flat&color=yellow) - TODO: перевод.
 - [RagaAI-Catalyst](https://github.com/raga-ai-hub/RagaAI-Catalyst) ![](https://img.shields.io/github/stars/raga-ai-hub/RagaAI-Catalyst?style=flat&color=yellow) - TODO: перевод.
 - [bisheng](https://github.com/dataelement/bisheng) ![](https://img.shields.io/github/stars/dataelement/bisheng?style=flat&color=yellow) - TODO: перевод.
 - [evidently](https://github.com/evidentlyai/evidently) ![](https://img.shields.io/github/stars/evidentlyai/evidently?style=flat&color=yellow) - TODO: перевод.
 - [openllmetry](https://github.com/traceloop/openllmetry) ![](https://img.shields.io/github/stars/traceloop/openllmetry?style=flat&color=yellow) - TODO: перевод.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - TODO: перевод.
+- [Helicone](https://github.com/Helicone/helicone) ![](https://img.shields.io/github/stars/Helicone/helicone?style=flat&color=yellow) - Open-source наблюдаемость LLM: мониторинг, оценка и эксперименты.
 - [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - TODO: перевод.
 - [agenta](https://github.com/Agenta-AI/agenta) ![](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat&color=yellow) - TODO: перевод.
+- [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
+- [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) ![](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=flat&color=yellow) - Фреймворк для оценки LLM от Института безопасности ИИ.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - TODO: перевод.
 - [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - TODO: перевод.
 - [langtrace](https://github.com/Scale3-Labs/langtrace) ![](https://img.shields.io/github/stars/Scale3-Labs/langtrace?style=flat&color=yellow) - TODO: перевод.
@@ -252,29 +252,29 @@
 
 ## Воркфлоу и автоматизация
 
-- [Claude Code Action](https://github.com/anthropics/claude-code-action) ![](https://img.shields.io/github/stars/anthropics/claude-code-action?style=flat&color=yellow) - GitHub Action: Claude ревьюит PR и фикcит issues прямо в CI.
-- [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Оркестрация роя агентов Claude Code для сложных задач.
-- [wshobson/agents](https://github.com/wshobson/agents) ![](https://img.shields.io/github/stars/wshobson/agents?style=flat&color=yellow) - Библиотека специализированных сабагентов Claude Code для агентных воркфлоу.
-- [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
-- [Stagehand](https://github.com/browserbase/stagehand) ![](https://img.shields.io/github/stars/browserbase/stagehand?style=flat&color=yellow) - SDK для надёжных браузерных агентов на простых AI-примитивах.
-- [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) ![](https://img.shields.io/github/stars/humanlayer/12-factor-agents?style=flat&color=yellow) - Принципы создания production-готового ПО на LLM-агентах.
 - [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) ![](https://img.shields.io/github/stars/VoltAgent/awesome-design-md?style=flat&color=yellow) - TODO: перевод.
 - [open-design](https://github.com/nexu-io/open-design) ![](https://img.shields.io/github/stars/nexu-io/open-design?style=flat&color=yellow) - TODO: перевод.
 - [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) ![](https://img.shields.io/github/stars/Egonex-AI/Understand-Anything?style=flat&color=yellow) - TODO: перевод.
+- [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Оркестрация роя агентов Claude Code для сложных задач.
 - [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - TODO: перевод.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - TODO: перевод.
 - [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - TODO: перевод.
+- [wshobson/agents](https://github.com/wshobson/agents) ![](https://img.shields.io/github/stars/wshobson/agents?style=flat&color=yellow) - Библиотека специализированных сабагентов Claude Code для агентных воркфлоу.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) ![](https://img.shields.io/github/stars/Yeachan-Heo/oh-my-claudecode?style=flat&color=yellow) - TODO: перевод.
 - [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - TODO: перевод.
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - TODO: перевод.
 - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) ![](https://img.shields.io/github/stars/zarazhangrui/frontend-slides?style=flat&color=yellow) - TODO: перевод.
 - [GDevelop](https://github.com/4ian/GDevelop) ![](https://img.shields.io/github/stars/4ian/GDevelop?style=flat&color=yellow) - TODO: перевод.
+- [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) ![](https://img.shields.io/github/stars/humanlayer/12-factor-agents?style=flat&color=yellow) - Принципы создания production-готового ПО на LLM-агентах.
+- [Stagehand](https://github.com/browserbase/stagehand) ![](https://img.shields.io/github/stars/browserbase/stagehand?style=flat&color=yellow) - SDK для надёжных браузерных агентов на простых AI-примитивах.
 - [vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn) ![](https://img.shields.io/github/stars/2025Emma/vibe-coding-cn?style=flat&color=yellow) - TODO: перевод.
 - [gemini-voyager](https://github.com/Nagi-ovo/gemini-voyager) ![](https://img.shields.io/github/stars/Nagi-ovo/gemini-voyager?style=flat&color=yellow) - TODO: перевод.
 - [eliza](https://github.com/elizaOS/eliza) ![](https://img.shields.io/github/stars/elizaOS/eliza?style=flat&color=yellow) - TODO: перевод.
+- [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
 - [context-engineering-intro](https://github.com/coleam00/context-engineering-intro) ![](https://img.shields.io/github/stars/coleam00/context-engineering-intro?style=flat&color=yellow) - TODO: перевод.
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - TODO: перевод.
 - [ccpm](https://github.com/automazeio/ccpm) ![](https://img.shields.io/github/stars/automazeio/ccpm?style=flat&color=yellow) - TODO: перевод.
+- [Claude Code Action](https://github.com/anthropics/claude-code-action) ![](https://img.shields.io/github/stars/anthropics/claude-code-action?style=flat&color=yellow) - GitHub Action: Claude ревьюит PR и фикcит issues прямо в CI.
 - [refly](https://github.com/refly-ai/refly) ![](https://img.shields.io/github/stars/refly-ai/refly?style=flat&color=yellow) - TODO: перевод.
 - [DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) ![](https://img.shields.io/github/stars/wonderwhy-er/DesktopCommanderMCP?style=flat&color=yellow) - TODO: перевод.
 - [GLM-5](https://github.com/zai-org/GLM-5) ![](https://img.shields.io/github/stars/zai-org/GLM-5?style=flat&color=yellow) - TODO: перевод.
