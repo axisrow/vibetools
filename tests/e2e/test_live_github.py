@@ -31,6 +31,8 @@ def test_live_update_stars_one_repo(tmp_path):
     data_dir.mkdir()
     tools_yml = data_dir / "tools.yml"
     stars_file = data_dir / "stars.json"
+    history_file = data_dir / "stars-history.json"
+    meta_file = data_dir / "repos-meta.json"
     tools_yml.write_text(
         "tools:\n"
         "  - name: Aider\n"
@@ -42,7 +44,9 @@ def test_live_update_stars_one_repo(tmp_path):
         encoding="utf-8",
     )
 
-    rc = update_main(tools_yml, stars_file, out_dir=tmp_path)
+    # Все кэши — в tmp, чтобы live-тест не портил реальные data/*.json.
+    rc = update_main(tools_yml, stars_file, out_dir=tmp_path,
+                     history_file=history_file, meta_file=meta_file)
     cache = json.loads(stars_file.read_text(encoding="utf-8"))
     assert rc == 0
     assert "https://github.com/Aider-AI/aider" in cache

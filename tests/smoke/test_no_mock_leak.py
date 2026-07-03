@@ -24,10 +24,15 @@ CACHE_FILES = ["data/repos-meta.json", "data/stars.json", "data/stars-history.js
 
 @pytest.mark.parametrize("rel", CACHE_FILES)
 def test_no_mock_data_in_caches(rel):
-    """Кэш-файл не содержит ни одного mock-маркера из тестовых fixtures."""
+    """Кэш-файл не содержит ни одного mock-маркера из тестовых fixtures.
+
+    Файл может отсутствовать (Action/update_stars ещё не запускался) — тогда
+    утечки гарантированно нет, тест проходит. Это НЕ skip: tripwire должен
+    проверять всегда, когда файл есть (именно тогда возможна утечка).
+    """
     path = ROOT / rel
     if not path.exists():
-        pytest.skip(f"{rel} ещё не сгенерирован (Action/update_stars не запускался)")
+        return  # нет файла — нет утечки
     content = path.read_text(encoding="utf-8")
     leaked = [m for m in MOCK_MARKERS if m in content]
     assert not leaked, (
