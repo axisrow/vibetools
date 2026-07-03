@@ -1,15 +1,15 @@
 {
   "https://github.com/0x4m4/hexstrike-ai": {
-    "2026-07-03": 10115
+    "2026-07-03": 10118
   },
   "https://github.com/0xJacky/nginx-ui": {
     "2026-07-03": 11260
   },
   "https://github.com/0xSteph/pentest-ai-agents": {
-    "2026-07-03": 1921
+    "2026-07-03": 1922
   },
   "https://github.com/1Panel-dev/MaxKB": {
-    "2026-07-03": 21612
+    "2026-07-03": 21614
   },
   "https://github.com/2025Emma/vibe-coding-cn": {
     "2026-07-03": 21970
@@ -18,13 +18,13 @@
     "2026-07-03": 39545
   },
   "https://github.com/4ian/GDevelop": {
-    "2026-07-03": 24332
+    "2026-07-03": 24331
   },
   "https://github.com/AI4Finance-Foundation/FinGPT": {
-    "2026-07-03": 20770
+    "2026-07-03": 20771
   },
   "https://github.com/AI4Finance-Foundation/FinRobot": {
-    "2026-07-03": 7452
+    "2026-07-03": 7453
   },
   "https://github.com/AgentDeskAI/browser-tools-mcp": {
     "2026-07-03": 7261
@@ -33,25 +33,25 @@
     "2026-07-03": 4257
   },
   "https://github.com/AgriciDaniel/claude-ads": {
-    "2026-07-03": 6662
+    "2026-07-03": 6663
   },
   "https://github.com/Aider-AI/aider": {
-    "2026-07-03": 46965
+    "2026-07-03": 46967
   },
   "https://github.com/AlexSergey/rockpack": {
     "2026-07-03": 1265
   },
   "https://github.com/All-Hands-AI/OpenHands": {
-    "2026-07-03": 79180
+    "2026-07-03": 79190
   },
   "https://github.com/Arize-ai/phoenix": {
-    "2026-07-03": 10381
+    "2026-07-03": 10382
   },
   "https://github.com/BerriAI/litellm": {
-    "2026-07-03": 52440
+    "2026-07-03": 52446
   },
   "https://github.com/BloopAI/vibe-kanban": {
-    "2026-07-03": 27246
+    "2026-07-03": 27247
   },
   "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models": {
     "2026-07-03": 17919
@@ -60,40 +60,40 @@
     "2026-07-03": 6760
   },
   "https://github.com/CherryHQ/cherry-studio": {
-    "2026-07-03": 48077
+    "2026-07-03": 48078
   },
   "https://github.com/ChromeDevTools/chrome-devtools-mcp": {
-    "2026-07-03": 45086
+    "2026-07-03": 45114
   },
   "https://github.com/CloakHQ/CloakBrowser": {
-    "2026-07-03": 27582
+    "2026-07-03": 27584
   },
   "https://github.com/CodeGraphContext/CodeGraphContext": {
-    "2026-07-03": 3860
+    "2026-07-03": 3861
   },
   "https://github.com/ComposioHQ/awesome-claude-skills": {
-    "2026-07-03": 66639
+    "2026-07-03": 66645
   },
   "https://github.com/ComposioHQ/composio": {
     "2026-07-03": 29073
   },
   "https://github.com/D4Vinci/Scrapling": {
-    "2026-07-03": 67789
+    "2026-07-03": 67808
   },
   "https://github.com/DeusData/codebase-memory-mcp": {
-    "2026-07-03": 24688
+    "2026-07-03": 24736
   },
   "https://github.com/DietrichGebert/ponytail": {
-    "2026-07-03": 71722
+    "2026-07-03": 71793
   },
   "https://github.com/Donchitos/Claude-Code-Game-Studios": {
-    "2026-07-03": 22541
+    "2026-07-03": 22546
   },
   "https://github.com/Doriandarko/deepseek-engineer": {
     "2026-07-03": 2234
   },
   "https://github.com/Egonex-AI/Understand-Anything": {
-    "2026-07-03": 70400
+    "2026-07-03": 70419
   },
   "https://github.com/EmbraceAGI/awesome-chatgpt-zh": {
     "2026-07-03": 11580
@@ -102,7 +102,7 @@
     "2026-07-03": 4667
   },
   "https://github.com/Eronred/aso-skills": {
-    "2026-07-03": 1568
+    "2026-07-03": 1570
   },
   "https://github.com/EvoMap/evolver": {
     "2026-07-03": 8844
@@ -111,13 +111,13 @@
     "2026-07-03": 1483
   },
   "https://github.com/Fincept-Corporation/FinceptTerminal": {
-    "2026-07-03": 27851
+    "2026-07-03": 27853
   },
   "https://github.com/Fission-AI/OpenSpec": {
-    "2026-07-03": 58401
+    "2026-07-03": 58414
   },
   "https://github.com/FlorianBruniaux/claude-code-ultimate-guide": {
-    "2026-07-03": 5299
+    "2026-07-03": 5301
   },
   "https://github.com/FlowiseAI/Flowise": {
     "2026-07-03": 54214
@@ -153,37 +153,37 @@
     "2026-07-03": 1185
   },
   "https://github.com/GreyDGL/PentestGPT": {
-    "2026-07-03": 14067
+    "2026-07-03": 14068
   },
   "https://github.com/HKUDS/DeepTutor": {
-    "2026-07-03": 25167
+    "2026-07-03": 25169
   },
   "https://github.com/HKUDS/LightRAG": {
-    "2026-07-03": 37257
+    "2026-07-03": 37259
   },
   "https://github.com/HKUDS/nanobot": {
-    "2026-07-03": 44965
+    "2026-07-03": 44968
   },
   "https://github.com/HandsOnLLM/Hands-On-Large-Language-Models": {
-    "2026-07-03": 27342
+    "2026-07-03": 27345
   },
   "https://github.com/Helicone/helicone": {
     "2026-07-03": 5899
   },
   "https://github.com/Hmbown/CodeWhale": {
-    "2026-07-03": 39328
+    "2026-07-03": 39334
   },
   "https://github.com/Imbad0202/academic-research-skills": {
-    "2026-07-03": 35955
+    "2026-07-03": 35961
   },
   "https://github.com/InsForge/InsForge": {
-    "2026-07-03": 12037
+    "2026-07-03": 12038
   },
   "https://github.com/ItzCrazyKns/Vane": {
-    "2026-07-03": 35534
+    "2026-07-03": 35535
   },
   "https://github.com/JCodesMore/ai-website-cloner-template": {
-    "2026-07-03": 24916
+    "2026-07-03": 24954
   },
   "https://github.com/JerBouma/FinanceToolkit": {
     "2026-07-03": 5054
@@ -192,16 +192,16 @@
     "2026-07-03": 11789
   },
   "https://github.com/JuliusBrussee/caveman": {
-    "2026-07-03": 80948
+    "2026-07-03": 81115
   },
   "https://github.com/K-Dense-AI/scientific-agent-skills": {
-    "2026-07-03": 29961
+    "2026-07-03": 29971
   },
   "https://github.com/KalyanKS-NLP/llm-engineer-toolkit": {
     "2026-07-03": 10564
   },
   "https://github.com/KhazP/vibe-coding-prompt-template": {
-    "2026-07-03": 2580
+    "2026-07-03": 2581
   },
   "https://github.com/Klavis-AI/klavis": {
     "2026-07-03": 5763
@@ -210,7 +210,7 @@
     "2026-07-03": 2471
   },
   "https://github.com/Leonxlnx/taste-skill": {
-    "2026-07-03": 55028
+    "2026-07-03": 55055
   },
   "https://github.com/Lightning-AI/litgpt": {
     "2026-07-03": 13455
@@ -228,13 +228,13 @@
     "2026-07-03": 56897
   },
   "https://github.com/MervinPraison/PraisonAI": {
-    "2026-07-03": 8342
+    "2026-07-03": 8341
   },
   "https://github.com/MinishLab/semble": {
     "2026-07-03": 5474
   },
   "https://github.com/Mintplex-Labs/anything-llm": {
-    "2026-07-03": 62474
+    "2026-07-03": 62477
   },
   "https://github.com/Mooler0410/LLMsPracticalGuide": {
     "2026-07-03": 10194
@@ -243,10 +243,10 @@
     "2026-07-03": 14827
   },
   "https://github.com/NVIDIA/Megatron-LM": {
-    "2026-07-03": 16930
+    "2026-07-03": 16931
   },
   "https://github.com/Nagi-ovo/gemini-voyager": {
-    "2026-07-03": 19079
+    "2026-07-03": 19080
   },
   "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant": {
     "2026-07-03": 1730
@@ -258,10 +258,10 @@
     "2026-07-03": 7650
   },
   "https://github.com/NousResearch/hermes-agent": {
-    "2026-07-03": 208049
+    "2026-07-03": 208081
   },
   "https://github.com/OpenHands/OpenHands": {
-    "2026-07-03": 79180
+    "2026-07-03": 79190
   },
   "https://github.com/OpenMOSS/MOSS": {
     "2026-07-03": 12155
@@ -273,7 +273,7 @@
     "2026-07-03": 10322
   },
   "https://github.com/OthmanAdi/planning-with-files": {
-    "2026-07-03": 24357
+    "2026-07-03": 24360
   },
   "https://github.com/PostHog/posthog": {
     "2026-07-03": 35282
@@ -291,7 +291,7 @@
     "2026-07-03": 21375
   },
   "https://github.com/QwenLM/qwen-code": {
-    "2026-07-03": 25748
+    "2026-07-03": 25747
   },
   "https://github.com/RUCAIBox/LLMSurvey": {
     "2026-07-03": 12186
@@ -309,16 +309,16 @@
     "2026-07-03": 1209
   },
   "https://github.com/Significant-Gravitas/AutoGPT": {
-    "2026-07-03": 185284
+    "2026-07-03": 185288
   },
   "https://github.com/SylphAI-Inc/AdalFlow": {
     "2026-07-03": 4173
   },
   "https://github.com/TabbyML/tabby": {
-    "2026-07-03": 33663
+    "2026-07-03": 33664
   },
   "https://github.com/TauricResearch/TradingAgents": {
-    "2026-07-03": 90428
+    "2026-07-03": 90433
   },
   "https://github.com/The-Pocket/PocketFlow": {
     "2026-07-03": 10920
@@ -336,25 +336,25 @@
     "2026-07-03": 2295
   },
   "https://github.com/VectifyAI/PageIndex": {
-    "2026-07-03": 33655
+    "2026-07-03": 33658
   },
   "https://github.com/VoltAgent/awesome-agent-skills": {
-    "2026-07-03": 27139
+    "2026-07-03": 27147
   },
   "https://github.com/VoltAgent/awesome-design-md": {
-    "2026-07-03": 95266
+    "2026-07-03": 95290
   },
   "https://github.com/WangRongsheng/awesome-LLM-resources": {
-    "2026-07-03": 8625
+    "2026-07-03": 8626
   },
   "https://github.com/WordPress/agent-skills": {
     "2026-07-03": 1798
   },
   "https://github.com/Yeachan-Heo/oh-my-claudecode": {
-    "2026-07-03": 37328
+    "2026-07-03": 37331
   },
   "https://github.com/YouMind-OpenLab/awesome-gpt-image-2": {
-    "2026-07-03": 7966
+    "2026-07-03": 7967
   },
   "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts": {
     "2026-07-03": 12735
@@ -363,13 +363,13 @@
     "2026-07-03": 10134
   },
   "https://github.com/ZhuLinsen/daily_stock_analysis": {
-    "2026-07-03": 53516
+    "2026-07-03": 53537
   },
   "https://github.com/Zipstack/unstract": {
     "2026-07-03": 6686
   },
   "https://github.com/aaif-goose/goose": {
-    "2026-07-03": 50577
+    "2026-07-03": 50578
   },
   "https://github.com/activeloopai/deeplake": {
     "2026-07-03": 9195
@@ -378,10 +378,10 @@
     "2026-07-03": 23089
   },
   "https://github.com/addyosmani/agent-skills": {
-    "2026-07-03": 68601
+    "2026-07-03": 68609
   },
   "https://github.com/affaan-m/ECC": {
-    "2026-07-03": 225187
+    "2026-07-03": 225225
   },
   "https://github.com/agent-of-empires/agent-of-empires": {
     "2026-07-03": 2728
@@ -390,28 +390,28 @@
     "2026-07-03": 673
   },
   "https://github.com/agentscope-ai/agentscope": {
-    "2026-07-03": 27412
+    "2026-07-03": 27415
   },
   "https://github.com/agno-agi/agno": {
-    "2026-07-03": 40963
+    "2026-07-03": 40966
   },
   "https://github.com/ai-boost/awesome-prompts": {
     "2026-07-03": 8367
   },
   "https://github.com/ai-for-developers/awesome-ai-coding-tools": {
-    "2026-07-03": 1882
+    "2026-07-03": 1883
   },
   "https://github.com/aimhubio/aim": {
     "2026-07-03": 6176
   },
   "https://github.com/aishwaryanr/awesome-generative-ai-guide": {
-    "2026-07-03": 28072
+    "2026-07-03": 28073
   },
   "https://github.com/alirezarezvani/claude-skills": {
-    "2026-07-03": 19733
+    "2026-07-03": 19740
   },
   "https://github.com/anthropics/claude-code": {
-    "2026-07-03": 135520
+    "2026-07-03": 135535
   },
   "https://github.com/anthropics/claude-code-action": {
     "2026-07-03": 8213
@@ -420,16 +420,16 @@
     "2026-07-03": 2282
   },
   "https://github.com/asgeirtj/system_prompts_leaks": {
-    "2026-07-03": 47868
+    "2026-07-03": 47877
   },
   "https://github.com/ashishpatel26/500-AI-Agents-Projects": {
-    "2026-07-03": 33509
+    "2026-07-03": 33513
   },
   "https://github.com/ashishps1/learn-ai-engineering": {
     "2026-07-03": 5777
   },
   "https://github.com/assafelovic/gpt-researcher": {
-    "2026-07-03": 28030
+    "2026-07-03": 28031
   },
   "https://github.com/automata/aicodeguide": {
     "2026-07-03": 2625
@@ -450,28 +450,28 @@
     "2026-07-03": 71030
   },
   "https://github.com/block/goose": {
-    "2026-07-03": 50577
+    "2026-07-03": 50578
   },
   "https://github.com/bmad-code-org/bmad-method": {
     "2026-07-03": 50016
   },
   "https://github.com/brokermr810/QuantDinger": {
-    "2026-07-03": 9116
+    "2026-07-03": 9120
   },
   "https://github.com/browser-use/browser-use": {
-    "2026-07-03": 102233
+    "2026-07-03": 102247
   },
   "https://github.com/browserbase/stagehand": {
     "2026-07-03": 23322
   },
   "https://github.com/bytedance/UI-TARS-desktop": {
-    "2026-07-03": 37556
+    "2026-07-03": 37562
   },
   "https://github.com/bytedance/deer-flow": {
-    "2026-07-03": 75930
+    "2026-07-03": 75937
   },
   "https://github.com/calesthio/OpenMontage": {
-    "2026-07-03": 31748
+    "2026-07-03": 31784
   },
   "https://github.com/callstackincubator/agent-skills": {
     "2026-07-03": 1511
@@ -483,19 +483,19 @@
     "2026-07-03": 4899
   },
   "https://github.com/can1357/oh-my-pi": {
-    "2026-07-03": 15693
+    "2026-07-03": 15709
   },
   "https://github.com/chaitin/MonkeyCode": {
     "2026-07-03": 3537
   },
   "https://github.com/chatchat-space/Langchain-Chatchat": {
-    "2026-07-03": 38241
+    "2026-07-03": 38243
   },
   "https://github.com/chaterm/Chaterm": {
     "2026-07-03": 3012
   },
   "https://github.com/chenhg5/cc-connect": {
-    "2026-07-03": 13437
+    "2026-07-03": 13441
   },
   "https://github.com/cheshire-cat-ai/core": {
     "2026-07-03": 3064
@@ -513,7 +513,7 @@
     "2026-07-03": 5127
   },
   "https://github.com/code-yeongyu/oh-my-openagent": {
-    "2026-07-03": 64609
+    "2026-07-03": 64615
   },
   "https://github.com/codefuse-ai/codefuse-chatbot": {
     "2026-07-03": 1290
@@ -525,49 +525,49 @@
     "2026-07-03": 2206
   },
   "https://github.com/comet-ml/opik": {
-    "2026-07-03": 20249
+    "2026-07-03": 20248
   },
   "https://github.com/containers/kubernetes-mcp-server": {
     "2026-07-03": 1737
   },
   "https://github.com/continuedev/continue": {
-    "2026-07-03": 34650
+    "2026-07-03": 34654
   },
   "https://github.com/coreyhaines31/marketingskills": {
-    "2026-07-03": 35876
+    "2026-07-03": 35881
   },
   "https://github.com/crewAIInc/crewAI": {
-    "2026-07-03": 54791
+    "2026-07-03": 54795
   },
   "https://github.com/czlonkowski/n8n-mcp": {
     "2026-07-03": 22098
   },
   "https://github.com/dair-ai/Prompt-Engineering-Guide": {
-    "2026-07-03": 76158
+    "2026-07-03": 76159
   },
   "https://github.com/danny-avila/LibreChat": {
-    "2026-07-03": 40170
+    "2026-07-03": 40172
   },
   "https://github.com/dataelement/bisheng": {
     "2026-07-03": 11490
   },
   "https://github.com/datawhalechina/easy-vibe": {
-    "2026-07-03": 17689
+    "2026-07-03": 17694
   },
   "https://github.com/datawhalechina/hello-agents": {
-    "2026-07-03": 63564
+    "2026-07-03": 63583
   },
   "https://github.com/datawhalechina/vibe-vibe": {
     "2026-07-03": 5633
   },
   "https://github.com/daytonaio/daytona": {
-    "2026-07-03": 72322
+    "2026-07-03": 72323
   },
   "https://github.com/deepset-ai/haystack": {
     "2026-07-03": 25815
   },
   "https://github.com/dontriskit/awesome-ai-system-prompts": {
-    "2026-07-03": 6056
+    "2026-07-03": 6058
   },
   "https://github.com/dottxt-ai/outlines": {
     "2026-07-03": 14351
@@ -579,16 +579,16 @@
     "2026-07-03": 28589
   },
   "https://github.com/earendil-works/pi": {
-    "2026-07-03": 67225
+    "2026-07-03": 67243
   },
   "https://github.com/elder-plinius/CL4R1T4S": {
-    "2026-07-03": 44383
+    "2026-07-03": 44392
   },
   "https://github.com/elizaOS/eliza": {
     "2026-07-03": 18679
   },
   "https://github.com/esengine/DeepSeek-Reasonix": {
-    "2026-07-03": 25737
+    "2026-07-03": 25751
   },
   "https://github.com/eugeneyan/open-llms": {
     "2026-07-03": 12818
@@ -609,16 +609,16 @@
     "2026-07-03": 1611
   },
   "https://github.com/f/prompts.chat": {
-    "2026-07-03": 164644
+    "2026-07-03": 164649
   },
   "https://github.com/farion1231/cc-switch": {
-    "2026-07-03": 112380
+    "2026-07-03": 112416
   },
   "https://github.com/filipecalegario/awesome-vibe-coding": {
-    "2026-07-03": 4848
+    "2026-07-03": 4849
   },
   "https://github.com/firecrawl/firecrawl": {
-    "2026-07-03": 143277
+    "2026-07-03": 143296
   },
   "https://github.com/firecrawl/firecrawl-mcp-server": {
     "2026-07-03": 6791
@@ -630,10 +630,10 @@
     "2026-07-03": 2358
   },
   "https://github.com/freestylefly/awesome-gpt-image-2": {
-    "2026-07-03": 8113
+    "2026-07-03": 8116
   },
   "https://github.com/getagentseal/codeburn": {
-    "2026-07-03": 8395
+    "2026-07-03": 8396
   },
   "https://github.com/getsentry/XcodeBuildMCP": {
     "2026-07-03": 6023
@@ -648,22 +648,22 @@
     "2026-07-03": 6185
   },
   "https://github.com/github/awesome-copilot": {
-    "2026-07-03": 36095
+    "2026-07-03": 36098
   },
   "https://github.com/github/github-mcp-server": {
-    "2026-07-03": 31138
+    "2026-07-03": 31137
   },
   "https://github.com/google-gemini/gemini-cli": {
-    "2026-07-03": 105718
+    "2026-07-03": 105720
   },
   "https://github.com/google/adk-go": {
-    "2026-07-03": 8340
+    "2026-07-03": 8341
   },
   "https://github.com/google/adk-python": {
-    "2026-07-03": 20416
+    "2026-07-03": 20419
   },
   "https://github.com/google/agents-cli": {
-    "2026-07-03": 4660
+    "2026-07-03": 4663
   },
   "https://github.com/google/langextract": {
     "2026-07-03": 36994
@@ -672,22 +672,22 @@
     "2026-07-03": 6874
   },
   "https://github.com/greensock/gsap-skills": {
-    "2026-07-03": 10739
+    "2026-07-03": 10742
   },
   "https://github.com/greggh/claude-code.nvim": {
     "2026-07-03": 2081
   },
   "https://github.com/headroomlabs-ai/headroom": {
-    "2026-07-03": 55849
+    "2026-07-03": 55863
   },
   "https://github.com/hesreallyhim/awesome-claude-code": {
-    "2026-07-03": 47807
+    "2026-07-03": 47815
   },
   "https://github.com/hiyouga/LlamaFactory": {
     "2026-07-03": 72907
   },
   "https://github.com/huggingface/transformers": {
-    "2026-07-03": 162165
+    "2026-07-03": 162170
   },
   "https://github.com/humanlayer/12-factor-agents": {
     "2026-07-03": 23931
@@ -696,10 +696,10 @@
     "2026-07-03": 11082
   },
   "https://github.com/iOfficeAI/AionUi": {
-    "2026-07-03": 29202
+    "2026-07-03": 29206
   },
   "https://github.com/infiniflow/ragflow": {
-    "2026-07-03": 84165
+    "2026-07-03": 84170
   },
   "https://github.com/infracost/infracost": {
     "2026-07-03": 12393
@@ -711,31 +711,31 @@
     "2026-07-03": 2784
   },
   "https://github.com/jackwener/OpenCLI": {
-    "2026-07-03": 25877
+    "2026-07-03": 25880
   },
   "https://github.com/jamez-bondos/awesome-gpt4o-images": {
     "2026-07-03": 8088
   },
   "https://github.com/janhq/jan": {
-    "2026-07-03": 43359
+    "2026-07-03": 43360
   },
   "https://github.com/jasonjmcghee/claude-debugs-for-you": {
     "2026-07-03": 511
   },
   "https://github.com/jeecgboot/JeecgBoot": {
-    "2026-07-03": 46931
+    "2026-07-03": 46932
   },
   "https://github.com/jnMetaCode/agency-agents-zh": {
-    "2026-07-03": 16424
+    "2026-07-03": 16436
   },
   "https://github.com/jnMetaCode/superpowers-zh": {
-    "2026-07-03": 6294
+    "2026-07-03": 6297
   },
   "https://github.com/katanemo/plano": {
     "2026-07-03": 6609
   },
   "https://github.com/kestra-io/kestra": {
-    "2026-07-03": 27228
+    "2026-07-03": 27229
   },
   "https://github.com/kimsungwhee/apple-docs-mcp": {
     "2026-07-03": 1338
@@ -744,19 +744,19 @@
     "2026-07-03": 6914
   },
   "https://github.com/langchain-ai/langchain": {
-    "2026-07-03": 140777
+    "2026-07-03": 140780
   },
   "https://github.com/langchain-ai/langgraph": {
     "2026-07-03": 36347
   },
   "https://github.com/langflow-ai/langflow": {
-    "2026-07-03": 150737
+    "2026-07-03": 150775
   },
   "https://github.com/langfuse/langfuse": {
-    "2026-07-03": 30322
+    "2026-07-03": 30325
   },
   "https://github.com/langgenius/dify": {
-    "2026-07-03": 147442
+    "2026-07-03": 147455
   },
   "https://github.com/langgptai/LangGPT": {
     "2026-07-03": 12287
@@ -765,13 +765,13 @@
     "2026-07-03": 6129
   },
   "https://github.com/lemonade-sdk/lemonade": {
-    "2026-07-03": 4743
+    "2026-07-03": 4744
   },
   "https://github.com/linshenkx/prompt-optimizer": {
-    "2026-07-03": 31702
+    "2026-07-03": 31704
   },
   "https://github.com/liyupi/ai-guide": {
-    "2026-07-03": 16661
+    "2026-07-03": 16665
   },
   "https://github.com/madox2/vim-ai": {
     "2026-07-03": 1172
@@ -780,7 +780,7 @@
     "2026-07-03": 5567
   },
   "https://github.com/manaflow-ai/cmux": {
-    "2026-07-03": 23433
+    "2026-07-03": 23447
   },
   "https://github.com/math-ai-org/mathcode": {
     "2026-07-03": 578
@@ -792,16 +792,16 @@
     "2026-07-03": 10222
   },
   "https://github.com/mem0ai/mem0": {
-    "2026-07-03": 59962
+    "2026-07-03": 59967
   },
   "https://github.com/metatool-ai/metamcp": {
     "2026-07-03": 2490
   },
   "https://github.com/microsoft/ai-agents-for-beginners": {
-    "2026-07-03": 68424
+    "2026-07-03": 68431
   },
   "https://github.com/microsoft/generative-ai-for-beginners": {
-    "2026-07-03": 112575
+    "2026-07-03": 112580
   },
   "https://github.com/microsoft/mcp-for-beginners": {
     "2026-07-03": 16665
@@ -813,37 +813,37 @@
     "2026-07-03": 1226
   },
   "https://github.com/milvus-io/milvus": {
-    "2026-07-03": 45049
+    "2026-07-03": 45050
   },
   "https://github.com/mksglu/context-mode": {
-    "2026-07-03": 18504
+    "2026-07-03": 18505
   },
   "https://github.com/mlabonne/llm-course": {
-    "2026-07-03": 80645
+    "2026-07-03": 80646
   },
   "https://github.com/mlflow/mlflow": {
     "2026-07-03": 26830
   },
   "https://github.com/modelcontextprotocol/servers": {
-    "2026-07-03": 87974
+    "2026-07-03": 87982
   },
   "https://github.com/modelscope/FunASR": {
-    "2026-07-03": 18808
+    "2026-07-03": 18811
   },
   "https://github.com/mrexodia/ida-pro-mcp": {
-    "2026-07-03": 9840
+    "2026-07-03": 9841
   },
   "https://github.com/mudler/LocalAI": {
-    "2026-07-03": 47286
+    "2026-07-03": 47287
   },
   "https://github.com/mufeedvh/code2prompt": {
     "2026-07-03": 7449
   },
   "https://github.com/mukul975/Anthropic-Cybersecurity-Skills": {
-    "2026-07-03": 24006
+    "2026-07-03": 24014
   },
   "https://github.com/n8n-io/n8n": {
-    "2026-07-03": 194943
+    "2026-07-03": 194950
   },
   "https://github.com/nanocoai/nanoclaw": {
     "2026-07-03": 30091
@@ -855,16 +855,16 @@
     "2026-07-03": 12697
   },
   "https://github.com/nexu-io/html-anything": {
-    "2026-07-03": 7475
+    "2026-07-03": 7479
   },
   "https://github.com/nexu-io/open-design": {
-    "2026-07-03": 74285
+    "2026-07-03": 74313
   },
   "https://github.com/nidhinjs/prompt-master": {
-    "2026-07-03": 10143
+    "2026-07-03": 10146
   },
   "https://github.com/nukeop/nuclear": {
-    "2026-07-03": 17971
+    "2026-07-03": 17973
   },
   "https://github.com/numman-ali/openskills": {
     "2026-07-03": 10533
@@ -873,16 +873,16 @@
     "2026-07-03": 2495
   },
   "https://github.com/ollama/ollama": {
-    "2026-07-03": 175322
+    "2026-07-03": 175326
   },
   "https://github.com/onlook-dev/onlook": {
     "2026-07-03": 26112
   },
   "https://github.com/open-metadata/OpenMetadata": {
-    "2026-07-03": 14376
+    "2026-07-03": 14377
   },
   "https://github.com/open-webui/open-webui": {
-    "2026-07-03": 143891
+    "2026-07-03": 143901
   },
   "https://github.com/openlit/openlit": {
     "2026-07-03": 2569
@@ -891,10 +891,10 @@
     "2026-07-03": 19709
   },
   "https://github.com/oraios/serena": {
-    "2026-07-03": 26026
+    "2026-07-03": 26028
   },
   "https://github.com/osaurus-ai/osaurus": {
-    "2026-07-03": 6589
+    "2026-07-03": 6591
   },
   "https://github.com/outflanknl/EvilClippy": {
     "2026-07-03": 2247
@@ -909,13 +909,13 @@
     "2026-07-03": 550
   },
   "https://github.com/promptfoo/promptfoo": {
-    "2026-07-03": 22865
+    "2026-07-03": 22866
   },
   "https://github.com/promptslab/Awesome-Prompt-Engineering": {
-    "2026-07-03": 6117
+    "2026-07-03": 6118
   },
   "https://github.com/punkpeye/awesome-mcp-servers": {
-    "2026-07-03": 90195
+    "2026-07-03": 90198
   },
   "https://github.com/pydantic/logfire": {
     "2026-07-03": 4342
@@ -924,10 +924,10 @@
     "2026-07-03": 16142
   },
   "https://github.com/rasbt/LLMs-from-scratch": {
-    "2026-07-03": 98399
+    "2026-07-03": 98408
   },
   "https://github.com/ray-project/ray": {
-    "2026-07-03": 43095
+    "2026-07-03": 43096
   },
   "https://github.com/rdumasia303/deepseek_ocr_app": {
     "2026-07-03": 1837
@@ -939,67 +939,67 @@
     "2026-07-03": 8587
   },
   "https://github.com/rohitg00/agentmemory": {
-    "2026-07-03": 24474
+    "2026-07-03": 24479
   },
   "https://github.com/rohitg00/ai-engineering-from-scratch": {
-    "2026-07-03": 37160
+    "2026-07-03": 37164
   },
   "https://github.com/rtk-ai/rtk": {
-    "2026-07-03": 67989
+    "2026-07-03": 68005
   },
   "https://github.com/run-llama/llama_index": {
-    "2026-07-03": 50606
+    "2026-07-03": 50607
   },
   "https://github.com/ruvnet/claude-flow": {
-    "2026-07-03": 62663
+    "2026-07-03": 62676
   },
   "https://github.com/ruvnet/ruflo": {
-    "2026-07-03": 62663
+    "2026-07-03": 62676
   },
   "https://github.com/safishamsi/graphify": {
-    "2026-07-03": 76192
+    "2026-07-03": 76223
   },
   "https://github.com/samber/cc-skills-golang": {
-    "2026-07-03": 2388
+    "2026-07-03": 2389
   },
   "https://github.com/sansan0/TrendRadar": {
-    "2026-07-03": 60179
+    "2026-07-03": 60180
   },
   "https://github.com/sapientinc/HRM": {
-    "2026-07-03": 12583
+    "2026-07-03": 12584
   },
   "https://github.com/shanraisshan/claude-code-best-practice": {
-    "2026-07-03": 61862
+    "2026-07-03": 61869
   },
   "https://github.com/shareAI-lab/learn-claude-code": {
-    "2026-07-03": 69615
+    "2026-07-03": 69624
   },
   "https://github.com/sickn33/antigravity-awesome-skills": {
-    "2026-07-03": 42243
+    "2026-07-03": 42247
   },
   "https://github.com/simonlin1212/global-stock-data": {
     "2026-07-03": 1032
   },
   "https://github.com/simonw/llm": {
-    "2026-07-03": 12133
+    "2026-07-03": 12132
   },
   "https://github.com/smtg-ai/claude-squad": {
-    "2026-07-03": 8000
+    "2026-07-03": 8002
   },
   "https://github.com/sst/opencode": {
-    "2026-07-03": 181749
+    "2026-07-03": 181773
   },
   "https://github.com/stackblitz/bolt.new": {
     "2026-07-03": 16438
   },
   "https://github.com/stanford-oval/storm": {
-    "2026-07-03": 29769
+    "2026-07-03": 29770
   },
   "https://github.com/stas00/ml-engineering": {
-    "2026-07-03": 18223
+    "2026-07-03": 18225
   },
   "https://github.com/stefan-jansen/machine-learning-for-trading": {
-    "2026-07-03": 19486
+    "2026-07-03": 19487
   },
   "https://github.com/steven2358/awesome-generative-ai": {
     "2026-07-03": 12233
@@ -1011,7 +1011,7 @@
     "2026-07-03": 1803
   },
   "https://github.com/superset-sh/superset": {
-    "2026-07-03": 12223
+    "2026-07-03": 12225
   },
   "https://github.com/sweepai/sweep": {
     "2026-07-03": 7700
@@ -1026,37 +1026,37 @@
     "2026-07-03": 1288
   },
   "https://github.com/teng-lin/notebooklm-py": {
-    "2026-07-03": 17103
+    "2026-07-03": 17107
   },
   "https://github.com/the-open-agent/openagent": {
-    "2026-07-03": 5325
+    "2026-07-03": 5324
   },
   "https://github.com/thedaviddias/Front-End-Checklist": {
-    "2026-07-03": 73102
+    "2026-07-03": 73103
   },
   "https://github.com/thedotmack/claude-mem": {
-    "2026-07-03": 85549
+    "2026-07-03": 85553
   },
   "https://github.com/thinkingjimmy/Learning-Prompt": {
     "2026-07-03": 5320
   },
   "https://github.com/tiann/hapi": {
-    "2026-07-03": 4388
+    "2026-07-03": 4389
   },
   "https://github.com/tnm/zclaw": {
     "2026-07-03": 2179
   },
   "https://github.com/topoteretes/cognee": {
-    "2026-07-03": 26627
+    "2026-07-03": 26640
   },
   "https://github.com/traceloop/openllmetry": {
     "2026-07-03": 7262
   },
   "https://github.com/tractorjuice/arc-kit": {
-    "2026-07-03": 2056
+    "2026-07-03": 2057
   },
   "https://github.com/triggerdotdev/trigger.dev": {
-    "2026-07-03": 15539
+    "2026-07-03": 15540
   },
   "https://github.com/tw93/Kaku": {
     "2026-07-03": 5506
@@ -1065,19 +1065,19 @@
     "2026-07-03": 4630
   },
   "https://github.com/unslothai/unsloth": {
-    "2026-07-03": 67757
+    "2026-07-03": 67758
   },
   "https://github.com/upstash/context7": {
-    "2026-07-03": 58494
+    "2026-07-03": 58495
   },
   "https://github.com/vercel/eve": {
-    "2026-07-03": 3085
+    "2026-07-03": 3088
   },
   "https://github.com/vllm-project/vllm": {
-    "2026-07-03": 85190
+    "2026-07-03": 85199
   },
   "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep": {
-    "2026-07-03": 12940
+    "2026-07-03": 12941
   },
   "https://github.com/wgpsec/ENScan_GO": {
     "2026-07-03": 4488
@@ -1089,22 +1089,22 @@
     "2026-07-03": 6241
   },
   "https://github.com/wshobson/agents": {
-    "2026-07-03": 37451
+    "2026-07-03": 37453
   },
   "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools": {
-    "2026-07-03": 141447
+    "2026-07-03": 141450
   },
   "https://github.com/xbtlin/ai-berkshire": {
-    "2026-07-03": 8656
+    "2026-07-03": 8706
   },
   "https://github.com/xinnan-tech/xiaozhi-esp32-server": {
     "2026-07-03": 9959
   },
   "https://github.com/xpzouying/xiaohongshu-mcp": {
-    "2026-07-03": 14483
+    "2026-07-03": 14484
   },
   "https://github.com/xstongxue/best-skills": {
-    "2026-07-03": 2114
+    "2026-07-03": 2116
   },
   "https://github.com/yamadashy/repomix": {
     "2026-07-03": 26778
@@ -1128,19 +1128,19 @@
     "2026-07-03": 15563
   },
   "https://github.com/zai-org/GLM-5": {
-    "2026-07-03": 6097
+    "2026-07-03": 6099
   },
   "https://github.com/zarazhangrui/codebase-to-course": {
     "2026-07-03": 5104
   },
   "https://github.com/zarazhangrui/frontend-slides": {
-    "2026-07-03": 24365
+    "2026-07-03": 24372
   },
   "https://github.com/zgsm-ai/costrict": {
-    "2026-07-03": 4273
+    "2026-07-03": 4274
   },
   "https://github.com/zhayujie/CowAgent": {
-    "2026-07-03": 45753
+    "2026-07-03": 45755
   },
   "https://github.com/zilliztech/claude-context": {
     "2026-07-03": 12037
