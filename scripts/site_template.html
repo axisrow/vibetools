@@ -8,13 +8,13 @@
   :root {
     --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --border: #d0d7de;
     --accent: #0969da; --chip: #ddf4ff; --chip-active: #0969da;
-    --card: #f6f8fa; --new: #1a7f37; --verified: #8250df;
+    --card: #f6f8fa; --new: #1a7f37;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e; --border: #30363d;
       --accent: #58a6ff; --chip: #1f6feb22; --chip-active: #58a6ff;
-      --card: #161b22; --new: #3fb950; --verified: #bc8cff;
+      --card: #161b22; --new: #3fb950;
     }
   }
   * { box-sizing: border-box; }
@@ -61,9 +61,10 @@
   .item-name { font-weight: 600; }
   .item-name a { color: var(--accent); text-decoration: none; }
   .item-desc { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .metrics { margin-top: 4px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .metric { font-size: 11px; color: var(--muted); }
   .badges { white-space: nowrap; display: flex; gap: 6px; align-items: center; flex-direction: column; align-items: flex-end; }
   .tag { font-size: 11px; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); }
-  .tag.verified { color: var(--verified); border-color: var(--verified); }
   .tag.new { color: var(--new); border-color: var(--new); }
   .stars { font-size: 13px; color: var(--muted); }
   .stars img { vertical-align: middle; }
@@ -91,7 +92,6 @@
   </div>
   <nav id="cats"></nav>
   <div class="filters">
-    <label><input type="checkbox" id="f-verified"> <span data-i18n="verified">Verified</span></label>
     <label><input type="checkbox" id="f-new"> <span data-i18n="new">New</span></label>
   </div>
 </header>
@@ -112,34 +112,40 @@ const I18N = {
     title: "Awesome Vibe Coding Tools",
     searchPlaceholder: "Search tools…",
     all: "All",
-    verified: "Verified",
     new: "New",
+    archived: "archived",
+    forks: "forks",
+    growth: "growth",
     sortStars: "Stars", sortDate: "Recently added", sortName: "Name",
     results: n => `${n} tool${n === 1 ? "" : "s"}`,
     noResults: "No tools match your filters.",
-    footer: 'Data from data/tools.yml · auto-updated daily · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
+    footer: 'Data from data/tools.yml · auto-updated daily · Built with GLM-5.2 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
   },
   ru: {
     title: "Утилиты для вайбкодеров",
     searchPlaceholder: "Поиск инструментов…",
     all: "Все",
-    verified: "Проверенные",
     new: "Новые",
+    archived: "архив",
+    forks: "форки",
+    growth: "рост",
     sortStars: "Звёзды", sortDate: "Недавно добавленные", sortName: "Название",
     results: n => `${n} инструмент(ов)`,
     noResults: "Ничего не найдено по фильтрам.",
-    footer: 'Данные из data/tools.yml · обновляется ежедневно · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
+    footer: 'Данные из data/tools.yml · обновляется ежедневно · Создано на GLM-5.2 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
   },
   zh: {
     title: "Vibe 编程工具集",
     searchPlaceholder: "搜索工具…",
     all: "全部",
-    verified: "已验证",
     new: "新",
+    archived: "已归档",
+    forks: "分叉",
+    growth: "增长",
     sortStars: "星标", sortDate: "最近添加", sortName: "名称",
     results: n => `${n} 个工具`,
     noResults: "没有符合筛选条件的工具。",
-    footer: '数据来自 data/tools.yml · 每日自动更新 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
+    footer: '数据来自 data/tools.yml · 每日自动更新 · 使用 GLM-5.2 构建 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
   },
 };
 
@@ -199,11 +205,9 @@ function fmtStars(n) {
 
 function filtered() {
   const q = query.trim().toLowerCase();
-  const verified = $("f-verified").checked;
   const isNew = $("f-new").checked;
   let list = DATA.tools.filter(tool => {
     if (activeCat !== "all" && tool.category !== activeCat) return false;
-    if (verified && !tool.verified) return false;
     if (isNew && !tool.isNew) return false;
     if (q && !tool.search.includes(q)) return false;  // search — lowercase haystack
     return true;
@@ -232,12 +236,19 @@ function render() {
       ? `<span class="stars">★ ${fmtStars(tool.stars)}</span>`
       : (tool.starsUrl ? `<span class="stars"><img src="${tool.starsUrl}" alt="stars"></span>` : "");
     const tags = [];
-    if (tool.verified) tags.push(`<span class="tag verified">${t("verified")}</span>`);
     if (tool.isNew) tags.push(`<span class="tag new">${t("new")}</span>`);
+    if (tool.archived) tags.push(`<span class="tag">${t("archived")}</span>`);
+    // Метрики star-history-стиля: rank, forks, рост за неделю, дата создания.
+    const rankHtml = tool.rank != null ? `<span class="metric">#${tool.rank}</span>` : "";
+    const forksHtml = tool.forks != null ? `<span class="metric">${t("forks")} ${fmtStars(tool.forks)}</span>` : "";
+    const growthHtml = tool.starsPerWeek != null
+      ? `<span class="metric">${t("growth")} +${tool.starsPerWeek}/w</span>` : "";
+    const createdHtml = tool.createdAt ? `<span class="metric">${tool.createdAt.slice(0,4)}</span>` : "";
     li.innerHTML = `
       <div class="item-main">
         <div class="item-name"><a href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a></div>
         <div class="item-desc">${esc(desc)} <span class="tag">${esc(catTitle(tool.category))}</span></div>
+        <div class="metrics">${rankHtml}${forksHtml}${growthHtml}${createdHtml}</div>
       </div>
       <div class="badges">${tags.join("")}${starsHtml}</div>`;
     frag.appendChild(li);
@@ -258,7 +269,6 @@ $("search").addEventListener("input", e => {
   debounce = setTimeout(() => { query = e.target.value; render(); }, 120);
 });
 $("sort").addEventListener("change", e => { sortMode = e.target.value; render(); });
-$("f-verified").addEventListener("change", render);
 $("f-new").addEventListener("change", render);
 document.querySelectorAll(".lang button").forEach(b => {
   b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("lang", lang); applyI18n(); });
