@@ -40,34 +40,42 @@ CATEGORIES = [
     ("cli-agents", {
         "title_en": "AI Coding Agents and CLI",
         "title_ru": "AI-агенты кодинга и CLI",
+        "title_zh": "AI 编程代理与 CLI",
     }),
     ("editor-integrations", {
         "title_en": "Editor Integrations",
         "title_ru": "Интеграции в редакторы",
+        "title_zh": "编辑器集成",
     }),
     ("context-memory", {
         "title_en": "Context and Memory",
         "title_ru": "Контекст и память",
+        "title_zh": "上下文与记忆",
     }),
     ("prompt-mcp", {
         "title_en": "Prompts and MCP",
         "title_ru": "Промпты и MCP",
+        "title_zh": "提示词与 MCP",
     }),
     ("observability-eval", {
         "title_en": "Observability and Eval",
         "title_ru": "Наблюдаемость и оценка",
+        "title_zh": "可观测性与评估",
     }),
     ("workflow-automation", {
         "title_en": "Workflow and Automation",
         "title_ru": "Воркфлоу и автоматизация",
+        "title_zh": "工作流与自动化",
     }),
     ("learning", {
         "title_en": "Learning and Resources",
         "title_ru": "Обучение и ресурсы",
+        "title_zh": "学习与资源",
     }),
     ("other", {
         "title_en": "Other and Adjacent",
         "title_ru": "Прочее и смежное",
+        "title_zh": "其他及相关",
     }),
 ]
 CATEGORY_MAP = {key: meta for key, meta in CATEGORIES}
@@ -275,7 +283,7 @@ def render_section(groups, lang, stars=None, featured=None):
 
 HEADER_EN = """# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily.
+> A curated list of tools for **vibe coders** — developers building software with AI assistants (Claude Code, Cursor, Copilot and friends). Star counts are auto-updated daily. **[Browse the searchable site →](https://axisrow.github.io/vibetools/)**
 
 A list should be a **curation, not a collection**: every entry is hand-picked, has a live repository, and is relevant to AI-assisted development. See CONTRIBUTING.md to add a tool. Русская версия: README.ru.md.
 
@@ -287,7 +295,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 HEADER_RU = """# Awesome Vibe Coding Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Кураторский список инструментов для **вайбкодеров** — разработчиков, которые пишут код с AI-ассистентами (Claude Code, Cursor, Copilot и компания). Число звёзд обновляется автоматически раз в сутки.
+> Кураторский список инструментов для **вайбкодеров** — разработчиков, которые пишут код с AI-ассистентами (Claude Code, Cursor, Copilot и компания). Число звёзд обновляется автоматически раз в сутки. **[Открыть сайт с поиском →](https://axisrow.github.io/vibetools/)**
 
 Список должен быть **кураторским, а не коллекционным**: каждая запись отобрана вручную, репозиторий жив, и инструмент относится к AI-разработке. Как добавить утилиту — см. CONTRIBUTING.md. English version: README.md.
 
