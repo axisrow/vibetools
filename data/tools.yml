@@ -190,2110 +190,2110 @@ tools:
   category: cli-agents
   description:
     en: FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, L
-    ru: 'TODO: перевод'
+    ru: Системные промпты и модели AI-инструментов (Augment, Claude Code, Cursor и др.)
 - name: claude-mem
   url: https://github.com/thedotmack/claude-mem
   category: cli-agents
   description:
     en: Persistent Context Across Sessions for Every Agent –  Captures everything your agent does
-    ru: 'TODO: перевод'
+    ru: Постоянный контекст между сессиями для любого AI-агента
 - name: ponytail
   url: https://github.com/DietrichGebert/ponytail
   category: cli-agents
   description:
     en: Makes your AI agent think like the laziest senior dev in the room
-    ru: 'TODO: перевод'
+    ru: Заставляет AI-агента думать как самый ленивый senior-разработчик
 - name: agent-skills
   url: https://github.com/addyosmani/agent-skills
   category: cli-agents
   description:
     en: Production-grade engineering skills for AI coding agents.
-    ru: 'TODO: перевод'
+    ru: Продакшн-навыки инженерии для AI-агентов кодинга
 - name: pi
   url: https://github.com/earendil-works/pi
   category: cli-agents
   description:
     en: 'AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI'
-    ru: 'TODO: перевод'
+    ru: 'AI-агент тулкит: единый LLM API, agent loop, TUI, CLI кодинг-агент'
 - name: ruflo
   url: https://github.com/ruvnet/ruflo
   category: cli-agents
   description:
     en: 🌊 The leading agent meta-harness
-    ru: 'TODO: перевод'
+    ru: Ведущий мета-харнес для агентов
 - name: taste-skill
   url: https://github.com/Leonxlnx/taste-skill
   category: cli-agents
   description:
     en: Taste-Skill - gives your AI good taste
-    ru: 'TODO: перевод'
+    ru: Taste-Skill — даёт AI хороший вкус
 - name: goose
   url: https://github.com/aaif-goose/goose
   category: cli-agents
   description:
     en: goose tool
-    ru: 'TODO: перевод'
+    ru: Утилита goose
 - name: LibreChat
   url: https://github.com/danny-avila/LibreChat
   category: cli-agents
   description:
     en: 'Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Re'
-    ru: 'TODO: перевод'
+    ru: 'Расширенный клон ChatGPT: агенты, MCP, навыки, DeepSeek, Anthropic, OpenAI'
 - name: marketingskills
   url: https://github.com/coreyhaines31/marketingskills
   category: cli-agents
   description:
     en: Marketing skills for Claude Code and AI agents
-    ru: 'TODO: перевод'
+    ru: Маркетинговые навыки для Claude Code и AI-агентов
 - name: OpenMontage
   url: https://github.com/calesthio/OpenMontage
   category: cli-agents
   description:
     en: World's first open-source, agentic video production system
-    ru: 'TODO: перевод'
+    ru: Первая open-source агентная система видеопроизводства
 - name: scientific-agent-skills
   url: https://github.com/K-Dense-AI/scientific-agent-skills
   category: cli-agents
   description:
     en: Turn any AI agent into an AI Scientist
-    ru: 'TODO: перевод'
+    ru: Превращает любой AI-агент в AI-учёного
 - name: agenticSeek
   url: https://github.com/Fosowl/agenticSeek
   category: cli-agents
   description:
     en: Fully Local Manus AI
-    ru: 'TODO: перевод'
+    ru: Полностью локальный аналог Manus AI
 - name: qwen-code
   url: https://github.com/QwenLM/qwen-code
   category: cli-agents
   description:
     en: An open-source AI coding agent that lives in your terminal.
-    ru: 'TODO: перевод'
+    ru: Open-source AI-агент кодинга в терминале
 - name: DeepSeek-Reasonix
   url: https://github.com/esengine/DeepSeek-Reasonix
   category: cli-agents
   description:
     en: DeepSeek-native AI coding agent for your terminal
-    ru: 'TODO: перевод'
+    ru: DeepSeek-native AI-агент кодинга для терминала
 - name: ai-website-cloner-template
   url: https://github.com/JCodesMore/ai-website-cloner-template
   category: cli-agents
   description:
     en: Clone any website with one command using AI coding agents
-    ru: 'TODO: перевод'
+    ru: Клонирование любого сайта одной командой через AI-агентов
 - name: agentmemory
   url: https://github.com/rohitg00/agentmemory
   category: cli-agents
   description:
     en: agentmemory tool
-    ru: 'TODO: перевод'
+    ru: Утилита agentmemory
 - name: planning-with-files
   url: https://github.com/OthmanAdi/planning-with-files
   category: cli-agents
   description:
     en: Persistent file-based planning for AI coding agents and long-running agentic tasks
-    ru: 'TODO: перевод'
+    ru: Постоянное файловое планирование для AI-агентов кодинга
 - name: Anthropic-Cybersecurity-Skills
   url: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
   category: cli-agents
   description:
     en: Anthropic-Cybersecurity-Skills tool
-    ru: 'TODO: перевод'
+    ru: Навыки кибербезопасности Anthropic
 - name: cmux
   url: https://github.com/manaflow-ai/cmux
   category: cli-agents
   description:
     en: Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin
-    ru: 'TODO: перевод'
+    ru: Open-source терминал macOS на Ghostty с вкладками для AI-кодинга
 - name: Claude-Code-Game-Studios
   url: https://github.com/Donchitos/Claude-Code-Game-Studios
   category: cli-agents
   description:
     en: Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a com
-    ru: 'TODO: перевод'
+    ru: Превращает Claude Code в студию геймдева — 49 AI-агентов, 72 навыка
 - name: adk-python
   url: https://github.com/google/adk-python
   category: cli-agents
   description:
     en: An open-source, code-first Python toolkit for building, evaluating, and deploying sophisti
-    ru: 'TODO: перевод'
+    ru: Open-source Python-тулкит для создания, оценки и деплоя agent-приложений
 - name: claude-skills
   url: https://github.com/alirezarezvani/claude-skills
   category: cli-agents
   description:
     en: claude-skills tool
-    ru: 'TODO: перевод'
+    ru: Утилита claude-skills
 - name: context-mode
   url: https://github.com/mksglu/context-mode
   category: cli-agents
   description:
     en: Context window optimization for AI coding agents
-    ru: 'TODO: перевод'
+    ru: Оптимизация контекстного окна для AI-агентов кодинга
 - name: easy-vibe
   url: https://github.com/datawhalechina/easy-vibe
   category: cli-agents
   description:
     en: easy-vibe tool
-    ru: 'TODO: перевод'
+    ru: Утилита easy-vibe
 - name: generative-ai
   url: https://github.com/GoogleCloudPlatform/generative-ai
   category: cli-agents
   description:
     en: Sample code and notebooks for Generative AI on Google Cloud, with Gemini Enterprise Agent
-    ru: 'TODO: перевод'
+    ru: Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini
 - name: notebooklm-py
   url: https://github.com/teng-lin/notebooklm-py
   category: cli-agents
   description:
     en: Unofficial Python API and agentic skill for Google NotebookLM
-    ru: 'TODO: перевод'
+    ru: Неофициальный Python API и навык для Google NotebookLM
 - name: ai-guide
   url: https://github.com/liyupi/ai-guide
   category: cli-agents
   description:
     en: ai-guide tool
-    ru: 'TODO: перевод'
+    ru: 'AI-гид: ресурсы по vibe coding на китайском'
 - name: agency-agents-zh
   url: https://github.com/jnMetaCode/agency-agents-zh
   category: cli-agents
   description:
     en: agency-agents-zh tool
-    ru: 'TODO: перевод'
+    ru: Агенты agency (китайская версия)
 - name: oh-my-pi
   url: https://github.com/can1357/oh-my-pi
   category: cli-agents
   description:
     en: oh-my-pi tool
-    ru: 'TODO: перевод'
+    ru: Утилита oh-my-pi
 - name: plandex
   url: https://github.com/plandex-ai/plandex
   category: cli-agents
   description:
     en: Open source AI coding agent
-    ru: 'TODO: перевод'
+    ru: Open-source AI-агент кодинга
 - name: Figma-Context-MCP
   url: https://github.com/GLips/Figma-Context-MCP
   category: cli-agents
   description:
     en: MCP server to provide Figma layout information to AI coding agents like Cursor
-    ru: 'TODO: перевод'
+    ru: 'MCP-сервер: отдаёт вёрстку Figma AI-агентам (Cursor и др.)'
 - name: cc-connect
   url: https://github.com/chenhg5/cc-connect
   category: cli-agents
   description:
     en: Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platfo
-    ru: 'TODO: перевод'
+    ru: Мост от локальных AI-агентов (Claude Code, Cursor) к мессенджерам
 - name: infracost
   url: https://github.com/infracost/infracost
   category: cli-agents
   description:
     en: Cloud cost intelligence for engineers, AI coding agents, and CI/CD 💰📉 Shift FinOps Left!
-    ru: 'TODO: перевод'
+    ru: Аналитика облачных затрат для инженеров, AI-агентов и CI/CD
 - name: superset
   url: https://github.com/superset-sh/superset
   category: cli-agents
   description:
     en: Code Editor for the AI Agents Era - Run an army of Claude Code, Codex, etc
-    ru: 'TODO: перевод'
+    ru: Редактор кода эпохи AI-агентов — армия Claude Code, Codex и др.
 - name: InsForge
   url: https://github.com/InsForge/InsForge
   category: cli-agents
   description:
     en: The all-in-one, open-source backend platform for agentic coding
-    ru: 'TODO: перевод'
+    ru: Open-source бэкенд-платформа для агентного кодинга
 - name: humanlayer
   url: https://github.com/humanlayer/humanlayer
   category: cli-agents
   description:
     en: The best way to get AI coding agents to solve hard problems in complex codebases.
-    ru: 'TODO: перевод'
+    ru: Помогает AI-агентам решать сложные задачи в больших кодовых базах
 - name: gsap-skills
   url: https://github.com/greensock/gsap-skills
   category: cli-agents
   description:
     en: Official AI skills for GSAP
-    ru: 'TODO: перевод'
+    ru: Официальные AI-навыки для GSAP
 - name: openskills
   url: https://github.com/numman-ali/openskills
   category: cli-agents
   description:
     en: Universal skills loader for AI coding agents - npm i -g openskills
-    ru: 'TODO: перевод'
+    ru: Универсальный загрузчик навыков для AI-агентов кодинга
 - name: AI-Research-SKILLs
   url: https://github.com/Orchestra-Research/AI-Research-SKILLs
   category: cli-agents
   description:
     en: Comprehensive open-source library of AI research and engineering skills for any AI model
-    ru: 'TODO: перевод'
+    ru: Библиотека AI-research и инженерных навыков для любой модели
 - name: ai-berkshire
   url: https://github.com/xbtlin/ai-berkshire
   category: cli-agents
   description:
     en: AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berk
-    ru: 'TODO: перевод'
+    ru: 'Berkshire эпохи AI: фреймворк стоимостного инвестирования на Claude Code/Codex'
 - name: codeburn
   url: https://github.com/getagentseal/codeburn
   category: cli-agents
   description:
     en: Free, local tool to track AI coding token usage and cost across 31 tools and agents (Claud
-    ru: 'TODO: перевод'
+    ru: Локальный трекер использования токенов и затрат AI-кодинга (31 инструмент)
 - name: PraisonAI
   url: https://github.com/MervinPraison/PraisonAI
   category: cli-agents
   description:
     en: PraisonAI 🦞 — Hire a 24/7 AI Workforce
-    ru: 'TODO: перевод'
+    ru: Нанимайте AI-рабочую силу 24/7
 - name: adk-go
   url: https://github.com/google/adk-go
   category: cli-agents
   description:
     en: An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate
-    ru: 'TODO: перевод'
+    ru: Open-source Go-тулкит для создания, оценки и деплоя agent-приложений
 - name: claude-squad
   url: https://github.com/smtg-ai/claude-squad
   category: cli-agents
   description:
     en: Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.
-    ru: 'TODO: перевод'
+    ru: Управление несколькими AI-терминал-агентами (Claude Code, Codex, OpenCode)
 - name: html-anything
   url: https://github.com/nexu-io/html-anything
   category: cli-agents
   description:
     en: ✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it
-    ru: 'TODO: перевод'
+    ru: Агентный HTML-редактор — локальный AI-агент пишет HTML
 - name: cursor-talk-to-figma-mcp
   url: https://github.com/grab/cursor-talk-to-figma-mcp
   category: cli-agents
   description:
     en: 'TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code, Codex) and Figma, allo'
-    ru: 'TODO: перевод'
+    ru: MCP-интеграция между AI-агентом (Cursor, Claude Code) и Figma
 - name: claude-ads
   url: https://github.com/AgriciDaniel/claude-ads
   category: cli-agents
   description:
     en: Comprehensive paid advertising audit & optimization skill for Claude Code
-    ru: 'TODO: перевод'
+    ru: Навык аудита и оптимизации платной рекламы для Claude Code
 - name: superpowers-zh
   url: https://github.com/jnMetaCode/superpowers-zh
   category: cli-agents
   description:
     en: 🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI
-    ru: 'TODO: перевод'
+    ru: AI-суперсилы кодинга — китайская расширенная версия superpowers
 - name: awesome-ai-system-prompts
   url: https://github.com/dontriskit/awesome-ai-system-prompts
   category: cli-agents
   description:
     en: 🧠 Curated collection of system prompts for top AI tools
-    ru: 'TODO: перевод'
+    ru: Кураторская подборка системных промптов топовых AI-инструментов
 - name: costrict
   url: https://github.com/zgsm-ai/costrict
   category: cli-agents
   description:
     en: Costrict - strict AI coder for enterprises, quality first, including AI Agent, AI CodeRevi
-    ru: 'TODO: перевод'
+    ru: 'Строгий AI-кодер для предприятий: качество прежде всего'
 - name: cc-skills-golang
   url: https://github.com/samber/cc-skills-golang
   category: cli-agents
   description:
     en: cc-skills-golang tool
-    ru: 'TODO: перевод'
+    ru: Навыки Claude Code для Go
 - name: sniffly
   url: https://github.com/chiphuyen/sniffly
   category: cli-agents
   description:
     en: Claude Code dashboard with usage stats, error analysis, and sharable feature
-    ru: 'TODO: перевод'
+    ru: 'Дашборд Claude Code: статистика использования, анализ ошибок'
 - name: Cougar-CLI
   url: https://github.com/dulikaifazr/Cougar-CLI
   category: cli-agents
   description:
     en: Cougar CLI - An AI programming agent for the command line
-    ru: 'TODO: перевод'
+    ru: AI-программирующий агент для командной строки
 - name: clawcodex
   url: https://github.com/agentforce314/clawcodex
   category: cli-agents
   description:
     en: Token efficient Claude Code full Python rebuild
-    ru: 'TODO: перевод'
+    ru: Эффективный по токенам полный Python-ребилд Claude Code
 - name: helixent
   url: https://github.com/MagicCube/helixent
   category: cli-agents
   description:
     en: Helixent is a small library for building ReAct-style AI agent loops based on the Bun stack
-    ru: 'TODO: перевод'
+    ru: Маленькая библиотека для ReAct-style циклов AI-агентов на Bun
 - name: mathcode
   url: https://github.com/math-ai-org/mathcode
   category: cli-agents
   description:
     en: 'MathCode: A Frontier Mathematical Coding Agent'
-    ru: 'TODO: перевод'
+    ru: Frontier математический кодинг-агент
 - name: mycoder
   url: https://github.com/bhouston/mycoder
   category: cli-agents
   description:
     en: Simple to install, powerful command-line based AI agent system for coding.
-    ru: 'TODO: перевод'
+    ru: Простой в установке мощный консольный AI-агент для кодинга
 - name: cc-switch
   url: https://github.com/farion1231/cc-switch
   category: editor-integrations
   description:
     en: A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw,
-    ru: 'TODO: перевод'
+    ru: Кроссплатформенный desktop All-in-One для Claude Code, Codex, OpenCode
 - name: graphify
   url: https://github.com/safishamsi/graphify
   category: editor-integrations
   description:
     en: AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more)
-    ru: 'TODO: перевод'
+    ru: Навык AI-ассистента кодинга (Claude Code, Codex, Cursor, Gemini)
 - name: OpenSpec
   url: https://github.com/Fission-AI/OpenSpec
   category: editor-integrations
   description:
     en: Spec-driven development (SDD) for AI coding assistants.
-    ru: 'TODO: перевод'
+    ru: Spec-driven разработка (SDD) для AI-ассистентов кодинга
 - name: posthog
   url: https://github.com/PostHog/posthog
   category: editor-integrations
   description:
     en: 🦔 PostHog is an all-in-one developer platform for building successful products
-    ru: 'TODO: перевод'
+    ru: 'All-in-one платформа для разработчиков: аналитика, фича-флаги, сессии'
 - name: tabby
   url: https://github.com/TabbyML/tabby
   category: editor-integrations
   description:
     en: Self-hosted AI coding assistant
-    ru: 'TODO: перевод'
+    ru: Self-hosted AI-ассистент кодинга
 - name: AionUi
   url: https://github.com/iOfficeAI/AionUi
   category: editor-integrations
   description:
     en: Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, O
-    ru: 'TODO: перевод'
+    ru: Free локальный 24/7 Cowork-апп для Claude Code, Codex, OpenCode
 - name: CVPR2024-Paper-Code-Interpretation
   url: https://github.com/extreme-assistant/CVPR2024-Paper-Code-Interpretation
   category: editor-integrations
   description:
     en: CVPR2024-Paper-Code-Interpretation tool
-    ru: 'TODO: перевод'
+    ru: Подборка статей/кода/разборов CVPR 2024
 - name: sweep
   url: https://github.com/sweepai/sweep
   category: editor-integrations
   description:
     en: 'Sweep: AI coding assistant for JetBrains'
-    ru: 'TODO: перевод'
+    ru: AI-ассистент кодинга для JetBrains
 - name: CopilotForXcode
   url: https://github.com/github/CopilotForXcode
   category: editor-integrations
   description:
     en: AI coding assistant for Xcode
-    ru: 'TODO: перевод'
+    ru: AI-ассистент кодинга для Xcode
 - name: openagent
   url: https://github.com/the-open-agent/openagent
   category: editor-integrations
   description:
     en: openagent tool
-    ru: 'TODO: перевод'
+    ru: Утилита openagent
 - name: agents-cli
   url: https://github.com/google/agents-cli
   category: editor-integrations
   description:
     en: The CLI and skills that turn any coding assistant into an expert at creating, evaluating,
-    ru: 'TODO: перевод'
+    ru: CLI и навыки, превращающие AI-ассистента в эксперта по агентам
 - name: claude-scholar
   url: https://github.com/Galaxy-Dawn/claude-scholar
   category: editor-integrations
   description:
     en: Semi-automated research assistant for academic research and software development
-    ru: 'TODO: перевод'
+    ru: Полуавтоматический исследовательский ассистент для науки и разработки
 - name: cc-switch-cli
   url: https://github.com/SaladDay/cc-switch-cli
   category: editor-integrations
   description:
     en: cc-switch-cli tool
-    ru: 'TODO: перевод'
+    ru: CLI-версия cc-switch
 - name: CodeGraphContext
   url: https://github.com/CodeGraphContext/CodeGraphContext
   category: editor-integrations
   description:
     en: An MCP server plus a CLI tool that indexes local code into a graph database to provide con
-    ru: 'TODO: перевод'
+    ru: 'MCP-сервер + CLI: индексирует код в графовую БД для контекста'
 - name: agentic-ai-prompt-research
   url: https://github.com/Leonxlnx/agentic-ai-prompt-research
   category: editor-integrations
   description:
     en: Research into how agentic AI coding assistants work
-    ru: 'TODO: перевод'
+    ru: Исследование работы агентных AI-ассистентов кодинга
 - name: ICCV2023-Paper-Code-Interpretation
   url: https://github.com/extreme-assistant/ICCV2023-Paper-Code-Interpretation
   category: editor-integrations
   description:
     en: ICCV2021/2019/2017 论文/代码/解读/直播合集，极市团队整理
-    ru: 'TODO: перевод'
+    ru: Подборка статей/кода/разборов ICCV 2023/2021/2019/2017
 - name: sketch
   url: https://github.com/approximatelabs/sketch
   category: editor-integrations
   description:
     en: AI code-writing assistant that understands data content
-    ru: 'TODO: перевод'
+    ru: AI-ассистент написания кода, понимающий содержимое данных
 - name: EvilClippy
   url: https://github.com/outflanknl/EvilClippy
   category: editor-integrations
   description:
     en: A cross-platform assistant for creating malicious MS Office documents
-    ru: 'TODO: перевод'
+    ru: Кроссплатформенный ассистент для создания вредоносных MS Office документов
 - name: deepseek-engineer
   url: https://github.com/Doriandarko/deepseek-engineer
   category: editor-integrations
   description:
     en: A powerful coding assistant application that integrates with the DeepSeek API to process u
-    ru: 'TODO: перевод'
+    ru: Мощный кодинг-ассистент на базе DeepSeek API
 - name: APIAuto
   url: https://github.com/TommyLemon/APIAuto
   category: editor-integrations
   description:
     en: APIAuto tool
-    ru: 'TODO: перевод'
+    ru: Утилита APIAuto
 - name: mcp-crawl4ai-rag
   url: https://github.com/coleam00/mcp-crawl4ai-rag
   category: editor-integrations
   description:
     en: Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants
-    ru: 'TODO: перевод'
+    ru: Веб-краулинг и RAG для AI-агентов и кодинг-ассистентов
 - name: zclaw
   url: https://github.com/tnm/zclaw
   category: editor-integrations
   description:
     en: Your personal AI assistant at all-in 888KiB (~35KB in app code)
-    ru: 'TODO: перевод'
+    ru: Личный AI-ассистент на 888 KiB (~35 КБ кода)
 - name: claude-code.nvim
   url: https://github.com/greggh/claude-code.nvim
   category: editor-integrations
   description:
     en: Seamless integration between Claude Code AI assistant and Neovim
-    ru: 'TODO: перевод'
+    ru: Бесшовная интеграция Claude Code с Neovim
 - name: arc-kit
   url: https://github.com/tractorjuice/arc-kit
   category: editor-integrations
   description:
     en: The Enterprise Architecture Governance Harness — strategy, architecture, delivery, and ass
-    ru: 'TODO: перевод'
+    ru: 'Харнес архитектурного управления предприятием: стратегия, архитектура, доставка'
 - name: pentest-ai-agents
   url: https://github.com/0xSteph/pentest-ai-agents
   category: editor-integrations
   description:
     en: Turn Claude Code into your offensive security research assistant
-    ru: 'TODO: перевод'
+    ru: Превращает Claude Code в ассистента offensive-security-исследований
 - name: WordPress/agent-skills
   url: https://github.com/WordPress/agent-skills
   category: editor-integrations
   description:
     en: Expert-level WordPress knowledge for AI coding assistants - blocks, themes, plugins, and b
-    ru: 'TODO: перевод'
+    ru: Экспертные знания WordPress для AI-ассистентов кодинга
 - name: natively-cluely-ai-assistant
   url: https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant
   category: editor-integrations
   description:
     en: Natively — Free open-source AI meeting assistant, interview copilot, and note taker
-    ru: 'TODO: перевод'
+    ru: Free open-source AI-ассистент встреч, интервью и заметок
 - name: codemcp
   url: https://github.com/ezyang/codemcp
   category: editor-integrations
   description:
     en: Coding assistant MCP for Claude Desktop
-    ru: 'TODO: перевод'
+    ru: Кодинг-ассистент MCP для Claude Desktop
 - name: aso-skills
   url: https://github.com/Eronred/aso-skills
   category: editor-integrations
   description:
     en: AI agent skills for App Store Optimization (ASO) and app marketing
-    ru: 'TODO: перевод'
+    ru: AI-навыки для App Store Optimization (ASO) и маркетинга приложений
 - name: callstackincubator/agent-skills
   url: https://github.com/callstackincubator/agent-skills
   category: editor-integrations
   description:
     en: A collection of agent-optimized React Native skills for AI coding assistants.
-    ru: 'TODO: перевод'
+    ru: React Native навыки для AI-ассистентов кодинга
 - name: ai-legal-claude
   url: https://github.com/zubair-trabzada/ai-legal-claude
   category: editor-integrations
   description:
     en: AI Legal Assistant skill for Claude Code
-    ru: 'TODO: перевод'
+    ru: AI-юридический ассистент — навык для Claude Code
 - name: GreasyFork-Scripts
   url: https://github.com/F9y4ng/GreasyFork-Scripts
   category: editor-integrations
   description:
     en: The open source code of this project is used for userscripts (油猴脚本) for desktop browsers,
-    ru: 'TODO: перевод'
+    ru: Open-source userscripts (скрипты Tampermonkey) для десктоп-браузеров
 - name: apple-docs-mcp
   url: https://github.com/kimsungwhee/apple-docs-mcp
   category: editor-integrations
   description:
     en: MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC v
-    ru: 'TODO: перевод'
+    ru: 'MCP-сервер документации Apple: iOS/macOS/SwiftUI, видео WWDC'
 - name: codefuse-chatbot
   url: https://github.com/codefuse-ai/codefuse-chatbot
   category: editor-integrations
   description:
     en: An intelligent assistant serving the entire software development lifecycle, powered by a M
-    ru: 'TODO: перевод'
+    ru: Умный ассистент жизненного цикла разработки на MaaS
 - name: ClaudeBar
   url: https://github.com/tddworks/ClaudeBar
   category: editor-integrations
   description:
     en: A macOS menu bar application that monitors AI coding assistant usage quotas
-    ru: 'TODO: перевод'
+    ru: 'macOS-меню приложение: мониторинг квот AI-ассистентов кодинга'
 - name: rockpack
   url: https://github.com/AlexSergey/rockpack
   category: editor-integrations
   description:
     en: Zero-config React with built-in SSR, automated quality gates, and AI-ready project structu
-    ru: 'TODO: перевод'
+    ru: Zero-config React со встроенным SSR и AI-ready структурой проекта
 - name: agents
   url: https://github.com/inkeep/agents
   category: editor-integrations
   description:
     en: Create AI Agents in a No-Code Visual Builder or TypeScript SDK with full 2-way sync
-    ru: 'TODO: перевод'
+    ru: Создание AI-агентов в no-code билдере или TypeScript SDK
 - name: RooFlow
   url: https://github.com/GreatScottyMac/RooFlow
   category: editor-integrations
   description:
     en: RooFlow - Enhanced Memory Bank System with ☢️Footgun Power☢️  Next-gen Memory Bank system
-    ru: 'TODO: перевод'
+    ru: Улучшенная система Memory Bank для агентов
 - name: vim-ai
   url: https://github.com/madox2/vim-ai
   category: editor-integrations
   description:
     en: AI-powered code assistant for Vim
-    ru: 'TODO: перевод'
+    ru: AI-ассистент кода для Vim
 - name: claudebox
   url: https://github.com/RchGrav/claudebox
   category: editor-integrations
   description:
     en: The Ultimate Claude Code Docker Development Environment - Run Claude AI's coding assistant
-    ru: 'TODO: перевод'
+    ru: Docker-среда разработки для Claude Code
 - name: global-stock-data
   url: https://github.com/simonlin1212/global-stock-data
   category: editor-integrations
   description:
     en: global-stock-data tool
-    ru: 'TODO: перевод'
+    ru: Утилита global-stock-data
 - name: openobserve
   url: https://github.com/openobserve/openobserve
   category: observability-eval
   description:
     en: Open source observability platform for logs, metrics, traces, frontend monitoring, pipelin
-    ru: 'TODO: перевод'
+    ru: 'Open-source платформа наблюдаемости: логи, метрики, трейсы, мониторинг'
 - name: RagaAI-Catalyst
   url: https://github.com/raga-ai-hub/RagaAI-Catalyst
   category: observability-eval
   description:
     en: Python SDK for Agent AI Observability, Monitoring and Evaluation Framework
-    ru: 'TODO: перевод'
+    ru: Python SDK для наблюдаемости, мониторинга и оценки Agent AI
 - name: bisheng
   url: https://github.com/dataelement/bisheng
   category: observability-eval
   description:
     en: BISHENG is an open LLM devops platform for next generation Enterprise AI applications
-    ru: 'TODO: перевод'
+    ru: Open LLM DevOps платформа для enterprise AI-приложений
 - name: evidently
   url: https://github.com/evidentlyai/evidently
   category: observability-eval
   description:
     en: Evidently is ​​an open-source ML and LLM observability framework
-    ru: 'TODO: перевод'
+    ru: Open-source фреймворк наблюдаемости ML и LLM
 - name: openllmetry
   url: https://github.com/traceloop/openllmetry
   category: observability-eval
   description:
     en: Open-source observability for your GenAI or LLM application, based on OpenTelemetry
-    ru: 'TODO: перевод'
+    ru: Open-source наблюдаемость для GenAI/LLM на базе OpenTelemetry
 - name: plano
   url: https://github.com/katanemo/plano
   category: observability-eval
   description:
     en: Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,
-    ru: 'TODO: перевод'
+    ru: AI-native прокси и дата-плоскость для агентных приложений
 - name: logfire
   url: https://github.com/pydantic/logfire
   category: observability-eval
   description:
     en: AI observability platform for production LLM and agent systems.
-    ru: 'TODO: перевод'
+    ru: Платформа наблюдаемости для production LLM и агентных систем
 - name: agenta
   url: https://github.com/Agenta-AI/agenta
   category: observability-eval
   description:
     en: 'The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and'
-    ru: 'TODO: перевод'
+    ru: 'Open-source LLMOps: prompt playground, оценка LLM, управление'
 - name: trench
   url: https://github.com/FrigadeHQ/trench
   category: observability-eval
   description:
     en: Trench — Open-Source Analytics Infrastructure
-    ru: 'TODO: перевод'
+    ru: Open-source инфраструктура аналитики
 - name: prompty
   url: https://github.com/microsoft/prompty
   category: observability-eval
   description:
     en: Prompty makes it easy to create, manage, debug, and evaluate LLM prompts for your AI appli
-    ru: 'TODO: перевод'
+    ru: Создание, управление и оценка LLM-промптов для AI-приложений
 - name: langtrace
   url: https://github.com/Scale3-Labs/langtrace
   category: observability-eval
   description:
     en: Langtrace 🔍 is an open-source,  Open Telemetry based end-to-end observability tool for LLM
-    ru: 'TODO: перевод'
+    ru: Open-source end-to-end наблюдаемость LLM на OpenTelemetry
 - name: langkit
   url: https://github.com/whylabs/langkit
   category: observability-eval
   description:
     en: '🔍 LangKit: An open-source toolkit for monitoring Large Language Models (LLMs)'
-    ru: 'TODO: перевод'
+    ru: Open-source тулкит мониторинга больших языковых моделей
 - name: ECC
   url: https://github.com/affaan-m/ECC
   category: other
   description:
     en: The agent harness performance optimization system
-    ru: 'TODO: перевод'
+    ru: Система оптимизации производительности agent-харнеса
 - name: hermes-agent
   url: https://github.com/NousResearch/hermes-agent
   category: other
   description:
     en: The agent that grows with you
-    ru: 'TODO: перевод'
+    ru: Агент, который растёт вместе с вами
 - name: AutoGPT
   url: https://github.com/Significant-Gravitas/AutoGPT
   category: other
   description:
     en: AutoGPT is the vision of accessible AI for everyone, to use and to build on
-    ru: 'TODO: перевод'
+    ru: 'AutoGPT — доступный AI для всех: использование и развитие'
 - name: ollama
   url: https://github.com/ollama/ollama
   category: other
   description:
     en: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and ot
-    ru: 'TODO: перевод'
+    ru: Запуск Kimi, GLM, DeepSeek, gpt-oss, Qwen, Gemma и др. локально
 - name: transformers
   url: https://github.com/huggingface/transformers
   category: other
   description:
     en: '🤗 Transformers: the model-definition framework for state-of-the-art machine learning model'
-    ru: 'TODO: перевод'
+    ru: Фреймворк определения моделей для state-of-the-art ML
 - name: langflow
   url: https://github.com/langflow-ai/langflow
   category: other
   description:
     en: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.
-    ru: 'TODO: перевод'
+    ru: Мощный инструмент создания и деплоя AI-агентов и воркфлоу
 - name: dify
   url: https://github.com/langgenius/dify
   category: other
   description:
     en: Production-ready platform for agentic workflow development.
-    ru: 'TODO: перевод'
+    ru: Production-готовая платформа для разработки агентных воркфлоу
 - name: open-webui
   url: https://github.com/open-webui/open-webui
   category: other
   description:
     en: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
-    ru: 'TODO: перевод'
+    ru: Удобный AI-интерфейс (Ollama, OpenAI API и др.)
 - name: firecrawl
   url: https://github.com/firecrawl/firecrawl
   category: other
   description:
     en: The API to search, scrape, and interact with the web at scale
-    ru: 'TODO: перевод'
+    ru: API для поиска, скрейпинга и работы с вебом в масштабе
 - name: langchain
   url: https://github.com/langchain-ai/langchain
   category: other
   description:
     en: The agent engineering platform.
-    ru: 'TODO: перевод'
+    ru: Платформа agent-инжиниринга
 - name: browser-use
   url: https://github.com/browser-use/browser-use
   category: other
   description:
     en: 🌐 Make websites accessible for AI agents
-    ru: 'TODO: перевод'
+    ru: Делает сайты доступными для AI-агентов
 - name: LLMs-from-scratch
   url: https://github.com/rasbt/LLMs-from-scratch
   category: other
   description:
     en: Implement a ChatGPT-like LLM in PyTorch from scratch, step by step
-    ru: 'TODO: перевод'
+    ru: Реализация LLM типа ChatGPT на PyTorch с нуля, шаг за шагом
 - name: TradingAgents
   url: https://github.com/TauricResearch/TradingAgents
   category: other
   description:
     en: 'TradingAgents: Multi-Agents LLM Financial Trading Framework'
-    ru: 'TODO: перевод'
+    ru: Мультиагентный LLM-фреймворк для финансового трейдинга
 - name: vllm
   url: https://github.com/vllm-project/vllm
   category: other
   description:
     en: A high-throughput and memory-efficient inference and serving engine for LLMs
-    ru: 'TODO: перевод'
+    ru: Высокопроизводительный движок инференса и сервинга LLM
 - name: ragflow
   url: https://github.com/infiniflow/ragflow
   category: other
   description:
     en: RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cu
-    ru: 'TODO: перевод'
+    ru: Open-source RAG-движок, объединяющий глубокое понимание документов
 - name: llm-course
   url: https://github.com/mlabonne/llm-course
   category: other
   description:
     en: Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.
-    ru: 'TODO: перевод'
+    ru: Курс по большим языковым моделям с roadmap и Colab-ноутбуками
 - name: OpenHands/OpenHands
   url: https://github.com/OpenHands/OpenHands
   category: other
   description:
     en: '🙌 OpenHands: AI-Driven Development'
-    ru: 'TODO: перевод'
+    ru: OpenHands — разработка на базе AI
 - name: deer-flow
   url: https://github.com/bytedance/deer-flow
   category: other
   description:
     en: An open-source long-horizon SuperAgent harness that researches, codes, and creates
-    ru: 'TODO: перевод'
+    ru: 'Open-source харнес SuperAgent: исследования, код, креатив'
 - name: Front-End-Checklist
   url: https://github.com/thedaviddias/Front-End-Checklist
   category: other
   description:
     en: 🗂 The essential checklist for modern web development, for humans and AI agents
-    ru: 'TODO: перевод'
+    ru: Обязательный чеклист современной веб-разработки для людей и AI
 - name: LlamaFactory
   url: https://github.com/hiyouga/LlamaFactory
   category: other
   description:
     en: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
-    ru: 'TODO: перевод'
+    ru: Унифицированный эффективный fine-tuning 100+ LLM и VLM (ACL 2024)
 - name: daytona
   url: https://github.com/daytonaio/daytona
   category: other
   description:
     en: Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code
-    ru: 'TODO: перевод'
+    ru: Безопасная эластичная инфраструктура для AI-сгенерированного кода
 - name: gpt_academic
   url: https://github.com/binary-husky/gpt_academic
   category: other
   description:
     en: gpt_academic tool
-    ru: 'TODO: перевод'
+    ru: Утилита gpt_academic
 - name: learn-claude-code
   url: https://github.com/shareAI-lab/learn-claude-code
   category: other
   description:
     en: Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1
-    ru: 'TODO: перевод'
+    ru: 'Bash — всё что нужно: нано agent-харнес в стиле Claude Code с нуля'
 - name: MetaGPT
   url: https://github.com/FoundationAgents/MetaGPT
   category: other
   description:
     en: '🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programmi'
-    ru: 'TODO: перевод'
+    ru: 'Мультиагентный фреймворк: первая AI software-компания'
 - name: ai-agents-for-beginners
   url: https://github.com/microsoft/ai-agents-for-beginners
   category: other
   description:
     en: ai-agents-for-beginners tool
-    ru: 'TODO: перевод'
+    ru: AI-агенты для начинающих
 - name: rtk
   url: https://github.com/rtk-ai/rtk
   category: other
   description:
     en: CLI proxy that reduces LLM token consumption by 60-90% on common dev commands
-    ru: 'TODO: перевод'
+    ru: 'CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах'
 - name: unsloth
   url: https://github.com/unslothai/unsloth
   category: other
   description:
     en: Unsloth Studio is a web UI for training and running open models like Gemma 4, Qwen3.6, Dee
-    ru: 'TODO: перевод'
+    ru: Веб-UI для обучения и запуска open-моделей (Gemma, Qwen, DeepSeek)
 - name: awesome-claude-skills
   url: https://github.com/ComposioHQ/awesome-claude-skills
   category: other
   description:
     en: A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI wo
-    ru: 'TODO: перевод'
+    ru: Кураторский список Claude Skills, ресурсов и инструментов
 - name: oh-my-openagent
   url: https://github.com/code-yeongyu/oh-my-openagent
   category: other
   description:
     en: oh-my-openagent tool
-    ru: 'TODO: перевод'
+    ru: Утилита oh-my-openagent
 - name: hello-agents
   url: https://github.com/datawhalechina/hello-agents
   category: other
   description:
     en: hello-agents tool
-    ru: 'TODO: перевод'
+    ru: Утилита hello-agents
 - name: anything-llm
   url: https://github.com/Mintplex-Labs/anything-llm
   category: other
   description:
     en: Stop renting your intelligence
-    ru: 'TODO: перевод'
+    ru: Перестаньте арендовать свой интеллект
 - name: mem0
   url: https://github.com/mem0ai/mem0
   category: other
   description:
     en: Universal memory layer for AI Agents
-    ru: 'TODO: перевод'
+    ru: Универсальный слой памяти для AI-агентов
 - name: llm-app
   url: https://github.com/pathwaycom/llm-app
   category: other
   description:
     en: Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data
-    ru: 'TODO: перевод'
+    ru: Готовые облачные шаблоны для RAG, AI-пайплайнов и enterprise-поиска
 - name: mempalace
   url: https://github.com/MemPalace/mempalace
   category: other
   description:
     en: The best-benchmarked open-source AI memory system
-    ru: 'TODO: перевод'
+    ru: Лучший по бенчмаркам open-source AI-слой памяти
 - name: crewAI
   url: https://github.com/crewAIInc/crewAI
   category: other
   description:
     en: Framework for orchestrating role-playing, autonomous AI agents
-    ru: 'TODO: перевод'
+    ru: Фреймворк оркестрации ролевых автономных AI-агентов
 - name: Flowise
   url: https://github.com/FlowiseAI/Flowise
   category: other
   description:
     en: Build AI Agents, Visually
-    ru: 'TODO: перевод'
+    ru: Визуальное построение AI-агентов
 - name: daily_stock_analysis
   url: https://github.com/ZhuLinsen/daily_stock_analysis
   category: other
   description:
     en: LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis
-    ru: 'TODO: перевод'
+    ru: 'LLM-система анализа акций: мульти-рынок, новости, дашборд, авто-пуш'
 - name: litellm
   url: https://github.com/BerriAI/litellm
   category: other
   description:
     en: Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format,
-    ru: 'TODO: перевод'
+    ru: Python SDK и прокси-сервер для 100+ LLM API в формате OpenAI
 - name: llama_index
   url: https://github.com/run-llama/llama_index
   category: other
   description:
     en: LlamaIndex is the leading document agent and OCR platform
-    ru: 'TODO: перевод'
+    ru: Ведущая платформа document-агентов и OCR
 - name: awesome-claude-code
   url: https://github.com/hesreallyhim/awesome-claude-code
   category: other
   description:
     en: A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications
-    ru: 'TODO: перевод'
+    ru: Кураторский список навыков, хуков, команд и оркестраторов Claude Code
 - name: LocalAI
   url: https://github.com/mudler/LocalAI
   category: other
   description:
     en: LocalAI is the open-source AI engine
-    ru: 'TODO: перевод'
+    ru: Open-source AI-движок для локального запуска
 - name: JeecgBoot
   url: https://github.com/jeecgboot/JeecgBoot
   category: other
   description:
     en: AI 低代码平台「低代码 + 零代码」双驱动！低代码可一键生成前后端代码;零代码可 5 分钟搭建系统;AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI聊天、知识
-    ru: 'TODO: перевод'
+    ru: 'AI low-code платформа: низкий + нулевой код, генерация систем одной фразой'
 - name: CowAgent
   url: https://github.com/zhayujie/CowAgent
   category: other
   description:
     en: Open-source super AI assistant & Agent Harness
-    ru: 'TODO: перевод'
+    ru: Open-source супер-AI-ассистент и agent-харнес
 - name: milvus
   url: https://github.com/milvus-io/milvus
   category: other
   description:
     en: Milvus is a high-performance, cloud-native vector database built for scalable vector ANN s
-    ru: 'TODO: перевод'
+    ru: Высокопроизводительная cloud-native векторная БД для масштабного ANN-поиска
 - name: nanobot
   url: https://github.com/HKUDS/nanobot
   category: other
   description:
     en: Lightweight, open-source AI agent for your tools, chats, and workflows.
-    ru: 'TODO: перевод'
+    ru: Легковесный open-source AI-агент для инструментов, чатов и воркфлоу
 - name: jan
   url: https://github.com/janhq/jan
   category: other
   description:
     en: Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
-    ru: 'TODO: перевод'
+    ru: Open-source аналог ChatGPT, работающий оффлайн на вашем компьютере
 - name: ray
   url: https://github.com/ray-project/ray
   category: other
   description:
     en: Ray is an AI compute engine
-    ru: 'TODO: перевод'
+    ru: Движок AI-вычислений
 - name: antigravity-awesome-skills
   url: https://github.com/sickn33/antigravity-awesome-skills
   category: other
   description:
     en: Installable GitHub library of 1,800+ agentic skills for Claude Code, Cursor, Codex CLI, Ge
-    ru: 'TODO: перевод'
+    ru: Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex
 - name: agno
   url: https://github.com/agno-agi/agno
   category: other
   description:
     en: Build, run, and manage agent platforms.
-    ru: 'TODO: перевод'
+    ru: Создание, запуск и управление agent-платформами
 - name: ChatTTS
   url: https://github.com/2noise/ChatTTS
   category: other
   description:
     en: A generative speech model for daily dialogue.
-    ru: 'TODO: перевод'
+    ru: Генеративная модель речи для повседневных диалогов
 - name: CodeWhale
   url: https://github.com/Hmbown/CodeWhale
   category: other
   description:
     en: Open-source, community-driven agent harness
-    ru: 'TODO: перевод'
+    ru: Open-source community-driven agent-харнес
 - name: quivr
   url: https://github.com/QuivrHQ/quivr
   category: other
   description:
     en: Opiniated RAG for integrating GenAI in your apps 🧠   Focus on your product rather than the
-    ru: 'TODO: перевод'
+    ru: Opinionated RAG для интеграции GenAI в приложения
 - name: Langchain-Chatchat
   url: https://github.com/chatchat-space/Langchain-Chatchat
   category: other
   description:
     en: Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型的 RAG 与 Ag
-    ru: 'TODO: перевод'
+    ru: RAG и агенты на Langchain + ChatGLM/Qwen/Llama
 - name: LightRAG
   url: https://github.com/HKUDS/LightRAG
   category: other
   description:
     en: LightRAG tool
-    ru: 'TODO: перевод'
+    ru: Утилита LightRAG
 - name: ai-engineering-from-scratch
   url: https://github.com/rohitg00/ai-engineering-from-scratch
   category: other
   description:
     en: Learn it
-    ru: 'TODO: перевод'
+    ru: AI-инжиниринг с нуля
 - name: langextract
   url: https://github.com/google/langextract
   category: other
   description:
     en: A Python library for extracting structured information from unstructured text using LLMs w
-    ru: 'TODO: перевод'
+    ru: Python-библиотека извлечения структуры из текста через LLM
 - name: langgraph
   url: https://github.com/langchain-ai/langgraph
   category: other
   description:
     en: Build resilient agents.
-    ru: 'TODO: перевод'
+    ru: Построение устойчивых агентов
 - name: Vane
   url: https://github.com/ItzCrazyKns/Vane
   category: other
   description:
     en: Vane is an AI-powered answering engine.
-    ru: 'TODO: перевод'
+    ru: AI-powered поисковый движок ответов
 - name: PageIndex
   url: https://github.com/VectifyAI/PageIndex
   category: other
   description:
     en: '📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG'
-    ru: 'TODO: перевод'
+    ru: Индекс документов для reasoning-based RAG без векторов
 - name: 500-AI-Agents-Projects
   url: https://github.com/ashishpatel26/500-AI-Agents-Projects
   category: other
   description:
     en: The 500 AI Agents Projects is a curated collection of AI agent use cases across various in
-    ru: 'TODO: перевод'
+    ru: Подборка 500 кейсов AI-агентов в разных индустриях
 - name: nanoclaw
   url: https://github.com/nanocoai/nanoclaw
   category: other
   description:
     en: A lightweight alternative to OpenClaw that runs in containers for security
-    ru: 'TODO: перевод'
+    ru: Легковесная альтернатива OpenClaw в контейнерах для безопасности
 - name: storm
   url: https://github.com/stanford-oval/storm
   category: other
   description:
     en: An LLM-powered knowledge curation system that researches a topic and generates a full-leng
-    ru: 'TODO: перевод'
+    ru: 'LLM-система курирования знаний: исследование темы и генерация статьи'
 - name: composio
   url: https://github.com/ComposioHQ/composio
   category: other
   description:
     en: Composio powers 1000+ toolkits, tool search, context management, authentication, and a san
-    ru: 'TODO: перевод'
+    ru: 1000+ тулкитов, поиск инструментов, контекст и аутентификация для агентов
 - name: chroma
   url: https://github.com/chroma-core/chroma
   category: other
   description:
     en: Search infrastructure for AI
-    ru: 'TODO: перевод'
+    ru: Поисковая инфраструктура для AI
 - name: awesome-generative-ai-guide
   url: https://github.com/aishwaryanr/awesome-generative-ai-guide
   category: other
   description:
     en: A one stop repository for generative AI research updates, interview resources, notebooks a
-    ru: 'TODO: перевод'
+    ru: 'Единый репо: GenAI-исследования, интервью, ноутбуки'
 - name: FinceptTerminal
   url: https://github.com/Fincept-Corporation/FinceptTerminal
   category: other
   description:
     en: FinceptTerminal is a modern finance application offering advanced market analytics, invest
-    ru: 'TODO: перевод'
+    ru: 'Современное финанс-приложение: аналитика рынков, инвестиции'
 - name: CloakBrowser
   url: https://github.com/CloakHQ/CloakBrowser
   category: other
   description:
     en: Stealth Chromium that passes every bot detection test
-    ru: 'TODO: перевод'
+    ru: Стелс-Chromium, проходящий любые проверки на ботов
 - name: agentscope
   url: https://github.com/agentscope-ai/agentscope
   category: other
   description:
     en: Build and run agents you can see, understand and trust.
-    ru: 'TODO: перевод'
+    ru: Создание и запуск агентов, которым видно, понимаешь и доверяешь
 - name: Hands-On-Large-Language-Models
   url: https://github.com/HandsOnLLM/Hands-On-Large-Language-Models
   category: other
   description:
     en: Official code repo for the O'Reilly Book - "Hands-On Large Language Models"
-    ru: 'TODO: перевод'
+    ru: Код к книге O'Reilly «Hands-On Large Language Models»
 - name: vibe-kanban
   url: https://github.com/BloopAI/vibe-kanban
   category: other
   description:
     en: Get 10X more out of Claude Code, Codex or any coding agent
-    ru: 'TODO: перевод'
+    ru: Получите в 10 раз больше от Claude Code, Codex и любого кодинг-агента
 - name: kestra
   url: https://github.com/kestra-io/kestra
   category: other
   description:
     en: Event Driven Orchestration & Scheduling Platform for Mission Critical Applications
-    ru: 'TODO: перевод'
+    ru: Event-driven платформа оркестрации и планирования для критичных приложений
 - name: awesome-agent-skills
   url: https://github.com/VoltAgent/awesome-agent-skills
   category: other
   description:
     en: A curated collection of 1000+ agent skills from official dev teams and the community, comp
-    ru: 'TODO: перевод'
+    ru: Подборка 1000+ агентных навыков от команд и сообщества
 - name: cognee
   url: https://github.com/topoteretes/cognee
   category: other
   description:
     en: Cognee is the open-source AI memory platform for agents
-    ru: 'TODO: перевод'
+    ru: Open-source AI-платформа памяти для агентов
 - name: OpenCLI
   url: https://github.com/jackwener/OpenCLI
   category: other
   description:
     en: Make Any Website into CLI & Use your logged-in browser by AI agent
-    ru: 'TODO: перевод'
+    ru: Превращает любой сайт в CLI и использует залогиненный браузер AI-агентом
 - name: haystack
   url: https://github.com/deepset-ai/haystack
   category: other
   description:
     en: Open-source AI orchestration framework for building context-engineered, production-ready L
-    ru: 'TODO: перевод'
+    ru: Open-source AI-фреймворк оркестрации для production LLM-приложений
 - name: DeepTutor
   url: https://github.com/HKUDS/DeepTutor
   category: other
   description:
     en: 'DeepTutor: Agent-native Personalized Tutoring'
-    ru: 'TODO: перевод'
+    ru: Agent-native персонализированный тьютор
 - name: Qwen
   url: https://github.com/QwenLM/Qwen
   category: other
   description:
     en: The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibab
-    ru: 'TODO: перевод'
+    ru: Официальный репо Qwen (通义千问) — чат и предобученные LLM от Alibaba
 - name: machine-learning-for-trading
   url: https://github.com/stefan-jansen/machine-learning-for-trading
   category: other
   description:
     en: Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.
-    ru: 'TODO: перевод'
+    ru: Код к «Machine Learning for Trading», 3-е издание
 - name: Chinese-LLaMA-Alpaca
   url: https://github.com/ymcui/Chinese-LLaMA-Alpaca
   category: other
   description:
     en: Chinese-LLaMA-Alpaca tool
-    ru: 'TODO: перевод'
+    ru: 'Chinese-LLaMA-Alpaca: LLaMA/Alpaca для китайского'
 - name: ml-engineering
   url: https://github.com/stas00/ml-engineering
   category: other
   description:
     en: Machine Learning Engineering Open Book
-    ru: 'TODO: перевод'
+    ru: Открытая книга по ML-инжинирингу
 - name: Awesome-Multimodal-Large-Language-Models
   url: https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models
   category: other
   description:
     en: Awesome-Multimodal-Large-Language-Models tool
-    ru: 'TODO: перевод'
+    ru: Подборка по мультимодальным большим языковым моделям
 - name: camel
   url: https://github.com/camel-ai/camel
   category: other
   description:
     en: '🐫 CAMEL: The first and the best multi-agent framework'
-    ru: 'TODO: перевод'
+    ru: CAMEL — первый и лучший мультиагентный фреймворк
 - name: Megatron-LM
   url: https://github.com/NVIDIA/Megatron-LM
   category: other
   description:
     en: Ongoing research training transformer models at scale
-    ru: 'TODO: перевод'
+    ru: Текущие исследования обучения трансформеров в масштабе
 - name: ChatGLM2-6B
   url: https://github.com/zai-org/ChatGLM2-6B
   category: other
   description:
     en: 'ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型'
-    ru: 'TODO: перевод'
+    ru: ChatGLM2-6B — open-source билингвальный чат-LM
 - name: ggml
   url: https://github.com/ggml-org/ggml
   category: other
   description:
     en: Tensor library for machine learning
-    ru: 'TODO: перевод'
+    ru: Тензорная библиотека для машинного обучения
 - name: DeepLearningExamples
   url: https://github.com/NVIDIA/DeepLearningExamples
   category: other
   description:
     en: State-of-the-Art Deep Learning scripts organized by models - easy to train and deploy with
-    ru: 'TODO: перевод'
+    ru: State-of-the-Art скрипты глубокого обучения, организованные по моделям
 - name: PentestGPT
   url: https://github.com/GreyDGL/PentestGPT
   category: other
   description:
     en: Automated Penetration Testing Agentic Framework Powered by Large Language Models
-    ru: 'TODO: перевод'
+    ru: Агентный фреймворк автоматического пентеста на базе LLM
 - name: litgpt
   url: https://github.com/Lightning-AI/litgpt
   category: other
   description:
     en: litgpt tool
-    ru: 'TODO: перевод'
+    ru: Утилита litgpt
 - name: open-llms
   url: https://github.com/eugeneyan/open-llms
   category: other
   description:
     en: 📋 A list of open LLMs available for commercial use.
-    ru: 'TODO: перевод'
+    ru: Список открытых LLM, доступных для коммерческого использования
 - name: txtai
   url: https://github.com/neuml/txtai
   category: other
   description:
     en: 💡 All-in-one AI framework for semantic search, LLM orchestration and language model workfl
-    ru: 'TODO: перевод'
+    ru: 'All-in-one AI-фреймворк: семантический поиск, оркестрация LLM'
 - name: HRM
   url: https://github.com/sapientinc/HRM
   category: other
   description:
     en: Hierarchical Reasoning Model Official Release
-    ru: 'TODO: перевод'
+    ru: Hierarchical Reasoning Model — официальный релиз
 - name: PocketFlow-Tutorial-Codebase-Knowledge
   url: https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
   category: other
   description:
     en: 'Pocket Flow: Codebase to Tutorial'
-    ru: 'TODO: перевод'
+    ru: Pocket Flow — от кодовой базы к туториалу
 - name: awesome-generative-ai
   url: https://github.com/steven2358/awesome-generative-ai
   category: other
   description:
     en: A curated list of modern Generative Artificial Intelligence projects and services
-    ru: 'TODO: перевод'
+    ru: Кураторский список современных GenAI-проектов и сервисов
 - name: LLMSurvey
   url: https://github.com/RUCAIBox/LLMSurvey
   category: other
   description:
     en: The official GitHub page for the survey paper "A Survey of Large Language Models".
-    ru: 'TODO: перевод'
+    ru: Страница обзора «A Survey of Large Language Models»
 - name: MOSS
   url: https://github.com/OpenMOSS/MOSS
   category: other
   description:
     en: An open-source tool-augmented conversational language model from Fudan University
-    ru: 'TODO: перевод'
+    ru: Open-source tool-augmented разговорная языковая модель от Fudan University
 - name: PocketFlow
   url: https://github.com/The-Pocket/PocketFlow
   category: other
   description:
     en: 'Pocket Flow: 100-line LLM framework'
-    ru: 'TODO: перевод'
+    ru: Pocket Flow — LLM-фреймворк на 100 строк
 - name: llm-engineer-toolkit
   url: https://github.com/KalyanKS-NLP/llm-engineer-toolkit
   category: other
   description:
     en: A curated list of  120+ LLM libraries category wise
-    ru: 'TODO: перевод'
+    ru: Кураторский список 120+ LLM-библиотек по категориям
 - name: petals
   url: https://github.com/bigscience-workshop/petals
   category: other
   description:
     en: 🌸 Run LLMs at home, BitTorrent-style
-    ru: 'TODO: перевод'
+    ru: Запуск LLM дома, в стиле BitTorrent
 - name: LLMsPracticalGuide
   url: https://github.com/Mooler0410/LLMsPracticalGuide
   category: other
   description:
     en: A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers)
-    ru: 'TODO: перевод'
+    ru: Кураторский список практических ресурсов по LLM
 - name: OpenRLHF
   url: https://github.com/OpenRLHF/OpenRLHF
   category: other
   description:
     en: An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAP
-    ru: 'TODO: перевод'
+    ru: Простой, масштабируемый и быстрый агентный RL-фреймворк на Ray (PPO и DAP)
 - name: PowerInfer
   url: https://github.com/Tiiny-AI/PowerInfer
   category: other
   description:
     en: High-speed Large Language Model Serving for Local Deployment
-    ru: 'TODO: перевод'
+    ru: Высокоскоростной сервинг LLM для локального деплоя
 - name: anomaly-detection-resources
   url: https://github.com/yzhao062/anomaly-detection-resources
   category: other
   description:
     en: Anomaly detection related books, papers, videos, and toolboxes
-    ru: 'TODO: перевод'
+    ru: Книги, статьи, видео и тулбоксы по обнаружению аномалий
 - name: deeplake
   url: https://github.com/activeloopai/deeplake
   category: other
   description:
     en: Deeplake is AI Data Runtime for Agents
-    ru: 'TODO: перевод'
+    ru: AI Data Runtime для агентов
 - name: VAR
   url: https://github.com/FoundationVision/VAR
   category: other
   description:
     en: VAR tool
-    ru: 'TODO: перевод'
+    ru: Утилита VAR
 - name: awesome-LLM-resources
   url: https://github.com/WangRongsheng/awesome-LLM-resources
   category: other
   description:
     en: awesome-LLM-resources tool
-    ru: 'TODO: перевод'
+    ru: Утилита awesome-LLM-resources
 - name: optimate
   url: https://github.com/nebuly-ai/optimate
   category: other
   description:
     en: A collection of libraries to optimise AI model performances
-    ru: 'TODO: перевод'
+    ru: Коллекция библиотек оптимизации производительности AI-моделей
 - name: n8n
   url: https://github.com/n8n-io/n8n
   category: prompt-mcp
   description:
     en: Fair-code workflow automation platform with native AI capabilities
-    ru: 'TODO: перевод'
+    ru: Платформа автоматизации воркфлоу с нативными AI-возможностями
 - name: prompts.chat
   url: https://github.com/f/prompts.chat
   category: prompt-mcp
   description:
     en: prompts.chat tool
-    ru: 'TODO: перевод'
+    ru: Утилита prompts.chat
 - name: generative-ai-for-beginners
   url: https://github.com/microsoft/generative-ai-for-beginners
   category: prompt-mcp
   description:
     en: generative-ai-for-beginners tool
-    ru: 'TODO: перевод'
+    ru: GenAI для начинающих
 - name: gemini-cli
   url: https://github.com/google-gemini/gemini-cli
   category: prompt-mcp
   description:
     en: An open-source AI agent that brings the power of Gemini directly into your terminal.
-    ru: 'TODO: перевод'
+    ru: 'Open-source AI-агент: brings Gemini прямо в терминал'
 - name: caveman
   url: https://github.com/JuliusBrussee/caveman
   category: prompt-mcp
   description:
     en: caveman tool
-    ru: 'TODO: перевод'
+    ru: Утилита caveman
 - name: Prompt-Engineering-Guide
   url: https://github.com/dair-ai/Prompt-Engineering-Guide
   category: prompt-mcp
   description:
     en: 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context enginee
-    ru: 'TODO: перевод'
+    ru: Гайды, статьи, ноутбуки по prompt engineering
 - name: Scrapling
   url: https://github.com/D4Vinci/Scrapling
   category: prompt-mcp
   description:
     en: 🕷️ An adaptive Web Scraping framework that handles everything from a single request to a f
-    ru: 'TODO: перевод'
+    ru: Адаптивный фреймворк веб-скрейпинга — от запроса до пайплайна
 - name: TrendRadar
   url: https://github.com/sansan0/TrendRadar
   category: prompt-mcp
   description:
     en: TrendRadar tool
-    ru: 'TODO: перевод'
+    ru: Утилита TrendRadar
 - name: headroom
   url: https://github.com/headroomlabs-ai/headroom
   category: prompt-mcp
   description:
     en: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM
-    ru: 'TODO: перевод'
+    ru: Сжатие выводов инструментов, логов и RAG-чанков до LLM
 - name: system_prompts_leaks
   url: https://github.com/asgeirtj/system_prompts_leaks
   category: prompt-mcp
   description:
     en: Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude De
-    ru: 'TODO: перевод'
+    ru: 'Извлечённые системные промпты Anthropic: Claude Fable 5, Opus 4.8 и др.'
 - name: chrome-devtools-mcp
   url: https://github.com/ChromeDevTools/chrome-devtools-mcp
   category: prompt-mcp
   description:
     en: Chrome DevTools for coding agents
-    ru: 'TODO: перевод'
+    ru: Chrome DevTools для кодинг-агентов
 - name: CL4R1T4S
   url: https://github.com/elder-plinius/CL4R1T4S
   category: prompt-mcp
   description:
     en: LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL
-    ru: 'TODO: перевод'
+    ru: Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
 - name: UI-TARS-desktop
   url: https://github.com/bytedance/UI-TARS-desktop
   category: prompt-mcp
   description:
     en: 'The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Inf'
-    ru: 'TODO: перевод'
+    ru: 'Open-source мультимодальный AI-агент-стек: модели и агентная инфраструктура'
 - name: awesome-copilot
   url: https://github.com/github/awesome-copilot
   category: prompt-mcp
   description:
     en: Community-contributed instructions, agents, skills, and configurations to help you make th
-    ru: 'TODO: перевод'
+    ru: Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot
 - name: academic-research-skills
   url: https://github.com/Imbad0202/academic-research-skills
   category: prompt-mcp
   description:
     en: 'Academic Research Skills for Claude Code: research → write → review → revise → finalize'
-    ru: 'TODO: перевод'
+    ru: Навыки академических исследований для Claude Code
 - name: prompt-optimizer
   url: https://github.com/linshenkx/prompt-optimizer
   category: prompt-mcp
   description:
     en: An AI prompt optimizer for writing better prompts and getting better AI results.
-    ru: 'TODO: перевод'
+    ru: AI-оптимизатор промптов для лучших результатов
 - name: gpt-researcher
   url: https://github.com/assafelovic/gpt-researcher
   category: prompt-mcp
   description:
     en: An autonomous agent that conducts deep research on any data using any LLM providers
-    ru: 'TODO: перевод'
+    ru: Автономный агент глубоких исследований на любых LLM
 - name: mlflow
   url: https://github.com/mlflow/mlflow
   category: prompt-mcp
   description:
     en: The open source AI engineering platform for agents, LLMs, and ML models
-    ru: 'TODO: перевод'
+    ru: Open-source AI-инжиниринг платформа для агентов, LLM и ML-моделей
 - name: codebase-memory-mcp
   url: https://github.com/DeusData/codebase-memory-mcp
   category: prompt-mcp
   description:
     en: High-performance code intelligence MCP server
-    ru: 'TODO: перевод'
+    ru: Высокопроизводительный MCP-сервер интеллекта кодовой базы
 - name: activepieces
   url: https://github.com/activepieces/activepieces
   category: prompt-mcp
   description:
     en: AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automati
-    ru: 'TODO: перевод'
+    ru: AI-агенты, MCP и автоматизация воркфлоу (~400 MCP-серверов)
 - name: n8n-mcp
   url: https://github.com/czlonkowski/n8n-mcp
   category: prompt-mcp
   description:
     en: A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you
-    ru: 'TODO: перевод'
+    ru: 'MCP для Claude Desktop/Code/Windsurf/Cursor: строит n8n-воркфлоу'
 - name: MaxKB
   url: https://github.com/1Panel-dev/MaxKB
   category: prompt-mcp
   description:
     en: 🔥 MaxKB is an open-source platform for building enterprise-grade agents
-    ru: 'TODO: перевод'
+    ru: Open-source платформа для enterprise-агентов
 - name: FinGPT
   url: https://github.com/AI4Finance-Foundation/FinGPT
   category: prompt-mcp
   description:
     en: 'FinGPT: Open-Source Financial Large Language Models!  Revolutionize 🔥    We release the tr'
-    ru: 'TODO: перевод'
+    ru: FinGPT — open-source финансовые большие языковые модели
 - name: opik
   url: https://github.com/comet-ml/opik
   category: prompt-mcp
   description:
     en: Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows wit
-    ru: 'TODO: перевод'
+    ru: Дебаг, оценка и мониторинг LLM-приложений, RAG и агентных воркфлоу
 - name: FunASR
   url: https://github.com/modelscope/FunASR
   category: prompt-mcp
   description:
     en: 'Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diariza'
-    ru: 'TODO: перевод'
+    ru: 'Industrial-grade распознавание речи: 170x realtime, 50+ языков'
 - name: nuclear
   url: https://github.com/nukeop/nuclear
   category: prompt-mcp
   description:
     en: Streaming music player that finds free music for you
-    ru: 'TODO: перевод'
+    ru: Стриминговый музыкальный плеер, находящий свободную музыку
 - name: mcp-for-beginners
   url: https://github.com/microsoft/mcp-for-beginners
   category: prompt-mcp
   description:
     en: This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) th
-    ru: 'TODO: перевод'
+    ru: Open-source курс основ Model Context Protocol (MCP)
 - name: trigger.dev
   url: https://github.com/triggerdotdev/trigger.dev
   category: prompt-mcp
   description:
     en: Trigger.dev – build and deploy fully‑managed AI agents and workflows
-    ru: 'TODO: перевод'
+    ru: Trigger.dev — сборка и деплой managed AI-агентов и воркфлоу
 - name: xiaohongshu-mcp
   url: https://github.com/xpzouying/xiaohongshu-mcp
   category: prompt-mcp
   description:
     en: MCP for xiaohongshu.com
-    ru: 'TODO: перевод'
+    ru: MCP для xiaohongshu.com
 - name: OpenMetadata
   url: https://github.com/open-metadata/OpenMetadata
   category: prompt-mcp
   description:
     en: The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building t
-    ru: 'TODO: перевод'
+    ru: 'Open Context Layer для данных и AI: построение траста данных'
 - name: outlines
   url: https://github.com/dottxt-ai/outlines
   category: prompt-mcp
   description:
     en: Structured Outputs
-    ru: 'TODO: перевод'
+    ru: Структурированные выводы
 - name: Skill_Seekers
   url: https://github.com/yusufkaraaslan/Skill_Seekers
   category: prompt-mcp
   description:
     en: Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with a
-    ru: 'TODO: перевод'
+    ru: Конвертация сайтов-документаций, GitHub-репо и PDF в Claude AI-навыки
 - name: Auto-claude-code-research-in-sleep
   url: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
   category: prompt-mcp
   description:
     en: ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML rese
-    ru: 'TODO: перевод'
+    ru: ARIS — лёгкие Markdown-навыки автономных ML-исследований
 - name: awesome-nano-banana-pro-prompts
   url: https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts
   category: prompt-mcp
   description:
     en: 🍌 World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview im
-    ru: 'TODO: перевод'
+    ru: Крупнейшая библиотека промптов Nano Banana Pro — 10000+ с превью
 - name: LangGPT
   url: https://github.com/langgptai/LangGPT
   category: prompt-mcp
   description:
     en: 'LangGPT: Empowering everyone to become a prompt expert! 🚀  📌 结构化提示词（Structured Prompt）提出者'
-    ru: 'TODO: перевод'
+    ru: LangGPT — структурированные промпты для каждого
 - name: fastapi_mcp
   url: https://github.com/tadata-org/fastapi_mcp
   category: prompt-mcp
   description:
     en: Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!
-    ru: 'TODO: перевод'
+    ru: Экспонирует эндпоинты FastAPI как MCP-инструменты с Auth
 - name: XHS-Downloader
   url: https://github.com/JoeanAmier/XHS-Downloader
   category: prompt-mcp
   description:
     en: XHS-Downloader tool
-    ru: 'TODO: перевод'
+    ru: Загрузчик контента Xiaohongshu (RedNote)
 - name: awesome-chatgpt-zh
   url: https://github.com/EmbraceAGI/awesome-chatgpt-zh
   category: prompt-mcp
   description:
     en: ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀
-    ru: 'TODO: перевод'
+    ru: 'ChatGPT китайский гайд: инструкции, разработка приложений, ресурсы'
 - name: nginx-ui
   url: https://github.com/0xJacky/nginx-ui
   category: prompt-mcp
   description:
     en: Yet another WebUI for Nginx
-    ru: 'TODO: перевод'
+    ru: Ещё один WebUI для Nginx
 - name: promptflow
   url: https://github.com/microsoft/promptflow
   category: prompt-mcp
   description:
     en: Build high-quality LLM apps - from prototyping, testing to production deployment and monit
-    ru: 'TODO: перевод'
+    ru: 'Создание качественных LLM-приложений: прототип, тест, продакшн'
 - name: chatgpt_system_prompt
   url: https://github.com/LouisShark/chatgpt_system_prompt
   category: prompt-mcp
   description:
     en: A collection of GPT system prompts and various prompt injection/leaking knowledge.
-    ru: 'TODO: перевод'
+    ru: Коллекция системных промптов GPT и знаний о prompt injection
 - name: phoenix
   url: https://github.com/Arize-ai/phoenix
   category: prompt-mcp
   description:
     en: AI Observability & Evaluation
-    ru: 'TODO: перевод'
+    ru: Наблюдаемость и оценка AI
 - name: mcp-use
   url: https://github.com/mcp-use/mcp-use
   category: prompt-mcp
   description:
     en: The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI
-    ru: 'TODO: перевод'
+    ru: Fullstack MCP-фреймворк для разработки MCP-приложений
 - name: awesome-nanobanana-pro
   url: https://github.com/ZeroLu/awesome-nanobanana-pro
   category: prompt-mcp
   description:
     en: 🚀 An awesome list of curated Nano Banana pro prompts and examples
-    ru: 'TODO: перевод'
+    ru: Кураторский список промптов и примеров Nano Banana pro
 - name: prompt-master
   url: https://github.com/nidhinjs/prompt-master
   category: prompt-mcp
   description:
     en: A Claude skill that writes the accurate prompts for any AI tool
-    ru: 'TODO: перевод'
+    ru: Навык Claude, пишущий точные промпты для любого AI-инструмента
 - name: hexstrike-ai
   url: https://github.com/0x4m4/hexstrike-ai
   category: prompt-mcp
   description:
     en: HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilo
-    ru: 'TODO: перевод'
+    ru: HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot)
 - name: xiaozhi-esp32-server
   url: https://github.com/xinnan-tech/xiaozhi-esp32-server
   category: prompt-mcp
   description:
     en: xiaozhi-esp32-server tool
-    ru: 'TODO: перевод'
+    ru: Утилита xiaozhi-esp32-server
 - name: ida-pro-mcp
   url: https://github.com/mrexodia/ida-pro-mcp
   category: prompt-mcp
   description:
     en: AI-powered reverse engineering assistant that bridges IDA Pro with language models through
-    ru: 'TODO: перевод'
+    ru: 'AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей'
 - name: mcp
   url: https://github.com/awslabs/mcp
   category: prompt-mcp
   description:
     en: Open source MCP Servers for AWS
-    ru: 'TODO: перевод'
+    ru: Open-source MCP-серверы для AWS
 - name: QuantDinger
   url: https://github.com/brokermr810/QuantDinger
   category: prompt-mcp
   description:
     en: AI quantitative trading platform for crypto, stocks, and forex with backtesting, live trad
-    ru: 'TODO: перевод'
+    ru: AI-платформа количественного трейдинга crypto/акций/форекс
 - name: evolver
   url: https://github.com/EvoMap/evolver
   category: prompt-mcp
   description:
     en: The GEP-powered self-evolving engine for AI agents
-    ru: 'TODO: перевод'
+    ru: GEP-powered самоэволюционирующий движок для AI-агентов
 - name: ChatGPT-Shortcut
   url: https://github.com/rockbenben/ChatGPT-Shortcut
   category: prompt-mcp
   description:
     en: 🚀💪Maximize your efficiency and productivity
-    ru: 'TODO: перевод'
+    ru: Максимизируйте эффективность и продуктивность
 - name: awesome-prompts
   url: https://github.com/ai-boost/awesome-prompts
   category: prompt-mcp
   description:
     en: Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store
-    ru: 'TODO: перевод'
+    ru: Кураторский список промптов ChatGPT из топовых GPTs Store
 - name: awesome-gpt-image-2
   url: https://github.com/freestylefly/awesome-gpt-image-2
   category: prompt-mcp
   description:
     en: Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中
-    ru: 'TODO: перевод'
+    ru: 'Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов'
 - name: awesome-gpt4o-images
   url: https://github.com/jamez-bondos/awesome-gpt4o-images
   category: prompt-mcp
   description:
     en: Awesome curated collection of images and prompts generated by GPT-4o and gpt-image-1
-    ru: 'TODO: перевод'
+    ru: Подборка изображений и промптов, сгенерированных GPT-4o и gpt-image-1
 - name: YouMind-OpenLab/awesome-gpt-image-2
   url: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
   category: prompt-mcp
   description:
     en: 🚀 World's largest GPT Image 2 prompt library, updated daily — 2000+ curated prompts with p
-    ru: 'TODO: перевод'
+    ru: Крупнейшая библиотека промптов GPT Image 2 — 2000+, ежедневное обновление
 - name: lamda
   url: https://github.com/firerpa/lamda
   category: prompt-mcp
   description:
     en: 'Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matc'
-    ru: 'TODO: перевод'
+    ru: 'Платформа full-stack управления Android-устройствами: WebRTC-десктоп, UI/OCR'
 - name: Prompt_Engineering
   url: https://github.com/NirDiamant/Prompt_Engineering
   category: prompt-mcp
   description:
     en: Prompt_Engineering tool
-    ru: 'TODO: перевод'
+    ru: Утилита Prompt_Engineering
 - name: FinRobot
   url: https://github.com/AI4Finance-Foundation/FinRobot
   category: prompt-mcp
   description:
     en: 'FinRobot: An Open-Source AI Agent Platform for Financial Analysis using LLMs 🚀 🚀 🚀'
-    ru: 'TODO: перевод'
+    ru: FinRobot — open-source AI-агент для финансового анализа на LLM
 - name: Awesome-MCP-ZH
   url: https://github.com/yzfly/Awesome-MCP-ZH
   category: prompt-mcp
   description:
     en: MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients
-    ru: 'TODO: перевод'
+    ru: 'MCP ресурсы на китайском: гайд, Claude MCP, серверы, клиенты'
 - name: browser-tools-mcp
   url: https://github.com/AgentDeskAI/browser-tools-mcp
   category: prompt-mcp
   description:
     en: Monitor browser logs directly from Cursor and other MCP compatible IDEs.
-    ru: 'TODO: перевод'
+    ru: Мониторинг логов браузера из Cursor и других MCP-IDE
 - name: swarms
   url: https://github.com/kyegomez/swarms
   category: prompt-mcp
   description:
     en: The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework
-    ru: 'TODO: перевод'
+    ru: Enterprise-grade мультиагентный фреймворк оркестрации для продакшна
 - name: firecrawl-mcp-server
   url: https://github.com/firecrawl/firecrawl-mcp-server
   category: prompt-mcp
   description:
     en: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude
-    ru: 'TODO: перевод'
+    ru: Официальный Firecrawl MCP — веб-скрейпинг и поиск в Cursor, Claude
 - name: BrowserMCP/mcp
   url: https://github.com/BrowserMCP/mcp
   category: prompt-mcp
   description:
     en: Browser MCP is a Model Context Provider (MCP) server that allows AI applications to contro
-    ru: 'TODO: перевод'
+    ru: Browser MCP — MCP-сервер управления браузером для AI-приложений
 - name: unstract
   url: https://github.com/Zipstack/unstract
   category: prompt-mcp
   description:
     en: LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work
-    ru: 'TODO: перевод'
+    ru: LLM-извлечение неструктурированных данных для API-деплоя и ETL
 - name: osaurus
   url: https://github.com/osaurus-ai/osaurus
   category: prompt-mcp
   description:
     en: Own your AI
-    ru: 'TODO: перевод'
+    ru: Владейте своим AI
 - name: SuperPrompt
   url: https://github.com/NeoVertex1/SuperPrompt
   category: prompt-mcp
   description:
     en: SuperPrompt is an attempt to engineer prompts that might help us understand AI agents.
-    ru: 'TODO: перевод'
+    ru: SuperPrompt — промпты, помогающие понять AI-агентов
 - name: ai-notes
   url: https://github.com/swyxio/ai-notes
   category: prompt-mcp
   description:
     en: ai-notes tool
-    ru: 'TODO: перевод'
+    ru: Утилита ai-notes
 - name: bifrost
   url: https://github.com/maximhq/bifrost
   category: prompt-mcp
   description:
     en: Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust
-    ru: 'TODO: перевод'
+    ru: Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM)
 - name: aim
   url: https://github.com/aimhubio/aim
   category: prompt-mcp
   description:
     en: Aim 💫 — An easy-to-use & supercharged open-source experiment tracker.
-    ru: 'TODO: перевод'
+    ru: Aim — простой open-source трекер экспериментов
 - name: wonderful-prompts
   url: https://github.com/langgptai/wonderful-prompts
   category: prompt-mcp
   description:
     en: wonderful-prompts tool
-    ru: 'TODO: перевод'
+    ru: Утилита wonderful-prompts
 - name: Awesome-Prompt-Engineering
   url: https://github.com/promptslab/Awesome-Prompt-Engineering
   category: prompt-mcp
   description:
     en: This repository contains a hand-curated resources for Prompt Engineering with a focus on G
-    ru: 'TODO: перевод'
+    ru: Ручная подборка ресурсов по prompt engineering
 - name: XcodeBuildMCP
   url: https://github.com/getsentry/XcodeBuildMCP
   category: prompt-mcp
   description:
     en: A Model Context Protocol (MCP) server and CLI that provides tools for agent use when worki
-    ru: 'TODO: перевод'
+    ru: MCP-сервер и CLI для работы с Xcode-проектами агентами
 - name: ell
   url: https://github.com/MadcowD/ell
   category: prompt-mcp
   description:
     en: A language model programming library.
-    ru: 'TODO: перевод'
+    ru: Библиотека программирования языковых моделей
 - name: learn-ai-engineering
   url: https://github.com/ashishps1/learn-ai-engineering
   category: prompt-mcp
   description:
     en: Learn AI and LLMs from scratch using free resources
-    ru: 'TODO: перевод'
+    ru: Изучите AI и LLM с нуля по бесплатным ресурсам
 - name: klavis
   url: https://github.com/Klavis-AI/klavis
   category: prompt-mcp
   description:
     en: 'Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale'
-    ru: 'TODO: перевод'
+    ru: Klavis AI — платформа MCP-интеграции для надёжных инструментов агентов
 - name: semble
   url: https://github.com/MinishLab/semble
   category: prompt-mcp
   description:
     en: Fast and Accurate Code Search for Agents
-    ru: 'TODO: перевод'
+    ru: Быстрый и точный поиск кода для агентов
 - name: Learning-Prompt
   url: https://github.com/thinkingjimmy/Learning-Prompt
   category: prompt-mcp
   description:
     en: Free prompt engineering online course
-    ru: 'TODO: перевод'
+    ru: Бесплатный онлайн-курс prompt engineering
 - name: Viper
   url: https://github.com/FunnyWolf/Viper
   category: prompt-mcp
   description:
     en: Adversary simulation and Red teaming platform with AI
-    ru: 'TODO: перевод'
+    ru: Симуляция противника и Red Teaming платформа с AI
 - name: FinanceToolkit
   url: https://github.com/JerBouma/FinanceToolkit
   category: prompt-mcp
   description:
     en: Transparent and Efficient Financial Analysis
-    ru: 'TODO: перевод'
+    ru: Прозрачный и эффективный финансовый анализ
 - name: lemonade
   url: https://github.com/lemonade-sdk/lemonade
   category: prompt-mcp
   description:
     en: Lemonade helps users discover and run local AI apps by serving optimized LLMs right from t
-    ru: 'TODO: перевод'
+    ru: Lemonade — обнаружение и запуск локальных AI-приложений с оптимизированными LLM
 - name: exa-mcp-server
   url: https://github.com/exa-labs/exa-mcp-server
   category: prompt-mcp
   description:
     en: Exa MCP for web search and web crawling!
-    ru: 'TODO: перевод'
+    ru: Exa MCP для веб-поиска и краулинга
 - name: deep-research
   url: https://github.com/u14app/deep-research
   category: prompt-mcp
   description:
     en: Use any LLMs (Large Language Models) for Deep Research
-    ru: 'TODO: перевод'
+    ru: Глубокие исследования на любых LLM
 - name: ENScan_GO
   url: https://github.com/wgpsec/ENScan_GO
   category: prompt-mcp
   description:
     en: ENScan_GO tool
-    ru: 'TODO: перевод'
+    ru: Утилита ENScan_GO
 - name: kubernetes-mcp-server
   url: https://github.com/containers/kubernetes-mcp-server
   category: prompt-mcp
   description:
     en: Model Context Protocol (MCP) server for Kubernetes and OpenShift
-    ru: 'TODO: перевод'
+    ru: MCP-сервер для Kubernetes и OpenShift
 - name: claude-debugs-for-you
   url: https://github.com/jasonjmcghee/claude-debugs-for-you
   category: prompt-mcp
   description:
     en: Enable any LLM (e.g
-    ru: 'TODO: перевод'
+    ru: Включает любой LLM в отладчик
 - name: awesome-design-md
   url: https://github.com/VoltAgent/awesome-design-md
   category: workflow-automation
   description:
     en: A collection of DESIGN.md files analysis by popular brand design systems
-    ru: 'TODO: перевод'
+    ru: Подборка DESIGN.md-файлов систем дизайна брендов
 - name: open-design
   url: https://github.com/nexu-io/open-design
   category: workflow-automation
   description:
     en: 🎨 Local-first, open-source Claude Design alternative
-    ru: 'TODO: перевод'
+    ru: Local-first open-source альтернатива Claude Design
 - name: Understand-Anything
   url: https://github.com/Egonex-AI/Understand-Anything
   category: workflow-automation
   description:
     en: Graphs that teach > graphs that impress
-    ru: 'TODO: перевод'
+    ru: Графы, которые обучают, а не просто впечатляют
 - name: claude-code-best-practice
   url: https://github.com/shanraisshan/claude-code-best-practice
   category: workflow-automation
   description:
     en: claude-code-best-practice tool
-    ru: 'TODO: перевод'
+    ru: Утилита claude-code-best-practice
 - name: context7
   url: https://github.com/upstash/context7
   category: workflow-automation
   description:
     en: Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors
-    ru: 'TODO: перевод'
+    ru: Context7 — актуальная документация кода для LLM и AI-редакторов
 - name: cherry-studio
   url: https://github.com/CherryHQ/cherry-studio
   category: workflow-automation
   description:
     en: AI productivity studio with smart chat, autonomous agents, and 300+ assistants
-    ru: 'TODO: перевод'
+    ru: 'AI-студия продуктивности: умный чат, агенты, 300+ ассистентов'
 - name: oh-my-claudecode
   url: https://github.com/Yeachan-Heo/oh-my-claudecode
   category: workflow-automation
   description:
     en: Teams-first Multi-agent orchestration for Claude Code
-    ru: 'TODO: перевод'
+    ru: Teams-first мультиагентная оркестрация для Claude Code
 - name: onlook
   url: https://github.com/onlook-dev/onlook
   category: workflow-automation
   description:
     en: The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, an
-    ru: 'TODO: перевод'
+    ru: Cursor для дизайнеров — open-source AI-first дизайн-инструмент
 - name: serena
   url: https://github.com/oraios/serena
   category: workflow-automation
   description:
     en: A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities
-    ru: 'TODO: перевод'
+    ru: 'Мощный MCP-тулкит для кодинга: семантический поиск и редактирование'
 - name: frontend-slides
   url: https://github.com/zarazhangrui/frontend-slides
   category: workflow-automation
   description:
     en: Create beautiful slides on the web using a coding agent's frontend skills
-    ru: 'TODO: перевод'
+    ru: Создание красивых слайдов через фронтенд-навыки кодинг-агента
 - name: GDevelop
   url: https://github.com/4ian/GDevelop
   category: workflow-automation
   description:
     en: 🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.
-    ru: 'TODO: перевод'
+    ru: Open-source кроссплатформенный 2D/3D/мультиплеерный игровой движок
 - name: vibe-coding-cn
   url: https://github.com/2025Emma/vibe-coding-cn
   category: workflow-automation
   description:
-    en: 'TODO: description'
-    ru: 'TODO: перевод'
+    en: Curated list of vibe coding resources (Chinese)
+    ru: Кураторский список ресурсов по vibe coding на китайском
 - name: gemini-voyager
   url: https://github.com/Nagi-ovo/gemini-voyager
   category: workflow-automation
   description:
     en: An all-in-one enhancement suite for Google Gemini & AI Studio - timeline navigation, folde
-    ru: 'TODO: перевод'
+    ru: All-in-one набор улучшений для Google Gemini и AI Studio
 - name: eliza
   url: https://github.com/elizaOS/eliza
   category: workflow-automation
   description:
     en: Open source agentic operating system
-    ru: 'TODO: перевод'
+    ru: Open-source агентная операционная система
 - name: context-engineering-intro
   url: https://github.com/coleam00/context-engineering-intro
   category: workflow-automation
   description:
     en: Context engineering is the new vibe coding - it's the way to actually make AI coding assis
-    ru: 'TODO: перевод'
+    ru: Context engineering — новый vibe coding для AI-кодинг-ассистентов
 - name: claude-context
   url: https://github.com/zilliztech/claude-context
   category: workflow-automation
   description:
     en: Code search MCP for Claude Code
-    ru: 'TODO: перевод'
+    ru: MCP поиска кода для Claude Code
 - name: ccpm
   url: https://github.com/automazeio/ccpm
   category: workflow-automation
   description:
     en: Project management skill system for Agents that uses GitHub Issues and Git worktrees for p
-    ru: 'TODO: перевод'
+    ru: Система навыков управления проектами для агентов на GitHub Issues и worktrees
 - name: refly
   url: https://github.com/refly-ai/refly
   category: workflow-automation
   description:
     en: The first open-source agent skills builder
-    ru: 'TODO: перевод'
+    ru: Первый open-source билдер навыков агентов
 - name: DesktopCommanderMCP
   url: https://github.com/wonderwhy-er/DesktopCommanderMCP
   category: workflow-automation
   description:
     en: This is MCP server for Claude that gives it terminal control, file system search and diff
-    ru: 'TODO: перевод'
+    ru: 'MCP-сервер для Claude: контроль терминала, поиск файловой системы, diff'
 - name: GLM-5
   url: https://github.com/zai-org/GLM-5
   category: workflow-automation
   description:
     en: 'GLM-5: From Vibe Coding to Agentic Engineering'
-    ru: 'TODO: перевод'
+    ru: 'GLM-5: от Vibe Coding к агентному инжинирингу'
 - name: pyspur
   url: https://github.com/PySpur-Dev/pyspur
   category: workflow-automation
   description:
     en: 'A visual playground for agentic workflows: Iterate over your agents 10x faster'
-    ru: 'TODO: перевод'
+    ru: Визуальная площадка агентных воркфлоу — итерируйте агентов в 10x быстрее
 - name: vibe-vibe
   url: https://github.com/datawhalechina/vibe-vibe
   category: workflow-automation
   description:
     en: 'AI for All: The First Systematic Vibe Coding Tutorial | From Zero to Full-Stack, Bring You'
-    ru: 'TODO: перевод'
+    ru: 'AI для всех: первый систематический туториал по vibe coding'
 - name: awesome-ai-tools
   url: https://github.com/mahseema/awesome-ai-tools
   category: workflow-automation
   description:
     en: A curated list of Artificial Intelligence Top Tools
-    ru: 'TODO: перевод'
+    ru: Кураторский список топовых AI-инструментов
 - name: Kaku
   url: https://github.com/tw93/Kaku
   category: workflow-automation
   description:
     en: 🎃 A fast, out-of-the-box terminal built for AI coding.
-    ru: 'TODO: перевод'
+    ru: Быстрый готовый терминал для AI-кодинга
 - name: claude-code-ultimate-guide
   url: https://github.com/FlorianBruniaux/claude-code-ultimate-guide
   category: workflow-automation
   description:
     en: 'The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, q'
-    ru: 'TODO: перевод'
+    ru: 'Самый полный гайд по Claude Code: воркфлоу, хуки, навыки, MCP'
 - name: vibesdk
   url: https://github.com/cloudflare/vibesdk
   category: workflow-automation
   description:
     en: An open-source vibe coding platform that helps you build your own vibe-coding platform, bu
-    ru: 'TODO: перевод'
+    ru: Open-source платформа vibe coding для построения своего vibe-кодинг-инструмента
 - name: codebase-to-course
   url: https://github.com/zarazhangrui/codebase-to-course
   category: workflow-automation
   description:
     en: A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML
-    ru: 'TODO: перевод'
+    ru: 'Навык Claude Code: превращает кодовую базу в интерактивный HTML-курс'
 - name: byterover-cli
   url: https://github.com/campfirein/byterover-cli
   category: workflow-automation
   description:
     en: ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Ci
-    ru: 'TODO: перевод'
+    ru: ByteRover CLI (brv) — переносимый слой памяти для автономных кодинг-агентов
 - name: awesome-vibe-coding
   url: https://github.com/filipecalegario/awesome-vibe-coding
   category: workflow-automation
   description:
     en: A curated list of vibe coding references, collaborating with AI to write code.
-    ru: 'TODO: перевод'
+    ru: Кураторский список ресурсов по vibe coding совместно с AI
 - name: vibe-coding
   url: https://github.com/EnzeD/vibe-coding
   category: workflow-automation
   description:
-    en: 'TODO: description'
-    ru: 'TODO: перевод'
+    en: Vibe coding resources and practices collection
+    ru: Подборка ресурсов и практик по vibe coding
 - name: hapi
   url: https://github.com/tiann/hapi
   category: workflow-automation
   description:
     en: App for Claude Code / Codex / Gemini / OpenCode, vibe coding anytime, anywhere
-    ru: 'TODO: перевод'
+    ru: Апп для Claude Code/Codex/Gemini/OpenCode — vibe coding где угодно
 - name: AdalFlow
   url: https://github.com/SylphAI-Inc/AdalFlow
   category: workflow-automation
   description:
     en: 'AdalFlow: The library to build & auto-optimize LLM applications.'
-    ru: 'TODO: перевод'
+    ru: AdalFlow — библиотека построения и автооптимизации LLM-приложений
 - name: MonkeyCode
   url: https://github.com/chaitin/MonkeyCode
   category: workflow-automation
   description:
     en: AI coding platform for teams
-    ru: 'TODO: перевод'
+    ru: AI-платформа кодинга для команд
 - name: crystal
   url: https://github.com/stravu/crystal
   category: workflow-automation
   description:
     en: crystal tool
-    ru: 'TODO: перевод'
+    ru: Утилита crystal
 - name: eve
   url: https://github.com/vercel/eve
   category: workflow-automation
   description:
     en: The Framework for Building Agents
-    ru: 'TODO: перевод'
+    ru: Фреймворк построения агентов
 - name: core
   url: https://github.com/cheshire-cat-ai/core
   category: workflow-automation
   description:
     en: AI agent microservice
-    ru: 'TODO: перевод'
+    ru: AI-агент микросервис
 - name: Chaterm
   url: https://github.com/chaterm/Chaterm
   category: workflow-automation
   description:
     en: Open source AI terminal for cloud and infrastructure management, enabling you to deploy, t
-    ru: 'TODO: перевод'
+    ru: Open-source AI-терминал управления облаком и инфраструктурой
 - name: ruler
   url: https://github.com/intellectronica/ruler
   category: workflow-automation
   description:
     en: Ruler — apply the same rules to all coding agents
-    ru: 'TODO: перевод'
+    ru: Ruler — применяйте одни правила ко всем кодинг-агентам
 - name: agent-of-empires
   url: https://github.com/agent-of-empires/agent-of-empires
   category: workflow-automation
   description:
     en: Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mob
-    ru: 'TODO: перевод'
+    ru: Управление несколькими Claude Code/OpenCode агентами из TUI или Web
 - name: aicodeguide
   url: https://github.com/automata/aicodeguide
   category: workflow-automation
   description:
     en: AI Code Guide is a roadmap to start coding with AI
-    ru: 'TODO: перевод'
+    ru: AI Code Guide — roadmap для старта кодинга с AI
 - name: vibe-coding-prompt-template
   url: https://github.com/KhazP/vibe-coding-prompt-template
   category: workflow-automation
   description:
     en: Templates and workflow for generating PRDs, Tech Designs, and MVP and more using LLMs for
-    ru: 'TODO: перевод'
+    ru: Шаблоны и воркфлоу для PRD, тех-дизайнов и MVP через LLM
 - name: oinone-pamirs
   url: https://github.com/oinone/oinone-pamirs
   category: workflow-automation
   description:
     en: Oinone is an AI‑Powered low‑code framework that unifies AI and developers around a shared
-    ru: 'TODO: перевод'
+    ru: Oinone — AI-powered low-code фреймворк, объединяющий AI и разработчиков
 - name: metamcp
   url: https://github.com/metatool-ai/metamcp
   category: workflow-automation
   description:
     en: MCP Aggregator, Orchestrator, Middleware, Gateway in one docker
-    ru: 'TODO: перевод'
+    ru: MCP-агрегатор, оркестратор, middleware и шлюз в одном docker
 - name: fulling
   url: https://github.com/FullAgent/fulling
   category: workflow-automation
   description:
     en: Fulling is an AI-powered Full-stack Engineer Agent
-    ru: 'TODO: перевод'
+    ru: Fulling — AI-powered full-stack инженер-агент
 - name: Vibe-Skills
   url: https://github.com/foryourhealth111-pixel/Vibe-Skills
   category: workflow-automation
   description:
     en: Vibe-Skills is an all-in-one AI skills package
-    ru: 'TODO: перевод'
+    ru: Vibe-Skills — all-in-one пакет AI-навыков
 - name: best-skills
   url: https://github.com/xstongxue/best-skills
   category: workflow-automation
   description:
     en: best-skills tool
-    ru: 'TODO: перевод'
+    ru: Утилита best-skills
 - name: awesome-ai-coding-tools
   url: https://github.com/ai-for-developers/awesome-ai-coding-tools
   category: workflow-automation
   description:
     en: A curated list of AI-powered coding tools
-    ru: 'TODO: перевод'
+    ru: Кураторский список AI-инструментов кодинга
 - name: deepseek_ocr_app
   url: https://github.com/rdumasia303/deepseek_ocr_app
   category: workflow-automation
   description:
     en: A quick vibe coded app for deepseek OCR
-    ru: 'TODO: перевод'
+    ru: Быстрое vibe-coded приложение для DeepSeek OCR
 - name: vibekit
   url: https://github.com/superagent-ai/vibekit
   category: workflow-automation
   description:
     en: Run Claude Code, Gemini, Codex — or any coding agent — in a clean, isolated sandbox with s
-    ru: 'TODO: перевод'
+    ru: Запуск Claude Code, Gemini, Codex и любого агента в чистой изолированной песочнице
