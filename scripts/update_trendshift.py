@@ -6,9 +6,10 @@ This is an enrichment cache, not a human-curated source. data/tools.yml stays
 limited to name/url/category/description, while Trendshift metadata lives in
 data/trendshift.json and can disappear without breaking the site.
 
-data/trendshift-repos.json — отдельный автогенерируемый кэш (list) репозиториев,
-найденных на ranking-страницах trendshift.io, но отсутствующих в tools.yml.
-Пока только собирается; подмешивание в каталог — отдельный шаг (этап 2).
+data/trendshift-repos.json — автогенерируемый кэш (list) репозиториев с
+ranking-страниц trendshift.io, отсутствующих в tools.yml. Отдельный от
+trendshift.json, чтобы не смешивать enrichment-only метаданные кураторских
+тулзов и «сырые» trendshift-репо.
 """
 from __future__ import annotations
 
@@ -26,11 +27,8 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS_YML = ROOT / "data" / "tools.yml"
 TREND_SHIFT_FILE = ROOT / "data" / "trendshift.json"
-# Репозитории с trendshift.io, которых нет в tools.yml. Автогенерируемый кэш
-# (list записей) — отдельный от trendshift.json, чтобы не смешивать
-# enrichment-only метаданные кураторских тулзов и «сырые» trendshift-репо.
-# category здесь НЕ хранится — генератор проставит 'other' при подмешивании
-# (этап 2); сейчас файл только собирается и нигде не потребляется.
+# Репозитории с trendshift.io, которых нет в tools.yml. List (отсортированный
+# по url для детерминированного git-diff), отдельный от trendshift.json.
 TREND_SHIFT_REPOS_FILE = ROOT / "data" / "trendshift-repos.json"
 RAW_README = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/README.md"
 TREND_SHIFT_PAGE = "https://trendshift.io/repositories/{id}"
@@ -330,24 +328,19 @@ def update_trendshift_cache(
 
 
 def _serialize_repos_cache(new_repos: dict) -> list[dict]:
-    """Превратить dict url→entry в отсортированный по url list записей.
-
-    Каждая запись несёт githubUrl (бывший ключ dict) + trendshiftId/pageUrl/
-    badges/updatedAt. Сортировка по url даёт детерминированный git-diff при
+    """Dict url→entry → отсортированный по url list; каждой записи добавлен
+    githubUrl (бывший ключ). Сортировка даёт детерминированный git-diff при
     ежедневных перезаписях (иначе порядок от ThreadPoolExecutor плавал бы).
-    Записи без валидного url пропускаются (защита от битого кэша/парса).
+
+    Поля entry не переописываются — spread ``**entry`` копирует всё, что
+    extract_ranking_entries/merge_trendshift_entry туда положили, так что
+    сериализатор не рассинхронится при эволюции схемы записи.
     """
-    records: list[dict] = []
-    for url, entry in new_repos.items():
-        if not isinstance(url, str) or not isinstance(entry, dict):
-            continue
-        records.append({
-            "githubUrl": url,
-            "trendshiftId": entry.get("trendshiftId"),
-            "pageUrl": entry.get("pageUrl"),
-            "badges": entry.get("badges", []) or [],
-            "updatedAt": entry.get("updatedAt"),
-        })
+    records = [
+        {"githubUrl": url, **entry}
+        for url, entry in new_repos.items()
+        if isinstance(entry, dict)
+    ]
     records.sort(key=lambda r: r["githubUrl"])
     return records
 

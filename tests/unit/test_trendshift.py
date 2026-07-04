@@ -320,17 +320,10 @@ def test_main_writes_trendshift_repos_file(tmp_path):
     )
 
     # weekly-страница содержит И tools.yml-репо (ponytail), И новое (foo/bar).
-    html = (
-        '<script type="application/ld+json">'
-        '{"@type":"ItemList","itemListElement":['
-        '{"@type":"ListItem","position":1,"url":"https://trendshift.io/repositories/50668",'
-        '"item":{"@type":"SoftwareSourceCode","name":"ponytail",'
-        '"codeRepository":"https://github.com/DietrichGebert/ponytail"}},'
-        '{"@type":"ListItem","position":5,"url":"https://trendshift.io/repositories/25391",'
-        '"item":{"@type":"SoftwareSourceCode","name":"foo/bar",'
-        '"codeRepository":"https://github.com/foo/bar"}}'
-        "]}</script>"
-    )
+    html = _ranking_html([
+        ("50668", "ponytail", "https://github.com/DietrichGebert/ponytail"),
+        ("25391", "foo/bar", "https://github.com/foo/bar"),
+    ])
 
     main(
         tools_yml=tools_yml,
