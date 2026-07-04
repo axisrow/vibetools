@@ -356,7 +356,17 @@ def main(
     tools = load_tools(tools_yml)
     previous_cache = load_json_or_default(trendshift_file, {}) or {}
     updated_at = datetime.date.today().isoformat()
+    # Сохраняем ранее собранные trendshift-only репо: при частичном/полном
+    # outage trendshift.io свежий new_repos будет пустым, и без сида мы
+    # перезаписали бы trendshift-repos.json на [] — потеряв всю коллекцию.
+    # Сида по githubUrl позволяет merge_trendshift_entry обновить записи
+    # на месте, а при сбое — сохранить прежние (симметрия с previous_cache).
     new_repos: dict[str, dict] = {}
+    for rec in load_json_or_default(trendshift_repos_file, []) or []:
+        if isinstance(rec, dict) and isinstance(rec.get("githubUrl"), str):
+            url = rec["githubUrl"]
+            entry = {k: v for k, v in rec.items() if k != "githubUrl"}
+            new_repos[url] = entry
     cache = update_trendshift_cache(
         tools, previous_cache, updated_at, github_headers(), fetcher,
         page_fetcher, badge_fetcher, new_repos=new_repos,
