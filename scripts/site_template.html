@@ -59,6 +59,12 @@
     --vt-ink-muted: #7d8590;
     --vt-accent: #0969da;
     --vt-accent-soft: #ddf4ff;
+    --vt-achievement-day-bg: #fff8c5;
+    --vt-achievement-day-border: #f0d36b;
+    --vt-achievement-day-text: #7d4e00;
+    --vt-achievement-week-bg: #ffebe9;
+    --vt-achievement-week-border: #ffb1aa;
+    --vt-achievement-week-text: #a40e26;
     --vt-hover: #f6f8fa;
     --vt-header-bg: rgba(251, 252, 254, .96);
   }
@@ -71,6 +77,12 @@
     --vt-ink-muted: #6e7681;
     --vt-accent: #58a6ff;
     --vt-accent-soft: rgba(88, 166, 255, .14);
+    --vt-achievement-day-bg: rgba(210, 153, 34, .16);
+    --vt-achievement-day-border: rgba(210, 153, 34, .46);
+    --vt-achievement-day-text: #e3b341;
+    --vt-achievement-week-bg: rgba(248, 81, 73, .14);
+    --vt-achievement-week-border: rgba(248, 81, 73, .44);
+    --vt-achievement-week-text: #ff7b72;
     --vt-hover: rgba(110, 118, 129, .12);
     --vt-header-bg: rgba(13, 17, 23, .96);
   }
@@ -117,6 +129,17 @@
   .meta-row strong {
     color: var(--bs-body-color);
     font-variant-numeric: tabular-nums;
+  }
+  .bi-sprite {
+    display: none;
+  }
+  .vt-icon {
+    display: inline-block;
+    flex: 0 0 auto;
+    fill: currentColor;
+    height: 1em;
+    vertical-align: -.125em;
+    width: 1em;
   }
   .meta-dot {
     background: var(--vt-border);
@@ -290,6 +313,99 @@
     color: var(--vt-ink-soft);
     font-size: .875rem;
   }
+  .featured-strip {
+    border-bottom: 1px solid var(--vt-border);
+    padding-bottom: 1rem;
+  }
+  .featured-kicker {
+    color: var(--vt-ink-soft);
+    font-size: .72rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .featured-title {
+    color: var(--bs-body-color);
+    font-size: 1.05rem;
+    font-weight: 760;
+    line-height: 1.15;
+  }
+  .featured-note {
+    color: var(--vt-ink-soft);
+    font-size: .82rem;
+    line-height: 1.35;
+  }
+  .featured-list {
+    display: grid;
+    gap: .35rem;
+  }
+  .featured-item {
+    align-items: start;
+    border-top: 1px solid var(--vt-border);
+    display: grid;
+    gap: .85rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding-top: .72rem;
+  }
+  .featured-tool {
+    color: var(--bs-body-color);
+    font-size: 1rem;
+    font-weight: 760;
+    line-height: 1.16;
+    overflow-wrap: anywhere;
+  }
+  .featured-tool:hover {
+    color: var(--vt-accent);
+  }
+  .featured-desc {
+    color: var(--vt-ink-soft);
+    font-size: .86rem;
+    line-height: 1.42;
+    margin-top: .28rem;
+  }
+  .featured-achievements {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .38rem;
+    line-height: 1;
+  }
+  .featured-achievement {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    display: inline-flex;
+    font-size: .72rem;
+    font-weight: 760;
+    gap: .3rem;
+    letter-spacing: .01em;
+    padding: .25rem .42rem;
+    text-transform: uppercase;
+  }
+  .featured-achievement-day {
+    background: var(--vt-achievement-day-bg);
+    border-color: var(--vt-achievement-day-border);
+    color: var(--vt-achievement-day-text);
+  }
+  .featured-achievement-week {
+    background: var(--vt-achievement-week-bg);
+    border-color: var(--vt-achievement-week-border);
+    color: var(--vt-achievement-week-text);
+  }
+  .featured-achievement .vt-icon {
+    font-size: .9em;
+  }
+  .featured-metrics {
+    align-items: center;
+    color: var(--vt-ink-soft);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .76rem;
+    gap: .1rem .45rem;
+    justify-content: flex-end;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
   .tool-list {
     border-top: 1px solid var(--vt-border);
   }
@@ -367,9 +483,13 @@
     padding-left: 1rem;
   }
   .stars {
+    align-items: center;
     color: var(--bs-body-color);
+    display: inline-flex;
     font-size: .96rem;
     font-weight: 720;
+    gap: .25rem;
+    justify-content: flex-end;
     text-align: right;
   }
   .stars img {
@@ -380,16 +500,22 @@
     display: none;
   }
   .mobile-star {
+    align-items: center;
     color: var(--bs-body-color);
+    display: inline-flex;
     font-size: .88rem;
     font-weight: 650;
+    gap: .22rem;
   }
   .mobile-star img {
     max-height: 18px;
     vertical-align: middle;
   }
   .mobile-metric {
+    align-items: center;
     color: var(--vt-ink-soft);
+    display: inline-flex;
+    gap: .18rem;
     font-variant-numeric: tabular-nums;
   }
   .mobile-metric strong {
@@ -403,9 +529,29 @@
     justify-content: flex-end;
   }
   .metric {
+    align-items: center;
+    display: inline-flex;
     font-size: .74rem;
     font-variant-numeric: tabular-nums;
+    gap: .18rem;
+    justify-content: flex-end;
     text-align: right;
+  }
+  .metric-rank .vt-icon,
+  .mobile-metric-rank .vt-icon {
+    color: #9a6700;
+  }
+  .metric-forks .vt-icon,
+  .mobile-metric-forks .vt-icon {
+    color: #2f7d6e;
+  }
+  [data-bs-theme="dark"] .metric-rank .vt-icon,
+  [data-bs-theme="dark"] .mobile-metric-rank .vt-icon {
+    color: #d29922;
+  }
+  [data-bs-theme="dark"] .metric-forks .vt-icon,
+  [data-bs-theme="dark"] .mobile-metric-forks .vt-icon {
+    color: #56d4b1;
   }
   .metric-label {
     color: var(--vt-ink-soft);
@@ -505,6 +651,17 @@
     .category-tabs {
       display: none !important;
     }
+    .featured-strip {
+      padding-bottom: .85rem;
+    }
+    .featured-item {
+      gap: .45rem;
+      grid-template-columns: 1fr;
+    }
+    .featured-metrics {
+      justify-content: flex-start;
+      white-space: normal;
+    }
     .tool-record {
       grid-template-columns: 1fr;
     }
@@ -543,6 +700,24 @@
 </style>
 </head>
 <body>
+<svg class="bi-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+  </symbol>
+  <symbol id="bi-trophy-fill" viewBox="0 0 16 16">
+    <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
+  </symbol>
+  <symbol id="bi-award-fill" viewBox="0 0 16 16">
+    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+  </symbol>
+  <symbol id="bi-calendar-week-fill" viewBox="0 0 16 16">
+    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
+  </symbol>
+  <symbol id="bi-git" viewBox="0 0 16 16">
+    <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+  </symbol>
+</svg>
 <header class="site-header border-bottom">
   <div class="container site-wrap py-4">
     <div class="masthead d-flex flex-column">
@@ -615,6 +790,16 @@
 </header>
 
 <main class="container site-wrap py-3">
+  <section class="featured-strip d-none mb-3" id="featured" aria-labelledby="featured-title">
+    <div class="d-flex flex-column gap-2">
+      <div>
+        <div class="featured-kicker mb-1" data-i18n="featuredKicker">Featured</div>
+        <h2 class="featured-title mb-1" id="featured-title" data-i18n="featuredTitle">Fastest movers</h2>
+        <p class="featured-note mb-0" data-i18n="featuredNote">Repos with the strongest recent star growth.</p>
+      </div>
+      <div class="featured-list" id="featured-list"></div>
+    </div>
+  </section>
   <div class="results-line d-flex flex-wrap align-items-center justify-content-between gap-2 pb-2">
     <div id="meta" aria-live="polite"></div>
     <div id="active-filter"></div>
@@ -648,6 +833,13 @@ const I18N = {
     category: "category",
     language: "Language",
     allLanguages: "All languages",
+    featuredKicker: "Featured",
+    featuredTitle: "Fastest movers",
+    featuredNote: "Repos with the strongest recent star growth from the daily cache.",
+    featuredDay: "Repo of the day",
+    featuredWeek: "Repo of the week",
+    dayGrowth: "day",
+    weekGrowth: "week",
     generated: date => `Updated ${date}`,
     activeFilter: label => `Category: ${label}`,
     sortStars: "Stars", sortDate: "Newest", sortName: "Name",
@@ -672,6 +864,13 @@ const I18N = {
     category: "категория",
     language: "Язык",
     allLanguages: "Все языки",
+    featuredKicker: "Избранное",
+    featuredTitle: "Самый быстрый рост",
+    featuredNote: "Репозитории с самым сильным свежим ростом звёзд по daily cache.",
+    featuredDay: "Репозиторий дня",
+    featuredWeek: "Репозиторий недели",
+    dayGrowth: "день",
+    weekGrowth: "неделя",
     generated: date => `Обновлено ${date}`,
     activeFilter: label => `Категория: ${label}`,
     sortStars: "Звезды", sortDate: "Новые", sortName: "Название",
@@ -696,6 +895,13 @@ const I18N = {
     category: "分类",
     language: "语言",
     allLanguages: "所有语言",
+    featuredKicker: "精选",
+    featuredTitle: "增长最快",
+    featuredNote: "来自每日缓存的近期星标增长最高的仓库。",
+    featuredDay: "今日仓库",
+    featuredWeek: "本周仓库",
+    dayGrowth: "日",
+    weekGrowth: "周",
     generated: date => `更新 ${date}`,
     activeFilter: label => `分类：${label}`,
     sortStars: "星标", sortDate: "最新", sortName: "名称",
@@ -707,6 +913,7 @@ const I18N = {
 
 const DATA = window.__DATA__;
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
+const TOOLS_BY_URL = new Map(DATA.tools.map(tool => [tool.url, tool]));
 const LANGUAGES = {
   en: { label: "English", short: "EN" },
   ru: { label: "Русский", short: "RU" },
@@ -747,6 +954,7 @@ function applyI18n() {
   $("generated").textContent = t("generated")(DATA.generatedAt);
   renderCats();
   renderLanguages();
+  renderFeatured();
   render();
 }
 
@@ -796,9 +1004,77 @@ function fmtStars(n) {
   return String(n);
 }
 
+function icon(name, className = "vt-icon") {
+  return `<svg class="bi bi-${esc(name)} ${esc(className)}" aria-hidden="true"><use href="#bi-${esc(name)}"></use></svg>`;
+}
+
 function starHtml(tool, className = "stars") {
-  if (tool.stars != null) return `<span class="${className}">★ ${fmtStars(tool.stars)}</span>`;
+  if (tool.stars != null) return `<span class="${className}">${icon("star-fill")} ${fmtStars(tool.stars)}</span>`;
   return tool.starsUrl ? `<span class="${className}"><img src="${tool.starsUrl}" alt="stars"></span>` : "";
+}
+
+function featuredLabel(kind) {
+  if (kind === "day") return t("featuredDay");
+  if (kind === "week") return t("featuredWeek");
+  return kind;
+}
+
+function featuredIcon(kind) {
+  return kind === "week" ? "calendar-week-fill" : "trophy-fill";
+}
+
+function featuredAchievementHtml(entry) {
+  return `<span class="featured-achievement featured-achievement-${esc(entry.kind)}">${icon(featuredIcon(entry.kind))}${esc(featuredLabel(entry.kind))}</span>`;
+}
+
+function featuredWindow(entry) {
+  if (!entry.days) return entry.kind === "week" ? "7d" : "1d";
+  return `${entry.days}d`;
+}
+
+function featuredDelta(entry) {
+  if (entry.delta == null) return "";
+  const label = entry.kind === "week" ? t("weekGrowth") : t("dayGrowth");
+  return mobileMetric(label, `+${fmtStars(entry.delta)} / ${featuredWindow(entry)}`);
+}
+
+function renderFeatured() {
+  const root = $("featured");
+  const target = $("featured-list");
+  const grouped = new Map();
+  (DATA.featured || []).forEach(entry => {
+    const tool = TOOLS_BY_URL.get(entry.url);
+    if (!tool || !entry.kind) return;
+    if (!grouped.has(entry.url)) grouped.set(entry.url, { tool, entries: [] });
+    grouped.get(entry.url).entries.push(entry);
+  });
+  const items = Array.from(grouped.values());
+  if (!items.length) {
+    root.classList.add("d-none");
+    target.innerHTML = "";
+    return;
+  }
+  root.classList.remove("d-none");
+  target.innerHTML = items.map(item => {
+    const tool = item.tool;
+    const desc = tool.desc[lang] || tool.desc.en;
+    const achievements = item.entries.map(featuredAchievementHtml).join("");
+    const metrics = [
+      starHtml(tool, "mobile-star"),
+      mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
+      mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
+      ...item.entries.map(featuredDelta),
+    ].join("");
+    return `
+      <div class="featured-item">
+        <div class="min-w-0">
+          <div class="featured-achievements mb-2">${achievements}</div>
+          <a class="featured-tool text-decoration-none" href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a>
+          <div class="featured-desc">${esc(desc)}</div>
+        </div>
+        <div class="featured-metrics">${metrics}</div>
+      </div>`;
+  }).join("");
 }
 
 function filtered() {
@@ -820,14 +1096,14 @@ function filtered() {
   return list;
 }
 
-function metric(label, value) {
+function metric(label, value, iconName = "", kind = "") {
   if (value == null || value === "") return "";
-  return `<span class="metric"><span class="metric-label">${esc(label)}</span> <span class="metric-value">${esc(value)}</span></span>`;
+  return `<span class="metric${kind ? ` metric-${esc(kind)}` : ""}">${iconName ? icon(iconName) : ""}<span class="metric-label">${esc(label)}</span> <span class="metric-value">${esc(value)}</span></span>`;
 }
 
-function mobileMetric(label, value) {
+function mobileMetric(label, value, iconName = "", kind = "") {
   if (value == null || value === "") return "";
-  return `<span class="mobile-metric">${esc(label)} <strong>${esc(value)}</strong></span>`;
+  return `<span class="mobile-metric${kind ? ` mobile-metric-${esc(kind)}` : ""}">${iconName ? icon(iconName) : ""}${esc(label)} <strong>${esc(value)}</strong></span>`;
 }
 
 function render() {
@@ -859,15 +1135,15 @@ function render() {
       .map(part => `<span>${part}</span>`)
       .join('<span class="submeta-separator"> / </span>');
     const metrics = [
-      metric(t("rank"), tool.rank != null ? `#${tool.rank}` : ""),
-      metric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : ""),
+      metric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
+      metric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
       metric(t("growth"), tool.starsPerWeek != null ? `+${tool.starsPerWeek}/w` : ""),
       metric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
     ].join("");
     const mobileMetrics = [
       mobileStarsHtml,
-      mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : ""),
-      mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : ""),
+      mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
+      mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
       mobileMetric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
     ].join("");
 

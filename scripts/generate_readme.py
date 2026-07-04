@@ -129,58 +129,126 @@ def load_history(history_file: Path = HISTORY_FILE) -> dict[str, dict]:
 
 
 def _delta(cur, history: dict, days_ago: int) -> int | None:
-    """Дельта cur vs среза за days_ago дней назад. None если среза нет."""
-    target = (datetime.date.today() - datetime.timedelta(days=days_ago)).isoformat()
-    snap = history.get(target)
-    if not isinstance(snap, int):
-        return None
-    return cur - snap
+    """Дельта cur vs точного среза за days_ago дней назад."""
+    delta = _window_delta(cur, history, "day" if days_ago == 1 else "week",
+                          days_ago)
+    return delta["delta"] if delta else None
 
 
-def pick_featured(tools: list[dict], stars: dict[str, int],
-                  history: dict[str, dict]) -> dict[str, set[str]]:
-    """Выбирает репо дня (макс. дельта за 1д) и недели (за 7д).
+def _window_delta(cur: int, history: dict, kind: str, days_ago: int,
+                  today=None) -> dict | None:
+    """Дельта для featured-окна.
 
-    history: {url: {"YYYY-MM-DD": stars}}. Возвращает {url: {"day"} | {"week"}}.
-    Если истории нет или все дельты ≤ 0 — пустой dict (блок не рендерится).
+    day требует точный вчерашний срез. week использует самый старый доступный
+    срез в пределах 7 дней, чтобы ранние daily cache не скрывали неделю.
     """
-    featured: dict[str, set[str]] = {}
+    today = today or datetime.date.today()
+    target = today - datetime.timedelta(days=days_ago)
+
+    if kind == "day":
+        snap = history.get(target.isoformat())
+        if not isinstance(snap, int):
+            return None
+        return {"delta": cur - snap, "days": days_ago,
+                "windowComplete": True}
+
+    candidates = []
+    for raw_date, snap in history.items():
+        if not isinstance(snap, int):
+            continue
+        try:
+            snap_date = datetime.date.fromisoformat(str(raw_date)[:10])
+        except ValueError:
+            continue
+        if target <= snap_date < today:
+            candidates.append((snap_date, snap))
+    if not candidates:
+        return None
+    snap_date, snap = min(candidates, key=lambda item: item[0])
+    days = (today - snap_date).days
+    return {"delta": cur - snap, "days": days,
+            "windowComplete": days == days_ago}
+
+
+def pick_featured_entries(tools: list[dict], stars: dict[str, int],
+                          history: dict[str, dict]) -> list[dict]:
+    """Выбирает featured entries с метаданными окна и дельты.
+
+    Возвращает список в порядке FEATURED_WINDOWS:
+    {"kind": "day"|"week", "url": str, "delta": int, "days": int,
+     "windowComplete": bool}.
+    """
+    entries: list[dict] = []
     for kind, days_ago in FEATURED_WINDOWS.items():
-        # Максимум (дельта, url) среди репо с положительной дельтой за окно.
         best = None
         for t in tools:
             cur = stars.get(t["url"])
             if cur is None:
                 continue
-            d = _delta(cur, history.get(t["url"], {}), days_ago)
-            if d is not None and d > 0 and (best is None or d > best[0]):
-                best = (d, t["url"])
+            delta = _window_delta(cur, history.get(t["url"], {}), kind,
+                                  days_ago)
+            if not delta or delta["delta"] <= 0:
+                continue
+            if best is None or delta["delta"] > best["delta"]:
+                best = {"kind": kind, "url": t["url"], **delta}
         if best:
-            featured.setdefault(best[1], set()).add(kind)
+            entries.append(best)
+    return entries
+
+
+def pick_featured(tools: list[dict], stars: dict[str, int],
+                  history: dict[str, dict]) -> dict[str, set[str]]:
+    """Выбирает репо дня и недели.
+
+    history: {url: {"YYYY-MM-DD": stars}}. Возвращает {url: {"day"} | {"week"}}.
+    Если истории нет или все дельты ≤ 0 — пустой dict (блок не рендерится).
+    """
+    featured: dict[str, set[str]] = {}
+    for entry in pick_featured_entries(tools, stars, history):
+        featured.setdefault(entry["url"], set()).add(entry["kind"])
     return featured
 
 
-def render_featured(featured: dict[str, set[str]], tools_by_url: dict[str, dict], lang: str) -> str:
-    """Рендерит блок «Repo of the day / Repo of the week» вверху README.
+def _featured_entries(featured) -> list[dict]:
+    """Нормализует новый entries-формат и legacy url->marks dict."""
+    if isinstance(featured, list):
+        return featured
+    entries = []
+    for kind in FEATURED_WINDOWS:
+        url = next((u for u, marks in featured.items() if kind in marks), None)
+        if url:
+            entries.append({"kind": kind, "url": url})
+    return entries
 
-    Пустая строка, если нет ни дня, ни недели. Идёт по FEATURED_WINDOWS,
-    чтобы порядок и состав меток были единым источником.
-    """
-    # URL для каждой метки из featured (если есть).
-    urls = {kind: next((u for u, m in featured.items() if kind in m), None)
-            for kind in FEATURED_WINDOWS}
-    if not any(urls.values()):
-        return ""
+
+def _featured_label(lang: str, entry: dict) -> str:
     labels = {
         ("en", "day"): "Repo of the day",
         ("en", "week"): "Repo of the week",
         ("ru", "day"): "Репозиторий дня",
         ("ru", "week"): "Репозиторий недели",
     }
+    label = labels[(lang, entry["kind"])]
+    if entry.get("kind") == "week" and entry.get("days") and not entry.get("windowComplete", True):
+        days = entry["days"]
+        if lang == "en":
+            return f"{label} ({days}-day growth)"
+        return f"{label} (рост за {days} дн.)"
+    return label
+
+
+def render_featured(featured, tools_by_url: dict[str, dict], lang: str) -> str:
+    """Рендерит блок «Repo of the day / Repo of the week» вверху README.
+
+    Пустая строка, если нет ни дня, ни недели. Идёт по FEATURED_WINDOWS,
+    чтобы порядок и состав меток были единым источником.
+    """
+    entries = _featured_entries(featured)
+    if not entries:
+        return ""
     lines = []
-    for kind, url in urls.items():
-        if not url:
-            continue
+    for entry in entries:
+        url = entry["url"]
         t = tools_by_url.get(url)
         if not t:
             continue
@@ -189,7 +257,7 @@ def render_featured(featured: dict[str, set[str]], tools_by_url: dict[str, dict]
         # и без различия remark-lint:double-link считает это дублем.
         # stripHash:false правила → URL'ы с разным hash формально различны.
         featured_url = f"{url}#featured"
-        lines.append(f"{labels[(lang, kind)]}: [{t['name']}]({featured_url}) — {t['description'][lang]}")
+        lines.append(f"{_featured_label(lang, entry)}: [{t['name']}]({featured_url}) — {t['description'][lang]}")
     if not lines:
         return ""
     return featured_heading(lang, "## ") + "\n\n" + "\n".join(lines) + "\n\n"
@@ -384,6 +452,7 @@ def main(
         if isinstance(m, dict) and m.get("createdAt"):
             t["created_at"] = m["createdAt"]
     groups = group_by_category(tools, stars)
+    featured_entries = pick_featured_entries(tools, stars, history)
     featured = pick_featured(tools, stars, history)
     tools_by_url = {t["url"]: t for t in tools}
 
@@ -391,14 +460,14 @@ def main(
         ("en", HEADER_EN, FOOTER_EN, "README.md"),
         ("ru", HEADER_RU, FOOTER_RU, "README.ru.md"),
     ):
-        featured_block = render_featured(featured, tools_by_url, lang)
+        featured_block = render_featured(featured_entries, tools_by_url, lang)
         toc = build_toc(groups, lang, with_featured=bool(featured_block))
         body = render_section(groups, lang, stars, featured)
         content = header.format(toc=toc) + featured_block + body + footer
         out_path = out_dir / out_name
         out_path.write_text(content, encoding="utf-8")
         print(f"✓ {out_name}: {len(tools)} утилит, {len([c for c in CATEGORIES if groups[c[0]]])} категорий"
-              + (f", featured: {sorted({m for s in featured.values() for m in s})}" if featured else ", featured: none"))
+              + (f", featured: {[e['kind'] for e in featured_entries]}" if featured_entries else ", featured: none"))
 
 
 if __name__ == "__main__":

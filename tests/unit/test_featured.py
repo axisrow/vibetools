@@ -2,6 +2,7 @@
 import datetime
 
 from generate_readme import (HISTORY_FILE, is_new, pick_featured,
+                             pick_featured_entries,
                              render_featured)
 
 
@@ -49,6 +50,46 @@ def test_pick_featured_day_and_week():
     featured = pick_featured(tools, stars, history)
     assert "day" in featured["u1"]
     assert "week" in featured["u3"]
+
+
+def test_pick_featured_week_uses_oldest_available_snapshot():
+    today = datetime.date.today()
+    y1 = (today - datetime.timedelta(days=1)).isoformat()
+    y2 = (today - datetime.timedelta(days=2)).isoformat()
+    tools = [_tool("u1"), _tool("u2")]
+    stars = {"u1": 130, "u2": 120}
+    history = {
+        "u1": {y2: 100},
+        "u2": {y1: 95},
+    }
+
+    entries = pick_featured_entries(tools, stars, history)
+    week = next(e for e in entries if e["kind"] == "week")
+
+    assert week == {
+        "kind": "week",
+        "url": "u1",
+        "delta": 30,
+        "days": 2,
+        "windowComplete": False,
+    }
+    assert "week" in pick_featured(tools, stars, history)["u1"]
+
+
+def test_pick_featured_entries_include_delta_metadata():
+    today = datetime.date.today()
+    y1 = (today - datetime.timedelta(days=1)).isoformat()
+    y7 = (today - datetime.timedelta(days=7)).isoformat()
+    tools = [_tool("u1")]
+    stars = {"u1": 120}
+    history = {"u1": {y1: 100, y7: 80}}
+
+    assert pick_featured_entries(tools, stars, history) == [
+        {"kind": "day", "url": "u1", "delta": 20,
+         "days": 1, "windowComplete": True},
+        {"kind": "week", "url": "u1", "delta": 40,
+         "days": 7, "windowComplete": True},
+    ]
 
 
 def test_pick_featured_no_history():
@@ -100,6 +141,14 @@ def test_render_featured_day_and_week_same_repo():
     out = render_featured(featured, by_url, "en")
     assert "Repo of the day" in out
     assert "Repo of the week" in out
+
+
+def test_render_featured_incomplete_week_window():
+    featured = [{"kind": "week", "url": "u1", "delta": 30,
+                 "days": 2, "windowComplete": False}]
+    by_url = {"u1": _tool("u1")}
+    out = render_featured(featured, by_url, "en")
+    assert "Repo of the week (2-day growth)" in out
 
 
 def test_history_file_constant():

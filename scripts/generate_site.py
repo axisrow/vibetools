@@ -23,7 +23,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import github_slug, load_json_or_default  # noqa: E402
 from generate_readme import (  # noqa: E402
-    CATEGORIES, ROOT, SHIELDS_STARS, is_new, load_history, load_stars, load_tools,
+    CATEGORIES, ROOT, SHIELDS_STARS, is_new, load_history, load_stars,
+    load_tools, pick_featured_entries,
 )
 
 TOOLS_YML = ROOT / "data" / "tools.yml"
@@ -118,6 +119,7 @@ def build_data_json(
         "generatedAt": today.isoformat(),
         "categories": [{"key": k, **m} for k, m in CATEGORIES],
         "languages": languages,
+        "featured": pick_featured_entries(tools, stars, history),
         "tools": out_tools,
     }
 
