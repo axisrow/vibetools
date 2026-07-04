@@ -211,3 +211,45 @@ def test_build_data_json_meta_enriches(tmp_repo, tmp_path):
     assert hi["createdAt"] == "2026-06-25T00:00:00Z"
     assert "agent" in hi["topics"]
     assert hi["isNew"] is True  # 2026-06-25 в пределах 14д от сегодня
+
+
+def test_build_data_json_surfaces_language(tmp_repo, tmp_path):
+    """language из repos-meta прокидывается в tool + search-haystack."""
+    meta_file = tmp_path / "repos-meta.json"
+    import json as _json
+    meta_file.write_text(_json.dumps({
+        "https://github.com/a/hi": {"stars": 1000, "language": "Rust"},
+        "https://github.com/a/lo": {"stars": 10, "language": "Python"},
+    }), encoding="utf-8")
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"], meta_file=meta_file)
+    hi = next(t for t in data["tools"] if t["name"] == "HiStars")
+    lo = next(t for t in data["tools"] if t["name"] == "LoStars")
+    assert hi["language"] == "Rust"
+    assert lo["language"] == "Python"
+    # Язык попадает в lowercase haystack → находится полнотекстовым поиском.
+    assert "rust" in hi["search"]
+    assert "python" in lo["search"]
+
+
+def test_build_data_json_languages_catalog(tmp_repo, tmp_path):
+    """Каталог languages: unique + sorted, без None; есть на верхнем уровне."""
+    meta_file = tmp_path / "repos-meta.json"
+    import json as _json
+    meta_file.write_text(_json.dumps({
+        "https://github.com/a/hi": {"stars": 1000, "language": "Rust"},
+        "https://github.com/a/lo": {"stars": 10, "language": "Python"},
+        "https://github.com/b/editor": {"stars": 50, "language": "Rust"},
+        # NoGithub (example.com) — нет в meta → language=None, в каталог не попадает.
+    }), encoding="utf-8")
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"], meta_file=meta_file)
+    assert "languages" in data
+    # unique (Rust дважды, но один раз), sorted, None от NoGithub отброшен.
+    assert data["languages"] == ["Python", "Rust"]
+
+
+def test_build_data_json_language_none_when_meta_missing(tmp_repo):
+    """Без repos-meta.json → language=None у каждого tool, каталог пустой."""
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
+    for tool in data["tools"]:
+        assert tool["language"] is None
+    assert data["languages"] == []

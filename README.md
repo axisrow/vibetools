@@ -6,6 +6,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Contents
 
+- [Featured](#featured)
 - [AI Coding Agents and CLI](#ai-coding-agents-and-cli)
 - [Editor Integrations](#editor-integrations)
 - [Context and Memory](#context-and-memory)
@@ -17,7 +18,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Featured
 
-Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman) — caveman tool
+Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman#featured) — caveman tool
 
 ## AI Coding Agents and CLI
 

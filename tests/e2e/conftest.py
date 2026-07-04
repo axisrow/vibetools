@@ -48,11 +48,11 @@ def mock_github(httpserver):
     Возвращает функцию register(owner, repo, stars=..., status=200), которой
     тест регистрирует ответы. Базовый URL доступен как mock_github.base_url.
     """
-    def register(owner, repo, stars=None, status=200):
+    def register(owner, repo, stars=None, status=200, language=None):
         path = f"/repos/{owner}/{repo}"
         if status == 200:
             httpserver.expect_request(path).respond_with_json(
-                {"stargazers_count": stars}, status=200)
+                {"stargazers_count": stars, "language": language}, status=200)
         else:
             httpserver.expect_request(path).respond_with_data("", status=status)
     httpserver.register = register

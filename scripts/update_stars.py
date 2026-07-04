@@ -42,9 +42,13 @@ from common import github_headers, github_slug, load_json_or_default  # noqa: E4
 def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
     """Полный объект репо из GitHub API → нормализованный meta-словарь.
 
-    Возвращает {stars, forks, openIssues, pushedAt, createdAt, topics, archived}
-    или None при ошибке/rate-limit (звёзды при этом сохраняем из прежнего кэша
-    вызывающей стороной, чтобы не терять данные).
+    Возвращает {stars, forks, openIssues, pushedAt, createdAt, topics, archived,
+    language} или None при ошибке/rate-limit (звёзды при этом сохраняем из
+    прежнего кэша вызывающей стороной, чтобы не терять данные).
+
+    language — primary language репо (поле /repos/{owner}/{repo}.language,
+    одна строка, напр. "TypeScript"); берётся из уже выполняемого запроса,
+    0 дополнительных обращений к API. None, если GitHub не определил язык.
     """
     owner, repo = slug
     url = API.format(owner=owner, repo=repo)
@@ -63,6 +67,7 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
             "createdAt": j.get("created_at"),
             "topics": j.get("topics", []) or [],
             "archived": bool(j.get("archived")),
+            "language": j.get("language"),
         }
     if r.status_code in (403, 429):
         print(f"  ! {owner}/{repo}: rate limit ({r.status_code}), пропускаю", file=sys.stderr)
