@@ -93,6 +93,8 @@
   <nav id="cats"></nav>
   <div class="filters">
     <label><input type="checkbox" id="f-new"> <span data-i18n="new">New</span></label>
+    <label for="f-language" data-i18n="language">Language</label>
+    <select id="f-language"></select>
   </div>
 </header>
 <main>
@@ -116,6 +118,8 @@ const I18N = {
     archived: "archived",
     forks: "forks",
     growth: "growth",
+    language: "Language",
+    allLanguages: "All languages",
     sortStars: "Stars", sortDate: "Recently added", sortName: "Name",
     results: n => `${n} tool${n === 1 ? "" : "s"}`,
     noResults: "No tools match your filters.",
@@ -129,6 +133,8 @@ const I18N = {
     archived: "архив",
     forks: "форки",
     growth: "рост",
+    language: "Язык",
+    allLanguages: "Все языки",
     sortStars: "Звёзды", sortDate: "Недавно добавленные", sortName: "Название",
     results: n => `${n} инструмент(ов)`,
     noResults: "Ничего не найдено по фильтрам.",
@@ -142,6 +148,8 @@ const I18N = {
     archived: "已归档",
     forks: "分叉",
     growth: "增长",
+    language: "语言",
+    allLanguages: "所有语言",
     sortStars: "星标", sortDate: "最近添加", sortName: "名称",
     results: n => `${n} 个工具`,
     noResults: "没有符合筛选条件的工具。",
@@ -153,6 +161,7 @@ const DATA = window.__DATA__;
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
 let lang = localStorage.getItem("lang") || "en";
 let activeCat = "all";
+let activeLang = "all";
 let sortMode = "stars";
 let query = "";
 
@@ -178,6 +187,7 @@ function applyI18n() {
     if (o.dataset.i18n) o.textContent = I18N[lang][o.dataset.i18n];
   });
   renderCats();
+  renderLanguages();
   render();
 }
 
@@ -197,6 +207,16 @@ function renderCats() {
   DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0));
 }
 
+function renderLanguages() {
+  // <select> с опциями из DATA.languages (unique, sorted) + пункт «все языки».
+  const sel = $("f-language");
+  const opts = [`<option value="all">${t("allLanguages")}</option>`];
+  DATA.languages.forEach(l => {
+    opts.push(`<option value="${esc(l)}"${activeLang === l ? " selected" : ""}>${esc(l)}</option>`);
+  });
+  sel.innerHTML = opts.join("");
+}
+
 function fmtStars(n) {
   if (n == null) return null;
   if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, "") + "k";
@@ -208,6 +228,7 @@ function filtered() {
   const isNew = $("f-new").checked;
   let list = DATA.tools.filter(tool => {
     if (activeCat !== "all" && tool.category !== activeCat) return false;
+    if (activeLang !== "all" && tool.language !== activeLang) return false;
     if (isNew && !tool.isNew) return false;
     if (q && !tool.search.includes(q)) return false;  // search — lowercase haystack
     return true;
@@ -231,6 +252,7 @@ function render() {
     const li = document.createElement("li");
     li.className = "item";
     const desc = tool.desc[lang] || tool.desc.en;
+    const langTag = tool.language ? `<span class="tag">${esc(tool.language)}</span>` : "";
     // Звёзды: число если есть, иначе shields-бейдж (fallback до stars.json).
     const starsHtml = tool.stars != null
       ? `<span class="stars">★ ${fmtStars(tool.stars)}</span>`
@@ -247,7 +269,7 @@ function render() {
     li.innerHTML = `
       <div class="item-main">
         <div class="item-name"><a href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a></div>
-        <div class="item-desc">${esc(desc)} <span class="tag">${esc(catTitle(tool.category))}</span></div>
+        <div class="item-desc">${esc(desc)} <span class="tag">${esc(catTitle(tool.category))}</span>${langTag}</div>
         <div class="metrics">${rankHtml}${forksHtml}${growthHtml}${createdHtml}</div>
       </div>
       <div class="badges">${tags.join("")}${starsHtml}</div>`;
@@ -270,6 +292,7 @@ $("search").addEventListener("input", e => {
 });
 $("sort").addEventListener("change", e => { sortMode = e.target.value; render(); });
 $("f-new").addEventListener("change", render);
+$("f-language").addEventListener("change", e => { activeLang = e.target.value; render(); });
 document.querySelectorAll(".lang button").forEach(b => {
   b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("lang", lang); applyI18n(); });
 });

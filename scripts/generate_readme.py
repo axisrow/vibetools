@@ -173,10 +173,16 @@ def render_featured(featured: dict[str, set[str]], tools_by_url: dict[str, dict]
         t = tools_by_url.get(url)
         if not t:
             continue
-        lines.append(f"{labels[(lang, kind)]}: [{t['name']}]({url}) — {t['description'][lang]}")
+        # Anchor #featured отличает ссылку от её вхождения в категории:
+        # тот же репо легитимно показан дважды (блок Featured + своя категория),
+        # и без различия remark-lint:double-link считает это дублем.
+        # stripHash:false правила → URL'ы с разным hash формально различны.
+        featured_url = f"{url}#featured"
+        lines.append(f"{labels[(lang, kind)]}: [{t['name']}]({featured_url}) — {t['description'][lang]}")
     if not lines:
         return ""
-    return "## Featured\n\n" + "\n".join(lines) + "\n\n"
+    heading = "## Featured" if lang == "en" else "## Избранное"
+    return heading + "\n\n" + "\n".join(lines) + "\n\n"
 
 
 def _is_emoji(c: str) -> bool:
@@ -333,9 +339,16 @@ def gh_anchor(text: str) -> str:
     return re.sub(r"-+", "-", collapsed)
 
 
-def build_toc(groups, lang) -> str:
+def build_toc(groups, lang, with_featured: bool = False) -> str:
     title_key = f"title_{lang}"
     items = []
+    # Секция Featured идёт между Contents и категориями — ToC обязан её
+    # перечислять, иначе remark-lint:awesome-toc ругается на первый пункт
+    # (ожидает Featured, видит AI Coding Agents). Пункт добавляем только когда
+    # featured-блок реально рендерится (есть day/week), иначе якорь будет битым.
+    if with_featured:
+        featured_title = "Featured" if lang == "en" else "Избранное"
+        items.append(f"- [{featured_title}](#{gh_anchor(featured_title)})")
     for cat_key, meta in CATEGORIES:
         if not groups.get(cat_key):
             continue
@@ -368,8 +381,8 @@ def main(
         ("en", HEADER_EN, FOOTER_EN, "README.md"),
         ("ru", HEADER_RU, FOOTER_RU, "README.ru.md"),
     ):
-        toc = build_toc(groups, lang)
         featured_block = render_featured(featured, tools_by_url, lang)
+        toc = build_toc(groups, lang, with_featured=bool(featured_block))
         body = render_section(groups, lang, stars, featured)
         content = header.format(toc=toc) + featured_block + body + footer
         out_path = out_dir / out_name
