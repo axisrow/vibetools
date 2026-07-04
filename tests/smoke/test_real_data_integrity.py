@@ -11,7 +11,7 @@ import urllib.request
 import pytest
 
 import generate_readme
-from generate_readme import CATEGORIES, CATEGORY_MAP, ROOT, TOOLS_YML, gh_anchor, load_tools
+from generate_readme import CATEGORIES, CATEGORY_MAP, LEGACY_CATEGORIES, ROOT, TOOLS_YML, gh_anchor, load_tools
 
 
 def test_real_tools_yml_loads():
@@ -33,8 +33,7 @@ def test_real_tools_yml_all_categories_known():
 
 def test_real_tools_yml_no_legacy_catchall_categories():
     categories = {t["category"] for t in load_tools(TOOLS_YML)}
-    legacy = {"other", "prompt-mcp", "workflow-automation", "learning"}
-    assert categories.isdisjoint(legacy)
+    assert categories.isdisjoint(LEGACY_CATEGORIES)
 
 
 def test_real_tools_yml_all_declared_categories_used():

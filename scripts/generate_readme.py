@@ -140,6 +140,9 @@ CATEGORIES = [
     }),
 ]
 CATEGORY_MAP = {key: meta for key, meta in CATEGORIES}
+# Категории старой таксономии, выведенные из оборота (catch-all 'other' и др.).
+# Единый источник для тестов, проверяющих, что в tools.yml не осталось легаси.
+LEGACY_CATEGORIES = {"other", "prompt-mcp", "workflow-automation", "learning"}
 
 OWNER_REPO_TEMPLATE = "https://github.com/{owner}/{repo}"
 SHIELDS_STARS = "https://img.shields.io/github/stars/{owner}/{repo}?style=flat&color=yellow"

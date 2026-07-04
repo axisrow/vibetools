@@ -890,12 +890,12 @@
         </div>
       </div>
 
-      <div class="command-bar compact-filter-bar d-flex flex-wrap align-items-center gap-2">
+      <div class="command-bar d-flex flex-wrap align-items-center gap-2">
         <div class="input-group search-field">
           <label class="input-group-text" for="search" data-i18n="searchLabel">Search</label>
           <input class="form-control" type="search" id="search" data-i18n-ph="searchPlaceholder" placeholder="Search by tool, category, topic...">
         </div>
-        <div class="filter-rail compact-filter-rail d-flex flex-wrap align-items-center gap-2">
+        <div class="filter-rail d-flex flex-wrap align-items-center gap-2">
           <select class="form-select toolbar-select" id="sort" aria-label="Sort tools">
             <option value="stars" data-i18n="sortStars">Stars</option>
             <option value="date" data-i18n="sortDate">Newest</option>
@@ -1068,6 +1068,18 @@ const I18N = {
 const DATA = window.__DATA__;
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
 const TOOLS_BY_URL = new Map(DATA.tools.map(tool => [tool.url, tool]));
+// Precompute производных от статичных DATA.tools ОДИН раз при загрузке —
+// filtered() ходит по всем тулзам на каждом keystroke/toggle, пересчитывать
+// их каждый render — лишняя работа. Образец — TOOLS_BY_URL выше.
+function _yearOf(tool) {
+  const year = tool.createdAt ? String(tool.createdAt).slice(0, 4) : "";
+  return /^\d{4}$/.test(year) ? year : "";
+}
+const TOOL_YEAR = new Map(DATA.tools.map(tool => [tool.url, _yearOf(tool)]));
+const YEARS = Array.from(new Set(TOOL_YEAR.values().filter(Boolean))).sort((a, b) => b.localeCompare(a));
+const TRENDSHIFT_URLS = new Set(DATA.tools
+  .filter(tool => ((tool.trendshift && tool.trendshift.badges) || []).some(badge => badge && TREND_KINDS.includes(badge.kind)))
+  .map(tool => tool.url));
 const LANGUAGES = {
   en: { label: "English", short: "EN" },
   ru: { label: "Русский", short: "RU" },
@@ -1161,21 +1173,19 @@ function renderLanguages() {
 }
 
 function toolYear(tool) {
-  const year = tool.createdAt ? String(tool.createdAt).slice(0, 4) : "";
-  return /^\d{4}$/.test(year) ? year : "";
+  return TOOL_YEAR.get(tool.url) || "";
 }
 
 function collectYears() {
-  return Array.from(new Set(DATA.tools.map(toolYear).filter(Boolean))).sort((a, b) => b.localeCompare(a));
+  return YEARS;
 }
 
 function renderYears() {
   const sel = $("f-year");
   if (!sel) return;
-  const years = collectYears();
-  if (activeYear !== "all" && !years.includes(activeYear)) activeYear = "all";
+  if (activeYear !== "all" && !YEARS.includes(activeYear)) activeYear = "all";
   const opts = [`<option value="all">${esc(t("allYears"))}</option>`];
-  years.forEach(year => {
+  YEARS.forEach(year => {
     opts.push(`<option value="${esc(year)}"${activeYear === year ? " selected" : ""}>${esc(year)}</option>`);
   });
   sel.innerHTML = opts.join("");
@@ -1183,7 +1193,7 @@ function renderYears() {
 }
 
 function toolHasTrendshift(tool) {
-  return ((tool.trendshift && tool.trendshift.badges) || []).some(badge => badge && TREND_KINDS.includes(badge.kind));
+  return TRENDSHIFT_URLS.has(tool.url);
 }
 
 function activeFilterSummary() {
@@ -1251,7 +1261,7 @@ function trendshiftAchievementsHtml(tool) {
   if (!trendshift || !Array.isArray(trendshift.badges) || !trendshift.badges.length) return "";
   const href = trendshift.pageUrl || tool.url;
   const badges = trendshift.badges
-    .filter(badge => badge && ["day", "week", "month", "year"].includes(badge.kind))
+    .filter(badge => badge && TREND_KINDS.includes(badge.kind))
     .map(badge => {
       const label = trendshiftLabel(badge);
       return `<a class="trendshift-achievement trendshift-achievement-${esc(badge.kind)}" href="${esc(href)}" target="_blank" rel="noopener" aria-label="${esc(label)}">${icon(trendshiftIcon(badge.kind))}${esc(label)}</a>`;

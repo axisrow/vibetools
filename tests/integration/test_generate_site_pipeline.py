@@ -57,9 +57,7 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "masthead" in html
     assert "meta-row" in html
     assert "command-bar" in html
-    assert "compact-filter-bar" in html
     assert "filter-rail" in html
-    assert "compact-filter-rail" in html
     assert "filter-toggle" in html
     assert "featured-strip" in html
     assert "featured-list" in html
