@@ -1089,7 +1089,12 @@ const LANGUAGES = {
   ru: { label: "Русский", short: "RU" },
   zh: { label: "中文", short: "中文" },
 };
-let lang = localStorage.getItem("lang") || "en";
+// localStorage общий для всех GitHub Pages одного пользователя; другой проект
+// (или старая версия сайта) мог записать невалидное значение («de», «ru-RU»).
+// Без валидации I18N[lang] → undefined → TypeError в applyI18n → пустая страница.
+// Поэтому сбрасываем всё, что не входит в {en, ru, zh}, на «en».
+let lang = localStorage.getItem("lang");
+if (!Object.prototype.hasOwnProperty.call(I18N, lang)) lang = "en";
 let activeCat = "all";
 let activeLang = "all";
 let activeTrendshift = false;

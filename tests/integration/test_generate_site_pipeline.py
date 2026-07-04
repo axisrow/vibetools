@@ -8,6 +8,8 @@ import json
 import re
 from pathlib import Path
 
+import pytest
+
 from generate_site import build_data_json, main as site_main
 
 
@@ -322,16 +324,20 @@ def test_build_data_json_meta_enriches(tmp_repo, tmp_path):
     meta_file = tmp_path / "repos-meta.json"
     url = "https://github.com/a/hi"
     import json as _json
+    # createdAt считаем от сегодня (в пределах NEW_DAYS=14), а не хардкодим
+    # дату — иначе тест краснеет ровно через 15 дней после захардкоженной даты.
+    recent = (datetime.date.today() - datetime.timedelta(days=3)).isoformat()
+    created_iso = f"{recent}T00:00:00Z"
     meta_file.write_text(_json.dumps({url: {
         "stars": 1000, "forks": 42, "openIssues": 3,
-        "pushedAt": "2026-07-01T00:00:00Z", "createdAt": "2026-06-25T00:00:00Z",
+        "pushedAt": "2026-07-01T00:00:00Z", "createdAt": created_iso,
         "topics": ["ai", "agent"], "archived": False}}), encoding="utf-8")
     data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"], meta_file=meta_file)
     hi = next(t for t in data["tools"] if t["name"] == "HiStars")
     assert hi["forks"] == 42
-    assert hi["createdAt"] == "2026-06-25T00:00:00Z"
+    assert hi["createdAt"] == created_iso
     assert "agent" in hi["topics"]
-    assert hi["isNew"] is True  # 2026-06-25 в пределах 14д от сегодня
+    assert hi["isNew"] is True  # 3 дня назад — в пределах NEW_DAYS
 
 
 def test_build_data_json_surfaces_language(tmp_repo, tmp_path):
@@ -374,3 +380,50 @@ def test_build_data_json_language_none_when_meta_missing(tmp_repo):
     for tool in data["tools"]:
         assert tool["language"] is None
     assert data["languages"] == []
+
+
+def test_render_index_html_escapes_script_close_tag(tmp_tools_yml, tmp_path):
+    """#7-audit: «</script>» в описании не должен рвать <script>-элемент.
+
+    Описания попадают из GitHub API дословно (через fetch_candidates). Любой
+    сырой «</script>» закроет элемент досрочно → window.__DATA__ undefined →
+    пустой сайт; крафтовый «</script><img onerror=…>» — stored-XSS.
+    Экранирование «</» → «<\\/» валидно для JSON/JS и безопасно для HTML-парсера.
+    """
+    from generate_site import render_index_html
+    tool = {"name": "evil", "url": "https://github.com/x/y",
+            "category": "cli-agents",
+            "description": {"en": "clean", "ru": "</script><img onerror=alert(1)>"}}
+    tools_yml = tmp_tools_yml([tool])
+    data = build_data_json(tools_yml, tmp_path / "stars.json")
+    html = render_index_html(data)
+    # Сырого «</script>» от описания в payload быть не должно.
+    assert "</script><img" not in html
+    # Экранированная форма присутствует (доказывает, что описание вошло в payload).
+    assert "<\\/script><img onerror=alert(1)>" in html
+    # И payload остаётся валидным JSON: window.__DATA__ = {...}; на одной строке.
+    payload = _extract_payload(html)
+    assert payload["tools"][0]["desc"]["ru"] == "</script><img onerror=alert(1)>"
+
+
+def test_render_index_html_asserts_marker_present(tmp_path):
+    """#7-audit: косметическая правка шаблона без маркера — явная ошибка, а не
+    молчаливый деплой пустого сайта (window.__DATA__ = {}) при зелёном CI."""
+    from generate_site import render_index_html
+    bad_template = tmp_path / "bad.html"
+    bad_template.write_text("<html>нет маркера данных</html>", encoding="utf-8")
+    with pytest.raises(ValueError, match="маркер"):
+        render_index_html({"tools": []}, template=bad_template)
+
+
+def test_site_template_validates_lang_from_localstorage():
+    """#8: lang из localStorage валидируется по ключам I18N — иначе TypeError.
+
+    Регрессионный guard на текст шаблона: невалидное значение («de», «ru-RU»)
+    из общего для GitHub Pages localStorage не должно ронять applyI18n.
+    """
+    root = Path(__file__).resolve().parents[2]
+    tpl = (root / "scripts" / "site_template.html").read_text(encoding="utf-8")
+    # Валидация: сброс к «en», если lang не входит в I18N.
+    assert 'hasOwnProperty.call(I18N, lang)' in tpl
+    assert 'lang = "en"' in tpl

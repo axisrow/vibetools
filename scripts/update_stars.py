@@ -58,7 +58,14 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
         print(f"  ! {owner}/{repo}: сетевая ошибка {exc}", file=sys.stderr)
         return None
     if r.status_code == 200:
-        j = r.json()
+        try:
+            j = r.json()
+        except requests.RequestException as exc:
+            # HTTP-200 с не-JSON телом (страница прокси, обрезанный ответ).
+            # JSONDecodeError — подкласс RequestException, ловим тем же блоком:
+            # один битый ответ не должен валить весь дневной прогон.
+            print(f"  ! {owner}/{repo}: битый JSON-ответ {exc}", file=sys.stderr)
+            return None
         return {
             "stars": j.get("stargazers_count"),
             "forks": j.get("forks_count"),
@@ -84,13 +91,22 @@ def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
     return meta.get("stars") if meta else None
 
 
-def update_history(history_file: Path, today: str, cache: dict[str, int]) -> dict:
+def update_history(history_file: Path, today: str, cache: dict[str, int],
+                   skip: bool = False) -> dict | None:
     """Дописывает dated-срез звёзд за today, обрезает до HISTORY_DAYS последних.
 
     Формат: {url: {"YYYY-MM-DD": stars, ...}}. Возвращает обновлённую историю.
     Сегодняшний срез перезаписывает прежний за ту же дату (идемпотентность
     при повторном прогоне в тот же день).
+
+    skip=True — тотальный сбой API (ни одного успешного fetch): НЕ штампуем
+    сегодняшний срез из устаревшего кэша, иначе через несколько дней окно
+    состоит из копий одного среза, все дельты обнуляются, а первый успешный
+    день приписывает многодневный прирост одной дате. Файл не трогаем,
+    возвращаем None, чтобы вызывающая сторона знала, что записи не было.
     """
+    if skip:
+        return None
     history = load_json_or_default(history_file, {}) or {}
 
     for url, stars in cache.items():
@@ -114,6 +130,7 @@ def main(
     out_dir: Path = ROOT,
     history_file: Path = HISTORY_FILE,
     meta_file: Path = META_FILE,
+    trendshift_file: Path | None = None,
 ) -> int:
     headers = github_headers()
 
@@ -127,6 +144,7 @@ def main(
 
     updated = 0
     missing = 0
+    fetched = 0  # успешных fetch (для определения тотального сбоя)
     for tool in tools:
         slug = github_slug(tool["url"])
         if not slug:
@@ -135,6 +153,7 @@ def main(
         if repo_meta is None or repo_meta.get("stars") is None:
             missing += 1
             continue
+        fetched += 1
         stars = repo_meta["stars"]
         if cache.get(tool["url"]) != stars:
             cache[tool["url"]] = stars
@@ -152,21 +171,42 @@ def main(
     )
 
     # Dated-срез звёзд для дельт 1д/7д (репо дня/недели).
+    # При тотальном сбое (0 успешных fetch) НЕ портим history устаревшим
+    # срезом — см. update_history(skip=...).
     today = datetime.date.today().isoformat()
-    update_history(history_file, today, cache)
+    total_failure = fetched == 0
+    update_history(history_file, today, cache, skip=total_failure)
 
     print(f"\nОбновлено: {updated}, не удалось получить: {missing}")
 
     # Перегенерируем README — прямой вызов (быстрее и тестируемее subprocess).
     # out_dir пробрасывается, чтобы при вызове из тестов README писался в tmp.
+    # Все инъектируемые пути пробрасываем дальше (контракт тест-изоляции):
+    # иначе README/site регенерируются из реальных data/*.json, а сайт теряет
+    # Featured (нужен history_file), [new] (нужен meta_file) и trendshift-бейджи.
     if regenerate:
         from generate_readme import main as gen_main
-        gen_main(tools_yml, stars_file, out_dir, history_file)
+        gen_main(tools_yml, stars_file, out_dir, history_file, meta_file=meta_file)
         # Статический сайт (docs/index.html) — тоже из обновлённых данных.
         from generate_site import main as site_main
-        site_main(tools_yml, stars_file, out_file=(out_dir / "docs" / "index.html"),
-                  meta_file=(out_dir / "data" / "repos-meta.json"))
-    return 0
+        site_kwargs = dict(
+            tools_yml=tools_yml, stars_file=stars_file,
+            out_file=(out_dir / "docs" / "index.html"),
+            meta_file=meta_file, history_file=history_file,
+        )
+        # trendshift.json обновляется ОТДЕЛЬНЫМ шагом (update_trendshift.py)
+        # после update_stars. В live-run мы хотим, чтобы регенерируемый здесь
+        # сайт нёс trendshift-бейджи — поэтому читаем тот же canonical путь.
+        # trendshift_file=None → site_main берёт свой дефолт (data/trendshift.json);
+        # в тестах путь инъектируется в tmp, чтобы не читать реальный кэш.
+        if trendshift_file is not None:
+            site_kwargs["trendshift_file"] = trendshift_file
+        site_main(**site_kwargs)
+
+    # Тотальный сбой (например, истёкший GITHUB_TOKEN): данные сохранены в
+    # кэше, но свежего среза нет — возвращаем nonzero, чтобы CI покраснел и
+    # кто-то узнал, а не считал дельты по копии вчерашнего снимка.
+    return 1 if total_failure else 0
 
 
 if __name__ == "__main__":

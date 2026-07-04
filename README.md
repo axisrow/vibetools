@@ -30,8 +30,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Featured
 
-Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman#featured-day) — caveman tool
-Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — caveman tool
+Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — caveman tool
 
 ## AI Coding Agents and CLI
 
@@ -112,7 +111,7 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 
 - [kestra](https://github.com/kestra-io/kestra) ![](https://img.shields.io/github/stars/kestra-io/kestra?style=flat&color=yellow) - Event Driven Orchestration & Scheduling Platform for Mission Critical Applications.
 - [trigger.dev](https://github.com/triggerdotdev/trigger.dev) ![](https://img.shields.io/github/stars/triggerdotdev/trigger.dev?style=flat&color=yellow) - Trigger.dev – build and deploy fully‑managed AI agents and workflows.
-- [infracost](https://github.com/infracost/infracost) ![](https://img.shields.io/github/stars/infracost/infracost?style=flat&color=yellow) - Cloud cost intelligence for engineers, AI coding agents, and CI/CD  Shift FinOps Left!.
+- [infracost](https://github.com/infracost/infracost) ![](https://img.shields.io/github/stars/infracost/infracost?style=flat&color=yellow) - Cloud cost intelligence for engineers, AI coding agents, and CI/CD Shift FinOps Left.
 - [nginx-ui](https://github.com/0xJacky/nginx-ui) ![](https://img.shields.io/github/stars/0xJacky/nginx-ui?style=flat&color=yellow) - Yet another WebUI for Nginx.
 - [mcp](https://github.com/awslabs/mcp) ![](https://img.shields.io/github/stars/awslabs/mcp?style=flat&color=yellow) - Open source MCP Servers for AWS.
 - [Chaterm](https://github.com/chaterm/Chaterm) ![](https://img.shields.io/github/stars/chaterm/Chaterm?style=flat&color=yellow) - Open source AI terminal for cloud and infrastructure management, enabling you to deploy, t.
@@ -142,7 +141,7 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp) ![](https://img.shields.io/github/stars/AgentDeskAI/browser-tools-mcp?style=flat&color=yellow) - Monitor browser logs directly from Cursor and other MCP compatible IDEs.
 - [firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) ![](https://img.shields.io/github/stars/firecrawl/firecrawl-mcp-server?style=flat&color=yellow) - Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude.
 - [BrowserMCP/mcp](https://github.com/BrowserMCP/mcp) ![](https://img.shields.io/github/stars/BrowserMCP/mcp?style=flat&color=yellow) - Browser MCP is a Model Context Provider (MCP) server that allows AI applications to contro.
-- [exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) ![](https://img.shields.io/github/stars/exa-labs/exa-mcp-server?style=flat&color=yellow) - Exa MCP for web search and web crawling!.
+- [exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) ![](https://img.shields.io/github/stars/exa-labs/exa-mcp-server?style=flat&color=yellow) - Exa MCP for web search and web crawling.
 - [mcp-crawl4ai-rag](https://github.com/coleam00/mcp-crawl4ai-rag) ![](https://img.shields.io/github/stars/coleam00/mcp-crawl4ai-rag?style=flat&color=yellow) - Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants.
 - [GreasyFork-Scripts](https://github.com/F9y4ng/GreasyFork-Scripts) ![](https://img.shields.io/github/stars/F9y4ng/GreasyFork-Scripts?style=flat&color=yellow) - The open source code of this project is used for userscripts (油猴脚本) for desktop browsers,.
 
@@ -185,7 +184,7 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 
 ## Context, Memory and Codebase Indexing
 
-- [claude-mem](https://github.com/thedotmack/claude-mem) ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&color=yellow) - Persistent Context Across Sessions for Every Agent –  Captures everything your agent does.
+- [claude-mem](https://github.com/thedotmack/claude-mem) ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&color=yellow) - Persistent Context Across Sessions for Every Agent – Captures everything your agent does.
 - [ragflow](https://github.com/infiniflow/ragflow) ![](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat&color=yellow) - RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cu.
 - [graphify](https://github.com/safishamsi/graphify) ![](https://img.shields.io/github/stars/safishamsi/graphify?style=flat&color=yellow) - AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more).
 - [mem0](https://github.com/mem0ai/mem0) ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&color=yellow) - Universal memory layer for AI Agents.
@@ -201,14 +200,14 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - High-performance code intelligence MCP server.
 - [agentmemory](https://github.com/rohitg00/agentmemory) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat&color=yellow) - Agentmemory tool.
-- [OpenMetadata](https://github.com/open-metadata/OpenMetadata) ![](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=flat&color=yellow) - The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building t.
+- [OpenMetadata](https://github.com/open-metadata/OpenMetadata) ![](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=flat&color=yellow) - The Open Context Layer for Data and AI , OpenMetadata is the open platform for building t.
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - Code search MCP for Claude Code.
 - [code2prompt](https://github.com/mufeedvh/code2prompt) ![](https://img.shields.io/github/stars/mufeedvh/code2prompt?style=flat&color=yellow) - CLI that converts a codebase into a single Markdown prompt for LLMs.
 - [semble](https://github.com/MinishLab/semble) ![](https://img.shields.io/github/stars/MinishLab/semble?style=flat&color=yellow) - Fast and Accurate Code Search for Agents.
-- [byterover-cli](https://github.com/campfirein/byterover-cli) ![](https://img.shields.io/github/stars/campfirein/byterover-cli?style=flat&color=yellow) - ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Ci.
+- [byterover-cli](https://github.com/campfirein/byterover-cli) ![](https://img.shields.io/github/stars/campfirein/byterover-cli?style=flat&color=yellow) - ByteRover CLI (brv) - The portable memory layer for autonomous coding agents (formerly Ci.
 - [Zep](https://github.com/getzep/zep) ![](https://img.shields.io/github/stars/getzep/zep?style=flat&color=yellow) - Long-term memory service for conversational and agentic AI.
 - [CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) ![](https://img.shields.io/github/stars/CodeGraphContext/CodeGraphContext?style=flat&color=yellow) - An MCP server plus a CLI tool that indexes local code into a graph database to provide con.
-- [RooFlow](https://github.com/GreatScottyMac/RooFlow) ![](https://img.shields.io/github/stars/GreatScottyMac/RooFlow?style=flat&color=yellow) - RooFlow - Enhanced Memory Bank System with Footgun Power  Next-gen Memory Bank system.
+- [RooFlow](https://github.com/GreatScottyMac/RooFlow) ![](https://img.shields.io/github/stars/GreatScottyMac/RooFlow?style=flat&color=yellow) - RooFlow - Enhanced Memory Bank System with Footgun Power Next-gen Memory Bank system.
 
 ## MCP Servers and Clients
 
@@ -216,11 +215,11 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) ![](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&color=yellow) - Reference implementations of Model Context Protocol servers.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) ![](https://img.shields.io/github/stars/github/github-mcp-server?style=flat&color=yellow) - GitHub's official MCP server for interacting with repos, issues and PRs.
 - [FastMCP](https://github.com/PrefectHQ/fastmcp) ![](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=flat&color=yellow) - Fast, Pythonic framework for building MCP servers and clients.
-- [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) ![](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat&color=yellow) - Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!.
+- [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) ![](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat&color=yellow) - Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth.
 - [mcp-use](https://github.com/mcp-use/mcp-use) ![](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat&color=yellow) - The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI.
 - [Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH) ![](https://img.shields.io/github/stars/yzfly/Awesome-MCP-ZH?style=flat&color=yellow) - MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients.
 - [DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) ![](https://img.shields.io/github/stars/wonderwhy-er/DesktopCommanderMCP?style=flat&color=yellow) - This is MCP server for Claude that gives it terminal control, file system search and diff.
-- [klavis](https://github.com/Klavis-AI/klavis) ![](https://img.shields.io/github/stars/Klavis-AI/klavis?style=flat&color=yellow) - Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale.
+- [klavis](https://github.com/Klavis-AI/klavis) ![](https://img.shields.io/github/stars/Klavis-AI/klavis?style=flat&color=yellow) - Klavis AI: MCP integration platforms that let AI agents use tools reliably at any scale.
 - [metamcp](https://github.com/metatool-ai/metamcp) ![](https://img.shields.io/github/stars/metatool-ai/metamcp?style=flat&color=yellow) - MCP Aggregator, Orchestrator, Middleware, Gateway in one docker.
 
 ## Agent Skills, Prompts and Rules
@@ -251,9 +250,9 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [notebooklm-py](https://github.com/teng-lin/notebooklm-py) ![](https://img.shields.io/github/stars/teng-lin/notebooklm-py?style=flat&color=yellow) - Unofficial Python API and agentic skill for Google NotebookLM.
 - [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) ![](https://img.shields.io/github/stars/jnMetaCode/agency-agents-zh?style=flat&color=yellow) - Agency-agents-zh tool.
 - [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) ![](https://img.shields.io/github/stars/yusufkaraaslan/Skill_Seekers?style=flat&color=yellow) - Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with a.
-- [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=flat&color=yellow) - ARIS  (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML rese.
+- [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=flat&color=yellow) - ARIS (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML rese.
 - [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview im.
-- [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT: Empowering everyone to become a prompt expert!    结构化提示词（Structured Prompt）提出者.
+- [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT: Empowering everyone to become a prompt expert! 结构化提示词（Structured Prompt）提出者.
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - A collection of GPT system prompts and various prompt injection/leaking knowledge.
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Universal skills loader for AI coding agents - npm i -g openskills.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Comprehensive open-source library of AI research and engineering skills for any AI model.
@@ -310,7 +309,7 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [PocketFlow](https://github.com/The-Pocket/PocketFlow) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow?style=flat&color=yellow) - Pocket Flow: 100-line LLM framework.
 - [evolver](https://github.com/EvoMap/evolver) ![](https://img.shields.io/github/stars/EvoMap/evolver?style=flat&color=yellow) - The GEP-powered self-evolving engine for AI agents.
 - [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate.
-- [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - PraisonAI  — Hire a 24/7 AI Workforce.
+- [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - PraisonAI — Hire a 24/7 AI Workforce.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework.
 - [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Openagent tool.
 - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow: The library to build & auto-optimize LLM applications.
@@ -331,7 +330,7 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [codeburn](https://github.com/getagentseal/codeburn) ![](https://img.shields.io/github/stars/getagentseal/codeburn?style=flat&color=yellow) - Free, local tool to track AI coding token usage and cost across 31 tools and agents (Claud.
 - [evidently](https://github.com/evidentlyai/evidently) ![](https://img.shields.io/github/stars/evidentlyai/evidently?style=flat&color=yellow) - Evidently is ​​an open-source ML and LLM observability framework.
 - [openllmetry](https://github.com/traceloop/openllmetry) ![](https://img.shields.io/github/stars/traceloop/openllmetry?style=flat&color=yellow) - Open-source observability for your GenAI or LLM application, based on OpenTelemetry.
-- [aim](https://github.com/aimhubio/aim) ![](https://img.shields.io/github/stars/aimhubio/aim?style=flat&color=yellow) - Aim  — An easy-to-use & supercharged open-source experiment tracker.
+- [aim](https://github.com/aimhubio/aim) ![](https://img.shields.io/github/stars/aimhubio/aim?style=flat&color=yellow) - Aim — An easy-to-use & supercharged open-source experiment tracker.
 - [Helicone](https://github.com/Helicone/helicone) ![](https://img.shields.io/github/stars/Helicone/helicone?style=flat&color=yellow) - Open-source LLM observability with monitoring, eval and experiments.
 - [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - AI observability platform for production LLM and agent systems.
 - [agenta](https://github.com/Agenta-AI/agenta) ![](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat&color=yellow) - The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and.
@@ -341,14 +340,14 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [ClaudeBar](https://github.com/tddworks/ClaudeBar) ![](https://img.shields.io/github/stars/tddworks/ClaudeBar?style=flat&color=yellow) - A macOS menu bar application that monitors AI coding assistant usage quotas.
 - [sniffly](https://github.com/chiphuyen/sniffly) ![](https://img.shields.io/github/stars/chiphuyen/sniffly?style=flat&color=yellow) - Claude Code dashboard with usage stats, error analysis, and sharable feature.
 - [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - Prompty makes it easy to create, manage, debug, and evaluate LLM prompts for your AI appli.
-- [langtrace](https://github.com/Scale3-Labs/langtrace) ![](https://img.shields.io/github/stars/Scale3-Labs/langtrace?style=flat&color=yellow) - Langtrace  is an open-source,  Open Telemetry based end-to-end observability tool for LLM.
+- [langtrace](https://github.com/Scale3-Labs/langtrace) ![](https://img.shields.io/github/stars/Scale3-Labs/langtrace?style=flat&color=yellow) - Langtrace is an open-source, Open Telemetry based end-to-end observability tool for LLM.
 - [langkit](https://github.com/whylabs/langkit) ![](https://img.shields.io/github/stars/whylabs/langkit?style=flat&color=yellow) - LangKit: An open-source toolkit for monitoring Large Language Models (LLMs).
 
 ## Docs, Research and Knowledge Work
 
 - [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Gpt_academic tool.
 - [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) ![](https://img.shields.io/github/stars/Egonex-AI/Understand-Anything?style=flat&color=yellow) - Graphs that teach > graphs that impress.
-- [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ![](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&color=yellow) - Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1.
+- [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ![](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&color=yellow) - Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1.
 - [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - TrendRadar tool.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - Spec-driven development (SDD) for AI coding assistants.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors.
@@ -387,8 +386,8 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [open-llms](https://github.com/eugeneyan/open-llms) ![](https://img.shields.io/github/stars/eugeneyan/open-llms?style=flat&color=yellow) - A list of open LLMs available for commercial use.
 - [awesome-generative-ai](https://github.com/steven2358/awesome-generative-ai) ![](https://img.shields.io/github/stars/steven2358/awesome-generative-ai?style=flat&color=yellow) - A curated list of modern Generative Artificial Intelligence projects and services.
 - [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey) ![](https://img.shields.io/github/stars/RUCAIBox/LLMSurvey?style=flat&color=yellow) - The official GitHub page for the survey paper "A Survey of Large Language Models".
-- [awesome-chatgpt-zh](https://github.com/EmbraceAGI/awesome-chatgpt-zh) ![](https://img.shields.io/github/stars/EmbraceAGI/awesome-chatgpt-zh?style=flat&color=yellow) - ChatGPT 中文指南，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up!.
-- [llm-engineer-toolkit](https://github.com/KalyanKS-NLP/llm-engineer-toolkit) ![](https://img.shields.io/github/stars/KalyanKS-NLP/llm-engineer-toolkit?style=flat&color=yellow) - A curated list of  120+ LLM libraries category wise.
+- [awesome-chatgpt-zh](https://github.com/EmbraceAGI/awesome-chatgpt-zh) ![](https://img.shields.io/github/stars/EmbraceAGI/awesome-chatgpt-zh?style=flat&color=yellow) - ChatGPT 中文指南，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up.
+- [llm-engineer-toolkit](https://github.com/KalyanKS-NLP/llm-engineer-toolkit) ![](https://img.shields.io/github/stars/KalyanKS-NLP/llm-engineer-toolkit?style=flat&color=yellow) - A curated list of 120+ LLM libraries category wise.
 - [LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide) ![](https://img.shields.io/github/stars/Mooler0410/LLMsPracticalGuide?style=flat&color=yellow) - A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers).
 - [anomaly-detection-resources](https://github.com/yzhao062/anomaly-detection-resources) ![](https://img.shields.io/github/stars/yzhao062/anomaly-detection-resources?style=flat&color=yellow) - Anomaly detection related books, papers, videos, and toolboxes.
 - [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) ![](https://img.shields.io/github/stars/WangRongsheng/awesome-LLM-resources?style=flat&color=yellow) - Awesome-LLM-resources tool.
@@ -415,7 +414,7 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [milvus](https://github.com/milvus-io/milvus) ![](https://img.shields.io/github/stars/milvus-io/milvus?style=flat&color=yellow) - Milvus is a high-performance, cloud-native vector database built for scalable vector ANN s.
 - [jan](https://github.com/janhq/jan) ![](https://img.shields.io/github/stars/janhq/jan?style=flat&color=yellow) - Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
 - [ray](https://github.com/ray-project/ray) ![](https://img.shields.io/github/stars/ray-project/ray?style=flat&color=yellow) - Ray is an AI compute engine.
-- [quivr](https://github.com/QuivrHQ/quivr) ![](https://img.shields.io/github/stars/QuivrHQ/quivr?style=flat&color=yellow) - Opiniated RAG for integrating GenAI in your apps    Focus on your product rather than the.
+- [quivr](https://github.com/QuivrHQ/quivr) ![](https://img.shields.io/github/stars/QuivrHQ/quivr?style=flat&color=yellow) - Opiniated RAG for integrating GenAI in your apps Focus on your product rather than the.
 - [Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat) ![](https://img.shields.io/github/stars/chatchat-space/Langchain-Chatchat?style=flat&color=yellow) - Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型的 RAG 与 Ag.
 - [langextract](https://github.com/google/langextract) ![](https://img.shields.io/github/stars/google/langextract?style=flat&color=yellow) - A Python library for extracting structured information from unstructured text using LLMs w.
 - [Qwen](https://github.com/QwenLM/Qwen) ![](https://img.shields.io/github/stars/QwenLM/Qwen?style=flat&color=yellow) - The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibab.
@@ -444,11 +443,11 @@ Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/cave
 ## Domain-Specific Agents
 
 - [TradingAgents](https://github.com/TauricResearch/TradingAgents) ![](https://img.shields.io/github/stars/TauricResearch/TradingAgents?style=flat&color=yellow) - TradingAgents: Multi-Agents LLM Financial Trading Framework.
-- [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) ![](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=flat&color=yellow) - LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis.
+- [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) ![](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=flat&color=yellow) - LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis.
 - [LibreChat](https://github.com/danny-avila/LibreChat) ![](https://img.shields.io/github/stars/danny-avila/LibreChat?style=flat&color=yellow) - Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Re.
 - [OpenMontage](https://github.com/calesthio/OpenMontage) ![](https://img.shields.io/github/stars/calesthio/OpenMontage?style=flat&color=yellow) - World's first open-source, agentic video production system.
 - [FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal) ![](https://img.shields.io/github/stars/Fincept-Corporation/FinceptTerminal?style=flat&color=yellow) - FinceptTerminal is a modern finance application offering advanced market analytics, invest.
-- [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinGPT?style=flat&color=yellow) - FinGPT: Open-Source Financial Large Language Models!  Revolutionize     We release the tr.
+- [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinGPT?style=flat&color=yellow) - FinGPT: Open-Source Financial Large Language Models! Revolutionize We release the tr.
 - [machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading) ![](https://img.shields.io/github/stars/stefan-jansen/machine-learning-for-trading?style=flat&color=yellow) - Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.
 - [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) ![](https://img.shields.io/github/stars/xpzouying/xiaohongshu-mcp?style=flat&color=yellow) - MCP for xiaohongshu.com.
 - [ai-berkshire](https://github.com/xbtlin/ai-berkshire) ![](https://img.shields.io/github/stars/xbtlin/ai-berkshire?style=flat&color=yellow) - AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berk.

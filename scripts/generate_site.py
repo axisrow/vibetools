@@ -23,8 +23,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import github_slug, load_json_or_default  # noqa: E402
 from generate_readme import (  # noqa: E402
-    CATEGORIES, ROOT, SHIELDS_STARS, is_new, load_history, load_stars,
-    load_tools, pick_featured_entries,
+    CATEGORIES, ROOT, SHIELDS_STARS, _window_delta, is_new, load_history,
+    load_stars, load_tools, pick_featured_entries,
 )
 
 TOOLS_YML = ROOT / "data" / "tools.yml"
@@ -36,20 +36,24 @@ OUT_FILE = ROOT / "docs" / "index.html"
 INDEX_TEMPLATE = ROOT / "scripts" / "site_template.html"
 
 
-def _stars_per_week(url: str, history: dict) -> int | None:
-    """Рост звёзд за последние 7 дней из stars-history (None если данных нет)."""
-    import datetime
+def _stars_per_week(url: str, history: dict, stars: dict) -> int | None:
+    """Рост звёзд за последние 7 дней из stars-history (None если данных нет).
+
+    Переиспользует _window_delta из generate_readme (единая 7-дневная логика)
+    вместо собственного дубля с наивным today — устойчива к пропущенному
+    daily-срезу (week-окно берёт самый старый доступный снимок в пределах 7
+    дней, а не точную дату) и не обнуляется в не-UTC таймзоне.
+    """
+    cur = stars.get(url)
+    if not isinstance(cur, int):
+        return None
     snaps = history.get(url, {})
     if not snaps:
         return None
-    today = datetime.date.today()
-    week_ago = (today - datetime.timedelta(days=7)).isoformat()
-    today_iso = today.isoformat()
-    cur = snaps.get(today_iso)
-    prev = snaps.get(week_ago)
-    if not isinstance(cur, int) or not isinstance(prev, int):
+    delta = _window_delta(cur, snaps, "week", 7)
+    if not delta:
         return None
-    return max(0, cur - prev)
+    return max(0, delta["delta"])
 
 
 def _trendshift_payload(entry) -> dict | None:
@@ -131,7 +135,7 @@ def build_data_json(
             "category": t["category"],
             "isNew": is_new(t, today),
             "stars": star_count,
-            "starsPerWeek": _stars_per_week(url, history),
+            "starsPerWeek": _stars_per_week(url, history, stars),
             "starsUrl": stars_url,
             "forks": m.get("forks"),
             "openIssues": m.get("openIssues"),
@@ -165,12 +169,32 @@ def build_data_json(
     }
 
 
+DATA_MARKER = "/*__DATA__*/{}"
+
+
 def render_index_html(data: dict, template: Path = INDEX_TEMPLATE) -> str:
-    """Подставляет data.json в HTML-шаблон (window.__DATA__)."""
+    """Подставляет data.json в HTML-шаблон (window.__DATA__).
+
+    Безопасность payload: json.dumps НЕ экранирует «</», а описания репо
+    попадают из GitHub API дословно (в т.ч. через fetch_candidates → tools.yml).
+    Любой «</script>» в описании закрыл бы <script>-элемент досрочно —
+    window.__DATA__ остался бы undefined (пустой сайт), а крафтовый
+    «</script><img onerror=…>» — stored-XSS. Поэтому экранируем последовательность
+    «</» → «<\\/» (json-валидно, в JS читается обратно как «</», но парсер HTML
+    его как закрывающий тег не видит). Дополнительно assert-им, что маркер
+    шаблона найден — иначе косметическая правка шаблона заставила бы replace
+    молча не сработать и деплоить пустой сайт при зелёном CI.
+    """
     tpl = template.read_text(encoding="utf-8")
+    if DATA_MARKER not in tpl:
+        raise ValueError(
+            f"маркер данных {DATA_MARKER!r} не найден в шаблоне {template}; "
+            "generate_site не сможет встроить window.__DATA__")
     # json с ensure_ascii=False — китайский текст читаемо и меньше байт.
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-    return tpl.replace("/*__DATA__*/{}", payload)
+    # Экранируем «</» (в т.ч. «</script>»), чтобы payload не порвал <script>.
+    payload = payload.replace("</", "<\\/")
+    return tpl.replace(DATA_MARKER, payload)
 
 
 def main(
