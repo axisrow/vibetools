@@ -1,9 +1,9 @@
 """Smoke-ловушка: кэши data/*.json не должны содержать mock-URL из тестовых fixtures.
 
 Защита от регрессии утечки: если какой-то тест пишет в реальные
-data/repos-meta.json / stars.json / stars-history.json без tmp-изоляции,
-mock-маркеры (github.com/a/hi, a/lo, b/editor, example.com/tool) всплывут
-здесь, и CI упадёт ДО коммита.
+data/repos-meta.json / stars.json / stars-history.json / trendshift.json
+без tmp-изоляции, mock-маркеры (github.com/a/hi, a/lo, b/editor,
+example.com/tool) всплывут здесь, и CI упадёт ДО коммита.
 
 Маркеры взяты из tmp_repo fixtures (tests/integration/conftest.py,
 tests/e2e/conftest.py).
@@ -19,7 +19,7 @@ MOCK_MARKERS = [
     "github.com/b/editor",
     "example.com/tool",
 ]
-CACHE_FILES = ["data/repos-meta.json", "data/stars.json", "data/stars-history.json"]
+CACHE_FILES = ["data/repos-meta.json", "data/stars.json", "data/stars-history.json", "data/trendshift.json"]
 
 
 @pytest.mark.parametrize("rel", CACHE_FILES)

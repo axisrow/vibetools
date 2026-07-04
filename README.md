@@ -18,7 +18,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Featured
 
-Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman#featured) — caveman tool
+Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman#featured-day) — caveman tool
+Repo of the week (1-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — caveman tool
 
 ## AI Coding Agents and CLI
 

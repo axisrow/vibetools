@@ -3,6 +3,7 @@
 Проверяет: создаётся валидный index.html со встроенными данными, все tools
 на месте, search-поле lowercase (CJK-aware), stars fallback, i18n title_zh.
 """
+import datetime
 import json
 import re
 from pathlib import Path
@@ -55,6 +56,29 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "meta-row" in html
     assert "command-bar" in html
     assert "filter-rail" in html
+    assert "featured-strip" in html
+    assert "featured-list" in html
+    assert "featured-achievements" in html
+    assert "featured-achievement-day" in html
+    assert "featured-achievement-week" in html
+    assert "trendshift-achievements" in html
+    assert "trendshift-achievement-day" in html
+    assert "trendshift-achievement-week" in html
+    assert "trendshiftDay" in html
+    assert "trendshiftWeek" in html
+    assert "featuredDelta" in html
+    assert "bi-sprite" in html
+    assert "bi-star-fill" in html
+    assert "bi-trophy-fill" in html
+    assert "bi-award-fill" in html
+    assert "bi-calendar-week-fill" in html
+    assert "bi-git" in html
+    assert "featured-overline" not in html
+    assert "featuredBadges" not in html
+    assert "state-badge-featured" not in html
+    assert "Day pick" not in html
+    assert "Week pick" not in html
+    assert "trendshift-badge-img" not in html
     assert "category-select" in html
     # Языковой фильтр (#11) должен пережить редизайн — regression guard.
     assert 'id="f-language"' in html
@@ -171,7 +195,7 @@ def test_site_cjk_search(tmp_tools_yml, tmp_path):
 def test_build_data_json_structure(tmp_repo):
     """build_data_json возвращает ожидаемую структуру (без verified/added)."""
     data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
-    assert set(data.keys()) >= {"generatedAt", "categories", "tools"}
+    assert set(data.keys()) >= {"generatedAt", "categories", "featured", "tools"}
     tool = data["tools"][0]
     # verified/added убраны; добавлены forks/createdAt/topics/rank/starsPerWeek.
     assert set(tool.keys()) >= {
@@ -179,6 +203,81 @@ def test_build_data_json_structure(tmp_repo):
         "stars", "starsPerWeek", "starsUrl", "forks", "openIssues",
         "createdAt", "archived", "topics", "rank", "desc", "search"}
     assert "verified" not in tool and "added" not in tool
+
+
+def test_build_data_json_featured_from_history(tmp_repo):
+    """Сайт получает тот же featured-сигнал, что README: day/week из истории звёзд."""
+    today = datetime.date.today()
+    history = {
+        "https://github.com/a/hi": {
+            (today - datetime.timedelta(days=1)).isoformat(): 900,
+            (today - datetime.timedelta(days=7)).isoformat(): 700,
+        },
+        "https://github.com/a/lo": {
+            (today - datetime.timedelta(days=1)).isoformat(): 9,
+            (today - datetime.timedelta(days=7)).isoformat(): 5,
+        },
+    }
+    tmp_repo["history_file"].write_text(json.dumps(history), encoding="utf-8")
+
+    data = build_data_json(
+        tmp_repo["tools_yml"],
+        tmp_repo["stars_file"],
+        history_file=tmp_repo["history_file"],
+    )
+
+    assert data["featured"] == [
+        {"kind": "day", "url": "https://github.com/a/hi",
+         "delta": 100, "days": 1, "windowComplete": True},
+        {"kind": "week", "url": "https://github.com/a/hi",
+         "delta": 300, "days": 7, "windowComplete": True},
+    ]
+
+
+def test_build_data_json_surfaces_trendshift_cache(tmp_repo):
+    """Trendshift cache enriches matching tools without changing tools.yml."""
+    tmp_repo["trendshift_file"].write_text(json.dumps({
+        "https://github.com/a/hi": {
+            "trendshiftId": "50668",
+            "pageUrl": "https://trendshift.io/repositories/50668",
+            "badges": [
+                {
+                    "kind": "day",
+                    "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/daily",
+                },
+                {
+                    "kind": "week",
+                    "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
+                },
+            ],
+            "updatedAt": "2026-07-04",
+        }
+    }), encoding="utf-8")
+
+    data = build_data_json(
+        tmp_repo["tools_yml"],
+        tmp_repo["stars_file"],
+        trendshift_file=tmp_repo["trendshift_file"],
+    )
+
+    hi = next(t for t in data["tools"] if t["name"] == "HiStars")
+    lo = next(t for t in data["tools"] if t["name"] == "LoStars")
+    assert hi["trendshift"] == {
+        "badges": [
+            {
+                "kind": "day",
+                "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/daily",
+            },
+            {
+                "kind": "week",
+                "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
+            },
+        ],
+        "trendshiftId": "50668",
+        "pageUrl": "https://trendshift.io/repositories/50668",
+        "updatedAt": "2026-07-04",
+    }
+    assert "trendshift" not in lo
 
 
 def test_build_data_json_no_verified_anywhere(tmp_repo):
