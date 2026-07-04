@@ -4,102 +4,623 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Awesome Vibe Coding Tools</title>
+<script>
+  (() => {
+    const prefersDark = window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-bs-theme", prefersDark ? "dark" : "light");
+  })();
+</script>
+<script>
+  (() => {
+    const localCssHref = "vendor/bootstrap/5.3.8/css/bootstrap.min.css";
+    window.__loadBootstrapCssFallback = () => {
+      const link = document.getElementById("bootstrap-css");
+      if (!link || link.dataset.bootstrapFallback === "true") return;
+      link.dataset.bootstrapFallback = "true";
+      link.removeAttribute("integrity");
+      link.removeAttribute("crossorigin");
+      link.href = localCssHref;
+    };
+    window.__markBootstrapCssReady = () => {
+      document.documentElement.dataset.bootstrapCss = "ready";
+    };
+  })();
+</script>
+<link
+  id="bootstrap-css"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous"
+  onload="window.__markBootstrapCssReady && window.__markBootstrapCssReady();"
+  onerror="window.__loadBootstrapCssFallback && window.__loadBootstrapCssFallback();"
+>
+<script>
+  (() => {
+    const hasBootstrapCss = () =>
+      getComputedStyle(document.documentElement)
+        .getPropertyValue("--bs-body-font-family")
+        .trim() !== "";
+    window.addEventListener("load", () => {
+      requestAnimationFrame(() => {
+        if (!hasBootstrapCss()) window.__loadBootstrapCssFallback();
+      });
+    }, { once: true });
+  })();
+</script>
 <style>
   :root {
-    --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --border: #d0d7de;
-    --accent: #0969da; --chip: #ddf4ff; --chip-active: #0969da;
-    --card: #f6f8fa; --new: #1a7f37;
+    --vt-bg-page: #fbfcfe;
+    --vt-bg-soft: #f6f8fa;
+    --vt-surface: #ffffff;
+    --vt-border: #d8dee4;
+    --vt-ink-soft: #57606a;
+    --vt-ink-muted: #7d8590;
+    --vt-accent: #0969da;
+    --vt-accent-soft: #ddf4ff;
+    --vt-hover: #f6f8fa;
+    --vt-header-bg: rgba(251, 252, 254, .96);
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e; --border: #30363d;
-      --accent: #58a6ff; --chip: #1f6feb22; --chip-active: #58a6ff;
-      --card: #161b22; --new: #3fb950;
+  [data-bs-theme="dark"] {
+    --vt-bg-page: #0d1117;
+    --vt-bg-soft: #161b22;
+    --vt-surface: #0d1117;
+    --vt-border: #30363d;
+    --vt-ink-soft: #8b949e;
+    --vt-ink-muted: #6e7681;
+    --vt-accent: #58a6ff;
+    --vt-accent-soft: rgba(88, 166, 255, .14);
+    --vt-hover: rgba(110, 118, 129, .12);
+    --vt-header-bg: rgba(13, 17, 23, .96);
+  }
+  body {
+    background: var(--vt-bg-page);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    letter-spacing: 0;
+  }
+  a {
+    text-underline-offset: 2px;
+  }
+  .site-header {
+    background: var(--vt-header-bg);
+    backdrop-filter: saturate(160%) blur(12px);
+  }
+  .site-wrap {
+    max-width: 1180px;
+  }
+  .masthead {
+    gap: 1.05rem;
+  }
+  .masthead-copy {
+    min-width: 0;
+  }
+  .brand-title {
+    color: var(--bs-body-color);
+    font-size: clamp(2.15rem, 3.2vw + 1rem, 3.9rem);
+    font-weight: 760;
+    letter-spacing: 0;
+    line-height: .98;
+  }
+  .brand-summary {
+    color: var(--vt-ink-soft);
+    font-size: clamp(1rem, .25vw + .95rem, 1.12rem);
+    line-height: 1.42;
+    max-width: 48rem;
+  }
+  .meta-row {
+    color: var(--vt-ink-soft);
+    font-size: .86rem;
+    line-height: 1.2;
+  }
+  .meta-row strong {
+    color: var(--bs-body-color);
+    font-variant-numeric: tabular-nums;
+  }
+  .meta-dot {
+    background: var(--vt-border);
+    border-radius: 999px;
+    display: inline-block;
+    height: .24rem;
+    width: .24rem;
+  }
+  .header-actions {
+    flex: 0 0 auto;
+    padding-top: .2rem;
+  }
+  .github-link {
+    color: inherit;
+  }
+  .language-toggle {
+    align-items: center;
+    background: var(--vt-surface);
+    border-color: var(--vt-border);
+    border-radius: 999px;
+    color: var(--bs-body-color);
+    display: inline-flex;
+    font-weight: 650;
+    gap: .42rem;
+    height: 2.25rem;
+    justify-content: center;
+    min-width: 4.45rem;
+    padding: .38rem .62rem;
+  }
+  .language-toggle:hover,
+  .language-toggle:focus {
+    border-color: var(--vt-accent);
+    color: var(--bs-body-color);
+  }
+  .translate-mark {
+    color: var(--vt-ink-soft);
+    font-size: .76rem;
+    font-weight: 760;
+    letter-spacing: 0;
+  }
+  .language-current {
+    font-size: .75rem;
+    letter-spacing: .02em;
+  }
+  .language-dropdown {
+    border-color: var(--vt-border);
+    border-radius: 10px;
+    box-shadow: 0 18px 48px rgba(31, 35, 40, .12);
+    min-width: 11rem;
+    padding: .35rem;
+  }
+  [data-bs-theme="dark"] .language-dropdown {
+    box-shadow: 0 18px 48px rgba(1, 4, 9, .45);
+  }
+  .language-option {
+    align-items: center;
+    border-radius: 7px;
+    display: flex;
+    font-size: .9rem;
+    gap: .75rem;
+    justify-content: space-between;
+    padding: .45rem .55rem;
+  }
+  .language-option.active,
+  .language-option:active {
+    background: var(--vt-accent-soft);
+    color: var(--bs-body-color);
+  }
+  .language-check {
+    color: var(--vt-accent);
+    font-weight: 700;
+    visibility: hidden;
+  }
+  .language-option.active .language-check {
+    visibility: visible;
+  }
+  .command-bar {
+    background: var(--vt-surface);
+    border: 1px solid var(--vt-border);
+    border-radius: 14px;
+    box-shadow: 0 14px 38px rgba(31, 35, 40, .05);
+    padding: .58rem;
+  }
+  [data-bs-theme="dark"] .command-bar {
+    box-shadow: none;
+  }
+  .search-field {
+    flex: 1 1 25rem;
+    max-width: none;
+    min-width: min(100%, 18rem);
+  }
+  .filter-rail {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+  .search-field .input-group-text,
+  .search-field .form-control,
+  .toolbar-select,
+  .mobile-category .form-select,
+  .new-toggle {
+    border-color: var(--vt-border);
+  }
+  .search-field .input-group-text {
+    background: var(--vt-bg-soft);
+    color: var(--vt-ink-soft);
+    font-weight: 600;
+  }
+  .toolbar-select {
+    flex: 0 0 9.2rem;
+    width: auto;
+  }
+  .new-toggle {
+    flex: 0 0 auto;
+  }
+  .mobile-category {
+    display: none;
+  }
+  .new-toggle {
+    white-space: nowrap;
+  }
+  .new-toggle {
+    align-items: center;
+    border-color: var(--vt-border);
+    display: inline-flex;
+    justify-content: center;
+    min-width: 4.5rem;
+  }
+  .new-toggle:focus {
+    box-shadow: none;
+  }
+  .new-toggle:focus-visible {
+    border-color: var(--vt-accent);
+    box-shadow: 0 0 0 .16rem rgba(9, 105, 218, .18);
+  }
+  .new-toggle[aria-pressed="true"] {
+    background: var(--vt-accent);
+    border-color: var(--vt-accent);
+    color: #fff;
+  }
+  [data-bs-theme="dark"] .new-toggle:focus-visible {
+    box-shadow: 0 0 0 .16rem rgba(88, 166, 255, .22);
+  }
+  .category-tabs {
+    border-bottom: 1px solid var(--vt-border);
+    gap: .35rem .75rem;
+    scrollbar-width: thin;
+  }
+  .category-tab {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: var(--vt-ink-soft);
+    font-weight: 600;
+    padding: .55rem .05rem .62rem;
+    white-space: nowrap;
+  }
+  .category-tab:hover {
+    color: var(--bs-body-color);
+  }
+  .category-tab.active {
+    border-bottom-color: var(--vt-accent);
+    color: var(--bs-body-color);
+  }
+  .category-count {
+    color: var(--vt-ink-soft);
+    font-size: .78rem;
+    font-weight: 500;
+    margin-left: .28rem;
+  }
+  .results-line {
+    color: var(--vt-ink-soft);
+    font-size: .875rem;
+  }
+  .tool-list {
+    border-top: 1px solid var(--vt-border);
+  }
+  .tool-item {
+    border-color: var(--vt-border);
+    transition: background-color .12s ease;
+  }
+  .tool-item:hover {
+    background: var(--vt-hover);
+  }
+  .tool-record {
+    display: grid;
+    gap: 1.35rem;
+    grid-template-columns: minmax(0, 1fr) 12.5rem;
+  }
+  .tool-heading {
+    min-width: 0;
+  }
+  .tool-name {
+    color: var(--bs-body-color);
+    font-size: 1.22rem;
+    font-weight: 780;
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+  }
+  .tool-name:hover {
+    color: var(--vt-accent);
+    text-decoration: underline !important;
+  }
+  .tool-desc {
+    color: var(--vt-ink-soft);
+    font-size: .92rem;
+    line-height: 1.45;
+    max-width: 64rem;
+    overflow-wrap: anywhere;
+  }
+  .tool-submeta {
+    color: var(--vt-ink-soft);
+    font-size: .78rem;
+    line-height: 1.35;
+  }
+  .tool-submeta span {
+    align-items: center;
+    display: inline-flex;
+  }
+  .submeta-separator {
+    color: var(--bs-border-color);
+    margin: 0 .18rem;
+  }
+  .state-badge {
+    border-radius: 999px;
+    font-size: .72rem;
+    font-weight: 600;
+    padding: .1rem .42rem;
+  }
+  .state-badge-new {
+    background: rgba(26, 127, 55, .1);
+    color: #1a7f37;
+  }
+  [data-bs-theme="dark"] .state-badge-new {
+    color: #3fb950;
+  }
+  .state-badge-archived {
+    background: var(--vt-bg-soft);
+    color: var(--vt-ink-soft);
+  }
+  .metric-panel {
+    align-self: stretch;
+    border-left: 1px solid var(--vt-border);
+    color: var(--vt-ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: .28rem;
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+  .stars {
+    color: var(--bs-body-color);
+    font-size: .96rem;
+    font-weight: 720;
+    text-align: right;
+  }
+  .stars img {
+    max-height: 20px;
+    vertical-align: middle;
+  }
+  .mobile-metrics {
+    display: none;
+  }
+  .mobile-star {
+    color: var(--bs-body-color);
+    font-size: .88rem;
+    font-weight: 650;
+  }
+  .mobile-star img {
+    max-height: 18px;
+    vertical-align: middle;
+  }
+  .mobile-metric {
+    color: var(--vt-ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .mobile-metric strong {
+    color: var(--vt-ink-soft);
+    font-weight: 520;
+  }
+  .metric-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .1rem .55rem;
+    justify-content: flex-end;
+  }
+  .metric {
+    font-size: .74rem;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .metric-label {
+    color: var(--vt-ink-soft);
+    display: inline;
+    font-size: inherit;
+    line-height: 1.1;
+  }
+  .metric-value {
+    color: var(--vt-ink-soft);
+    font-weight: 500;
+  }
+  .empty {
+    color: var(--vt-ink-soft);
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .footer-link {
+    color: inherit;
+  }
+  @media (max-width: 991.98px) {
+    .masthead-top {
+      align-items: flex-start !important;
+    }
+    .tool-record {
+      grid-template-columns: minmax(0, 1fr) 10.5rem;
     }
   }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; font: 15px/1.5 -apple-system, "Segoe UI", "PingFang SC",
-      "Microsoft YaHei", Roboto, sans-serif;
-    background: var(--bg); color: var(--fg);
+  @media (max-width: 767.98px) {
+    .site-header .site-wrap {
+      padding-bottom: .75rem !important;
+      padding-top: .75rem !important;
+    }
+    .header-stack {
+      gap: .65rem !important;
+    }
+    .masthead {
+      gap: .85rem;
+    }
+    .masthead-top {
+      gap: .75rem !important;
+    }
+    .brand-title {
+      font-size: 2.08rem;
+      line-height: 1;
+      margin-bottom: .42rem !important;
+    }
+    .brand-summary {
+      font-size: .93rem;
+      line-height: 1.34;
+    }
+    .meta-row {
+      font-size: .78rem;
+      gap: .35rem !important;
+      margin-top: .55rem !important;
+    }
+    .header-actions {
+      padding-top: .05rem;
+    }
+    .language-toggle {
+      height: 2.1rem;
+      min-width: 4rem;
+      padding: .32rem .52rem;
+    }
+    .command-bar {
+      gap: .45rem !important;
+      padding: .48rem;
+    }
+    .search-field {
+      flex-basis: 100%;
+      max-width: none;
+      width: 100%;
+    }
+    .filter-rail {
+      flex: 1 1 100%;
+      width: 100%;
+    }
+    .toolbar-select {
+      flex: 1 1 calc(100% - 5.2rem);
+      min-width: 0;
+    }
+    .search-field .input-group-text {
+      display: none;
+    }
+    .search-field .form-control,
+    .toolbar-select,
+    .new-toggle {
+      font-size: .9rem;
+    }
+    .new-toggle {
+      flex: 0 0 auto;
+      min-width: 4.65rem;
+    }
+    .mobile-category {
+      display: block;
+      flex: 1 1 100%;
+    }
+    .category-tabs {
+      display: none !important;
+    }
+    .tool-record {
+      grid-template-columns: 1fr;
+    }
+    .metric-panel {
+      display: none;
+    }
+    .mobile-metrics {
+      color: var(--vt-ink-soft);
+      display: flex;
+      flex-wrap: wrap;
+      font-size: .76rem;
+      gap: .1rem .45rem;
+      line-height: 1.3;
+      margin-top: .42rem;
+    }
+    .mobile-metrics > span + span::before {
+      color: var(--bs-border-color);
+      content: "·";
+      margin-right: .45rem;
+    }
+    .tool-item {
+      padding-bottom: .72rem !important;
+      padding-top: .72rem !important;
+    }
+    .tool-desc {
+      margin-bottom: .38rem !important;
+    }
+    .tool-name {
+      font-size: 1.16rem;
+      line-height: 1.14;
+    }
+    .tool-submeta {
+      font-size: .76rem;
+    }
   }
-  header {
-    position: sticky; top: 0; z-index: 10; background: var(--bg);
-    border-bottom: 1px solid var(--border); padding: 12px 16px;
-  }
-  .top-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-  h1 { font-size: 18px; margin: 0 16px 0 0; white-space: nowrap; }
-  .spacer { flex: 1; }
-  input[type="search"], select {
-    padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px;
-    background: var(--card); color: var(--fg); font-size: 14px;
-  }
-  input[type="search"] { min-width: 220px; flex: 1; max-width: 460px; }
-  .lang button {
-    border: 1px solid var(--border); background: var(--card); color: var(--fg);
-    border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px;
-  }
-  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-  nav { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 16px 0; }
-  .cat {
-    border: 1px solid var(--border); background: var(--card); color: var(--fg);
-    border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px;
-  }
-  .cat.active { background: var(--chip-active); color: #fff; border-color: var(--chip-active); }
-  .cat .count { opacity: .6; margin-left: 4px; }
-  .filters { padding: 8px 16px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-  .filters label { font-size: 13px; cursor: pointer; color: var(--muted); }
-  .filters input[type="checkbox"] { margin-right: 4px; }
-  main { padding: 8px 16px 60px; }
-  .meta { color: var(--muted); font-size: 13px; padding: 4px 0 10px; }
-  ul#list { list-style: none; padding: 0; margin: 0; }
-  .item {
-    display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border);
-    align-items: flex-start;
-  }
-  .item-main { flex: 1; min-width: 0; }
-  .item-name { font-weight: 600; }
-  .item-name a { color: var(--accent); text-decoration: none; }
-  .item-desc { color: var(--muted); font-size: 14px; margin-top: 2px; }
-  .metrics { margin-top: 4px; display: flex; gap: 10px; flex-wrap: wrap; }
-  .metric { font-size: 11px; color: var(--muted); }
-  .badges { white-space: nowrap; display: flex; gap: 6px; align-items: center; flex-direction: column; align-items: flex-end; }
-  .tag { font-size: 11px; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); }
-  .tag.new { color: var(--new); border-color: var(--new); }
-  .stars { font-size: 13px; color: var(--muted); }
-  .stars img { vertical-align: middle; }
-  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
-  footer { color: var(--muted); font-size: 12px; padding: 20px 16px; border-top: 1px solid var(--border); }
-  footer a { color: var(--accent); }
 </style>
 </head>
 <body>
-<header>
-  <div class="top-row">
-    <h1 data-i18n="title">Awesome Vibe Coding Tools</h1>
-    <input type="search" id="search" data-i18n-ph="searchPlaceholder" placeholder="Search…">
-    <div class="spacer"></div>
-    <select id="sort">
-      <option value="stars" data-i18n="sortStars">Stars</option>
-      <option value="date" data-i18n="sortDate">Recently added</option>
-      <option value="name" data-i18n="sortName">Name</option>
-    </select>
-    <div class="lang">
-      <button data-lang="en">EN</button>
-      <button data-lang="ru">RU</button>
-      <button data-lang="zh">中文</button>
+<header class="site-header border-bottom">
+  <div class="container site-wrap py-4">
+    <div class="masthead d-flex flex-column">
+      <div class="masthead-top d-flex align-items-start justify-content-between gap-3">
+        <div class="masthead-copy">
+          <h1 class="brand-title mb-2" data-i18n="title">Awesome Vibe Coding Tools</h1>
+          <p class="brand-summary mb-0" id="summary"></p>
+          <div class="meta-row d-flex flex-wrap align-items-center gap-2 mt-2">
+            <span><strong id="total-tools">0</strong> <span data-i18n="toolsLabel">tools</span></span>
+            <span class="meta-dot" aria-hidden="true"></span>
+            <span id="generated"></span>
+            <span class="meta-dot" aria-hidden="true"></span>
+            <a class="github-link" href="https://github.com/axisrow/vibetools" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="header-actions d-flex align-items-center">
+          <div class="dropdown language-menu">
+            <button class="btn language-toggle" type="button" id="language-menu" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">
+              <span class="translate-mark" aria-hidden="true">A/文</span>
+              <span class="language-current" id="language-current">EN</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end language-dropdown" aria-labelledby="language-menu">
+              <li>
+                <button class="dropdown-item language-option" type="button" data-lang="en">
+                  <span>English</span>
+                  <span class="language-check" aria-hidden="true">✓</span>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item language-option" type="button" data-lang="ru">
+                  <span>Русский</span>
+                  <span class="language-check" aria-hidden="true">✓</span>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item language-option" type="button" data-lang="zh">
+                  <span>中文</span>
+                  <span class="language-check" aria-hidden="true">✓</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="command-bar d-flex flex-wrap align-items-center gap-2">
+        <div class="input-group search-field">
+          <label class="input-group-text" for="search" data-i18n="searchLabel">Search</label>
+          <input class="form-control" type="search" id="search" data-i18n-ph="searchPlaceholder" placeholder="Search by tool, category, topic...">
+        </div>
+        <div class="filter-rail d-flex flex-wrap align-items-center gap-2">
+          <select class="form-select toolbar-select" id="sort" aria-label="Sort tools">
+            <option value="stars" data-i18n="sortStars">Stars</option>
+            <option value="date" data-i18n="sortDate">Newest</option>
+            <option value="name" data-i18n="sortName">Name</option>
+          </select>
+          <button class="btn btn-outline-secondary new-toggle" type="button" id="f-new" aria-pressed="false" data-i18n="new">New</button>
+          <div class="mobile-category">
+            <label class="visually-hidden" for="category-select" data-i18n="category">category</label>
+            <select class="form-select" id="category-select" aria-label="Category"></select>
+          </div>
+        </div>
+      </div>
+
+      <nav class="category-tabs d-flex flex-nowrap flex-md-wrap overflow-auto" id="cats" aria-label="Categories"></nav>
     </div>
   </div>
-  <nav id="cats"></nav>
-  <div class="filters">
-    <label><input type="checkbox" id="f-new"> <span data-i18n="new">New</span></label>
-  </div>
 </header>
-<main>
-  <div class="meta" id="meta"></div>
-  <ul id="list"></ul>
+
+<main class="container site-wrap py-3">
+  <div class="results-line d-flex flex-wrap align-items-center justify-content-between gap-2 pb-2">
+    <div id="meta" aria-live="polite"></div>
+    <div id="active-filter"></div>
+  </div>
+  <ul class="list-group list-group-flush tool-list" id="list"></ul>
 </main>
-<footer data-i18n="footer"></footer>
+
+<footer class="container site-wrap border-top py-3 small text-body-secondary" data-i18n="footer"></footer>
 
 <script>
 // Встроенные данные (подставляются generate_site.py). Unicode/CJK — как есть.
@@ -110,39 +631,66 @@ window.__DATA__ = {"generatedAt":"2026-07-04","categories":[{"key":"cli-agents",
 const I18N = {
   en: {
     title: "Awesome Vibe Coding Tools",
-    searchPlaceholder: "Search tools…",
+    summary: n => `A curated directory of ${n} AI-assisted development tools: agents, editors, MCP servers, prompts, and automation workflows.`,
+    toolsLabel: "tools",
+    searchLabel: "Search",
+    searchPlaceholder: "Search by tool, category, topic...",
     all: "All",
     new: "New",
     archived: "archived",
     forks: "forks",
     growth: "growth",
-    sortStars: "Stars", sortDate: "Recently added", sortName: "Name",
+    rank: "rank",
+    year: "year",
+    stars: "stars",
+    category: "category",
+    generated: date => `Updated ${date}`,
+    activeFilter: label => `Category: ${label}`,
+    sortStars: "Stars", sortDate: "Newest", sortName: "Name",
     results: n => `${n} tool${n === 1 ? "" : "s"}`,
     noResults: "No tools match your filters.",
     footer: 'Data from data/tools.yml · auto-updated daily · Built with GLM-5.2 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
   },
   ru: {
-    title: "Утилиты для вайбкодеров",
-    searchPlaceholder: "Поиск инструментов…",
+    title: "Awesome Vibe Coding Tools",
+    summary: n => `Кураторский каталог из ${n} инструмент(ов) для AI-assisted development: агенты, редакторы, MCP-серверы, промпты и workflow-автоматизация.`,
+    toolsLabel: "инструментов",
+    searchLabel: "Поиск",
+    searchPlaceholder: "Поиск по инструменту, категории, топику...",
     all: "Все",
     new: "Новые",
     archived: "архив",
     forks: "форки",
     growth: "рост",
-    sortStars: "Звёзды", sortDate: "Недавно добавленные", sortName: "Название",
+    rank: "ранг",
+    year: "год",
+    stars: "звезды",
+    category: "категория",
+    generated: date => `Обновлено ${date}`,
+    activeFilter: label => `Категория: ${label}`,
+    sortStars: "Звезды", sortDate: "Новые", sortName: "Название",
     results: n => `${n} инструмент(ов)`,
     noResults: "Ничего не найдено по фильтрам.",
     footer: 'Данные из data/tools.yml · обновляется ежедневно · Создано на GLM-5.2 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
   },
   zh: {
-    title: "Vibe 编程工具集",
-    searchPlaceholder: "搜索工具…",
+    title: "Awesome Vibe Coding Tools",
+    summary: n => `${n} 个 AI 辅助开发工具精选目录：代理、编辑器、MCP 服务、提示词和自动化工作流。`,
+    toolsLabel: "个工具",
+    searchLabel: "搜索",
+    searchPlaceholder: "按工具、分类、主题搜索...",
     all: "全部",
     new: "新",
     archived: "已归档",
     forks: "分叉",
     growth: "增长",
-    sortStars: "星标", sortDate: "最近添加", sortName: "名称",
+    rank: "排名",
+    year: "年份",
+    stars: "星标",
+    category: "分类",
+    generated: date => `更新 ${date}`,
+    activeFilter: label => `分类：${label}`,
+    sortStars: "星标", sortDate: "最新", sortName: "名称",
     results: n => `${n} 个工具`,
     noResults: "没有符合筛选条件的工具。",
     footer: '数据来自 data/tools.yml · 每日自动更新 · 使用 GLM-5.2 构建 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
@@ -151,6 +699,11 @@ const I18N = {
 
 const DATA = window.__DATA__;
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
+const LANGUAGES = {
+  en: { label: "English", short: "EN" },
+  ru: { label: "Русский", short: "RU" },
+  zh: { label: "中文", short: "中文" },
+};
 let lang = localStorage.getItem("lang") || "en";
 let activeCat = "all";
 let sortMode = "stars";
@@ -163,6 +716,7 @@ function catTitle(key) { return CATS[key]["title_" + lang] || CATS[key].title_en
 
 function applyI18n() {
   document.documentElement.lang = lang;
+  document.title = t("title");
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const k = el.dataset.i18n;
     if (typeof I18N[lang][k] === "string") el.textContent = I18N[lang][k];
@@ -170,28 +724,44 @@ function applyI18n() {
   document.querySelectorAll("[data-i18n-ph]").forEach(el => {
     el.placeholder = I18N[lang][el.dataset.i18nPh];
   });
-  document.querySelectorAll(".lang button").forEach(b => {
-    b.classList.toggle("active", b.dataset.lang === lang);
+  document.querySelectorAll(".language-option").forEach(option => {
+    const active = option.dataset.lang === lang;
+    option.classList.toggle("active", active);
+    option.setAttribute("aria-current", active ? "true" : "false");
   });
-  // Селект сортировки — обновляем option-тексты под язык.
+  $("language-current").textContent = LANGUAGES[lang]?.short || lang.toUpperCase();
   Array.from($("sort").options).forEach(o => {
     if (o.dataset.i18n) o.textContent = I18N[lang][o.dataset.i18n];
   });
+  $("summary").textContent = t("summary")(DATA.tools.length);
+  $("total-tools").textContent = DATA.tools.length;
+  $("generated").textContent = t("generated")(DATA.generatedAt);
   renderCats();
   render();
 }
 
 function renderCats() {
   const counts = {};
-  DATA.tools.forEach(t => counts[t.category] = (counts[t.category] || 0) + 1);
+  DATA.tools.forEach(tool => counts[tool.category] = (counts[tool.category] || 0) + 1);
   const cats = $("cats");
+  const categorySelect = $("category-select");
   cats.innerHTML = "";
+  categorySelect.innerHTML = "";
   const mk = (key, label, count) => {
     const b = document.createElement("button");
-    b.className = "cat" + (activeCat === key ? " active" : "");
-    b.innerHTML = label + ` <span class="count">${count}</span>`;
+    const active = activeCat === key;
+    b.type = "button";
+    b.className = "category-tab" + (active ? " active" : "");
+    b.setAttribute("aria-pressed", active ? "true" : "false");
+    b.innerHTML = `${esc(label)} <span class="category-count">${count}</span>`;
     b.onclick = () => { activeCat = key; applyI18n(); };
     cats.appendChild(b);
+
+    const option = document.createElement("option");
+    option.value = key;
+    option.textContent = `${label} (${count})`;
+    option.selected = active;
+    categorySelect.appendChild(option);
   };
   mk("all", t("all"), DATA.tools.length);
   DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0));
@@ -203,54 +773,92 @@ function fmtStars(n) {
   return String(n);
 }
 
+function starHtml(tool, className = "stars") {
+  if (tool.stars != null) return `<span class="${className}">★ ${fmtStars(tool.stars)}</span>`;
+  return tool.starsUrl ? `<span class="${className}"><img src="${tool.starsUrl}" alt="stars"></span>` : "";
+}
+
 function filtered() {
   const q = query.trim().toLowerCase();
-  const isNew = $("f-new").checked;
+  const onlyNew = $("f-new").getAttribute("aria-pressed") === "true";
   let list = DATA.tools.filter(tool => {
     if (activeCat !== "all" && tool.category !== activeCat) return false;
-    if (isNew && !tool.isNew) return false;
-    if (q && !tool.search.includes(q)) return false;  // search — lowercase haystack
+    if (onlyNew && !tool.isNew) return false;
+    if (q && !tool.search.includes(q)) return false;
     return true;
   });
   list.sort((a, b) => {
     if (sortMode === "stars") return (b.stars || 0) - (a.stars || 0);
     if (sortMode === "name") return a.name.localeCompare(b.name);
-    if (sortMode === "date") return (b.added || "").localeCompare(a.added || "");
+    if (sortMode === "date") return (b.createdAt || "").localeCompare(a.createdAt || "");
     return 0;
   });
   return list;
 }
 
+function metric(label, value) {
+  if (value == null || value === "") return "";
+  return `<span class="metric"><span class="metric-label">${esc(label)}</span> <span class="metric-value">${esc(value)}</span></span>`;
+}
+
+function mobileMetric(label, value) {
+  if (value == null || value === "") return "";
+  return `<span class="mobile-metric">${esc(label)} <strong>${esc(value)}</strong></span>`;
+}
+
 function render() {
   const list = filtered();
   $("meta").textContent = t("results")(list.length);
+  $("active-filter").textContent = activeCat === "all" ? "" : t("activeFilter")(catTitle(activeCat));
   const ul = $("list");
-  if (!list.length) { ul.innerHTML = `<li class="empty">${t("noResults")}</li>`; return; }
+  if (!list.length) {
+    ul.innerHTML = `<li class="list-group-item empty">${t("noResults")}</li>`;
+    return;
+  }
   const frag = document.createDocumentFragment();
   list.forEach(tool => {
     const li = document.createElement("li");
-    li.className = "item";
+    li.className = "list-group-item tool-item px-0 py-4";
     const desc = tool.desc[lang] || tool.desc.en;
-    // Звёзды: число если есть, иначе shields-бейдж (fallback до stars.json).
-    const starsHtml = tool.stars != null
-      ? `<span class="stars">★ ${fmtStars(tool.stars)}</span>`
-      : (tool.starsUrl ? `<span class="stars"><img src="${tool.starsUrl}" alt="stars"></span>` : "");
-    const tags = [];
-    if (tool.isNew) tags.push(`<span class="tag new">${t("new")}</span>`);
-    if (tool.archived) tags.push(`<span class="tag">${t("archived")}</span>`);
-    // Метрики star-history-стиля: rank, forks, рост за неделю, дата создания.
-    const rankHtml = tool.rank != null ? `<span class="metric">#${tool.rank}</span>` : "";
-    const forksHtml = tool.forks != null ? `<span class="metric">${t("forks")} ${fmtStars(tool.forks)}</span>` : "";
-    const growthHtml = tool.starsPerWeek != null
-      ? `<span class="metric">${t("growth")} +${tool.starsPerWeek}/w</span>` : "";
-    const createdHtml = tool.createdAt ? `<span class="metric">${tool.createdAt.slice(0,4)}</span>` : "";
+    const starsHtml = starHtml(tool);
+    const mobileStarsHtml = starHtml(tool, "mobile-star");
+    const stateTags = [];
+    if (tool.isNew) stateTags.push(`<span class="state-badge state-badge-new">${t("new")}</span>`);
+    if (tool.archived) stateTags.push(`<span class="state-badge state-badge-archived">${t("archived")}</span>`);
+    const topicTags = Array.isArray(tool.topics) ? tool.topics.slice(0, 3) : [];
+    const submetaParts = [
+      esc(catTitle(tool.category)),
+      ...topicTags.map(topic => esc(topic)),
+    ];
+    const submeta = submetaParts
+      .map(part => `<span>${part}</span>`)
+      .join('<span class="submeta-separator"> / </span>');
+    const metrics = [
+      metric(t("rank"), tool.rank != null ? `#${tool.rank}` : ""),
+      metric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : ""),
+      metric(t("growth"), tool.starsPerWeek != null ? `+${tool.starsPerWeek}/w` : ""),
+      metric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
+    ].join("");
+    const mobileMetrics = [
+      mobileStarsHtml,
+      mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : ""),
+      mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : ""),
+      mobileMetric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
+    ].join("");
+
     li.innerHTML = `
-      <div class="item-main">
-        <div class="item-name"><a href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a></div>
-        <div class="item-desc">${esc(desc)} <span class="tag">${esc(catTitle(tool.category))}</span></div>
-        <div class="metrics">${rankHtml}${forksHtml}${growthHtml}${createdHtml}</div>
-      </div>
-      <div class="badges">${tags.join("")}${starsHtml}</div>`;
+      <div class="tool-record">
+        <div class="tool-body min-w-0">
+          <div class="tool-heading d-flex align-items-center flex-wrap gap-2 mb-2">
+            <a class="tool-name text-decoration-none" href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a>
+            ${stateTags.join("")}
+          </div>
+          <p class="tool-desc mb-2">${esc(desc)}</p>
+          <div class="tool-submeta mb-0">${submeta}</div>
+          <div class="mobile-metrics">${mobileMetrics}</div>
+        </div>
+        <div class="metric-panel">${starsHtml}<div class="metric-list">${metrics}</div></div>
+      </div>`;
     frag.appendChild(li);
   });
   ul.innerHTML = "";
@@ -262,19 +870,59 @@ function esc(s) {
     {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
-// События.
 let debounce;
 $("search").addEventListener("input", e => {
   clearTimeout(debounce);
   debounce = setTimeout(() => { query = e.target.value; render(); }, 120);
 });
 $("sort").addEventListener("change", e => { sortMode = e.target.value; render(); });
-$("f-new").addEventListener("change", render);
-document.querySelectorAll(".lang button").forEach(b => {
-  b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("lang", lang); applyI18n(); });
+$("f-new").addEventListener("click", e => {
+  const pressed = e.currentTarget.getAttribute("aria-pressed") === "true";
+  e.currentTarget.setAttribute("aria-pressed", pressed ? "false" : "true");
+  render();
+});
+$("category-select").addEventListener("change", e => {
+  activeCat = e.target.value;
+  applyI18n();
+});
+document.querySelectorAll(".language-option").forEach(option => {
+  option.addEventListener("click", () => {
+    lang = option.dataset.lang;
+    localStorage.setItem("lang", lang);
+    applyI18n();
+  });
 });
 
 applyI18n();
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"
+  onerror="this.onerror=null;this.dataset.bootstrapCdnFailed='true';var s=document.createElement('script');s.src='vendor/bootstrap/5.3.8/js/bootstrap.bundle.min.js';s.dataset.bootstrapFallback='true';document.body.appendChild(s);"
+></script>
+<script>
+  (() => {
+    const localBootstrapSrc = "vendor/bootstrap/5.3.8/js/bootstrap.bundle.min.js";
+    const markBootstrapState = () => {
+      document.documentElement.dataset.bootstrapJs = window.bootstrap ? "ready" : "missing";
+    };
+    const loadLocalBootstrap = () => {
+      if (window.bootstrap || document.querySelector('script[data-bootstrap-fallback="true"]')) return;
+      const fallback = document.createElement("script");
+      fallback.src = localBootstrapSrc;
+      fallback.dataset.bootstrapFallback = "true";
+      fallback.onload = markBootstrapState;
+      fallback.onerror = markBootstrapState;
+      document.body.appendChild(fallback);
+    };
+    if (window.bootstrap) {
+      markBootstrapState();
+    } else {
+      loadLocalBootstrap();
+      window.addEventListener("load", () => setTimeout(markBootstrapState, 0), { once: true });
+    }
+  })();
 </script>
 </body>
 </html>

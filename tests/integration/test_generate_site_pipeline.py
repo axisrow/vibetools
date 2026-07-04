@@ -5,6 +5,7 @@
 """
 import json
 import re
+from pathlib import Path
 
 from generate_site import build_data_json, main as site_main
 
@@ -14,6 +15,71 @@ def _extract_payload(html: str) -> dict:
     m = re.search(r"window\.__DATA__ = (\{.*?\});\n", html, re.S)
     assert m, "payload не найден в index.html"
     return json.loads(m.group(1))
+
+
+def test_site_uses_bootstrap_cdn_with_local_fallback(tmp_repo):
+    """Сайт грузит Bootstrap 5.3.8 с CDN и имеет локальный fallback."""
+    out = tmp_repo["root"] / "docs" / "index.html"
+    site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
+              out_file=out)
+    html = out.read_text(encoding="utf-8")
+    assert "cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" in html
+    assert "cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" in html
+    assert "vendor/bootstrap/5.3.8/css/bootstrap.min.css" in html
+    assert "vendor/bootstrap/5.3.8/js/bootstrap.bundle.min.js" in html
+    assert "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" in html
+    assert "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" in html
+    assert "__loadBootstrapCssFallback" in html
+    assert "--bs-body-font-family" in html
+    assert "window.bootstrap" in html
+
+
+def test_bootstrap_fallback_assets_are_committed():
+    """Локальный fallback Bootstrap лежит в docs/vendor и не является заглушкой."""
+    root = Path(__file__).resolve().parents[2]
+    css = root / "docs" / "vendor" / "bootstrap" / "5.3.8" / "css" / "bootstrap.min.css"
+    js = root / "docs" / "vendor" / "bootstrap" / "5.3.8" / "js" / "bootstrap.bundle.min.js"
+    assert css.is_file()
+    assert js.is_file()
+    assert "Bootstrap  v5.3.8" in css.read_text(encoding="utf-8")[:160]
+    assert "Bootstrap v5.3.8" in js.read_text(encoding="utf-8")[:160]
+
+
+def test_site_has_directory_redesign_hooks(tmp_repo):
+    """Шаблон остаётся каталогом, а не набором дефолтных Bootstrap controls."""
+    out = tmp_repo["root"] / "docs" / "index.html"
+    site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
+              out_file=out)
+    html = out.read_text(encoding="utf-8")
+    assert "masthead" in html
+    assert "meta-row" in html
+    assert "command-bar" in html
+    assert "filter-rail" in html
+    assert "category-select" in html
+    assert "category-tab" in html
+    assert "tool-record" in html
+    assert "tool-heading" in html
+    assert "font-size: 1.22rem" in html
+    assert "font-weight: 780" in html
+    assert "font-size: .92rem" in html
+    assert "metric-panel" in html
+    assert "mobile-metrics" in html
+    assert "submeta-separator" in html
+    assert "state-badge" in html
+    assert 'class="btn btn-outline-secondary new-toggle" type="button" id="f-new"' in html
+    assert 'aria-pressed="false"' in html
+    assert 'id="language-menu"' in html
+    assert 'data-bs-toggle="dropdown"' in html
+    assert "language-option" in html
+    assert "English" in html
+    assert "Русский" in html
+    assert "中文" in html
+    assert "btn-group lang" not in html
+    assert "brand-kicker" not in html
+    assert "status-strip" not in html
+    assert "tool-name text-decoration-none fw-" not in html
+    assert "btn-check" not in html
+    assert "form-switch" not in html
 
 
 def test_site_creates_index(tmp_tools_yml, sample_tool_github, tmp_path):
