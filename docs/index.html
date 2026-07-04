@@ -1071,6 +1071,10 @@ const TOOLS_BY_URL = new Map(DATA.tools.map(tool => [tool.url, tool]));
 // Precompute производных от статичных DATA.tools ОДИН раз при загрузке —
 // filtered() ходит по всем тулзам на каждом keystroke/toggle, пересчитывать
 // их каждый render — лишняя работа. Образец — TOOLS_BY_URL выше.
+// TREND_KINDS объявлен ПЕРВЫМ: на него ссылается TRENDSHIFT_URLS ниже
+// (eager-вычисление), а const в TDZ до своей декларации → ссылка выше
+// объявления бросила бы ReferenceError и убила весь скрипт при загрузке.
+const TREND_KINDS = ["day", "week", "month", "year"];
 function _yearOf(tool) {
   const year = tool.createdAt ? String(tool.createdAt).slice(0, 4) : "";
   return /^\d{4}$/.test(year) ? year : "";
@@ -1085,7 +1089,6 @@ const LANGUAGES = {
   ru: { label: "Русский", short: "RU" },
   zh: { label: "中文", short: "中文" },
 };
-const TREND_KINDS = ["day", "week", "month", "year"];
 let lang = localStorage.getItem("lang") || "en";
 let activeCat = "all";
 let activeLang = "all";
