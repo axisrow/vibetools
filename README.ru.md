@@ -18,8 +18,8 @@
 
 ## Избранное
 
-Репозиторий дня: [caveman](https://github.com/JuliusBrussee/caveman#featured) — Утилита caveman
-Репозиторий недели (рост за 1 дн.): [caveman](https://github.com/JuliusBrussee/caveman#featured) — Утилита caveman
+Репозиторий дня: [caveman](https://github.com/JuliusBrussee/caveman#featured-day) — Утилита caveman
+Репозиторий недели (рост за 1 дн.): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — Утилита caveman
 
 ## AI-агенты кодинга и CLI
 

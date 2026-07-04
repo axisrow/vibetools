@@ -252,11 +252,13 @@ def render_featured(featured, tools_by_url: dict[str, dict], lang: str) -> str:
         t = tools_by_url.get(url)
         if not t:
             continue
-        # Anchor #featured отличает ссылку от её вхождения в категории:
-        # тот же репо легитимно показан дважды (блок Featured + своя категория),
-        # и без различия remark-lint:double-link считает это дублем.
-        # stripHash:false правила → URL'ы с разным hash формально различны.
-        featured_url = f"{url}#featured"
+        # Anchor #featured-{kind} отличает ссылку от её вхождения в категории:
+        # тот же репо легитимно показан несколько раз (блок Featured + своя
+        # категория, а внутри Featured — отдельно repo-of-day и repo-of-week).
+        # Без различия remark-lint:double-link считает дубликатом. Привязка anchor
+        # к типу (day/week) делает уникальными даже два featured-вхождения одного
+        # репо; stripHash:false правила → URL'ы с разным hash формально различны.
+        featured_url = f"{url}#featured-{entry['kind']}"
         lines.append(f"{_featured_label(lang, entry)}: [{t['name']}]({featured_url}) — {t['description'][lang]}")
     if not lines:
         return ""
