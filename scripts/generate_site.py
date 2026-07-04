@@ -31,6 +31,7 @@ TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"
 META_FILE = ROOT / "data" / "repos-meta.json"
 HISTORY_FILE = ROOT / "data" / "stars-history.json"
+TREND_SHIFT_FILE = ROOT / "data" / "trendshift.json"
 OUT_FILE = ROOT / "docs" / "index.html"
 INDEX_TEMPLATE = ROOT / "scripts" / "site_template.html"
 
@@ -51,11 +52,39 @@ def _stars_per_week(url: str, history: dict) -> int | None:
     return max(0, cur - prev)
 
 
+def _trendshift_payload(entry) -> dict | None:
+    """Normalize optional data/trendshift.json entry for the public site payload."""
+    if not isinstance(entry, dict):
+        return None
+    badges = []
+    for badge in entry.get("badges", []) or []:
+        if not isinstance(badge, dict):
+            continue
+        kind = badge.get("kind")
+        badge_url = badge.get("badgeUrl")
+        if kind not in {"day", "week"} or not isinstance(badge_url, str):
+            continue
+        badges.append({"kind": kind, "badgeUrl": badge_url})
+    if not badges:
+        return None
+    page_url = entry.get("pageUrl")
+    trendshift_id = entry.get("trendshiftId")
+    payload = {"badges": badges}
+    if isinstance(trendshift_id, (str, int)):
+        payload["trendshiftId"] = str(trendshift_id)
+    if isinstance(page_url, str):
+        payload["pageUrl"] = page_url
+    if isinstance(entry.get("updatedAt"), str):
+        payload["updatedAt"] = entry["updatedAt"]
+    return payload
+
+
 def build_data_json(
     tools_yml: Path = TOOLS_YML,
     stars_file: Path = STARS_FILE,
     meta_file: Path = META_FILE,
     history_file: Path = HISTORY_FILE,
+    trendshift_file: Path = TREND_SHIFT_FILE,
 ) -> dict:
     """Собирает единый объект данных для встраивания в index.html.
 
@@ -70,6 +99,7 @@ def build_data_json(
     stars = load_stars(stars_file)
     meta = load_json_or_default(meta_file, {}) or {}
     history = load_history(history_file)
+    trendshift = load_json_or_default(trendshift_file, {}) or {}
     today = datetime.date.today()
 
     out_tools = []
@@ -88,7 +118,7 @@ def build_data_json(
         desc_ru = t["description"].get("ru", "")
         topics = m.get("topics", []) or []
         language = m.get("language")
-        out_tools.append({
+        tool_payload = {
             "name": t["name"],
             "url": url,
             "category": t["category"],
@@ -105,7 +135,11 @@ def build_data_json(
             "desc": {"en": desc_en, "ru": desc_ru},
             # lowercase haystack (Unicode/CJK-aware): name + desc + topics + language.
             "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)} {language or ''}".lower(),
-        })
+        }
+        trendshift_entry = _trendshift_payload(trendshift.get(url))
+        if trendshift_entry:
+            tool_payload["trendshift"] = trendshift_entry
+        out_tools.append(tool_payload)
 
     # Global rank по звёздам (1 = топ базы); null-stars в конце.
     ranked = sorted(out_tools, key=lambda t: (t["stars"] or -1), reverse=True)
@@ -139,8 +173,10 @@ def main(
     template: Path = INDEX_TEMPLATE,
     meta_file: Path = META_FILE,
     history_file: Path = HISTORY_FILE,
+    trendshift_file: Path = TREND_SHIFT_FILE,
 ) -> None:
-    data = build_data_json(tools_yml, stars_file, meta_file, history_file)
+    data = build_data_json(tools_yml, stars_file, meta_file, history_file,
+                           trendshift_file)
     html = render_index_html(data, template)
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html, encoding="utf-8")

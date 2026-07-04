@@ -395,6 +395,42 @@
   .featured-achievement .vt-icon {
     font-size: .9em;
   }
+  .trendshift-achievements {
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+  }
+  .trendshift-achievement {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    display: inline-flex;
+    font-size: .68rem;
+    font-weight: 760;
+    gap: .28rem;
+    letter-spacing: .01em;
+    line-height: 1;
+    padding: .23rem .4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .trendshift-achievement:hover {
+    filter: brightness(.96);
+  }
+  .trendshift-achievement-day {
+    background: var(--vt-achievement-day-bg);
+    border-color: var(--vt-achievement-day-border);
+    color: var(--vt-achievement-day-text);
+  }
+  .trendshift-achievement-week {
+    background: var(--vt-achievement-week-bg);
+    border-color: var(--vt-achievement-week-border);
+    color: var(--vt-achievement-week-text);
+  }
+  .trendshift-achievement .vt-icon {
+    font-size: .9em;
+  }
   .featured-metrics {
     align-items: center;
     color: var(--vt-ink-soft);
@@ -838,6 +874,8 @@ const I18N = {
     featuredNote: "Repos with the strongest recent star growth from the daily cache.",
     featuredDay: "Repo of the day",
     featuredWeek: "Repo of the week",
+    trendshiftDay: "Trendshift #1 Day",
+    trendshiftWeek: "Trendshift #1 Week",
     dayGrowth: "day",
     weekGrowth: "week",
     generated: date => `Updated ${date}`,
@@ -869,6 +907,8 @@ const I18N = {
     featuredNote: "Репозитории с самым сильным свежим ростом звёзд по daily cache.",
     featuredDay: "Репозиторий дня",
     featuredWeek: "Репозиторий недели",
+    trendshiftDay: "Trendshift #1 день",
+    trendshiftWeek: "Trendshift #1 неделя",
     dayGrowth: "день",
     weekGrowth: "неделя",
     generated: date => `Обновлено ${date}`,
@@ -900,6 +940,8 @@ const I18N = {
     featuredNote: "来自每日缓存的近期星标增长最高的仓库。",
     featuredDay: "今日仓库",
     featuredWeek: "本周仓库",
+    trendshiftDay: "Trendshift #1 日榜",
+    trendshiftWeek: "Trendshift #1 周榜",
     dayGrowth: "日",
     weekGrowth: "周",
     generated: date => `更新 ${date}`,
@@ -1027,6 +1069,30 @@ function featuredAchievementHtml(entry) {
   return `<span class="featured-achievement featured-achievement-${esc(entry.kind)}">${icon(featuredIcon(entry.kind))}${esc(featuredLabel(entry.kind))}</span>`;
 }
 
+function trendshiftLabel(kind) {
+  if (kind === "day") return t("trendshiftDay");
+  if (kind === "week") return t("trendshiftWeek");
+  return `Trendshift ${kind}`;
+}
+
+function trendshiftIcon(kind) {
+  return kind === "week" ? "calendar-week-fill" : "trophy-fill";
+}
+
+function trendshiftAchievementsHtml(tool) {
+  const trendshift = tool.trendshift;
+  if (!trendshift || !Array.isArray(trendshift.badges) || !trendshift.badges.length) return "";
+  const href = trendshift.pageUrl || tool.url;
+  const badges = trendshift.badges
+    .filter(badge => badge && (badge.kind === "day" || badge.kind === "week"))
+    .map(badge => {
+      const label = trendshiftLabel(badge.kind);
+      return `<a class="trendshift-achievement trendshift-achievement-${esc(badge.kind)}" href="${esc(href)}" target="_blank" rel="noopener" aria-label="${esc(label)}">${icon(trendshiftIcon(badge.kind))}${esc(label)}</a>`;
+    })
+    .join("");
+  return badges ? `<span class="trendshift-achievements">${badges}</span>` : "";
+}
+
 function featuredWindow(entry) {
   if (!entry.days) return entry.kind === "week" ? "7d" : "1d";
   return `${entry.days}d`;
@@ -1125,6 +1191,7 @@ function render() {
     const stateTags = [];
     if (tool.isNew) stateTags.push(`<span class="state-badge state-badge-new">${t("new")}</span>`);
     if (tool.archived) stateTags.push(`<span class="state-badge state-badge-archived">${t("archived")}</span>`);
+    const trendshiftHtml = trendshiftAchievementsHtml(tool);
     const topicTags = Array.isArray(tool.topics) ? tool.topics.slice(0, 3) : [];
     const submetaParts = [
       esc(catTitle(tool.category)),
@@ -1153,6 +1220,7 @@ function render() {
           <div class="tool-heading d-flex align-items-center flex-wrap gap-2 mb-2">
             <a class="tool-name text-decoration-none" href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a>
             ${stateTags.join("")}
+            ${trendshiftHtml}
           </div>
           <p class="tool-desc mb-2">${esc(desc)}</p>
           <div class="tool-submeta mb-0">${submeta}</div>

@@ -1,0 +1,43 @@
+{
+  "https://github.com/DietrichGebert/ponytail": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/daily",
+        "kind": "day"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
+        "kind": "week"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/50668",
+    "trendshiftId": "50668",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/HKUDS/DeepTutor": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17099/daily",
+        "kind": "day"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17099/weekly?language=Python",
+        "kind": "week"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/17099",
+    "trendshiftId": "17099",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/ZhuLinsen/daily_stock_analysis": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18527/daily?language=Python",
+        "kind": "day"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/18527",
+    "trendshiftId": "18527",
+    "updatedAt": "2026-07-04"
+  }
+}

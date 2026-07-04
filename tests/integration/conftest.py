@@ -20,6 +20,7 @@ def tmp_repo(tmp_path):
     stars_file = data_dir / "stars.json"
     history_file = data_dir / "stars-history.json"
     meta_file = data_dir / "repos-meta.json"
+    trendshift_file = data_dir / "trendshift.json"
 
     tools = [
         {"name": "HiStars", "url": "https://github.com/a/hi",
@@ -47,4 +48,5 @@ def tmp_repo(tmp_path):
 
     return {"tools_yml": tools_yml, "stars_file": stars_file,
             "history_file": history_file, "meta_file": meta_file,
+            "trendshift_file": trendshift_file,
             "root": tmp_path, "tools": tools}
