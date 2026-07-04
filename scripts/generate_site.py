@@ -59,9 +59,11 @@ def build_data_json(
     """Собирает единый объект данных для встраивания в index.html.
 
     Все метрики автоматические (из stars.json/repos-meta.json/stars-history.json):
-    stars, forks, openIssues, createdAt, archived, topics, rank (по звёздам),
-    starsPerWeek (рост за 7д), isNew (createdAt ≤14д). Ручных меток нет.
-    search: lowercase name+en+ru+topics — для мгновенного client-side includes().
+    stars, forks, openIssues, createdAt, archived, topics, language (primary),
+    rank (по звёздам), starsPerWeek (рост за 7д), isNew (createdAt ≤14д).
+    Ручных меток нет.
+    search: lowercase name+en+ru+topics+language — для мгновенного client-side
+    includes(). Сверху catalog languages (unique, sorted) для фильтра шаблона.
     """
     tools = load_tools(tools_yml)
     stars = load_stars(stars_file)
@@ -84,6 +86,7 @@ def build_data_json(
         desc_en = t["description"].get("en", "")
         desc_ru = t["description"].get("ru", "")
         topics = m.get("topics", []) or []
+        language = m.get("language")
         out_tools.append({
             "name": t["name"],
             "url": url,
@@ -97,9 +100,10 @@ def build_data_json(
             "createdAt": m.get("createdAt"),
             "archived": bool(m.get("archived")),
             "topics": topics,
+            "language": language,
             "desc": {"en": desc_en, "ru": desc_ru},
-            # lowercase haystack (Unicode/CJK-aware): name + desc + topics.
-            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)}".lower(),
+            # lowercase haystack (Unicode/CJK-aware): name + desc + topics + language.
+            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)} {language or ''}".lower(),
         })
 
     # Global rank по звёздам (1 = топ базы); null-stars в конце.
@@ -107,9 +111,13 @@ def build_data_json(
     for i, t in enumerate(ranked, 1):
         t["rank"] = i if t["stars"] is not None else None
 
+    # Каталог языков (unique, sorted) — для фильтра в шаблоне без пересчёта.
+    languages = sorted({t["language"] for t in out_tools if t["language"]})
+
     return {
         "generatedAt": today.isoformat(),
         "categories": [{"key": k, **m} for k, m in CATEGORIES],
+        "languages": languages,
         "tools": out_tools,
     }
 
