@@ -320,9 +320,15 @@ def enrich_from_rankings(
         if html is None:
             continue
         for entry in extract_ranking_entries(html, kind, updated_at):
+            # decorate пытается вытащить точный ранг из badge SVG (+1 запрос на репо).
+            # Если badge недоступен (outage / fetcher отключен) — не теряем репо:
+            # берём исходный entry, у которого уже есть currentRank из ItemList
+            # (позиция в рейтинге на момент парсинга страницы). Это позволяет
+            # собирать каталог без медленных badge-фетчей и не терять репо при
+            # частичном outage trendshift-badge.
             decorated = _decorate_ranking_entry(entry, badge_window, badge_fetcher, headers)
             if decorated is None:
-                continue
+                decorated = entry
             github_url = decorated["githubUrl"]
             if github_url in by_url:
                 cache[github_url] = merge_trendshift_entry(cache.get(github_url), decorated)

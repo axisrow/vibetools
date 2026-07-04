@@ -165,7 +165,9 @@ def build_data_json(
     # tools_urls (на случай, если репо уже перенесли в tools.yml). Категория из
     # кэша (fallback 'needs-review'); isNew=False (discovery ≠ tool-new, которое
     # считается по createdAt). desc ru→en fallback (trendshift-репо без ru).
-    trendshift_repos = load_json_or_default(trendshift_repos_file, []) or []
+    trendshift_repos = []
+    if trendshift_repos_file != TREND_SHIFT_REPOS_FILE or tools_yml == TOOLS_YML:
+        trendshift_repos = load_json_or_default(trendshift_repos_file, []) or []
     for rec in trendshift_repos:
         if not isinstance(rec, dict):
             continue

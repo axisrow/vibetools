@@ -48,6 +48,8 @@ TOPIC_CATEGORY_MAP: dict[str, str] = {
     "ai-agent": "cli-agents", "ai-coding-agent": "cli-agents",
     "coding-assistant": "cli-agents", "agentic": "cli-agents",
     "claude-code": "cli-agents", "agentic-coding": "cli-agents",
+    "agents": "cli-agents", "agent": "cli-agents", "terminal": "cli-agents",
+    "terminal-emulators": "cli-agents", "developer-tools": "cli-agents",
     # cloud-coding-agents
     "cloud-ide": "cloud-coding-agents", "cloud-coding": "cloud-coding-agents",
     "dev-environment": "cloud-coding-agents", "devcontainer": "cloud-coding-agents",
@@ -60,10 +62,12 @@ TOPIC_CATEGORY_MAP: dict[str, str] = {
     "code-review": "code-review-testing", "testing": "code-review-testing",
     "linting": "code-review-testing", "linter": "code-review-testing",
     "static-analysis": "code-review-testing", "unit-testing": "code-review-testing",
+    "testing-framework": "code-review-testing",
     # devops-cloud
     "devops": "devops-cloud", "kubernetes": "devops-cloud", "terraform": "devops-cloud",
     "infrastructure-as-code": "devops-cloud", "ci-cd": "devops-cloud",
-    "devops-tools": "devops-cloud",
+    "devops-tools": "devops-cloud", "container": "devops-cloud",
+    "docker": "devops-cloud", "self-hosted": "devops-cloud",
     # security-agents
     "security": "security-agents", "pentest": "security-agents",
     "application-security": "security-agents", "sast": "security-agents",
@@ -75,7 +79,8 @@ TOPIC_CATEGORY_MAP: dict[str, str] = {
     # design-frontend
     "design-to-code": "design-frontend", "frontend": "design-frontend",
     "ui-components": "design-frontend", "figma": "design-frontend",
-    "design-system": "design-frontend",
+    "design-system": "design-frontend", "flutter": "design-frontend",
+    "ui": "design-frontend", "react": "design-frontend",
     # app-builders-low-code
     "low-code": "app-builders-low-code", "no-code": "app-builders-low-code",
     "app-builder": "app-builders-low-code",
@@ -91,22 +96,28 @@ TOPIC_CATEGORY_MAP: dict[str, str] = {
     # agent-skills-prompts
     "prompt-engineering": "agent-skills-prompts", "agent-skills": "agent-skills-prompts",
     "prompts": "agent-skills-prompts", "prompt": "agent-skills-prompts",
+    "codex-skills": "agent-skills-prompts",
     # ai-assistants
     "ai-assistant": "ai-assistants", "personal-assistant": "ai-assistants",
-    "multi-agent": "ai-assistants",
+    "multi-agent": "ai-assistants", "assistant": "ai-assistants",
     # observability-eval
     "observability": "observability-eval", "llm-evaluation": "observability-eval",
     "tracing": "observability-eval", "telemetry": "observability-eval",
     "evaluation": "observability-eval",
     # docs-research
     "documentation": "docs-research", "research": "docs-research",
-    "knowledge-management": "docs-research",
+    "knowledge-management": "docs-research", "docs": "docs-research",
     # learning-resources
     "tutorial": "learning-resources", "awesome-list": "learning-resources",
     "education": "learning-resources", "awesome": "learning-resources",
-    # ai-infra
+    "resources": "learning-resources", "free": "learning-resources",
+    # ai-infra — ML/LLM общие темы (много trendshift-топов тут)
     "llm": "ai-infra", "llm-inference": "ai-infra", "llm-gateway": "ai-infra",
     "model-serving": "ai-infra", "inference": "ai-infra", "inference-server": "ai-infra",
+    "ai": "ai-infra", "artificial-intelligence": "ai-infra",
+    "deep-learning": "ai-infra", "machine-learning": "ai-infra",
+    "generative-ai": "ai-infra", "transformer": "ai-infra",
+    "chatgpt": "ai-infra", "openai": "ai-infra",
     # domain-agents намеренно разрежен — большинство доменных репо → needs-review
     # (требуют ручной кураторской классификации).
 }

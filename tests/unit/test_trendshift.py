@@ -506,3 +506,26 @@ def test_language_url_segment_for_csharp_and_cpp():
         f"C++ segment not URL-encoded: {_LANGUAGE_URL_SEGMENT.get('C++')}"
     assert any("?language=Python" in url for _, url in pages)
 
+
+def test_enrich_from_rankings_keeps_repo_when_badge_unavailable():
+    """badge_fetcher→None (outage / отключен) → репо всё равно собирается с currentRank.
+
+    Без badge SVG нельзя вытащить точный ранг, но ItemList уже даёт currentRank
+    (позиция в рейтинге). Репо не должно теряться — иначе harvest без медленных
+    badge-фетчей терял бы все записи, а частичный outage trendshift-badge выкашивал бы каталог.
+    """
+    tools = []
+    html = _ranking_html([("25391", "foo/bar", "https://github.com/foo/bar")])
+    new_repos = {}
+    enrich_from_rankings(
+        tools, {}, "2026-07-05",
+        page_fetcher=lambda url, h: html,
+        badge_fetcher=lambda url, h: None,  # badge недоступен
+        new_repos=new_repos, languages=None,
+    )
+    # Репо собрано (не выкинуто), currentRank пришёл из ItemList.
+    assert list(new_repos) == ["https://github.com/foo/bar"]
+    badge = new_repos["https://github.com/foo/bar"]["badges"][0]
+    assert badge.get("currentRank") == 1  # из ItemList position
+    assert "rank" not in badge  # точного ранга из SVG нет
+    assert "badgeUrl" not in badge  # badgeUrl не приделан (SVG не получен)
