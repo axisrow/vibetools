@@ -32,7 +32,25 @@ What does **not** belong: closed-source products without an open repo, vaporware
        ru: "Одно нейтральное предложение (≤ 90 символов)"
    ```
 
-   Valid categories: `cli-agents`, `editor-integrations`, `context-memory`, `prompt-mcp`, `observability-eval`, `workflow-automation`, `learning`.
+   Valid categories:
+   `cli-agents`, `cloud-coding-agents`, `editor-integrations`,
+   `code-review-testing`, `devops-cloud`, `security-agents`,
+   `browser-automation`, `design-frontend`, `app-builders-low-code`,
+   `game-dev`, `context-memory`, `mcp`, `agent-skills-prompts`,
+   `ai-assistants`, `observability-eval`, `docs-research`,
+   `learning-resources`, `ai-infra`, `domain-agents`, `needs-review`.
+
+### Choosing a category
+
+- Use `cli-agents`, `cloud-coding-agents`, or `editor-integrations` for direct coding assistants, depending on where the user runs them.
+- Use `mcp` only for generic MCP servers, clients, frameworks, gateways, or directories. A task-specific MCP server belongs with its task, such as browser automation, DevOps, security, or docs.
+- Use `agent-skills-prompts` for Claude Skills, prompt packs, rules, hooks, slash commands, and system-prompt collections.
+- Use `ai-assistants` for always-on personal assistants, agent platforms, multi-agent routers, and workflow-oriented agent harnesses.
+- Use `app-builders-low-code` for low-code/no-code app builders and visual automation platforms.
+- Use `ai-infra` for model serving, fine-tuning, LLM gateways, RAG platforms, vector stores, and generic AI infrastructure.
+- Use `learning-resources` for courses, awesome lists, guides, tutorials, books, and benchmarks.
+- Use `domain-agents` for finance, legal, marketing, science, video, and other domain-specific agents that are adjacent to coding but not general coding tools.
+- Use `needs-review` only for existing entries that need maintainer review; new PRs should choose a real category or explain why the tool belongs in the list.
 
 3. **Regenerate the READMEs** so your tool shows up:
 

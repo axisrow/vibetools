@@ -3,6 +3,7 @@
 Самый ценный здесь — test_real_readme_not_stale: он делает невозможным
 коммит «я правил tools.yml, но забыл перегенерировать README».
 """
+from collections import Counter
 import re
 import urllib.error
 import urllib.request
@@ -10,7 +11,7 @@ import urllib.request
 import pytest
 
 import generate_readme
-from generate_readme import CATEGORY_MAP, ROOT, TOOLS_YML, gh_anchor, load_tools
+from generate_readme import CATEGORIES, CATEGORY_MAP, LEGACY_CATEGORIES, ROOT, TOOLS_YML, gh_anchor, load_tools
 
 
 def test_real_tools_yml_loads():
@@ -28,6 +29,30 @@ def test_real_tools_yml_count_reasonable():
 def test_real_tools_yml_all_categories_known():
     for t in load_tools(TOOLS_YML):
         assert t["category"] in CATEGORY_MAP, f"неизвестная категория: {t['category']}"
+
+
+def test_real_tools_yml_no_legacy_catchall_categories():
+    categories = {t["category"] for t in load_tools(TOOLS_YML)}
+    assert categories.isdisjoint(LEGACY_CATEGORIES)
+
+
+def test_real_tools_yml_all_declared_categories_used():
+    counts = Counter(t["category"] for t in load_tools(TOOLS_YML))
+    empty = [key for key, _ in CATEGORIES if counts[key] == 0]
+    assert not empty, f"пустые категории: {empty}"
+
+
+def test_real_tools_yml_needs_review_is_bounded():
+    counts = Counter(t["category"] for t in load_tools(TOOLS_YML))
+    assert counts["needs-review"] <= 40
+
+
+def test_real_tools_yml_key_taxonomy_assignments():
+    by_name = {t["name"]: t for t in load_tools(TOOLS_YML)}
+
+    assert by_name["OpenCode"]["category"] == "cli-agents"
+    assert by_name["hermes-agent"]["category"] == "ai-assistants"
+    assert by_name["nanoclaw"]["category"] == "ai-assistants"
 
 
 def test_real_tools_yml_all_have_en_and_ru():

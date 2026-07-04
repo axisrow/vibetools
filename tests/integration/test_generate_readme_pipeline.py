@@ -61,7 +61,7 @@ def test_main_empty_category_omitted(tmp_repo):
     """Категория без tools не появляется ни в TOC, ни в теле."""
     main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
     text = (tmp_repo["root"] / "README.md").read_text(encoding="utf-8")
-    # observability-eval, context-memory, prompt-mcp, workflow-automation — пусты.
+    # Остальные реальные категории пусты в mini-fixture и не должны попадать в README.
     assert "Observability" not in text
     assert "Context" not in text
 

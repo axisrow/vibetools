@@ -33,7 +33,7 @@ def tmp_repo(tmp_path):
          "category": "editor-integrations",
          "description": {"en": "An editor", "ru": "Редактор"}},
         {"name": "NoGithub", "url": "https://example.com/tool",
-         "category": "learning",
+         "category": "learning-resources",
          "description": {"en": "Not on github", "ru": "Не на github"}},
     ]
     tools_yml.write_text(
