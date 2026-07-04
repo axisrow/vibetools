@@ -145,3 +145,29 @@ def test_build_data_json_meta_enriches(tmp_repo, tmp_path):
     assert hi["createdAt"] == "2026-06-25T00:00:00Z"
     assert "agent" in hi["topics"]
     assert hi["isNew"] is True  # 2026-06-25 в пределах 14д от сегодня
+
+
+def test_build_data_json_language_from_meta(tmp_repo, tmp_path):
+    """language из repos-meta.json прокидывается в tool и в search-haystack."""
+    meta_file = tmp_path / "repos-meta.json"
+    import json as _json
+    meta_file.write_text(_json.dumps({
+        "https://github.com/a/hi": {"language": "Python"},
+        "https://github.com/a/lo": {"language": "Go"},
+        # Editor без language → должно стать None.
+    }), encoding="utf-8")
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"], meta_file=meta_file)
+    by_name = {t["name"]: t for t in data["tools"]}
+    assert by_name["HiStars"]["language"] == "Python"
+    assert by_name["LoStars"]["language"] == "Go"
+    assert by_name["Editor"]["language"] is None
+    # language попадает в search-haystack (нижний регистр) — поиск работает.
+    assert "python" in by_name["HiStars"]["search"]
+    assert "go" in by_name["LoStars"]["search"]
+
+
+def test_build_data_json_language_absent_in_meta(tmp_repo):
+    """Без repos-meta.json (или без ключа language) → language == None у всех."""
+    data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
+    for tool in data["tools"]:
+        assert tool["language"] is None

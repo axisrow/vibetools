@@ -84,6 +84,7 @@ def build_data_json(
         desc_en = t["description"].get("en", "")
         desc_ru = t["description"].get("ru", "")
         topics = m.get("topics", []) or []
+        language = m.get("language")
         out_tools.append({
             "name": t["name"],
             "url": url,
@@ -97,9 +98,10 @@ def build_data_json(
             "createdAt": m.get("createdAt"),
             "archived": bool(m.get("archived")),
             "topics": topics,
+            "language": language,
             "desc": {"en": desc_en, "ru": desc_ru},
-            # lowercase haystack (Unicode/CJK-aware): name + desc + topics.
-            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)}".lower(),
+            # lowercase haystack (Unicode/CJK-aware): name + desc + topics + language.
+            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)} {language or ''}".lower(),
         })
 
     # Global rank по звёздам (1 = топ базы); null-stars в конце.

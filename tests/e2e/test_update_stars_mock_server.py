@@ -89,3 +89,22 @@ def test_e2e_token_passed_as_header(tmp_repo, mock_github, monkeypatch):
     update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
     sent = mock_github.log[0][0]  # (Request, Response)
     assert sent.headers["Authorization"] == "Bearer ghp_test_token_123"
+
+
+def test_e2e_language_written_to_meta(tmp_repo, mock_github, monkeypatch):
+    """Основной язык репо сохраняется в repos-meta.json под ключом language."""
+    mock_github.register("a", "hi", stars=100, language="Python")
+    mock_github.register("a", "lo", stars=5, language="Go")
+    mock_github.register("b", "editor", stars=50, language=None)
+    _patch_api(monkeypatch, mock_github)
+
+    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    meta = json.loads(tmp_repo["meta_file"].read_text(encoding="utf-8"))
+    assert rc == 0
+    assert meta["https://github.com/a/hi"]["language"] == "Python"
+    assert meta["https://github.com/a/lo"]["language"] == "Go"
+    # Editor: GitHub вернул language:null — сохраняем None (виден только в "All").
+    assert meta["https://github.com/b/editor"]["language"] is None
+    # Сайт, собранный из этого meta, прокидывает language дальше.
+    readme = (tmp_repo["root"] / "README.md").read_text(encoding="utf-8")
+    assert "img.shields.io/github/stars/a/hi" in readme  # пайплайн отработал целиком

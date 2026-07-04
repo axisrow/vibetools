@@ -93,6 +93,9 @@
   <nav id="cats"></nav>
   <div class="filters">
     <label><input type="checkbox" id="f-new"> <span data-i18n="new">New</span></label>
+    <label><span data-i18n="language">Language</span>
+      <select id="f-lang"></select>
+    </label>
   </div>
 </header>
 <main>
@@ -116,6 +119,7 @@ const I18N = {
     archived: "archived",
     forks: "forks",
     growth: "growth",
+    language: "Language",
     sortStars: "Stars", sortDate: "Recently added", sortName: "Name",
     results: n => `${n} tool${n === 1 ? "" : "s"}`,
     noResults: "No tools match your filters.",
@@ -129,6 +133,7 @@ const I18N = {
     archived: "архив",
     forks: "форки",
     growth: "рост",
+    language: "Язык",
     sortStars: "Звёзды", sortDate: "Недавно добавленные", sortName: "Название",
     results: n => `${n} инструмент(ов)`,
     noResults: "Ничего не найдено по фильтрам.",
@@ -142,6 +147,7 @@ const I18N = {
     archived: "已归档",
     forks: "分叉",
     growth: "增长",
+    language: "语言",
     sortStars: "星标", sortDate: "最近添加", sortName: "名称",
     results: n => `${n} 个工具`,
     noResults: "没有符合筛选条件的工具。",
@@ -153,6 +159,7 @@ const DATA = window.__DATA__;
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
 let lang = localStorage.getItem("lang") || "en";
 let activeCat = "all";
+let activeLang = "all";
 let sortMode = "stars";
 let query = "";
 
@@ -178,6 +185,7 @@ function applyI18n() {
     if (o.dataset.i18n) o.textContent = I18N[lang][o.dataset.i18n];
   });
   renderCats();
+  renderLangs();
   render();
 }
 
@@ -197,6 +205,33 @@ function renderCats() {
   DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0));
 }
 
+function renderLangs() {
+  // Уникальные языки (language:null не входит — он виден только в "All").
+  const counts = {};
+  DATA.tools.forEach(t => {
+    if (!t.language) return;
+    counts[t.language] = (counts[t.language] || 0) + 1;
+  });
+  const sel = $("f-lang");
+  const cur = activeLang;
+  sel.innerHTML = "";
+  const allOpt = document.createElement("option");
+  allOpt.value = "all";
+  allOpt.textContent = `${t("all")} (${DATA.tools.length})`;
+  sel.appendChild(allOpt);
+  // Сортировка по убыванию количества, затем по имени — стабильный порядок.
+  const langs = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  langs.forEach(([name, count]) => {
+    const o = document.createElement("option");
+    o.value = name;
+    o.textContent = `${name} (${count})`;
+    sel.appendChild(o);
+  });
+  // Если активный язык исчез в новых данных — откат к "all".
+  sel.value = (cur !== "all" && counts[cur]) ? cur : "all";
+  activeLang = sel.value;
+}
+
 function fmtStars(n) {
   if (n == null) return null;
   if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, "") + "k";
@@ -208,6 +243,8 @@ function filtered() {
   const isNew = $("f-new").checked;
   let list = DATA.tools.filter(tool => {
     if (activeCat !== "all" && tool.category !== activeCat) return false;
+    // Выбран конкретный язык → tool без language не показываем (он есть в "All").
+    if (activeLang !== "all" && tool.language !== activeLang) return false;
     if (isNew && !tool.isNew) return false;
     if (q && !tool.search.includes(q)) return false;  // search — lowercase haystack
     return true;
@@ -244,10 +281,12 @@ function render() {
     const growthHtml = tool.starsPerWeek != null
       ? `<span class="metric">${t("growth")} +${tool.starsPerWeek}/w</span>` : "";
     const createdHtml = tool.createdAt ? `<span class="metric">${tool.createdAt.slice(0,4)}</span>` : "";
+    // Бейдж основного языка рядом с тегом категории (пуст, если язык не определён).
+    const langTagHtml = tool.language ? `<span class="tag">${esc(tool.language)}</span>` : "";
     li.innerHTML = `
       <div class="item-main">
         <div class="item-name"><a href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a></div>
-        <div class="item-desc">${esc(desc)} <span class="tag">${esc(catTitle(tool.category))}</span></div>
+        <div class="item-desc">${esc(desc)} <span class="tag">${esc(catTitle(tool.category))}</span>${langTagHtml}</div>
         <div class="metrics">${rankHtml}${forksHtml}${growthHtml}${createdHtml}</div>
       </div>
       <div class="badges">${tags.join("")}${starsHtml}</div>`;
@@ -270,6 +309,7 @@ $("search").addEventListener("input", e => {
 });
 $("sort").addEventListener("change", e => { sortMode = e.target.value; render(); });
 $("f-new").addEventListener("change", render);
+$("f-lang").addEventListener("change", e => { activeLang = e.target.value; render(); });
 document.querySelectorAll(".lang button").forEach(b => {
   b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("lang", lang); applyI18n(); });
 });
