@@ -428,6 +428,26 @@
     border-color: var(--vt-achievement-week-border);
     color: var(--vt-achievement-week-text);
   }
+  .trendshift-achievement-month {
+    background: rgba(47, 125, 110, .12);
+    border-color: rgba(47, 125, 110, .34);
+    color: #2f6f62;
+  }
+  .trendshift-achievement-year {
+    background: rgba(88, 96, 112, .12);
+    border-color: rgba(88, 96, 112, .34);
+    color: #4f5867;
+  }
+  [data-bs-theme="dark"] .trendshift-achievement-month {
+    background: rgba(86, 212, 177, .13);
+    border-color: rgba(86, 212, 177, .38);
+    color: #56d4b1;
+  }
+  [data-bs-theme="dark"] .trendshift-achievement-year {
+    background: rgba(139, 148, 158, .15);
+    border-color: rgba(139, 148, 158, .36);
+    color: #c9d1d9;
+  }
   .trendshift-achievement .vt-icon {
     font-size: .9em;
   }
@@ -874,8 +894,11 @@ const I18N = {
     featuredNote: "Repos with the strongest recent star growth from the daily cache.",
     featuredDay: "Repo of the day",
     featuredWeek: "Repo of the week",
-    trendshiftDay: "Trendshift #1 Day",
-    trendshiftWeek: "Trendshift #1 Week",
+    trendshiftPrefix: "Trendshift",
+    trendshiftDay: "Day",
+    trendshiftWeek: "Week",
+    trendshiftMonth: "Month",
+    trendshiftYear: "Year",
     dayGrowth: "day",
     weekGrowth: "week",
     generated: date => `Updated ${date}`,
@@ -907,8 +930,11 @@ const I18N = {
     featuredNote: "Репозитории с самым сильным свежим ростом звёзд по daily cache.",
     featuredDay: "Репозиторий дня",
     featuredWeek: "Репозиторий недели",
-    trendshiftDay: "Trendshift #1 день",
-    trendshiftWeek: "Trendshift #1 неделя",
+    trendshiftPrefix: "Trendshift",
+    trendshiftDay: "день",
+    trendshiftWeek: "неделя",
+    trendshiftMonth: "месяц",
+    trendshiftYear: "год",
     dayGrowth: "день",
     weekGrowth: "неделя",
     generated: date => `Обновлено ${date}`,
@@ -940,8 +966,11 @@ const I18N = {
     featuredNote: "来自每日缓存的近期星标增长最高的仓库。",
     featuredDay: "今日仓库",
     featuredWeek: "本周仓库",
-    trendshiftDay: "Trendshift #1 日榜",
-    trendshiftWeek: "Trendshift #1 周榜",
+    trendshiftPrefix: "Trendshift",
+    trendshiftDay: "日榜",
+    trendshiftWeek: "周榜",
+    trendshiftMonth: "月榜",
+    trendshiftYear: "年榜",
     dayGrowth: "日",
     weekGrowth: "周",
     generated: date => `更新 ${date}`,
@@ -1069,14 +1098,23 @@ function featuredAchievementHtml(entry) {
   return `<span class="featured-achievement featured-achievement-${esc(entry.kind)}">${icon(featuredIcon(entry.kind))}${esc(featuredLabel(entry.kind))}</span>`;
 }
 
-function trendshiftLabel(kind) {
+function trendshiftPeriod(kind) {
   if (kind === "day") return t("trendshiftDay");
   if (kind === "week") return t("trendshiftWeek");
-  return `Trendshift ${kind}`;
+  if (kind === "month") return t("trendshiftMonth");
+  if (kind === "year") return t("trendshiftYear");
+  return kind;
+}
+
+function trendshiftLabel(badge) {
+  const rank = Number.isInteger(badge.rank) ? badge.rank : 1;
+  return `${t("trendshiftPrefix")} #${rank} ${trendshiftPeriod(badge.kind)}`;
 }
 
 function trendshiftIcon(kind) {
-  return kind === "week" ? "calendar-week-fill" : "trophy-fill";
+  if (kind === "week" || kind === "month") return "calendar-week-fill";
+  if (kind === "year") return "award-fill";
+  return "trophy-fill";
 }
 
 function trendshiftAchievementsHtml(tool) {
@@ -1084,9 +1122,9 @@ function trendshiftAchievementsHtml(tool) {
   if (!trendshift || !Array.isArray(trendshift.badges) || !trendshift.badges.length) return "";
   const href = trendshift.pageUrl || tool.url;
   const badges = trendshift.badges
-    .filter(badge => badge && (badge.kind === "day" || badge.kind === "week"))
+    .filter(badge => badge && ["day", "week", "month", "year"].includes(badge.kind))
     .map(badge => {
-      const label = trendshiftLabel(badge.kind);
+      const label = trendshiftLabel(badge);
       return `<a class="trendshift-achievement trendshift-achievement-${esc(badge.kind)}" href="${esc(href)}" target="_blank" rel="noopener" aria-label="${esc(label)}">${icon(trendshiftIcon(badge.kind))}${esc(label)}</a>`;
     })
     .join("");

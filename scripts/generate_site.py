@@ -62,9 +62,16 @@ def _trendshift_payload(entry) -> dict | None:
             continue
         kind = badge.get("kind")
         badge_url = badge.get("badgeUrl")
-        if kind not in {"day", "week"} or not isinstance(badge_url, str):
+        if kind not in {"day", "week", "month", "year"} or not isinstance(badge_url, str):
             continue
-        badges.append({"kind": kind, "badgeUrl": badge_url})
+        badge_payload = {"kind": kind, "badgeUrl": badge_url}
+        if isinstance(badge.get("rank"), int):
+            badge_payload["rank"] = badge["rank"]
+        if isinstance(badge.get("currentRank"), int):
+            badge_payload["currentRank"] = badge["currentRank"]
+        if isinstance(badge.get("source"), str):
+            badge_payload["source"] = badge["source"]
+        badges.append(badge_payload)
     if not badges:
         return None
     page_url = entry.get("pageUrl")

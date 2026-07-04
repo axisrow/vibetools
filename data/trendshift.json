@@ -1,13 +1,31 @@
 {
+  "https://github.com/DeusData/codebase-memory-mcp": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/23635/weekly",
+        "currentRank": 16,
+        "kind": "week",
+        "rank": 3,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/23635",
+    "trendshiftId": "23635",
+    "updatedAt": "2026-07-04"
+  },
   "https://github.com/DietrichGebert/ponytail": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/daily",
-        "kind": "day"
+        "kind": "day",
+        "source": "readme"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
-        "kind": "week"
+        "currentRank": 9,
+        "kind": "week",
+        "rank": 1,
+        "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/50668",
@@ -18,26 +36,134 @@
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17099/daily",
-        "kind": "day"
+        "kind": "day",
+        "source": "readme"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17099/weekly?language=Python",
-        "kind": "week"
+        "kind": "week",
+        "source": "readme"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/17099",
     "trendshiftId": "17099",
     "updatedAt": "2026-07-04"
   },
+  "https://github.com/JuliusBrussee/caveman": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/daily",
+        "currentRank": 8,
+        "kind": "day",
+        "rank": 1,
+        "source": "ranking"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/weekly",
+        "currentRank": 5,
+        "kind": "week",
+        "rank": 5,
+        "source": "ranking"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/monthly",
+        "currentRank": 6,
+        "kind": "month",
+        "rank": 6,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/25391",
+    "trendshiftId": "25391",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/Leonxlnx/taste-skill": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21681/daily",
+        "currentRank": 9,
+        "kind": "day",
+        "rank": 1,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/21681",
+    "trendshiftId": "21681",
+    "updatedAt": "2026-07-04"
+  },
   "https://github.com/ZhuLinsen/daily_stock_analysis": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18527/daily?language=Python",
-        "kind": "day"
+        "kind": "day",
+        "source": "readme"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/18527",
     "trendshiftId": "18527",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/anthropics/claude-code": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13856/daily",
+        "currentRank": 18,
+        "kind": "day",
+        "rank": 1,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/13856",
+    "trendshiftId": "13856",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/calesthio/OpenMontage": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24682/weekly",
+        "currentRank": 20,
+        "kind": "week",
+        "rank": 1,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/24682",
+    "trendshiftId": "24682",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/safishamsi/graphify": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25296/weekly",
+        "currentRank": 21,
+        "kind": "week",
+        "rank": 5,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/25296",
+    "trendshiftId": "25296",
+    "updatedAt": "2026-07-04"
+  },
+  "https://github.com/xbtlin/ai-berkshire": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/63696/daily",
+        "currentRank": 20,
+        "kind": "day",
+        "rank": 2,
+        "source": "ranking"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/63696/weekly",
+        "currentRank": 24,
+        "kind": "week",
+        "rank": 11,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/63696",
+    "trendshiftId": "63696",
     "updatedAt": "2026-07-04"
   }
 }

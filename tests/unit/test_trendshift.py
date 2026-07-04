@@ -4,6 +4,9 @@ import json
 import yaml
 
 from update_trendshift import (
+    enrich_from_rankings,
+    extract_badge_rank,
+    extract_ranking_entries,
     extract_trendshift_entry,
     main,
     update_trendshift_cache,
@@ -30,10 +33,12 @@ def test_extract_trendshift_entry_daily_and_weekly():
             {
                 "kind": "day",
                 "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/daily",
+                "source": "readme",
             },
             {
                 "kind": "week",
                 "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
+                "source": "readme",
             },
         ],
         "updatedAt": "2026-07-04",
@@ -63,8 +68,81 @@ def test_extract_trendshift_entry_prefers_plain_repository_badge():
         {
             "kind": "week",
             "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
+            "source": "readme",
         }
     ]
+
+
+def test_extract_badge_rank_from_svg_aria_label():
+    svg = '<svg aria-label="Trendshift: number 5 repository of the week"></svg>'
+
+    assert extract_badge_rank(svg) == 5
+
+
+def test_extract_ranking_entries_from_json_ld_item_list():
+    html = """
+    <script type="application/ld+json">
+    {
+      "@type": "ItemList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://trendshift.io/repositories/25391",
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "JuliusBrussee/caveman",
+          "codeRepository": "https://github.com/JuliusBrussee/caveman"
+        }
+      }]
+    }
+    </script>
+    """
+
+    assert extract_ranking_entries(html, "week", "2026-07-04") == [{
+        "githubUrl": "https://github.com/JuliusBrussee/caveman",
+        "trendshiftId": "25391",
+        "pageUrl": "https://trendshift.io/repositories/25391",
+        "badges": [{
+            "kind": "week",
+            "currentRank": 5,
+            "source": "ranking",
+        }],
+        "updatedAt": "2026-07-04",
+    }]
+
+
+def test_enrich_from_rankings_adds_ranked_badge_for_matching_tool():
+    tools = [{"name": "caveman", "url": "https://github.com/JuliusBrussee/caveman"}]
+    weekly_html = """
+    <script type="application/ld+json">
+    {"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":5,
+    "url":"https://trendshift.io/repositories/25391","item":{"@type":"SoftwareSourceCode",
+    "name":"JuliusBrussee/caveman","codeRepository":"https://github.com/JuliusBrussee/caveman"}}]}
+    </script>
+    """
+
+    def page_fetcher(url, headers):
+        return weekly_html if url.endswith("/weekly") else "<script type=\"application/ld+json\">{\"@type\":\"ItemList\",\"itemListElement\":[]}</script>"
+
+    def badge_fetcher(url, headers):
+        return '<svg aria-label="Trendshift: number 5 repository of the week"></svg>'
+
+    cache = enrich_from_rankings(tools, {}, "2026-07-04", page_fetcher, badge_fetcher)
+
+    assert cache == {
+        "https://github.com/JuliusBrussee/caveman": {
+            "trendshiftId": "25391",
+            "pageUrl": "https://trendshift.io/repositories/25391",
+            "badges": [{
+                "kind": "week",
+                "currentRank": 5,
+                "source": "ranking",
+                "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/weekly",
+                "rank": 5,
+            }],
+            "updatedAt": "2026-07-04",
+        }
+    }
 
 
 def test_update_trendshift_cache_preserves_previous_entry_on_fetch_failure():
@@ -85,6 +163,8 @@ def test_update_trendshift_cache_preserves_previous_entry_on_fetch_failure():
         "2026-07-04",
         {},
         fetcher=lambda slug, headers: None,
+        page_fetcher=lambda url, headers: None,
+        badge_fetcher=lambda url, headers: None,
     )
 
     assert cache == previous
@@ -109,6 +189,8 @@ def test_main_writes_cache_without_changing_tools_yml(tmp_path):
         tools_yml=tools_yml,
         trendshift_file=trendshift_file,
         fetcher=lambda slug, headers: README_WITH_TRENDSHIFT,
+        page_fetcher=lambda url, headers: None,
+        badge_fetcher=lambda url, headers: None,
     )
 
     assert tools_yml.read_text(encoding="utf-8") == before
