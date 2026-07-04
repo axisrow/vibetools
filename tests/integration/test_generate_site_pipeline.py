@@ -31,6 +31,8 @@ def test_site_uses_bootstrap_cdn_with_local_fallback(tmp_repo):
     assert "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" in html
     assert "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" in html
     assert "__loadBootstrapCssFallback" in html
+    assert 'id="bootstrap-js"' in html
+    assert "setTimeout(() =>" in html
     assert "--bs-body-font-family" in html
     assert "window.bootstrap" in html
 
@@ -55,7 +57,10 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "masthead" in html
     assert "meta-row" in html
     assert "command-bar" in html
+    assert "compact-filter-bar" in html
     assert "filter-rail" in html
+    assert "compact-filter-rail" in html
+    assert "filter-toggle" in html
     assert "featured-strip" in html
     assert "featured-list" in html
     assert "featured-achievements" in html
@@ -82,7 +87,19 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "category-select" in html
     # Языковой фильтр (#11) должен пережить редизайн — regression guard.
     assert 'id="f-language"' in html
+    assert 'id="f-trendshift"' in html
+    assert 'id="f-year"' in html
     assert "DATA.languages" in html
+    assert "activeTrendshift" in html
+    assert "activeYear" in html
+    assert "renderYears" in html
+    assert "toolHasTrendshift" in html
+    assert "toolYear" in html
+    assert 'parts.push(t("new"))' in html
+    assert "All years" in html
+    assert "Все годы" in html
+    assert 'id="f-achievement"' not in html
+    assert "All achievements" not in html
     assert "category-tab" in html
     assert "tool-record" in html
     assert "tool-heading" in html
@@ -93,8 +110,10 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "mobile-metrics" in html
     assert "submeta-separator" in html
     assert "state-badge" in html
-    assert 'class="btn btn-outline-secondary new-toggle" type="button" id="f-new"' in html
+    assert 'class="btn filter-toggle" type="button" id="f-new"' in html
+    assert 'class="btn filter-toggle" type="button" id="f-trendshift"' in html
     assert 'aria-pressed="false"' in html
+    assert "new-toggle" not in html
     assert 'id="language-menu"' in html
     assert 'data-bs-toggle="dropdown"' in html
     assert "language-option" in html
@@ -104,6 +123,8 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "btn-group lang" not in html
     assert "brand-kicker" not in html
     assert "status-strip" not in html
+    assert 'data-i18n-html="footer"' in html
+    assert "el.innerHTML = I18N[lang][k]" in html
     assert "tool-name text-decoration-none fw-" not in html
     assert "btn-check" not in html
     assert "form-switch" not in html
@@ -181,7 +202,7 @@ def test_site_categories_have_title_zh(tmp_repo):
 def test_site_cjk_search(tmp_tools_yml, tmp_path):
     """Репо с китайским описанием — CJK-текст попадает в search-поле (поиск работает)."""
     tool = {"name": "ai-guide", "url": "https://github.com/liyupi/ai-guide",
-            "category": "learning",
+            "category": "learning-resources",
             "description": {"en": "程序员鱼皮的 AI 资源大全", "ru": "AI ресурсы"}}
     tools_yml = tmp_tools_yml([tool])
     out = tmp_path / "docs" / "index.html"

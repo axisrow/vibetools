@@ -176,7 +176,7 @@ def test_main_writes_cache_without_changing_tools_yml(tmp_path):
     tool = {
         "name": "ponytail",
         "url": "https://github.com/DietrichGebert/ponytail",
-        "category": "workflow-automation",
+        "category": "agent-skills-prompts",
         "description": {"en": "Tool", "ru": "Утилита"},
     }
     tools_yml.write_text(

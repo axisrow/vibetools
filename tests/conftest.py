@@ -53,7 +53,7 @@ def sample_tool_non_github():
     return {
         "name": "SomeSaaS",
         "url": "https://example.com/tool",
-        "category": "learning",
+        "category": "learning-resources",
         "description": {"en": "A service", "ru": "Сервис"},
     }
 

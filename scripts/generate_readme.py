@@ -43,40 +43,100 @@ CATEGORIES = [
         "title_ru": "AI-агенты кодинга и CLI",
         "title_zh": "AI 编程代理与 CLI",
     }),
+    ("cloud-coding-agents", {
+        "title_en": "Cloud Coding Agents",
+        "title_ru": "Облачные coding-агенты",
+        "title_zh": "云端编程代理",
+    }),
     ("editor-integrations", {
         "title_en": "Editor Integrations",
         "title_ru": "Интеграции в редакторы",
         "title_zh": "编辑器集成",
     }),
-    ("context-memory", {
-        "title_en": "Context and Memory",
-        "title_ru": "Контекст и память",
-        "title_zh": "上下文与记忆",
+    ("code-review-testing", {
+        "title_en": "Code Review, Testing and Quality",
+        "title_ru": "Ревью, тестирование и качество кода",
+        "title_zh": "代码审查、测试与质量",
     }),
-    ("prompt-mcp", {
-        "title_en": "Prompts and MCP",
-        "title_ru": "Промпты и MCP",
-        "title_zh": "提示词与 MCP",
+    ("devops-cloud", {
+        "title_en": "DevOps and Cloud Automation",
+        "title_ru": "DevOps и облачная автоматизация",
+        "title_zh": "DevOps 与云自动化",
+    }),
+    ("security-agents", {
+        "title_en": "Security and Pentest Agents",
+        "title_ru": "Security и pentest-агенты",
+        "title_zh": "安全与渗透测试代理",
+    }),
+    ("browser-automation", {
+        "title_en": "Browser and Web Automation",
+        "title_ru": "Браузерная и web-автоматизация",
+        "title_zh": "浏览器与网页自动化",
+    }),
+    ("design-frontend", {
+        "title_en": "Design to Code and Frontend",
+        "title_ru": "Design-to-code и фронтенд",
+        "title_zh": "设计转代码与前端",
+    }),
+    ("app-builders-low-code", {
+        "title_en": "App Builders and Low-Code",
+        "title_ru": "App builders и low-code",
+        "title_zh": "应用构建器与低代码",
+    }),
+    ("game-dev", {
+        "title_en": "Game Development",
+        "title_ru": "Разработка игр",
+        "title_zh": "游戏开发",
+    }),
+    ("context-memory", {
+        "title_en": "Context, Memory and Codebase Indexing",
+        "title_ru": "Контекст, память и индексирование кода",
+        "title_zh": "上下文、记忆与代码库索引",
+    }),
+    ("mcp", {
+        "title_en": "MCP Servers and Clients",
+        "title_ru": "MCP-серверы и клиенты",
+        "title_zh": "MCP 服务器与客户端",
+    }),
+    ("agent-skills-prompts", {
+        "title_en": "Agent Skills, Prompts and Rules",
+        "title_ru": "Skills, промпты и правила агентов",
+        "title_zh": "代理技能、提示词与规则",
+    }),
+    ("ai-assistants", {
+        "title_en": "AI Assistants",
+        "title_ru": "AI-ассистенты",
+        "title_zh": "AI 助手",
     }),
     ("observability-eval", {
         "title_en": "Observability and Eval",
-        "title_ru": "Наблюдаемость и оценка",
+        "title_ru": "Наблюдаемость и eval",
         "title_zh": "可观测性与评估",
     }),
-    ("workflow-automation", {
-        "title_en": "Workflow and Automation",
-        "title_ru": "Воркфлоу и автоматизация",
-        "title_zh": "工作流与自动化",
+    ("docs-research", {
+        "title_en": "Docs, Research and Knowledge Work",
+        "title_ru": "Документация, research и knowledge work",
+        "title_zh": "文档、研究与知识工作",
     }),
-    ("learning", {
+    ("learning-resources", {
         "title_en": "Learning and Resources",
         "title_ru": "Обучение и ресурсы",
         "title_zh": "学习与资源",
     }),
-    ("other", {
-        "title_en": "Other and Adjacent",
-        "title_ru": "Прочее и смежное",
-        "title_zh": "其他及相关",
+    ("ai-infra", {
+        "title_en": "AI Infra and Model Platforms",
+        "title_ru": "AI-инфра и модельные платформы",
+        "title_zh": "AI 基础设施与模型平台",
+    }),
+    ("domain-agents", {
+        "title_en": "Domain-Specific Agents",
+        "title_ru": "Доменные AI-агенты",
+        "title_zh": "垂直领域代理",
+    }),
+    ("needs-review", {
+        "title_en": "Needs Review",
+        "title_ru": "Требует ревью",
+        "title_zh": "待复核",
     }),
 ]
 CATEGORY_MAP = {key: meta for key, meta in CATEGORIES}
