@@ -351,3 +351,158 @@ def test_main_writes_trendshift_repos_file(tmp_path):
     assert rec["pageUrl"] == "https://trendshift.io/repositories/25391"
     assert rec["badges"][0]["rank"] == 5
     assert rec["updatedAt"] == datetime.date.today().isoformat()
+
+
+# ---- stage 2: per-language × 4 windows harvest ----
+
+def test_enrich_from_rankings_iterates_languages_when_given():
+    """languages=("Python",) → page_fetcher зовётся с ?language=Python на каждом окне."""
+    tools = []
+    fetched_urls = []
+
+    def page_fetcher(url, headers):
+        fetched_urls.append(url)
+        # Отдаём одну и ту же запись на каждой странице — достаточно проверить URL.
+        return _ranking_html([("1", "foo/bar", "https://github.com/foo/bar")])
+
+    enrich_from_rankings(
+        tools, {}, "2026-07-05",
+        page_fetcher=page_fetcher,
+        badge_fetcher=lambda url, h: None,  # без ранга → не декорируется
+        new_repos={},
+        languages=("Python",),
+    )
+
+    # 4 глобальных + 4 per-language (Python × 4 окна).
+    assert len(fetched_urls) == 8
+    lang_urls = [u for u in fetched_urls if "?language=Python" in u]
+    assert len(lang_urls) == 4
+    # Все 4 окна покрыты per-language.
+    assert any(u == "https://trendshift.io/?language=Python" for u in lang_urls)
+    assert any(u == "https://trendshift.io/weekly?language=Python" for u in lang_urls)
+    assert any(u == "https://trendshift.io/monthly?language=Python" for u in lang_urls)
+    assert any(u == "https://trendshift.io/yearly?language=Python" for u in lang_urls)
+
+
+def test_enrich_from_rankings_no_languages_is_legacy():
+    """languages=None → только 4 глобальные страницы, без ?language= (backward compat)."""
+    tools = []
+    fetched_urls = []
+
+    enrich_from_rankings(
+        tools, {}, "2026-07-05",
+        page_fetcher=lambda url, h: fetched_urls.append(url) or "<script></script>",
+        badge_fetcher=lambda url, h: None,
+        new_repos={},
+        languages=None,
+    )
+
+    assert len(fetched_urls) == 4
+    assert not any("?language=" in u for u in fetched_urls)
+
+
+def test_enrich_from_rankings_passes_headers_to_fetchers():
+    """headers прокидывается в page_fetcher и badge_fetcher (не None)."""
+    seen_page_headers = []
+    seen_badge_headers = []
+    headers = {"User-Agent": "test-ua/1.0"}
+
+    def page_fetcher(url, h):
+        seen_page_headers.append(h)
+        return _ranking_html([("1", "foo/bar", "https://github.com/foo/bar")])
+
+    def badge_fetcher(url, h):
+        seen_badge_headers.append(h)
+        return RANK_SVG
+
+    enrich_from_rankings(
+        [], {}, "2026-07-05",
+        page_fetcher=page_fetcher, badge_fetcher=badge_fetcher,
+        new_repos={}, languages=None, headers=headers,
+    )
+
+    assert seen_page_headers and all(h is headers for h in seen_page_headers)
+    assert seen_badge_headers and all(h is headers for h in seen_badge_headers)
+
+
+def test_enrich_from_rankings_dedup_across_language_windows():
+    """Один url на двух языках × два окна → одна запись, badges слиты."""
+    tools = []
+    repo_url = "https://github.com/foo/bar"
+    week_html = _ranking_html([("25391", "foo/bar", repo_url)])
+
+    pages = {
+        "https://trendshift.io/weekly?language=Python": week_html,
+        "https://trendshift.io/weekly?language=TypeScript": week_html,
+    }
+
+    new_repos = {}
+    enrich_from_rankings(
+        tools, {}, "2026-07-05",
+        page_fetcher=lambda url, h: pages.get(url, "<script></script>"),
+        badge_fetcher=lambda url, h: RANK_SVG,
+        new_repos=new_repos, languages=("Python", "TypeScript"),
+    )
+
+    # Один url → одна запись (дедуп по githubUrl через merge_trendshift_entry).
+    assert list(new_repos) == [repo_url]
+    # kind=week один (оба окна weekly), merge сохранил сильнейший ранг.
+    badges = new_repos[repo_url]["badges"]
+    assert len(badges) == 1
+    assert badges[0]["kind"] == "week"
+
+
+def test_main_seeds_new_repos_preserving_category(tmp_path):
+    """При outage (все fetcher→None) категория на сиде выживает (фикс #16 + stage 3)."""
+    tools_yml = tmp_path / "tools.yml"
+    trendshift_file = tmp_path / "trendshift.json"
+    trendshift_repos_file = tmp_path / "trendshift-repos.json"
+    tools_yml.write_text(
+        yaml.safe_dump({"tools": []}, allow_unicode=True, sort_keys=False),
+        encoding="utf-8",
+    )
+    # Сид: одна запись с уже проставленной категорией (из stage 3).
+    trendshift_repos_file.write_text(
+        json.dumps([{
+            "githubUrl": "https://github.com/foo/bar",
+            "trendshiftId": "25391",
+            "pageUrl": "https://trendshift.io/repositories/25391",
+            "badges": [{"kind": "week", "rank": 5, "source": "ranking"}],
+            "updatedAt": "2026-07-04",
+            "category": "cli-agents",
+            "categoryReason": "topic:ai-agent",
+        }]),
+        encoding="utf-8",
+    )
+
+    main(
+        tools_yml=tools_yml,
+        trendshift_file=trendshift_file,
+        trendshift_repos_file=trendshift_repos_file,
+        fetcher=lambda slug, headers: None,       # outage README
+        page_fetcher=lambda url, headers: None,   # outage trendshift pages
+        badge_fetcher=lambda url, headers: None,  # outage badges
+        languages=("Python",),
+    )
+
+    repos = json.loads(trendshift_repos_file.read_text(encoding="utf-8"))
+    # Запись сохранилась (не выкинута при outage)...
+    assert [r["githubUrl"] for r in repos] == ["https://github.com/foo/bar"]
+    # ...и category/categoryReason пережили перезапись (merge их не трогает).
+    rec = repos[0]
+    assert rec["category"] == "cli-agents"
+    assert rec["categoryReason"] == "topic:ai-agent"
+
+
+def test_language_url_segment_for_csharp_and_cpp():
+    """C#→C%23, C++→C%2B%2B в URL; обычные языки — identity."""
+    from update_trendshift import _LANGUAGE_URL_SEGMENT, _ranking_pages
+
+    pages = {(kind, url) for kind, url, _ in _ranking_pages(("C#", "C++", "Python"))}
+    # C# кодируется как %23, C++ как %2B%2B, Python — как есть.
+    assert any("?language=C%23" in url for _, url in pages), \
+        f"C# segment not URL-encoded: {_LANGUAGE_URL_SEGMENT.get('C#')}"
+    assert any("?language=C%2B%2B" in url for _, url in pages), \
+        f"C++ segment not URL-encoded: {_LANGUAGE_URL_SEGMENT.get('C++')}"
+    assert any("?language=Python" in url for _, url in pages)
+

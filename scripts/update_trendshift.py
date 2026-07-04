@@ -40,6 +40,28 @@ RANKING_WINDOWS = {
     "year": ("https://trendshift.io/yearly", "yearly"),
 }
 
+# Языки, подлежащие per-language сбору (значения совпадают с label-ами в
+# trendshift-селекторе, см. _LANGUAGE_URL_SEGMENT для URL-кодирования).
+# Список добыт из JS-бандла trendshift (dropdown рендерится на клиенте, в
+# server-side HTML ?language= ссылок нет). Порядок стабилен для детерминизма.
+TREND_LANGUAGES = (
+    "Python", "TypeScript", "JavaScript", "Rust", "Go", "Java",
+    "C#", "C++", "C", "Ruby", "PHP", "Dart", "Swift", "Kotlin", "Zig",
+)
+# trendshift кодирует язык в query-параметре ?language= нестандартно для
+# спецсимволов ('#' как %23, '+' как %2B). Таблица делает это явным и
+# тестируемым; языки без спецсимволов идут как есть (идентичный сегмент).
+_LANGUAGE_URL_SEGMENT = {
+    "C#": "C%23",
+    "C++": "C%2B%2B",
+}
+
+# trendshift.io отдаёт 403 на запросы без User-Agent. Дефолт подставляется в
+# fetch_url, когда вызывающая сторона не передала свой headers — production
+# безопасен без правок вызовов, а тесты могут явно прокинуть headers=None/dict.
+_USER_AGENT = "vibetools-bot/1.0 (+https://github.com/axisrow/vibetools)"
+_DEFAULT_HEADERS = {"User-Agent": _USER_AGENT}
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import github_headers, github_slug, load_json_or_default  # noqa: E402
 from generate_readme import load_tools  # noqa: E402
@@ -75,9 +97,14 @@ def fetch_readme(slug: tuple[str, str], headers: dict) -> str | None:
 
 
 def fetch_url(url: str, headers: dict | None = None) -> str | None:
-    """Fetch an arbitrary Trendshift/GitHub text URL."""
+    """Fetch an arbitrary Trendshift/GitHub text URL.
+
+    headers=None (по умолчанию у вызывающих) подставляет _DEFAULT_HEADERS с
+    User-Agent: trendshift.io отдаёт 403 на bare urllib/requests без UA.
+    Явный headers (для README-фетча через github_headers()) имеет приоритет.
+    """
     try:
-        response = requests.get(url, headers=headers or {}, timeout=10)
+        response = requests.get(url, headers=headers or _DEFAULT_HEADERS, timeout=10)
     except requests.RequestException as exc:
         print(f"  ! {url}: fetch failed: {exc}", file=sys.stderr)
         return None
@@ -221,17 +248,19 @@ def _decorate_ranking_entry(
     entry: dict,
     badge_window: str,
     badge_fetcher: Callable[[str, dict | None], str | None],
+    headers: dict | None = None,
 ) -> dict | None:
     """Fetch the badge SVG for a ranking entry and attach rank/badgeUrl.
 
     Returns the entry with its first badge decorated (badgeUrl + rank), or
     None if the rank could not be extracted (unranked / fetch failed). Single
     source of truth for the badge→rank enrichment shared by both branches of
-    enrich_from_rankings.
+    enrich_from_rankings. ``headers`` пробрасывается в badge_fetcher (UA для
+    trendshift.io; без него — 403).
     """
     trendshift_id = entry["trendshiftId"]
     badge_url = TREND_SHIFT_BADGE.format(id=trendshift_id, window=badge_window)
-    svg = badge_fetcher(badge_url, None)
+    svg = badge_fetcher(badge_url, headers)
     rank = extract_badge_rank(svg or "")
     if rank is None:
         return None
@@ -241,6 +270,26 @@ def _decorate_ranking_entry(
     return entry
 
 
+def _ranking_pages(languages: tuple[str, ...] | None):
+    """Yield (kind, page_url, badge_window) — глобальные страницы, затем
+    per-language × 4 окна.
+
+    Глобальные окна идут первыми (важно: репо из tools.yml должны попасть в
+    trendshift.json через тот же путь, что и раньше). Per-language добавляются
+    только когда передан непустой ``languages``. Дедуп по githubUrl делает
+    enrich_from_rankings через merge_trendshift_entry — здесь только перечисляем
+    страницы.
+    """
+    for kind, (page_url, badge_window) in RANKING_WINDOWS.items():
+        yield kind, page_url, badge_window
+    if not languages:
+        return
+    for lang in languages:
+        segment = _LANGUAGE_URL_SEGMENT.get(lang, lang)
+        for kind, (page_url, badge_window) in RANKING_WINDOWS.items():
+            yield kind, f"{page_url}?language={segment}", badge_window
+
+
 def enrich_from_rankings(
     tools: list[dict],
     cache: dict,
@@ -248,6 +297,8 @@ def enrich_from_rankings(
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     new_repos: dict | None = None,
+    languages: tuple[str, ...] | None = None,
+    headers: dict | None = None,
 ) -> dict:
     """Add repos discovered from Trendshift ranking pages.
 
@@ -257,14 +308,19 @@ def enrich_from_rankings(
     provided, so we no longer silently drop trendshift-only repos. When
     ``new_repos`` is None the legacy behavior is preserved (unknown repos are
     skipped) — this keeps existing callers/tests unchanged.
+
+    ``languages`` — кортеж языков для per-language сбора (None/() → только 4
+    глобальные страницы, legacy). ``headers`` пробрасывается в fetcher-ы (UA для
+    trendshift.io); по умолчанию None, и тогда fetch_url подставит свой
+    _DEFAULT_HEADERS.
     """
     by_url = {tool.get("url"): tool for tool in tools}
-    for kind, (page_url, badge_window) in RANKING_WINDOWS.items():
-        html = page_fetcher(page_url, None)
+    for kind, page_url, badge_window in _ranking_pages(languages):
+        html = page_fetcher(page_url, headers)
         if html is None:
             continue
         for entry in extract_ranking_entries(html, kind, updated_at):
-            decorated = _decorate_ranking_entry(entry, badge_window, badge_fetcher)
+            decorated = _decorate_ranking_entry(entry, badge_window, badge_fetcher, headers)
             if decorated is None:
                 continue
             github_url = decorated["githubUrl"]
@@ -285,6 +341,7 @@ def update_trendshift_cache(
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     workers: int = 16,
     new_repos: dict | None = None,
+    languages: tuple[str, ...] | None = None,
 ) -> dict:
     """Build a fresh cache and preserve previous entries on fetch failures.
 
@@ -292,6 +349,9 @@ def update_trendshift_cache(
     trendshift-репо, которых нет в tools.yml. Пробрасывается в
     enrich_from_rankings. Возвращается по-прежнему только cache (как и cache,
     new_repos мутируется по ссылке, вызывающая сторона читает его после вызова).
+
+    ``languages`` — пробрасывается в enrich_from_rankings для per-language
+    сбора (None/() → legacy, только 4 глобальные страницы).
     """
     candidates = []
     for tool in tools:
@@ -324,7 +384,7 @@ def update_trendshift_cache(
         if entry is not None:
             next_cache[url] = merge_trendshift_entry(next_cache.get(url), entry)
     return enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
-                                badge_fetcher, new_repos)
+                                badge_fetcher, new_repos, languages, None)
 
 
 def _serialize_repos_cache(new_repos: dict) -> list[dict]:
@@ -352,15 +412,24 @@ def main(
     fetcher: Callable[[tuple[str, str], dict], str | None] = fetch_readme,
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
+    languages: tuple[str, ...] | None = TREND_LANGUAGES,
 ) -> int:
     tools = load_tools(tools_yml)
     previous_cache = load_json_or_default(trendshift_file, {}) or {}
     updated_at = datetime.date.today().isoformat()
+    # README-фетч (raw.githubusercontent.com) идёт через github_headers() — там
+    # нужен Accept+GITHUB_TOKEN для повышенного rate-лимита. trendshift-страницы и
+    # бейджи идут через тот же fetch_url, но с headers=None → _DEFAULT_HEADERS с
+    # User-Agent (trendshift.io отдаёт 403 без UA). Проброс headers=None в
+    # enrich_from_rankings гарантирует UA для trendshift, не затрагивая README.
+    gh_headers = github_headers()
     # Сохраняем ранее собранные trendshift-only репо: при частичном/полном
     # outage trendshift.io свежий new_repos будет пустым, и без сида мы
     # перезаписали бы trendshift-repos.json на [] — потеряв всю коллекцию.
     # Сида по githubUrl позволяет merge_trendshift_entry обновить записи
     # на месте, а при сбое — сохранить прежние (симметрия с previous_cache).
+    # Важно: категория/categoryReason/categoryAt и др. обогащающие поля на сиде
+    # сохраняются — merge_trendshift_entry их не трогает (правит только badges).
     new_repos: dict[str, dict] = {}
     for rec in load_json_or_default(trendshift_repos_file, []) or []:
         if isinstance(rec, dict) and isinstance(rec.get("githubUrl"), str):
@@ -368,8 +437,9 @@ def main(
             entry = {k: v for k, v in rec.items() if k != "githubUrl"}
             new_repos[url] = entry
     cache = update_trendshift_cache(
-        tools, previous_cache, updated_at, github_headers(), fetcher,
+        tools, previous_cache, updated_at, gh_headers, fetcher,
         page_fetcher, badge_fetcher, new_repos=new_repos,
+        languages=languages,
     )
     trendshift_file.parent.mkdir(parents=True, exist_ok=True)
     trendshift_file.write_text(
