@@ -90,6 +90,17 @@ NEW_DAYS = 14  # [new] если добавлено ≤ N дней назад (п
 # update_stars.HISTORY_DAYS должен покрывать max(FEATURED_WINDOWS.values())+1.
 FEATURED_WINDOWS = {"day": 1, "week": 7}
 
+# Название секции Featured по языку — единый источник, чтобы заголовок секции
+# (## Featured) и пункт оглавления (#featured) всегда совпадали (иначе
+# remark-lint:awesome-toc ловит рассинхрон). Текст без «## » — префикс добавляет
+# вызывающая сторона (заголовок) либо использует как есть (текст ссылки/якорь).
+FEATURED_TITLES = {"en": "Featured", "ru": "Избранное"}
+
+
+def featured_heading(lang: str, prefix: str = "") -> str:
+    """Заголовок секции Featured: «## Featured» / «Избранное» и т. п."""
+    return f"{prefix}{FEATURED_TITLES[lang]}"
+
 
 def load_tools(tools_yml: Path = TOOLS_YML) -> list[dict]:
     """Загружает и валидирует утилиты из YAML."""
@@ -181,8 +192,7 @@ def render_featured(featured: dict[str, set[str]], tools_by_url: dict[str, dict]
         lines.append(f"{labels[(lang, kind)]}: [{t['name']}]({featured_url}) — {t['description'][lang]}")
     if not lines:
         return ""
-    heading = "## Featured" if lang == "en" else "## Избранное"
-    return heading + "\n\n" + "\n".join(lines) + "\n\n"
+    return featured_heading(lang, "## ") + "\n\n" + "\n".join(lines) + "\n\n"
 
 
 def _is_emoji(c: str) -> bool:
@@ -347,8 +357,8 @@ def build_toc(groups, lang, with_featured: bool = False) -> str:
     # (ожидает Featured, видит AI Coding Agents). Пункт добавляем только когда
     # featured-блок реально рендерится (есть day/week), иначе якорь будет битым.
     if with_featured:
-        featured_title = "Featured" if lang == "en" else "Избранное"
-        items.append(f"- [{featured_title}](#{gh_anchor(featured_title)})")
+        title = FEATURED_TITLES[lang]
+        items.append(f"- [{title}](#{gh_anchor(title)})")
     for cat_key, meta in CATEGORIES:
         if not groups.get(cat_key):
             continue
