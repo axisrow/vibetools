@@ -5,6 +5,11 @@ Find Trendshift achievements published by tool authors in upstream READMEs.
 This is an enrichment cache, not a human-curated source. data/tools.yml stays
 limited to name/url/category/description, while Trendshift metadata lives in
 data/trendshift.json and can disappear without breaking the site.
+
+data/trendshift-repos.json — автогенерируемый кэш (list) репозиториев с
+ranking-страниц trendshift.io, отсутствующих в tools.yml. Отдельный от
+trendshift.json, чтобы не смешивать enrichment-only метаданные кураторских
+тулзов и «сырые» trendshift-репо.
 """
 from __future__ import annotations
 
@@ -22,6 +27,9 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS_YML = ROOT / "data" / "tools.yml"
 TREND_SHIFT_FILE = ROOT / "data" / "trendshift.json"
+# Репозитории с trendshift.io, которых нет в tools.yml. List (отсортированный
+# по url для детерминированного git-diff), отдельный от trendshift.json.
+TREND_SHIFT_REPOS_FILE = ROOT / "data" / "trendshift-repos.json"
 RAW_README = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/README.md"
 TREND_SHIFT_PAGE = "https://trendshift.io/repositories/{id}"
 TREND_SHIFT_BADGE = "https://trendshift.io/api/badge/trendshift/repositories/{id}/{window}"
@@ -209,33 +217,61 @@ def merge_trendshift_entry(base: dict | None, incoming: dict) -> dict:
     return base
 
 
+def _decorate_ranking_entry(
+    entry: dict,
+    badge_window: str,
+    badge_fetcher: Callable[[str, dict | None], str | None],
+) -> dict | None:
+    """Fetch the badge SVG for a ranking entry and attach rank/badgeUrl.
+
+    Returns the entry with its first badge decorated (badgeUrl + rank), or
+    None if the rank could not be extracted (unranked / fetch failed). Single
+    source of truth for the badge→rank enrichment shared by both branches of
+    enrich_from_rankings.
+    """
+    trendshift_id = entry["trendshiftId"]
+    badge_url = TREND_SHIFT_BADGE.format(id=trendshift_id, window=badge_window)
+    svg = badge_fetcher(badge_url, None)
+    rank = extract_badge_rank(svg or "")
+    if rank is None:
+        return None
+    badge = entry["badges"][0]
+    badge["badgeUrl"] = badge_url
+    badge["rank"] = rank
+    return entry
+
+
 def enrich_from_rankings(
     tools: list[dict],
     cache: dict,
     updated_at: str,
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
+    new_repos: dict | None = None,
 ) -> dict:
-    """Add matching repos discovered from Trendshift ranking pages."""
+    """Add repos discovered from Trendshift ranking pages.
+
+    Repos whose githubUrl is in ``tools`` enrich ``cache`` (the trendshift.json
+    enrichment cache keyed by url) — unchanged behavior. Repos NOT in tools.yml
+    are collected into ``new_repos`` (keyed by url) when that accumulator is
+    provided, so we no longer silently drop trendshift-only repos. When
+    ``new_repos`` is None the legacy behavior is preserved (unknown repos are
+    skipped) — this keeps existing callers/tests unchanged.
+    """
     by_url = {tool.get("url"): tool for tool in tools}
     for kind, (page_url, badge_window) in RANKING_WINDOWS.items():
         html = page_fetcher(page_url, None)
         if html is None:
             continue
         for entry in extract_ranking_entries(html, kind, updated_at):
-            github_url = entry["githubUrl"]
-            if github_url not in by_url:
+            decorated = _decorate_ranking_entry(entry, badge_window, badge_fetcher)
+            if decorated is None:
                 continue
-            trendshift_id = entry["trendshiftId"]
-            badge_url = TREND_SHIFT_BADGE.format(id=trendshift_id, window=badge_window)
-            svg = badge_fetcher(badge_url, None)
-            rank = extract_badge_rank(svg or "")
-            if rank is None:
-                continue
-            badge = entry["badges"][0]
-            badge["badgeUrl"] = badge_url
-            badge["rank"] = rank
-            cache[github_url] = merge_trendshift_entry(cache.get(github_url), entry)
+            github_url = decorated["githubUrl"]
+            if github_url in by_url:
+                cache[github_url] = merge_trendshift_entry(cache.get(github_url), decorated)
+            elif new_repos is not None:
+                new_repos[github_url] = merge_trendshift_entry(new_repos.get(github_url), decorated)
     return cache
 
 
@@ -248,8 +284,15 @@ def update_trendshift_cache(
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     workers: int = 16,
+    new_repos: dict | None = None,
 ) -> dict:
-    """Build a fresh cache and preserve previous entries on fetch failures."""
+    """Build a fresh cache and preserve previous entries on fetch failures.
+
+    ``new_repos`` — опциональный mutable-аккумулятор (dict url→entry) для
+    trendshift-репо, которых нет в tools.yml. Пробрасывается в
+    enrich_from_rankings. Возвращается по-прежнему только cache (как и cache,
+    new_repos мутируется по ссылке, вызывающая сторона читает его после вызова).
+    """
     candidates = []
     for tool in tools:
         url = tool.get("url", "")
@@ -280,12 +323,32 @@ def update_trendshift_cache(
     for url, entry in results:
         if entry is not None:
             next_cache[url] = merge_trendshift_entry(next_cache.get(url), entry)
-    return enrich_from_rankings(tools, next_cache, updated_at, page_fetcher, badge_fetcher)
+    return enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
+                                badge_fetcher, new_repos)
+
+
+def _serialize_repos_cache(new_repos: dict) -> list[dict]:
+    """Dict url→entry → отсортированный по url list; каждой записи добавлен
+    githubUrl (бывший ключ). Сортировка даёт детерминированный git-diff при
+    ежедневных перезаписях (иначе порядок от ThreadPoolExecutor плавал бы).
+
+    Поля entry не переописываются — spread ``**entry`` копирует всё, что
+    extract_ranking_entries/merge_trendshift_entry туда положили, так что
+    сериализатор не рассинхронится при эволюции схемы записи.
+    """
+    records = [
+        {"githubUrl": url, **entry}
+        for url, entry in new_repos.items()
+        if isinstance(entry, dict)
+    ]
+    records.sort(key=lambda r: r["githubUrl"])
+    return records
 
 
 def main(
     tools_yml: Path = TOOLS_YML,
     trendshift_file: Path = TREND_SHIFT_FILE,
+    trendshift_repos_file: Path = TREND_SHIFT_REPOS_FILE,
     fetcher: Callable[[tuple[str, str], dict], str | None] = fetch_readme,
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
@@ -293,16 +356,34 @@ def main(
     tools = load_tools(tools_yml)
     previous_cache = load_json_or_default(trendshift_file, {}) or {}
     updated_at = datetime.date.today().isoformat()
+    # Сохраняем ранее собранные trendshift-only репо: при частичном/полном
+    # outage trendshift.io свежий new_repos будет пустым, и без сида мы
+    # перезаписали бы trendshift-repos.json на [] — потеряв всю коллекцию.
+    # Сида по githubUrl позволяет merge_trendshift_entry обновить записи
+    # на месте, а при сбое — сохранить прежние (симметрия с previous_cache).
+    new_repos: dict[str, dict] = {}
+    for rec in load_json_or_default(trendshift_repos_file, []) or []:
+        if isinstance(rec, dict) and isinstance(rec.get("githubUrl"), str):
+            url = rec["githubUrl"]
+            entry = {k: v for k, v in rec.items() if k != "githubUrl"}
+            new_repos[url] = entry
     cache = update_trendshift_cache(
         tools, previous_cache, updated_at, github_headers(), fetcher,
-        page_fetcher, badge_fetcher
+        page_fetcher, badge_fetcher, new_repos=new_repos,
     )
     trendshift_file.parent.mkdir(parents=True, exist_ok=True)
     trendshift_file.write_text(
         json.dumps(cache, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    print(f"Trendshift badges: {len(cache)} repos")
+    repos_records = _serialize_repos_cache(new_repos)
+    trendshift_repos_file.parent.mkdir(parents=True, exist_ok=True)
+    trendshift_repos_file.write_text(
+        json.dumps(repos_records, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    print(f"Trendshift badges: {len(cache)} repos (+ {len(repos_records)} "
+          f"new trendshift-only repos)")
     return 0
 
 

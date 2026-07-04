@@ -19,7 +19,7 @@ MOCK_MARKERS = [
     "github.com/b/editor",
     "example.com/tool",
 ]
-CACHE_FILES = ["data/repos-meta.json", "data/stars.json", "data/stars-history.json", "data/trendshift.json"]
+CACHE_FILES = ["data/repos-meta.json", "data/stars.json", "data/stars-history.json", "data/trendshift.json", "data/trendshift-repos.json"]
 
 
 @pytest.mark.parametrize("rel", CACHE_FILES)

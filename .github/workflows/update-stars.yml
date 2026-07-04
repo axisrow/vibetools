@@ -33,8 +33,11 @@ jobs:
 
       # Trendshift-достижения (repo-of-day/week badges) — отдельный источник,
       # не зависящий от GitHub API. Обновляем тем же дневным прогоном, чтобы
-      # data/trendshift.json не устаревал; скрипт network-tolerant (таймауты,
-      # graceful None) и не валит дневной джоб при сбое внешних страниц.
+      # data/trendshift.json не устаревал. Скрипт network-tolerant: таймауты,
+      # graceful None, а при outage trendshift.io прежние репо сохраняются
+      # в обоих кэшах (trendshift.json + trendshift-repos.json) — джоб не
+      # теряет собранное и не валится. data/trendshift-repos.json отслеживается
+      # с seed `[]`, поэтому git add всегда находит pathspec.
       - name: Refresh Trendshift achievements
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -44,7 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/stars.json data/stars-history.json data/repos-meta.json data/trendshift.json README.md README.ru.md docs/index.html
+          git add data/stars.json data/stars-history.json data/repos-meta.json data/trendshift.json data/trendshift-repos.json README.md README.ru.md docs/index.html
           if git diff --cached --quiet; then
             echo "No star changes today."
           else
