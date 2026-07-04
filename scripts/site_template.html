@@ -600,6 +600,8 @@
             <option value="name" data-i18n="sortName">Name</option>
           </select>
           <button class="btn btn-outline-secondary new-toggle" type="button" id="f-new" aria-pressed="false" data-i18n="new">New</button>
+          <label class="visually-hidden" for="f-language" data-i18n="language">Language</label>
+          <select class="form-select toolbar-select" id="f-language" aria-label="Language"></select>
           <div class="mobile-category">
             <label class="visually-hidden" for="category-select" data-i18n="category">category</label>
             <select class="form-select" id="category-select" aria-label="Category"></select>
@@ -644,6 +646,8 @@ const I18N = {
     year: "year",
     stars: "stars",
     category: "category",
+    language: "Language",
+    allLanguages: "All languages",
     generated: date => `Updated ${date}`,
     activeFilter: label => `Category: ${label}`,
     sortStars: "Stars", sortDate: "Newest", sortName: "Name",
@@ -666,6 +670,8 @@ const I18N = {
     year: "год",
     stars: "звезды",
     category: "категория",
+    language: "Язык",
+    allLanguages: "Все языки",
     generated: date => `Обновлено ${date}`,
     activeFilter: label => `Категория: ${label}`,
     sortStars: "Звезды", sortDate: "Новые", sortName: "Название",
@@ -688,6 +694,8 @@ const I18N = {
     year: "年份",
     stars: "星标",
     category: "分类",
+    language: "语言",
+    allLanguages: "所有语言",
     generated: date => `更新 ${date}`,
     activeFilter: label => `分类：${label}`,
     sortStars: "星标", sortDate: "最新", sortName: "名称",
@@ -706,6 +714,7 @@ const LANGUAGES = {
 };
 let lang = localStorage.getItem("lang") || "en";
 let activeCat = "all";
+let activeLang = "all";
 let sortMode = "stars";
 let query = "";
 
@@ -737,6 +746,7 @@ function applyI18n() {
   $("total-tools").textContent = DATA.tools.length;
   $("generated").textContent = t("generated")(DATA.generatedAt);
   renderCats();
+  renderLanguages();
   render();
 }
 
@@ -767,6 +777,19 @@ function renderCats() {
   DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0));
 }
 
+function renderLanguages() {
+  // <select> фильтра языка программирования: опции из DATA.languages
+  // (unique, sorted, null исключён) + пункт «все языки».
+  const sel = $("f-language");
+  if (!sel) return;
+  const opts = [`<option value="all">${esc(t("allLanguages"))}</option>`];
+  (DATA.languages || []).forEach(l => {
+    opts.push(`<option value="${esc(l)}"${activeLang === l ? " selected" : ""}>${esc(l)}</option>`);
+  });
+  sel.innerHTML = opts.join("");
+  sel.value = activeLang;
+}
+
 function fmtStars(n) {
   if (n == null) return null;
   if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, "") + "k";
@@ -783,6 +806,7 @@ function filtered() {
   const onlyNew = $("f-new").getAttribute("aria-pressed") === "true";
   let list = DATA.tools.filter(tool => {
     if (activeCat !== "all" && tool.category !== activeCat) return false;
+    if (activeLang !== "all" && tool.language !== activeLang) return false;
     if (onlyNew && !tool.isNew) return false;
     if (q && !tool.search.includes(q)) return false;
     return true;
@@ -828,6 +852,7 @@ function render() {
     const topicTags = Array.isArray(tool.topics) ? tool.topics.slice(0, 3) : [];
     const submetaParts = [
       esc(catTitle(tool.category)),
+      ...(tool.language ? [esc(tool.language)] : []),
       ...topicTags.map(topic => esc(topic)),
     ];
     const submeta = submetaParts
@@ -876,6 +901,7 @@ $("search").addEventListener("input", e => {
   debounce = setTimeout(() => { query = e.target.value; render(); }, 120);
 });
 $("sort").addEventListener("change", e => { sortMode = e.target.value; render(); });
+$("f-language").addEventListener("change", e => { activeLang = e.target.value; render(); });
 $("f-new").addEventListener("click", e => {
   const pressed = e.currentTarget.getAttribute("aria-pressed") === "true";
   e.currentTarget.setAttribute("aria-pressed", pressed ? "false" : "true");

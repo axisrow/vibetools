@@ -56,6 +56,9 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "command-bar" in html
     assert "filter-rail" in html
     assert "category-select" in html
+    # Языковой фильтр (#11) должен пережить редизайн — regression guard.
+    assert 'id="f-language"' in html
+    assert "DATA.languages" in html
     assert "category-tab" in html
     assert "tool-record" in html
     assert "tool-heading" in html
