@@ -1107,6 +1107,9 @@ function trendshiftPeriod(kind) {
 }
 
 function trendshiftLabel(badge) {
+  // ranking-source badges несут честный ранг из aria-label SVG; README-source
+  // badges ранга не имеют (image URL без aria-label) — для них показываем #1
+  // как допущение источника, а не валидированный ранг. См. update_trendshift.py.
   const rank = Number.isInteger(badge.rank) ? badge.rank : 1;
   return `${t("trendshiftPrefix")} #${rank} ${trendshiftPeriod(badge.kind)}`;
 }
