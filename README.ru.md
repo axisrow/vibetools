@@ -15,6 +15,10 @@
 - [Обучение и ресурсы](#обучение-и-ресурсы)
 - [Прочее и смежное](#прочее-и-смежное)
 
+## Featured
+
+Репозиторий дня: [caveman](https://github.com/JuliusBrussee/caveman) — Утилита caveman
+
 ## AI-агенты кодинга и CLI
 
 - [OpenCode](https://github.com/sst/opencode) ![](https://img.shields.io/github/stars/sst/opencode?style=flat&color=yellow) - Open-source AI-агент для терминала с поддержкой любых провайдеров моделей.
@@ -209,8 +213,8 @@
 - [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Владейте своим AI.
 - [SuperPrompt](https://github.com/NeoVertex1/SuperPrompt) ![](https://img.shields.io/github/stars/NeoVertex1/SuperPrompt?style=flat&color=yellow) - SuperPrompt — промпты, помогающие понять AI-агентов.
-- [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Утилита ai-notes.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM).
+- [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Утилита ai-notes.
 - [aim](https://github.com/aimhubio/aim) ![](https://img.shields.io/github/stars/aimhubio/aim?style=flat&color=yellow) - Aim — простой open-source трекер экспериментов.
 - [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - Утилита wonderful-prompts.
 - [Awesome-Prompt-Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) ![](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat&color=yellow) - Ручная подборка ресурсов по prompt engineering.
@@ -291,8 +295,8 @@
 - [hapi](https://github.com/tiann/hapi) ![](https://img.shields.io/github/stars/tiann/hapi?style=flat&color=yellow) - Апп для Claude Code/Codex/Gemini/OpenCode — vibe coding где угодно.
 - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow — библиотека построения и автооптимизации LLM-приложений.
 - [MonkeyCode](https://github.com/chaitin/MonkeyCode) ![](https://img.shields.io/github/stars/chaitin/MonkeyCode?style=flat&color=yellow) - AI-платформа кодинга для команд.
-- [crystal](https://github.com/stravu/crystal) ![](https://img.shields.io/github/stars/stravu/crystal?style=flat&color=yellow) - Утилита crystal.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - Фреймворк построения агентов.
+- [crystal](https://github.com/stravu/crystal) ![](https://img.shields.io/github/stars/stravu/crystal?style=flat&color=yellow) - Утилита crystal.
 - [core](https://github.com/cheshire-cat-ai/core) ![](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat&color=yellow) - AI-агент микросервис.
 - [Chaterm](https://github.com/chaterm/Chaterm) ![](https://img.shields.io/github/stars/chaterm/Chaterm?style=flat&color=yellow) - Open-source AI-терминал управления облаком и инфраструктурой.
 - [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — применяйте одни правила ко всем кодинг-агентам.

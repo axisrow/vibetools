@@ -15,6 +15,10 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [Learning and Resources](#learning-and-resources)
 - [Other and Adjacent](#other-and-adjacent)
 
+## Featured
+
+Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman) — caveman tool
+
 ## AI Coding Agents and CLI
 
 - [OpenCode](https://github.com/sst/opencode) ![](https://img.shields.io/github/stars/sst/opencode?style=flat&color=yellow) - Open-source terminal AI coding agent with multi-provider model support.
@@ -209,8 +213,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Own your AI.
 - [SuperPrompt](https://github.com/NeoVertex1/SuperPrompt) ![](https://img.shields.io/github/stars/NeoVertex1/SuperPrompt?style=flat&color=yellow) - SuperPrompt is an attempt to engineer prompts that might help us understand AI agents.
-- [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Ai-notes tool.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust.
+- [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Ai-notes tool.
 - [aim](https://github.com/aimhubio/aim) ![](https://img.shields.io/github/stars/aimhubio/aim?style=flat&color=yellow) - Aim  — An easy-to-use & supercharged open-source experiment tracker.
 - [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - Wonderful-prompts tool.
 - [Awesome-Prompt-Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) ![](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat&color=yellow) - This repository contains a hand-curated resources for Prompt Engineering with a focus on G.
@@ -291,8 +295,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [hapi](https://github.com/tiann/hapi) ![](https://img.shields.io/github/stars/tiann/hapi?style=flat&color=yellow) - App for Claude Code / Codex / Gemini / OpenCode, vibe coding anytime, anywhere.
 - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow: The library to build & auto-optimize LLM applications.
 - [MonkeyCode](https://github.com/chaitin/MonkeyCode) ![](https://img.shields.io/github/stars/chaitin/MonkeyCode?style=flat&color=yellow) - AI coding platform for teams.
-- [crystal](https://github.com/stravu/crystal) ![](https://img.shields.io/github/stars/stravu/crystal?style=flat&color=yellow) - Crystal tool.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - The Framework for Building Agents.
+- [crystal](https://github.com/stravu/crystal) ![](https://img.shields.io/github/stars/stravu/crystal?style=flat&color=yellow) - Crystal tool.
 - [core](https://github.com/cheshire-cat-ai/core) ![](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat&color=yellow) - AI agent microservice.
 - [Chaterm](https://github.com/chaterm/Chaterm) ![](https://img.shields.io/github/stars/chaterm/Chaterm?style=flat&color=yellow) - Open source AI terminal for cloud and infrastructure management, enabling you to deploy, t.
 - [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — apply the same rules to all coding agents.

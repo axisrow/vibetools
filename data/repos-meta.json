@@ -2,10 +2,10 @@
   "https://github.com/0x4m4/hexstrike-ai": {
     "archived": false,
     "createdAt": "2025-07-10T17:53:18Z",
-    "forks": 2138,
+    "forks": 2142,
     "openIssues": 91,
     "pushedAt": "2026-04-27T08:56:07Z",
-    "stars": 10121,
+    "stars": 10137,
     "topics": [
       "0x4m4",
       "ai",
@@ -32,10 +32,10 @@
   "https://github.com/0xJacky/nginx-ui": {
     "archived": false,
     "createdAt": "2021-02-19T10:51:04Z",
-    "forks": 837,
+    "forks": 836,
     "openIssues": 85,
-    "pushedAt": "2026-07-03T02:13:22Z",
-    "stars": 11260,
+    "pushedAt": "2026-07-03T18:42:24Z",
+    "stars": 11263,
     "topics": [
       "chatgpt-app",
       "code-completion",
@@ -59,10 +59,10 @@
   "https://github.com/0xSteph/pentest-ai-agents": {
     "archived": false,
     "createdAt": "2026-03-28T15:21:59Z",
-    "forks": 380,
+    "forks": 383,
     "openIssues": 2,
     "pushedAt": "2026-06-22T14:06:59Z",
-    "stars": 1924,
+    "stars": 1939,
     "topics": [
       "ai-agents",
       "ai-security",
@@ -87,10 +87,10 @@
   "https://github.com/1Panel-dev/MaxKB": {
     "archived": false,
     "createdAt": "2023-09-14T02:05:12Z",
-    "forks": 2933,
-    "openIssues": 65,
-    "pushedAt": "2026-07-03T02:40:07Z",
-    "stars": 21615,
+    "forks": 2932,
+    "openIssues": 55,
+    "pushedAt": "2026-07-03T09:24:20Z",
+    "stars": 21622,
     "topics": [
       "agent",
       "agentic-ai",
@@ -114,16 +114,16 @@
     "forks": 2337,
     "openIssues": 6,
     "pushedAt": "2025-12-17T00:11:18Z",
-    "stars": 21974,
+    "stars": 21989,
     "topics": []
   },
   "https://github.com/2noise/ChatTTS": {
     "archived": false,
     "createdAt": "2024-05-27T18:26:49Z",
-    "forks": 4250,
-    "openIssues": 62,
+    "forks": 4251,
+    "openIssues": 63,
     "pushedAt": "2026-04-10T16:33:48Z",
-    "stars": 39545,
+    "stars": 39551,
     "topics": [
       "agent",
       "chat",
@@ -147,10 +147,10 @@
   "https://github.com/4ian/GDevelop": {
     "archived": false,
     "createdAt": "2014-06-29T19:58:38Z",
-    "forks": 1426,
-    "openIssues": 608,
-    "pushedAt": "2026-07-02T15:01:16Z",
-    "stars": 24334,
+    "forks": 1428,
+    "openIssues": 607,
+    "pushedAt": "2026-07-03T18:23:34Z",
+    "stars": 24354,
     "topics": [
       "2d-game",
       "2d-game-engine",
@@ -176,10 +176,10 @@
   "https://github.com/AI4Finance-Foundation/FinGPT": {
     "archived": false,
     "createdAt": "2023-02-11T20:21:34Z",
-    "forks": 2953,
+    "forks": 2951,
     "openIssues": 98,
     "pushedAt": "2026-06-01T15:15:48Z",
-    "stars": 20772,
+    "stars": 20775,
     "topics": [
       "chatgpt",
       "finance",
@@ -199,10 +199,10 @@
   "https://github.com/AI4Finance-Foundation/FinRobot": {
     "archived": false,
     "createdAt": "2024-02-27T02:30:30Z",
-    "forks": 1251,
-    "openIssues": 71,
+    "forks": 1255,
+    "openIssues": 72,
     "pushedAt": "2026-05-10T17:01:37Z",
-    "stars": 7453,
+    "stars": 7466,
     "topics": [
       "aiagent",
       "chatgpt",
@@ -217,8 +217,8 @@
   "https://github.com/AgentDeskAI/browser-tools-mcp": {
     "archived": false,
     "createdAt": "2025-02-10T09:20:38Z",
-    "forks": 525,
-    "openIssues": 34,
+    "forks": 524,
+    "openIssues": 32,
     "pushedAt": "2026-03-18T06:11:12Z",
     "stars": 7261,
     "topics": [
@@ -233,9 +233,9 @@
     "archived": false,
     "createdAt": "2023-04-26T09:54:28Z",
     "forks": 558,
-    "openIssues": 161,
-    "pushedAt": "2026-07-03T02:08:25Z",
-    "stars": 4257,
+    "openIssues": 152,
+    "pushedAt": "2026-07-04T02:17:44Z",
+    "stars": 4260,
     "topics": [
       "agents",
       "evaluation",
@@ -257,10 +257,10 @@
   "https://github.com/AgriciDaniel/claude-ads": {
     "archived": false,
     "createdAt": "2026-02-11T13:01:49Z",
-    "forks": 998,
-    "openIssues": 28,
+    "forks": 1001,
+    "openIssues": 29,
     "pushedAt": "2026-06-26T21:03:50Z",
-    "stars": 6668,
+    "stars": 6694,
     "topics": [
       "ai",
       "ai-marketing",
@@ -273,10 +273,10 @@
   "https://github.com/Aider-AI/aider": {
     "archived": false,
     "createdAt": "2023-05-09T18:57:49Z",
-    "forks": 4681,
-    "openIssues": 1699,
+    "forks": 4690,
+    "openIssues": 1702,
     "pushedAt": "2026-05-22T14:02:20Z",
-    "stars": 46971,
+    "stars": 47009,
     "topics": [
       "anthropic",
       "chatgpt",
@@ -299,7 +299,7 @@
     "forks": 21,
     "openIssues": 0,
     "pushedAt": "2026-05-29T09:44:17Z",
-    "stars": 1265,
+    "stars": 1261,
     "topics": [
       "boilerplate",
       "claude-code",
@@ -315,10 +315,10 @@
   "https://github.com/All-Hands-AI/OpenHands": {
     "archived": false,
     "createdAt": "2024-03-13T03:33:31Z",
-    "forks": 10078,
-    "openIssues": 337,
-    "pushedAt": "2026-07-03T02:57:19Z",
-    "stars": 79206,
+    "forks": 10092,
+    "openIssues": 341,
+    "pushedAt": "2026-07-03T16:35:48Z",
+    "stars": 79341,
     "topics": [
       "agent",
       "artificial-intelligence",
@@ -334,10 +334,10 @@
   "https://github.com/Arize-ai/phoenix": {
     "archived": false,
     "createdAt": "2022-11-09T23:44:35Z",
-    "forks": 953,
-    "openIssues": 633,
-    "pushedAt": "2026-07-03T04:04:26Z",
-    "stars": 10383,
+    "forks": 954,
+    "openIssues": 631,
+    "pushedAt": "2026-07-04T02:24:26Z",
+    "stars": 10393,
     "topics": [
       "agents",
       "ai-monitoring",
@@ -360,10 +360,10 @@
   "https://github.com/BerriAI/litellm": {
     "archived": false,
     "createdAt": "2023-07-27T00:09:52Z",
-    "forks": 9410,
-    "openIssues": 3611,
-    "pushedAt": "2026-07-03T04:22:38Z",
-    "stars": 52470,
+    "forks": 9449,
+    "openIssues": 3616,
+    "pushedAt": "2026-07-04T04:28:57Z",
+    "stars": 52555,
     "topics": [
       "ai-gateway",
       "anthropic",
@@ -386,10 +386,10 @@
   "https://github.com/BloopAI/vibe-kanban": {
     "archived": false,
     "createdAt": "2025-06-14T19:10:21Z",
-    "forks": 2876,
+    "forks": 2880,
     "openIssues": 530,
     "pushedAt": "2026-04-24T09:17:34Z",
-    "stars": 27248,
+    "stars": 27254,
     "topics": [
       "agent",
       "ai-agents",
@@ -401,10 +401,10 @@
   "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models": {
     "archived": false,
     "createdAt": "2023-05-19T03:02:29Z",
-    "forks": 1131,
+    "forks": 1130,
     "openIssues": 104,
     "pushedAt": "2026-07-02T14:38:53Z",
-    "stars": 17920,
+    "stars": 17919,
     "topics": [
       "chain-of-thought",
       "in-context-learning",
@@ -424,10 +424,10 @@
   "https://github.com/BrowserMCP/mcp": {
     "archived": false,
     "createdAt": "2025-03-28T02:01:22Z",
-    "forks": 528,
+    "forks": 526,
     "openIssues": 143,
     "pushedAt": "2025-04-24T21:49:44Z",
-    "stars": 6760,
+    "stars": 6762,
     "topics": [
       "browser-automation",
       "browser-extension",
@@ -440,10 +440,10 @@
   "https://github.com/CherryHQ/cherry-studio": {
     "archived": false,
     "createdAt": "2024-05-24T01:56:26Z",
-    "forks": 4569,
-    "openIssues": 1246,
-    "pushedAt": "2026-07-03T04:30:46Z",
-    "stars": 48088,
+    "forks": 4570,
+    "openIssues": 1257,
+    "pushedAt": "2026-07-04T04:29:56Z",
+    "stars": 48130,
     "topics": [
       "agent-skills",
       "ai-agent",
@@ -460,10 +460,10 @@
   "https://github.com/ChromeDevTools/chrome-devtools-mcp": {
     "archived": false,
     "createdAt": "2025-09-11T10:39:55Z",
-    "forks": 2937,
-    "openIssues": 88,
-    "pushedAt": "2026-07-02T16:30:29Z",
-    "stars": 45158,
+    "forks": 2961,
+    "openIssues": 87,
+    "pushedAt": "2026-07-03T11:18:49Z",
+    "stars": 45532,
     "topics": [
       "browser",
       "chrome",
@@ -478,10 +478,10 @@
   "https://github.com/CloakHQ/CloakBrowser": {
     "archived": false,
     "createdAt": "2026-02-22T08:09:57Z",
-    "forks": 2210,
-    "openIssues": 144,
+    "forks": 2215,
+    "openIssues": 149,
     "pushedAt": "2026-07-02T22:22:24Z",
-    "stars": 27591,
+    "stars": 27692,
     "topics": [
       "ai-agents",
       "anti-detect",
@@ -508,10 +508,10 @@
   "https://github.com/CodeGraphContext/CodeGraphContext": {
     "archived": false,
     "createdAt": "2025-08-16T19:20:31Z",
-    "forks": 762,
+    "forks": 760,
     "openIssues": 303,
     "pushedAt": "2026-06-12T13:35:39Z",
-    "stars": 3861,
+    "stars": 3869,
     "topics": [
       "hacktoberfest2025",
       "social-winter-of-code"
@@ -520,10 +520,10 @@
   "https://github.com/ComposioHQ/awesome-claude-skills": {
     "archived": false,
     "createdAt": "2025-10-17T07:15:01Z",
-    "forks": 7422,
-    "openIssues": 912,
+    "forks": 7444,
+    "openIssues": 919,
     "pushedAt": "2026-05-22T03:17:49Z",
-    "stars": 66661,
+    "stars": 66754,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -547,10 +547,10 @@
   "https://github.com/ComposioHQ/composio": {
     "archived": false,
     "createdAt": "2024-02-23T13:58:27Z",
-    "forks": 4641,
-    "openIssues": 64,
-    "pushedAt": "2026-07-03T02:22:50Z",
-    "stars": 29073,
+    "forks": 4644,
+    "openIssues": 79,
+    "pushedAt": "2026-07-04T00:23:13Z",
+    "stars": 29085,
     "topics": [
       "agentic-ai",
       "agents",
@@ -574,10 +574,10 @@
   "https://github.com/D4Vinci/Scrapling": {
     "archived": false,
     "createdAt": "2024-10-13T20:29:53Z",
-    "forks": 6705,
+    "forks": 6717,
     "openIssues": 12,
     "pushedAt": "2026-06-29T22:21:14Z",
-    "stars": 67838,
+    "stars": 67954,
     "topics": [
       "ai",
       "ai-scraping",
@@ -604,10 +604,10 @@
   "https://github.com/DeusData/codebase-memory-mcp": {
     "archived": false,
     "createdAt": "2026-02-24T22:01:00Z",
-    "forks": 1839,
-    "openIssues": 217,
-    "pushedAt": "2026-07-02T22:12:45Z",
-    "stars": 24839,
+    "forks": 1902,
+    "openIssues": 198,
+    "pushedAt": "2026-07-04T03:12:59Z",
+    "stars": 25636,
     "topics": [
       "aider",
       "ast",
@@ -634,10 +634,10 @@
   "https://github.com/DietrichGebert/ponytail": {
     "archived": false,
     "createdAt": "2026-06-12T00:52:37Z",
-    "forks": 3725,
-    "openIssues": 126,
+    "forks": 3815,
+    "openIssues": 133,
     "pushedAt": "2026-07-01T23:34:52Z",
-    "stars": 71909,
+    "stars": 73159,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -654,10 +654,10 @@
   "https://github.com/Donchitos/Claude-Code-Game-Studios": {
     "archived": false,
     "createdAt": "2026-02-12T05:21:38Z",
-    "forks": 3255,
+    "forks": 3254,
     "openIssues": 47,
     "pushedAt": "2026-05-21T23:33:07Z",
-    "stars": 22547,
+    "stars": 22573,
     "topics": [
       "ai-agents",
       "ai-assisted-development",
@@ -685,10 +685,10 @@
   "https://github.com/Egonex-AI/Understand-Anything": {
     "archived": false,
     "createdAt": "2026-03-15T02:30:51Z",
-    "forks": 5838,
-    "openIssues": 261,
-    "pushedAt": "2026-07-03T02:08:56Z",
-    "stars": 70457,
+    "forks": 5852,
+    "openIssues": 263,
+    "pushedAt": "2026-07-03T08:53:53Z",
+    "stars": 70682,
     "topics": [
       "antigravity-skills",
       "business-knowledge",
@@ -714,8 +714,8 @@
     "createdAt": "2023-03-21T02:16:34Z",
     "forks": 943,
     "openIssues": 4,
-    "pushedAt": "2026-07-02T22:07:56Z",
-    "stars": 11579,
+    "pushedAt": "2026-07-03T22:06:36Z",
+    "stars": 11580,
     "topics": [
       "agi",
       "ai",
@@ -741,10 +741,10 @@
   "https://github.com/EnzeD/vibe-coding": {
     "archived": false,
     "createdAt": "2025-03-12T21:05:20Z",
-    "forks": 1961,
+    "forks": 1966,
     "openIssues": 0,
     "pushedAt": "2026-05-25T14:57:42Z",
-    "stars": 4668,
+    "stars": 4672,
     "topics": []
   },
   "https://github.com/Eronred/aso-skills": {
@@ -753,7 +753,7 @@
     "forks": 103,
     "openIssues": 0,
     "pushedAt": "2026-06-20T15:35:23Z",
-    "stars": 1571,
+    "stars": 1577,
     "topics": [
       "app-store-analytics",
       "app-store-connect",
@@ -770,9 +770,9 @@
     "archived": false,
     "createdAt": "2026-02-01T05:59:24Z",
     "forks": 819,
-    "openIssues": 3,
-    "pushedAt": "2026-07-01T03:38:14Z",
-    "stars": 8846,
+    "openIssues": 4,
+    "pushedAt": "2026-07-03T10:10:28Z",
+    "stars": 8848,
     "topics": [
       "a2a",
       "agent-evolution",
@@ -802,7 +802,7 @@
     "forks": 70,
     "openIssues": 1,
     "pushedAt": "2026-06-09T20:49:25Z",
-    "stars": 1483,
+    "stars": 1484,
     "topics": [
       "font-rendering",
       "greasemonkey",
@@ -818,10 +818,10 @@
   "https://github.com/Fincept-Corporation/FinceptTerminal": {
     "archived": false,
     "createdAt": "2024-08-29T14:38:08Z",
-    "forks": 3892,
+    "forks": 3895,
     "openIssues": 25,
-    "pushedAt": "2026-06-24T08:41:31Z",
-    "stars": 27856,
+    "pushedAt": "2026-07-03T09:00:52Z",
+    "stars": 27919,
     "topics": [
       "ai-agents",
       "algorithmic-trading",
@@ -845,10 +845,10 @@
   "https://github.com/Fission-AI/OpenSpec": {
     "archived": false,
     "createdAt": "2025-08-05T10:37:45Z",
-    "forks": 4059,
-    "openIssues": 450,
-    "pushedAt": "2026-07-02T22:25:54Z",
-    "stars": 58440,
+    "forks": 4073,
+    "openIssues": 452,
+    "pushedAt": "2026-07-03T14:24:42Z",
+    "stars": 58589,
     "topics": [
       "ai",
       "context-engineering",
@@ -866,9 +866,9 @@
     "archived": false,
     "createdAt": "2026-01-09T13:42:10Z",
     "forks": 701,
-    "openIssues": 10,
-    "pushedAt": "2026-07-02T12:54:15Z",
-    "stars": 5301,
+    "openIssues": 11,
+    "pushedAt": "2026-07-03T16:28:12Z",
+    "stars": 5317,
     "topics": [
       "agentic-coding",
       "ai-assistant",
@@ -895,10 +895,10 @@
   "https://github.com/FlowiseAI/Flowise": {
     "archived": false,
     "createdAt": "2023-03-31T12:23:09Z",
-    "forks": 24631,
-    "openIssues": 971,
-    "pushedAt": "2026-07-01T09:28:31Z",
-    "stars": 54221,
+    "forks": 24638,
+    "openIssues": 977,
+    "pushedAt": "2026-07-03T11:55:52Z",
+    "stars": 54255,
     "topics": [
       "agentic-ai",
       "agentic-workflow",
@@ -922,10 +922,10 @@
   "https://github.com/Fosowl/agenticSeek": {
     "archived": false,
     "createdAt": "2025-02-19T18:03:06Z",
-    "forks": 2976,
+    "forks": 2979,
     "openIssues": 32,
-    "pushedAt": "2026-07-02T20:26:36Z",
-    "stars": 26590,
+    "pushedAt": "2026-07-03T20:27:16Z",
+    "stars": 26594,
     "topics": [
       "agentic-ai",
       "agents",
@@ -940,10 +940,10 @@
   "https://github.com/FoundationAgents/MetaGPT": {
     "archived": false,
     "createdAt": "2023-06-30T09:04:55Z",
-    "forks": 8817,
+    "forks": 8820,
     "openIssues": 135,
     "pushedAt": "2026-01-21T10:12:33Z",
-    "stars": 69161,
+    "stars": 69174,
     "topics": [
       "agent",
       "gpt",
@@ -955,10 +955,10 @@
   "https://github.com/FoundationVision/VAR": {
     "archived": false,
     "createdAt": "2024-04-01T16:53:18Z",
-    "forks": 570,
+    "forks": 569,
     "openIssues": 60,
     "pushedAt": "2025-11-10T21:42:29Z",
-    "stars": 8704,
+    "stars": 8705,
     "topics": [
       "auto-regressive-model",
       "autoregressive-models",
@@ -1008,7 +1008,7 @@
     "archived": false,
     "createdAt": "2025-10-11T02:31:07Z",
     "forks": 229,
-    "openIssues": 7,
+    "openIssues": 6,
     "pushedAt": "2026-06-24T07:00:23Z",
     "stars": 2425,
     "topics": [
@@ -1034,7 +1034,7 @@
     "forks": 668,
     "openIssues": 7,
     "pushedAt": "2026-05-31T08:45:04Z",
-    "stars": 5122,
+    "stars": 5123,
     "topics": [
       "agent",
       "ai",
@@ -1051,10 +1051,10 @@
   "https://github.com/GLips/Figma-Context-MCP": {
     "archived": false,
     "createdAt": "2025-02-13T02:55:06Z",
-    "forks": 1207,
+    "forks": 1208,
     "openIssues": 21,
-    "pushedAt": "2026-06-24T18:15:18Z",
-    "stars": 15292,
+    "pushedAt": "2026-07-03T14:24:36Z",
+    "stars": 15300,
     "topics": [
       "ai",
       "cursor",
@@ -1069,7 +1069,7 @@
     "forks": 390,
     "openIssues": 4,
     "pushedAt": "2026-07-02T04:28:47Z",
-    "stars": 4478,
+    "stars": 4481,
     "topics": [
       "academic-research",
       "ai-agents",
@@ -1091,7 +1091,7 @@
     "forks": 4310,
     "openIssues": 76,
     "pushedAt": "2026-07-02T06:12:46Z",
-    "stars": 17176,
+    "stars": 17178,
     "topics": [
       "agents",
       "gcp",
@@ -1113,19 +1113,19 @@
   "https://github.com/GreatScottyMac/RooFlow": {
     "archived": false,
     "createdAt": "2025-03-01T23:36:41Z",
-    "forks": 127,
+    "forks": 129,
     "openIssues": 32,
     "pushedAt": "2025-06-18T22:06:28Z",
-    "stars": 1186,
+    "stars": 1189,
     "topics": []
   },
   "https://github.com/GreyDGL/PentestGPT": {
     "archived": false,
     "createdAt": "2023-02-27T06:01:53Z",
-    "forks": 2450,
+    "forks": 2451,
     "openIssues": 66,
     "pushedAt": "2026-06-07T07:25:45Z",
-    "stars": 14069,
+    "stars": 14075,
     "topics": [
       "large-language-models",
       "llm",
@@ -1136,10 +1136,10 @@
   "https://github.com/HKUDS/DeepTutor": {
     "archived": false,
     "createdAt": "2025-12-28T15:35:54Z",
-    "forks": 3436,
-    "openIssues": 43,
+    "forks": 3438,
+    "openIssues": 44,
     "pushedAt": "2026-06-30T14:33:43Z",
-    "stars": 25172,
+    "stars": 25185,
     "topics": [
       "ai-agents",
       "ai-tutor",
@@ -1156,9 +1156,9 @@
     "archived": false,
     "createdAt": "2024-10-02T11:57:54Z",
     "forks": 5252,
-    "openIssues": 221,
+    "openIssues": 222,
     "pushedAt": "2026-07-02T18:05:25Z",
-    "stars": 37263,
+    "stars": 37295,
     "topics": [
       "genai",
       "gpt",
@@ -1174,10 +1174,10 @@
   "https://github.com/HKUDS/nanobot": {
     "archived": false,
     "createdAt": "2026-02-01T07:16:15Z",
-    "forks": 7930,
-    "openIssues": 886,
-    "pushedAt": "2026-07-03T03:54:45Z",
-    "stars": 44969,
+    "forks": 7937,
+    "openIssues": 883,
+    "pushedAt": "2026-07-04T03:44:29Z",
+    "stars": 44993,
     "topics": [
       "ai",
       "ai-agent",
@@ -1197,10 +1197,10 @@
   "https://github.com/HandsOnLLM/Hands-On-Large-Language-Models": {
     "archived": false,
     "createdAt": "2024-06-28T11:49:46Z",
-    "forks": 6363,
+    "forks": 6365,
     "openIssues": 37,
     "pushedAt": "2026-04-24T10:20:08Z",
-    "stars": 27345,
+    "stars": 27353,
     "topics": [
       "artificial-intelligence",
       "book",
@@ -1217,7 +1217,7 @@
     "forks": 617,
     "openIssues": 117,
     "pushedAt": "2026-06-11T19:46:29Z",
-    "stars": 5899,
+    "stars": 5908,
     "topics": [
       "agent-monitoring",
       "analytics",
@@ -1243,10 +1243,10 @@
   "https://github.com/Hmbown/CodeWhale": {
     "archived": false,
     "createdAt": "2026-01-19T18:21:01Z",
-    "forks": 3395,
-    "openIssues": 288,
-    "pushedAt": "2026-07-03T03:20:56Z",
-    "stars": 39345,
+    "forks": 3400,
+    "openIssues": 316,
+    "pushedAt": "2026-07-03T23:18:16Z",
+    "stars": 39403,
     "topics": [
       "cli",
       "deepseek",
@@ -1259,10 +1259,10 @@
   "https://github.com/Imbad0202/academic-research-skills": {
     "archived": false,
     "createdAt": "2026-02-26T06:31:01Z",
-    "forks": 2946,
-    "openIssues": 14,
-    "pushedAt": "2026-07-03T04:18:32Z",
-    "stars": 35995,
+    "forks": 2954,
+    "openIssues": 12,
+    "pushedAt": "2026-07-03T06:00:57Z",
+    "stars": 36133,
     "topics": [
       "academic-pipeline",
       "academic-writing",
@@ -1277,10 +1277,10 @@
   "https://github.com/InsForge/InsForge": {
     "archived": false,
     "createdAt": "2025-07-29T05:56:00Z",
-    "forks": 1034,
-    "openIssues": 76,
-    "pushedAt": "2026-07-02T18:23:32Z",
-    "stars": 12039,
+    "forks": 1035,
+    "openIssues": 79,
+    "pushedAt": "2026-07-03T17:20:00Z",
+    "stars": 12042,
     "topics": [
       "ai",
       "ai-agents",
@@ -1300,10 +1300,10 @@
   "https://github.com/ItzCrazyKns/Vane": {
     "archived": false,
     "createdAt": "2024-04-09T10:51:32Z",
-    "forks": 3909,
+    "forks": 3907,
     "openIssues": 327,
     "pushedAt": "2026-04-11T14:33:06Z",
-    "stars": 35537,
+    "stars": 35549,
     "topics": [
       "ai-agents",
       "ai-search-engine",
@@ -1324,10 +1324,10 @@
   "https://github.com/JCodesMore/ai-website-cloner-template": {
     "archived": false,
     "createdAt": "2026-03-13T11:14:39Z",
-    "forks": 3525,
-    "openIssues": 20,
-    "pushedAt": "2026-06-01T04:09:21Z",
-    "stars": 25008,
+    "forks": 3565,
+    "openIssues": 21,
+    "pushedAt": "2026-07-04T04:18:48Z",
+    "stars": 25326,
     "topics": [
       "ai",
       "ai-agents",
@@ -1356,7 +1356,7 @@
     "forks": 582,
     "openIssues": 2,
     "pushedAt": "2026-06-28T13:06:19Z",
-    "stars": 5055,
+    "stars": 5062,
     "topics": [
       "algorithmic-trading",
       "equities",
@@ -1384,9 +1384,9 @@
     "archived": false,
     "createdAt": "2023-08-16T11:03:36Z",
     "forks": 1759,
-    "openIssues": 27,
+    "openIssues": 26,
     "pushedAt": "2026-06-29T00:55:57Z",
-    "stars": 11789,
+    "stars": 11803,
     "topics": [
       "api",
       "docker",
@@ -1413,10 +1413,10 @@
   "https://github.com/JuliusBrussee/caveman": {
     "archived": false,
     "createdAt": "2026-04-04T10:03:00Z",
-    "forks": 4548,
-    "openIssues": 363,
-    "pushedAt": "2026-07-02T22:36:10Z",
-    "stars": 81382,
+    "forks": 4634,
+    "openIssues": 352,
+    "pushedAt": "2026-07-03T11:10:42Z",
+    "stars": 83079,
     "topics": [
       "ai",
       "anthropic",
@@ -1433,10 +1433,10 @@
   "https://github.com/K-Dense-AI/scientific-agent-skills": {
     "archived": false,
     "createdAt": "2025-10-19T20:54:15Z",
-    "forks": 3035,
+    "forks": 3041,
     "openIssues": 36,
     "pushedAt": "2026-07-01T23:59:26Z",
-    "stars": 29987,
+    "stars": 30080,
     "topics": [
       "agent-skills",
       "ai-scientist",
@@ -1478,7 +1478,7 @@
     "forks": 319,
     "openIssues": 0,
     "pushedAt": "2026-04-19T22:22:18Z",
-    "stars": 2581,
+    "stars": 2582,
     "topics": [
       "ai-agents",
       "ai-workflow",
@@ -1503,7 +1503,7 @@
   "https://github.com/Klavis-AI/klavis": {
     "archived": false,
     "createdAt": "2025-04-14T07:53:36Z",
-    "forks": 550,
+    "forks": 549,
     "openIssues": 288,
     "pushedAt": "2026-06-01T21:21:04Z",
     "stars": 5763,
@@ -1530,7 +1530,7 @@
     "forks": 1067,
     "openIssues": 3,
     "pushedAt": "2026-03-31T19:04:33Z",
-    "stars": 2471,
+    "stars": 2472,
     "topics": [
       "agentic-ai",
       "ai-research",
@@ -1542,10 +1542,10 @@
   "https://github.com/Leonxlnx/taste-skill": {
     "archived": false,
     "createdAt": "2026-02-19T21:44:05Z",
-    "forks": 3779,
+    "forks": 3814,
     "openIssues": 38,
     "pushedAt": "2026-06-20T23:05:00Z",
-    "stars": 55121,
+    "stars": 55737,
     "topics": [
       "agent",
       "ai",
@@ -1568,7 +1568,7 @@
     "forks": 1466,
     "openIssues": 264,
     "pushedAt": "2026-06-29T15:53:24Z",
-    "stars": 13456,
+    "stars": 13459,
     "topics": [
       "ai",
       "artificial-intelligence",
@@ -1582,10 +1582,10 @@
   "https://github.com/LouisShark/chatgpt_system_prompt": {
     "archived": false,
     "createdAt": "2023-11-01T12:35:05Z",
-    "forks": 1466,
+    "forks": 1465,
     "openIssues": 1,
     "pushedAt": "2026-07-02T04:19:41Z",
-    "stars": 10666,
+    "stars": 10664,
     "topics": [
       "gpt",
       "prompt",
@@ -1598,7 +1598,7 @@
     "forks": 344,
     "openIssues": 186,
     "pushedAt": "2025-06-05T21:41:57Z",
-    "stars": 5876,
+    "stars": 5877,
     "topics": [
       "ai",
       "prompt-engineering"
@@ -1610,7 +1610,7 @@
     "forks": 94,
     "openIssues": 12,
     "pushedAt": "2026-05-21T02:39:47Z",
-    "stars": 598,
+    "stars": 599,
     "topics": [
       "agent",
       "agent-loop",
@@ -1624,10 +1624,10 @@
   "https://github.com/MemPalace/mempalace": {
     "archived": false,
     "createdAt": "2026-04-05T01:12:07Z",
-    "forks": 7349,
-    "openIssues": 564,
-    "pushedAt": "2026-07-03T04:28:21Z",
-    "stars": 56899,
+    "forks": 7352,
+    "openIssues": 568,
+    "pushedAt": "2026-07-04T03:41:54Z",
+    "stars": 56926,
     "topics": [
       "ai",
       "chromadb",
@@ -1641,9 +1641,9 @@
     "archived": false,
     "createdAt": "2024-03-19T16:45:25Z",
     "forks": 1289,
-    "openIssues": 58,
-    "pushedAt": "2026-07-02T21:55:13Z",
-    "stars": 8341,
+    "openIssues": 49,
+    "pushedAt": "2026-07-03T22:05:55Z",
+    "stars": 8343,
     "topics": [
       "agents",
       "ai",
@@ -1671,9 +1671,9 @@
     "archived": false,
     "createdAt": "2026-04-06T14:56:45Z",
     "forks": 233,
-    "openIssues": 12,
-    "pushedAt": "2026-07-02T07:40:50Z",
-    "stars": 5477,
+    "openIssues": 10,
+    "pushedAt": "2026-07-03T14:26:37Z",
+    "stars": 5490,
     "topics": [
       "agents",
       "code-search",
@@ -1687,10 +1687,10 @@
   "https://github.com/Mintplex-Labs/anything-llm": {
     "archived": false,
     "createdAt": "2023-06-04T02:29:14Z",
-    "forks": 6823,
-    "openIssues": 339,
-    "pushedAt": "2026-07-03T00:53:51Z",
-    "stars": 62487,
+    "forks": 6833,
+    "openIssues": 320,
+    "pushedAt": "2026-07-03T21:44:55Z",
+    "stars": 62542,
     "topics": [
       "agent-harness",
       "agentic-ai",
@@ -1713,7 +1713,7 @@
     "forks": 788,
     "openIssues": 17,
     "pushedAt": "2026-04-08T18:26:44Z",
-    "stars": 10194,
+    "stars": 10195,
     "topics": [
       "large-language-models",
       "natural-language-processing",
@@ -1727,7 +1727,7 @@
     "forks": 3407,
     "openIssues": 323,
     "pushedAt": "2024-08-12T14:01:29Z",
-    "stars": 14827,
+    "stars": 14826,
     "topics": [
       "computer-vision",
       "deep-learning",
@@ -1749,10 +1749,10 @@
   "https://github.com/NVIDIA/Megatron-LM": {
     "archived": false,
     "createdAt": "2019-03-21T16:15:52Z",
-    "forks": 4166,
-    "openIssues": 957,
-    "pushedAt": "2026-07-03T01:48:09Z",
-    "stars": 16933,
+    "forks": 4171,
+    "openIssues": 963,
+    "pushedAt": "2026-07-04T01:14:44Z",
+    "stars": 16945,
     "topics": [
       "large-language-models",
       "model-para",
@@ -1763,9 +1763,9 @@
     "archived": false,
     "createdAt": "2025-10-04T23:42:35Z",
     "forks": 615,
-    "openIssues": 4,
-    "pushedAt": "2026-07-02T23:20:04Z",
-    "stars": 19082,
+    "openIssues": 5,
+    "pushedAt": "2026-07-03T22:26:17Z",
+    "stars": 19090,
     "topics": [
       "ai-studio",
       "bun",
@@ -1781,10 +1781,10 @@
   "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant": {
     "archived": false,
     "createdAt": "2026-01-27T12:32:08Z",
-    "forks": 395,
-    "openIssues": 45,
-    "pushedAt": "2026-07-02T17:46:34Z",
-    "stars": 1732,
+    "forks": 400,
+    "openIssues": 46,
+    "pushedAt": "2026-07-03T20:57:29Z",
+    "stars": 1746,
     "topics": [
       "ai",
       "ai-assistant",
@@ -1814,7 +1814,7 @@
     "forks": 574,
     "openIssues": 12,
     "pushedAt": "2026-04-26T23:57:34Z",
-    "stars": 6421,
+    "stars": 6422,
     "topics": [
       "ai",
       "ml",
@@ -1829,7 +1829,7 @@
     "forks": 983,
     "openIssues": 4,
     "pushedAt": "2026-06-17T20:54:16Z",
-    "stars": 7650,
+    "stars": 7653,
     "topics": [
       "ai",
       "chain-of-thought",
@@ -1854,10 +1854,10 @@
   "https://github.com/NousResearch/hermes-agent": {
     "archived": false,
     "createdAt": "2025-07-22T22:22:28Z",
-    "forks": 37878,
-    "openIssues": 25135,
-    "pushedAt": "2026-07-03T04:27:34Z",
-    "stars": 208146,
+    "forks": 38046,
+    "openIssues": 25507,
+    "pushedAt": "2026-07-04T00:30:47Z",
+    "stars": 208784,
     "topics": [
       "ai",
       "ai-agent",
@@ -1880,10 +1880,10 @@
   "https://github.com/OpenHands/OpenHands": {
     "archived": false,
     "createdAt": "2024-03-13T03:33:31Z",
-    "forks": 10078,
-    "openIssues": 337,
-    "pushedAt": "2026-07-03T02:57:19Z",
-    "stars": 79206,
+    "forks": 10092,
+    "openIssues": 341,
+    "pushedAt": "2026-07-03T16:35:48Z",
+    "stars": 79341,
     "topics": [
       "agent",
       "artificial-intelligence",
@@ -1899,7 +1899,7 @@
   "https://github.com/OpenMOSS/MOSS": {
     "archived": false,
     "createdAt": "2023-04-15T14:07:44Z",
-    "forks": 1131,
+    "forks": 1130,
     "openIssues": 242,
     "pushedAt": "2026-05-27T13:16:14Z",
     "stars": 12155,
@@ -1916,9 +1916,9 @@
     "archived": false,
     "createdAt": "2023-07-30T02:20:13Z",
     "forks": 976,
-    "openIssues": 339,
+    "openIssues": 340,
     "pushedAt": "2026-06-17T11:49:45Z",
-    "stars": 9736,
+    "stars": 9738,
     "topics": [
       "large-language-models",
       "proximal-policy-optimization",
@@ -1934,9 +1934,9 @@
     "archived": false,
     "createdAt": "2025-11-03T06:13:06Z",
     "forks": 773,
-    "openIssues": 10,
+    "openIssues": 11,
     "pushedAt": "2026-06-16T01:36:46Z",
-    "stars": 10324,
+    "stars": 10356,
     "topics": [
       "ai",
       "ai-research",
@@ -1958,9 +1958,9 @@
     "archived": false,
     "createdAt": "2026-01-03T07:37:28Z",
     "forks": 2103,
-    "openIssues": 11,
-    "pushedAt": "2026-06-16T15:16:19Z",
-    "stars": 24374,
+    "openIssues": 5,
+    "pushedAt": "2026-07-03T15:04:10Z",
+    "stars": 24455,
     "topics": [
       "agent-skills",
       "agentic-ai",
@@ -1987,10 +1987,10 @@
   "https://github.com/PostHog/posthog": {
     "archived": false,
     "createdAt": "2020-01-23T22:46:58Z",
-    "forks": 2921,
-    "openIssues": 4232,
-    "pushedAt": "2026-07-03T04:20:14Z",
-    "stars": 35282,
+    "forks": 2925,
+    "openIssues": 4261,
+    "pushedAt": "2026-07-04T04:18:22Z",
+    "stars": 35302,
     "topics": [
       "ab-testing",
       "ai-analytics",
@@ -2015,7 +2015,7 @@
     "forks": 2103,
     "openIssues": 263,
     "pushedAt": "2026-07-01T14:51:33Z",
-    "stars": 25936,
+    "stars": 25960,
     "topics": [
       "agents",
       "fastmcp",
@@ -2061,10 +2061,10 @@
   "https://github.com/QuivrHQ/quivr": {
     "archived": false,
     "createdAt": "2023-05-12T23:53:30Z",
-    "forks": 3720,
-    "openIssues": 27,
+    "forks": 3718,
+    "openIssues": 29,
     "pushedAt": "2025-07-09T12:55:23Z",
-    "stars": 39184,
+    "stars": 39183,
     "topics": [
       "ai",
       "api",
@@ -2091,10 +2091,10 @@
   "https://github.com/QwenLM/Qwen": {
     "archived": false,
     "createdAt": "2023-08-03T04:56:38Z",
-    "forks": 1843,
+    "forks": 1846,
     "openIssues": 41,
     "pushedAt": "2026-03-05T13:55:17Z",
-    "stars": 21377,
+    "stars": 21382,
     "topics": [
       "chinese",
       "flash-attention",
@@ -2107,10 +2107,10 @@
   "https://github.com/QwenLM/qwen-code": {
     "archived": false,
     "createdAt": "2025-06-26T01:37:46Z",
-    "forks": 2593,
-    "openIssues": 633,
-    "pushedAt": "2026-07-03T04:31:28Z",
-    "stars": 25753,
+    "forks": 2598,
+    "openIssues": 643,
+    "pushedAt": "2026-07-04T04:27:40Z",
+    "stars": 25765,
     "topics": []
   },
   "https://github.com/RUCAIBox/LLMSurvey": {
@@ -2119,7 +2119,7 @@
     "forks": 935,
     "openIssues": 30,
     "pushedAt": "2025-03-11T09:51:42Z",
-    "stars": 12186,
+    "stars": 12187,
     "topics": [
       "chain-of-thought",
       "chatgpt",
@@ -2140,25 +2140,25 @@
     "forks": 125,
     "openIssues": 58,
     "pushedAt": "2025-08-31T01:14:07Z",
-    "stars": 1107,
+    "stars": 1109,
     "topics": []
   },
   "https://github.com/RooCodeInc/Roo-Code": {
     "archived": true,
     "createdAt": "2024-10-31T17:56:50Z",
-    "forks": 3349,
+    "forks": 3350,
     "openIssues": 1036,
     "pushedAt": "2026-05-15T18:08:47Z",
-    "stars": 24299,
+    "stars": 24303,
     "topics": []
   },
   "https://github.com/SaladDay/cc-switch-cli": {
     "archived": false,
     "createdAt": "2025-11-23T11:15:12Z",
-    "forks": 222,
-    "openIssues": 52,
+    "forks": 225,
+    "openIssues": 53,
     "pushedAt": "2026-07-02T16:11:51Z",
-    "stars": 3949,
+    "stars": 3973,
     "topics": []
   },
   "https://github.com/Scale3-Labs/langtrace": {
@@ -2167,7 +2167,7 @@
     "forks": 124,
     "openIssues": 1,
     "pushedAt": "2025-11-17T15:08:48Z",
-    "stars": 1209,
+    "stars": 1210,
     "topics": [
       "ai",
       "datasets",
@@ -2188,10 +2188,10 @@
   "https://github.com/Significant-Gravitas/AutoGPT": {
     "archived": false,
     "createdAt": "2023-03-16T09:21:07Z",
-    "forks": 46118,
-    "openIssues": 460,
-    "pushedAt": "2026-07-03T04:18:42Z",
-    "stars": 185293,
+    "forks": 46117,
+    "openIssues": 462,
+    "pushedAt": "2026-07-04T01:20:58Z",
+    "stars": 185329,
     "topics": [
       "agentic-ai",
       "agents",
@@ -2209,10 +2209,10 @@
   "https://github.com/SylphAI-Inc/AdalFlow": {
     "archived": false,
     "createdAt": "2024-04-19T05:05:13Z",
-    "forks": 376,
+    "forks": 377,
     "openIssues": 64,
     "pushedAt": "2026-05-29T05:49:13Z",
-    "stars": 4173,
+    "stars": 4174,
     "topics": [
       "agent",
       "ai",
@@ -2239,10 +2239,10 @@
   "https://github.com/TabbyML/tabby": {
     "archived": false,
     "createdAt": "2023-03-16T09:18:01Z",
-    "forks": 1760,
+    "forks": 1759,
     "openIssues": 324,
     "pushedAt": "2026-06-30T20:38:02Z",
-    "stars": 33665,
+    "stars": 33671,
     "topics": [
       "ai",
       "codegen",
@@ -2258,10 +2258,10 @@
   "https://github.com/TauricResearch/TradingAgents": {
     "archived": false,
     "createdAt": "2024-12-28T03:31:08Z",
-    "forks": 17466,
+    "forks": 17508,
     "openIssues": 288,
     "pushedAt": "2026-06-22T02:05:09Z",
-    "stars": 90452,
+    "stars": 90645,
     "topics": [
       "agent",
       "finance",
@@ -2273,10 +2273,10 @@
   "https://github.com/The-Pocket/PocketFlow": {
     "archived": false,
     "createdAt": "2024-12-24T02:43:30Z",
-    "forks": 1180,
+    "forks": 1179,
     "openIssues": 70,
     "pushedAt": "2026-03-27T18:48:41Z",
-    "stars": 10920,
+    "stars": 10924,
     "topics": [
       "agentic-ai",
       "agentic-framework",
@@ -2303,7 +2303,7 @@
   "https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge": {
     "archived": false,
     "createdAt": "2025-04-02T20:56:33Z",
-    "forks": 1416,
+    "forks": 1415,
     "openIssues": 74,
     "pushedAt": "2026-05-31T01:26:41Z",
     "stars": 12415,
@@ -2326,10 +2326,10 @@
   "https://github.com/Tiiny-AI/PowerInfer": {
     "archived": false,
     "createdAt": "2023-12-15T02:24:10Z",
-    "forks": 587,
+    "forks": 586,
     "openIssues": 129,
     "pushedAt": "2026-05-11T06:48:06Z",
-    "stars": 9614,
+    "stars": 9616,
     "topics": [
       "large-language-models",
       "llama",
@@ -2344,7 +2344,7 @@
     "forks": 273,
     "openIssues": 66,
     "pushedAt": "2026-06-28T14:28:02Z",
-    "stars": 2208,
+    "stars": 2207,
     "topics": [
       "aitesting",
       "api",
@@ -2371,18 +2371,18 @@
     "archived": false,
     "createdAt": "2023-11-14T14:53:11Z",
     "forks": 586,
-    "openIssues": 234,
-    "pushedAt": "2026-07-03T00:57:17Z",
-    "stars": 2296,
+    "openIssues": 237,
+    "pushedAt": "2026-07-03T23:34:17Z",
+    "stars": 2299,
     "topics": []
   },
   "https://github.com/VectifyAI/PageIndex": {
     "archived": false,
     "createdAt": "2025-04-01T10:53:54Z",
-    "forks": 2938,
-    "openIssues": 172,
-    "pushedAt": "2026-06-29T06:58:57Z",
-    "stars": 33665,
+    "forks": 2944,
+    "openIssues": 133,
+    "pushedAt": "2026-07-03T12:20:31Z",
+    "stars": 33696,
     "topics": [
       "agentic-ai",
       "agents",
@@ -2401,10 +2401,10 @@
   "https://github.com/VoltAgent/awesome-agent-skills": {
     "archived": false,
     "createdAt": "2025-10-28T08:55:32Z",
-    "forks": 2909,
-    "openIssues": 39,
+    "forks": 2917,
+    "openIssues": 40,
     "pushedAt": "2026-06-30T10:58:35Z",
-    "stars": 27155,
+    "stars": 27224,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -2425,10 +2425,10 @@
   "https://github.com/VoltAgent/awesome-design-md": {
     "archived": false,
     "createdAt": "2026-03-31T16:37:01Z",
-    "forks": 11246,
+    "forks": 11262,
     "openIssues": 295,
     "pushedAt": "2026-06-16T14:21:08Z",
-    "stars": 95326,
+    "stars": 95538,
     "topics": [
       "awesome-list",
       "design-md",
@@ -2446,9 +2446,9 @@
     "archived": false,
     "createdAt": "2024-04-19T03:31:13Z",
     "forks": 913,
-    "openIssues": 39,
+    "openIssues": 40,
     "pushedAt": "2026-07-02T06:17:15Z",
-    "stars": 8627,
+    "stars": 8631,
     "topics": [
       "awesome-list",
       "book",
@@ -2470,7 +2470,7 @@
     "forks": 273,
     "openIssues": 43,
     "pushedAt": "2026-06-30T18:30:21Z",
-    "stars": 1799,
+    "stars": 1803,
     "topics": []
   },
   "https://github.com/Yeachan-Heo/oh-my-claudecode": {
@@ -2478,8 +2478,8 @@
     "createdAt": "2026-01-09T03:36:29Z",
     "forks": 3372,
     "openIssues": 0,
-    "pushedAt": "2026-07-02T15:47:34Z",
-    "stars": 37333,
+    "pushedAt": "2026-07-03T17:14:34Z",
+    "stars": 37374,
     "topics": [
       "agentic-coding",
       "ai-agents",
@@ -2496,10 +2496,10 @@
   "https://github.com/YouMind-OpenLab/awesome-gpt-image-2": {
     "archived": false,
     "createdAt": "2026-04-16T13:57:42Z",
-    "forks": 724,
+    "forks": 727,
     "openIssues": 2,
-    "pushedAt": "2026-07-03T01:52:27Z",
-    "stars": 7972,
+    "pushedAt": "2026-07-04T01:52:13Z",
+    "stars": 8016,
     "topics": [
       "ai-image-generation",
       "ai-prompts",
@@ -2522,10 +2522,10 @@
   "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts": {
     "archived": false,
     "createdAt": "2025-11-23T07:17:48Z",
-    "forks": 1384,
+    "forks": 1386,
     "openIssues": 0,
-    "pushedAt": "2026-07-03T00:24:24Z",
-    "stars": 12738,
+    "pushedAt": "2026-07-04T00:24:03Z",
+    "stars": 12746,
     "topics": [
       "ai-image-generation",
       "ai-prompts",
@@ -2548,10 +2548,10 @@
   "https://github.com/ZeroLu/awesome-nanobanana-pro": {
     "archived": false,
     "createdAt": "2025-11-10T13:51:03Z",
-    "forks": 856,
+    "forks": 858,
     "openIssues": 7,
     "pushedAt": "2026-07-02T14:16:18Z",
-    "stars": 10135,
+    "stars": 10150,
     "topics": [
       "gemini",
       "nanobanana",
@@ -2566,10 +2566,10 @@
   "https://github.com/ZhuLinsen/daily_stock_analysis": {
     "archived": false,
     "createdAt": "2026-01-10T06:43:20Z",
-    "forks": 46424,
-    "openIssues": 56,
-    "pushedAt": "2026-07-02T18:23:38Z",
-    "stars": 53592,
+    "forks": 46701,
+    "openIssues": 52,
+    "pushedAt": "2026-07-04T04:19:35Z",
+    "stars": 53897,
     "topics": [
       "a-stock",
       "ai-agent",
@@ -2583,10 +2583,10 @@
   "https://github.com/Zipstack/unstract": {
     "archived": false,
     "createdAt": "2024-02-21T10:34:33Z",
-    "forks": 632,
-    "openIssues": 90,
-    "pushedAt": "2026-07-03T02:56:17Z",
-    "stars": 6686,
+    "forks": 631,
+    "openIssues": 88,
+    "pushedAt": "2026-07-03T11:44:59Z",
+    "stars": 6687,
     "topics": [
       "ai-agents",
       "data-engineering",
@@ -2605,10 +2605,10 @@
   "https://github.com/aaif-goose/goose": {
     "archived": false,
     "createdAt": "2024-08-23T19:03:36Z",
-    "forks": 5431,
-    "openIssues": 253,
-    "pushedAt": "2026-07-03T04:23:24Z",
-    "stars": 50584,
+    "forks": 5440,
+    "openIssues": 275,
+    "pushedAt": "2026-07-03T17:54:52Z",
+    "stars": 50617,
     "topics": [
       "acp",
       "ai",
@@ -2622,7 +2622,7 @@
     "forks": 720,
     "openIssues": 69,
     "pushedAt": "2026-05-21T15:28:00Z",
-    "stars": 9195,
+    "stars": 9196,
     "topics": [
       "agent",
       "agentic-rag",
@@ -2648,10 +2648,10 @@
   "https://github.com/activepieces/activepieces": {
     "archived": false,
     "createdAt": "2022-12-03T02:52:46Z",
-    "forks": 3882,
-    "openIssues": 575,
-    "pushedAt": "2026-07-02T23:22:04Z",
-    "stars": 23091,
+    "forks": 3884,
+    "openIssues": 573,
+    "pushedAt": "2026-07-03T19:05:19Z",
+    "stars": 23103,
     "topics": [
       "ai-agent",
       "ai-agent-tools",
@@ -2671,10 +2671,10 @@
   "https://github.com/addyosmani/agent-skills": {
     "archived": false,
     "createdAt": "2026-02-15T20:20:26Z",
-    "forks": 7442,
-    "openIssues": 128,
-    "pushedAt": "2026-07-02T22:05:05Z",
-    "stars": 68632,
+    "forks": 7457,
+    "openIssues": 129,
+    "pushedAt": "2026-07-03T05:42:23Z",
+    "stars": 68782,
     "topics": [
       "agent-skills",
       "antigravity",
@@ -2687,10 +2687,10 @@
   "https://github.com/affaan-m/ECC": {
     "archived": false,
     "createdAt": "2026-01-18T00:51:51Z",
-    "forks": 34468,
-    "openIssues": 88,
-    "pushedAt": "2026-07-03T01:27:41Z",
-    "stars": 225289,
+    "forks": 34524,
+    "openIssues": 68,
+    "pushedAt": "2026-07-04T04:29:19Z",
+    "stars": 225729,
     "topics": [
       "ai-agents",
       "anthropic",
@@ -2705,10 +2705,10 @@
   "https://github.com/agent-of-empires/agent-of-empires": {
     "archived": false,
     "createdAt": "2026-01-09T17:23:31Z",
-    "forks": 249,
-    "openIssues": 135,
-    "pushedAt": "2026-07-02T15:59:12Z",
-    "stars": 2730,
+    "forks": 250,
+    "openIssues": 128,
+    "pushedAt": "2026-07-03T20:59:27Z",
+    "stars": 2737,
     "topics": [
       "ai-coding",
       "claude",
@@ -2735,10 +2735,10 @@
   "https://github.com/agentforce314/clawcodex": {
     "archived": false,
     "createdAt": "2026-04-20T06:37:38Z",
-    "forks": 114,
+    "forks": 115,
     "openIssues": 33,
-    "pushedAt": "2026-07-03T03:27:35Z",
-    "stars": 673,
+    "pushedAt": "2026-07-04T02:55:46Z",
+    "stars": 676,
     "topics": [
       "agent",
       "ai",
@@ -2760,10 +2760,10 @@
   "https://github.com/agentscope-ai/agentscope": {
     "archived": false,
     "createdAt": "2024-01-12T03:41:59Z",
-    "forks": 3114,
-    "openIssues": 251,
+    "forks": 3113,
+    "openIssues": 255,
     "pushedAt": "2026-07-03T01:53:54Z",
-    "stars": 27420,
+    "stars": 27446,
     "topics": [
       "agent",
       "chatbot",
@@ -2779,10 +2779,10 @@
   "https://github.com/agno-agi/agno": {
     "archived": false,
     "createdAt": "2022-05-04T15:23:02Z",
-    "forks": 5585,
-    "openIssues": 998,
-    "pushedAt": "2026-07-02T20:50:38Z",
-    "stars": 40969,
+    "forks": 5593,
+    "openIssues": 986,
+    "pushedAt": "2026-07-03T15:23:41Z",
+    "stars": 40989,
     "topics": [
       "agents",
       "ai",
@@ -2794,10 +2794,10 @@
   "https://github.com/ai-boost/awesome-prompts": {
     "archived": false,
     "createdAt": "2024-01-19T15:15:10Z",
-    "forks": 789,
+    "forks": 788,
     "openIssues": 34,
-    "pushedAt": "2026-07-02T18:16:54Z",
-    "stars": 8368,
+    "pushedAt": "2026-07-03T21:09:41Z",
+    "stars": 8378,
     "topics": [
       "awesome",
       "awesome-list",
@@ -2813,8 +2813,8 @@
   "https://github.com/ai-for-developers/awesome-ai-coding-tools": {
     "archived": false,
     "createdAt": "2025-06-27T13:08:36Z",
-    "forks": 492,
-    "openIssues": 216,
+    "forks": 498,
+    "openIssues": 221,
     "pushedAt": "2026-04-25T10:30:08Z",
     "stars": 1883,
     "topics": [
@@ -2845,8 +2845,8 @@
     "createdAt": "2019-05-31T18:25:07Z",
     "forks": 398,
     "openIssues": 466,
-    "pushedAt": "2026-07-02T20:27:01Z",
-    "stars": 6176,
+    "pushedAt": "2026-07-03T20:53:53Z",
+    "stars": 6178,
     "topics": [
       "ai",
       "data-science",
@@ -2869,10 +2869,10 @@
   "https://github.com/aishwaryanr/awesome-generative-ai-guide": {
     "archived": false,
     "createdAt": "2024-02-06T18:14:14Z",
-    "forks": 5784,
+    "forks": 5783,
     "openIssues": 11,
     "pushedAt": "2026-06-24T02:01:23Z",
-    "stars": 28075,
+    "stars": 28081,
     "topics": [
       "awesome",
       "awesome-list",
@@ -2887,10 +2887,10 @@
   "https://github.com/alirezarezvani/claude-skills": {
     "archived": false,
     "createdAt": "2025-10-19T04:04:05Z",
-    "forks": 2715,
+    "forks": 2730,
     "openIssues": 9,
-    "pushedAt": "2026-07-01T14:03:11Z",
-    "stars": 19751,
+    "pushedAt": "2026-07-03T13:41:51Z",
+    "stars": 19862,
     "topics": [
       "agent-plugins",
       "agent-skills",
@@ -2917,19 +2917,19 @@
   "https://github.com/anthropics/claude-code": {
     "archived": false,
     "createdAt": "2025-02-22T17:41:21Z",
-    "forks": 21839,
-    "openIssues": 9724,
-    "pushedAt": "2026-07-02T23:35:18Z",
-    "stars": 135550,
+    "forks": 21861,
+    "openIssues": 9790,
+    "pushedAt": "2026-07-03T23:50:35Z",
+    "stars": 135898,
     "topics": []
   },
   "https://github.com/anthropics/claude-code-action": {
     "archived": false,
     "createdAt": "2025-05-19T15:26:50Z",
-    "forks": 1943,
+    "forks": 1947,
     "openIssues": 587,
-    "pushedAt": "2026-07-02T23:37:28Z",
-    "stars": 8214,
+    "pushedAt": "2026-07-03T23:52:11Z",
+    "stars": 8230,
     "topics": []
   },
   "https://github.com/approximatelabs/sketch": {
@@ -2961,10 +2961,10 @@
   "https://github.com/asgeirtj/system_prompts_leaks": {
     "archived": false,
     "createdAt": "2025-05-03T02:43:56Z",
-    "forks": 7798,
+    "forks": 7869,
     "openIssues": 28,
-    "pushedAt": "2026-07-03T00:23:46Z",
-    "stars": 47898,
+    "pushedAt": "2026-07-04T00:22:56Z",
+    "stars": 48271,
     "topics": [
       "ai",
       "ai-agents",
@@ -2991,10 +2991,10 @@
   "https://github.com/ashishpatel26/500-AI-Agents-Projects": {
     "archived": false,
     "createdAt": "2024-12-20T13:37:15Z",
-    "forks": 5917,
-    "openIssues": 80,
+    "forks": 5919,
+    "openIssues": 81,
     "pushedAt": "2026-06-06T11:58:47Z",
-    "stars": 33517,
+    "stars": 33568,
     "topics": [
       "ai-agents",
       "genai"
@@ -3003,10 +3003,10 @@
   "https://github.com/ashishps1/learn-ai-engineering": {
     "archived": false,
     "createdAt": "2025-04-11T09:20:56Z",
-    "forks": 1411,
+    "forks": 1410,
     "openIssues": 8,
     "pushedAt": "2026-02-05T02:34:40Z",
-    "stars": 5778,
+    "stars": 5784,
     "topics": [
       "agentic-ai",
       "agents",
@@ -3025,10 +3025,10 @@
   "https://github.com/assafelovic/gpt-researcher": {
     "archived": false,
     "createdAt": "2023-05-12T10:33:54Z",
-    "forks": 3785,
-    "openIssues": 195,
+    "forks": 3788,
+    "openIssues": 198,
     "pushedAt": "2026-06-28T18:39:06Z",
-    "stars": 28034,
+    "stars": 28060,
     "topics": [
       "agent",
       "ai",
@@ -3066,7 +3066,7 @@
     "forks": 830,
     "openIssues": 4,
     "pushedAt": "2026-03-18T12:15:24Z",
-    "stars": 8239,
+    "stars": 8242,
     "topics": [
       "ai-agents",
       "ai-coding",
@@ -3079,10 +3079,10 @@
   "https://github.com/awslabs/mcp": {
     "archived": false,
     "createdAt": "2025-03-21T00:39:00Z",
-    "forks": 1619,
+    "forks": 1618,
     "openIssues": 855,
-    "pushedAt": "2026-07-02T20:48:51Z",
-    "stars": 9376,
+    "pushedAt": "2026-07-03T06:15:32Z",
+    "stars": 9379,
     "topics": [
       "aws",
       "mcp",
@@ -3122,7 +3122,7 @@
     "forks": 621,
     "openIssues": 112,
     "pushedAt": "2024-09-07T11:54:28Z",
-    "stars": 10260,
+    "stars": 10262,
     "topics": [
       "bloom",
       "chatbot",
@@ -3152,7 +3152,7 @@
     "forks": 8354,
     "openIssues": 329,
     "pushedAt": "2026-01-25T12:33:10Z",
-    "stars": 71029,
+    "stars": 71034,
     "topics": [
       "academic",
       "chatglm-6b",
@@ -3164,10 +3164,10 @@
   "https://github.com/block/goose": {
     "archived": false,
     "createdAt": "2024-08-23T19:03:36Z",
-    "forks": 5431,
-    "openIssues": 253,
-    "pushedAt": "2026-07-03T04:23:24Z",
-    "stars": 50584,
+    "forks": 5440,
+    "openIssues": 275,
+    "pushedAt": "2026-07-03T17:54:52Z",
+    "stars": 50617,
     "topics": [
       "acp",
       "ai",
@@ -3178,19 +3178,19 @@
   "https://github.com/bmad-code-org/bmad-method": {
     "archived": false,
     "createdAt": "2025-04-13T14:54:25Z",
-    "forks": 5757,
-    "openIssues": 82,
-    "pushedAt": "2026-07-01T21:52:25Z",
-    "stars": 50020,
+    "forks": 5760,
+    "openIssues": 77,
+    "pushedAt": "2026-07-04T04:05:29Z",
+    "stars": 50052,
     "topics": []
   },
   "https://github.com/brokermr810/QuantDinger": {
     "archived": false,
     "createdAt": "2025-12-28T18:39:26Z",
-    "forks": 1926,
-    "openIssues": 23,
-    "pushedAt": "2026-07-02T12:23:41Z",
-    "stars": 9124,
+    "forks": 1937,
+    "openIssues": 24,
+    "pushedAt": "2026-07-03T08:56:11Z",
+    "stars": 9178,
     "topics": [
       "agent",
       "ai",
@@ -3217,10 +3217,10 @@
   "https://github.com/browser-use/browser-use": {
     "archived": false,
     "createdAt": "2024-10-31T16:00:56Z",
-    "forks": 11341,
-    "openIssues": 279,
-    "pushedAt": "2026-07-02T00:43:57Z",
-    "stars": 102274,
+    "forks": 11361,
+    "openIssues": 280,
+    "pushedAt": "2026-07-03T20:27:33Z",
+    "stars": 102541,
     "topics": [
       "ai-agents",
       "ai-tools",
@@ -3234,10 +3234,10 @@
   "https://github.com/browserbase/stagehand": {
     "archived": false,
     "createdAt": "2024-03-24T19:19:44Z",
-    "forks": 1604,
-    "openIssues": 248,
-    "pushedAt": "2026-07-03T01:12:41Z",
-    "stars": 23322,
+    "forks": 1603,
+    "openIssues": 249,
+    "pushedAt": "2026-07-03T15:56:58Z",
+    "stars": 23330,
     "topics": [
       "agents",
       "ai",
@@ -3250,10 +3250,10 @@
   "https://github.com/bytedance/UI-TARS-desktop": {
     "archived": false,
     "createdAt": "2025-01-19T09:04:43Z",
-    "forks": 3786,
-    "openIssues": 404,
+    "forks": 3787,
+    "openIssues": 405,
     "pushedAt": "2026-07-01T03:03:19Z",
-    "stars": 37578,
+    "stars": 37639,
     "topics": [
       "agent",
       "agent-tars",
@@ -3274,10 +3274,10 @@
   "https://github.com/bytedance/deer-flow": {
     "archived": false,
     "createdAt": "2025-05-07T02:50:19Z",
-    "forks": 10268,
-    "openIssues": 967,
-    "pushedAt": "2026-07-03T03:09:27Z",
-    "stars": 75954,
+    "forks": 10272,
+    "openIssues": 951,
+    "pushedAt": "2026-07-04T03:36:09Z",
+    "stars": 76029,
     "topics": [
       "agent",
       "agentic",
@@ -3302,10 +3302,10 @@
   "https://github.com/calesthio/OpenMontage": {
     "archived": false,
     "createdAt": "2026-03-29T15:23:22Z",
-    "forks": 3612,
-    "openIssues": 129,
-    "pushedAt": "2026-07-02T22:06:03Z",
-    "stars": 31863,
+    "forks": 3710,
+    "openIssues": 136,
+    "pushedAt": "2026-07-04T02:01:12Z",
+    "stars": 32530,
     "topics": [
       "agent",
       "agentic-ai",
@@ -3334,16 +3334,16 @@
     "forks": 108,
     "openIssues": 10,
     "pushedAt": "2026-06-30T19:16:57Z",
-    "stars": 1511,
+    "stars": 1513,
     "topics": []
   },
   "https://github.com/camel-ai/camel": {
     "archived": false,
     "createdAt": "2023-03-17T21:41:54Z",
-    "forks": 1978,
-    "openIssues": 452,
+    "forks": 1977,
+    "openIssues": 453,
     "pushedAt": "2026-06-28T04:53:54Z",
-    "stars": 17318,
+    "stars": 17321,
     "topics": [
       "agent",
       "ai-societies",
@@ -3360,9 +3360,9 @@
     "archived": false,
     "createdAt": "2025-06-19T22:40:22Z",
     "forks": 452,
-    "openIssues": 15,
+    "openIssues": 16,
     "pushedAt": "2026-06-25T17:00:57Z",
-    "stars": 4899,
+    "stars": 4900,
     "topics": [
       "agent",
       "ai",
@@ -3382,10 +3382,10 @@
   "https://github.com/can1357/oh-my-pi": {
     "archived": false,
     "createdAt": "2025-12-31T14:01:28Z",
-    "forks": 1397,
-    "openIssues": 556,
-    "pushedAt": "2026-07-03T03:51:20Z",
-    "stars": 15726,
+    "forks": 1412,
+    "openIssues": 515,
+    "pushedAt": "2026-07-04T04:19:35Z",
+    "stars": 15886,
     "topics": [
       "ai-agent",
       "ai-coding-agent",
@@ -3408,9 +3408,9 @@
     "archived": false,
     "createdAt": "2025-06-25T06:35:32Z",
     "forks": 450,
-    "openIssues": 58,
-    "pushedAt": "2026-07-03T04:26:27Z",
-    "stars": 3538,
+    "openIssues": 71,
+    "pushedAt": "2026-07-03T11:41:22Z",
+    "stars": 3540,
     "topics": [
       "ai",
       "ai-agent",
@@ -3428,10 +3428,10 @@
   "https://github.com/chatchat-space/Langchain-Chatchat": {
     "archived": false,
     "createdAt": "2023-03-31T12:12:45Z",
-    "forks": 6216,
+    "forks": 6215,
     "openIssues": 23,
     "pushedAt": "2025-11-10T09:27:42Z",
-    "stars": 38243,
+    "stars": 38247,
     "topics": [
       "chatbot",
       "chatchat",
@@ -3459,9 +3459,9 @@
     "archived": false,
     "createdAt": "2025-04-14T04:19:01Z",
     "forks": 283,
-    "openIssues": 51,
+    "openIssues": 52,
     "pushedAt": "2026-07-03T02:49:11Z",
-    "stars": 3012,
+    "stars": 3013,
     "topics": [
       "aiagent",
       "bastion",
@@ -3483,19 +3483,19 @@
   "https://github.com/chenhg5/cc-connect": {
     "archived": false,
     "createdAt": "2026-02-28T02:39:39Z",
-    "forks": 1269,
-    "openIssues": 451,
-    "pushedAt": "2026-07-03T03:21:59Z",
-    "stars": 13450,
+    "forks": 1275,
+    "openIssues": 456,
+    "pushedAt": "2026-07-04T02:37:24Z",
+    "stars": 13491,
     "topics": []
   },
   "https://github.com/cheshire-cat-ai/core": {
     "archived": false,
     "createdAt": "2023-02-08T23:41:18Z",
-    "forks": 409,
+    "forks": 410,
     "openIssues": 4,
     "pushedAt": "2026-06-23T20:07:42Z",
-    "stars": 3064,
+    "stars": 3067,
     "topics": [
       "ag-ui-protocol",
       "agent",
@@ -3520,7 +3520,7 @@
     "forks": 115,
     "openIssues": 10,
     "pushedAt": "2025-08-08T18:38:03Z",
-    "stars": 1242,
+    "stars": 1243,
     "topics": [
       "agent",
       "ai",
@@ -3531,10 +3531,10 @@
   "https://github.com/chroma-core/chroma": {
     "archived": false,
     "createdAt": "2022-10-05T17:58:44Z",
-    "forks": 2359,
-    "openIssues": 727,
-    "pushedAt": "2026-07-03T00:19:42Z",
-    "stars": 28670,
+    "forks": 2363,
+    "openIssues": 730,
+    "pushedAt": "2026-07-03T21:29:05Z",
+    "stars": 28680,
     "topics": [
       "agents",
       "ai",
@@ -3547,19 +3547,19 @@
   "https://github.com/cline/cline": {
     "archived": false,
     "createdAt": "2024-07-06T07:28:10Z",
-    "forks": 6825,
-    "openIssues": 1195,
-    "pushedAt": "2026-07-03T02:07:49Z",
-    "stars": 64229,
+    "forks": 6830,
+    "openIssues": 1206,
+    "pushedAt": "2026-07-04T02:32:10Z",
+    "stars": 64260,
     "topics": []
   },
   "https://github.com/cloudflare/vibesdk": {
     "archived": false,
     "createdAt": "2025-08-25T15:07:31Z",
-    "forks": 1217,
+    "forks": 1216,
     "openIssues": 22,
     "pushedAt": "2026-07-02T07:40:42Z",
-    "stars": 5127,
+    "stars": 5131,
     "topics": [
       "ai",
       "cloudflare-workers",
@@ -3572,10 +3572,10 @@
   "https://github.com/code-yeongyu/oh-my-openagent": {
     "archived": false,
     "createdAt": "2025-12-03T01:40:05Z",
-    "forks": 5280,
-    "openIssues": 811,
-    "pushedAt": "2026-07-03T04:21:18Z",
-    "stars": 64630,
+    "forks": 5289,
+    "openIssues": 827,
+    "pushedAt": "2026-07-03T20:19:28Z",
+    "stars": 64747,
     "topics": [
       "ai",
       "ai-agents",
@@ -3618,10 +3618,10 @@
   "https://github.com/coleam00/context-engineering-intro": {
     "archived": false,
     "createdAt": "2025-07-02T11:54:47Z",
-    "forks": 2705,
+    "forks": 2704,
     "openIssues": 33,
     "pushedAt": "2026-03-16T12:13:59Z",
-    "stars": 13521,
+    "stars": 13523,
     "topics": []
   },
   "https://github.com/coleam00/mcp-crawl4ai-rag": {
@@ -3630,16 +3630,16 @@
     "forks": 571,
     "openIssues": 56,
     "pushedAt": "2025-07-25T15:17:13Z",
-    "stars": 2206,
+    "stars": 2207,
     "topics": []
   },
   "https://github.com/comet-ml/opik": {
     "archived": false,
     "createdAt": "2023-05-10T12:57:13Z",
-    "forks": 1577,
-    "openIssues": 140,
-    "pushedAt": "2026-07-03T01:06:51Z",
-    "stars": 20252,
+    "forks": 1578,
+    "openIssues": 138,
+    "pushedAt": "2026-07-03T22:08:54Z",
+    "stars": 20266,
     "topics": [
       "evaluation",
       "hacktoberfest",
@@ -3659,10 +3659,10 @@
   "https://github.com/containers/kubernetes-mcp-server": {
     "archived": false,
     "createdAt": "2025-02-11T02:57:36Z",
-    "forks": 380,
-    "openIssues": 77,
+    "forks": 381,
+    "openIssues": 80,
     "pushedAt": "2026-07-01T03:12:07Z",
-    "stars": 1737,
+    "stars": 1745,
     "topics": [
       "containers",
       "context",
@@ -3678,10 +3678,10 @@
   "https://github.com/continuedev/continue": {
     "archived": false,
     "createdAt": "2023-05-24T03:39:39Z",
-    "forks": 4935,
-    "openIssues": 956,
-    "pushedAt": "2026-07-01T23:13:25Z",
-    "stars": 34657,
+    "forks": 4945,
+    "openIssues": 959,
+    "pushedAt": "2026-07-03T18:01:50Z",
+    "stars": 34673,
     "topics": [
       "agent",
       "ai",
@@ -3693,10 +3693,10 @@
   "https://github.com/coreyhaines31/marketingskills": {
     "archived": false,
     "createdAt": "2026-01-15T19:45:23Z",
-    "forks": 5843,
-    "openIssues": 40,
+    "forks": 5863,
+    "openIssues": 43,
     "pushedAt": "2026-07-03T00:50:09Z",
-    "stars": 35896,
+    "stars": 36001,
     "topics": [
       "claude",
       "codex",
@@ -3706,10 +3706,10 @@
   "https://github.com/crewAIInc/crewAI": {
     "archived": false,
     "createdAt": "2023-10-27T03:26:59Z",
-    "forks": 7683,
-    "openIssues": 602,
-    "pushedAt": "2026-07-02T23:59:57Z",
-    "stars": 54801,
+    "forks": 7689,
+    "openIssues": 608,
+    "pushedAt": "2026-07-03T08:22:51Z",
+    "stars": 54860,
     "topics": [
       "agents",
       "ai",
@@ -3721,10 +3721,10 @@
   "https://github.com/czlonkowski/n8n-mcp": {
     "archived": false,
     "createdAt": "2025-06-07T12:15:57Z",
-    "forks": 3560,
-    "openIssues": 46,
-    "pushedAt": "2026-07-02T14:10:03Z",
-    "stars": 22103,
+    "forks": 3561,
+    "openIssues": 45,
+    "pushedAt": "2026-07-03T18:24:34Z",
+    "stars": 22131,
     "topics": [
       "mcp",
       "mcp-server",
@@ -3735,10 +3735,10 @@
   "https://github.com/dair-ai/Prompt-Engineering-Guide": {
     "archived": false,
     "createdAt": "2022-12-16T16:04:50Z",
-    "forks": 8339,
+    "forks": 8338,
     "openIssues": 273,
     "pushedAt": "2026-03-11T20:09:13Z",
-    "stars": 76165,
+    "stars": 76192,
     "topics": [
       "agent",
       "agents",
@@ -3756,10 +3756,10 @@
   "https://github.com/danny-avila/LibreChat": {
     "archived": false,
     "createdAt": "2023-02-12T01:06:52Z",
-    "forks": 8236,
-    "openIssues": 542,
-    "pushedAt": "2026-07-03T01:57:48Z",
-    "stars": 40180,
+    "forks": 8245,
+    "openIssues": 550,
+    "pushedAt": "2026-07-03T23:57:55Z",
+    "stars": 40246,
     "topics": [
       "ai",
       "anthropic",
@@ -3786,9 +3786,9 @@
   "https://github.com/dataelement/bisheng": {
     "archived": false,
     "createdAt": "2023-08-28T10:00:24Z",
-    "forks": 1877,
-    "openIssues": 111,
-    "pushedAt": "2026-07-03T03:49:43Z",
+    "forks": 1876,
+    "openIssues": 113,
+    "pushedAt": "2026-07-03T14:20:12Z",
     "stars": 11490,
     "topics": [
       "agent",
@@ -3816,10 +3816,10 @@
   "https://github.com/datawhalechina/easy-vibe": {
     "archived": false,
     "createdAt": "2025-12-28T16:45:28Z",
-    "forks": 1674,
+    "forks": 1677,
     "openIssues": 13,
     "pushedAt": "2026-06-17T01:53:13Z",
-    "stars": 17696,
+    "stars": 17757,
     "topics": [
       "agent",
       "ai",
@@ -3846,10 +3846,10 @@
   "https://github.com/datawhalechina/hello-agents": {
     "archived": false,
     "createdAt": "2025-09-07T09:50:24Z",
-    "forks": 7882,
-    "openIssues": 146,
+    "forks": 7905,
+    "openIssues": 149,
     "pushedAt": "2026-06-24T17:33:54Z",
-    "stars": 63622,
+    "stars": 63821,
     "topics": [
       "agent",
       "llm",
@@ -3860,10 +3860,10 @@
   "https://github.com/datawhalechina/vibe-vibe": {
     "archived": false,
     "createdAt": "2025-11-28T10:30:29Z",
-    "forks": 445,
+    "forks": 444,
     "openIssues": 12,
     "pushedAt": "2026-04-30T11:49:58Z",
-    "stars": 5633,
+    "stars": 5651,
     "topics": [
       "agent",
       "agentic-ai",
@@ -3877,10 +3877,10 @@
   "https://github.com/daytonaio/daytona": {
     "archived": false,
     "createdAt": "2024-02-06T08:21:20Z",
-    "forks": 5671,
+    "forks": 5670,
     "openIssues": 441,
     "pushedAt": "2026-06-30T11:51:26Z",
-    "stars": 72325,
+    "stars": 72316,
     "topics": [
       "agentic-workflow",
       "ai",
@@ -3895,10 +3895,10 @@
   "https://github.com/deepset-ai/haystack": {
     "archived": false,
     "createdAt": "2019-11-14T09:05:28Z",
-    "forks": 2900,
-    "openIssues": 97,
-    "pushedAt": "2026-07-02T15:15:23Z",
-    "stars": 25816,
+    "forks": 2902,
+    "openIssues": 104,
+    "pushedAt": "2026-07-03T14:25:11Z",
+    "stars": 25821,
     "topics": [
       "agent",
       "agents",
@@ -3925,19 +3925,19 @@
   "https://github.com/dontriskit/awesome-ai-system-prompts": {
     "archived": false,
     "createdAt": "2025-03-05T18:35:07Z",
-    "forks": 901,
+    "forks": 900,
     "openIssues": 24,
     "pushedAt": "2026-02-20T19:10:13Z",
-    "stars": 6058,
+    "stars": 6060,
     "topics": []
   },
   "https://github.com/dottxt-ai/outlines": {
     "archived": false,
     "createdAt": "2023-03-17T16:01:18Z",
-    "forks": 751,
-    "openIssues": 106,
-    "pushedAt": "2026-07-02T14:44:10Z",
-    "stars": 14354,
+    "forks": 754,
+    "openIssues": 107,
+    "pushedAt": "2026-07-03T11:33:05Z",
+    "stars": 14363,
     "topics": [
       "cfg",
       "generative-ai",
@@ -3965,10 +3965,10 @@
   "https://github.com/e2b-dev/awesome-ai-agents": {
     "archived": false,
     "createdAt": "2023-06-19T00:20:06Z",
-    "forks": 3092,
-    "openIssues": 799,
+    "forks": 3098,
+    "openIssues": 803,
     "pushedAt": "2025-02-26T10:04:45Z",
-    "stars": 28591,
+    "stars": 28601,
     "topics": [
       "agent",
       "ai",
@@ -3988,19 +3988,19 @@
   "https://github.com/earendil-works/pi": {
     "archived": false,
     "createdAt": "2025-08-09T14:03:50Z",
-    "forks": 8257,
-    "openIssues": 48,
-    "pushedAt": "2026-07-02T18:40:04Z",
-    "stars": 67269,
+    "forks": 8280,
+    "openIssues": 51,
+    "pushedAt": "2026-07-04T04:28:12Z",
+    "stars": 67486,
     "topics": []
   },
   "https://github.com/elder-plinius/CL4R1T4S": {
     "archived": false,
     "createdAt": "2025-03-04T20:03:16Z",
-    "forks": 9039,
+    "forks": 9059,
     "openIssues": 115,
     "pushedAt": "2026-06-15T11:09:58Z",
-    "stars": 44403,
+    "stars": 44532,
     "topics": [
       "agents",
       "ai",
@@ -4027,10 +4027,10 @@
   "https://github.com/elizaOS/eliza": {
     "archived": false,
     "createdAt": "2024-07-09T07:55:40Z",
-    "forks": 5575,
-    "openIssues": 65,
-    "pushedAt": "2026-07-03T04:33:09Z",
-    "stars": 18680,
+    "forks": 5577,
+    "openIssues": 215,
+    "pushedAt": "2026-07-04T04:31:38Z",
+    "stars": 18683,
     "topics": [
       "agent",
       "agentic",
@@ -4052,10 +4052,10 @@
   "https://github.com/esengine/DeepSeek-Reasonix": {
     "archived": false,
     "createdAt": "2026-04-21T08:27:02Z",
-    "forks": 1587,
-    "openIssues": 996,
-    "pushedAt": "2026-07-03T04:29:27Z",
-    "stars": 25774,
+    "forks": 1598,
+    "openIssues": 969,
+    "pushedAt": "2026-07-04T03:51:35Z",
+    "stars": 25867,
     "topics": [
       "agent",
       "agent-framework",
@@ -4078,10 +4078,10 @@
   "https://github.com/eugeneyan/open-llms": {
     "archived": false,
     "createdAt": "2023-05-05T16:35:37Z",
-    "forks": 979,
+    "forks": 977,
     "openIssues": 12,
     "pushedAt": "2025-02-13T06:37:12Z",
-    "stars": 12818,
+    "stars": 12819,
     "topics": [
       "commercial",
       "large-language-models",
@@ -4092,10 +4092,10 @@
   "https://github.com/evidentlyai/evidently": {
     "archived": false,
     "createdAt": "2020-11-25T15:20:08Z",
-    "forks": 872,
+    "forks": 873,
     "openIssues": 282,
     "pushedAt": "2026-05-02T13:20:18Z",
-    "stars": 7654,
+    "stars": 7659,
     "topics": [
       "data-drift",
       "data-quality",
@@ -4116,10 +4116,10 @@
   "https://github.com/exa-labs/exa-mcp-server": {
     "archived": false,
     "createdAt": "2024-11-27T23:38:35Z",
-    "forks": 354,
-    "openIssues": 37,
+    "forks": 353,
+    "openIssues": 35,
     "pushedAt": "2026-07-02T21:56:17Z",
-    "stars": 4655,
+    "stars": 4659,
     "topics": [
       "code-search",
       "codesearch",
@@ -4176,19 +4176,19 @@
   "https://github.com/ezyang/codemcp": {
     "archived": false,
     "createdAt": "2025-03-09T03:58:34Z",
-    "forks": 142,
+    "forks": 141,
     "openIssues": 79,
     "pushedAt": "2025-12-25T02:10:23Z",
-    "stars": 1611,
+    "stars": 1610,
     "topics": []
   },
   "https://github.com/f/prompts.chat": {
     "archived": false,
     "createdAt": "2022-12-05T13:54:13Z",
-    "forks": 21305,
-    "openIssues": 58,
-    "pushedAt": "2026-07-03T04:21:25Z",
-    "stars": 164657,
+    "forks": 21309,
+    "openIssues": 59,
+    "pushedAt": "2026-07-04T04:18:28Z",
+    "stars": 164691,
     "topics": [
       "ai",
       "artificial-intelligence",
@@ -4213,10 +4213,10 @@
   "https://github.com/farion1231/cc-switch": {
     "archived": false,
     "createdAt": "2025-08-04T14:16:16Z",
-    "forks": 7469,
-    "openIssues": 1679,
+    "forks": 7499,
+    "openIssues": 1700,
     "pushedAt": "2026-07-03T01:17:02Z",
-    "stars": 112505,
+    "stars": 112919,
     "topics": [
       "ai-tools",
       "claude-code",
@@ -4246,7 +4246,7 @@
     "forks": 580,
     "openIssues": 112,
     "pushedAt": "2026-04-16T01:34:11Z",
-    "stars": 4849,
+    "stars": 4852,
     "topics": [
       "ai-agent",
       "ai-agents",
@@ -4262,10 +4262,10 @@
   "https://github.com/firecrawl/firecrawl": {
     "archived": false,
     "createdAt": "2024-04-15T21:02:29Z",
-    "forks": 8256,
-    "openIssues": 384,
-    "pushedAt": "2026-07-02T16:12:15Z",
-    "stars": 143345,
+    "forks": 8274,
+    "openIssues": 385,
+    "pushedAt": "2026-07-03T21:56:09Z",
+    "stars": 143772,
     "topics": [
       "ai",
       "ai-agents",
@@ -4291,10 +4291,10 @@
   "https://github.com/firecrawl/firecrawl-mcp-server": {
     "archived": false,
     "createdAt": "2024-12-06T07:50:27Z",
-    "forks": 794,
-    "openIssues": 127,
+    "forks": 796,
+    "openIssues": 126,
     "pushedAt": "2026-07-02T01:24:24Z",
-    "stars": 6793,
+    "stars": 6798,
     "topics": [
       "batch-processing",
       "claude",
@@ -4315,8 +4315,8 @@
   "https://github.com/firerpa/lamda": {
     "archived": false,
     "createdAt": "2022-07-10T03:20:56Z",
-    "forks": 1046,
-    "openIssues": 43,
+    "forks": 1044,
+    "openIssues": 44,
     "pushedAt": "2026-06-28T13:20:08Z",
     "stars": 7855,
     "topics": [
@@ -4348,7 +4348,7 @@
     "forks": 168,
     "openIssues": 14,
     "pushedAt": "2026-05-19T15:42:16Z",
-    "stars": 2358,
+    "stars": 2362,
     "topics": [
       "agent-framework",
       "agent-skills",
@@ -4374,10 +4374,10 @@
   "https://github.com/freestylefly/awesome-gpt-image-2": {
     "archived": false,
     "createdAt": "2026-04-25T09:19:13Z",
-    "forks": 1056,
+    "forks": 1055,
     "openIssues": 6,
     "pushedAt": "2026-06-30T12:25:12Z",
-    "stars": 8120,
+    "stars": 8142,
     "topics": [
       "agents",
       "ai-image-generation",
@@ -4393,10 +4393,10 @@
   "https://github.com/getagentseal/codeburn": {
     "archived": false,
     "createdAt": "2026-04-13T22:11:53Z",
-    "forks": 659,
-    "openIssues": 34,
-    "pushedAt": "2026-07-02T22:24:51Z",
-    "stars": 8399,
+    "forks": 662,
+    "openIssues": 43,
+    "pushedAt": "2026-07-03T22:58:04Z",
+    "stars": 8427,
     "topics": [
       "ai-coding",
       "claude-code",
@@ -4413,10 +4413,10 @@
   "https://github.com/getsentry/XcodeBuildMCP": {
     "archived": false,
     "createdAt": "2025-03-09T17:31:18Z",
-    "forks": 300,
+    "forks": 299,
     "openIssues": 21,
     "pushedAt": "2026-06-29T07:45:38Z",
-    "stars": 6024,
+    "stars": 6029,
     "topics": [
       "mcp",
       "mcp-server",
@@ -4430,10 +4430,10 @@
   "https://github.com/getzep/zep": {
     "archived": false,
     "createdAt": "2023-04-29T14:06:22Z",
-    "forks": 636,
-    "openIssues": 13,
-    "pushedAt": "2026-06-29T04:26:11Z",
-    "stars": 4724,
+    "forks": 635,
+    "openIssues": 14,
+    "pushedAt": "2026-07-03T21:21:39Z",
+    "stars": 4723,
     "topics": [
       "ai",
       "knowledge-graphs",
@@ -4444,10 +4444,10 @@
   "https://github.com/ggml-org/ggml": {
     "archived": false,
     "createdAt": "2022-09-18T17:07:19Z",
-    "forks": 1704,
+    "forks": 1707,
     "openIssues": 339,
     "pushedAt": "2026-06-26T11:38:16Z",
-    "stars": 14922,
+    "stars": 14931,
     "topics": [
       "automatic-differentiation",
       "large-language-models",
@@ -4461,7 +4461,7 @@
     "forks": 1919,
     "openIssues": 209,
     "pushedAt": "2026-05-20T06:43:02Z",
-    "stars": 6185,
+    "stars": 6186,
     "topics": [
       "ai-assistant",
       "github-copilot",
@@ -4477,10 +4477,10 @@
   "https://github.com/github/awesome-copilot": {
     "archived": false,
     "createdAt": "2025-06-11T16:57:39Z",
-    "forks": 4477,
-    "openIssues": 23,
-    "pushedAt": "2026-07-03T04:22:59Z",
-    "stars": 36106,
+    "forks": 4492,
+    "openIssues": 39,
+    "pushedAt": "2026-07-03T21:05:59Z",
+    "stars": 36156,
     "topics": [
       "agent-skills",
       "agents",
@@ -4495,10 +4495,10 @@
   "https://github.com/github/github-mcp-server": {
     "archived": false,
     "createdAt": "2025-03-04T16:42:04Z",
-    "forks": 4492,
+    "forks": 4496,
     "openIssues": 328,
-    "pushedAt": "2026-07-01T23:43:56Z",
-    "stars": 31141,
+    "pushedAt": "2026-07-03T09:48:13Z",
+    "stars": 31158,
     "topics": [
       "github",
       "mcp",
@@ -4508,10 +4508,10 @@
   "https://github.com/google-gemini/gemini-cli": {
     "archived": false,
     "createdAt": "2025-04-17T17:04:31Z",
-    "forks": 14198,
-    "openIssues": 1344,
-    "pushedAt": "2026-07-03T01:52:36Z",
-    "stars": 105722,
+    "forks": 14200,
+    "openIssues": 1341,
+    "pushedAt": "2026-07-04T03:41:07Z",
+    "stars": 105730,
     "topics": [
       "ai",
       "ai-agents",
@@ -4525,10 +4525,10 @@
   "https://github.com/google/adk-go": {
     "archived": false,
     "createdAt": "2025-05-05T17:16:26Z",
-    "forks": 729,
+    "forks": 731,
     "openIssues": 246,
-    "pushedAt": "2026-07-02T18:12:49Z",
-    "stars": 8343,
+    "pushedAt": "2026-07-03T22:57:23Z",
+    "stars": 8359,
     "topics": [
       "a2a",
       "agents",
@@ -4549,10 +4549,10 @@
   "https://github.com/google/adk-python": {
     "archived": false,
     "createdAt": "2025-04-01T20:44:40Z",
-    "forks": 3632,
-    "openIssues": 684,
-    "pushedAt": "2026-07-02T21:12:13Z",
-    "stars": 20421,
+    "forks": 3640,
+    "openIssues": 695,
+    "pushedAt": "2026-07-03T15:51:05Z",
+    "stars": 20436,
     "topics": [
       "agent",
       "agentic",
@@ -4575,10 +4575,10 @@
   "https://github.com/google/agents-cli": {
     "archived": false,
     "createdAt": "2026-04-08T17:09:55Z",
-    "forks": 499,
+    "forks": 503,
     "openIssues": 25,
     "pushedAt": "2026-07-01T15:47:57Z",
-    "stars": 4666,
+    "stars": 4704,
     "topics": [
       "adk",
       "agent-development-kit",
@@ -4593,10 +4593,10 @@
   "https://github.com/google/langextract": {
     "archived": false,
     "createdAt": "2025-07-08T20:46:06Z",
-    "forks": 2551,
-    "openIssues": 106,
+    "forks": 2553,
+    "openIssues": 105,
     "pushedAt": "2026-07-02T07:59:47Z",
-    "stars": 36995,
+    "stars": 36993,
     "topics": [
       "gemini",
       "gemini-ai",
@@ -4615,9 +4615,9 @@
     "archived": false,
     "createdAt": "2025-03-16T16:45:37Z",
     "forks": 746,
-    "openIssues": 84,
+    "openIssues": 82,
     "pushedAt": "2026-04-29T11:05:19Z",
-    "stars": 6874,
+    "stars": 6875,
     "topics": [
       "agent",
       "agentic",
@@ -4643,7 +4643,7 @@
     "forks": 635,
     "openIssues": 4,
     "pushedAt": "2026-04-21T23:47:09Z",
-    "stars": 10754,
+    "stars": 10810,
     "topics": []
   },
   "https://github.com/greggh/claude-code.nvim": {
@@ -4667,10 +4667,10 @@
   "https://github.com/headroomlabs-ai/headroom": {
     "archived": false,
     "createdAt": "2026-01-07T19:58:51Z",
-    "forks": 4061,
-    "openIssues": 488,
-    "pushedAt": "2026-07-03T04:28:21Z",
-    "stars": 55907,
+    "forks": 4096,
+    "openIssues": 515,
+    "pushedAt": "2026-07-03T22:20:14Z",
+    "stars": 56280,
     "topics": [
       "agent",
       "ai",
@@ -4697,10 +4697,10 @@
   "https://github.com/hesreallyhim/awesome-claude-code": {
     "archived": false,
     "createdAt": "2025-04-19T20:55:59Z",
-    "forks": 4188,
-    "openIssues": 585,
-    "pushedAt": "2026-07-03T04:19:20Z",
-    "stars": 47825,
+    "forks": 4196,
+    "openIssues": 584,
+    "pushedAt": "2026-07-04T04:16:43Z",
+    "stars": 47918,
     "topics": [
       "agent-skills",
       "agentic-code",
@@ -4727,9 +4727,9 @@
     "archived": false,
     "createdAt": "2023-05-28T10:09:12Z",
     "forks": 8912,
-    "openIssues": 1060,
-    "pushedAt": "2026-07-02T03:06:42Z",
-    "stars": 72909,
+    "openIssues": 1061,
+    "pushedAt": "2026-07-03T05:16:11Z",
+    "stars": 72932,
     "topics": [
       "agent",
       "ai",
@@ -4756,10 +4756,10 @@
   "https://github.com/huggingface/transformers": {
     "archived": false,
     "createdAt": "2018-10-29T13:56:00Z",
-    "forks": 33730,
-    "openIssues": 2462,
-    "pushedAt": "2026-07-03T04:07:32Z",
-    "stars": 162177,
+    "forks": 33744,
+    "openIssues": 2456,
+    "pushedAt": "2026-07-03T16:13:13Z",
+    "stars": 162216,
     "topics": [
       "audio",
       "deep-learning",
@@ -4785,10 +4785,10 @@
   "https://github.com/humanlayer/12-factor-agents": {
     "archived": false,
     "createdAt": "2025-03-30T22:10:39Z",
-    "forks": 1835,
+    "forks": 1834,
     "openIssues": 26,
     "pushedAt": "2025-09-21T14:37:40Z",
-    "stars": 23932,
+    "stars": 23954,
     "topics": [
       "12-factor",
       "12-factor-agents",
@@ -4806,10 +4806,10 @@
   "https://github.com/humanlayer/humanlayer": {
     "archived": false,
     "createdAt": "2024-08-05T21:26:44Z",
-    "forks": 925,
+    "forks": 924,
     "openIssues": 37,
     "pushedAt": "2026-06-19T03:27:53Z",
-    "stars": 11082,
+    "stars": 11083,
     "topics": [
       "agents",
       "ai",
@@ -4826,10 +4826,10 @@
   "https://github.com/iOfficeAI/AionUi": {
     "archived": false,
     "createdAt": "2025-08-07T10:29:51Z",
-    "forks": 2913,
-    "openIssues": 670,
-    "pushedAt": "2026-07-03T04:02:42Z",
-    "stars": 29212,
+    "forks": 2915,
+    "openIssues": 671,
+    "pushedAt": "2026-07-03T13:13:42Z",
+    "stars": 29252,
     "topics": [
       "acp",
       "agent-team",
@@ -4856,10 +4856,10 @@
   "https://github.com/infiniflow/ragflow": {
     "archived": false,
     "createdAt": "2023-12-12T06:13:13Z",
-    "forks": 9784,
-    "openIssues": 2535,
-    "pushedAt": "2026-07-03T04:06:45Z",
-    "stars": 84175,
+    "forks": 9796,
+    "openIssues": 2451,
+    "pushedAt": "2026-07-03T13:35:53Z",
+    "stars": 84233,
     "topics": [
       "agentic-ai",
       "agentic-retrieval",
@@ -4878,8 +4878,8 @@
     "createdAt": "2020-06-24T09:11:56Z",
     "forks": 679,
     "openIssues": 22,
-    "pushedAt": "2026-07-02T12:06:52Z",
-    "stars": 12393,
+    "pushedAt": "2026-07-03T09:39:16Z",
+    "stars": 12394,
     "topics": [
       "aws",
       "azure",
@@ -4904,9 +4904,9 @@
     "archived": false,
     "createdAt": "2025-09-05T12:23:24Z",
     "forks": 147,
-    "openIssues": 32,
-    "pushedAt": "2026-07-03T00:48:18Z",
-    "stars": 1257,
+    "openIssues": 30,
+    "pushedAt": "2026-07-04T00:46:45Z",
+    "stars": 1258,
     "topics": [
       "agent",
       "agent-builder",
@@ -4936,7 +4936,7 @@
     "forks": 153,
     "openIssues": 5,
     "pushedAt": "2026-07-02T00:34:04Z",
-    "stars": 2784,
+    "stars": 2786,
     "topics": [
       "agents",
       "ai",
@@ -4952,10 +4952,10 @@
   "https://github.com/jackwener/OpenCLI": {
     "archived": false,
     "createdAt": "2026-03-14T22:10:23Z",
-    "forks": 2568,
-    "openIssues": 201,
-    "pushedAt": "2026-07-02T16:46:28Z",
-    "stars": 25890,
+    "forks": 2576,
+    "openIssues": 190,
+    "pushedAt": "2026-07-03T18:19:41Z",
+    "stars": 25967,
     "topics": [
       "ai-agent",
       "ai-agents",
@@ -4994,10 +4994,10 @@
   "https://github.com/janhq/jan": {
     "archived": false,
     "createdAt": "2023-08-17T02:17:10Z",
-    "forks": 2875,
-    "openIssues": 390,
-    "pushedAt": "2026-07-02T13:06:19Z",
-    "stars": 43361,
+    "forks": 2876,
+    "openIssues": 374,
+    "pushedAt": "2026-07-03T12:44:28Z",
+    "stars": 43376,
     "topics": [
       "chatgpt",
       "gpt",
@@ -5040,10 +5040,10 @@
   "https://github.com/jeecgboot/JeecgBoot": {
     "archived": false,
     "createdAt": "2018-11-26T10:40:00Z",
-    "forks": 16079,
-    "openIssues": 43,
+    "forks": 16080,
+    "openIssues": 42,
     "pushedAt": "2026-07-01T12:57:08Z",
-    "stars": 46932,
+    "stars": 46937,
     "topics": [
       "activiti",
       "agent",
@@ -5070,10 +5070,10 @@
   "https://github.com/jnMetaCode/agency-agents-zh": {
     "archived": false,
     "createdAt": "2026-03-06T11:11:51Z",
-    "forks": 2821,
+    "forks": 2832,
     "openIssues": 1,
     "pushedAt": "2026-07-01T06:55:15Z",
-    "stars": 16453,
+    "stars": 16543,
     "topics": [
       "agency-orchestrator",
       "agent-definitions",
@@ -5102,7 +5102,7 @@
     "forks": 607,
     "openIssues": 17,
     "pushedAt": "2026-06-23T15:29:43Z",
-    "stars": 6305,
+    "stars": 6347,
     "topics": [
       "agent-skills",
       "agentic-coding",
@@ -5128,7 +5128,7 @@
     "forks": 433,
     "openIssues": 131,
     "pushedAt": "2026-06-29T20:59:11Z",
-    "stars": 6609,
+    "stars": 6613,
     "topics": [
       "ai-gateway",
       "ai-gateway-support",
@@ -5153,9 +5153,9 @@
     "archived": false,
     "createdAt": "2019-08-24T13:56:15Z",
     "forks": 2645,
-    "openIssues": 542,
-    "pushedAt": "2026-07-02T21:54:31Z",
-    "stars": 27229,
+    "openIssues": 523,
+    "pushedAt": "2026-07-03T19:55:33Z",
+    "stars": 27234,
     "topics": [
       "ai-agents",
       "automation",
@@ -5211,10 +5211,10 @@
   "https://github.com/kyegomez/swarms": {
     "archived": false,
     "createdAt": "2023-05-11T01:09:00Z",
-    "forks": 960,
-    "openIssues": 68,
+    "forks": 959,
+    "openIssues": 69,
     "pushedAt": "2026-07-02T12:21:18Z",
-    "stars": 6915,
+    "stars": 6918,
     "topics": [
       "agentic-ai",
       "agentic-workflow",
@@ -5239,10 +5239,10 @@
   "https://github.com/langchain-ai/langchain": {
     "archived": false,
     "createdAt": "2022-10-17T02:58:36Z",
-    "forks": 23373,
-    "openIssues": 416,
+    "forks": 23389,
+    "openIssues": 421,
     "pushedAt": "2026-07-01T19:01:46Z",
-    "stars": 140786,
+    "stars": 140874,
     "topics": [
       "agents",
       "ai",
@@ -5269,10 +5269,10 @@
   "https://github.com/langchain-ai/langgraph": {
     "archived": false,
     "createdAt": "2023-08-09T18:33:12Z",
-    "forks": 6084,
-    "openIssues": 610,
-    "pushedAt": "2026-07-01T17:59:54Z",
-    "stars": 36357,
+    "forks": 6102,
+    "openIssues": 601,
+    "pushedAt": "2026-07-03T23:41:56Z",
+    "stars": 36427,
     "topics": [
       "agents",
       "ai",
@@ -5297,10 +5297,10 @@
   "https://github.com/langflow-ai/langflow": {
     "archived": false,
     "createdAt": "2023-02-08T22:28:03Z",
-    "forks": 9405,
-    "openIssues": 964,
-    "pushedAt": "2026-07-03T00:48:10Z",
-    "stars": 150853,
+    "forks": 9422,
+    "openIssues": 975,
+    "pushedAt": "2026-07-04T03:07:49Z",
+    "stars": 151076,
     "topics": [
       "agents",
       "chatgpt",
@@ -5313,10 +5313,10 @@
   "https://github.com/langfuse/langfuse": {
     "archived": false,
     "createdAt": "2023-05-18T17:47:09Z",
-    "forks": 3179,
-    "openIssues": 689,
-    "pushedAt": "2026-07-03T02:03:33Z",
-    "stars": 30333,
+    "forks": 3185,
+    "openIssues": 688,
+    "pushedAt": "2026-07-03T22:56:42Z",
+    "stars": 30385,
     "topics": [
       "analytics",
       "autogen",
@@ -5342,10 +5342,10 @@
   "https://github.com/langgenius/dify": {
     "archived": false,
     "createdAt": "2023-04-12T07:40:24Z",
-    "forks": 23216,
-    "openIssues": 869,
-    "pushedAt": "2026-07-03T04:29:27Z",
-    "stars": 147471,
+    "forks": 23237,
+    "openIssues": 878,
+    "pushedAt": "2026-07-04T02:27:12Z",
+    "stars": 147572,
     "topics": [
       "agent",
       "agentic-ai",
@@ -5375,7 +5375,7 @@
     "forks": 931,
     "openIssues": 0,
     "pushedAt": "2026-06-29T23:22:58Z",
-    "stars": 12287,
+    "stars": 12291,
     "topics": [
       "chatgpt",
       "claude",
@@ -5399,7 +5399,7 @@
     "forks": 528,
     "openIssues": 1,
     "pushedAt": "2025-10-22T06:59:35Z",
-    "stars": 6130,
+    "stars": 6134,
     "topics": [
       "chatgpt",
       "chatgpt3",
@@ -5417,8 +5417,8 @@
     "createdAt": "2025-05-15T19:17:39Z",
     "forks": 379,
     "openIssues": 381,
-    "pushedAt": "2026-07-03T02:04:17Z",
-    "stars": 4744,
+    "pushedAt": "2026-07-04T03:33:12Z",
+    "stars": 4757,
     "topics": [
       "ai",
       "amd",
@@ -5444,10 +5444,10 @@
   "https://github.com/linshenkx/prompt-optimizer": {
     "archived": false,
     "createdAt": "2025-02-12T06:06:49Z",
-    "forks": 3696,
-    "openIssues": 19,
+    "forks": 3700,
+    "openIssues": 20,
     "pushedAt": "2026-06-23T07:30:59Z",
-    "stars": 31710,
+    "stars": 31741,
     "topics": [
       "ai-prompts",
       "ai-tools",
@@ -5464,10 +5464,10 @@
   "https://github.com/liyupi/ai-guide": {
     "archived": false,
     "createdAt": "2025-02-13T05:47:46Z",
-    "forks": 1862,
+    "forks": 1872,
     "openIssues": 4,
     "pushedAt": "2026-07-01T14:44:50Z",
-    "stars": 16675,
+    "stars": 16749,
     "topics": [
       "ai",
       "artificial-intelligence",
@@ -5512,10 +5512,10 @@
   "https://github.com/mahseema/awesome-ai-tools": {
     "archived": false,
     "createdAt": "2023-08-25T21:51:55Z",
-    "forks": 1806,
-    "openIssues": 1034,
+    "forks": 1813,
+    "openIssues": 1038,
     "pushedAt": "2025-12-31T14:46:19Z",
-    "stars": 5567,
+    "stars": 5570,
     "topics": [
       "ai",
       "ai-agent",
@@ -5542,10 +5542,10 @@
   "https://github.com/manaflow-ai/cmux": {
     "archived": false,
     "createdAt": "2026-01-28T10:03:24Z",
-    "forks": 1857,
-    "openIssues": 3117,
-    "pushedAt": "2026-07-03T04:32:18Z",
-    "stars": 23457,
+    "forks": 1866,
+    "openIssues": 3158,
+    "pushedAt": "2026-07-04T04:29:15Z",
+    "stars": 23563,
     "topics": [
       "amp",
       "claude-code",
@@ -5576,10 +5576,10 @@
   "https://github.com/maximhq/bifrost": {
     "archived": false,
     "createdAt": "2025-03-19T07:21:26Z",
-    "forks": 840,
-    "openIssues": 546,
-    "pushedAt": "2026-07-03T04:29:57Z",
-    "stars": 6227,
+    "forks": 847,
+    "openIssues": 552,
+    "pushedAt": "2026-07-04T01:30:23Z",
+    "stars": 6255,
     "topics": [
       "ai-gateway",
       "gateway",
@@ -5602,10 +5602,10 @@
   "https://github.com/mcp-use/mcp-use": {
     "archived": false,
     "createdAt": "2025-03-28T10:06:31Z",
-    "forks": 1359,
-    "openIssues": 133,
-    "pushedAt": "2026-07-03T03:43:53Z",
-    "stars": 10222,
+    "forks": 1358,
+    "openIssues": 132,
+    "pushedAt": "2026-07-03T17:32:24Z",
+    "stars": 10236,
     "topics": [
       "agentic-framework",
       "ai",
@@ -5632,10 +5632,10 @@
   "https://github.com/mem0ai/mem0": {
     "archived": false,
     "createdAt": "2023-06-20T08:58:36Z",
-    "forks": 6956,
-    "openIssues": 484,
-    "pushedAt": "2026-07-02T18:00:43Z",
-    "stars": 59978,
+    "forks": 6962,
+    "openIssues": 494,
+    "pushedAt": "2026-07-03T06:18:42Z",
+    "stars": 60048,
     "topics": [
       "agents",
       "ai",
@@ -5656,10 +5656,10 @@
   "https://github.com/metatool-ai/metamcp": {
     "archived": false,
     "createdAt": "2025-01-22T11:58:52Z",
-    "forks": 371,
+    "forks": 372,
     "openIssues": 85,
     "pushedAt": "2026-06-22T16:50:50Z",
-    "stars": 2490,
+    "stars": 2491,
     "topics": [
       "mcp",
       "mcp-gateway",
@@ -5681,10 +5681,10 @@
   "https://github.com/microsoft/ai-agents-for-beginners": {
     "archived": false,
     "createdAt": "2024-11-28T10:42:52Z",
-    "forks": 22695,
-    "openIssues": 7,
-    "pushedAt": "2026-07-03T02:43:23Z",
-    "stars": 68440,
+    "forks": 22722,
+    "openIssues": 8,
+    "pushedAt": "2026-07-03T13:49:40Z",
+    "stars": 68490,
     "topics": [
       "agentic-ai",
       "agentic-framework",
@@ -5699,10 +5699,10 @@
   "https://github.com/microsoft/generative-ai-for-beginners": {
     "archived": false,
     "createdAt": "2023-06-19T16:28:59Z",
-    "forks": 60466,
-    "openIssues": 10,
-    "pushedAt": "2026-07-02T03:43:11Z",
-    "stars": 112588,
+    "forks": 60491,
+    "openIssues": 1,
+    "pushedAt": "2026-07-03T09:53:01Z",
+    "stars": 112625,
     "topics": [
       "ai",
       "azure",
@@ -5725,8 +5725,8 @@
     "createdAt": "2025-04-04T20:46:17Z",
     "forks": 5439,
     "openIssues": 3,
-    "pushedAt": "2026-07-02T15:50:11Z",
-    "stars": 16667,
+    "pushedAt": "2026-07-03T13:21:30Z",
+    "stars": 16674,
     "topics": [
       "csharp",
       "java",
@@ -5750,7 +5750,7 @@
     "forks": 1105,
     "openIssues": 81,
     "pushedAt": "2026-06-18T13:16:52Z",
-    "stars": 11168,
+    "stars": 11173,
     "topics": [
       "ai",
       "ai-application-development",
@@ -5780,10 +5780,10 @@
   "https://github.com/milvus-io/milvus": {
     "archived": false,
     "createdAt": "2019-09-16T06:43:43Z",
-    "forks": 4101,
-    "openIssues": 932,
-    "pushedAt": "2026-07-03T03:58:30Z",
-    "stars": 45052,
+    "forks": 4105,
+    "openIssues": 950,
+    "pushedAt": "2026-07-03T10:00:30Z",
+    "stars": 45063,
     "topics": [
       "anns",
       "cloud-native",
@@ -5808,10 +5808,10 @@
   "https://github.com/mksglu/context-mode": {
     "archived": false,
     "createdAt": "2026-02-23T05:56:28Z",
-    "forks": 1297,
-    "openIssues": 33,
-    "pushedAt": "2026-07-02T12:36:48Z",
-    "stars": 18506,
+    "forks": 1298,
+    "openIssues": 37,
+    "pushedAt": "2026-07-03T18:25:46Z",
+    "stars": 18551,
     "topics": [
       "antigravity",
       "claude",
@@ -5838,10 +5838,10 @@
   "https://github.com/mlabonne/llm-course": {
     "archived": false,
     "createdAt": "2023-06-17T22:16:25Z",
-    "forks": 9397,
+    "forks": 9398,
     "openIssues": 84,
     "pushedAt": "2026-02-05T13:09:26Z",
-    "stars": 80647,
+    "stars": 80661,
     "topics": [
       "course",
       "large-language-models",
@@ -5853,10 +5853,10 @@
   "https://github.com/mlflow/mlflow": {
     "archived": false,
     "createdAt": "2018-06-05T16:05:58Z",
-    "forks": 5939,
-    "openIssues": 2025,
-    "pushedAt": "2026-07-03T01:22:43Z",
-    "stars": 26832,
+    "forks": 5947,
+    "openIssues": 2030,
+    "pushedAt": "2026-07-03T11:28:16Z",
+    "stars": 26852,
     "topics": [
       "agentops",
       "agents",
@@ -5881,19 +5881,19 @@
   "https://github.com/modelcontextprotocol/servers": {
     "archived": false,
     "createdAt": "2024-11-19T01:10:17Z",
-    "forks": 11129,
-    "openIssues": 620,
-    "pushedAt": "2026-06-29T07:13:57Z",
-    "stars": 87987,
+    "forks": 11140,
+    "openIssues": 631,
+    "pushedAt": "2026-07-04T00:16:56Z",
+    "stars": 88028,
     "topics": []
   },
   "https://github.com/modelscope/FunASR": {
     "archived": false,
     "createdAt": "2022-11-24T02:28:11Z",
-    "forks": 1903,
-    "openIssues": 9,
+    "forks": 1901,
+    "openIssues": 10,
     "pushedAt": "2026-06-30T12:03:32Z",
-    "stars": 18817,
+    "stars": 18850,
     "topics": [
       "asr",
       "audio",
@@ -5920,10 +5920,10 @@
   "https://github.com/mrexodia/ida-pro-mcp": {
     "archived": false,
     "createdAt": "2025-03-25T22:23:41Z",
-    "forks": 1164,
+    "forks": 1168,
     "openIssues": 37,
     "pushedAt": "2026-06-22T12:50:18Z",
-    "stars": 9845,
+    "stars": 9864,
     "topics": [
       "ai",
       "aiagent",
@@ -5939,10 +5939,10 @@
   "https://github.com/mudler/LocalAI": {
     "archived": false,
     "createdAt": "2023-03-18T22:58:02Z",
-    "forks": 4190,
-    "openIssues": 195,
-    "pushedAt": "2026-07-02T23:05:44Z",
-    "stars": 47288,
+    "forks": 4195,
+    "openIssues": 204,
+    "pushedAt": "2026-07-03T21:35:41Z",
+    "stars": 47306,
     "topics": [
       "agents",
       "ai",
@@ -5970,7 +5970,7 @@
     "forks": 425,
     "openIssues": 18,
     "pushedAt": "2026-06-29T18:24:06Z",
-    "stars": 7449,
+    "stars": 7454,
     "topics": [
       "ai",
       "chatgpt",
@@ -5990,10 +5990,10 @@
   "https://github.com/mukul975/Anthropic-Cybersecurity-Skills": {
     "archived": false,
     "createdAt": "2026-02-25T09:47:50Z",
-    "forks": 2729,
-    "openIssues": 29,
+    "forks": 2749,
+    "openIssues": 30,
     "pushedAt": "2026-06-26T14:37:50Z",
-    "stars": 24025,
+    "stars": 24206,
     "topics": [
       "ai-agents",
       "claude-code",
@@ -6020,10 +6020,10 @@
   "https://github.com/n8n-io/n8n": {
     "archived": false,
     "createdAt": "2019-06-22T09:24:21Z",
-    "forks": 59014,
-    "openIssues": 1454,
-    "pushedAt": "2026-07-03T04:30:01Z",
-    "stars": 194968,
+    "forks": 59037,
+    "openIssues": 1451,
+    "pushedAt": "2026-07-03T23:48:17Z",
+    "stars": 195085,
     "topics": [
       "ai",
       "apis",
@@ -6050,10 +6050,10 @@
   "https://github.com/nanocoai/nanoclaw": {
     "archived": false,
     "createdAt": "2026-01-31T15:47:22Z",
-    "forks": 12900,
-    "openIssues": 803,
+    "forks": 12898,
+    "openIssues": 808,
     "pushedAt": "2026-07-02T16:53:23Z",
-    "stars": 30094,
+    "stars": 30116,
     "topics": [
       "ai-agents",
       "ai-assistant",
@@ -6065,10 +6065,10 @@
   "https://github.com/nebuly-ai/optimate": {
     "archived": false,
     "createdAt": "2022-02-12T17:17:14Z",
-    "forks": 620,
+    "forks": 619,
     "openIssues": 110,
     "pushedAt": "2024-07-22T02:07:03Z",
-    "stars": 8334,
+    "stars": 8333,
     "topics": [
       "ai",
       "analytics",
@@ -6081,10 +6081,10 @@
   "https://github.com/neuml/txtai": {
     "archived": false,
     "createdAt": "2020-08-09T19:14:59Z",
-    "forks": 841,
-    "openIssues": 9,
+    "forks": 839,
+    "openIssues": 8,
     "pushedAt": "2026-07-02T14:44:53Z",
-    "stars": 12697,
+    "stars": 12696,
     "topics": [
       "agents",
       "ai",
@@ -6111,10 +6111,10 @@
   "https://github.com/nexu-io/html-anything": {
     "archived": false,
     "createdAt": "2026-05-11T09:40:38Z",
-    "forks": 736,
+    "forks": 739,
     "openIssues": 52,
     "pushedAt": "2026-07-03T03:01:58Z",
-    "stars": 7483,
+    "stars": 7506,
     "topics": [
       "agent-skills",
       "agentic",
@@ -6141,10 +6141,10 @@
   "https://github.com/nexu-io/open-design": {
     "archived": false,
     "createdAt": "2026-04-28T04:25:20Z",
-    "forks": 8476,
-    "openIssues": 476,
-    "pushedAt": "2026-07-03T04:30:24Z",
-    "stars": 74379,
+    "forks": 8524,
+    "openIssues": 506,
+    "pushedAt": "2026-07-04T02:33:22Z",
+    "stars": 74749,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -6171,10 +6171,10 @@
   "https://github.com/nidhinjs/prompt-master": {
     "archived": false,
     "createdAt": "2026-03-11T16:25:43Z",
-    "forks": 1208,
-    "openIssues": 24,
+    "forks": 1212,
+    "openIssues": 19,
     "pushedAt": "2026-06-10T16:14:44Z",
-    "stars": 10149,
+    "stars": 10179,
     "topics": [
       "claude-ai",
       "claude-skills",
@@ -6185,10 +6185,10 @@
   "https://github.com/nukeop/nuclear": {
     "archived": false,
     "createdAt": "2016-09-22T22:58:21Z",
-    "forks": 1299,
+    "forks": 1300,
     "openIssues": 5,
     "pushedAt": "2026-07-01T20:32:55Z",
-    "stars": 17973,
+    "stars": 17976,
     "topics": [
       "agent",
       "ai",
@@ -6211,16 +6211,16 @@
   "https://github.com/numman-ali/openskills": {
     "archived": false,
     "createdAt": "2025-10-26T19:43:54Z",
-    "forks": 664,
+    "forks": 666,
     "openIssues": 42,
     "pushedAt": "2026-01-18T13:09:50Z",
-    "stars": 10533,
+    "stars": 10539,
     "topics": []
   },
   "https://github.com/oinone/oinone-pamirs": {
     "archived": false,
     "createdAt": "2025-05-10T06:27:08Z",
-    "forks": 295,
+    "forks": 294,
     "openIssues": 0,
     "pushedAt": "2026-06-05T06:41:10Z",
     "stars": 2495,
@@ -6236,10 +6236,10 @@
   "https://github.com/ollama/ollama": {
     "archived": false,
     "createdAt": "2023-06-26T19:39:32Z",
-    "forks": 16802,
-    "openIssues": 3439,
-    "pushedAt": "2026-07-03T00:11:39Z",
-    "stars": 175331,
+    "forks": 16824,
+    "openIssues": 3387,
+    "pushedAt": "2026-07-04T01:30:46Z",
+    "stars": 175407,
     "topics": [
       "deepseek",
       "gemma",
@@ -6262,9 +6262,9 @@
     "archived": false,
     "createdAt": "2024-06-25T19:16:02Z",
     "forks": 2026,
-    "openIssues": 370,
+    "openIssues": 372,
     "pushedAt": "2026-06-09T23:18:58Z",
-    "stars": 26112,
+    "stars": 26113,
     "topics": [
       "ai",
       "cursor",
@@ -6290,10 +6290,10 @@
   "https://github.com/open-metadata/OpenMetadata": {
     "archived": false,
     "createdAt": "2021-08-01T21:17:17Z",
-    "forks": 2203,
-    "openIssues": 987,
-    "pushedAt": "2026-07-03T04:33:23Z",
-    "stars": 14377,
+    "forks": 2202,
+    "openIssues": 972,
+    "pushedAt": "2026-07-04T03:56:47Z",
+    "stars": 14378,
     "topics": [
       "context",
       "context-layer",
@@ -6320,10 +6320,10 @@
   "https://github.com/open-webui/open-webui": {
     "archived": false,
     "createdAt": "2023-10-06T22:08:27Z",
-    "forks": 20784,
-    "openIssues": 284,
+    "forks": 20807,
+    "openIssues": 290,
     "pushedAt": "2026-07-02T17:38:23Z",
-    "stars": 143926,
+    "stars": 144107,
     "topics": [
       "ai",
       "llm",
@@ -6345,10 +6345,10 @@
   "https://github.com/openlit/openlit": {
     "archived": false,
     "createdAt": "2024-01-23T17:40:59Z",
-    "forks": 309,
-    "openIssues": 32,
-    "pushedAt": "2026-07-02T16:55:24Z",
-    "stars": 2568,
+    "forks": 311,
+    "openIssues": 36,
+    "pushedAt": "2026-07-03T12:20:27Z",
+    "stars": 2570,
     "topics": [
       "ai-observability",
       "amd-gpu",
@@ -6375,10 +6375,10 @@
   "https://github.com/openobserve/openobserve": {
     "archived": false,
     "createdAt": "2023-02-02T03:29:51Z",
-    "forks": 897,
-    "openIssues": 591,
-    "pushedAt": "2026-07-03T04:24:07Z",
-    "stars": 19709,
+    "forks": 898,
+    "openIssues": 588,
+    "pushedAt": "2026-07-04T03:45:35Z",
+    "stars": 19725,
     "topics": [
       "analytics",
       "apm",
@@ -6405,10 +6405,10 @@
   "https://github.com/oraios/serena": {
     "archived": false,
     "createdAt": "2025-03-23T22:35:24Z",
-    "forks": 1732,
+    "forks": 1731,
     "openIssues": 122,
-    "pushedAt": "2026-07-02T23:05:45Z",
-    "stars": 26033,
+    "pushedAt": "2026-07-03T13:42:47Z",
+    "stars": 26071,
     "topics": [
       "agent",
       "ai",
@@ -6427,10 +6427,10 @@
   "https://github.com/osaurus-ai/osaurus": {
     "archived": false,
     "createdAt": "2025-08-17T15:05:39Z",
-    "forks": 370,
-    "openIssues": 92,
-    "pushedAt": "2026-07-03T04:19:54Z",
-    "stars": 6596,
+    "forks": 371,
+    "openIssues": 98,
+    "pushedAt": "2026-07-04T04:12:37Z",
+    "stars": 6647,
     "topics": [
       "anthropic",
       "apple-foundation-models",
@@ -6468,7 +6468,7 @@
     "forks": 1433,
     "openIssues": 10,
     "pushedAt": "2026-06-29T21:18:26Z",
-    "stars": 59158,
+    "stars": 59144,
     "topics": [
       "chatbot",
       "hugging-face",
@@ -6490,10 +6490,10 @@
   "https://github.com/plandex-ai/plandex": {
     "archived": false,
     "createdAt": "2023-10-24T22:11:43Z",
-    "forks": 1154,
+    "forks": 1155,
     "openIssues": 57,
     "pushedAt": "2025-10-03T21:49:58Z",
-    "stars": 15494,
+    "stars": 15498,
     "topics": [
       "ai",
       "ai-agents",
@@ -6528,10 +6528,10 @@
   "https://github.com/promptfoo/promptfoo": {
     "archived": false,
     "createdAt": "2023-04-28T15:48:49Z",
-    "forks": 2030,
-    "openIssues": 374,
-    "pushedAt": "2026-07-03T04:31:02Z",
-    "stars": 22870,
+    "forks": 2035,
+    "openIssues": 378,
+    "pushedAt": "2026-07-04T04:29:37Z",
+    "stars": 22896,
     "topics": [
       "ci",
       "ci-cd",
@@ -6557,9 +6557,9 @@
     "archived": false,
     "createdAt": "2023-02-09T18:22:52Z",
     "forks": 715,
-    "openIssues": 82,
-    "pushedAt": "2026-07-02T09:25:56Z",
-    "stars": 6118,
+    "openIssues": 83,
+    "pushedAt": "2026-07-03T09:29:42Z",
+    "stars": 6122,
     "topics": [
       "chatgpt",
       "chatgpt-api",
@@ -6585,10 +6585,10 @@
   "https://github.com/punkpeye/awesome-mcp-servers": {
     "archived": false,
     "createdAt": "2024-11-30T04:49:10Z",
-    "forks": 12394,
-    "openIssues": 2109,
+    "forks": 12447,
+    "openIssues": 2171,
     "pushedAt": "2026-06-26T06:26:58Z",
-    "stars": 90208,
+    "stars": 90254,
     "topics": [
       "ai",
       "mcp"
@@ -6597,10 +6597,10 @@
   "https://github.com/pydantic/logfire": {
     "archived": false,
     "createdAt": "2024-04-23T11:50:23Z",
-    "forks": 252,
+    "forks": 253,
     "openIssues": 239,
-    "pushedAt": "2026-07-03T03:44:50Z",
-    "stars": 4342,
+    "pushedAt": "2026-07-03T15:02:30Z",
+    "stars": 4346,
     "topics": [
       "agent-observability",
       "ai",
@@ -6645,10 +6645,10 @@
   "https://github.com/rasbt/LLMs-from-scratch": {
     "archived": false,
     "createdAt": "2023-07-23T18:15:57Z",
-    "forks": 15088,
+    "forks": 15099,
     "openIssues": 3,
     "pushedAt": "2026-06-02T14:14:19Z",
-    "stars": 98414,
+    "stars": 98461,
     "topics": [
       "ai",
       "artificial-intelligence",
@@ -6674,10 +6674,10 @@
   "https://github.com/ray-project/ray": {
     "archived": false,
     "createdAt": "2016-10-25T19:38:30Z",
-    "forks": 7751,
-    "openIssues": 3474,
-    "pushedAt": "2026-07-03T01:06:05Z",
-    "stars": 43098,
+    "forks": 7754,
+    "openIssues": 3469,
+    "pushedAt": "2026-07-04T00:58:58Z",
+    "stars": 43109,
     "topics": [
       "data-science",
       "deep-learning",
@@ -6707,16 +6707,16 @@
     "forks": 300,
     "openIssues": 10,
     "pushedAt": "2026-03-31T08:03:16Z",
-    "stars": 1837,
+    "stars": 1840,
     "topics": []
   },
   "https://github.com/refly-ai/refly": {
     "archived": false,
     "createdAt": "2024-02-19T11:04:30Z",
-    "forks": 717,
+    "forks": 718,
     "openIssues": 93,
     "pushedAt": "2026-03-25T14:51:18Z",
-    "stars": 7417,
+    "stars": 7418,
     "topics": [
       "agent",
       "agent-skills",
@@ -6740,7 +6740,7 @@
   "https://github.com/rockbenben/ChatGPT-Shortcut": {
     "archived": false,
     "createdAt": "2023-02-24T12:53:49Z",
-    "forks": 939,
+    "forks": 938,
     "openIssues": 2,
     "pushedAt": "2026-06-30T10:19:24Z",
     "stars": 8588,
@@ -6769,10 +6769,10 @@
   "https://github.com/rohitg00/agentmemory": {
     "archived": false,
     "createdAt": "2026-02-25T07:32:52Z",
-    "forks": 2013,
-    "openIssues": 350,
+    "forks": 2018,
+    "openIssues": 355,
     "pushedAt": "2026-06-29T06:13:48Z",
-    "stars": 24487,
+    "stars": 24520,
     "topics": [
       "agentmemory",
       "agents",
@@ -6792,10 +6792,10 @@
   "https://github.com/rohitg00/ai-engineering-from-scratch": {
     "archived": false,
     "createdAt": "2026-03-18T18:38:02Z",
-    "forks": 6154,
-    "openIssues": 92,
+    "forks": 6171,
+    "openIssues": 93,
     "pushedAt": "2026-06-25T19:43:11Z",
-    "stars": 37176,
+    "stars": 37262,
     "topics": [
       "agents",
       "ai",
@@ -6822,10 +6822,10 @@
   "https://github.com/rtk-ai/rtk": {
     "archived": false,
     "createdAt": "2026-01-22T16:54:16Z",
-    "forks": 4208,
-    "openIssues": 1465,
-    "pushedAt": "2026-07-02T21:04:45Z",
-    "stars": 68038,
+    "forks": 4221,
+    "openIssues": 1471,
+    "pushedAt": "2026-07-03T17:21:25Z",
+    "stars": 68331,
     "topics": [
       "agentic-coding",
       "ai-coding",
@@ -6845,10 +6845,10 @@
   "https://github.com/run-llama/llama_index": {
     "archived": false,
     "createdAt": "2022-11-02T04:24:54Z",
-    "forks": 7673,
-    "openIssues": 485,
+    "forks": 7679,
+    "openIssues": 486,
     "pushedAt": "2026-07-02T17:54:20Z",
-    "stars": 50610,
+    "stars": 50632,
     "topics": [
       "agents",
       "application",
@@ -6865,10 +6865,10 @@
   "https://github.com/ruvnet/claude-flow": {
     "archived": false,
     "createdAt": "2025-06-02T21:24:20Z",
-    "forks": 7365,
-    "openIssues": 711,
-    "pushedAt": "2026-07-03T02:00:25Z",
-    "stars": 62691,
+    "forks": 7397,
+    "openIssues": 723,
+    "pushedAt": "2026-07-04T02:33:45Z",
+    "stars": 62883,
     "topics": [
       "agentic-ai",
       "agentic-framework",
@@ -6895,10 +6895,10 @@
   "https://github.com/ruvnet/ruflo": {
     "archived": false,
     "createdAt": "2025-06-02T21:24:20Z",
-    "forks": 7365,
-    "openIssues": 711,
-    "pushedAt": "2026-07-03T02:00:25Z",
-    "stars": 62691,
+    "forks": 7397,
+    "openIssues": 723,
+    "pushedAt": "2026-07-04T02:33:45Z",
+    "stars": 62883,
     "topics": [
       "agentic-ai",
       "agentic-framework",
@@ -6925,10 +6925,10 @@
   "https://github.com/safishamsi/graphify": {
     "archived": false,
     "createdAt": "2026-04-03T15:49:07Z",
-    "forks": 7583,
-    "openIssues": 409,
-    "pushedAt": "2026-07-02T23:32:25Z",
-    "stars": 76286,
+    "forks": 7645,
+    "openIssues": 417,
+    "pushedAt": "2026-07-04T02:12:32Z",
+    "stars": 77201,
     "topics": [
       "antigravity",
       "claude-code",
@@ -6946,10 +6946,10 @@
   "https://github.com/samber/cc-skills-golang": {
     "archived": false,
     "createdAt": "2026-03-21T23:10:11Z",
-    "forks": 152,
+    "forks": 153,
     "openIssues": 3,
     "pushedAt": "2026-07-02T10:10:51Z",
-    "stars": 2390,
+    "stars": 2398,
     "topics": [
       "agent",
       "agent-skills",
@@ -6975,10 +6975,10 @@
   "https://github.com/sansan0/TrendRadar": {
     "archived": false,
     "createdAt": "2025-04-28T11:42:16Z",
-    "forks": 24764,
-    "openIssues": 47,
+    "forks": 24762,
+    "openIssues": 49,
     "pushedAt": "2026-07-02T11:29:45Z",
-    "stars": 60188,
+    "stars": 60218,
     "topics": [
       "ai",
       "bark",
@@ -7001,10 +7001,10 @@
   "https://github.com/sapientinc/HRM": {
     "archived": false,
     "createdAt": "2025-07-09T02:09:32Z",
-    "forks": 1831,
-    "openIssues": 75,
+    "forks": 1830,
+    "openIssues": 76,
     "pushedAt": "2026-03-31T23:08:31Z",
-    "stars": 12584,
+    "stars": 12585,
     "topics": [
       "brain-inspired-ai",
       "deep-learning",
@@ -7016,9 +7016,9 @@
     "archived": false,
     "createdAt": "2025-10-31T14:15:28Z",
     "forks": 6189,
-    "openIssues": 13,
-    "pushedAt": "2026-07-03T04:24:06Z",
-    "stars": 61874,
+    "openIssues": 11,
+    "pushedAt": "2026-07-04T04:30:04Z",
+    "stars": 61937,
     "topics": [
       "agentic-ai",
       "agentic-coding",
@@ -7045,10 +7045,10 @@
   "https://github.com/shareAI-lab/learn-claude-code": {
     "archived": false,
     "createdAt": "2025-06-29T15:34:15Z",
-    "forks": 11353,
-    "openIssues": 45,
+    "forks": 11365,
+    "openIssues": 47,
     "pushedAt": "2026-06-26T19:36:35Z",
-    "stars": 69648,
+    "stars": 69761,
     "topics": [
       "agent",
       "agent-development",
@@ -7066,9 +7066,9 @@
     "archived": false,
     "createdAt": "2026-01-14T17:48:09Z",
     "forks": 6756,
-    "openIssues": 4,
-    "pushedAt": "2026-07-02T10:04:28Z",
-    "stars": 42254,
+    "openIssues": 2,
+    "pushedAt": "2026-07-03T16:58:59Z",
+    "stars": 42306,
     "topics": [
       "agent-skills",
       "agentic-skills",
@@ -7095,19 +7095,19 @@
   "https://github.com/simonlin1212/global-stock-data": {
     "archived": false,
     "createdAt": "2026-05-20T10:12:30Z",
-    "forks": 163,
+    "forks": 165,
     "openIssues": 0,
     "pushedAt": "2026-06-20T07:24:13Z",
-    "stars": 1033,
+    "stars": 1053,
     "topics": []
   },
   "https://github.com/simonw/llm": {
     "archived": false,
     "createdAt": "2023-04-01T21:16:57Z",
-    "forks": 906,
+    "forks": 907,
     "openIssues": 634,
     "pushedAt": "2026-07-02T17:11:39Z",
-    "stars": 12132,
+    "stars": 12137,
     "topics": [
       "ai",
       "llms",
@@ -7117,10 +7117,10 @@
   "https://github.com/smtg-ai/claude-squad": {
     "archived": false,
     "createdAt": "2025-03-09T20:00:41Z",
-    "forks": 573,
+    "forks": 574,
     "openIssues": 52,
     "pushedAt": "2026-06-17T16:05:14Z",
-    "stars": 8005,
+    "stars": 8013,
     "topics": [
       "claude-code",
       "cli",
@@ -7132,19 +7132,19 @@
   "https://github.com/sst/opencode": {
     "archived": false,
     "createdAt": "2025-04-30T20:08:00Z",
-    "forks": 22465,
-    "openIssues": 5920,
-    "pushedAt": "2026-07-03T04:25:57Z",
-    "stars": 181809,
+    "forks": 22529,
+    "openIssues": 5279,
+    "pushedAt": "2026-07-04T04:25:01Z",
+    "stars": 182151,
     "topics": []
   },
   "https://github.com/stackblitz/bolt.new": {
     "archived": false,
     "createdAt": "2024-09-24T16:07:49Z",
-    "forks": 14680,
+    "forks": 14677,
     "openIssues": 8188,
     "pushedAt": "2024-12-17T06:29:27Z",
-    "stars": 16438,
+    "stars": 16443,
     "topics": [
       "ai-playground",
       "anthropic",
@@ -7155,10 +7155,10 @@
   "https://github.com/stanford-oval/storm": {
     "archived": false,
     "createdAt": "2024-03-24T16:23:39Z",
-    "forks": 2780,
+    "forks": 2785,
     "openIssues": 122,
     "pushedAt": "2025-09-30T18:07:21Z",
-    "stars": 29776,
+    "stars": 29802,
     "topics": [
       "agentic-rag",
       "deep-research",
@@ -7174,10 +7174,10 @@
   "https://github.com/stas00/ml-engineering": {
     "archived": false,
     "createdAt": "2020-09-02T19:23:01Z",
-    "forks": 1158,
+    "forks": 1160,
     "openIssues": 2,
     "pushedAt": "2026-07-01T23:28:52Z",
-    "stars": 18227,
+    "stars": 18237,
     "topics": [
       "ai",
       "debugging",
@@ -7200,10 +7200,10 @@
   "https://github.com/stefan-jansen/machine-learning-for-trading": {
     "archived": false,
     "createdAt": "2018-05-09T12:33:08Z",
-    "forks": 5356,
+    "forks": 5358,
     "openIssues": 1,
     "pushedAt": "2026-07-01T18:41:07Z",
-    "stars": 19489,
+    "stars": 19495,
     "topics": [
       "algorithmic-trading",
       "artificial-intelligence",
@@ -7228,10 +7228,10 @@
   "https://github.com/steven2358/awesome-generative-ai": {
     "archived": false,
     "createdAt": "2022-10-20T11:18:17Z",
-    "forks": 1803,
-    "openIssues": 403,
+    "forks": 1804,
+    "openIssues": 402,
     "pushedAt": "2026-06-28T02:11:22Z",
-    "stars": 12233,
+    "stars": 12237,
     "topics": [
       "ai",
       "artificial-intelligence",
@@ -7249,7 +7249,7 @@
     "forks": 194,
     "openIssues": 69,
     "pushedAt": "2026-02-26T21:48:10Z",
-    "stars": 3095,
+    "stars": 3094,
     "topics": [
       "agentic-ai",
       "ai",
@@ -7285,10 +7285,10 @@
   "https://github.com/superset-sh/superset": {
     "archived": false,
     "createdAt": "2025-10-21T09:16:51Z",
-    "forks": 1053,
-    "openIssues": 1420,
-    "pushedAt": "2026-07-03T03:36:51Z",
-    "stars": 12224,
+    "forks": 1056,
+    "openIssues": 1424,
+    "pushedAt": "2026-07-04T02:17:39Z",
+    "stars": 12244,
     "topics": [
       "agentic-ai",
       "ai-agents",
@@ -7337,7 +7337,7 @@
     "forks": 558,
     "openIssues": 9,
     "pushedAt": "2026-02-16T06:45:25Z",
-    "stars": 6236,
+    "stars": 6238,
     "topics": [
       "ai",
       "gpt",
@@ -7351,10 +7351,10 @@
   "https://github.com/tadata-org/fastapi_mcp": {
     "archived": false,
     "createdAt": "2025-03-08T11:15:43Z",
-    "forks": 953,
-    "openIssues": 159,
+    "forks": 952,
+    "openIssues": 158,
     "pushedAt": "2025-11-24T14:51:54Z",
-    "stars": 11932,
+    "stars": 11936,
     "topics": [
       "ai",
       "authentication",
@@ -7393,9 +7393,9 @@
     "archived": false,
     "createdAt": "2026-01-07T15:27:19Z",
     "forks": 2332,
-    "openIssues": 14,
-    "pushedAt": "2026-07-03T04:24:29Z",
-    "stars": 17109,
+    "openIssues": 11,
+    "pushedAt": "2026-07-03T22:18:09Z",
+    "stars": 17156,
     "topics": [
       "agentic-skill",
       "api",
@@ -7418,8 +7418,8 @@
     "createdAt": "2020-05-29T02:45:58Z",
     "forks": 614,
     "openIssues": 42,
-    "pushedAt": "2026-07-03T02:26:35Z",
-    "stars": 5326,
+    "pushedAt": "2026-07-04T03:39:58Z",
+    "stars": 5331,
     "topics": [
       "agent",
       "agentic",
@@ -7448,7 +7448,7 @@
     "forks": 6647,
     "openIssues": 3,
     "pushedAt": "2026-06-18T03:46:44Z",
-    "stars": 73105,
+    "stars": 73120,
     "topics": [
       "ai-agent",
       "ai-agents",
@@ -7470,10 +7470,10 @@
   "https://github.com/thedotmack/claude-mem": {
     "archived": false,
     "createdAt": "2025-08-31T20:50:03Z",
-    "forks": 7398,
-    "openIssues": 245,
-    "pushedAt": "2026-07-03T04:30:17Z",
-    "stars": 85570,
+    "forks": 7408,
+    "openIssues": 249,
+    "pushedAt": "2026-07-04T02:17:31Z",
+    "stars": 85715,
     "topics": [
       "ai",
       "ai-agents",
@@ -7503,7 +7503,7 @@
     "forks": 396,
     "openIssues": 16,
     "pushedAt": "2023-09-17T02:06:16Z",
-    "stars": 5320,
+    "stars": 5321,
     "topics": [
       "prompt",
       "prompt-engineering",
@@ -7513,10 +7513,10 @@
   "https://github.com/tiann/hapi": {
     "archived": false,
     "createdAt": "2025-12-24T10:44:41Z",
-    "forks": 474,
-    "openIssues": 183,
+    "forks": 473,
+    "openIssues": 184,
     "pushedAt": "2026-06-29T03:42:42Z",
-    "stars": 4389,
+    "stars": 4400,
     "topics": [
       "app",
       "claude-code",
@@ -7532,16 +7532,16 @@
     "forks": 184,
     "openIssues": 12,
     "pushedAt": "2026-05-17T03:43:36Z",
-    "stars": 2180,
+    "stars": 2181,
     "topics": []
   },
   "https://github.com/topoteretes/cognee": {
     "archived": false,
     "createdAt": "2023-08-16T16:16:33Z",
-    "forks": 2471,
-    "openIssues": 518,
-    "pushedAt": "2026-07-02T18:12:20Z",
-    "stars": 26661,
+    "forks": 2490,
+    "openIssues": 555,
+    "pushedAt": "2026-07-03T20:27:56Z",
+    "stars": 26832,
     "topics": [
       "agent-memory",
       "agent-skills",
@@ -7568,9 +7568,9 @@
     "archived": false,
     "createdAt": "2023-09-02T14:42:59Z",
     "forks": 1010,
-    "openIssues": 585,
+    "openIssues": 586,
     "pushedAt": "2026-07-01T18:11:56Z",
-    "stars": 7262,
+    "stars": 7264,
     "topics": [
       "artifical-intelligence",
       "datascience",
@@ -7595,10 +7595,10 @@
   "https://github.com/tractorjuice/arc-kit": {
     "archived": false,
     "createdAt": "2025-10-14T10:25:11Z",
-    "forks": 253,
-    "openIssues": 14,
-    "pushedAt": "2026-07-02T18:58:39Z",
-    "stars": 2057,
+    "forks": 254,
+    "openIssues": 13,
+    "pushedAt": "2026-07-03T20:57:30Z",
+    "stars": 2059,
     "topics": [
       "ai-agents",
       "ai-governance",
@@ -7625,10 +7625,10 @@
   "https://github.com/triggerdotdev/trigger.dev": {
     "archived": false,
     "createdAt": "2022-11-30T14:59:07Z",
-    "forks": 1335,
-    "openIssues": 390,
-    "pushedAt": "2026-07-03T02:24:23Z",
-    "stars": 15542,
+    "forks": 1338,
+    "openIssues": 387,
+    "pushedAt": "2026-07-04T02:35:06Z",
+    "stars": 15554,
     "topics": [
       "ai",
       "ai-agent-framework",
@@ -7649,9 +7649,9 @@
     "archived": false,
     "createdAt": "2026-02-07T13:00:49Z",
     "forks": 279,
-    "openIssues": 9,
-    "pushedAt": "2026-06-30T11:36:31Z",
-    "stars": 5508,
+    "openIssues": 4,
+    "pushedAt": "2026-07-04T00:53:17Z",
+    "stars": 5513,
     "topics": [
       "ai-coding",
       "macos",
@@ -7666,8 +7666,8 @@
   "https://github.com/u14app/deep-research": {
     "archived": false,
     "createdAt": "2025-02-22T03:29:07Z",
-    "forks": 1054,
-    "openIssues": 37,
+    "forks": 1053,
+    "openIssues": 36,
     "pushedAt": "2026-06-18T14:43:29Z",
     "stars": 4630,
     "topics": [
@@ -7686,10 +7686,10 @@
   "https://github.com/unslothai/unsloth": {
     "archived": false,
     "createdAt": "2023-11-29T16:50:09Z",
-    "forks": 6091,
-    "openIssues": 1041,
-    "pushedAt": "2026-07-02T22:02:26Z",
-    "stars": 67759,
+    "forks": 6093,
+    "openIssues": 1033,
+    "pushedAt": "2026-07-04T04:02:49Z",
+    "stars": 67787,
     "topics": [
       "agent",
       "deepseek",
@@ -7715,10 +7715,10 @@
   "https://github.com/upstash/context7": {
     "archived": false,
     "createdAt": "2025-03-26T23:40:39Z",
-    "forks": 2740,
-    "openIssues": 38,
-    "pushedAt": "2026-07-01T10:38:16Z",
-    "stars": 58498,
+    "forks": 2744,
+    "openIssues": 42,
+    "pushedAt": "2026-07-03T14:13:42Z",
+    "stars": 58550,
     "topics": [
       "llm",
       "mcp",
@@ -7729,10 +7729,10 @@
   "https://github.com/vercel/eve": {
     "archived": false,
     "createdAt": "2026-06-16T10:51:20Z",
-    "forks": 243,
-    "openIssues": 157,
-    "pushedAt": "2026-07-03T02:28:44Z",
-    "stars": 3092,
+    "forks": 252,
+    "openIssues": 164,
+    "pushedAt": "2026-07-04T00:10:43Z",
+    "stars": 3160,
     "topics": [
       "agent",
       "framework",
@@ -7748,10 +7748,10 @@
   "https://github.com/vllm-project/vllm": {
     "archived": false,
     "createdAt": "2023-02-09T11:23:20Z",
-    "forks": 18849,
-    "openIssues": 5510,
-    "pushedAt": "2026-07-03T04:11:48Z",
-    "stars": 85209,
+    "forks": 18907,
+    "openIssues": 5550,
+    "pushedAt": "2026-07-04T04:26:10Z",
+    "stars": 85302,
     "topics": [
       "amd",
       "blackwell",
@@ -7778,10 +7778,10 @@
   "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep": {
     "archived": false,
     "createdAt": "2026-03-10T07:31:45Z",
-    "forks": 1178,
-    "openIssues": 51,
-    "pushedAt": "2026-07-02T15:10:51Z",
-    "stars": 12943,
+    "forks": 1177,
+    "openIssues": 52,
+    "pushedAt": "2026-07-03T11:23:03Z",
+    "stars": 12972,
     "topics": [
       "ai-research",
       "ai-tools",
@@ -7808,10 +7808,10 @@
   "https://github.com/wgpsec/ENScan_GO": {
     "archived": false,
     "createdAt": "2022-01-04T14:07:28Z",
-    "forks": 429,
+    "forks": 430,
     "openIssues": 26,
     "pushedAt": "2026-03-30T08:44:13Z",
-    "stars": 4490,
+    "stars": 4497,
     "topics": [
       "app",
       "cyber-security",
@@ -7844,9 +7844,9 @@
   "https://github.com/wonderwhy-er/DesktopCommanderMCP": {
     "archived": false,
     "createdAt": "2024-12-04T08:26:08Z",
-    "forks": 738,
-    "openIssues": 146,
-    "pushedAt": "2026-07-02T12:22:23Z",
+    "forks": 735,
+    "openIssues": 147,
+    "pushedAt": "2026-07-03T14:40:16Z",
     "stars": 6242,
     "topics": [
       "agent",
@@ -7866,7 +7866,7 @@
     "forks": 4022,
     "openIssues": 6,
     "pushedAt": "2026-06-29T01:08:41Z",
-    "stars": 37457,
+    "stars": 37487,
     "topics": [
       "agent-skills",
       "agentic-ai",
@@ -7893,10 +7893,10 @@
   "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools": {
     "archived": false,
     "createdAt": "2025-03-05T16:38:29Z",
-    "forks": 34765,
+    "forks": 34771,
     "openIssues": 154,
-    "pushedAt": "2026-06-12T08:45:15Z",
-    "stars": 141455,
+    "pushedAt": "2026-07-03T22:08:00Z",
+    "stars": 141497,
     "topics": [
       "ai",
       "bolt",
@@ -7923,10 +7923,10 @@
   "https://github.com/xbtlin/ai-berkshire": {
     "archived": false,
     "createdAt": "2026-04-07T11:19:51Z",
-    "forks": 1117,
-    "openIssues": 21,
-    "pushedAt": "2026-07-02T13:00:00Z",
-    "stars": 8773,
+    "forks": 1172,
+    "openIssues": 11,
+    "pushedAt": "2026-07-04T01:21:37Z",
+    "stars": 9215,
     "topics": [
       "ai",
       "ai-agent",
@@ -7954,9 +7954,9 @@
     "archived": false,
     "createdAt": "2025-02-02T14:25:16Z",
     "forks": 3386,
-    "openIssues": 750,
+    "openIssues": 749,
     "pushedAt": "2026-07-01T07:02:33Z",
-    "stars": 9960,
+    "stars": 9970,
     "topics": [
       "dify",
       "esp32",
@@ -7973,7 +7973,7 @@
     "forks": 2157,
     "openIssues": 278,
     "pushedAt": "2026-06-29T02:07:49Z",
-    "stars": 14486,
+    "stars": 14497,
     "topics": [
       "mcp",
       "mcp-server",
@@ -7983,10 +7983,10 @@
   "https://github.com/xstongxue/best-skills": {
     "archived": false,
     "createdAt": "2026-03-05T06:29:28Z",
-    "forks": 152,
+    "forks": 153,
     "openIssues": 1,
     "pushedAt": "2026-05-28T02:08:42Z",
-    "stars": 2116,
+    "stars": 2128,
     "topics": [
       "skills",
       "vibe-coding"
@@ -7996,9 +7996,9 @@
     "archived": false,
     "createdAt": "2024-07-13T07:11:32Z",
     "forks": 1413,
-    "openIssues": 166,
-    "pushedAt": "2026-07-02T01:15:31Z",
-    "stars": 26782,
+    "openIssues": 168,
+    "pushedAt": "2026-07-04T00:49:24Z",
+    "stars": 26816,
     "topics": [
       "ai",
       "anthropic",
@@ -8026,8 +8026,8 @@
     "archived": false,
     "createdAt": "2024-08-14T16:45:16Z",
     "forks": 831,
-    "openIssues": 41,
-    "pushedAt": "2026-06-24T00:51:05Z",
+    "openIssues": 38,
+    "pushedAt": "2026-07-03T19:48:44Z",
     "stars": 18013,
     "topics": []
   },
@@ -8037,7 +8037,7 @@
     "forks": 1852,
     "openIssues": 5,
     "pushedAt": "2026-04-19T00:58:05Z",
-    "stars": 18941,
+    "stars": 18940,
     "topics": [
       "alpaca",
       "alpaca-2",
@@ -8056,9 +8056,9 @@
     "archived": false,
     "createdAt": "2025-10-17T14:43:48Z",
     "forks": 1467,
-    "openIssues": 100,
+    "openIssues": 102,
     "pushedAt": "2026-07-02T21:50:59Z",
-    "stars": 14341,
+    "stars": 14347,
     "topics": [
       "ai-tools",
       "ast-parser",
@@ -8083,10 +8083,10 @@
   "https://github.com/yzfly/Awesome-MCP-ZH": {
     "archived": false,
     "createdAt": "2025-04-03T00:38:51Z",
-    "forks": 630,
-    "openIssues": 1,
-    "pushedAt": "2026-07-02T09:21:33Z",
-    "stars": 7385,
+    "forks": 632,
+    "openIssues": 2,
+    "pushedAt": "2026-07-03T22:06:18Z",
+    "stars": 7393,
     "topics": [
       "claude",
       "claude-mcp",
@@ -8132,10 +8132,10 @@
   "https://github.com/zai-org/ChatGLM2-6B": {
     "archived": false,
     "createdAt": "2023-06-24T06:21:34Z",
-    "forks": 1801,
+    "forks": 1800,
     "openIssues": 452,
     "pushedAt": "2024-06-27T04:05:08Z",
-    "stars": 15563,
+    "stars": 15562,
     "topics": [
       "chatglm",
       "chatglm-6b",
@@ -8146,10 +8146,10 @@
   "https://github.com/zai-org/GLM-5": {
     "archived": false,
     "createdAt": "2026-02-09T08:17:02Z",
-    "forks": 728,
+    "forks": 732,
     "openIssues": 42,
     "pushedAt": "2026-06-20T04:22:09Z",
-    "stars": 6104,
+    "stars": 6145,
     "topics": [
       "agentic-ai",
       "coding",
@@ -8160,19 +8160,19 @@
   "https://github.com/zarazhangrui/codebase-to-course": {
     "archived": false,
     "createdAt": "2026-03-22T21:25:01Z",
-    "forks": 520,
+    "forks": 523,
     "openIssues": 14,
     "pushedAt": "2026-03-30T18:26:09Z",
-    "stars": 5104,
+    "stars": 5115,
     "topics": []
   },
   "https://github.com/zarazhangrui/frontend-slides": {
     "archived": false,
     "createdAt": "2026-01-28T00:42:34Z",
-    "forks": 1990,
-    "openIssues": 57,
+    "forks": 1999,
+    "openIssues": 58,
     "pushedAt": "2026-06-23T20:08:19Z",
-    "stars": 24381,
+    "stars": 24473,
     "topics": [
       "ai-slides",
       "anthropic",
@@ -8190,9 +8190,9 @@
     "archived": false,
     "createdAt": "2025-04-10T02:06:51Z",
     "forks": 183,
-    "openIssues": 5,
-    "pushedAt": "2026-07-01T11:33:53Z",
-    "stars": 4275,
+    "openIssues": 6,
+    "pushedAt": "2026-07-03T06:29:34Z",
+    "stars": 4278,
     "topics": [
       "agent",
       "ai",
@@ -8221,8 +8221,8 @@
     "createdAt": "2022-08-07T08:33:41Z",
     "forks": 10249,
     "openIssues": 22,
-    "pushedAt": "2026-07-03T04:16:52Z",
-    "stars": 45760,
+    "pushedAt": "2026-07-03T06:59:42Z",
+    "stars": 45777,
     "topics": [
       "ai",
       "ai-agent",
@@ -8245,10 +8245,10 @@
   "https://github.com/zilliztech/claude-context": {
     "archived": false,
     "createdAt": "2025-06-06T02:12:47Z",
-    "forks": 895,
+    "forks": 894,
     "openIssues": 127,
     "pushedAt": "2026-06-22T09:35:11Z",
-    "stars": 12037,
+    "stars": 12046,
     "topics": [
       "agent",
       "agentic-rag",
@@ -8275,10 +8275,10 @@
   "https://github.com/zubair-trabzada/ai-legal-claude": {
     "archived": false,
     "createdAt": "2026-03-26T06:32:13Z",
-    "forks": 342,
+    "forks": 343,
     "openIssues": 5,
     "pushedAt": "2026-03-27T02:55:19Z",
-    "stars": 1498,
+    "stars": 1502,
     "topics": []
   }
 }
