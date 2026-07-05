@@ -89,7 +89,7 @@ def check_repo_alive(slug: tuple[str, str], headers: dict) -> tuple[AliveStatus,
       rate-limit не должен выкашивать живые репо из коллекции.
 
     На курируемый tools.yml НЕ влияет — применяется только к автособранным
-    trendshift-репо (см. update_trendshift._prune_dead_new_repos).
+    trendshift-репо (см. update_stars.refresh_trendshift_meta).
     """
     owner, repo = slug
     url = GITHUB_REPO_API.format(owner=owner, repo=repo)
