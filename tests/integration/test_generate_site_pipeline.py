@@ -1,11 +1,11 @@
-"""Integration: generate_site.main() — сборка docs/index.html из tmp tools.yml.
+"""Integration: generate_site.main() — сборка docs/index.html + docs/data.json.
 
-Проверяет: создаётся валидный index.html со встроенными данными, все tools
-на месте, search-поле lowercase (CJK-aware), stars fallback, i18n title_zh.
+Проверяет: создаются оба файла (HTML без inline-данных, payload в data.json),
+все tools на месте, search-поле lowercase (CJK-aware), stars fallback,
+i18n title_zh.
 """
 import datetime
 import json
-import re
 from pathlib import Path
 
 import pytest
@@ -13,11 +13,16 @@ import pytest
 from generate_site import build_data_json, main as site_main
 
 
-def _extract_payload(html: str) -> dict:
-    """Достаёт встроенный window.__DATA__ payload из HTML."""
-    m = re.search(r"window\.__DATA__ = (\{.*?\});\n", html, re.S)
-    assert m, "payload не найден в index.html"
-    return json.loads(m.group(1))
+def _extract_payload(index_html_path: Path) -> dict:
+    """Достаёт payload из docs/data.json (sibling index.html).
+
+    Раньше payload вшивался inline в index.html как window.__DATA__; теперь
+    данные вынесены в отдельный data.json и грузятся через fetch. Поэтому
+    payload читаем из файла, а не из HTML.
+    """
+    data_path = index_html_path.parent / "data.json"
+    assert data_path.exists(), f"data.json не создан рядом с {index_html_path}"
+    return json.loads(data_path.read_text(encoding="utf-8"))
 
 
 def test_site_uses_bootstrap_cdn_with_local_fallback(tmp_repo):
@@ -137,7 +142,7 @@ def test_site_creates_index(tmp_tools_yml, sample_tool_github, tmp_path):
     assert out.exists()
     html = out.read_text(encoding="utf-8")
     assert "Awesome Vibe Coding Tools" in html
-    payload = _extract_payload(html)
+    payload = _extract_payload(out)
     assert len(payload["tools"]) == 1
 
 
@@ -146,7 +151,7 @@ def test_site_contains_all_tools(tmp_repo):
     out = tmp_repo["root"] / "docs" / "index.html"
     site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
               out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     assert len(payload["tools"]) == len(tmp_repo["tools"])
     names = {t["name"] for t in payload["tools"]}
     assert {"HiStars", "LoStars", "Editor", "NoGithub"} <= names
@@ -157,7 +162,7 @@ def test_site_search_field_is_lowercase(tmp_repo):
     out = tmp_repo["root"] / "docs" / "index.html"
     site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
               out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     for t in payload["tools"]:
         assert t["search"] == t["search"].lower()
         # name присутствует в haystack
@@ -170,7 +175,7 @@ def test_site_stars_fallback_when_no_stars(tmp_repo):
     out = tmp_repo["root"] / "docs" / "index.html"
     site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
               out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     github_tools = [t for t in payload["tools"] if "github.com" in t["url"]]
     assert github_tools
     for t in github_tools:
@@ -183,7 +188,7 @@ def test_site_stars_from_cache(tmp_repo):
     out = tmp_repo["root"] / "docs" / "index.html"
     site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
               out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     hi = next(t for t in payload["tools"] if t["name"] == "HiStars")
     assert hi["stars"] == 1000  # из tmp_repo fixture stars.json
 
@@ -193,7 +198,7 @@ def test_site_categories_have_title_zh(tmp_repo):
     out = tmp_repo["root"] / "docs" / "index.html"
     site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
               out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     assert payload["categories"]
     for c in payload["categories"]:
         assert "title_zh" in c and c["title_zh"]
@@ -207,7 +212,7 @@ def test_site_cjk_search(tmp_tools_yml, tmp_path):
     tools_yml = tmp_tools_yml([tool])
     out = tmp_path / "docs" / "index.html"
     site_main(tools_yml=tools_yml, stars_file=tmp_path / "stars.json", out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     t = payload["tools"][0]
     # Китайский иероглиф (U+7A0B 程) должен быть в lowercase haystack
     assert "程" in t["search"] or "ai-guide" in t["search"]
@@ -382,38 +387,56 @@ def test_build_data_json_language_none_when_meta_missing(tmp_repo):
     assert data["languages"] == []
 
 
-def test_render_index_html_escapes_script_close_tag(tmp_tools_yml, tmp_path):
-    """#7-audit: «</script>» в описании не должен рвать <script>-элемент.
+def test_main_writes_payload_to_data_json_not_inline(tmp_tools_yml, tmp_path):
+    """Данные вынесены из index.html в отдельный data.json.
 
-    Описания попадают из GitHub API дословно (через fetch_candidates). Любой
-    сырой «</script>» закроет элемент досрочно → window.__DATA__ undefined →
-    пустой сайт; крафтовый «</script><img onerror=…>» — stored-XSS.
-    Экранирование «</» → «<\\/» валидно для JSON/JS и безопасно для HTML-парсера.
+    Раньше payload вшивался inline как window.__DATA__ (с экранированием «</»
+    против stored-XSS через описания из GitHub API). Теперь данные лежат в
+    docs/data.json (Content-Type: application/json — XSS-вектор отпадает сам
+    собой), HTML их не содержит, а описание попадает в data.json дословно
+    (без «<\\/»-экранирования — это был артефакт инлайн-режима).
     """
-    from generate_site import render_index_html
+    from generate_site import main as site_main
     tool = {"name": "evil", "url": "https://github.com/x/y",
             "category": "cli-agents",
             "description": {"en": "clean", "ru": "</script><img onerror=alert(1)>"}}
     tools_yml = tmp_tools_yml([tool])
-    data = build_data_json(tools_yml, tmp_path / "stars.json")
-    html = render_index_html(data)
-    # Сырого «</script>» от описания в payload быть не должно.
-    assert "</script><img" not in html
-    # Экранированная форма присутствует (доказывает, что описание вошло в payload).
-    assert "<\\/script><img onerror=alert(1)>" in html
-    # И payload остаётся валидным JSON: window.__DATA__ = {...}; на одной строке.
-    payload = _extract_payload(html)
+    out = tmp_path / "docs" / "index.html"
+    site_main(tools_yml=tools_yml, stars_file=tmp_path / "stars.json", out_file=out)
+    html = out.read_text(encoding="utf-8")
+    # HTML больше не несёт inline-payload: ни placeholder-маркера, ни
+    # присваивания объекта (window.__DATA__ = {...}). Присваивание после fetch
+    # (window.__DATA__ = data;) легитимно — это не inline-данные.
+    assert "/*__DATA__*/" not in html
+    assert "window.__DATA__ = {" not in html
+    # Payload живёт в data.json — целиком, валидный JSON, описание дословно
+    # (без «<\\/»-экранирования, которое было нужно только внутри <script>).
+    data_path = out.parent / "data.json"
+    assert data_path.exists()
+    payload = json.loads(data_path.read_text(encoding="utf-8"))
     assert payload["tools"][0]["desc"]["ru"] == "</script><img onerror=alert(1)>"
 
 
-def test_render_index_html_asserts_marker_present(tmp_path):
-    """#7-audit: косметическая правка шаблона без маркера — явная ошибка, а не
-    молчаливый деплой пустого сайта (window.__DATA__ = {}) при зелёном CI."""
+def test_render_index_html_rejects_inline_marker(tmp_path):
+    """Регрессионный guard: если в шаблон вернётся inline-маркер данных
+    (window.__DATA__ = /*__DATA__*/{}), render_index_html явно raise'ит —
+    иначе деплой ляжет пустым сайтом при зелёном CI (данных-то nobody не
+    подставляет в маркер больше)."""
     from generate_site import render_index_html
     bad_template = tmp_path / "bad.html"
-    bad_template.write_text("<html>нет маркера данных</html>", encoding="utf-8")
-    with pytest.raises(ValueError, match="маркер"):
-        render_index_html({"tools": []}, template=bad_template)
+    bad_template.write_text(
+        '<script>window.__DATA__ = /*__DATA__*/{};</script>', encoding="utf-8")
+    with pytest.raises(ValueError, match="inline-маркер"):
+        render_index_html(template=bad_template)
+
+
+def test_render_index_html_returns_template_as_is(tmp_path):
+    """Шаблон без маркера отдаётся как есть — данные не инлайнятся."""
+    from generate_site import render_index_html
+    ok_template = tmp_path / "ok.html"
+    body = "<html><body>каталог без данных</body></html>"
+    ok_template.write_text(body, encoding="utf-8")
+    assert render_index_html(template=ok_template) == body
 
 
 def test_site_template_validates_lang_from_localstorage():
@@ -473,7 +496,7 @@ def test_site_pagination_payload_tools_not_truncated(tmp_repo):
     out = tmp_repo["root"] / "docs" / "index.html"
     site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
               out_file=out)
-    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    payload = _extract_payload(out)
     # Пагинация slice'ит client-side; payload.tools не должен быть урезан.
     assert len(payload["tools"]) == len(tmp_repo["tools"])
 

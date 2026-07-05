@@ -5,10 +5,13 @@
 Сайт — user-friendly альтернатива плоскому README: полнотекстовый поиск,
 фильтр по категориям/new, сортировка, i18n (EN/RU/ZH).
 
-Данные встраиваются inline как window.__DATA__ (без fetch/CORS — работает
-на GitHub Pages как есть). Переиспует парсинг из generate_readme (load_tools,
-load_stars, load_history, CATEGORIES, is_new) и github_slug из common —
-нулевое дублирование логики.
+Данные живут отдельным файлом docs/data.json (раньше вшивались inline как
+window.__DATA__ внутрь index.html). Фронтенд грузит их через fetch('data.json')
+— тот же origin на GitHub Pages, без CORS. Так HTML-шаблон отделён от данных
+и кешируется браузером отдельно (~100КБ HTML + ~1.2МБ JSON вместо монолита
+1.5МБ). Переиспользует парсинг из generate_readme (load_tools, load_stars,
+load_history, CATEGORIES, is_new) и github_slug из common — нулевое
+дублирование логики.
 
 Использование:
     python scripts/generate_site.py
@@ -38,6 +41,9 @@ TREND_SHIFT_FILE = ROOT / "data" / "trendshift.json"
 # же записи (scripts/categorize_repos.py), звёзды/meta — в stars.json/repos-meta.json.
 TREND_SHIFT_REPOS_FILE = ROOT / "data" / "trendshift-repos.json"
 OUT_FILE = ROOT / "docs" / "index.html"
+# Данные сайта отдельным файлом рядом с index.html (тот же origin на Pages →
+# fetch('data.json') без CORS). Раньше payload вшивался inline в index.html.
+DATA_FILE = ROOT / "docs" / "data.json"
 INDEX_TEMPLATE = ROOT / "scripts" / "site_template.html"
 
 
@@ -103,7 +109,7 @@ def build_data_json(
     trendshift_file: Path = TREND_SHIFT_FILE,
     trendshift_repos_file: Path = TREND_SHIFT_REPOS_FILE,
 ) -> dict:
-    """Собирает единый объект данных для встраивания в index.html.
+    """Собирает единый объект данных для записи в docs/data.json.
 
     Все метрики автоматические (из stars.json/repos-meta.json/stars-history.json):
     stars, forks, openIssues, createdAt, archived, topics, language (primary),
@@ -240,32 +246,39 @@ def build_data_json(
     }
 
 
-DATA_MARKER = "/*__DATA__*/{}"
+def render_index_html(template: Path = INDEX_TEMPLATE) -> str:
+    """Отдаёт HTML-шаблон как есть (данные больше не инлайнятся).
 
+    Раньше сюда подставлялся window.__DATA__ payload с экранированием «</»
+    (описания из GitHub API могли содержать «</script>» и порвать <script>).
+    Теперь данные лежат отдельным docs/data.json и грузятся через fetch —
+    шаблон не зависит от payload, экранирование не нужно.
 
-def render_index_html(data: dict, template: Path = INDEX_TEMPLATE) -> str:
-    """Подставляет data.json в HTML-шаблон (window.__DATA__).
-
-    Безопасность payload: json.dumps НЕ экранирует «</», а описания репо
-    попадают из GitHub API дословно (в т.ч. через fetch_candidates → tools.yml).
-    Любой «</script>» в описании закрыл бы <script>-элемент досрочно —
-    window.__DATA__ остался бы undefined (пустой сайт), а крафтовый
-    «</script><img onerror=…>» — stored-XSS. Поэтому экранируем последовательность
-    «</» → «<\\/» (json-валидно, в JS читается обратно как «</», но парсер HTML
-    его как закрывающий тег не видит). Дополнительно assert-им, что маркер
-    шаблона найден — иначе косметическая правка шаблона заставила бы replace
-    молча не сработать и деплоить пустой сайт при зелёном CI.
+    Регрессионный guard: placeholder-маркер ``/*__DATA__*/`` больше не нужен
+    (generate_site его ничем не заменяет). Если кто-то вернёт его в шаблон
+    (например, ``window.__DATA__ = /*__DATA__*/{}``), raise'им — иначе шаблон
+    будет искать inline-данные, которых generate_site не подставляет, и
+    деплой ляжет пустым сайтом при зелёном CI.
     """
     tpl = template.read_text(encoding="utf-8")
-    if DATA_MARKER not in tpl:
+    if "/*__DATA__*/" in tpl:
         raise ValueError(
-            f"маркер данных {DATA_MARKER!r} не найден в шаблоне {template}; "
-            "generate_site не сможет встроить window.__DATA__")
-    # json с ensure_ascii=False — китайский текст читаемо и меньше байт.
+            f"шаблон {template} содержит inline-маркер данных /*__DATA__*/; "
+            "данные вынесены в docs/data.json — уберите маркер из шаблона и "
+            "грузите данные через fetch('data.json')")
+    return tpl
+
+
+def write_data_json(data: dict, data_file: Path = DATA_FILE) -> None:
+    """Записывает payload в data.json (рядом с index.html, тот же origin).
+
+    ensure_ascii=False — китайский текст читаемо и меньше байт. Данные лежат
+    в отдельном .json (Content-Type: application/json), а не внутри <script> —
+    поэтому ``</``-экранирование не нужно: парсер HTML сюда не смотрит.
+    """
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-    # Экранируем «</» (в т.ч. «</script>»), чтобы payload не порвал <script>.
-    payload = payload.replace("</", "<\\/")
-    return tpl.replace(DATA_MARKER, payload)
+    data_file.parent.mkdir(parents=True, exist_ok=True)
+    data_file.write_text(payload, encoding="utf-8")
 
 
 def main(
@@ -277,16 +290,23 @@ def main(
     history_file: Path = HISTORY_FILE,
     trendshift_file: Path = TREND_SHIFT_FILE,
     trendshift_repos_file: Path = TREND_SHIFT_REPOS_FILE,
+    data_file: Path | None = None,
 ) -> None:
     data = build_data_json(tools_yml, stars_file, meta_file, history_file,
                            trendshift_file, trendshift_repos_file)
-    html = render_index_html(data, template)
+    html = render_index_html(template)
+    # data_file по умолчанию — рядом с out_file (data.json sibling index.html),
+    # чтобы при инъекции out_file в тестах data_file тоже ложился в tmp.
+    if data_file is None:
+        data_file = out_file.parent / "data.json"
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html, encoding="utf-8")
+    write_data_json(data, data_file)
     n = len(data["tools"])
     discovered = sum(1 for t in data["tools"] if t.get("trendshiftDiscovered"))
-    print(f"✓ {out_file}: {n} утилит ({discovered} trendshift-discovered), "
-          f"{len(data['categories'])} категорий, языки en/ru/zh")
+    print(f"✓ {out_file} + {data_file}: {n} утилит ({discovered} "
+          f"trendshift-discovered), {len(data['categories'])} категорий, "
+          f"языки en/ru/zh")
 
 
 if __name__ == "__main__":

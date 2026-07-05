@@ -140,10 +140,10 @@ def test_update_stars_regenerates_with_meta_history_trendshift(tmp_repo):
     assert "## Featured" in readme
     assert "caveman" not in readme  # sanity: данные из tmp, не реальные
 
-    # Сайт несёт Featured (history) и trendshift (trendshift_file).
-    import re
-    html = (tmp_repo["root"] / "docs" / "index.html").read_text(encoding="utf-8")
-    payload = json.loads(re.search(r"window\.__DATA__ = (\{.*?\});\n", html, re.S).group(1))
+    # Сайт несёт Featured (history) и trendshift (trendshift_file). Payload
+    # теперь в docs/data.json (вынесен из inline window.__DATA__).
+    payload = json.loads(
+        (tmp_repo["root"] / "docs" / "data.json").read_text(encoding="utf-8"))
     featured_urls = {e["url"] for e in payload["featured"]}
     assert HI_URL in featured_urls  # history добрался до site
     hi = next(t for t in payload["tools"] if t["name"] == "HiStars")
