@@ -101,6 +101,12 @@
   }
   .site-wrap {
     max-width: 1180px;
+    --bs-gutter-x: 2rem;
+  }
+  @media (min-width: 768px) {
+    .site-wrap {
+      --bs-gutter-x: 3rem;
+    }
   }
   .masthead {
     gap: 1.05rem;
@@ -321,6 +327,8 @@
   .category-tabs {
     border-bottom: 1px solid var(--vt-border);
     gap: .35rem .75rem;
+    padding-inline: clamp(1rem, 1.8vw, 1.35rem);
+    scroll-padding-inline: clamp(1rem, 1.8vw, 1.35rem);
     scrollbar-width: thin;
   }
   .category-tab {
@@ -348,9 +356,11 @@
   .results-line {
     color: var(--vt-ink-soft);
     font-size: .875rem;
+    padding-inline: clamp(1rem, 1.8vw, 1.35rem);
   }
   .featured-strip {
     border-bottom: 1px solid var(--vt-border);
+    padding-inline: clamp(1rem, 1.8vw, 1.35rem);
     padding-bottom: 1rem;
   }
   .featured-kicker {
@@ -503,6 +513,7 @@
   }
   .tool-item {
     border-color: var(--vt-border);
+    padding-inline: clamp(1rem, 1.8vw, 1.35rem) !important;
     transition: background-color .12s ease;
   }
   .tool-item:hover {
@@ -811,6 +822,7 @@
     }
     .tool-item {
       padding-bottom: .72rem !important;
+      padding-inline: 1rem !important;
       padding-top: .72rem !important;
     }
     .tool-desc {
@@ -1366,7 +1378,7 @@ function render() {
   const frag = document.createDocumentFragment();
   list.forEach(tool => {
     const li = document.createElement("li");
-    li.className = "list-group-item tool-item px-0 py-4";
+    li.className = "list-group-item tool-item py-4";
     const desc = tool.desc[lang] || tool.desc.en;
     const starsHtml = starHtml(tool);
     const mobileStarsHtml = starHtml(tool, "mobile-star");

@@ -30,8 +30,7 @@
 
 ## Избранное
 
-Репозиторий дня: [caveman](https://github.com/JuliusBrussee/caveman#featured-day) — Утилита caveman
-Репозиторий недели (рост за 1 дн.): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — Утилита caveman
+Репозиторий недели (рост за 2 дн.): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
 
 ## AI-агенты кодинга и CLI
 
@@ -42,7 +41,7 @@
 - [rtk](https://github.com/rtk-ai/rtk) ![](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) - CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах.
 - [pi](https://github.com/earendil-works/pi) ![](https://img.shields.io/github/stars/earendil-works/pi?style=flat&color=yellow) - AI-агент тулкит: единый LLM API, agent loop, TUI, CLI кодинг-агент.
 - [Goose](https://github.com/block/goose) ![](https://img.shields.io/github/stars/block/goose?style=flat&color=yellow) - Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код.
-- [goose](https://github.com/aaif-goose/goose) ![](https://img.shields.io/github/stars/aaif-goose/goose?style=flat&color=yellow) - Утилита goose.
+- [goose](https://github.com/aaif-goose/goose) ![](https://img.shields.io/github/stars/aaif-goose/goose?style=flat&color=yellow) - An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM.
 - [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI-парное программирование в терминале, правит код в любом git-репозитории.
 - [CowAgent](https://github.com/zhayujie/CowAgent) ![](https://img.shields.io/github/stars/zhayujie/CowAgent?style=flat&color=yellow) - Open-source супер-AI-ассистент и agent-харнес.
 - [nanobot](https://github.com/HKUDS/nanobot) ![](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&color=yellow) - Легковесный open-source AI-агент для инструментов, чатов и воркфлоу.
@@ -52,7 +51,7 @@
 - [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) ![](https://img.shields.io/github/stars/esengine/DeepSeek-Reasonix?style=flat&color=yellow) - DeepSeek-native AI-агент кодинга для терминала.
 - [qwen-code](https://github.com/QwenLM/qwen-code) ![](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=yellow) - Open-source AI-агент кодинга в терминале.
 - [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open-source терминал macOS на Ghostty с вкладками для AI-кодинга.
-- [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - Утилита oh-my-pi.
+- [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more.
 - [plandex](https://github.com/plandex-ai/plandex) ![](https://img.shields.io/github/stars/plandex-ai/plandex?style=flat&color=yellow) - Open-source AI-агент кодинга.
 - [cc-connect](https://github.com/chenhg5/cc-connect) ![](https://img.shields.io/github/stars/chenhg5/cc-connect?style=flat&color=yellow) - Мост от локальных AI-агентов (Claude Code, Cursor) к мессенджерам.
 - [superset](https://github.com/superset-sh/superset) ![](https://img.shields.io/github/stars/superset-sh/superset?style=flat&color=yellow) - Редактор кода эпохи AI-агентов — армия Claude Code, Codex и др.
@@ -78,7 +77,7 @@
 - [vibesdk](https://github.com/cloudflare/vibesdk) ![](https://img.shields.io/github/stars/cloudflare/vibesdk?style=flat&color=yellow) - Open-source платформа vibe coding для построения своего vibe-кодинг-инструмента.
 - [costrict](https://github.com/zgsm-ai/costrict) ![](https://img.shields.io/github/stars/zgsm-ai/costrict?style=flat&color=yellow) - Строгий AI-кодер для предприятий: качество прежде всего.
 - [MonkeyCode](https://github.com/chaitin/MonkeyCode) ![](https://img.shields.io/github/stars/chaitin/MonkeyCode?style=flat&color=yellow) - AI-платформа кодинга для команд.
-- [crystal](https://github.com/stravu/crystal) ![](https://img.shields.io/github/stars/stravu/crystal?style=flat&color=yellow) - Утилита crystal.
+- [crystal](https://github.com/stravu/crystal) ![](https://img.shields.io/github/stars/stravu/crystal?style=flat&color=yellow) - (Crystal is now Nimbalyst) Run multiple Codex and Claude Code AI sessions in parallel git worktrees. Test, compare approaches & manage AI-assisted development workflows in one desktop app.
 - [fulling](https://github.com/FullAgent/fulling) ![](https://img.shields.io/github/stars/FullAgent/fulling?style=flat&color=yellow) - Fulling — AI-powered full-stack инженер-агент.
 - [vibekit](https://github.com/superagent-ai/vibekit) ![](https://img.shields.io/github/stars/superagent-ai/vibekit?style=flat&color=yellow) - Запуск Claude Code, Gemini, Codex и любого агента в чистой изолированной песочнице.
 - [claudebox](https://github.com/RchGrav/claudebox) ![](https://img.shields.io/github/stars/RchGrav/claudebox?style=flat&color=yellow) - Docker-среда разработки для Claude Code.
@@ -104,7 +103,7 @@
 
 - [Claude Code Action](https://github.com/anthropics/claude-code-action) ![](https://img.shields.io/github/stars/anthropics/claude-code-action?style=flat&color=yellow) - GitHub Action: Claude ревьюит PR и фикcит issues прямо в CI.
 - [XcodeBuildMCP](https://github.com/getsentry/XcodeBuildMCP) ![](https://img.shields.io/github/stars/getsentry/XcodeBuildMCP?style=flat&color=yellow) - MCP-сервер и CLI для работы с Xcode-проектами агентами.
-- [APIAuto](https://github.com/TommyLemon/APIAuto) ![](https://img.shields.io/github/stars/TommyLemon/APIAuto?style=flat&color=yellow) - Утилита APIAuto.
+- [APIAuto](https://github.com/TommyLemon/APIAuto) ![](https://img.shields.io/github/stars/TommyLemon/APIAuto?style=flat&color=yellow) - 敏捷开发最强大易用的接口工具，机器学习零代码测试与 AI 问答、生成代码与静态检查、生成文档与光标悬浮注释，腾讯、华为、SHEIN、传音、工行等使用  The most advanced tool for HTTP API. Machine learning no-code testing and AI assistant, generating codes and static analysis, generating comments and floating hints. Used by Tencent, Huawei, SHEIN, TRANSSION, ICBC, etc.
 - [rockpack](https://github.com/AlexSergey/rockpack) ![](https://img.shields.io/github/stars/AlexSergey/rockpack?style=flat&color=yellow) - Zero-config React со встроенным SSR и AI-ready структурой проекта.
 - [claude-debugs-for-you](https://github.com/jasonjmcghee/claude-debugs-for-you) ![](https://img.shields.io/github/stars/jasonjmcghee/claude-debugs-for-you?style=flat&color=yellow) - Включает любой LLM в отладчик.
 
@@ -126,7 +125,7 @@
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot).
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей.
 - [Viper](https://github.com/FunnyWolf/Viper) ![](https://img.shields.io/github/stars/FunnyWolf/Viper?style=flat&color=yellow) - Симуляция противника и Red Teaming платформа с AI.
-- [ENScan_GO](https://github.com/wgpsec/ENScan_GO) ![](https://img.shields.io/github/stars/wgpsec/ENScan_GO?style=flat&color=yellow) - Утилита ENScan_GO.
+- [ENScan_GO](https://github.com/wgpsec/ENScan_GO) ![](https://img.shields.io/github/stars/wgpsec/ENScan_GO?style=flat&color=yellow) - 一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入.
 - [EvilClippy](https://github.com/outflanknl/EvilClippy) ![](https://img.shields.io/github/stars/outflanknl/EvilClippy?style=flat&color=yellow) - Кроссплатформенный ассистент для создания вредоносных MS Office документов.
 - [pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) ![](https://img.shields.io/github/stars/0xSteph/pentest-ai-agents?style=flat&color=yellow) - Превращает Claude Code в ассистента offensive-security-исследований.
 
@@ -192,7 +191,7 @@
 - [mempalace](https://github.com/MemPalace/mempalace) ![](https://img.shields.io/github/stars/MemPalace/mempalace?style=flat&color=yellow) - Лучший по бенчмаркам open-source AI-слой памяти.
 - [headroom](https://github.com/headroomlabs-ai/headroom) ![](https://img.shields.io/github/stars/headroomlabs-ai/headroom?style=flat&color=yellow) - Сжатие выводов инструментов, логов и RAG-чанков до LLM.
 - [llama_index](https://github.com/run-llama/llama_index) ![](https://img.shields.io/github/stars/run-llama/llama_index?style=flat&color=yellow) - Ведущая платформа document-агентов и OCR.
-- [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Утилита LightRAG.
+- [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Простое и быстрое дополненное получение.
 - [Vane](https://github.com/ItzCrazyKns/Vane) ![](https://img.shields.io/github/stars/ItzCrazyKns/Vane?style=flat&color=yellow) - AI-powered поисковый движок ответов.
 - [PageIndex](https://github.com/VectifyAI/PageIndex) ![](https://img.shields.io/github/stars/VectifyAI/PageIndex?style=flat&color=yellow) - Индекс документов для reasoning-based RAG без векторов.
 - [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Поисковая инфраструктура для AI.
@@ -200,7 +199,7 @@
 - [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Упаковывает весь репозиторий в один файл для подсчёта контекста AI.
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - Мощный MCP-тулкит для кодинга: семантический поиск и редактирование.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - Высокопроизводительный MCP-сервер интеллекта кодовой базы.
-- [agentmemory](https://github.com/rohitg00/agentmemory) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat&color=yellow) - Утилита agentmemory.
+- [agentmemory](https://github.com/rohitg00/agentmemory) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat&color=yellow) - 1 Persistent memory for AI coding agents based on real-world benchmarks.
 - [OpenMetadata](https://github.com/open-metadata/OpenMetadata) ![](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=flat&color=yellow) - Open Context Layer для данных и AI: построение траста данных.
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - MCP поиска кода для Claude Code.
 - [code2prompt](https://github.com/mufeedvh/code2prompt) ![](https://img.shields.io/github/stars/mufeedvh/code2prompt?style=flat&color=yellow) - CLI: превращает кодовую базу в один Markdown-промпт для LLM.
@@ -225,14 +224,14 @@
 
 ## Skills, промпты и правила агентов
 
-- [prompts.chat](https://github.com/f/prompts.chat) ![](https://img.shields.io/github/stars/f/prompts.chat?style=flat&color=yellow) - Утилита prompts.chat.
+- [prompts.chat](https://github.com/f/prompts.chat) ![](https://img.shields.io/github/stars/f/prompts.chat?style=flat&color=yellow) - F.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 - [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) ![](https://img.shields.io/github/stars/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat&color=yellow) - Системные промпты и модели AI-инструментов (Augment, Claude Code, Cursor и др.).
-- [caveman](https://github.com/JuliusBrussee/caveman) ![](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat&color=yellow) - Утилита caveman.
+- [caveman](https://github.com/JuliusBrussee/caveman) ![](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat&color=yellow) - Why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman.
 - [ponytail](https://github.com/DietrichGebert/ponytail) ![](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=flat&color=yellow) - Заставляет AI-агента думать как самый ленивый senior-разработчик.
 - [agent-skills](https://github.com/addyosmani/agent-skills) ![](https://img.shields.io/github/stars/addyosmani/agent-skills?style=flat&color=yellow) - Продакшн-навыки инженерии для AI-агентов кодинга.
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) ![](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-skills?style=flat&color=yellow) - Кураторский список Claude Skills, ресурсов и инструментов.
-- [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) ![](https://img.shields.io/github/stars/code-yeongyu/oh-my-openagent?style=flat&color=yellow) - Утилита oh-my-openagent.
-- [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - Утилита claude-code-best-practice.
+- [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) ![](https://img.shields.io/github/stars/code-yeongyu/oh-my-openagent?style=flat&color=yellow) - Omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode.
+- [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - From vibe coding to agentic engineering - practice makes claude perfect.
 - [taste-skill](https://github.com/Leonxlnx/taste-skill) ![](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat&color=yellow) - Taste-Skill — даёт AI хороший вкус.
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) ![](https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks?style=flat&color=yellow) - Извлечённые системные промпты Anthropic: Claude Fable 5, Opus 4.8 и др.
 - [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
@@ -246,7 +245,7 @@
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Превращает любой AI-агент в AI-учёного.
 - [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) ![](https://img.shields.io/github/stars/VoltAgent/awesome-agent-skills?style=flat&color=yellow) - Подборка 1000+ агентных навыков от команд и сообщества.
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) ![](https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&color=yellow) - Постоянное файловое планирование для AI-агентов кодинга.
-- [claude-skills](https://github.com/alirezarezvani/claude-skills) ![](https://img.shields.io/github/stars/alirezarezvani/claude-skills?style=flat&color=yellow) - Утилита claude-skills.
+- [claude-skills](https://github.com/alirezarezvani/claude-skills) ![](https://img.shields.io/github/stars/alirezarezvani/claude-skills?style=flat&color=yellow) - 337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.
 - [context-mode](https://github.com/mksglu/context-mode) ![](https://img.shields.io/github/stars/mksglu/context-mode?style=flat&color=yellow) - Оптимизация контекстного окна для AI-агентов кодинга.
 - [notebooklm-py](https://github.com/teng-lin/notebooklm-py) ![](https://img.shields.io/github/stars/teng-lin/notebooklm-py?style=flat&color=yellow) - Неофициальный Python API и навык для Google NotebookLM.
 - [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) ![](https://img.shields.io/github/stars/jnMetaCode/agency-agents-zh?style=flat&color=yellow) - Агенты agency (китайская версия).
@@ -265,11 +264,11 @@
 - [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов.
 - [awesome-gpt4o-images](https://github.com/jamez-bondos/awesome-gpt4o-images) ![](https://img.shields.io/github/stars/jamez-bondos/awesome-gpt4o-images?style=flat&color=yellow) - Подборка изображений и промптов, сгенерированных GPT-4o и gpt-image-1.
 - [YouMind-OpenLab/awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-gpt-image-2?style=flat&color=yellow) - Крупнейшая библиотека промптов GPT Image 2 — 2000+, ежедневное обновление.
-- [Prompt_Engineering](https://github.com/NirDiamant/Prompt_Engineering) ![](https://img.shields.io/github/stars/NirDiamant/Prompt_Engineering?style=flat&color=yellow) - Утилита Prompt_Engineering.
+- [Prompt_Engineering](https://github.com/NirDiamant/Prompt_Engineering) ![](https://img.shields.io/github/stars/NirDiamant/Prompt_Engineering?style=flat&color=yellow) - 22 prompt engineering techniques with hands-on Jupyter Notebook tutorials, from fundamental concepts to advanced strategies for leveraging LLMs.
 - [SuperPrompt](https://github.com/NeoVertex1/SuperPrompt) ![](https://img.shields.io/github/stars/NeoVertex1/SuperPrompt?style=flat&color=yellow) - SuperPrompt — промпты, помогающие понять AI-агентов.
 - [superpowers-zh](https://github.com/jnMetaCode/superpowers-zh) ![](https://img.shields.io/github/stars/jnMetaCode/superpowers-zh?style=flat&color=yellow) - AI-суперсилы кодинга — китайская расширенная версия superpowers.
-- [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Утилита ai-notes.
-- [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - Утилита wonderful-prompts.
+- [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references under the /Resources folder.
+- [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - 中文 prompt 精选，ChatGPT 使用指南，提升 ChatGPT 可玩性和可用性！.
 - [Awesome-Prompt-Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) ![](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat&color=yellow) - Ручная подборка ресурсов по prompt engineering.
 - [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Кураторская подборка системных промптов топовых AI-инструментов.
 - [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - Библиотека программирования языковых моделей.
@@ -280,7 +279,7 @@
 - [vibe-coding-prompt-template](https://github.com/KhazP/vibe-coding-prompt-template) ![](https://img.shields.io/github/stars/KhazP/vibe-coding-prompt-template?style=flat&color=yellow) - Шаблоны и воркфлоу для PRD, тех-дизайнов и MVP через LLM.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - Навыки Claude Code для Go.
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) ![](https://img.shields.io/github/stars/foryourhealth111-pixel/Vibe-Skills?style=flat&color=yellow) - Vibe-Skills — all-in-one пакет AI-навыков.
-- [best-skills](https://github.com/xstongxue/best-skills) ![](https://img.shields.io/github/stars/xstongxue/best-skills?style=flat&color=yellow) - Утилита best-skills.
+- [best-skills](https://github.com/xstongxue/best-skills) ![](https://img.shields.io/github/stars/xstongxue/best-skills?style=flat&color=yellow) - 通用高质量 Skills 合集.
 - [Sunbeam](https://github.com/pomdtr/sunbeam) ![](https://img.shields.io/github/stars/pomdtr/sunbeam?style=flat&color=yellow) - Просмотр и поиск библиотек промптов с конвертацией в любой формат.
 
 ## AI-ассистенты
@@ -312,7 +311,7 @@
 - [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - Open-source Go-тулкит для создания, оценки и деплоя agent-приложений.
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - Нанимайте AI-рабочую силу 24/7.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - Enterprise-grade мультиагентный фреймворк оркестрации для продакшна.
-- [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Утилита openagent.
+- [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org.
 - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow — библиотека построения и автооптимизации LLM-приложений.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - Фреймворк построения агентов.
 - [core](https://github.com/cheshire-cat-ai/core) ![](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat&color=yellow) - AI-агент микросервис.
@@ -346,10 +345,10 @@
 
 ## Документация, research и knowledge work
 
-- [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Утилита gpt_academic.
+- [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - 为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。.
 - [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) ![](https://img.shields.io/github/stars/Egonex-AI/Understand-Anything?style=flat&color=yellow) - Графы, которые обучают, а не просто впечатляют.
 - [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ![](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&color=yellow) - Bash — всё что нужно: нано agent-харнес в стиле Claude Code с нуля.
-- [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - Утилита TrendRadar.
+- [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts. 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - Spec-driven разработка (SDD) для AI-ассистентов кодинга.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - Context7 — актуальная документация кода для LLM и AI-редакторов.
 - [storm](https://github.com/stanford-oval/storm) ![](https://img.shields.io/github/stars/stanford-oval/storm?style=flat&color=yellow) - LLM-система курирования знаний: исследование темы и генерация статьи.
@@ -369,7 +368,7 @@
 - [llm-course](https://github.com/mlabonne/llm-course) ![](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat&color=yellow) - Курс по большим языковым моделям с roadmap и Colab-ноутбуками.
 - [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Гайды, статьи, ноутбуки по prompt engineering.
 - [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - AI-агенты для начинающих.
-- [hello-agents](https://github.com/datawhalechina/hello-agents) ![](https://img.shields.io/github/stars/datawhalechina/hello-agents?style=flat&color=yellow) - Утилита hello-agents.
+- [hello-agents](https://github.com/datawhalechina/hello-agents) ![](https://img.shields.io/github/stars/datawhalechina/hello-agents?style=flat&color=yellow) - 《从零开始构建智能体》——从零开始的智能体原理与实践教程.
 - [BMAD-METHOD](https://github.com/bmad-code-org/bmad-method) ![](https://img.shields.io/github/stars/bmad-code-org/bmad-method?style=flat&color=yellow) - Агентная методология и IDE-промпты для полного цикла AI-разработки продукта.
 - [ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) ![](https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat&color=yellow) - AI-инжиниринг с нуля.
 - [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) ![](https://img.shields.io/github/stars/ashishpatel26/500-AI-Agents-Projects?style=flat&color=yellow) - Подборка 500 кейсов AI-агентов в разных индустриях.
@@ -379,7 +378,7 @@
 - [vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn) ![](https://img.shields.io/github/stars/2025Emma/vibe-coding-cn?style=flat&color=yellow) - Кураторский список ресурсов по vibe coding на китайском.
 - [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Открытая книга по ML-инжинирингу.
 - [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ![](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat&color=yellow) - Подборка по мультимодальным большим языковым моделям.
-- [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Утилита easy-vibe.
+- [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Vibe coding 2026 | Your First Modern Coding course beginners to master step by step.
 - [generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) ![](https://img.shields.io/github/stars/GoogleCloudPlatform/generative-ai?style=flat&color=yellow) - Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini.
 - [ai-guide](https://github.com/liyupi/ai-guide) ![](https://img.shields.io/github/stars/liyupi/ai-guide?style=flat&color=yellow) - AI-гид: ресурсы по vibe coding на китайском.
 - [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) ![](https://img.shields.io/github/stars/microsoft/mcp-for-beginners?style=flat&color=yellow) - Open-source курс основ Model Context Protocol (MCP).
@@ -391,7 +390,7 @@
 - [llm-engineer-toolkit](https://github.com/KalyanKS-NLP/llm-engineer-toolkit) ![](https://img.shields.io/github/stars/KalyanKS-NLP/llm-engineer-toolkit?style=flat&color=yellow) - Кураторский список 120+ LLM-библиотек по категориям.
 - [LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide) ![](https://img.shields.io/github/stars/Mooler0410/LLMsPracticalGuide?style=flat&color=yellow) - Кураторский список практических ресурсов по LLM.
 - [anomaly-detection-resources](https://github.com/yzhao062/anomaly-detection-resources) ![](https://img.shields.io/github/stars/yzhao062/anomaly-detection-resources?style=flat&color=yellow) - Книги, статьи, видео и тулбоксы по обнаружению аномалий.
-- [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) ![](https://img.shields.io/github/stars/WangRongsheng/awesome-LLM-resources?style=flat&color=yellow) - Утилита awesome-LLM-resources.
+- [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) ![](https://img.shields.io/github/stars/WangRongsheng/awesome-LLM-resources?style=flat&color=yellow) - ‍ 全世界最好的LLM资料总结（多模态生成、Agent、辅助编程、AI审稿、数据处理、模型训练、模型推理、o1 模型、MCP、小语言模型、视觉语言模型） | Summary of the world's best LLM resources.
 - [learn-ai-engineering](https://github.com/ashishps1/learn-ai-engineering) ![](https://img.shields.io/github/stars/ashishps1/learn-ai-engineering?style=flat&color=yellow) - Изучите AI и LLM с нуля по бесплатным ресурсам.
 - [vibe-vibe](https://github.com/datawhalechina/vibe-vibe) ![](https://img.shields.io/github/stars/datawhalechina/vibe-vibe?style=flat&color=yellow) - AI для всех: первый систематический туториал по vibe coding.
 - [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) ![](https://img.shields.io/github/stars/mahseema/awesome-ai-tools?style=flat&color=yellow) - Кураторский список топовых AI-инструментов.
@@ -425,7 +424,7 @@
 - [ggml](https://github.com/ggml-org/ggml) ![](https://img.shields.io/github/stars/ggml-org/ggml?style=flat&color=yellow) - Тензорная библиотека для машинного обучения.
 - [DeepLearningExamples](https://github.com/NVIDIA/DeepLearningExamples) ![](https://img.shields.io/github/stars/NVIDIA/DeepLearningExamples?style=flat&color=yellow) - State-of-the-Art скрипты глубокого обучения, организованные по моделям.
 - [outlines](https://github.com/dottxt-ai/outlines) ![](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat&color=yellow) - Структурированные выводы.
-- [litgpt](https://github.com/Lightning-AI/litgpt) ![](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=flat&color=yellow) - Утилита litgpt.
+- [litgpt](https://github.com/Lightning-AI/litgpt) ![](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=flat&color=yellow) - 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 - [txtai](https://github.com/neuml/txtai) ![](https://img.shields.io/github/stars/neuml/txtai?style=flat&color=yellow) - All-in-one AI-фреймворк: семантический поиск, оркестрация LLM.
 - [HRM](https://github.com/sapientinc/HRM) ![](https://img.shields.io/github/stars/sapientinc/HRM?style=flat&color=yellow) - Hierarchical Reasoning Model — официальный релиз.
 - [MOSS](https://github.com/OpenMOSS/MOSS) ![](https://img.shields.io/github/stars/OpenMOSS/MOSS?style=flat&color=yellow) - Open-source tool-augmented разговорная языковая модель от Fudan University.
@@ -469,12 +468,12 @@
 - [nuclear](https://github.com/nukeop/nuclear) ![](https://img.shields.io/github/stars/nukeop/nuclear?style=flat&color=yellow) - Стриминговый музыкальный плеер, находящий свободную музыку.
 - [CVPR2024-Paper-Code-Interpretation](https://github.com/extreme-assistant/CVPR2024-Paper-Code-Interpretation) ![](https://img.shields.io/github/stars/extreme-assistant/CVPR2024-Paper-Code-Interpretation?style=flat&color=yellow) - Подборка статей/кода/разборов CVPR 2024.
 - [XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader) ![](https://img.shields.io/github/stars/JoeanAmier/XHS-Downloader?style=flat&color=yellow) - Загрузчик контента Xiaohongshu (RedNote).
-- [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) ![](https://img.shields.io/github/stars/xinnan-tech/xiaozhi-esp32-server?style=flat&color=yellow) - Утилита xiaozhi-esp32-server.
-- [VAR](https://github.com/FoundationVision/VAR) ![](https://img.shields.io/github/stars/FoundationVision/VAR?style=flat&color=yellow) - Утилита VAR.
+- [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) ![](https://img.shields.io/github/stars/xinnan-tech/xiaozhi-esp32-server?style=flat&color=yellow) - 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.
+- [VAR](https://github.com/FoundationVision/VAR) ![](https://img.shields.io/github/stars/FoundationVision/VAR?style=flat&color=yellow) - Визуальное авторегрессионное моделирование — предсказание следующего масштаба для генерации изображений.
 - [ICCV2023-Paper-Code-Interpretation](https://github.com/extreme-assistant/ICCV2023-Paper-Code-Interpretation) ![](https://img.shields.io/github/stars/extreme-assistant/ICCV2023-Paper-Code-Interpretation?style=flat&color=yellow) - Подборка статей/кода/разборов ICCV 2023/2021/2019/2017.
 - [deepseek_ocr_app](https://github.com/rdumasia303/deepseek_ocr_app) ![](https://img.shields.io/github/stars/rdumasia303/deepseek_ocr_app?style=flat&color=yellow) - Быстрое vibe-coded приложение для DeepSeek OCR.
 - [natively-cluely-ai-assistant](https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant) ![](https://img.shields.io/github/stars/Natively-AI-assistant/natively-cluely-ai-assistant?style=flat&color=yellow) - Free open-source AI-ассистент встреч, интервью и заметок.
-- [global-stock-data](https://github.com/simonlin1212/global-stock-data) ![](https://img.shields.io/github/stars/simonlin1212/global-stock-data?style=flat&color=yellow) - Утилита global-stock-data.
+- [global-stock-data](https://github.com/simonlin1212/global-stock-data) ![](https://img.shields.io/github/stars/simonlin1212/global-stock-data?style=flat&color=yellow) - 美股港股全栈数据工具包 (AI Skill) — 7层架构 · 17端点 · 5数据源 · 零鉴权 | US & HK Stock Full-Stack Data Toolkit for AI Coding Assistants.
 
 ## Контрибьютинг
 

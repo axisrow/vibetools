@@ -43,12 +43,15 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
     """Полный объект репо из GitHub API → нормализованный meta-словарь.
 
     Возвращает {stars, forks, openIssues, pushedAt, createdAt, topics, archived,
-    language} или None при ошибке/rate-limit (звёзды при этом сохраняем из
-    прежнего кэша вызывающей стороной, чтобы не терять данные).
+    language, description} или None при ошибке/rate-limit (звёзды при этом
+    сохраняем из прежнего кэша вызывающей стороной, чтобы не терять данные).
 
     language — primary language репо (поле /repos/{owner}/{repo}.language,
     одна строка, напр. "TypeScript"); берётся из уже выполняемого запроса,
     0 дополнительных обращений к API. None, если GitHub не определил язык.
+
+    description — описание репо из того же запроса; нужно авто-категоризации
+    trendshift-репо (scripts/categorize_repos.py) и как en-описание для сайта.
     """
     owner, repo = slug
     url = API.format(owner=owner, repo=repo)
@@ -68,6 +71,7 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
             "topics": j.get("topics", []) or [],
             "archived": bool(j.get("archived")),
             "language": j.get("language"),
+            "description": j.get("description"),
         }
     if r.status_code in (403, 429):
         print(f"  ! {owner}/{repo}: rate limit ({r.status_code}), пропускаю", file=sys.stderr)
@@ -114,6 +118,7 @@ def main(
     out_dir: Path = ROOT,
     history_file: Path = HISTORY_FILE,
     meta_file: Path = META_FILE,
+    trendshift_repos_file: Path = ROOT / "data" / "trendshift-repos.json",
 ) -> int:
     headers = github_headers()
 
@@ -142,6 +147,32 @@ def main(
             print(f"  ✓ {tool['name']}: {stars}")
         meta[tool["url"]] = repo_meta
 
+    # Звёзды/meta для trendshift-discovered репо (которых нет в tools.yml), чтобы
+    # карточки на сайте показывали stars/rank/createdAt, а не null. Идёт ПОСЛЕ
+    # tools.yml-цикла — кураторские репо гарантированно получают звёзды первыми,
+    # даже если упрёмся в rate-limit. fetch_repo толерантен (None → пропуск), джоб
+    # не валится. Однодневная задержка для свежесобранных (stars придут след. днём)
+    # — в духе существующего daily-cache контракта.
+    ts_updated = 0
+    ts_missing = 0
+    trendshift_repos = load_json_or_default(trendshift_repos_file, []) or []
+    for rec in trendshift_repos:
+        if not isinstance(rec, dict):
+            continue
+        url = rec.get("githubUrl")
+        if not isinstance(url, str) or url in cache:
+            continue  # уже fetched как tools.yml-запись
+        slug = github_slug(url)
+        if not slug:
+            continue
+        repo_meta = fetch_repo(slug, headers)
+        if repo_meta is None or repo_meta.get("stars") is None:
+            ts_missing += 1
+            continue
+        cache[url] = repo_meta["stars"]
+        meta[url] = repo_meta
+        ts_updated += 1
+
     stars_file.write_text(
         json.dumps(cache, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
         encoding="utf-8",
@@ -156,6 +187,8 @@ def main(
     update_history(history_file, today, cache)
 
     print(f"\nОбновлено: {updated}, не удалось получить: {missing}")
+    if ts_updated or ts_missing:
+        print(f"Trendshift-repos: обновлено {ts_updated}, не удалось: {ts_missing}")
 
     # Перегенерируем README — прямой вызов (быстрее и тестируемее subprocess).
     # out_dir пробрасывается, чтобы при вызове из тестов README писался в tmp.
@@ -163,9 +196,12 @@ def main(
         from generate_readme import main as gen_main
         gen_main(tools_yml, stars_file, out_dir, history_file)
         # Статический сайт (docs/index.html) — тоже из обновлённых данных.
+        # trendshift_repos_file пробрасывается, чтобы сайт подмешивал обнаруженные
+        # репо (stage 4); в тестах указывает в tmp (test-isolation).
         from generate_site import main as site_main
         site_main(tools_yml, stars_file, out_file=(out_dir / "docs" / "index.html"),
-                  meta_file=(out_dir / "data" / "repos-meta.json"))
+                  meta_file=(out_dir / "data" / "repos-meta.json"),
+                  trendshift_repos_file=trendshift_repos_file)
     return 0
 
 
