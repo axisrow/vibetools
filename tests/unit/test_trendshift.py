@@ -529,3 +529,4 @@ def test_enrich_from_rankings_keeps_repo_when_badge_unavailable():
     assert badge.get("currentRank") == 1  # из ItemList position
     assert "rank" not in badge  # точного ранга из SVG нет
     assert "badgeUrl" not in badge  # badgeUrl не приделан (SVG не получен)
+

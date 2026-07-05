@@ -63,7 +63,11 @@ _USER_AGENT = "vibetools-bot/1.0 (+https://github.com/axisrow/vibetools)"
 _DEFAULT_HEADERS = {"User-Agent": _USER_AGENT}
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import github_headers, github_slug, load_json_or_default  # noqa: E402
+from common import (  # noqa: E402
+    github_headers,
+    github_slug,
+    load_json_or_default,
+)
 from generate_readme import load_tools  # noqa: E402
 
 PAGE_RE = re.compile(r"https://trendshift\.io/repositories/(?P<id>\d+)")
@@ -358,6 +362,12 @@ def update_trendshift_cache(
 
     ``languages`` — пробрасывается в enrich_from_rankings для per-language
     сбора (None/() → legacy, только 4 глобальные страницы).
+
+    Liveness/freshness автособранных new_repos теперь НЕ здесь — её делает
+    update_stars.refresh_trendshift_meta (бюджет-aware ротация + pruning
+    404/archived/low-stars). Этот скрипт только собирает ranking-данные и
+    мёржит бейджи; выкидывание мёртвых переехало туда, где уже есть meta из
+    /repos (0 лишних API, и meta не замораживается).
     """
     candidates = []
     for tool in tools:
@@ -389,8 +399,9 @@ def update_trendshift_cache(
     for url, entry in results:
         if entry is not None:
             next_cache[url] = merge_trendshift_entry(next_cache.get(url), entry)
-    return enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
-                                badge_fetcher, new_repos, languages, None)
+    cache = enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
+                                 badge_fetcher, new_repos, languages, None)
+    return cache
 
 
 def _serialize_repos_cache(new_repos: dict) -> list[dict]:
@@ -436,6 +447,9 @@ def main(
     # на месте, а при сбое — сохранить прежние (симметрия с previous_cache).
     # Важно: категория/categoryReason/categoryAt и др. обогащающие поля на сиде
     # сохраняются — merge_trendshift_entry их не трогает (правит только badges).
+    # Liveness (404/archived/low-stars) НЕ здесь — её делает update_stars.
+    # refresh_trendshift_meta на следующем шаге daily-джоба, где уже есть meta
+    # из /repos (0 лишних API, meta не замораживается).
     new_repos: dict[str, dict] = {}
     for rec in load_json_or_default(trendshift_repos_file, []) or []:
         if isinstance(rec, dict) and isinstance(rec.get("githubUrl"), str):

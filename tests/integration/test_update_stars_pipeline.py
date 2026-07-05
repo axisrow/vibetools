@@ -29,7 +29,7 @@ def test_update_stars_writes_stars_cache(tmp_repo):
     responses.add(responses.GET, LO_API, json={"stargazers_count": 5}, status=200)
     responses.add(responses.GET, EDITOR_API, json={"stargazers_count": 50}, status=200)
 
-    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"], trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     cache = _read_cache(tmp_repo)
     assert rc == 0
     assert cache[HI_URL] == 100
@@ -46,7 +46,7 @@ def test_update_stars_preserves_old_cache_on_404(tmp_repo):
     responses.add(responses.GET, LO_API, json={"stargazers_count": 5}, status=200)
     responses.add(responses.GET, EDITOR_API, json={"stargazers_count": 50}, status=200)
 
-    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"], trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     cache = _read_cache(tmp_repo)
     assert cache[HI_URL] == 999  # прежнее значение сохранено
     assert cache[LO_URL] == 5
@@ -58,7 +58,7 @@ def test_update_stars_skips_non_github(tmp_repo):
     responses.add(responses.GET, LO_API, json={"stargazers_count": 5}, status=200)
     responses.add(responses.GET, EDITOR_API, json={"stargazers_count": 50}, status=200)
 
-    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"], trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     cache = _read_cache(tmp_repo)
     assert NOGIT_URL not in cache
 
@@ -69,7 +69,7 @@ def test_update_stars_regenerates_readme(tmp_repo):
     responses.add(responses.GET, LO_API, json={"stargazers_count": 5}, status=200)
     responses.add(responses.GET, EDITOR_API, json={"stargazers_count": 50}, status=200)
 
-    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"], trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     readme = (tmp_repo["root"] / "README.md").read_text(encoding="utf-8")
     # README перегенерирован: бейджи owner/repo на месте.
     assert "img.shields.io/github/stars/a/hi" in readme
@@ -89,7 +89,7 @@ def test_update_stars_all_fail_still_writes(tmp_repo):
     for api in (HI_API, LO_API, EDITOR_API):
         responses.add(responses.GET, api, json={"message": "rate"}, status=403)
 
-    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"], trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     cache = _read_cache(tmp_repo)
     assert rc == 1  # тотальный сбой → nonzero, чтобы CI заметил
     assert cache[HI_URL] == 7  # прежний кэш уцелел
@@ -129,7 +129,8 @@ def test_update_stars_regenerates_with_meta_history_trendshift(tmp_repo):
     rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"],
                      out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"],
                      meta_file=tmp_repo["meta_file"],
-                     trendshift_file=tmp_repo["trendshift_file"])
+                     trendshift_file=tmp_repo["trendshift_file"],
+                     trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     assert rc == 0
 
     # README обогащён created_at из meta → HiStars свежий (2 дня) → [new].
@@ -158,7 +159,7 @@ def test_update_stars_rate_limit_partial(tmp_repo):
     responses.add(responses.GET, LO_API, json={"message": "rate"}, status=429)
     responses.add(responses.GET, EDITOR_API, json={"stargazers_count": 50}, status=200)
 
-    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
+    update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"], trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     cache = _read_cache(tmp_repo)
     assert cache[HI_URL] == 100
     assert cache[LO_URL] == 3   # прежнее значение сохранено при 429
