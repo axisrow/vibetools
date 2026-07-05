@@ -270,16 +270,65 @@ def test_rotation_fetcher_none_alive_checker_dead_prunes():
 
 
 def test_rotation_fetcher_none_unknown_keeps():
-    """fetcher→None + alive unknown (rate-limit) → репо сохраняем, missing++."""
+    """fetcher→None + alive unknown (rate-limit) → репо сохраняем, missing++.
+
+    checkedAt двигается на today (дата ротации), чтобы persistent-unknown не
+    застревал первым в сортировке и не монополизировал max_per_run — иначе те
+    же репо проверялись бы каждый день, а позади них не доходили. Прежний meta
+    (stars/archived) сохраняется.
+    """
     repos = [_rec("https://github.com/x/net")]
-    meta = {"https://github.com/x/net": _meta(checked_at="")}
+    meta = {"https://github.com/x/net": _meta(stars=42, checked_at="")}
     updated, missing, pruned = refresh_trendshift_meta(
         repos, meta, {}, set(), {}, fetcher=lambda *a, **k: None,
         max_per_run=10, alive_checker=_alive("unknown"), now=TODAY)
     assert missing == 1 and updated == 0 and pruned == []
-    # репо сохранён (не выкинут), meta не тронут (прежний кэш остаётся).
+    # репо сохранён (не выкинут), прежние поля meta остались...
     assert {r["githubUrl"] for r in repos} == {"https://github.com/x/net"}
-    assert repos == [_rec("https://github.com/x/net")]
+    assert meta["https://github.com/x/net"]["stars"] == 42
+    # ...но checkedAt сдвинут на today — иначе livelock ротации.
+    assert meta["https://github.com/x/net"]["checkedAt"] == TODAY.isoformat()
+
+
+def test_rotation_persistent_unknown_does_not_starve_later_repos():
+    """Регрессия на Codex livelock: >max_per_run unknown перед живыми репо.
+
+    Раньше unknown не двигал checkedAt → persistent-unknown (timeout/403) cada
+    день оказывался первым в сортировке и монополизировал max_per_run, навсегда
+    замораживая meta для репо позади. Теперь unknown тоже двигает checkedAt,
+    поэтому во второй прогон ротация доходит до живых репо позади.
+    """
+    # 3 unknown (все checkedAt="") перед 1 живым. max_per_run=2.
+    # Прогон 1: берёт 2 unknown (по алфавиту), оба получают checkedAt=today.
+    #   Живой не успел (лимит). updated=0, missing=2.
+    # Прогон 2: сортировка — живой (checkedAt="") теперь ПЕРЕД двумя unknown
+    #   (у тех уже today). Живой fetched → updated=1.
+    urls = ["https://github.com/x/a", "https://github.com/x/b",
+            "https://github.com/x/c", "https://github.com/x/live"]
+    repos = [_rec(u) for u in urls]
+    meta = {u: _meta(checked_at="") for u in urls}
+    headers = {}
+
+    def fetcher(slug, headers, **_):
+        owner, repo = slug
+        return {"stars": 99, "archived": False,
+                "checkedAt": TODAY.isoformat()} if repo == "live" else None
+
+    # Прогон 1.
+    refresh_trendshift_meta(repos, meta, {}, set(), headers, fetcher=fetcher,
+                            max_per_run=2, alive_checker=_alive("unknown"),
+                            now=TODAY)
+    # a,b получили checkedAt=today; live и c ещё "".
+    assert meta["https://github.com/x/a"]["checkedAt"] == TODAY.isoformat()
+    assert meta["https://github.com/x/b"]["checkedAt"] == TODAY.isoformat()
+    assert meta["https://github.com/x/live"]["stars"] == 100  # прежний кэш
+    assert meta["https://github.com/x/c"]["checkedAt"] == ""
+
+    # Прогон 2: live (checkedAt="") теперь впереди a,b (today). Должен дойти.
+    updated, missing, _ = refresh_trendshift_meta(
+        repos, meta, {}, set(), headers, fetcher=fetcher, max_per_run=2,
+        alive_checker=_alive("unknown"), now=TODAY)
+    assert updated == 1, "живой репо позади persistent-unknown должен дойти во 2 прогон"
 
 
 def test_rotation_archived_pruned():

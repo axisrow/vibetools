@@ -218,6 +218,18 @@ def refresh_trendshift_meta(
                 _remove_trendshift_repo(trendshift_repos, url)
             else:
                 missing += 1
+                # unknown («не уверены»: rate-limit/timeout/5xx) — сохраняем
+                # прежний кэш, НО двигаем checkedAt на today, иначе persistent-
+                # unknown навсегда остался бы первым в сортировке ротации и
+                # монополизировал max_per_run, замораживая meta для репо позади
+                # него (тот же stale-meta баг, что рефактор должен устранить).
+                # Дата ротации отделена от «свежести успеха»: мы знаем, что
+                # проверяли, но не получили новый meta — прежняя запись остаётся.
+                entry = meta.get(url)
+                if isinstance(entry, dict):
+                    entry["checkedAt"] = today
+                else:
+                    meta[url] = {"checkedAt": today}
             continue
         # Живой: archived/low-stars фильтр.
         if repo_meta.get("archived"):
