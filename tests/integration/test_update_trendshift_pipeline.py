@@ -162,3 +162,56 @@ def test_pipeline_default_alive_checker_filters_dead(tmp_repo):
 
     repos = _read_repos(tmp_repo)
     assert {r["githubUrl"] for r in repos} == {alive_url}
+
+
+def test_pipeline_meta_driven_prune_skips_alive_check(tmp_repo):
+    """meta_file→meta фильтрует archived/low-stars БЕЗ alive_checker (FIX rate-limit).
+
+    Главная цель фикса Codex rate-limit budget: update_stars уже положил
+    {stars, archived} в repos-meta.json. main(meta_file=...) читает его и
+    фильтрует archived/low-stars оттуда, НЕ дёргая alive_checker для url в meta.
+    alive_checker вызывается только для отсутствующих в meta. Это держит
+    API-бюджет в рамках Actions-лимита 1000/час вместо ~791 лишних запросов.
+    """
+    ok_url = "https://github.com/foo/ok"
+    archived_url = "https://github.com/foo/archived"
+    # третий url отсутствует в meta → должен дойти до alive_checker (проход 2),
+    # что доказывает: meta-фильтр и alive-фильтр работают вместе, не дублируя.
+    missing_url = "https://github.com/foo/missing"
+    html = _ranking_html([
+        ("1", "foo/ok", ok_url),
+        ("2", "foo/archived", archived_url),
+        ("3", "foo/missing", missing_url),
+    ])
+    meta_file = tmp_repo["root"] / "data" / "repos-meta.json"
+    meta_file.parent.mkdir(parents=True, exist_ok=True)
+    # ok и archived есть в meta → решаются без alive_checker (0 API).
+    # missing отсутствует → единственный, кто дёргает alive_checker.
+    meta_file.write_text(json.dumps({
+        ok_url: {"stars": 100, "archived": False},
+        archived_url: {"stars": 100, "archived": True},
+    }), encoding="utf-8")
+
+    called = []
+
+    def alive_checker(slug, headers):
+        called.append(slug)
+        return "alive", {"stars": 50, "archived": False}
+
+    ts_main(
+        tools_yml=tmp_repo["tools_yml"],
+        trendshift_file=tmp_repo["trendshift_file"],
+        trendshift_repos_file=tmp_repo["trendshift_repos_file"],
+        fetcher=lambda slug, h: None,
+        page_fetcher=lambda url, h: html,
+        badge_fetcher=lambda url, h: RANK_SVG,
+        alive_checker=alive_checker,
+        meta_file=meta_file,
+    )
+
+    repos = _read_repos(tmp_repo)
+    urls = {r["githubUrl"] for r in repos}
+    # archived выкинут по meta; ok и missing (alive) сохранены.
+    assert urls == {ok_url, missing_url}, "archived выкинут по meta; ok+missing живы"
+    # alive_checker дёргался ТОЛЬКО для missing — ok/archived решены через meta.
+    assert called == [("foo", "missing")], "только отсутствующий в meta url дошёл до alive_checker"

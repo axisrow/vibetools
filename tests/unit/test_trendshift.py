@@ -565,28 +565,57 @@ def test_prune_removes_dead_repos():
 
 
 def test_prune_removes_archived_repos():
-    """alive + archived=True → выкидывается (заброшенные)."""
+    """archived=True → выкидывается (заброшенные). Берётся из meta (0 API)."""
     new_repos = {
         "https://github.com/foo/ok": {},
         "https://github.com/foo/old": {},
     }
-    checker = _alive_map({"old": ("alive", {"stars": 50, "archived": True})})
-    _prune_dead_new_repos(new_repos, {}, checker, workers=1)
+    meta = {
+        "https://github.com/foo/ok": {"stars": 50, "archived": False},
+        "https://github.com/foo/old": {"stars": 50, "archived": True},
+    }
+    checker = _alive_map({})  # не должен вызываться — оба url в meta
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1, meta=meta)
     assert list(new_repos) == ["https://github.com/foo/ok"]
 
 
 def test_prune_removes_low_stars_via_min_stars():
-    """alive + stars < min_stars → выкидывается (пустой шум)."""
+    """stars < min_stars → выкидывается (пустой шум). Берётся из meta (0 API)."""
     new_repos = {
         "https://github.com/foo/big": {},
         "https://github.com/foo/small": {},
     }
-    checker = _alive_map({
-        "big": ("alive", {"stars": 100, "archived": False}),
-        "small": ("alive", {"stars": 5, "archived": False}),
-    })
-    _prune_dead_new_repos(new_repos, {}, checker, workers=1, min_stars=10)
+    meta = {
+        "https://github.com/foo/big": {"stars": 100, "archived": False},
+        "https://github.com/foo/small": {"stars": 5, "archived": False},
+    }
+    checker = _alive_map({})  # не должен вызываться
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1, min_stars=10, meta=meta)
     assert list(new_repos) == ["https://github.com/foo/big"]
+
+
+def test_prune_meta_skips_alive_check_for_known_urls():
+    """url в meta НЕ дёргает alive_checker — экономия API-бюджета (FIX rate-limit).
+
+    Главная цель meta-driven подхода: update_stars уже проверил репо и положил
+    в repos-meta.json. _prune берёт archived/stars оттуда, не тратя второй
+    API-запрос. alive_checker вызывается только для отсутствующих в meta.
+    """
+    called = []
+
+    def checker(slug, headers):
+        called.append(slug)
+        return "alive", {"stars": 1, "archived": False}
+
+    new_repos = {
+        "https://github.com/foo/in-meta": {},
+        "https://github.com/foo/missing": {},
+    }
+    meta = {"https://github.com/foo/in-meta": {"stars": 5, "archived": False}}
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1, meta=meta)
+    # in-meta решён через meta (без checker); missing — через checker.
+    assert called == [("foo", "missing")]
+    assert set(new_repos) == {"https://github.com/foo/in-meta", "https://github.com/foo/missing"}
 
 
 def test_prune_keeps_unknown_repos():
