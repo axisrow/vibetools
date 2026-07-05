@@ -352,6 +352,72 @@ def test_rotation_writes_cache_and_meta():
     assert meta["https://github.com/x/new"]["checkedAt"] == TODAY.isoformat()
 
 
+# ---- Доказательство экономии API-бюджета (ЧАСТЬ 3, core claim) ----
+# Наивный «рефетчить всё» (после skip-фикса ЧАСТЬ 1) даёт 383 + 791 = 1174
+# запроса/день > Actions-лимита 1000/час. Budget-aware ротация режет trendshift
+# до max_per_run=100/день + ~5 None-pass → ~488/день, в 2× запасом под лимит.
+# Backfill 791 репо растягивается на ~8 дней (по 100/день), потом steady-state.
+
+
+def test_rotation_budget_proof_488_not_1174(monkeypatch):
+    """791 trendshift-repo с max_per_run=100 → ~100 fetch'ей, а не 791.
+
+    Симулируем production-масштаб: ни один репо не проверялся (checkedAt="").
+    Доказываем: ротация делает ровно max_per_run запросов (+0 None-pass, т.к.
+    все живые), а не все 791. Вместе с tools.yml-циклом (383) это ~483 < 1000.
+    """
+    monkeypatch.setattr("update_stars.time.sleep", lambda s: None)
+    repos = [_rec(f"https://github.com/ts/r{i:04d}") for i in range(791)]
+    meta = {r["githubUrl"]: _meta(checked_at="") for r in repos}
+    calls = {"fetch": 0, "alive": 0}
+
+    def fetcher(slug, headers, **_):
+        calls["fetch"] += 1
+        return {"stars": 50, "archived": False, "checkedAt": TODAY.isoformat()}
+
+    def alive_checker(slug, headers):
+        calls["alive"] += 1
+        return "alive", None
+
+    updated, missing, pruned = refresh_trendshift_meta(
+        repos, meta, {}, set(), {}, fetcher=fetcher, max_per_run=100,
+        alive_checker=alive_checker, now=TODAY)
+    # Ровно 100 fetch'ей (max_per_run), 0 alive-check (все живые, fetcher не None).
+    assert calls["fetch"] == 100
+    assert calls["alive"] == 0
+    assert updated == 100 and missing == 0 and pruned == []
+    # 691 репо остались непроверенными — ждут след. прогонов (self-healing за ~8 дней).
+    assert len(repos) == 791
+
+
+def test_rotation_budget_with_few_dead_adds_alive_pass(monkeypatch):
+    """None-случаи (404/rate-limit) дают +1 alive-check каждый — но только для None.
+
+    Worst case для budget: несколько fetcher→None. Каждый → 1 alive-check.
+    100 ротации + 5 None = 105 запросов (всё ещё ≪ 791 наивных).
+    """
+    monkeypatch.setattr("update_stars.time.sleep", lambda s: None)
+    repos = [_rec(f"https://github.com/ts/r{i}") for i in range(100)]
+    meta = {r["githubUrl"]: _meta(checked_at="") for r in repos}
+    calls = {"fetch": 0, "alive": 0}
+
+    def fetcher(slug, headers, **_):
+        calls["fetch"] += 1
+        # первые 5 → None (симулируем 404/rate-limit в fetch_repo).
+        if calls["fetch"] <= 5:
+            return None
+        return {"stars": 50, "archived": False, "checkedAt": TODAY.isoformat()}
+
+    def alive_checker(slug, headers):
+        calls["alive"] += 1
+        return "unknown", None  # rate-limit → keep, не prune
+
+    refresh_trendshift_meta(repos, meta, {}, set(), {}, fetcher=fetcher,
+                            max_per_run=100, alive_checker=alive_checker, now=TODAY)
+    assert calls["fetch"] == 100
+    assert calls["alive"] == 5  # только None-случаи, не для живых
+
+
 # ---- Интеграция refresh_trendshift_meta в main (end-to-end pruning) ----
 
 
