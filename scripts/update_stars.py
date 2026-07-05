@@ -32,11 +32,18 @@ STARS_FILE = ROOT / "data" / "stars.json"
 HISTORY_FILE = ROOT / "data" / "stars-history.json"  # dated-срезы для дельт 1d/7d
 META_FILE = ROOT / "data" / "repos-meta.json"  # метаданные репо (forks/createdAt/topics/...)
 HISTORY_DAYS = 8  # сколько последних срезов хранить (8 = сегодня + 7 дней назад)
-API = "https://api.github.com/repos/{owner}/{repo}"
-
+# API-URL вынесен в common.GITHUB_REPO_API (общий для fetch_repo и
+# check_repo_alive); оставляем alias для обратной совместимости со старыми
+# импортами (tests/unit/test_fetch_repo_language.py: from update_stars import API).
 # Общий github_slug и github_headers — единые реализации для всех скриптов.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import github_headers, github_slug, load_json_or_default  # noqa: E402
+from common import (  # noqa: E402
+    GITHUB_REPO_API,
+    github_headers,
+    github_slug,
+    load_json_or_default,
+)
+API = GITHUB_REPO_API
 
 
 def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:

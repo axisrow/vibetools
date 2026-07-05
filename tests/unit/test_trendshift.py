@@ -172,6 +172,11 @@ def test_update_trendshift_cache_preserves_previous_entry_on_fetch_failure():
     assert cache == previous
 
 
+def _alive_ok(slug, headers):
+    """alive_checker-заглушка: все репо живые, 100 звёзд — фильтр не выкидывает."""
+    return "alive", {"stars": 100, "archived": False}
+
+
 def test_main_writes_cache_without_changing_tools_yml(tmp_path):
     tools_yml = tmp_path / "tools.yml"
     trendshift_file = tmp_path / "trendshift.json"
@@ -195,6 +200,7 @@ def test_main_writes_cache_without_changing_tools_yml(tmp_path):
         fetcher=lambda slug, headers: README_WITH_TRENDSHIFT,
         page_fetcher=lambda url, headers: None,
         badge_fetcher=lambda url, headers: None,
+        alive_checker=_alive_ok,
     )
 
     assert tools_yml.read_text(encoding="utf-8") == before
@@ -332,6 +338,7 @@ def test_main_writes_trendshift_repos_file(tmp_path):
         fetcher=lambda slug, headers: None,  # README не нужен — rankings всё дают
         page_fetcher=lambda url, h: html,
         badge_fetcher=lambda url, h: RANK_SVG,
+        alive_checker=_alive_ok,
     )
 
     cache = json.loads(trendshift_file.read_text(encoding="utf-8"))
@@ -483,6 +490,7 @@ def test_main_seeds_new_repos_preserving_category(tmp_path):
         page_fetcher=lambda url, headers: None,   # outage trendshift pages
         badge_fetcher=lambda url, headers: None,  # outage badges
         languages=("Python",),
+        alive_checker=lambda slug, h: ("unknown", None),  # outage alive-check → сохранить
     )
 
     repos = json.loads(trendshift_repos_file.read_text(encoding="utf-8"))
@@ -529,3 +537,137 @@ def test_enrich_from_rankings_keeps_repo_when_badge_unavailable():
     assert badge.get("currentRank") == 1  # из ItemList position
     assert "rank" not in badge  # точного ранга из SVG нет
     assert "badgeUrl" not in badge  # badgeUrl не приделан (SVG не получен)
+
+
+# ---- 404-валидатор: _prune_dead_new_repos (фильтр мёртвых/пустых репо) ----
+
+from update_trendshift import _prune_dead_new_repos, MIN_STARS  # noqa: E402
+
+
+def _alive_map(by_repo: dict):
+    """Создаёт alive_checker по таблице {repo: (status, meta)}.
+    slug → lookup по имени репо; неизвестные → alive(10 звёзд)."""
+    def checker(slug, headers):
+        _, repo = slug
+        return by_repo.get(repo, ("alive", {"stars": 10, "archived": False}))
+    return checker
+
+
+def test_prune_removes_dead_repos():
+    """dead (404) → выкидывается из new_repos."""
+    new_repos = {
+        "https://github.com/foo/alive": {"trendshiftId": "1"},
+        "https://github.com/foo/dead": {"trendshiftId": "2"},
+    }
+    checker = _alive_map({"dead": ("dead", None)})
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1)
+    assert list(new_repos) == ["https://github.com/foo/alive"]
+
+
+def test_prune_removes_archived_repos():
+    """alive + archived=True → выкидывается (заброшенные)."""
+    new_repos = {
+        "https://github.com/foo/ok": {},
+        "https://github.com/foo/old": {},
+    }
+    checker = _alive_map({"old": ("alive", {"stars": 50, "archived": True})})
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1)
+    assert list(new_repos) == ["https://github.com/foo/ok"]
+
+
+def test_prune_removes_low_stars_via_min_stars():
+    """alive + stars < min_stars → выкидывается (пустой шум)."""
+    new_repos = {
+        "https://github.com/foo/big": {},
+        "https://github.com/foo/small": {},
+    }
+    checker = _alive_map({
+        "big": ("alive", {"stars": 100, "archived": False}),
+        "small": ("alive", {"stars": 5, "archived": False}),
+    })
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1, min_stars=10)
+    assert list(new_repos) == ["https://github.com/foo/big"]
+
+
+def test_prune_keeps_unknown_repos():
+    """unknown (rate-limit/timeout) → НЕ выкидывается (обрыв ≠ мёртвый)."""
+    new_repos = {
+        "https://github.com/foo/ok": {},
+        "https://github.com/foo/net": {},
+    }
+    checker = _alive_map({"net": ("unknown", None)})
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1)
+    assert set(new_repos) == {"https://github.com/foo/ok", "https://github.com/foo/net"}
+
+
+def test_prune_noop_on_empty():
+    """Пустой new_repos → никаких запросов, остаётся пустым."""
+    calls = []
+
+    def checker(slug, headers):
+        calls.append(slug)
+        return "alive", {"stars": 1, "archived": False}
+
+    new_repos = {}
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1)
+    assert new_repos == {}
+    assert calls == []
+
+
+def test_prune_skips_non_github_urls():
+    """url без github.com (slug → None) не доходит до alive_checker."""
+    seen = []
+
+    def checker(slug, headers):
+        seen.append(slug)
+        return "alive", {"stars": 1, "archived": False}
+
+    new_repos = {"https://example.com/notgithub": {}}
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1)
+    assert list(new_repos) == ["https://example.com/notgithub"]  # сохранён без проверки
+    assert seen == []
+
+
+def test_prune_min_stars_default_is_module_constant():
+    """min_stars по умолчанию = MIN_STARS (0 = принимать любые живые)."""
+    new_repos = {"https://github.com/foo/zero": {}}
+    checker = _alive_map({"zero": ("alive", {"stars": 0, "archived": False})})
+    _prune_dead_new_repos(new_repos, {}, checker, workers=1)  # без min_stars
+    assert list(new_repos) == ["https://github.com/foo/zero"]  # 0 < 0 → False, остаётся
+    assert MIN_STARS == 0
+
+
+def test_update_trendshift_cache_prunes_via_injected_alive_checker():
+    """update_trendshift_cache(alive_checker=...) выкидывает dead из new_repos."""
+    tools = []
+    html = _ranking_html([
+        ("1", "foo/alive", "https://github.com/foo/alive"),
+        ("2", "foo/dead", "https://github.com/foo/dead"),
+    ])
+    new_repos = {}
+    update_trendshift_cache(
+        tools, {}, "2026-07-05", {},
+        fetcher=lambda slug, h: None,
+        page_fetcher=lambda url, h: html,
+        badge_fetcher=lambda url, h: None,
+        new_repos=new_repos,
+        alive_checker=_alive_map({"dead": ("dead", None)}),
+    )
+    assert list(new_repos) == ["https://github.com/foo/alive"]
+
+
+def test_update_trendshift_cache_no_alive_checker_is_legacy():
+    """Без alive_checker фильтр не запускается — dead репо остаётся (legacy)."""
+    tools = []
+    html = _ranking_html([("1", "foo/dead", "https://github.com/foo/dead")])
+    new_repos = {}
+    update_trendshift_cache(
+        tools, {}, "2026-07-05", {},
+        fetcher=lambda slug, h: None,
+        page_fetcher=lambda url, h: html,
+        badge_fetcher=lambda url, h: None,
+        new_repos=new_repos,
+        # alive_checker не передаётся → фильтр отключен
+    )
+    assert list(new_repos) == ["https://github.com/foo/dead"]
+

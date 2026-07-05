@@ -63,7 +63,12 @@ _USER_AGENT = "vibetools-bot/1.0 (+https://github.com/axisrow/vibetools)"
 _DEFAULT_HEADERS = {"User-Agent": _USER_AGENT}
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import github_headers, github_slug, load_json_or_default  # noqa: E402
+from common import (  # noqa: E402
+    check_repo_alive,
+    github_headers,
+    github_slug,
+    load_json_or_default,
+)
 from generate_readme import load_tools  # noqa: E402
 
 PAGE_RE = re.compile(r"https://trendshift\.io/repositories/(?P<id>\d+)")
@@ -79,6 +84,12 @@ KIND_BY_WINDOW = {
     "yearly": "year",
 }
 KIND_ORDER = {"day": 0, "week": 1, "month": 2, "year": 3}
+
+# Порог звёзд для включения автособранного репо в trendshift-repos.json.
+# 0 = «принимаем любые живые» (текущий консервативный дефолт); повысить до N,
+# чтобы отсеивать шум. На курируемый tools.yml НЕ влияет — только на фильтр
+# мёртвых/пустых автособранных репо (см. _prune_dead_new_repos).
+MIN_STARS = 0
 
 
 def fetch_readme(slug: tuple[str, str], headers: dict) -> str | None:
@@ -337,6 +348,80 @@ def enrich_from_rankings(
     return cache
 
 
+def _prune_dead_new_repos(
+    new_repos: dict,
+    headers: dict,
+    alive_checker: Callable[[tuple[str, str], dict], tuple],
+    workers: int = 16,
+    min_stars: int = MIN_STARS,
+) -> dict:
+    """Фильтрует мёртвые/пустые репо из автособранного new_repos (in-place).
+
+    Применяется ТОЛЬКО к trendshift-only репо (которых нет в tools.yml) — на
+    курируемый tools.yml и обогащающий trendshift.json не влияет. Вызывается из
+    update_trendshift_cache ПОСЛЕ enrich_from_rankings, когда new_repos уже
+    наполнен и badge-merge сделан (фильтр ортогонален merge-логике).
+
+    Правила для каждого url в new_repos:
+    - ``dead`` (404) → удалить (репозиторий удалён — выкидываем безопасно);
+    - ``alive`` + ``archived=True`` → удалить (заброшенные, не Interesting);
+    - ``alive`` + ``stars < min_stars`` → удалить (пустой шум);
+    - ``unknown`` (403/429/5xx/timeout/...) → НЕ трогать: обрыв сети ≠ повод
+      выкинуть (если url был в прежнем кэше, он засеян в main и остаётся).
+
+    ``alive_checker`` инъекцируется (по умолчанию common.check_repo_alive), что
+    делает функцию тестируемой без сети. Параллелится через ThreadPoolExecutor
+    (тот же паттерн, что README-fetch в update_trendshift_cache). url без
+    github.com (github_slug → None) пропускаются без alive-check.
+    """
+    candidates: list[tuple[str, tuple[str, str]]] = []
+    for url in new_repos:
+        slug = github_slug(url)
+        if slug is None:
+            continue
+        candidates.append((url, slug))
+    if not candidates:
+        return new_repos
+
+    statuses: dict[str, str] = {}
+    metas: dict[str, dict | None] = {}
+
+    def check(url: str, slug: tuple[str, str]):
+        try:
+            status, meta = alive_checker(slug, headers)
+        except Exception as exc:  # pragma: no cover - defensive for injected checker
+            print(f"  ! {slug[0]}/{slug[1]}: alive-check упал {exc}", file=sys.stderr)
+            status, meta = "unknown", None
+        statuses[url] = status
+        metas[url] = meta
+
+    if workers <= 1:
+        for url, slug in candidates:
+            check(url, slug)
+    else:
+        max_workers = min(workers, len(candidates)) or 1
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = [executor.submit(check, url, slug) for url, slug in candidates]
+            for future in as_completed(futures):
+                future.result()
+
+    for url, status in statuses.items():
+        if status == "dead":
+            del new_repos[url]
+            continue
+        if status == "alive":
+            meta = metas.get(url) or {}
+            if meta.get("archived"):
+                del new_repos[url]
+                continue
+            stars = meta.get("stars")
+            if isinstance(stars, int) and stars < min_stars:
+                del new_repos[url]
+                continue
+        # unknown → оставляем как есть.
+    return new_repos
+
+
 def update_trendshift_cache(
     tools: list[dict],
     previous_cache: dict,
@@ -348,6 +433,7 @@ def update_trendshift_cache(
     workers: int = 16,
     new_repos: dict | None = None,
     languages: tuple[str, ...] | None = None,
+    alive_checker: Callable[[tuple[str, str], dict], tuple] | None = None,
 ) -> dict:
     """Build a fresh cache and preserve previous entries on fetch failures.
 
@@ -358,6 +444,12 @@ def update_trendshift_cache(
 
     ``languages`` — пробрасывается в enrich_from_rankings для per-language
     сбора (None/() → legacy, только 4 глобальные страницы).
+
+    ``alive_checker`` — опциональный детектор живости репо (см.
+    common.check_repo_alive). Если передан И new_repos не None — после
+    enrich_from_rankings вызывается _prune_dead_new_repos, выкидывающий из
+    new_repos 404/archived/low-stars. None → фильтр отключен (legacy-режим,
+    старые тесты не ломаются).
     """
     candidates = []
     for tool in tools:
@@ -389,8 +481,14 @@ def update_trendshift_cache(
     for url, entry in results:
         if entry is not None:
             next_cache[url] = merge_trendshift_entry(next_cache.get(url), entry)
-    return enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
-                                badge_fetcher, new_repos, languages, None)
+    cache = enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
+                                 badge_fetcher, new_repos, languages, None)
+    # Фильтр мёртвых/пустых автособранных репо — только когда аккумулятор
+    # включён (new_repos is not None) и задан alive_checker. Иначе legacy-режим
+    # без alive-проверки (старые тесты и outage-сида не затрагиваются).
+    if new_repos is not None and alive_checker is not None:
+        _prune_dead_new_repos(new_repos, headers, alive_checker, workers)
+    return cache
 
 
 def _serialize_repos_cache(new_repos: dict) -> list[dict]:
@@ -419,6 +517,7 @@ def main(
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     languages: tuple[str, ...] | None = TREND_LANGUAGES,
+    alive_checker: Callable[[tuple[str, str], dict], tuple] | None = check_repo_alive,
 ) -> int:
     tools = load_tools(tools_yml)
     previous_cache = load_json_or_default(trendshift_file, {}) or {}
@@ -445,7 +544,7 @@ def main(
     cache = update_trendshift_cache(
         tools, previous_cache, updated_at, gh_headers, fetcher,
         page_fetcher, badge_fetcher, new_repos=new_repos,
-        languages=languages,
+        languages=languages, alive_checker=alive_checker,
     )
     trendshift_file.parent.mkdir(parents=True, exist_ok=True)
     trendshift_file.write_text(
