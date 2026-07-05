@@ -1174,7 +1174,7 @@ tools:
   category: context-memory
   description:
     en: 'Simple and Fast Retrieval-Augmented Generation'
-    ru: '[EMNLP2025] "LightRAG: Simple and Fast Retrieval-Augmented Generation"'
+    ru: 'Simple and Fast Retrieval-Augmented Generation'
 - name: ai-engineering-from-scratch
   url: https://github.com/rohitg00/ai-engineering-from-scratch
   category: learning-resources
@@ -1474,7 +1474,7 @@ tools:
   category: needs-review
   description:
     en: 'Visual Autoregressive Modeling - next-scale prediction for image generation'
-    ru: '[NeurIPS 2024 Best Paper Award][GPT beats diffusion🔥] [scaling laws in visual generation📈] Official impl. of "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction". An *ultra-simple, user-friendly yet state-of-the-art* codebase for autoregressive image generation!'
+    ru: 'Visual Autoregressive Modeling - next-scale prediction for image generation'
 - name: awesome-LLM-resources
   url: https://github.com/WangRongsheng/awesome-LLM-resources
   category: learning-resources
