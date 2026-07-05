@@ -186,6 +186,13 @@ def main(
     updated = 0
     missing = 0
     fetched = 0  # успешных fetch (для определения тотального сбоя)
+    # url, уже фетчнутые в ЭТОМ прогоне. Раньше trendshift-цикл skip'ил по
+    # персистентному cache (stars.json прошлого прогона) — это замораживало meta
+    # любого trendshift-repo после первого fetch'а (PR #20 планировал skip только
+    # дублей tools.yml, но условие `url in cache` было слишком широким). skip по
+    # fetched_this_run ровно то, что задумано: дубль url из tools.yml не фетчится
+    # дважды, но однажды обогащённый trendshift-repo рефетчится каждый день.
+    fetched_this_run: set[str] = set()
     for tool in tools:
         slug = github_slug(tool["url"])
         if not slug:
@@ -201,6 +208,7 @@ def main(
             updated += 1
             print(f"  ✓ {tool['name']}: {stars}")
         meta[tool["url"]] = repo_meta
+        fetched_this_run.add(tool["url"])
 
     # Звёзды/meta для trendshift-discovered репо (которых нет в tools.yml), чтобы
     # карточки на сайте показывали stars/rank/createdAt, а не null. Идёт ПОСЛЕ
@@ -215,8 +223,8 @@ def main(
         if not isinstance(rec, dict):
             continue
         url = rec.get("githubUrl")
-        if not isinstance(url, str) or url in cache:
-            continue  # уже fetched как tools.yml-запись
+        if not isinstance(url, str) or url in fetched_this_run:
+            continue  # уже fetched как tools.yml-запись в этом прогоне
         slug = github_slug(url)
         if not slug:
             continue
@@ -226,6 +234,7 @@ def main(
             continue
         cache[url] = repo_meta["stars"]
         meta[url] = repo_meta
+        fetched_this_run.add(url)
         ts_updated += 1
 
     stars_file.write_text(
