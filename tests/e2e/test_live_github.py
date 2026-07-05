@@ -13,6 +13,7 @@ import pytest
 
 from common import github_slug
 from update_stars import fetch_stars, main as update_main
+from update_trendshift import extract_ranking_entries, fetch_url
 
 
 @pytest.mark.live
@@ -33,6 +34,8 @@ def test_live_update_stars_one_repo(tmp_path):
     stars_file = data_dir / "stars.json"
     history_file = data_dir / "stars-history.json"
     meta_file = data_dir / "repos-meta.json"
+    trendshift_repos_file = data_dir / "trendshift-repos.json"
+    trendshift_repos_file.write_text("[]", encoding="utf-8")
     tools_yml.write_text(
         "tools:\n"
         "  - name: Aider\n"
@@ -46,7 +49,8 @@ def test_live_update_stars_one_repo(tmp_path):
 
     # Все кэши — в tmp, чтобы live-тест не портил реальные data/*.json.
     rc = update_main(tools_yml, stars_file, out_dir=tmp_path,
-                     history_file=history_file, meta_file=meta_file)
+                     history_file=history_file, meta_file=meta_file,
+                     trendshift_repos_file=trendshift_repos_file)
     cache = json.loads(stars_file.read_text(encoding="utf-8"))
     assert rc == 0
     assert "https://github.com/Aider-AI/aider" in cache
@@ -55,3 +59,21 @@ def test_live_update_stars_one_repo(tmp_path):
     # README регенерирован с бейджем.
     assert "img.shields.io/github/stars/Aider-AI/aider" in \
         (tmp_path / "README.md").read_text(encoding="utf-8")
+
+
+@pytest.mark.live
+def test_live_trendshift_language_page_returns_itemlist():
+    """Реальный trendshift.io: ?language=Python отдаёт ≥1 entry через ItemList JSON-LD.
+
+    Ловит дрейф trendshift (если они уберут ?language= или JSON-LD — тест упадёт
+    в nightly, сигнализируя, что per-language сбор сломался).
+    """
+    html = fetch_url("https://trendshift.io/weekly?language=Python")
+    assert html is not None, "trendshift.io не ответил (403/сеть?) — нужен UA в fetch_url"
+    entries = extract_ranking_entries(html, "week", "2026-07-05")
+    assert len(entries) >= 1, "ItemList пуст — trendshift изменил разметку?"
+    # Каждая запись — github URL + trendshift id.
+    for e in entries:
+        assert "github.com/" in e["githubUrl"]
+        assert e["trendshiftId"].isdigit()
+

@@ -31,17 +31,28 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_stars.py
 
-      # Trendshift-достижения (repo-of-day/week badges) — отдельный источник,
-      # не зависящий от GitHub API. Обновляем тем же дневным прогоном, чтобы
-      # data/trendshift.json не устаревал. Скрипт network-tolerant: таймауты,
-      # graceful None, а при outage trendshift.io прежние репо сохраняются
-      # в обоих кэшах (trendshift.json + trendshift-repos.json) — джоб не
-      # теряет собранное и не валится. data/trendshift-repos.json отслеживается
-      # с seed `[]`, поэтому git add всегда находит pathspec.
+      # Trendshift-достижения + per-language harvest (stage 2): обходим 4 глобальных
+      # окна + 16 языков × 4 окна, собираем ВСЕ ranking-репо в data/trendshift-repos.json.
+      # Отдельный источник, не зависящий от GitHub API. network-tolerant: таймауты,
+      # graceful None, а при outage trendshift.io прежние репо сохраняются в обоих
+      # кэшах (seed из прежнего файла) — джоб не теряет собранное и не валится.
+      # data/trendshift-repos.json отслеживается с seed `[]`, поэтому git add всегда
+      # находит pathspec.
       - name: Refresh Trendshift achievements
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_trendshift.py
+
+      # Авто-категоризация обнаруженных trendshift-репо (stage 3): GitHub topics/
+      # description → одна из 20 категорий; uncertain → 'needs-review'. Инкрементально
+      # (max_per_run=50 за прогон — уважаем rate-limit), категория кэшируется в
+      # data/trendshift-repos.json. Звёзды/meta для trendshift-репо уже собраны
+      # шагом update_stars выше. Отдельный скрипт: сбой категоризации не блокирует
+      # harvest/badges.
+      - name: Categorize trendshift repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/categorize_repos.py
 
       - name: Commit changes
         run: |

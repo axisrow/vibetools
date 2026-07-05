@@ -427,3 +427,97 @@ def test_site_template_validates_lang_from_localstorage():
     # Валидация: сброс к «en», если lang не входит в I18N.
     assert 'hasOwnProperty.call(I18N, lang)' in tpl
     assert 'lang = "en"' in tpl
+
+
+# ---- stage 4: trendshift-repos surfaced on the site ----
+
+def test_build_data_json_includes_trendshift_repos(tmp_repo):
+    """trendshift-repos.json → записи подмешиваются в tools с trendshiftDiscovered."""
+    tmp_repo["trendshift_repos_file"].write_text(json.dumps([{
+        "githubUrl": "https://github.com/discovered/repo",
+        "trendshiftId": "99999",
+        "category": "cli-agents",
+        "name": "discovered-repo",
+        "description": "A discovered coding agent",
+        "language": "Python",
+        "topics": ["ai-agent"],
+        "badges": [{"kind": "week", "rank": 3, "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/99999/weekly"}],
+    }]), encoding="utf-8")
+
+    data = build_data_json(
+        tmp_repo["tools_yml"], tmp_repo["stars_file"],
+        trendshift_repos_file=tmp_repo["trendshift_repos_file"],
+    )
+
+    discovered = [t for t in data["tools"] if t.get("trendshiftDiscovered")]
+    assert len(discovered) == 1
+    rec = discovered[0]
+    assert rec["url"] == "https://github.com/discovered/repo"
+    assert rec["category"] == "cli-agents"
+    assert rec["name"] == "discovered-repo"
+    assert rec["isNew"] is False  # discovery ≠ tool-new
+    assert rec["desc"] == {
+        "en": "A discovered coding agent",
+        "ru": "A discovered coding agent",   # нет descriptionRu → fallback на en
+        "zh": "A discovered coding agent",   # нет descriptionZh → fallback на en
+    }
+    assert rec["language"] == "Python"
+    assert "trendshift" in rec  # badges прокинулись
+
+
+def test_build_data_json_dedups_trendshift_repos_against_tools_yml(tmp_repo):
+    """URL, уже в tools.yml, не дублируется из trendshift-repos."""
+    # https://github.com/a/hi уже есть в tmp_repo tools.yml.
+    tmp_repo["trendshift_repos_file"].write_text(json.dumps([{
+        "githubUrl": "https://github.com/a/hi",
+        "category": "cli-agents",
+    }]), encoding="utf-8")
+
+    data = build_data_json(
+        tmp_repo["tools_yml"], tmp_repo["stars_file"],
+        trendshift_repos_file=tmp_repo["trendshift_repos_file"],
+    )
+
+    hi = [t for t in data["tools"] if t["url"] == "https://github.com/a/hi"]
+    assert len(hi) == 1  # без дубля
+    assert not hi[0].get("trendshiftDiscovered")  # остался кураторским
+
+
+def test_build_data_json_trendshift_repo_needs_review_fallback(tmp_repo):
+    """Запись без category → 'needs-review' (никогда не теряется, видна на сайте)."""
+    tmp_repo["trendshift_repos_file"].write_text(json.dumps([{
+        "githubUrl": "https://github.com/foo/bar",
+        # без category
+    }]), encoding="utf-8")
+
+    data = build_data_json(
+        tmp_repo["tools_yml"], tmp_repo["stars_file"],
+        trendshift_repos_file=tmp_repo["trendshift_repos_file"],
+    )
+
+    rec = next(t for t in data["tools"] if t["url"] == "https://github.com/foo/bar")
+    assert rec["category"] == "needs-review"
+    assert rec.get("trendshiftDiscovered") is True
+
+
+def test_build_data_json_trendshift_repo_stars_from_cache(tmp_repo, tmp_path):
+    """Звёзды для trendshift-репо берутся из stars.json (собирает update_stars)."""
+    meta_file = tmp_path / "repos-meta.json"
+    url = "https://github.com/discovered/repo"
+    meta_file.write_text(json.dumps({url: {
+        "stars": 500, "forks": 5, "createdAt": "2026-01-01T00:00:00Z",
+        "topics": ["ai"], "language": "Go"}}), encoding="utf-8")
+    tmp_repo["trendshift_repos_file"].write_text(json.dumps([{
+        "githubUrl": url, "category": "cli-agents",
+    }]), encoding="utf-8")
+
+    data = build_data_json(
+        tmp_repo["tools_yml"], tmp_repo["stars_file"],
+        meta_file=meta_file, trendshift_repos_file=tmp_repo["trendshift_repos_file"],
+    )
+
+    rec = next(t for t in data["tools"] if t["url"] == url)
+    assert rec["forks"] == 5
+    assert rec["createdAt"] == "2026-01-01T00:00:00Z"
+    assert rec["language"] == "Go"
+

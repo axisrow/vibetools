@@ -11,7 +11,7 @@ import urllib.request
 import pytest
 
 import generate_readme
-from generate_readme import CATEGORIES, CATEGORY_MAP, LEGACY_CATEGORIES, ROOT, TOOLS_YML, gh_anchor, load_tools
+from generate_readme import CATEGORIES, CATEGORY_MAP, LEGACY_CATEGORIES, ROOT, TOOLS_YML, TRENDSHIFT_ONLY_CATEGORIES, gh_anchor, load_tools
 
 
 def test_real_tools_yml_loads():
@@ -38,7 +38,11 @@ def test_real_tools_yml_no_legacy_catchall_categories():
 
 def test_real_tools_yml_all_declared_categories_used():
     counts = Counter(t["category"] for t in load_tools(TOOLS_YML))
-    empty = [key for key, _ in CATEGORIES if counts[key] == 0]
+    # TRENDSHIFT_ONLY_CATEGORIES наполняются только trendshift-discovered репо
+    # (обще-разработческие тулы) — в tools.yml их быть не должно, поэтому из
+    # проверки «категория должна использоваться» их исключаем.
+    empty = [key for key, _ in CATEGORIES
+             if counts[key] == 0 and key not in TRENDSHIFT_ONLY_CATEGORIES]
     assert not empty, f"пустые категории: {empty}"
 
 

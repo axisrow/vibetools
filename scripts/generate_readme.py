@@ -133,6 +133,56 @@ CATEGORIES = [
         "title_ru": "Доменные AI-агенты",
         "title_zh": "垂直领域代理",
     }),
+    # ---- Общие разработческие категории (для trendshift-discovered репо) ----
+    # Эти категории нужны, чтобы дать осмысленный дом репо из trendshift-top,
+    # которые НЕ относятся к vibe-coding (терминалы, VPN, медиа, OS-утилиты и т.д.).
+    # В tools.yml (кураторский vibe-coding список) их обычно нет — они наполняются
+    # авто-категоризацией trendshift-репо (scripts/categorize_repos.py + ручная разметка).
+    ("developer-tools", {
+        "title_en": "Developer Tools and Terminals",
+        "title_ru": "Инструменты разработчика и терминалы",
+        "title_zh": "开发工具与终端",
+    }),
+    ("networking-proxy", {
+        "title_en": "Networking, Proxy and VPN",
+        "title_ru": "Сеть, прокси и VPN",
+        "title_zh": "网络、代理与 VPN",
+    }),
+    ("media-entertainment", {
+        "title_en": "Media and Entertainment",
+        "title_ru": "Медиа и развлечения",
+        "title_zh": "媒体与娱乐",
+    }),
+    ("system-utilities", {
+        "title_en": "System Utilities",
+        "title_ru": "Системные утилиты",
+        "title_zh": "系统实用工具",
+    }),
+    ("business-apps", {
+        "title_en": "Business and ERP",
+        "title_ru": "Бизнес-приложения и ERP",
+        "title_zh": "商业与企业应用",
+    }),
+    ("data-infrastructure", {
+        "title_en": "Databases and Data Infrastructure",
+        "title_ru": "Базы данных и инфраструктура данных",
+        "title_zh": "数据库与数据基础设施",
+    }),
+    ("languages-runtimes", {
+        "title_en": "Languages, Compilers and Runtimes",
+        "title_ru": "Языки, компиляторы и рантаймы",
+        "title_zh": "语言、编译器与运行时",
+    }),
+    ("hardware-iot", {
+        "title_en": "Hardware, IoT and 3D",
+        "title_ru": "Hardware, IoT и 3D",
+        "title_zh": "硬件、物联网与 3D",
+    }),
+    ("blockchain-crypto", {
+        "title_en": "Blockchain and Crypto",
+        "title_ru": "Блокчейн и крипта",
+        "title_zh": "区块链与加密货币",
+    }),
     ("needs-review", {
         "title_en": "Needs Review",
         "title_ru": "Требует ревью",
@@ -143,6 +193,14 @@ CATEGORY_MAP = {key: meta for key, meta in CATEGORIES}
 # Категории старой таксономии, выведенные из оборота (catch-all 'other' и др.).
 # Единый источник для тестов, проверяющих, что в tools.yml не осталось легаси.
 LEGACY_CATEGORIES = {"other", "prompt-mcp", "workflow-automation", "learning"}
+# Категории, которые наполняются ТОЛЬКО trendshift-discovered репо (не ожидается в
+# tools.yml — это обще-разработческие тулы из trendshift-top). Тест
+# test_real_tools_yml_all_declared_categories_used исключает их из проверки «не пусто».
+TRENDSHIFT_ONLY_CATEGORIES = {
+    "developer-tools", "networking-proxy", "media-entertainment",
+    "system-utilities", "business-apps", "data-infrastructure",
+    "languages-runtimes", "hardware-iot", "blockchain-crypto",
+}
 
 OWNER_REPO_TEMPLATE = "https://github.com/{owner}/{repo}"
 SHIELDS_STARS = "https://img.shields.io/github/stars/{owner}/{repo}?style=flat&color=yellow"

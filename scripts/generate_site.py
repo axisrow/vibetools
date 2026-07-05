@@ -32,6 +32,11 @@ STARS_FILE = ROOT / "data" / "stars.json"
 META_FILE = ROOT / "data" / "repos-meta.json"
 HISTORY_FILE = ROOT / "data" / "stars-history.json"
 TREND_SHIFT_FILE = ROOT / "data" / "trendshift.json"
+# Trendshift-discovered репо, которых нет в tools.yml (autogen, растёт со stage 2/3).
+# Подмешиваются на сайт (НЕ в README — золотое правило: tools.yml = единственный
+# источник README). Category/name/description/language/topics кэшируются в этой
+# же записи (scripts/categorize_repos.py), звёзды/meta — в stars.json/repos-meta.json.
+TREND_SHIFT_REPOS_FILE = ROOT / "data" / "trendshift-repos.json"
 OUT_FILE = ROOT / "docs" / "index.html"
 INDEX_TEMPLATE = ROOT / "scripts" / "site_template.html"
 
@@ -96,6 +101,7 @@ def build_data_json(
     meta_file: Path = META_FILE,
     history_file: Path = HISTORY_FILE,
     trendshift_file: Path = TREND_SHIFT_FILE,
+    trendshift_repos_file: Path = TREND_SHIFT_REPOS_FILE,
 ) -> dict:
     """Собирает единый объект данных для встраивания в index.html.
 
@@ -105,6 +111,12 @@ def build_data_json(
     Ручных меток нет.
     search: lowercase name+en+ru+topics+language — для мгновенного client-side
     includes(). Сверху catalog languages (unique, sorted) для фильтра шаблона.
+
+    trendshift-repos.json: обнаруженные trendshift-репо, которых нет в tools.yml
+    (stage 2/3), подмешиваются в ``tools`` тем же payload-шейпом. Звёзды/meta —
+    из stars.json/repos-meta.json (собирает update_stars для trendshift-репо);
+    category/name/description/language/topics — из самой записи кэша. Флаг
+    ``trendshiftDiscovered`` отличает их от кураторских (UI может пометить).
     """
     tools = load_tools(tools_yml)
     stars = load_stars(stars_file)
@@ -114,6 +126,7 @@ def build_data_json(
     today = datetime.date.today()
 
     out_tools = []
+    tools_urls = {t["url"] for t in tools}
     for t in tools:
         url = t["url"]
         m = meta.get(url) if isinstance(meta.get(url), dict) else {}
@@ -127,6 +140,8 @@ def build_data_json(
         t["created_at"] = m.get("createdAt")
         desc_en = t["description"].get("en", "")
         desc_ru = t["description"].get("ru", "")
+        # zh — опциональное поле в tools.yml; если нет, fallback на en.
+        desc_zh = t["description"].get("zh", "") or desc_en
         topics = m.get("topics", []) or []
         language = m.get("language")
         tool_payload = {
@@ -143,11 +158,67 @@ def build_data_json(
             "archived": bool(m.get("archived")),
             "topics": topics,
             "language": language,
-            "desc": {"en": desc_en, "ru": desc_ru},
-            # lowercase haystack (Unicode/CJK-aware): name + desc + topics + language.
-            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)} {language or ''}".lower(),
+            "desc": {"en": desc_en, "ru": desc_ru, "zh": desc_zh},
+            # lowercase haystack (Unicode/CJK-aware): name + desc (3 языка) + topics + language.
+            "search": f"{t['name']} {desc_en} {desc_ru} {desc_zh} {' '.join(topics)} {language or ''}".lower(),
         }
         trendshift_entry = _trendshift_payload(trendshift.get(url))
+        if trendshift_entry:
+            tool_payload["trendshift"] = trendshift_entry
+        out_tools.append(tool_payload)
+
+    # Trendshift-discovered репо подмешиваются после кураторских. Дедуп против
+    # tools_urls (на случай, если репо уже перенесли в tools.yml). Категория из
+    # кэша (fallback 'needs-review'); isNew=False (discovery ≠ tool-new, которое
+    # считается по createdAt). desc ru→en fallback (trendshift-репо без ru).
+    trendshift_repos = []
+    if trendshift_repos_file != TREND_SHIFT_REPOS_FILE or tools_yml == TOOLS_YML:
+        trendshift_repos = load_json_or_default(trendshift_repos_file, []) or []
+    for rec in trendshift_repos:
+        if not isinstance(rec, dict):
+            continue
+        # irrelevant — ручная метка «не релевантен awesome-списку» (VPN, игры, OS-утилиты
+        # и т.п.): не показываем на сайте. Ставится куратором в trendshift-repos.json.
+        if rec.get("category") == "irrelevant":
+            continue
+        url = rec.get("githubUrl")
+        if not isinstance(url, str) or url in tools_urls:
+            continue
+        tools_urls.add(url)
+        m = meta.get(url) if isinstance(meta.get(url), dict) else {}
+        slug = github_slug(url)
+        stars_url = ""
+        if slug:
+            owner, repo = slug
+            stars_url = SHIELDS_STARS.format(owner=owner, repo=repo)
+        star_count = stars.get(url) if isinstance(stars.get(url), int) else None
+        topics = rec.get("topics") or m.get("topics", []) or []
+        language = rec.get("language") or m.get("language")
+        desc_en = rec.get("description") or ""
+        # ru/zh из кэша категоризации (descriptionRu/descriptionZh), fallback → en.
+        desc_ru = rec.get("descriptionRu") or desc_en
+        desc_zh = rec.get("descriptionZh") or desc_en
+        name = rec.get("name") or (slug[1] if slug else url)
+        tool_payload = {
+            "name": name,
+            "url": url,
+            "category": rec.get("category") or "needs-review",
+            "isNew": False,
+            "trendshiftDiscovered": True,
+            "stars": star_count,
+            "starsPerWeek": _stars_per_week(url, history, stars),
+            "starsUrl": stars_url,
+            "forks": m.get("forks"),
+            "openIssues": m.get("openIssues"),
+            "createdAt": m.get("createdAt"),
+            "archived": bool(m.get("archived")),
+            "topics": topics,
+            "language": language,
+            "desc": {"en": desc_en, "ru": desc_ru, "zh": desc_zh},
+            # haystack включает все 3 языка — поиск работает на любом языке UI.
+            "search": f"{name} {desc_en} {desc_ru} {desc_zh} {' '.join(topics)} {language or ''}".lower(),
+        }
+        trendshift_entry = _trendshift_payload(rec)
         if trendshift_entry:
             tool_payload["trendshift"] = trendshift_entry
         out_tools.append(tool_payload)
@@ -205,15 +276,17 @@ def main(
     meta_file: Path = META_FILE,
     history_file: Path = HISTORY_FILE,
     trendshift_file: Path = TREND_SHIFT_FILE,
+    trendshift_repos_file: Path = TREND_SHIFT_REPOS_FILE,
 ) -> None:
     data = build_data_json(tools_yml, stars_file, meta_file, history_file,
-                           trendshift_file)
+                           trendshift_file, trendshift_repos_file)
     html = render_index_html(data, template)
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html, encoding="utf-8")
     n = len(data["tools"])
-    print(f"✓ {out_file}: {n} утилит, {len(data['categories'])} категорий, "
-          f"языки en/ru/zh")
+    discovered = sum(1 for t in data["tools"] if t.get("trendshiftDiscovered"))
+    print(f"✓ {out_file}: {n} утилит ({discovered} trendshift-discovered), "
+          f"{len(data['categories'])} категорий, языки en/ru/zh")
 
 
 if __name__ == "__main__":
