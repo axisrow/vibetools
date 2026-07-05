@@ -30,10 +30,6 @@ TREND_SHIFT_FILE = ROOT / "data" / "trendshift.json"
 # Репозитории с trendshift.io, которых нет в tools.yml. List (отсортированный
 # по url для детерминированного git-diff), отдельный от trendshift.json.
 TREND_SHIFT_REPOS_FILE = ROOT / "data" / "trendshift-repos.json"
-# repos-meta.json: update_stars уже обошёл все репо (tools.yml + trendshift-repos)
-# и положил {stars, archived, ...} сюда ДО этого скрипта в daily-джобе. _prune
-# переиспользует эти данные (0 API), дёргая alive-check только для отсутствующих.
-META_FILE = ROOT / "data" / "repos-meta.json"
 RAW_README = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/README.md"
 TREND_SHIFT_PAGE = "https://trendshift.io/repositories/{id}"
 TREND_SHIFT_BADGE = "https://trendshift.io/api/badge/trendshift/repositories/{id}/{window}"
@@ -68,7 +64,6 @@ _DEFAULT_HEADERS = {"User-Agent": _USER_AGENT}
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
-    check_repo_alive,
     github_headers,
     github_slug,
     load_json_or_default,
@@ -88,12 +83,6 @@ KIND_BY_WINDOW = {
     "yearly": "year",
 }
 KIND_ORDER = {"day": 0, "week": 1, "month": 2, "year": 3}
-
-# Порог звёзд для включения автособранного репо в trendshift-repos.json.
-# 0 = «принимаем любые живые» (текущий консервативный дефолт); повысить до N,
-# чтобы отсеивать шум. На курируемый tools.yml НЕ влияет — только на фильтр
-# мёртвых/пустых автособранных репо (см. _prune_dead_new_repos).
-MIN_STARS = 0
 
 
 def fetch_readme(slug: tuple[str, str], headers: dict) -> str | None:
@@ -352,105 +341,6 @@ def enrich_from_rankings(
     return cache
 
 
-def _prune_dead_new_repos(
-    new_repos: dict,
-    headers: dict,
-    alive_checker: Callable[[tuple[str, str], dict], tuple],
-    workers: int = 16,
-    min_stars: int = MIN_STARS,
-    meta: dict | None = None,
-) -> dict:
-    """Фильтрует мёртвые/пустые репо из автособранного new_repos (in-place).
-
-    Применяется ТОЛЬКО к trendshift-only репо (которых нет в tools.yml) — на
-    курируемый tools.yml и обогащающий trendshift.json не влияет. Вызывается из
-    update_trendshift_cache ПОСЛЕ enrich_from_rankings, когда new_repos уже
-    наполнен и badge-merge сделан (фильтр ортогонален merge-логике).
-
-    Два источника решения о репо, чтобы не сжечь GitHub API budget (Actions
-    GITHUB_TOKEN = 1000 req/hour/repo, а update_stars уже тратит его на все
-    репо — см. https://docs.github.com/en/rest/using-rest-api/rate-limits):
-
-    1. ``meta`` (data/repos-meta.json, обновляется update_stars ДО этого
-       скрипта в том же daily-джобе). Для url, которые есть в meta, archived/
-       stars берутся оттуда — БЕЗ API-запроса. Этим покрывается подавляющее
-       большинство репо (мёртвые 404 в meta просто не попадают — fetch_repo
-       возвращает None при 404 и не пишет запись).
-    2. ``alive_checker`` (default common.check_repo_alive) — ТОЛЬКО для url,
-       отсутствующих в meta: это либо реально мёртвые, либо живые, не успевшие
-       попасть в meta из-за rate-limit в прошлый прогон.
-
-    Правила для каждого url в new_repos:
-    - в ``meta`` + ``archived=True`` → удалить (заброшенные);
-    - в ``meta`` + ``stars < min_stars`` → удалить (пустой шум);
-    - в ``meta`` иначе → оставить (живое, проверено);
-    - НЕ в meta + alive-check ``dead`` (404) → удалить;
-    - НЕ в meta + alive-check ``unknown`` (403/429/5xx/timeout/...) → оставить
-      («не смогли проверить» ≠ «мёртвый»: обрыв сети не должен выкашивать
-      живые репо; в след. прогоне update_stars положит их в meta).
-
-    url без github.com (github_slug → None) пропускаются без проверок.
-    alive-check параллелится через ThreadPoolExecutor (паттерн README-fetch).
-    """
-    # Проход 1: фильтр по meta (0 API-запросов) — для url, которые update_stars
-    # уже проверил и положил в repos-meta.json.
-    if meta:
-        for url in list(new_repos.keys()):
-            m = meta.get(url)
-            if not isinstance(m, dict):
-                continue  # нет в meta → оставляем для alive-check (проход 2)
-            if m.get("archived"):
-                del new_repos[url]
-                continue
-            stars = m.get("stars")
-            if isinstance(stars, int) and stars < min_stars:
-                del new_repos[url]
-                continue
-            # есть в meta, не archived, stars >= min_stars → живое, оставляем.
-            # В new_repos у него нет записи-маркера «проверено» — но оно просто
-            # останется в словаре как есть, что и нужно.
-
-    # Проход 2: alive-check только для того, чего нет в meta (или meta=None).
-    candidates: list[tuple[str, tuple[str, str]]] = []
-    for url in new_repos:
-        if meta and isinstance(meta.get(url), dict):
-            continue  # уже решено в проходе 1
-        slug = github_slug(url)
-        if slug is None:
-            continue
-        candidates.append((url, slug))
-    if not candidates:
-        return new_repos
-
-    statuses: dict[str, str] = {}
-
-    def check(url: str, slug: tuple[str, str]):
-        try:
-            status, _ = alive_checker(slug, headers)
-        except Exception as exc:  # pragma: no cover - defensive for injected checker
-            print(f"  ! {slug[0]}/{slug[1]}: alive-check упал {exc}", file=sys.stderr)
-            status = "unknown"
-        statuses[url] = status
-
-    if workers <= 1:
-        for url, slug in candidates:
-            check(url, slug)
-    else:
-        max_workers = min(workers, len(candidates)) or 1
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            futures = [executor.submit(check, url, slug) for url, slug in candidates]
-            for future in as_completed(futures):
-                future.result()
-
-    for url, status in statuses.items():
-        if status == "dead":
-            del new_repos[url]
-            continue
-        # alive (уже отфильтрован бы в проходе 1, раз попал сюда — только если
-        # meta=None) → оставляем; unknown → оставляем.
-    return new_repos
-
-
 def update_trendshift_cache(
     tools: list[dict],
     previous_cache: dict,
@@ -462,8 +352,6 @@ def update_trendshift_cache(
     workers: int = 16,
     new_repos: dict | None = None,
     languages: tuple[str, ...] | None = None,
-    alive_checker: Callable[[tuple[str, str], dict], tuple] | None = None,
-    meta: dict | None = None,
 ) -> dict:
     """Build a fresh cache and preserve previous entries on fetch failures.
 
@@ -475,16 +363,11 @@ def update_trendshift_cache(
     ``languages`` — пробрасывается в enrich_from_rankings для per-language
     сбора (None/() → legacy, только 4 глобальные страницы).
 
-    ``alive_checker`` — опциональный детектор живости репо (см.
-    common.check_repo_alive). Если передан И new_repos не None — после
-    enrich_from_rankings вызывается _prune_dead_new_repos, выкидывающий из
-    new_repos 404/archived/low-stars. None → фильтр отключен (legacy-режим,
-    старые тесты не ломаются).
-
-    ``meta`` — data/repos-meta.json (обновляется update_stars ДО этого скрипта
-    в daily-джобе). _prune_dead_new_repos берёт archived/stars из meta для url,
-    которые там есть (0 API), а alive_checker дёргает только для отсутствующих
-    в meta — это держит API-бюджет в рамках Actions-лимита 1000/час.
+    Liveness/freshness автособранных new_repos теперь НЕ здесь — её делает
+    update_stars.refresh_trendshift_meta (бюджет-aware ротация + pruning
+    404/archived/low-stars). Этот скрипт только собирает ranking-данные и
+    мёржит бейджи; выкидывание мёртвых переехало туда, где уже есть meta из
+    /repos (0 лишних API, и meta не замораживается).
     """
     candidates = []
     for tool in tools:
@@ -518,11 +401,6 @@ def update_trendshift_cache(
             next_cache[url] = merge_trendshift_entry(next_cache.get(url), entry)
     cache = enrich_from_rankings(tools, next_cache, updated_at, page_fetcher,
                                  badge_fetcher, new_repos, languages, None)
-    # Фильтр мёртвых/пустых автособранных репо — только когда аккумулятор
-    # включён (new_repos is not None) и задан alive_checker. Иначе legacy-режим
-    # без alive-проверки (старые тесты и outage-сида не затрагиваются).
-    if new_repos is not None and alive_checker is not None:
-        _prune_dead_new_repos(new_repos, headers, alive_checker, workers, meta=meta)
     return cache
 
 
@@ -552,15 +430,9 @@ def main(
     page_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     badge_fetcher: Callable[[str, dict | None], str | None] = fetch_url,
     languages: tuple[str, ...] | None = TREND_LANGUAGES,
-    alive_checker: Callable[[tuple[str, str], dict], tuple] | None = check_repo_alive,
-    meta_file: Path | None = META_FILE,
 ) -> int:
     tools = load_tools(tools_yml)
     previous_cache = load_json_or_default(trendshift_file, {}) or {}
-    # repos-meta.json: update_stars уже положил сюда {stars, archived, ...} для
-    # всех репо (tools.yml + trendshift-repos). _prune берёт archived/stars
-    # отсюда (0 API), alive-check — только для отсутствующих (см. _prune_dead_new_repos).
-    meta = load_json_or_default(meta_file, {}) if meta_file is not None else None
     updated_at = datetime.date.today().isoformat()
     # README-фетч (raw.githubusercontent.com) идёт через github_headers() — там
     # нужен Accept+GITHUB_TOKEN для повышенного rate-лимита. trendshift-страницы и
@@ -575,6 +447,9 @@ def main(
     # на месте, а при сбое — сохранить прежние (симметрия с previous_cache).
     # Важно: категория/categoryReason/categoryAt и др. обогащающие поля на сиде
     # сохраняются — merge_trendshift_entry их не трогает (правит только badges).
+    # Liveness (404/archived/low-stars) НЕ здесь — её делает update_stars.
+    # refresh_trendshift_meta на следующем шаге daily-джоба, где уже есть meta
+    # из /repos (0 лишних API, meta не замораживается).
     new_repos: dict[str, dict] = {}
     for rec in load_json_or_default(trendshift_repos_file, []) or []:
         if isinstance(rec, dict) and isinstance(rec.get("githubUrl"), str):
@@ -584,7 +459,7 @@ def main(
     cache = update_trendshift_cache(
         tools, previous_cache, updated_at, gh_headers, fetcher,
         page_fetcher, badge_fetcher, new_repos=new_repos,
-        languages=languages, alive_checker=alive_checker, meta=meta,
+        languages=languages,
     )
     trendshift_file.parent.mkdir(parents=True, exist_ok=True)
     trendshift_file.write_text(
