@@ -986,7 +986,7 @@
 // GitHub Pages → fetch без CORS). Раньше payload вшивался inline сюда как
 // window.__DATA__; теперь HTML и данные кешируются браузером раздельно.
 // Инициализация (precompute/listeners/applyI18n) отложена до fetch — см.
-// bootstrap(DATA) в конце скрипта.
+// bootstrapApp(DATA) в конце скрипта.
 const DATA_JSON = new URL("data.json", location.href).href;
 
 // UI-строки на 3 языках. Названия категорий берутся из __DATA__.categories
@@ -1117,10 +1117,15 @@ const I18N = {
   },
 };
 
-// bootstrap(DATA) вызывается после fetch('data.json') (см. конец скрипта).
+// bootstrapApp(DATA) вызывается после fetch('data.json') (см. конец скрипта).
 // Вся инициализация (precompute из DATA, listeners, applyI18n) отложена —
 // данные больше не инлайнятся, а грузятся асинхронно.
-function bootstrap(DATA) {
+// Имя bootstrapApp (не bootstrap): Bootstrap JS (CDN, defer) при загрузке
+// кладёт window.bootstrap своим API (bootstrap.Modal, …). Наша функция
+// инициализации на топ-уровне скрипта тоже становилась window.bootstrap, а
+// .then(bootstrap) резолвил имя ПОСЛЕ того, как Bootstrap JS успевал его
+// перезаписать → "TypeError: bootstrap is not a function" на fetch-resolve.
+function bootstrapApp(DATA) {
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
 const TOOLS_BY_URL = new Map(DATA.tools.map(tool => [tool.url, tool]));
 // Precompute производных от статичных DATA.tools ОДИН раз при загрузке —
@@ -1592,7 +1597,7 @@ document.querySelectorAll(".language-option").forEach(option => {
 });
 
 applyI18n();
-} // конец bootstrap(DATA)
+} // конец bootstrapApp(DATA)
 
 // Грузим данные отдельным файлом (раньше — inline window.__DATA__). relative
 // 'data.json' = тот же origin на GitHub Pages, без CORS. До успешного fetch
@@ -1604,7 +1609,7 @@ fetch(DATA_JSON)
   })
   .then(data => {
     window.__DATA__ = data;
-    bootstrap(data);
+    bootstrapApp(data);
   })
   .catch(err => {
     const list = document.getElementById("list");
