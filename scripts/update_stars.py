@@ -46,12 +46,17 @@ from common import (  # noqa: E402
 API = GITHUB_REPO_API
 
 
-def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
+def fetch_repo(
+    slug: tuple[str, str],
+    headers: dict,
+    now: datetime.date | None = None,
+    budget: dict | None = None,
+) -> dict | None:
     """Полный объект репо из GitHub API → нормализованный meta-словарь.
 
     Возвращает {stars, forks, openIssues, pushedAt, createdAt, topics, archived,
-    language, description} или None при ошибке/rate-limit (звёзды при этом
-    сохраняем из прежнего кэша вызывающей стороной, чтобы не терять данные).
+    language, description, checkedAt} или None при ошибке/rate-limit (звёзды при
+    этом сохраняем из прежнего кэша вызывающей стороной, чтобы не терять данные).
 
     language — primary language репо (поле /repos/{owner}/{repo}.language,
     одна строка, напр. "TypeScript"); берётся из уже выполняемого запроса,
@@ -59,6 +64,19 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
 
     description — описание репо из того же запроса; нужно авто-категоризации
     trendshift-репо (scripts/categorize_repos.py) и как en-описание для сайта.
+
+    checkedAt — ISO-дата проверки (``now`` или сегодня). Нужен budget-aware
+    ротации trendshift-repos (refresh_trendshift_meta): без маркера «когда
+    проверяли» невозможно отсортировать старейшие первыми. В tools.yml-цикле
+    поле избыточно (звёзды фетчатся каждый день), но в trendshift-ротации —
+    основа инкрементальности.
+
+    budget — опциональный mutable dict; если GitHub прислал числовой заголовок
+    ``x-ratelimit-remaining``, пишем ``budget["remaining"] = int(...)``. Ниже
+    budget_floor ротация останавливается (см. refresh_trendshift_meta), оставляя
+    запас Actions-лимиту 1000/час. None/отсутствующий/нечисловой заголовок
+    (Enterprise/прокси) → budget не трогаем (безопасно: throttle падает на
+    max_per_run). Читается и при ошибке (429 → remaining=0 узнаём сразу).
     """
     owner, repo = slug
     url = API.format(owner=owner, repo=repo)
@@ -67,6 +85,16 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
     except requests.RequestException as exc:
         print(f"  ! {owner}/{repo}: сетевая ошибка {exc}", file=sys.stderr)
         return None
+    # x-ratelimit-remaining читаем ДО проверки статуса: на 429 он тоже приходит
+    # (remaining=0) — это сигнал «лимит исчерпан» для budget-aware ротации.
+    if budget is not None:
+        raw = r.headers.get("x-ratelimit-remaining")
+        if raw is not None:
+            try:
+                budget["remaining"] = int(raw)
+            except (TypeError, ValueError):
+                pass  # нечисловой (прокси/Enterprise) — не трогаем budget
+    checked_at = (now or datetime.date.today()).isoformat()
     if r.status_code == 200:
         try:
             j = r.json()
@@ -86,6 +114,7 @@ def fetch_repo(slug: tuple[str, str], headers: dict) -> dict | None:
             "archived": bool(j.get("archived")),
             "language": j.get("language"),
             "description": j.get("description"),
+            "checkedAt": checked_at,
         }
     if r.status_code in (403, 429):
         print(f"  ! {owner}/{repo}: rate limit ({r.status_code}), пропускаю", file=sys.stderr)
