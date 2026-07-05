@@ -429,6 +429,56 @@ def test_site_template_validates_lang_from_localstorage():
     assert 'lang = "en"' in tpl
 
 
+def test_site_template_has_pagination_hooks():
+    """Pagination (#2): page-size select + pager + I18N + slicing в шаблоне.
+
+    Регрессионный guard на текст шаблона: каталог вырос до 1000+ записей —
+    нужна пагинация (10/50/100) с pager внизу. Проверяем структуру шаблона,
+    не запуская сайт: селектор размера, контейнер пейджера, I18N-троица,
+    константа PAGE_SIZES и слайсинг списка (не безусловный list.forEach).
+    """
+    root = Path(__file__).resolve().parents[2]
+    tpl = (root / "scripts" / "site_template.html").read_text(encoding="utf-8")
+    # UI-хуки: селектор размера страницы + контейнер пейджера.
+    assert 'id="f-page-size"' in tpl
+    assert 'id="pager"' in tpl
+    # Опции размера страницы 10/50/100.
+    assert '<option value="10">10</option>' in tpl
+    assert '<option value="50">50</option>' in tpl
+    assert '<option value="100">100</option>' in tpl
+    # I18N-троица для размера страницы (en/ru/zh).
+    assert 'pageSize: "Page size"' in tpl
+    assert 'pageSize: "Размер страницы"' in tpl
+    assert 'pageSize: "每页数量"' in tpl
+    # I18N page(n, total) на трёх языках.
+    assert 'page: (n, total) => `Page ${n} of ${total}`' in tpl
+    assert 'page: (n, total) => `Страница ${n} из ${total}`' in tpl
+    assert 'page: (n, total) => `第 ${n} / ${total} 页`' in tpl
+    # Состояние: PAGE_SIZES + валидация + fallback 50.
+    assert "const PAGE_SIZES = [10, 50, 100];" in tpl
+    assert "localStorage.getItem(\"vibetools:pageSize\")" in tpl
+    assert "PAGE_SIZES.includes(pageSize)" in tpl
+    assert "pageSize = 50" in tpl
+    # Слайсинг: список рендерится по странице, а не целиком.
+    assert "list.slice(" in tpl
+    assert "pageItems.forEach" in tpl
+    # Пейджер-функция присутствует.
+    assert "function renderPager(" in tpl
+    # applyI18n выставляет выбранный размер страницы в селекторе.
+    assert '("f-page-size").value = String(pageSize)' in tpl
+
+
+def test_site_pagination_payload_tools_not_truncated(tmp_repo):
+    """Pagination режет только DOM-список, не payload: все tools на месте."""
+    out = tmp_repo["root"] / "docs" / "index.html"
+    site_main(tools_yml=tmp_repo["tools_yml"], stars_file=tmp_repo["stars_file"],
+              out_file=out)
+    payload = _extract_payload(out.read_text(encoding="utf-8"))
+    # Пагинация slice'ит client-side; payload.tools не должен быть урезан.
+    assert len(payload["tools"]) == len(tmp_repo["tools"])
+
+
+
 # ---- stage 4: trendshift-repos surfaced on the site ----
 
 def test_build_data_json_includes_trendshift_repos(tmp_repo):
