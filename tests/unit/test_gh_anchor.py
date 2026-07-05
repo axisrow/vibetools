@@ -14,7 +14,7 @@ import re
 import pytest
 
 import generate_readme
-from generate_readme import CATEGORIES, gh_anchor
+from generate_readme import CATEGORIES, TRENDSHIFT_ONLY_CATEGORIES, gh_anchor
 
 
 @pytest.mark.parametrize("text, expected", [
@@ -64,9 +64,13 @@ def test_gh_anchor_toc_consistency():
         readme = (repo_root / readme_name).read_text(encoding="utf-8")
         toc_anchors = set(re.findall(r"\(#([^)]+)\)", readme))
         title_key = f"title_{lang}"
+        # TRENDSHIFT_ONLY_CATEGORIES не используются в tools.yml → их заголовков
+        # в README нет (README = tools.yml only). Проверяем только те категории,
+        # что реально появляются в README.
         expected_anchors = {
             gh_anchor(meta[title_key])
-            for _, meta in CATEGORIES
+            for key, meta in CATEGORIES
+            if key not in TRENDSHIFT_ONLY_CATEGORIES
         }
         # Каждый ожидаемый якорь должен присутствовать среди TOC-ссылок.
         missing = expected_anchors - toc_anchors

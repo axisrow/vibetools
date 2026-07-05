@@ -171,6 +171,10 @@ def build_data_json(
     for rec in trendshift_repos:
         if not isinstance(rec, dict):
             continue
+        # irrelevant — ручная метка «не релевантен awesome-списку» (VPN, игры, OS-утилиты
+        # и т.п.): не показываем на сайте. Ставится куратором в trendshift-repos.json.
+        if rec.get("category") == "irrelevant":
+            continue
         url = rec.get("githubUrl")
         if not isinstance(url, str) or url in tools_urls:
             continue
