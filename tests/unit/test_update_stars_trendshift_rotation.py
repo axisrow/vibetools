@@ -186,6 +186,36 @@ def test_rotation_no_checked_at_treated_as_oldest():
     assert fetched == ["none"]  # без checkedAt — первый кандидат
 
 
+def test_rotation_non_dict_meta_does_not_crash():
+    """Битая запись repos-meta (None/скаляр по url) не валит весь прогон.
+
+    Регрессия на Codex cycle-2: meta.get(url, {}).get(...) падал AttributeError,
+    когда ключ есть, но значение None/скаляр — дефолт {} не подставляется.
+    Хелпер _checked_at трактует не-dict как «никогда не проверяли» (""), репо
+    идёт первым в ротации и спокойно фетчится. Прежний stars/archived кэш для
+    таких записей уже недоступен (он не dict), но прогон не роняется.
+    """
+    repos = [_rec("https://github.com/x/null"), _rec("https://github.com/x/scalar"),
+             _rec("https://github.com/x/ok")]
+    meta = {
+        "https://github.com/x/null": None,       # JSON null
+        "https://github.com/x/scalar": "oops",   # скаляр вместо dict
+        "https://github.com/x/ok": _meta(checked_at="2026-07-04"),
+    }
+    fetched = []
+
+    def fetcher(slug, headers, **_):
+        fetched.append(slug[1])
+        return {"stars": 50, "archived": False, "checkedAt": TODAY.isoformat()}
+
+    # Раньше AttributeError на sort/skip; теперь — спокойно фетчит 2 битых
+    # (они «никогда», сортируются первыми) в рамках max_per_run=2.
+    refresh_trendshift_meta(
+        repos, meta, {}, set(), {}, fetcher=fetcher, max_per_run=2,
+        alive_checker=_alive("alive"), now=TODAY)
+    assert set(fetched) == {"null", "scalar"}
+
+
 def test_rotation_respects_max_per_run():
     """fetcher зовётся не более max_per_run раз."""
     repos = [_rec(f"https://github.com/x/r{i}") for i in range(5)]

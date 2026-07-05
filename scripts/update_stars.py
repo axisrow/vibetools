@@ -134,6 +134,22 @@ def fetch_stars(slug: tuple[str, str], headers: dict) -> int | None:
     return meta.get("stars") if meta else None
 
 
+def _checked_at(meta: dict, url: str) -> str:
+    """checkedAt для url, толерантно к битым записям repos-meta.json.
+
+    ``meta.get(url, {})`` недостаточно: если ключ есть, но значение ``None`` или
+    скаляр (кривая/ручная/legacy запись), дефолт ``{}`` не подставляется, и
+    ``.get("checkedAt")`` падает ``AttributeError`` — ломая весь дневной прогон
+    из-за одной записи. ``(meta.get(url) or {})`` лечит и None, и отсутствие.
+    Возвращает "" для «никогда не проверяли» (сортируется первым в ротации).
+    """
+    entry = meta.get(url)
+    if not isinstance(entry, dict):
+        return ""
+    value = entry.get("checkedAt")
+    return value if isinstance(value, str) else ""
+
+
 def refresh_trendshift_meta(
     trendshift_repos: list[dict],
     meta: dict[str, dict],
@@ -193,11 +209,11 @@ def refresh_trendshift_meta(
     # Старейшие первыми: checkedAt ASC ("" / отсутствие = «никогда» = первый),
     # url как secondary key для детерминизма (стабильный git-diff ежедневных
     # прогонов; иначе порядок плавал бы от сортировки Python).
-    candidates.sort(key=lambda us: (meta.get(us[0], {}).get("checkedAt") or "", us[0]))
+    candidates.sort(key=lambda us: (_checked_at(meta, us[0]), us[0]))
 
     fetched = 0
     for url, slug in candidates:
-        if meta.get(url, {}).get("checkedAt") == today:
+        if _checked_at(meta, url) == today:
             continue  # уже проверяли сегодня — идемпотентность
         if fetched >= max_per_run:
             continue  # лимит исчерпан — оставшиеся ждут след. прогона
