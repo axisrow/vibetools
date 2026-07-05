@@ -83,10 +83,31 @@ def test_real_readme_toc_links_resolve():
         assert not unresolved, f"{readme_name}: битые TOC-якоря {unresolved}"
 
 
+def _strip_featured_block(readme_text: str) -> str:
+    """Убирает блок «## Featured» целиком — он date-dependent и не относится
+    к «stale tools.yml».
+
+    pick_featured сверяет звёзды с dated-срезами stars-history.json через
+    наивный date.today(), а закоммиченный README генерируется кроном в 03:17 UTC
+    своей даты. Поэтому Featured-блок законно расходится между свежей
+    регенерацией и коммитом в окне 00:00–03:17 UTC (или после пропущенного
+    крона) — это не признак того, что куратор забыл перегенерировать README.
+    Тело списка (категории/строки) при этом обязано совпадать побайтово.
+    """
+    # Блок идёт от «## <Featured-title>\n» до следующей «## »-секции. Заголовок
+    # секции зависит от языка (en «Featured», ru «Избранное»), поэтому берём
+    # объединение FEATURED_TITLES. Берём всё до и всё после блока.
+    titles = "|".join(re.escape(t) for t in generate_readme.FEATURED_TITLES.values())
+    pattern = rf"^## (?:{titles})\n.*?(?=^## )"
+    parts = re.split(pattern, readme_text, flags=re.M | re.S, maxsplit=1)
+    return "".join(parts)
+
+
 def test_real_readme_not_stale():
     """Перегенерировать README в tmp и сравнить с закоммиченным — идентично.
 
-    Ловит «правил tools.yml, забыл перегенерировать README».
+    Ловит «правил tools.yml, забыл перегенерировать README». Featured-блок
+    исключён из сравнения — он зависит от наивного today (см. _strip_featured_block).
     """
     import json
     stars_path = ROOT / "data" / "stars.json"
@@ -106,8 +127,10 @@ def test_real_readme_not_stale():
             from pathlib import Path
             generate_readme.main(TOOLS_YML, tmp_stars, out_dir=Path(td))
             for name in ("README.md", "README.ru.md"):
-                fresh = (Path(td) / name).read_text(encoding="utf-8")
-                committed = (ROOT / name).read_text(encoding="utf-8")
+                fresh = _strip_featured_block(
+                    (Path(td) / name).read_text(encoding="utf-8"))
+                committed = _strip_featured_block(
+                    (ROOT / name).read_text(encoding="utf-8"))
                 assert fresh == committed, (
                     f"{name}: закоммиченный README не соответствует data/tools.yml. "
                     "Запустите `python scripts/generate_readme.py`."

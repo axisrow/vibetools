@@ -403,11 +403,15 @@ def _is_emoji(c: str) -> bool:
 def is_new(tool: dict, today=None) -> bool:
     """[new] если репо создано за последние NEW_DAYS дней.
 
-    Дата берётся из created_at (ISO-datetime из repos-meta, поле GitHub API);
-    для совместимости принимает и устаревшее поле added. Толерантна к
-    отсутствию/битому значению. today — для детерминированности в тестах.
+    Дата берётся из created_at (ISO-datetime из repos-meta, поле GitHub API;
+    обогащается в main перед вызовом). Толерантна к отсутствию/битому значению.
+    today — для детерминированности в тестах.
+
+    Золотое правило CLAUDE.md: tools.yml хранит только name/url/category/
+    description — ручного поля «added» нет (оно вычисляется из createdAt).
+    Поэтому legacy-fallback на «added» убран: единственный источник — created_at.
     """
-    raw = tool.get("created_at") or tool.get("added")
+    raw = tool.get("created_at")
     if not raw:
         return False
     today = today or datetime.date.today()
@@ -435,11 +439,17 @@ def render_line(tool: dict, lang: str, stars: int = 0, marks: set[str] | None = 
     url = tool["url"]
     # Очищаем описание: убираем эмодзи (ломают awesome-list-item), экранируем '['
     # (иначе markdown воспринимает как ссылку-определение), убираем ведущий '#',
-    # тримим точку/пробелы, капитализируем первое слово (требование awesome-lint).
+    # тримим завершающую пунктуацию/пробелы (чтобы не получить «!.» / «?.» / «. »),
+    # схлопываем множественные пробелы и капитализируем первое слово (требование
+    # awesome-lint).
     raw = tool["description"][lang]
     desc = "".join(c for c in raw if not _is_emoji(c))
     desc = desc.replace("[", "\\[").strip().lstrip("#").strip()
-    desc = desc.strip("—-").strip().rstrip(". ")
+    desc = desc.strip("—-").strip()
+    # Убираем хвостовую пунктуацию/пробелы — точку добавим сами ниже.
+    desc = desc.rstrip(".!? ").rstrip()
+    # Схлопываем повторы пробелов (могут остаться после вырезания эмодзи).
+    desc = re.sub(r"\s+", " ", desc).strip()
     if desc:
         desc = desc[0].upper() + desc[1:]
 

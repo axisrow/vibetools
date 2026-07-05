@@ -66,7 +66,12 @@ def test_e2e_rate_limit_429_keeps_cache(tmp_repo, mock_github, monkeypatch):
 
 
 def test_e2e_connection_refused(tmp_repo, monkeypatch):
-    """API указывает на несуществующий порт → RequestException → None, кэш сохранён."""
+    """API указывает на несуществующий порт → RequestException → None, кэш сохранён.
+
+    Контракт #14: тотальный сбой (0 успешных fetch) сохраняет прежний кэш, но
+    возвращает nonzero, чтобы CI заметил (истёкший токен / упавший эндпоинт),
+    и НЕ пишет свежий history-срез из устаревшего кэша.
+    """
     tmp_repo["stars_file"].write_text(
         json.dumps({"https://github.com/a/hi": 7}), encoding="utf-8")
     # Несуществующий локальный порт → connection refused.
@@ -74,8 +79,9 @@ def test_e2e_connection_refused(tmp_repo, monkeypatch):
 
     rc = update_main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"], history_file=tmp_repo["history_file"], meta_file=tmp_repo["meta_file"])
     cache = _cache(tmp_repo)
-    assert rc == 0
+    assert rc == 1  # тотальный сбой → nonzero
     assert cache["https://github.com/a/hi"] == 7  # прежний кэш уцелел
+    assert not tmp_repo["history_file"].exists()  # history не испорчен
 
 
 def test_e2e_token_passed_as_header(tmp_repo, mock_github, monkeypatch):
