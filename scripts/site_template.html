@@ -674,6 +674,26 @@
   .footer-link {
     color: inherit;
   }
+  .page-size-select {
+    flex: 0 0 auto;
+    max-width: 5rem;
+  }
+  .pager-nav {
+    margin-top: 1rem;
+    overflow-x: auto;
+    padding-bottom: .25rem;
+    scrollbar-width: thin;
+  }
+  .pager-nav .pagination {
+    margin-bottom: 0;
+  }
+  .pager-info {
+    color: var(--vt-ink-soft);
+    font-size: .82rem;
+    line-height: 1;
+    margin-right: .55rem;
+    white-space: nowrap;
+  }
   @media (max-width: 991.98px) {
     .masthead-top {
       align-items: flex-start !important;
@@ -777,6 +797,9 @@
     }
     #f-language {
       grid-column: 2 / 4;
+    }
+    #f-page-size {
+      grid-column: 1 / 2;
     }
     .mobile-category {
       display: block;
@@ -919,6 +942,12 @@
           <select class="form-select toolbar-select year-select" id="f-year" aria-label="Year"></select>
           <label class="visually-hidden" for="f-language" data-i18n="language">Language</label>
           <select class="form-select toolbar-select" id="f-language" aria-label="Language"></select>
+          <label class="visually-hidden" for="f-page-size" data-i18n="pageSize">Page size</label>
+          <select class="form-select toolbar-select page-size-select" id="f-page-size" aria-label="Page size">
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
           <div class="mobile-category">
             <label class="visually-hidden" for="category-select" data-i18n="category">category</label>
             <select class="form-select" id="category-select" aria-label="Category"></select>
@@ -947,6 +976,7 @@
     <div id="active-filter"></div>
   </div>
   <ul class="list-group list-group-flush tool-list" id="list"></ul>
+  <nav id="pager" class="pager-nav d-none d-flex align-items-center flex-wrap gap-2" aria-label="Pagination"></nav>
 </main>
 
 <footer class="container site-wrap border-top py-3 small text-body-secondary" data-i18n-html="footer"></footer>
@@ -993,6 +1023,8 @@ const I18N = {
     filterCategory: label => `Category: ${label}`,
     filterYear: year => `Year: ${year}`,
     sortStars: "Stars", sortDate: "Newest", sortName: "Name",
+    pageSize: "Page size",
+    page: (n, total) => `Page ${n} of ${total}`,
     results: n => `${n} tool${n === 1 ? "" : "s"}`,
     noResults: "No tools match your filters.",
     footer: 'Data from data/tools.yml · auto-updated daily · Built with GLM-5.2 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
@@ -1032,6 +1064,8 @@ const I18N = {
     filterCategory: label => `Категория: ${label}`,
     filterYear: year => `Год: ${year}`,
     sortStars: "Звезды", sortDate: "Новые", sortName: "Название",
+    pageSize: "Размер страницы",
+    page: (n, total) => `Страница ${n} из ${total}`,
     results: n => `${n} инструмент(ов)`,
     noResults: "Ничего не найдено по фильтрам.",
     footer: 'Данные из data/tools.yml · обновляется ежедневно · Создано на GLM-5.2 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
@@ -1071,6 +1105,8 @@ const I18N = {
     filterCategory: label => `分类：${label}`,
     filterYear: year => `年份：${year}`,
     sortStars: "星标", sortDate: "最新", sortName: "名称",
+    pageSize: "每页数量",
+    page: (n, total) => `第 ${n} / ${total} 页`,
     results: n => `${n} 个工具`,
     noResults: "没有符合筛选条件的工具。",
     footer: '数据来自 data/tools.yml · 每日自动更新 · 使用 GLM-5.2 构建 · <a href="https://github.com/axisrow/vibetools">GitHub</a>',
@@ -1114,6 +1150,13 @@ let activeYear = "all";
 let sortMode = "stars";
 let query = "";
 
+// Пагинация (10/50/100). Размер страницы хранится в localStorage (как lang),
+// валидируется по PAGE_SIZES — мусор/NaN/чужое значение → fallback 50.
+const PAGE_SIZES = [10, 50, 100];
+let pageSize = parseInt(localStorage.getItem("vibetools:pageSize"), 10);
+if (!PAGE_SIZES.includes(pageSize)) pageSize = 50;
+let currentPage = 1;
+
 const $ = id => document.getElementById(id);
 
 function t(key) { return I18N[lang][key]; }
@@ -1145,6 +1188,7 @@ function applyI18n() {
   $("summary").textContent = t("summary")(DATA.tools.length);
   $("total-tools").textContent = DATA.tools.length;
   $("generated").textContent = t("generated")(DATA.generatedAt);
+  $("f-page-size").value = String(pageSize);
   renderCats();
   renderYears();
   renderLanguages();
@@ -1378,10 +1422,19 @@ function render() {
   const ul = $("list");
   if (!list.length) {
     ul.innerHTML = `<li class="list-group-item empty">${t("noResults")}</li>`;
+    renderPager(0, 1);
     return;
   }
+  // Пагинация: метрика результатов остаётся полной (list.length), а список
+  // рендерится только для текущей страницы. currentPage зажимается в [1, totalPages]
+  // — после смены фильтра список мог стать короче, и номер страницы стал невалиден.
+  const totalPages = Math.max(1, Math.ceil(list.length / pageSize));
+  if (currentPage < 1) currentPage = 1;
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * pageSize;
+  const pageItems = list.slice(start, start + pageSize);
   const frag = document.createDocumentFragment();
-  list.forEach(tool => {
+  pageItems.forEach(tool => {
     const li = document.createElement("li");
     li.className = "list-group-item tool-item py-4";
     const desc = tool.desc[lang] || tool.desc.en;
@@ -1431,6 +1484,45 @@ function render() {
   });
   ul.innerHTML = "";
   ul.appendChild(frag);
+  renderPager(list.length, totalPages);
+}
+
+function renderPager(totalItems, totalPages) {
+  const pager = $("pager");
+  // Меньше одной страницы (или 0 результатов) → пейджер прячем.
+  if (!pager) return;
+  if (totalItems <= pageSize || totalPages <= 1) {
+    pager.classList.add("d-none");
+    pager.innerHTML = "";
+    return;
+  }
+  pager.classList.remove("d-none");
+  // Окно ±2 от текущей страницы; first/last + ellipsis «…», чтобы для 69 страниц
+  // не получался сплошной ряд. Prev/Next — языко-нейтральные символы ‹›.
+  const windowRadius = 2;
+  const windowStart = Math.max(1, currentPage - windowRadius);
+  const windowEnd = Math.min(totalPages, currentPage + windowRadius);
+  const items = [];
+  items.push(`<li class="page-item${currentPage === 1 ? " disabled" : ""}">
+    <a class="page-link" href="#" data-page="${currentPage - 1}" aria-label="Previous" rel="prev">‹</a>
+  </li>`);
+  if (windowStart > 1) {
+    items.push(`<li class="page-item"><a class="page-link" href="#" data-page="1">1</a></li>`);
+    if (windowStart > 2) items.push(`<li class="page-item disabled"><span class="page-link">…</span></li>`);
+  }
+  for (let p = windowStart; p <= windowEnd; p++) {
+    items.push(`<li class="page-item${p === currentPage ? " active" : ""}">
+      <a class="page-link" href="#" data-page="${p}">${p}</a>
+    </li>`);
+  }
+  if (windowEnd < totalPages) {
+    if (windowEnd < totalPages - 1) items.push(`<li class="page-item disabled"><span class="page-link">…</span></li>`);
+    items.push(`<li class="page-item"><a class="page-link" href="#" data-page="${totalPages}">${totalPages}</a></li>`);
+  }
+  items.push(`<li class="page-item${currentPage === totalPages ? " disabled" : ""}">
+    <a class="page-link" href="#" data-page="${currentPage + 1}" aria-label="Next" rel="next">›</a>
+  </li>`);
+  pager.innerHTML = `<span class="pager-info">${esc(t("page")(currentPage, totalPages))}</span><ul class="pagination">${items.join("")}</ul>`;
 }
 
 function esc(s) {
@@ -1441,24 +1533,47 @@ function esc(s) {
 let debounce;
 $("search").addEventListener("input", e => {
   clearTimeout(debounce);
-  debounce = setTimeout(() => { query = e.target.value; render(); }, 120);
+  debounce = setTimeout(() => { query = e.target.value; currentPage = 1; render(); }, 120);
 });
-$("sort").addEventListener("change", e => { sortMode = e.target.value; render(); });
-$("f-language").addEventListener("change", e => { activeLang = e.target.value; render(); });
-$("f-year").addEventListener("change", e => { activeYear = e.target.value; render(); });
+$("sort").addEventListener("change", e => { sortMode = e.target.value; currentPage = 1; render(); });
+$("f-language").addEventListener("change", e => { activeLang = e.target.value; currentPage = 1; render(); });
+$("f-year").addEventListener("change", e => { activeYear = e.target.value; currentPage = 1; render(); });
+$("f-page-size").addEventListener("change", e => {
+  const next = parseInt(e.target.value, 10);
+  pageSize = PAGE_SIZES.includes(next) ? next : 50;
+  localStorage.setItem("vibetools:pageSize", String(pageSize));
+  currentPage = 1;
+  render();
+});
+// Делегирование кликов по пейджеру: data-page задаёт целевую страницу.
+// disabled-пункты (Prev на 1-й, Next на последней) не имеют рабочей data-page.
+$("pager").addEventListener("click", e => {
+  e.preventDefault();
+  const link = e.target.closest("[data-page]");
+  if (!link) return;
+  const target = parseInt(link.dataset.page, 10);
+  if (!Number.isFinite(target) || target < 1) return;
+  currentPage = target;
+  render();
+  const list = $("list");
+  if (list) list.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 $("f-new").addEventListener("click", e => {
   const pressed = e.currentTarget.getAttribute("aria-pressed") === "true";
   e.currentTarget.setAttribute("aria-pressed", pressed ? "false" : "true");
+  currentPage = 1;
   render();
 });
 $("f-trendshift").addEventListener("click", e => {
   const pressed = e.currentTarget.getAttribute("aria-pressed") === "true";
   activeTrendshift = !pressed;
   e.currentTarget.setAttribute("aria-pressed", activeTrendshift ? "true" : "false");
+  currentPage = 1;
   render();
 });
 $("category-select").addEventListener("change", e => {
   activeCat = e.target.value;
+  currentPage = 1;
   applyI18n();
 });
 document.querySelectorAll(".language-option").forEach(option => {
