@@ -136,6 +136,8 @@ def build_data_json(
         t["created_at"] = m.get("createdAt")
         desc_en = t["description"].get("en", "")
         desc_ru = t["description"].get("ru", "")
+        # zh — опциональное поле в tools.yml; если нет, fallback на en.
+        desc_zh = t["description"].get("zh", "") or desc_en
         topics = m.get("topics", []) or []
         language = m.get("language")
         tool_payload = {
@@ -152,9 +154,9 @@ def build_data_json(
             "archived": bool(m.get("archived")),
             "topics": topics,
             "language": language,
-            "desc": {"en": desc_en, "ru": desc_ru},
-            # lowercase haystack (Unicode/CJK-aware): name + desc + topics + language.
-            "search": f"{t['name']} {desc_en} {desc_ru} {' '.join(topics)} {language or ''}".lower(),
+            "desc": {"en": desc_en, "ru": desc_ru, "zh": desc_zh},
+            # lowercase haystack (Unicode/CJK-aware): name + desc (3 языка) + topics + language.
+            "search": f"{t['name']} {desc_en} {desc_ru} {desc_zh} {' '.join(topics)} {language or ''}".lower(),
         }
         trendshift_entry = _trendshift_payload(trendshift.get(url))
         if trendshift_entry:
@@ -189,6 +191,9 @@ def build_data_json(
         topics = rec.get("topics") or m.get("topics", []) or []
         language = rec.get("language") or m.get("language")
         desc_en = rec.get("description") or ""
+        # ru/zh из кэша категоризации (descriptionRu/descriptionZh), fallback → en.
+        desc_ru = rec.get("descriptionRu") or desc_en
+        desc_zh = rec.get("descriptionZh") or desc_en
         name = rec.get("name") or (slug[1] if slug else url)
         tool_payload = {
             "name": name,
@@ -205,8 +210,9 @@ def build_data_json(
             "archived": bool(m.get("archived")),
             "topics": topics,
             "language": language,
-            "desc": {"en": desc_en, "ru": desc_en},
-            "search": f"{name} {desc_en} {' '.join(topics)} {language or ''}".lower(),
+            "desc": {"en": desc_en, "ru": desc_ru, "zh": desc_zh},
+            # haystack включает все 3 языка — поиск работает на любом языке UI.
+            "search": f"{name} {desc_en} {desc_ru} {desc_zh} {' '.join(topics)} {language or ''}".lower(),
         }
         trendshift_entry = _trendshift_payload(rec)
         if trendshift_entry:

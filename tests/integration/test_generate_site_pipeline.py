@@ -403,7 +403,11 @@ def test_build_data_json_includes_trendshift_repos(tmp_repo):
     assert rec["category"] == "cli-agents"
     assert rec["name"] == "discovered-repo"
     assert rec["isNew"] is False  # discovery ≠ tool-new
-    assert rec["desc"] == {"en": "A discovered coding agent", "ru": "A discovered coding agent"}
+    assert rec["desc"] == {
+        "en": "A discovered coding agent",
+        "ru": "A discovered coding agent",   # нет descriptionRu → fallback на en
+        "zh": "A discovered coding agent",   # нет descriptionZh → fallback на en
+    }
     assert rec["language"] == "Python"
     assert "trendshift" in rec  # badges прокинулись
 

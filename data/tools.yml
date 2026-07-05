@@ -5,2295 +5,2678 @@ tools:
   description:
     en: Agentic coding tool that lives in the terminal and understands your codebase
     ru: Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу
+    zh: 运行在终端中的自主编码工具，理解您的代码库
 - name: OpenCode
   url: https://github.com/sst/opencode
   category: cli-agents
   description:
     en: Open-source terminal AI coding agent with multi-provider model support
     ru: Open-source AI-агент для терминала с поддержкой любых провайдеров моделей
+    zh: 开源终端AI编码代理，支持多种模型提供商
 - name: Aider
   url: https://github.com/Aider-AI/aider
   category: cli-agents
   description:
     en: AI pair programming in the terminal that edits code in any git repo
     ru: AI-парное программирование в терминале, правит код в любом git-репозитории
+    zh: 终端中的AI结对编程，可编辑任何git仓库中的代码
 - name: Goose
   url: https://github.com/block/goose
   category: cli-agents
   description:
     en: Open-source extensible AI agent that can install, execute, edit and test code
     ru: 'Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код'
+    zh: 可扩展的开源AI代理，可安装、执行、编辑和测试代码
 - name: llm
   url: https://github.com/simonw/llm
   category: cli-agents
   description:
     en: Access large language models from the command line and pipe data into them
     ru: Доступ к большим языковым моделям из командной строки и пайплайнов
+    zh: 从命令行访问大型语言模型并将数据管道化传输
 - name: OpenHands
   url: https://github.com/All-Hands-AI/OpenHands
   category: cloud-coding-agents
   description:
     en: Autonomous coding agent that runs as a self-hosted always-on engineering team
     ru: Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7
+    zh: 自主编码代理，作为自托管持续运行的工程团队运行
 - name: Cline
   url: https://github.com/cline/cline
   category: editor-integrations
   description:
     en: Autonomous coding agent that runs as a VS Code extension
     ru: Автономный агент-кодер в виде расширения для VS Code
+    zh: 作为VS Code扩展运行的自主编码代理
 - name: Roo Code
   url: https://github.com/RooCodeInc/Roo-Code
   category: editor-integrations
   description:
     en: AI-powered coding agent for VS Code with custom modes and tool control
     ru: AI-агент-кодер для VS Code с кастомными режимами и контролем инструментов
+    zh: 面向VS Code的AI驱动编码代理，具有自定义模式和工具控制
 - name: Continue
   url: https://github.com/continuedev/continue
   category: editor-integrations
   description:
     en: Open-source AI code assistant extension for VS Code and JetBrains
     ru: Открытый AI-ассистент для кода в VS Code и JetBrains
+    zh: 面向VS Code和JetBrains的开源AI代码助手扩展
 - name: avante.nvim
   url: https://github.com/yetone/avante.nvim
   category: editor-integrations
   description:
     en: Cursor-like AI coding experience inside Neovim
     ru: AI-кодинг в духе Cursor прямо внутри Neovim
+    zh: 在Neovim中提供类似Cursor的AI编码体验
 - name: Repomix
   url: https://github.com/yamadashy/repomix
   category: context-memory
   description:
     en: Pack your whole repository into a single file for AI consumption
     ru: Упаковывает весь репозиторий в один файл для подсчёта контекста AI
+    zh: 将整个仓库打包为单个文件供AI使用
 - name: code2prompt
   url: https://github.com/mufeedvh/code2prompt
   category: context-memory
   description:
     en: CLI that converts a codebase into a single Markdown prompt for LLMs
     ru: 'CLI: превращает кодовую базу в один Markdown-промпт для LLM'
+    zh: 将代码库转换为单个Markdown提示词的CLI工具
 - name: Zep
   url: https://github.com/getzep/zep
   category: context-memory
   description:
     en: Long-term memory service for conversational and agentic AI
     ru: Сервис долговременной памяти для диалогового и агентного AI
+    zh: 对话和代理AI的长期记忆服务
 - name: MCP Servers
   url: https://github.com/modelcontextprotocol/servers
   category: mcp
   description:
     en: Reference implementations of Model Context Protocol servers
     ru: Эталонные реализации серверов Model Context Protocol
+    zh: Model Context Protocol服务器的参考实现
 - name: awesome-mcp-servers
   url: https://github.com/punkpeye/awesome-mcp-servers
   category: mcp
   description:
     en: Curated collection of Model Context Protocol servers
     ru: Кураторская подборка серверов Model Context Protocol
+    zh: 精选的Model Context Protocol服务器集合
 - name: GitHub MCP Server
   url: https://github.com/github/github-mcp-server
   category: mcp
   description:
     en: GitHub's official MCP server for interacting with repos, issues and PRs
     ru: Официальный MCP-сервер GitHub для работы с репозиториями, issues и PR
+    zh: GitHub官方MCP服务器，用于与仓库、议题和PR交互
 - name: FastMCP
   url: https://github.com/PrefectHQ/fastmcp
   category: mcp
   description:
     en: Fast, Pythonic framework for building MCP servers and clients
     ru: Быстрый питонический фреймворк для создания MCP-серверов и клиентов
+    zh: 用于构建MCP服务器和客户端的快速、Pythonic框架
 - name: Sunbeam
   url: https://github.com/pomdtr/sunbeam
   category: agent-skills-prompts
   description:
     en: Browse and search prompt libraries and convert them to any format
     ru: Просмотр и поиск библиотек промптов с конвертацией в любой формат
+    zh: 浏览和搜索提示词库并将其转换为任何格式
 - name: Langfuse
   url: https://github.com/langfuse/langfuse
   category: observability-eval
   description:
     en: Open-source LLM observability, evals, prompt management and tracing
     ru: 'Open-source наблюдаемость для LLM: трейсинг, оценка и управление промптами'
+    zh: 开源LLM可观测性、评估、提示词管理和追踪
 - name: Promptfoo
   url: https://github.com/promptfoo/promptfoo
   category: observability-eval
   description:
     en: Test and red-team prompts, agents and RAG across many providers
     ru: Тестирование и редтим промптов, агентов и RAG для разных провайдеров
+    zh: 跨多个提供商测试和红队演练提示词、代理和RAG
 - name: Helicone
   url: https://github.com/Helicone/helicone
   category: observability-eval
   description:
     en: Open-source LLM observability with monitoring, eval and experiments
     ru: 'Open-source наблюдаемость LLM: мониторинг, оценка и эксперименты'
+    zh: 开源LLM可观测性，具有监控、评估和实验功能
 - name: OpenLit
   url: https://github.com/openlit/openlit
   category: observability-eval
   description:
     en: OpenTelemetry-native LLM observability, GPU monitoring and guardrails
     ru: 'LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы'
+    zh: 基于OpenTelemetry的LLM可观测性、GPU监控和护栏
 - name: Inspect
   url: https://github.com/UKGovernmentBEIS/inspect_ai
   category: observability-eval
   description:
     en: Framework for large language model evaluations by the AI Safety Institute
     ru: Фреймворк для оценки LLM от Института безопасности ИИ
+    zh: AI Safety Institute开发的大型语言模型评估框架
 - name: Claude Code Action
   url: https://github.com/anthropics/claude-code-action
   category: code-review-testing
   description:
     en: GitHub Action that lets Claude review PRs and fix issues in CI
     ru: 'GitHub Action: Claude ревьюит PR и фикcит issues прямо в CI'
+    zh: 让Claude在CI中审查PR并修复问题的GitHub Action
 - name: Claude Flow
   url: https://github.com/ruvnet/claude-flow
   category: ai-assistants
   description:
     en: Orchestrate swarms of Claude Code agents on complex tasks
     ru: Оркестрация роя агентов Claude Code для сложных задач
+    zh: 编排Claude Code代理群以处理复杂任务
 - name: wshobson/agents
   url: https://github.com/wshobson/agents
   category: ai-assistants
   description:
     en: Library of specialized Claude Code subagents for agentic workflows
     ru: Библиотека специализированных сабагентов Claude Code для агентных воркфлоу
+    zh: 专门化Claude Code子代理库，用于代理工作流
 - name: Bolt.new
   url: https://github.com/stackblitz/bolt.new
   category: cloud-coding-agents
   description:
     en: Prompt, run, edit and deploy full-stack web apps from the browser
     ru: Создание, запуск, правка и деплой full-stack веб-приложений из браузера
+    zh: 从浏览器提示、运行、编辑和部署全栈Web应用
 - name: Stagehand
   url: https://github.com/browserbase/stagehand
   category: browser-automation
   description:
     en: SDK for building reliable browser agents with simple AI primitives
     ru: SDK для надёжных браузерных агентов на простых AI-примитивах
+    zh: 用于构建可靠浏览器代理的SDK，提供简单AI原语
 - name: 12-Factor Agents
   url: https://github.com/humanlayer/12-factor-agents
   category: ai-assistants
   description:
     en: Principles for building production-grade LLM-powered agent software
     ru: Принципы создания production-готового ПО на LLM-агентах
+    zh: 构建生产级LLM驱动代理软件的原则
 - name: BMAD-METHOD
   url: https://github.com/bmad-code-org/bmad-method
   category: learning-resources
   description:
     en: Agentic methodology and IDE prompts for full-cycle AI product development
     ru: Агентная методология и IDE-промпты для полного цикла AI-разработки продукта
+    zh: 全周期AI产品开发的代理方法论和IDE提示词
 - name: awesome-ai-agents
   url: https://github.com/e2b-dev/awesome-ai-agents
   category: learning-resources
   description:
     en: Curated list of autonomous AI agents and agent frameworks
     ru: Кураторский список автономных AI-агентов и агентных фреймворков
+    zh: 精选的自主AI代理和代理框架列表
 - name: system-prompts-and-models-of-ai-tools
   url: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
   category: agent-skills-prompts
   description:
     en: FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, L
     ru: Системные промпты и модели AI-инструментов (Augment, Claude Code, Cursor и др.)
+    zh: Full Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, L
 - name: claude-mem
   url: https://github.com/thedotmack/claude-mem
   category: context-memory
   description:
     en: Persistent Context Across Sessions for Every Agent –  Captures everything your agent does
     ru: Постоянный контекст между сессиями для любого AI-агента
+    zh: 跨会话的持久化上下文，为每个代理捕获其所有操作
 - name: ponytail
   url: https://github.com/DietrichGebert/ponytail
   category: agent-skills-prompts
   description:
     en: Makes your AI agent think like the laziest senior dev in the room
     ru: Заставляет AI-агента думать как самый ленивый senior-разработчик
+    zh: 让您的AI代理像房间里最懒惰的高级开发者那样思考
 - name: agent-skills
   url: https://github.com/addyosmani/agent-skills
   category: agent-skills-prompts
   description:
     en: Production-grade engineering skills for AI coding agents.
     ru: Продакшн-навыки инженерии для AI-агентов кодинга
+    zh: 面向AI编码代理的生产级工程技能
 - name: pi
   url: https://github.com/earendil-works/pi
   category: cli-agents
   description:
     en: 'AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI'
     ru: 'AI-агент тулкит: единый LLM API, agent loop, TUI, CLI кодинг-агент'
+    zh: AI代理工具包：统一LLM API、代理循环、TUI、编码代理CLI
 - name: ruflo
   url: https://github.com/ruvnet/ruflo
   category: ai-assistants
   description:
     en: 🌊 The leading agent meta-harness
     ru: Ведущий мета-харнес для агентов
+    zh: 领先的代理元框架
 - name: taste-skill
   url: https://github.com/Leonxlnx/taste-skill
   category: agent-skills-prompts
   description:
     en: Taste-Skill - gives your AI good taste
     ru: Taste-Skill — даёт AI хороший вкус
+    zh: Taste-Skill — 为您的AI提供良好品味
 - name: goose
   url: https://github.com/aaif-goose/goose
   category: cli-agents
   description:
     en: an open source, extensible AI agent that goes beyond code suggestions
     ru: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
+    zh: 可扩展的开源AI代理，超越代码建议功能
 - name: LibreChat
   url: https://github.com/danny-avila/LibreChat
   category: domain-agents
   description:
     en: 'Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Re'
     ru: 'Расширенный клон ChatGPT: агенты, MCP, навыки, DeepSeek, Anthropic, OpenAI'
+    zh: 增强版ChatGPT克隆：支持代理、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、Re
 - name: marketingskills
   url: https://github.com/coreyhaines31/marketingskills
   category: agent-skills-prompts
   description:
     en: Marketing skills for Claude Code and AI agents
     ru: Маркетинговые навыки для Claude Code и AI-агентов
+    zh: 面向Claude Code和AI代理的营销技能
 - name: OpenMontage
   url: https://github.com/calesthio/OpenMontage
   category: domain-agents
   description:
     en: World's first open-source, agentic video production system
     ru: Первая open-source агентная система видеопроизводства
+    zh: 世界首个开源自主视频制作系统
 - name: scientific-agent-skills
   url: https://github.com/K-Dense-AI/scientific-agent-skills
   category: agent-skills-prompts
   description:
     en: Turn any AI agent into an AI Scientist
     ru: Превращает любой AI-агент в AI-учёного
+    zh: 将任何AI代理转变为AI科学家
 - name: agenticSeek
   url: https://github.com/Fosowl/agenticSeek
   category: cli-agents
   description:
     en: Fully Local Manus AI
     ru: Полностью локальный аналог Manus AI
+    zh: 完全本地化的Manus AI
 - name: qwen-code
   url: https://github.com/QwenLM/qwen-code
   category: cli-agents
   description:
     en: An open-source AI coding agent that lives in your terminal.
     ru: Open-source AI-агент кодинга в терминале
+    zh: 运行在终端中的开源AI编码代理
 - name: DeepSeek-Reasonix
   url: https://github.com/esengine/DeepSeek-Reasonix
   category: cli-agents
   description:
     en: DeepSeek-native AI coding agent for your terminal
     ru: DeepSeek-native AI-агент кодинга для терминала
+    zh: 基于 DeepSeek 的 AI 编程代理，适用于您的终端
 - name: ai-website-cloner-template
   url: https://github.com/JCodesMore/ai-website-cloner-template
   category: design-frontend
   description:
     en: Clone any website with one command using AI coding agents
     ru: Клонирование любого сайта одной командой через AI-агентов
+    zh: 使用 AI 编程代理一键克隆任何网站
 - name: agentmemory
   url: https://github.com/rohitg00/agentmemory
   category: context-memory
   description:
     en: 'Persistent memory for AI coding agents based on real-world benchmarks'
     ru: '#1 Persistent memory for AI coding agents based on real-world benchmarks'
+    zh: 基于真实基准的 AI 编程代理持久记忆系统
 - name: planning-with-files
   url: https://github.com/OthmanAdi/planning-with-files
   category: agent-skills-prompts
   description:
     en: Persistent file-based planning for AI coding agents and long-running agentic tasks
     ru: Постоянное файловое планирование для AI-агентов кодинга
+    zh: AI 编程代理持久化文件规划系统，支持长期代理任务
 - name: Anthropic-Cybersecurity-Skills
   url: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
   category: security-agents
   description:
     en: 'Provides 817 structured cybersecurity skills for AI agents across 6 frameworks'
     ru: Навыки кибербезопасности Anthropic
+    zh: 为 AI 代理提供 6 大框架的 817 项结构化网络安全技能
 - name: cmux
   url: https://github.com/manaflow-ai/cmux
   category: cli-agents
   description:
     en: Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin
     ru: Open-source терминал macOS на Ghostty с вкладками для AI-кодинга
+    zh: 基于 Ghostty 的开源 macOS 终端，支持垂直标签和通知，专为 AI 编程设计
 - name: Claude-Code-Game-Studios
   url: https://github.com/Donchitos/Claude-Code-Game-Studios
   category: game-dev
   description:
     en: Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a com
     ru: Превращает Claude Code в студию геймдева — 49 AI-агентов, 72 навыка
+    zh: 将 Claude Code 变成完整游戏开发工作室 — 内置 49 个 AI 代理、72 个工作流技能
 - name: adk-python
   url: https://github.com/google/adk-python
   category: ai-assistants
   description:
     en: An open-source, code-first Python toolkit for building, evaluating, and deploying sophisti
     ru: Open-source Python-тулкит для создания, оценки и деплоя agent-приложений
+    zh: 开源代码优先的 Python 工具包，用于构建、评估和部署复杂 AI 代理
 - name: claude-skills
   url: https://github.com/alirezarezvani/claude-skills
   category: agent-skills-prompts
   description:
     en: Claude Code skills and agent skills plugins for 13 AI coding tools
     ru: 337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.
+    zh: Claude Code 技能和代理技能插件，支持 13 种 AI 编程工具
 - name: context-mode
   url: https://github.com/mksglu/context-mode
   category: agent-skills-prompts
   description:
     en: Context window optimization for AI coding agents
     ru: Оптимизация контекстного окна для AI-агентов кодинга
+    zh: AI 编程代理的上下文窗口优化
 - name: easy-vibe
   url: https://github.com/datawhalechina/easy-vibe
   category: learning-resources
   description:
     en: Vibe coding course - build apps step by step from beginner to master
     ru: 💻 vibe coding 2026 | Your First Modern Coding course beginners to master step by step.
+    zh: Vibe 编程课程 — 从初学者到专家逐步构建应用
 - name: generative-ai
   url: https://github.com/GoogleCloudPlatform/generative-ai
   category: learning-resources
   description:
     en: Sample code and notebooks for Generative AI on Google Cloud, with Gemini Enterprise Agent
     ru: Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini
+    zh: Google Cloud 上的生成式 AI 示例代码和笔记本，集成 Gemini Enterprise Agent
 - name: notebooklm-py
   url: https://github.com/teng-lin/notebooklm-py
   category: agent-skills-prompts
   description:
     en: Unofficial Python API and agentic skill for Google NotebookLM
     ru: Неофициальный Python API и навык для Google NotebookLM
+    zh: Google NotebookLM 的非官方 Python API 和代理技能
 - name: ai-guide
   url: https://github.com/liyupi/ai-guide
   category: learning-resources
   description:
     en: AI resources hub and vibe coding tutorial - DeepSeek, GPT, Gemini, Claude and GLM guides
     ru: 'AI-гид: ресурсы по vibe coding на китайском'
+    zh: AI 资源中心和 vibe 编程教程 — DeepSeek、GPT、Gemini、Claude 和 GLM 指南
 - name: agency-agents-zh
   url: https://github.com/jnMetaCode/agency-agents-zh
   category: agent-skills-prompts
   description:
     en: Provides 266 plug-and-play AI expert roles for Claude Code, Cursor, Copilot and 15 more tools
     ru: Агенты agency (китайская версия)
+    zh: 为 Claude Code、Cursor、Copilot 和 15 个工具提供 266 个即用型 AI 专家角色
 - name: oh-my-pi
   url: https://github.com/can1357/oh-my-pi
   category: cli-agents
   description:
     en: AI coding agent for the terminal - hash-anchored edits, LSP and subagents
     ru: ⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more
+    zh: 终端 AI 编程代理 — 支持哈希锚定编辑、LSP 和子代理
 - name: plandex
   url: https://github.com/plandex-ai/plandex
   category: cli-agents
   description:
     en: Open source AI coding agent
     ru: Open-source AI-агент кодинга
+    zh: 开源 AI 编程代理
 - name: Figma-Context-MCP
   url: https://github.com/GLips/Figma-Context-MCP
   category: design-frontend
   description:
     en: MCP server to provide Figma layout information to AI coding agents like Cursor
     ru: 'MCP-сервер: отдаёт вёрстку Figma AI-агентам (Cursor и др.)'
+    zh: MCP 服务器，向 Cursor 等 AI 编程代理提供 Figma 布局信息
 - name: cc-connect
   url: https://github.com/chenhg5/cc-connect
   category: cli-agents
   description:
     en: Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platfo
     ru: Мост от локальных AI-агентов (Claude Code, Cursor) к мессенджерам
+    zh: 将本地 AI 编程代理（Claude Code、Cursor、Gemini CLI、Codex）桥接到消息平台
 - name: infracost
   url: https://github.com/infracost/infracost
   category: devops-cloud
   description:
     en: Cloud cost intelligence for engineers, AI coding agents, and CI/CD 💰📉 Shift FinOps Left!
     ru: Аналитика облачных затрат для инженеров, AI-агентов и CI/CD
+    zh: 面向工程师、AI 编程代理和 CI/CD 的云成本智能
 - name: superset
   url: https://github.com/superset-sh/superset
   category: cli-agents
   description:
     en: Code Editor for the AI Agents Era - Run an army of Claude Code, Codex, etc
     ru: Редактор кода эпохи AI-агентов — армия Claude Code, Codex и др.
+    zh: AI 代理时代的代码编辑器 — 可运行 Claude Code、Codex 等多个代理
 - name: InsForge
   url: https://github.com/InsForge/InsForge
   category: cloud-coding-agents
   description:
     en: The all-in-one, open-source backend platform for agentic coding
     ru: Open-source бэкенд-платформа для агентного кодинга
+    zh: 全能开源代理编程后端平台
 - name: humanlayer
   url: https://github.com/humanlayer/humanlayer
   category: cloud-coding-agents
   description:
     en: The best way to get AI coding agents to solve hard problems in complex codebases.
     ru: Помогает AI-агентам решать сложные задачи в больших кодовых базах
+    zh: 让 AI 编程代理解决复杂代码库中难题的最佳方式
 - name: gsap-skills
   url: https://github.com/greensock/gsap-skills
   category: design-frontend
   description:
     en: Official AI skills for GSAP
     ru: Официальные AI-навыки для GSAP
+    zh: GSAP 官方 AI 技能
 - name: openskills
   url: https://github.com/numman-ali/openskills
   category: agent-skills-prompts
   description:
     en: Universal skills loader for AI coding agents - npm i -g openskills
     ru: Универсальный загрузчик навыков для AI-агентов кодинга
+    zh: AI 编程代理通用技能加载器 — npm i -g openskills
 - name: AI-Research-SKILLs
   url: https://github.com/Orchestra-Research/AI-Research-SKILLs
   category: agent-skills-prompts
   description:
     en: Comprehensive open-source library of AI research and engineering skills for any AI model
     ru: Библиотека AI-research и инженерных навыков для любой модели
+    zh: 适用于任何 AI 模型的综合开源 AI 研究和工程技能库
 - name: ai-berkshire
   url: https://github.com/xbtlin/ai-berkshire
   category: domain-agents
   description:
     en: AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berk
     ru: 'Berkshire эпохи AI: фреймворк стоимостного инвестирования на Claude Code/Codex'
+    zh: AI 时代的伯克希尔：基于 Claude Code/Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多代理并行研究
 - name: codeburn
   url: https://github.com/getagentseal/codeburn
   category: observability-eval
   description:
     en: Free, local tool to track AI coding token usage and cost across 31 tools and agents (Claud
     ru: Локальный трекер использования токенов и затрат AI-кодинга (31 инструмент)
+    zh: 免费本地工具，追踪 31 个 AI 编程工具和代理的令牌使用与成本
 - name: PraisonAI
   url: https://github.com/MervinPraison/PraisonAI
   category: ai-assistants
   description:
     en: PraisonAI 🦞 — Hire a 24/7 AI Workforce
     ru: Нанимайте AI-рабочую силу 24/7
+    zh: PraisonAI — 雇佣 24/7 AI 工作团队
 - name: adk-go
   url: https://github.com/google/adk-go
   category: ai-assistants
   description:
     en: An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate
     ru: Open-source Go-тулкит для создания, оценки и деплоя agent-приложений
+    zh: 开源代码优先的 Go 工具包，用于构建、评估和部署复杂 AI 代理
 - name: claude-squad
   url: https://github.com/smtg-ai/claude-squad
   category: cli-agents
   description:
     en: Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.
     ru: Управление несколькими AI-терминал-агентами (Claude Code, Codex, OpenCode)
+    zh: 管理多个 AI 终端代理 — Claude Code、Codex、OpenCode 和 Amp
 - name: html-anything
   url: https://github.com/nexu-io/html-anything
   category: design-frontend
   description:
     en: ✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it
     ru: Агентный HTML-редактор — локальный AI-агент пишет HTML
+    zh: 代理化 HTML 编辑器 — 本地 AI 代理编写 HTML，您直接发布
 - name: cursor-talk-to-figma-mcp
   url: https://github.com/grab/cursor-talk-to-figma-mcp
   category: design-frontend
   description:
     en: 'TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code, Codex) and Figma, allo'
     ru: MCP-интеграция между AI-агентом (Cursor, Claude Code) и Figma
+    zh: TalkToFigma：AI 代理（Cursor、Claude Code、Codex）与 Figma 的 MCP 集成，支持语音交互
 - name: claude-ads
   url: https://github.com/AgriciDaniel/claude-ads
   category: domain-agents
   description:
     en: Comprehensive paid advertising audit & optimization skill for Claude Code
     ru: Навык аудита и оптимизации платной рекламы для Claude Code
+    zh: Claude Code 付费广告审计与优化综合技能
 - name: superpowers-zh
   url: https://github.com/jnMetaCode/superpowers-zh
   category: agent-skills-prompts
   description:
     en: 🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI
     ru: AI-суперсилы кодинга — китайская расширенная версия superpowers
+    zh: AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创技能，支持 Claude Code / Copilot CLI
 - name: awesome-ai-system-prompts
   url: https://github.com/dontriskit/awesome-ai-system-prompts
   category: agent-skills-prompts
   description:
     en: 🧠 Curated collection of system prompts for top AI tools
     ru: Кураторская подборка системных промптов топовых AI-инструментов
+    zh: 顶级 AI 工具系统提示精选集合
 - name: costrict
   url: https://github.com/zgsm-ai/costrict
   category: cloud-coding-agents
   description:
     en: Costrict - strict AI coder for enterprises, quality first, including AI Agent, AI CodeRevi
     ru: 'Строгий AI-кодер для предприятий: качество прежде всего'
+    zh: Costrict — 企业级严格 AI 编程器，质量优先，集成 AI 代理和 AI 代码审查
 - name: cc-skills-golang
   url: https://github.com/samber/cc-skills-golang
   category: agent-skills-prompts
   description:
     en: A collection of Golang agentic skills for coding assistants
     ru: Навыки Claude Code для Go
+    zh: 面向代码助手的 Golang 代理技能集合
 - name: sniffly
   url: https://github.com/chiphuyen/sniffly
   category: observability-eval
   description:
     en: Claude Code dashboard with usage stats, error analysis, and sharable feature
     ru: 'Дашборд Claude Code: статистика использования, анализ ошибок'
+    zh: Claude Code 仪表板，提供使用统计、错误分析和可分享功能
 - name: Cougar-CLI
   url: https://github.com/dulikaifazr/Cougar-CLI
   category: cli-agents
   description:
     en: Cougar CLI - An AI programming agent for the command line
     ru: AI-программирующий агент для командной строки
+    zh: Cougar CLI — 命令行 AI 编程代理
 - name: clawcodex
   url: https://github.com/agentforce314/clawcodex
   category: cli-agents
   description:
     en: Token efficient Claude Code full Python rebuild
     ru: Эффективный по токенам полный Python-ребилд Claude Code
+    zh: Claude Code 完整 Python 重建，令牌高效
 - name: helixent
   url: https://github.com/MagicCube/helixent
   category: ai-assistants
   description:
     en: Helixent is a small library for building ReAct-style AI agent loops based on the Bun stack
     ru: Маленькая библиотека для ReAct-style циклов AI-агентов на Bun
+    zh: Helixent 是基于 Bun 栈构建 ReAct 风格 AI 代理循环的小型库
 - name: mathcode
   url: https://github.com/math-ai-org/mathcode
   category: domain-agents
   description:
     en: 'MathCode: A Frontier Mathematical Coding Agent'
     ru: Frontier математический кодинг-агент
+    zh: MathCode：前沿数学编程代理
 - name: mycoder
   url: https://github.com/bhouston/mycoder
   category: cli-agents
   description:
     en: Simple to install, powerful command-line based AI agent system for coding.
     ru: Простой в установке мощный консольный AI-агент для кодинга
+    zh: 简单安装、强大的命令行 AI 编程代理系统
 - name: cc-switch
   url: https://github.com/farion1231/cc-switch
   category: cli-agents
   description:
     en: A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw,
     ru: Кроссплатформенный desktop All-in-One для Claude Code, Codex, OpenCode
+    zh: Claude Code、Codex、OpenCode、OpenClaw 等跨平台桌面一体化助手
 - name: graphify
   url: https://github.com/safishamsi/graphify
   category: context-memory
   description:
     en: AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more)
     ru: Навык AI-ассистента кодинга (Claude Code, Codex, Cursor, Gemini)
+    zh: AI编程助手技能（Claude Code、Codex、OpenCode、Cursor、Gemini CLI等）
 - name: OpenSpec
   url: https://github.com/Fission-AI/OpenSpec
   category: docs-research
   description:
     en: Spec-driven development (SDD) for AI coding assistants.
     ru: Spec-driven разработка (SDD) для AI-ассистентов кодинга
+    zh: 用于AI编程助手的规范驱动开发(SDD)
 - name: posthog
   url: https://github.com/PostHog/posthog
   category: observability-eval
   description:
     en: 🦔 PostHog is an all-in-one developer platform for building successful products
     ru: 'All-in-one платформа для разработчиков: аналитика, фича-флаги, сессии'
+    zh: 一体化开发者平台，用于构建成功产品（数据分析、监控、A/B测试）
 - name: tabby
   url: https://github.com/TabbyML/tabby
   category: editor-integrations
   description:
     en: Self-hosted AI coding assistant
     ru: Self-hosted AI-ассистент кодинга
+    zh: 自托管AI编程助手，开源解决方案
 - name: AionUi
   url: https://github.com/iOfficeAI/AionUi
   category: editor-integrations
   description:
     en: Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, O
     ru: Free локальный 24/7 Cowork-апп для Claude Code, Codex, OpenCode
+    zh: 免费、本地、开源的24/7协作应用，支持OpenClaw、Hermes Agent、Claude Code、Codex
 - name: CVPR2024-Paper-Code-Interpretation
   url: https://github.com/extreme-assistant/CVPR2024-Paper-Code-Interpretation
   category: needs-review
   description:
     en: CVPR papers collection with code and interpretations
     ru: Подборка статей/кода/разборов CVPR 2024
+    zh: CVPR论文合集，附带代码和解读
 - name: sweep
   url: https://github.com/sweepai/sweep
   category: editor-integrations
   description:
     en: 'Sweep: AI coding assistant for JetBrains'
     ru: AI-ассистент кодинга для JetBrains
+    zh: 用于JetBrains的AI编程助手
 - name: CopilotForXcode
   url: https://github.com/github/CopilotForXcode
   category: editor-integrations
   description:
     en: AI coding assistant for Xcode
     ru: AI-ассистент кодинга для Xcode
+    zh: 用于Xcode的AI编程助手
 - name: openagent
   url: https://github.com/the-open-agent/openagent
   category: ai-assistants
   description:
     en: 'Next-generation personal AI assistant powered by LLM, RAG and agent loops'
     ru: '⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org'
+    zh: 下一代个人AI助手，由LLM、RAG和Agent循环驱动
 - name: agents-cli
   url: https://github.com/google/agents-cli
   category: agent-skills-prompts
   description:
     en: The CLI and skills that turn any coding assistant into an expert at creating, evaluating,
     ru: CLI и навыки, превращающие AI-ассистента в эксперта по агентам
+    zh: CLI和技能，将任何编程助手转变为创建、评估和测试方面的专家
 - name: claude-scholar
   url: https://github.com/Galaxy-Dawn/claude-scholar
   category: docs-research
   description:
     en: Semi-automated research assistant for academic research and software development
     ru: Полуавтоматический исследовательский ассистент для науки и разработки
+    zh: 用于学术研究和软件开发的半自动化研究助手
 - name: cc-switch-cli
   url: https://github.com/SaladDay/cc-switch-cli
   category: cli-agents
   description:
     en: Cross-platform CLI All-in-One assistant for Claude Code, Codex and Gemini
     ru: CLI-версия cc-switch
+    zh: 跨平台CLI一体化助手，支持Claude Code、Codex和Gemini
 - name: CodeGraphContext
   url: https://github.com/CodeGraphContext/CodeGraphContext
   category: context-memory
   description:
     en: An MCP server plus a CLI tool that indexes local code into a graph database to provide con
     ru: 'MCP-сервер + CLI: индексирует код в графовую БД для контекста'
+    zh: MCP服务器加CLI工具，将本地代码索引到图数据库，提供上下文感知的代码建议
 - name: agentic-ai-prompt-research
   url: https://github.com/Leonxlnx/agentic-ai-prompt-research
   category: docs-research
   description:
     en: Research into how agentic AI coding assistants work
     ru: Исследование работы агентных AI-ассистентов кодинга
+    zh: 研究Agentic AI编程助手的工作原理
 - name: ICCV2023-Paper-Code-Interpretation
   url: https://github.com/extreme-assistant/ICCV2023-Paper-Code-Interpretation
   category: needs-review
   description:
     en: ICCV2021/2019/2017 论文/代码/解读/直播合集，极市团队整理
     ru: Подборка статей/кода/разборов ICCV 2023/2021/2019/2017
+    zh: ICCV2021/2019/2017论文/代码/解读/直播合集，极市团队整理
 - name: sketch
   url: https://github.com/approximatelabs/sketch
   category: editor-integrations
   description:
     en: AI code-writing assistant that understands data content
     ru: AI-ассистент написания кода, понимающий содержимое данных
+    zh: AI代码编写助手，理解数据内容
 - name: EvilClippy
   url: https://github.com/outflanknl/EvilClippy
   category: security-agents
   description:
     en: A cross-platform assistant for creating malicious MS Office documents
     ru: Кроссплатформенный ассистент для создания вредоносных MS Office документов
+    zh: 用于创建恶意MS Office文档的跨平台助手
 - name: deepseek-engineer
   url: https://github.com/Doriandarko/deepseek-engineer
   category: editor-integrations
   description:
     en: A powerful coding assistant application that integrates with the DeepSeek API to process u
     ru: Мощный кодинг-ассистент на базе DeepSeek API
+    zh: 强大的编程助手应用，集成DeepSeek API处理用户请求
 - name: APIAuto
   url: https://github.com/TommyLemon/APIAuto
   category: code-review-testing
   description:
     en: The most advanced HTTP API tool - zero-code testing, AI Q&A, code generation and docs
     ru: ☔ 敏捷开发最强大易用的接口工具，机器学习零代码测试与 AI 问答、生成代码与静态检查、生成文档与光标悬浮注释，腾讯、华为、SHEIN、传音、工行等使用 ☔ The most advanced tool for HTTP API. Machine learning no-code testing and AI assistant, generating codes and static analysis, generating comments and floating hints. Used by Tencent, Huawei, SHEIN, TRANSSION, ICBC, etc.
+    zh: 最先进的HTTP API工具 —— 零代码测试、AI问答、代码生成和文档
 - name: mcp-crawl4ai-rag
   url: https://github.com/coleam00/mcp-crawl4ai-rag
   category: browser-automation
   description:
     en: Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants
     ru: Веб-краулинг и RAG для AI-агентов и кодинг-ассистентов
+    zh: 为AI代理和AI编程助手提供网络爬取和RAG能力
 - name: zclaw
   url: https://github.com/tnm/zclaw
   category: cli-agents
   description:
     en: Your personal AI assistant at all-in 888KiB (~35KB in app code)
     ru: Личный AI-ассистент на 888 KiB (~35 КБ кода)
+    zh: 你的个人AI助手，仅888KiB（应用代码约35KB）
 - name: claude-code.nvim
   url: https://github.com/greggh/claude-code.nvim
   category: editor-integrations
   description:
     en: Seamless integration between Claude Code AI assistant and Neovim
     ru: Бесшовная интеграция Claude Code с Neovim
+    zh: Claude Code AI助手与Neovim的无缝集成
 - name: arc-kit
   url: https://github.com/tractorjuice/arc-kit
   category: domain-agents
   description:
     en: The Enterprise Architecture Governance Harness — strategy, architecture, delivery, and ass
     ru: 'Харнес архитектурного управления предприятием: стратегия, архитектура, доставка'
+    zh: 企业架构治理工具 —— 策略、架构、交付和保障
 - name: pentest-ai-agents
   url: https://github.com/0xSteph/pentest-ai-agents
   category: security-agents
   description:
     en: Turn Claude Code into your offensive security research assistant
     ru: Превращает Claude Code в ассистента offensive-security-исследований
+    zh: 将Claude Code转变为你的进攻性安全研究助手
 - name: WordPress/agent-skills
   url: https://github.com/WordPress/agent-skills
   category: design-frontend
   description:
     en: Expert-level WordPress knowledge for AI coding assistants - blocks, themes, plugins, and b
     ru: Экспертные знания WordPress для AI-ассистентов кодинга
+    zh: AI编程助手的专家级WordPress知识 — 区块、主题、插件和最佳实践
 - name: natively-cluely-ai-assistant
   url: https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant
   category: needs-review
   description:
     en: Natively — Free open-source AI meeting assistant, interview copilot, and note taker
     ru: Free open-source AI-ассистент встреч, интервью и заметок
+    zh: Natively —— 免费开源AI会议助手、面试副驾驶和笔记工具
 - name: codemcp
   url: https://github.com/ezyang/codemcp
   category: editor-integrations
   description:
     en: Coding assistant MCP for Claude Desktop
     ru: Кодинг-ассистент MCP для Claude Desktop
+    zh: Claude Desktop的编程助手MCP
 - name: aso-skills
   url: https://github.com/Eronred/aso-skills
   category: domain-agents
   description:
     en: AI agent skills for App Store Optimization (ASO) and app marketing
     ru: AI-навыки для App Store Optimization (ASO) и маркетинга приложений
+    zh: 用于ASO（应用商店优化）和应用营销的AI代理技能
 - name: callstackincubator/agent-skills
   url: https://github.com/callstackincubator/agent-skills
   category: design-frontend
   description:
     en: A collection of agent-optimized React Native skills for AI coding assistants.
     ru: React Native навыки для AI-ассистентов кодинга
+    zh: 面向AI编程助手的代理优化React Native技能集合
 - name: ai-legal-claude
   url: https://github.com/zubair-trabzada/ai-legal-claude
   category: domain-agents
   description:
     en: AI Legal Assistant skill for Claude Code
     ru: AI-юридический ассистент — навык для Claude Code
+    zh: Claude Code的AI法律助手技能
 - name: GreasyFork-Scripts
   url: https://github.com/F9y4ng/GreasyFork-Scripts
   category: browser-automation
   description:
     en: The open source code of this project is used for userscripts (油猴脚本) for desktop browsers,
     ru: Open-source userscripts (скрипты Tampermonkey) для десктоп-браузеров
+    zh: 用于桌面浏览器的用户脚本（油猴脚本）开源代码
 - name: apple-docs-mcp
   url: https://github.com/kimsungwhee/apple-docs-mcp
   category: docs-research
   description:
     en: MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC v
     ru: 'MCP-сервер документации Apple: iOS/macOS/SwiftUI, видео WWDC'
+    zh: Apple开发者文档的MCP服务器 —— 搜索iOS/macOS/SwiftUI/UIKit文档和WWDC视频
 - name: codefuse-chatbot
   url: https://github.com/codefuse-ai/codefuse-chatbot
   category: editor-integrations
   description:
     en: An intelligent assistant serving the entire software development lifecycle, powered by a M
     ru: Умный ассистент жизненного цикла разработки на MaaS
+    zh: 服务于整个软件生命周期的智能助手，由MCP驱动
 - name: ClaudeBar
   url: https://github.com/tddworks/ClaudeBar
   category: observability-eval
   description:
     en: A macOS menu bar application that monitors AI coding assistant usage quotas
     ru: 'macOS-меню приложение: мониторинг квот AI-ассистентов кодинга'
+    zh: macOS菜单栏应用，监控AI编程助手使用配额
 - name: rockpack
   url: https://github.com/AlexSergey/rockpack
   category: code-review-testing
   description:
     en: Zero-config React with built-in SSR, automated quality gates, and AI-ready project structu
     ru: Zero-config React со встроенным SSR и AI-ready структурой проекта
+    zh: 零配置React，内置SSR、自动质量门禁和AI就绪的项目结构
 - name: agents
   url: https://github.com/inkeep/agents
   category: app-builders-low-code
   description:
     en: Create AI Agents in a No-Code Visual Builder or TypeScript SDK with full 2-way sync
     ru: Создание AI-агентов в no-code билдере или TypeScript SDK
+    zh: 在无代码可视化构建器或TypeScript SDK中创建AI代理，支持完整的双向同步
 - name: RooFlow
   url: https://github.com/GreatScottyMac/RooFlow
   category: context-memory
   description:
     en: RooFlow - Enhanced Memory Bank System with ☢️Footgun Power☢️  Next-gen Memory Bank system
     ru: Улучшенная система Memory Bank для агентов
+    zh: RooFlow —— 增强型Memory Bank系统，带☢️危险力量☢️，下一代Memory Bank
 - name: vim-ai
   url: https://github.com/madox2/vim-ai
   category: editor-integrations
   description:
     en: AI-powered code assistant for Vim
     ru: AI-ассистент кода для Vim
+    zh: 用于Vim的AI驱动代码助手
 - name: claudebox
   url: https://github.com/RchGrav/claudebox
   category: cloud-coding-agents
   description:
     en: The Ultimate Claude Code Docker Development Environment - Run Claude AI's coding assistant
     ru: Docker-среда разработки для Claude Code
+    zh: 终极Claude Code Docker开发环境 —— 在容器中运行Claude AI编程助手
 - name: global-stock-data
   url: https://github.com/simonlin1212/global-stock-data
   category: needs-review
   description:
     en: US & HK Stock Full-Stack Data Toolkit for AI Coding Assistants
     ru: 美股港股全栈数据工具包 (AI Skill) — 7层架构 · 17端点 · 5数据源 · 零鉴权 | US & HK Stock Full-Stack Data Toolkit for AI Coding Assistants
+    zh: 用于AI编程助手的美股港股全栈数据工具包
 - name: openobserve
   url: https://github.com/openobserve/openobserve
   category: observability-eval
   description:
     en: Open source observability platform for logs, metrics, traces, frontend monitoring, pipelin
     ru: 'Open-source платформа наблюдаемости: логи, метрики, трейсы, мониторинг'
+    zh: 开源可观测性平台，支持日志、指标、追踪、前端监控和流水线
 - name: RagaAI-Catalyst
   url: https://github.com/raga-ai-hub/RagaAI-Catalyst
   category: observability-eval
   description:
     en: Python SDK for Agent AI Observability, Monitoring and Evaluation Framework
     ru: Python SDK для наблюдаемости, мониторинга и оценки Agent AI
+    zh: Python SDK，用于Agent AI可观测性、监控和评估框架
 - name: bisheng
   url: https://github.com/dataelement/bisheng
   category: app-builders-low-code
   description:
     en: BISHENG is an open LLM devops platform for next generation Enterprise AI applications
     ru: Open LLM DevOps платформа для enterprise AI-приложений
+    zh: BISHENG —— 企业级AI应用的开放LLM DevOps平台
 - name: evidently
   url: https://github.com/evidentlyai/evidently
   category: observability-eval
   description:
     en: Evidently is ​​an open-source ML and LLM observability framework
     ru: Open-source фреймворк наблюдаемости ML и LLM
+    zh: Evidently —— 用于ML和LLM监控的开源可观测性框架
 - name: openllmetry
   url: https://github.com/traceloop/openllmetry
   category: observability-eval
   description:
     en: Open-source observability for your GenAI or LLM application, based on OpenTelemetry
     ru: Open-source наблюдаемость для GenAI/LLM на базе OpenTelemetry
+    zh: 基于OpenTelemetry的GenAI/LLM应用开源可观测性解决方案
 - name: plano
   url: https://github.com/katanemo/plano
   category: ai-infra
   description:
     en: Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,
     ru: AI-native прокси и дата-плоскость для агентных приложений
+    zh: Plano — AI原生代理和数据平面，专用于代理应用，内置编排功能。
 - name: logfire
   url: https://github.com/pydantic/logfire
   category: observability-eval
   description:
     en: AI observability platform for production LLM and agent systems.
     ru: Платформа наблюдаемости для production LLM и агентных систем
+    zh: 生产环境LLM和代理系统的AI可观测性平台。
 - name: agenta
   url: https://github.com/Agenta-AI/agenta
   category: observability-eval
   description:
     en: 'The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and'
     ru: 'Open-source LLMOps: prompt playground, оценка LLM, управление'
+    zh: 开源LLMOps平台：提示词游乐场、提示词管理、LLM评估。
 - name: trench
   url: https://github.com/FrigadeHQ/trench
   category: observability-eval
   description:
     en: Trench — Open-Source Analytics Infrastructure
     ru: Open-source инфраструктура аналитики
+    zh: Trench — 开源分析基础设施。
 - name: prompty
   url: https://github.com/microsoft/prompty
   category: observability-eval
   description:
     en: Prompty makes it easy to create, manage, debug, and evaluate LLM prompts for your AI appli
     ru: Создание, управление и оценка LLM-промптов для AI-приложений
+    zh: Prompty 简化AI应用中LLM提示词的创建、管理、调试和评估。
 - name: langtrace
   url: https://github.com/Scale3-Labs/langtrace
   category: observability-eval
   description:
     en: Langtrace 🔍 is an open-source,  Open Telemetry based end-to-end observability tool for LLM
     ru: Open-source end-to-end наблюдаемость LLM на OpenTelemetry
+    zh: Langtrace — 基于Open Telemetry的开源LLM端到端可观测性工具。
 - name: langkit
   url: https://github.com/whylabs/langkit
   category: observability-eval
   description:
     en: '🔍 LangKit: An open-source toolkit for monitoring Large Language Models (LLMs)'
     ru: Open-source тулкит мониторинга больших языковых моделей
+    zh: LangKit — 用于监控大语言模型（LLM）的开源工具包。
 - name: ECC
   url: https://github.com/affaan-m/ECC
   category: ai-assistants
   description:
     en: The agent harness performance optimization system
     ru: Система оптимизации производительности agent-харнеса
+    zh: 代理工具链性能优化系统。
 - name: hermes-agent
   url: https://github.com/NousResearch/hermes-agent
   category: ai-assistants
   description:
     en: The agent that grows with you
     ru: Агент, который растёт вместе с вами
+    zh: 与你共同成长的代理。
 - name: AutoGPT
   url: https://github.com/Significant-Gravitas/AutoGPT
   category: ai-assistants
   description:
     en: AutoGPT is the vision of accessible AI for everyone, to use and to build on
     ru: 'AutoGPT — доступный AI для всех: использование и развитие'
+    zh: AutoGPT — 人人可及的AI愿景，可用于使用和构建。
 - name: ollama
   url: https://github.com/ollama/ollama
   category: ai-infra
   description:
     en: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and ot
     ru: Запуск Kimi, GLM, DeepSeek, gpt-oss, Qwen, Gemma и др. локально
+    zh: 快速上手 Kimi-K2.6、GLM-5.1、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等。
 - name: transformers
   url: https://github.com/huggingface/transformers
   category: ai-infra
   description:
     en: '🤗 Transformers: the model-definition framework for state-of-the-art machine learning model'
     ru: Фреймворк определения моделей для state-of-the-art ML
+    zh: Transformers — 最先进机器学习模型的模型定义框架。
 - name: langflow
   url: https://github.com/langflow-ai/langflow
   category: app-builders-low-code
   description:
     en: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.
     ru: Мощный инструмент создания и деплоя AI-агентов и воркфлоу
+    zh: Langflow — 用于构建和部署AI驱动代理和工作流的强大工具。
 - name: dify
   url: https://github.com/langgenius/dify
   category: app-builders-low-code
   description:
     en: Production-ready platform for agentic workflow development.
     ru: Production-готовая платформа для разработки агентных воркфлоу
+    zh: 用于代理工作流开发的生产就绪平台。
 - name: open-webui
   url: https://github.com/open-webui/open-webui
   category: ai-infra
   description:
     en: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
     ru: Удобный AI-интерфейс (Ollama, OpenAI API и др.)
+    zh: 用户友好的AI界面（支持Ollama、OpenAI API等）。
 - name: firecrawl
   url: https://github.com/firecrawl/firecrawl
   category: browser-automation
   description:
     en: The API to search, scrape, and interact with the web at scale
     ru: API для поиска, скрейпинга и работы с вебом в масштабе
+    zh: 用于大规模网页搜索、抓取和交互的API。
 - name: langchain
   url: https://github.com/langchain-ai/langchain
   category: ai-assistants
   description:
     en: The agent engineering platform.
     ru: Платформа agent-инжиниринга
+    zh: 代理工程平台。
 - name: browser-use
   url: https://github.com/browser-use/browser-use
   category: browser-automation
   description:
     en: 🌐 Make websites accessible for AI agents
     ru: Делает сайты доступными для AI-агентов
+    zh: 让AI代理能够访问网站。
 - name: LLMs-from-scratch
   url: https://github.com/rasbt/LLMs-from-scratch
   category: learning-resources
   description:
     en: Implement a ChatGPT-like LLM in PyTorch from scratch, step by step
     ru: Реализация LLM типа ChatGPT на PyTorch с нуля, шаг за шагом
+    zh: 在PyTorch中从零实现类ChatGPT的LLM，逐步讲解。
 - name: TradingAgents
   url: https://github.com/TauricResearch/TradingAgents
   category: domain-agents
   description:
     en: 'TradingAgents: Multi-Agents LLM Financial Trading Framework'
     ru: Мультиагентный LLM-фреймворк для финансового трейдинга
+    zh: TradingAgents — 多代理LLM算法交易框架。
 - name: vllm
   url: https://github.com/vllm-project/vllm
   category: ai-infra
   description:
     en: A high-throughput and memory-efficient inference and serving engine for LLMs
     ru: Высокопроизводительный движок инференса и сервинга LLM
+    zh: 用于LLM的高吞吐量、内存高效推理和服务引擎。
 - name: ragflow
   url: https://github.com/infiniflow/ragflow
   category: context-memory
   description:
     en: RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cu
     ru: Open-source RAG-движок, объединяющий глубокое понимание документов
+    zh: RAGFlow — 领先的开源检索增强生成（RAG）引擎，融合检索与生成。
 - name: llm-course
   url: https://github.com/mlabonne/llm-course
   category: learning-resources
   description:
     en: Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.
     ru: Курс по большим языковым моделям с roadmap и Colab-ноутбуками
+    zh: LLM入门课程，包含路线图和Colab笔记本。
 - name: OpenHands/OpenHands
   url: https://github.com/OpenHands/OpenHands
   category: cloud-coding-agents
   description:
     en: '🙌 OpenHands: AI-Driven Development'
     ru: OpenHands — разработка на базе AI
+    zh: OpenHands — AI驱动的开发。
 - name: deer-flow
   url: https://github.com/bytedance/deer-flow
   category: ai-assistants
   description:
     en: An open-source long-horizon SuperAgent harness that researches, codes, and creates
     ru: 'Open-source харнес SuperAgent: исследования, код, креатив'
+    zh: 开源长期SuperAgent工具链，支持研究、编码和创作。
 - name: Front-End-Checklist
   url: https://github.com/thedaviddias/Front-End-Checklist
   category: design-frontend
   description:
     en: 🗂 The essential checklist for modern web development, for humans and AI agents
     ru: Обязательный чеклист современной веб-разработки для людей и AI
+    zh: 现代Web开发必备清单，适用于人类和AI代理。
 - name: LlamaFactory
   url: https://github.com/hiyouga/LlamaFactory
   category: ai-infra
   description:
     en: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
     ru: Унифицированный эффективный fine-tuning 100+ LLM и VLM (ACL 2024)
+    zh: 统一高效微调100+ LLM和VLM（ACL 2024）。
 - name: daytona
   url: https://github.com/daytonaio/daytona
   category: cloud-coding-agents
   description:
     en: Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code
     ru: Безопасная эластичная инфраструктура для AI-сгенерированного кода
+    zh: Daytona — 运行AI生成代码的安全弹性基础设施。
 - name: gpt_academic
   url: https://github.com/binary-husky/gpt_academic
   category: docs-research
   description:
     en: Practical UI for GPT/GLM LLMs - optimized for paper reading, polishing and writing
     ru: 为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。
+    zh: GPT/GLM LLM实用界面，优化用于论文阅读、润色和写作。
 - name: learn-claude-code
   url: https://github.com/shareAI-lab/learn-claude-code
   category: docs-research
   description:
     en: Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1
     ru: 'Bash — всё что нужно: нано agent-харнес в стиле Claude Code с нуля'
+    zh: 仅需Bash — 从零构建的纳米级类Claude Code代理工具链。
 - name: MetaGPT
   url: https://github.com/FoundationAgents/MetaGPT
   category: ai-assistants
   description:
     en: '🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programmi'
     ru: 'Мультиагентный фреймворк: первая AI software-компания'
+    zh: MetaGPT — 多代理框架：首家AI软件公司，迈向自然语言编程。
 - name: ai-agents-for-beginners
   url: https://github.com/microsoft/ai-agents-for-beginners
   category: learning-resources
   description:
     en: Lessons to get started building AI agents
     ru: AI-агенты для начинающих
+    zh: AI代理构建入门教程。
 - name: rtk
   url: https://github.com/rtk-ai/rtk
   category: cli-agents
   description:
     en: CLI proxy that reduces LLM token consumption by 60-90% on common dev commands
     ru: 'CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах'
+    zh: CLI代理，在常见开发命令下将LLM令牌消耗降低60-90%。
 - name: unsloth
   url: https://github.com/unslothai/unsloth
   category: ai-infra
   description:
     en: Unsloth Studio is a web UI for training and running open models like Gemma 4, Qwen3.6, Dee
     ru: Веб-UI для обучения и запуска open-моделей (Gemma, Qwen, DeepSeek)
+    zh: Unsloth Studio — 训练和运行Gemma 4、Qwen3.6、DeepSeek等开放模型的全栈Web界面。
 - name: awesome-claude-skills
   url: https://github.com/ComposioHQ/awesome-claude-skills
   category: agent-skills-prompts
   description:
     en: A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI wo
     ru: Кураторский список Claude Skills, ресурсов и инструментов
+    zh: 精选Claude技能列表、资源和自定义Claude AI的工具。
 - name: oh-my-openagent
   url: https://github.com/code-yeongyu/oh-my-openagent
   category: agent-skills-prompts
   description:
     en: 'Coding agent harness for complex codebases - for Codex and OpenClaw'
     ru: 'omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode'
+    zh: 复杂代码库的编码代理工具链，适用于Codex和OpenClaw。
 - name: hello-agents
   url: https://github.com/datawhalechina/hello-agents
   category: learning-resources
   description:
     en: Building AI agents from scratch - principles and practice tutorial
     ru: 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程
+    zh: 从零构建AI代理 — 原理与实践教程。
 - name: anything-llm
   url: https://github.com/Mintplex-Labs/anything-llm
   category: ai-infra
   description:
     en: Stop renting your intelligence
     ru: Перестаньте арендовать свой интеллект
+    zh: 停止租用你的智能。
 - name: mem0
   url: https://github.com/mem0ai/mem0
   category: context-memory
   description:
     en: Universal memory layer for AI Agents
     ru: Универсальный слой памяти для AI-агентов
+    zh: AI代理的通用记忆层。
 - name: llm-app
   url: https://github.com/pathwaycom/llm-app
   category: ai-infra
   description:
     en: Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data
     ru: Готовые облачные шаблоны для RAG, AI-пайплайнов и enterprise-поиска
+    zh: 用于RAG、AI流水线和企业级搜索的即用云模板，支持实时数据。
 - name: mempalace
   url: https://github.com/MemPalace/mempalace
   category: context-memory
   description:
     en: The best-benchmarked open-source AI memory system
     ru: Лучший по бенчмаркам open-source AI-слой памяти
+    zh: 基准测试最佳的开源AI记忆系统。
 - name: crewAI
   url: https://github.com/crewAIInc/crewAI
   category: ai-assistants
   description:
     en: Framework for orchestrating role-playing, autonomous AI agents
     ru: Фреймворк оркестрации ролевых автономных AI-агентов
+    zh: 用于编排角色扮演自主AI代理的框架。
 - name: Flowise
   url: https://github.com/FlowiseAI/Flowise
   category: app-builders-low-code
   description:
     en: Build AI Agents, Visually
     ru: Визуальное построение AI-агентов
+    zh: 可视化构建AI代理。
 - name: daily_stock_analysis
   url: https://github.com/ZhuLinsen/daily_stock_analysis
   category: domain-agents
   description:
     en: LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis
     ru: 'LLM-система анализа акций: мульти-рынок, новости, дашборд, авто-пуш'
+    zh: LLM驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。
 - name: litellm
   url: https://github.com/BerriAI/litellm
   category: ai-infra
   description:
     en: Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format,
     ru: Python SDK и прокси-сервер для 100+ LLM API в формате OpenAI
+    zh: Python SDK和代理服务器（AI网关），以OpenAI（或原生）格式调用100+ LLM API。
 - name: llama_index
   url: https://github.com/run-llama/llama_index
   category: context-memory
   description:
     en: LlamaIndex is the leading document agent and OCR platform
     ru: Ведущая платформа document-агентов и OCR
+    zh: LlamaIndex 是领先的文档代理和 OCR 平台
 - name: awesome-claude-code
   url: https://github.com/hesreallyhim/awesome-claude-code
   category: agent-skills-prompts
   description:
     en: A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications
     ru: Кураторский список навыков, хуков, команд и оркестраторов Claude Code
+    zh: 精选的 Claude Code 技能、钩子、斜杠命令、代理编排器和应用程序集合
 - name: LocalAI
   url: https://github.com/mudler/LocalAI
   category: ai-infra
   description:
     en: LocalAI is the open-source AI engine
     ru: Open-source AI-движок для локального запуска
+    zh: LocalAI 是开源 AI 引擎
 - name: JeecgBoot
   url: https://github.com/jeecgboot/JeecgBoot
   category: app-builders-low-code
   description:
     en: AI 低代码平台「低代码 + 零代码」双驱动！低代码可一键生成前后端代码;零代码可 5 分钟搭建系统;AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI聊天、知识
     ru: 'AI low-code платформа: низкий + нулевой код, генерация систем одной фразой'
+    zh: AI 低代码平台「低代码 + 零代码」双驱动！低代码可一键生成前后端代码；零代码可 5 分钟搭建系统；AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI 聊天、知识
 - name: CowAgent
   url: https://github.com/zhayujie/CowAgent
   category: cli-agents
   description:
     en: Open-source super AI assistant & Agent Harness
     ru: Open-source супер-AI-ассистент и agent-харнес
+    zh: 开源超级 AI 助手和代理框架
 - name: milvus
   url: https://github.com/milvus-io/milvus
   category: ai-infra
   description:
     en: Milvus is a high-performance, cloud-native vector database built for scalable vector ANN s
     ru: Высокопроизводительная cloud-native векторная БД для масштабного ANN-поиска
+    zh: Milvus 是用于可扩展向量 ANN 的高性能云原生向量数据库
 - name: nanobot
   url: https://github.com/HKUDS/nanobot
   category: cli-agents
   description:
     en: Lightweight, open-source AI agent for your tools, chats, and workflows.
     ru: Легковесный open-source AI-агент для инструментов, чатов и воркфлоу
+    zh: 轻量级开源 AI 代理，用于工具、聊天和工作流
 - name: jan
   url: https://github.com/janhq/jan
   category: ai-infra
   description:
     en: Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
     ru: Open-source аналог ChatGPT, работающий оффлайн на вашем компьютере
+    zh: Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行
 - name: ray
   url: https://github.com/ray-project/ray
   category: ai-infra
   description:
     en: Ray is an AI compute engine
     ru: Движок AI-вычислений
+    zh: Ray 是 AI 计算引擎
 - name: antigravity-awesome-skills
   url: https://github.com/sickn33/antigravity-awesome-skills
   category: agent-skills-prompts
   description:
     en: Installable GitHub library of 1,800+ agentic skills for Claude Code, Cursor, Codex CLI, Ge
     ru: Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex
+    zh: 可安装的 GitHub 库，包含 1800+ 个 Claude Code、Cursor、Codex CLI、Ge 的代理技能
 - name: agno
   url: https://github.com/agno-agi/agno
   category: ai-assistants
   description:
     en: Build, run, and manage agent platforms.
     ru: Создание, запуск и управление agent-платформами
+    zh: 构建、运行和管理代理平台
 - name: ChatTTS
   url: https://github.com/2noise/ChatTTS
   category: needs-review
   description:
     en: A generative speech model for daily dialogue.
     ru: Генеративная модель речи для повседневных диалогов
+    zh: 用于日常对话的生成式语音模型
 - name: CodeWhale
   url: https://github.com/Hmbown/CodeWhale
   category: cli-agents
   description:
     en: Open-source, community-driven agent harness
     ru: Open-source community-driven agent-харнес
+    zh: 开源、社区驱动的代理框架
 - name: quivr
   url: https://github.com/QuivrHQ/quivr
   category: ai-infra
   description:
     en: Opiniated RAG for integrating GenAI in your apps 🧠   Focus on your product rather than the
     ru: Opinionated RAG для интеграции GenAI в приложения
+    zh: Opiniated RAG 用于将 GenAI 集成到您的应用程序中 🧠 专注于您的产品而非
 - name: Langchain-Chatchat
   url: https://github.com/chatchat-space/Langchain-Chatchat
   category: ai-infra
   description:
     en: Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型的 RAG 与 Ag
     ru: RAG и агенты на Langchain + ChatGLM/Qwen/Llama
+    zh: Langchain-Chatchat（原 Langchain-ChatGLM）基于 Langchain 与 ChatGLM、Qwen 和 Llama 等语言模型的 RAG 与 Ag
 - name: LightRAG
   url: https://github.com/HKUDS/LightRAG
   category: context-memory
   description:
     en: 'Simple and Fast Retrieval-Augmented Generation'
-    ru: 'Simple and Fast Retrieval-Augmented Generation'
+    ru: 'Простое и быстрое дополненное получение'
+    zh: 简单快速的检索增强生成
 - name: ai-engineering-from-scratch
   url: https://github.com/rohitg00/ai-engineering-from-scratch
   category: learning-resources
   description:
     en: Learn it
     ru: AI-инжиниринг с нуля
+    zh: 学习它
 - name: langextract
   url: https://github.com/google/langextract
   category: ai-infra
   description:
     en: A Python library for extracting structured information from unstructured text using LLMs w
     ru: Python-библиотека извлечения структуры из текста через LLM
+    zh: 用于使用 LLM 从非结构化文本中提取结构化信息的 Python 库
 - name: langgraph
   url: https://github.com/langchain-ai/langgraph
   category: ai-assistants
   description:
     en: Build resilient agents.
     ru: Построение устойчивых агентов
+    zh: 构建弹性代理
 - name: Vane
   url: https://github.com/ItzCrazyKns/Vane
   category: context-memory
   description:
     en: Vane is an AI-powered answering engine.
     ru: AI-powered поисковый движок ответов
+    zh: Vane 是 AI 驱动的问答引擎
 - name: PageIndex
   url: https://github.com/VectifyAI/PageIndex
   category: context-memory
   description:
     en: '📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG'
     ru: Индекс документов для reasoning-based RAG без векторов
+    zh: PageIndex：文档索引，用于无向量、基于推理的 RAG
 - name: 500-AI-Agents-Projects
   url: https://github.com/ashishpatel26/500-AI-Agents-Projects
   category: learning-resources
   description:
     en: The 500 AI Agents Projects is a curated collection of AI agent use cases across various in
     ru: Подборка 500 кейсов AI-агентов в разных индустриях
+    zh: 500 AI 代理项目是各行业 AI 代理用例的精选集合
 - name: nanoclaw
   url: https://github.com/nanocoai/nanoclaw
   category: ai-assistants
   description:
     en: A lightweight alternative to OpenClaw that runs in containers for security
     ru: Легковесная альтернатива OpenClaw в контейнерах для безопасности
+    zh: OpenClaw 的轻量级替代品，在容器中运行以增强安全性
 - name: storm
   url: https://github.com/stanford-oval/storm
   category: docs-research
   description:
     en: An LLM-powered knowledge curation system that researches a topic and generates a full-leng
     ru: 'LLM-система курирования знаний: исследование темы и генерация статьи'
+    zh: 基于 LLM 的知识策划系统，研究主题并生成完整的
 - name: composio
   url: https://github.com/ComposioHQ/composio
   category: ai-assistants
   description:
     en: Composio powers 1000+ toolkits, tool search, context management, authentication, and a san
     ru: 1000+ тулкитов, поиск инструментов, контекст и аутентификация для агентов
+    zh: Composio 支持 1000+ 工具包、工具搜索、上下文管理、身份验证和 san
 - name: chroma
   url: https://github.com/chroma-core/chroma
   category: context-memory
   description:
     en: Search infrastructure for AI
     ru: Поисковая инфраструктура для AI
+    zh: AI 的搜索基础设施
 - name: awesome-generative-ai-guide
   url: https://github.com/aishwaryanr/awesome-generative-ai-guide
   category: learning-resources
   description:
     en: A one stop repository for generative AI research updates, interview resources, notebooks a
     ru: 'Единый репо: GenAI-исследования, интервью, ноутбуки'
+    zh: 生成式 AI 研究更新、面试资源、笔记本的一站式仓库
 - name: FinceptTerminal
   url: https://github.com/Fincept-Corporation/FinceptTerminal
   category: domain-agents
   description:
     en: FinceptTerminal is a modern finance application offering advanced market analytics, invest
     ru: 'Современное финанс-приложение: аналитика рынков, инвестиции'
+    zh: FinceptTerminal 是现代金融应用程序，提供高级市场分析、投资
 - name: CloakBrowser
   url: https://github.com/CloakHQ/CloakBrowser
   category: security-agents
   description:
     en: Stealth Chromium that passes every bot detection test
     ru: Стелс-Chromium, проходящий любые проверки на ботов
+    zh: 通过所有机器人检测测试的隐身 Chromium
 - name: agentscope
   url: https://github.com/agentscope-ai/agentscope
   category: ai-assistants
   description:
     en: Build and run agents you can see, understand and trust.
     ru: Создание и запуск агентов, которым видно, понимаешь и доверяешь
+    zh: 构建并运行您能看到、理解和信任的代理
 - name: Hands-On-Large-Language-Models
   url: https://github.com/HandsOnLLM/Hands-On-Large-Language-Models
   category: learning-resources
   description:
     en: Official code repo for the O'Reilly Book - "Hands-On Large Language Models"
     ru: Код к книге O'Reilly «Hands-On Large Language Models»
+    zh: O'Reilly 图书《Hands-On Large Language Models》的官方代码库
 - name: vibe-kanban
   url: https://github.com/BloopAI/vibe-kanban
   category: cli-agents
   description:
     en: Get 10X more out of Claude Code, Codex or any coding agent
     ru: Получите в 10 раз больше от Claude Code, Codex и любого кодинг-агента
+    zh: 从 Claude Code、Codex 或任何编码代理获得 10 倍收益
 - name: kestra
   url: https://github.com/kestra-io/kestra
   category: devops-cloud
   description:
     en: Event Driven Orchestration & Scheduling Platform for Mission Critical Applications
     ru: Event-driven платформа оркестрации и планирования для критичных приложений
+    zh: 面向关键应用程序的事件驱动编排和调度平台
 - name: awesome-agent-skills
   url: https://github.com/VoltAgent/awesome-agent-skills
   category: agent-skills-prompts
   description:
     en: A curated collection of 1000+ agent skills from official dev teams and the community, comp
     ru: Подборка 1000+ агентных навыков от команд и сообщества
+    zh: 来自官方开发团队和社区的 1000+ 代理技能精选集合，comp
 - name: cognee
   url: https://github.com/topoteretes/cognee
   category: context-memory
   description:
     en: Cognee is the open-source AI memory platform for agents
     ru: Open-source AI-платформа памяти для агентов
+    zh: Cognee 是代理的开源 AI 记忆平台
 - name: OpenCLI
   url: https://github.com/jackwener/OpenCLI
   category: browser-automation
   description:
     en: Make Any Website into CLI & Use your logged-in browser by AI agent
     ru: Превращает любой сайт в CLI и использует залогиненный браузер AI-агентом
+    zh: 将任何网站转换为 CLI 并通过 AI 代理使用您已登录的浏览器
 - name: haystack
   url: https://github.com/deepset-ai/haystack
   category: ai-assistants
   description:
     en: Open-source AI orchestration framework for building context-engineered, production-ready L
     ru: Open-source AI-фреймворк оркестрации для production LLM-приложений
+    zh: 开源 AI 编排框架，用于构建上下文工程、生产就绪的 L
 - name: DeepTutor
   url: https://github.com/HKUDS/DeepTutor
   category: docs-research
   description:
     en: 'DeepTutor: Agent-native Personalized Tutoring'
     ru: Agent-native персонализированный тьютор
+    zh: DeepTutor：代理原生的个性化辅导
 - name: Qwen
   url: https://github.com/QwenLM/Qwen
   category: ai-infra
   description:
     en: The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibab
     ru: Официальный репо Qwen (通义千问) — чат и предобученные LLM от Alibaba
+    zh: 阿里巴巴提出的 Qwen (通义千问) 聊天和预训练大语言模型的官方仓库
 - name: machine-learning-for-trading
   url: https://github.com/stefan-jansen/machine-learning-for-trading
   category: domain-agents
   description:
     en: Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.
     ru: Код к «Machine Learning for Trading», 3-е издание
+    zh: Machine Learning for Trading 第 3 版的代码——从数据源到实时执行
 - name: Chinese-LLaMA-Alpaca
   url: https://github.com/ymcui/Chinese-LLaMA-Alpaca
   category: ai-infra
   description:
     en: Chinese LLaMA and Alpaca LLMs with local CPU/GPU training and deployment
     ru: 'Chinese-LLaMA-Alpaca: LLaMA/Alpaca для китайского'
+    zh: 支持本地 CPU/GPU 训练和部署的中文 LLaMA 和 Alpaca 大语言模型
 - name: ml-engineering
   url: https://github.com/stas00/ml-engineering
   category: learning-resources
   description:
     en: Machine Learning Engineering Open Book
     ru: Открытая книга по ML-инжинирингу
+    zh: 机器学习工程开放书籍
 - name: Awesome-Multimodal-Large-Language-Models
   url: https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models
   category: learning-resources
   description:
     en: Latest advances on Multimodal Large Language Models - surveys and benchmarks
     ru: Подборка по мультимодальным большим языковым моделям
+    zh: 多模态大语言模型的最新进展——调查和基准
 - name: camel
   url: https://github.com/camel-ai/camel
   category: ai-assistants
   description:
     en: '🐫 CAMEL: The first and the best multi-agent framework'
     ru: CAMEL — первый и лучший мультиагентный фреймворк
+    zh: 🐫 CAMEL：第一个也是最好的多代理框架
 - name: Megatron-LM
   url: https://github.com/NVIDIA/Megatron-LM
   category: ai-infra
   description:
     en: Ongoing research training transformer models at scale
     ru: Текущие исследования обучения трансформеров в масштабе
+    zh: 大规模训练变压器模型的持续研究
 - name: ChatGLM2-6B
   url: https://github.com/zai-org/ChatGLM2-6B
   category: ai-infra
   description:
     en: 'ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型'
     ru: ChatGLM2-6B — open-source билингвальный чат-LM
+    zh: ChatGLM2-6B：开源双语对话语言模型
 - name: ggml
   url: https://github.com/ggml-org/ggml
   category: ai-infra
   description:
     en: Tensor library for machine learning
     ru: Тензорная библиотека для машинного обучения
+    zh: 机器学习张量库
 - name: DeepLearningExamples
   url: https://github.com/NVIDIA/DeepLearningExamples
   category: ai-infra
   description:
     en: State-of-the-Art Deep Learning scripts organized by models - easy to train and deploy with
     ru: State-of-the-Art скрипты глубокого обучения, организованные по моделям
+    zh: 按模型组织的最先进深度学习脚本——易于训练和部署
 - name: PentestGPT
   url: https://github.com/GreyDGL/PentestGPT
   category: security-agents
   description:
     en: Automated Penetration Testing Agentic Framework Powered by Large Language Models
     ru: Агентный фреймворк автоматического пентеста на базе LLM
+    zh: 基于大语言模型的自动化渗透测试智能体框架
 - name: litgpt
   url: https://github.com/Lightning-AI/litgpt
   category: ai-infra
   description:
     en: Provides 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale
     ru: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
+    zh: 提供 20+ 个高性能 LLM，包含大规模预训练、微调和部署的配方
 - name: open-llms
   url: https://github.com/eugeneyan/open-llms
   category: learning-resources
   description:
     en: 📋 A list of open LLMs available for commercial use.
     ru: Список открытых LLM, доступных для коммерческого использования
+    zh: 可用于商业用途的开源 LLM 列表
 - name: txtai
   url: https://github.com/neuml/txtai
   category: ai-infra
   description:
     en: 💡 All-in-one AI framework for semantic search, LLM orchestration and language model workfl
     ru: 'All-in-one AI-фреймворк: семантический поиск, оркестрация LLM'
+    zh: 用于语义搜索、LLM 编排和语言模型工作流的一体化 AI 框架
 - name: HRM
   url: https://github.com/sapientinc/HRM
   category: ai-infra
   description:
     en: Hierarchical Reasoning Model Official Release
     ru: Hierarchical Reasoning Model — официальный релиз
+    zh: 分层推理模型官方发布版
 - name: PocketFlow-Tutorial-Codebase-Knowledge
   url: https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
   category: ai-assistants
   description:
     en: 'Pocket Flow: Codebase to Tutorial'
     ru: Pocket Flow — от кодовой базы к туториалу
+    zh: Pocket Flow：从代码库到教程
 - name: awesome-generative-ai
   url: https://github.com/steven2358/awesome-generative-ai
   category: learning-resources
   description:
     en: A curated list of modern Generative Artificial Intelligence projects and services
     ru: Кураторский список современных GenAI-проектов и сервисов
+    zh: 精选的现代生成式人工智能项目和服务列表
 - name: LLMSurvey
   url: https://github.com/RUCAIBox/LLMSurvey
   category: learning-resources
   description:
     en: The official GitHub page for the survey paper "A Survey of Large Language Models".
     ru: Страница обзора «A Survey of Large Language Models»
+    zh: 综述论文《大语言模型调研》的官方 GitHub 页面
 - name: MOSS
   url: https://github.com/OpenMOSS/MOSS
   category: ai-infra
   description:
     en: An open-source tool-augmented conversational language model from Fudan University
     ru: Open-source tool-augmented разговорная языковая модель от Fudan University
+    zh: 来自复旦大学的开源工具增强型对话语言模型
 - name: PocketFlow
   url: https://github.com/The-Pocket/PocketFlow
   category: ai-assistants
   description:
     en: 'Pocket Flow: 100-line LLM framework'
     ru: Pocket Flow — LLM-фреймворк на 100 строк
+    zh: Pocket Flow：100 行 LLM 框架
 - name: llm-engineer-toolkit
   url: https://github.com/KalyanKS-NLP/llm-engineer-toolkit
   category: learning-resources
   description:
     en: A curated list of  120+ LLM libraries category wise
     ru: Кураторский список 120+ LLM-библиотек по категориям
+    zh: 按类别分类的 120+ LLM 库精选列表
 - name: petals
   url: https://github.com/bigscience-workshop/petals
   category: ai-infra
   description:
     en: 🌸 Run LLMs at home, BitTorrent-style
     ru: Запуск LLM дома, в стиле BitTorrent
+    zh: 在家运行 LLM，采用 BitTorrent 模式
 - name: LLMsPracticalGuide
   url: https://github.com/Mooler0410/LLMsPracticalGuide
   category: learning-resources
   description:
     en: A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers)
     ru: Кураторский список практических ресурсов по LLM
+    zh: LLM 实用指南精选列表（LLM 树、示例、论文）
 - name: OpenRLHF
   url: https://github.com/OpenRLHF/OpenRLHF
   category: ai-infra
   description:
     en: An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAP
     ru: Простой, масштабируемый и быстрый агентный RL-фреймворк на Ray (PPO и DAP)
+    zh: 基于 Ray 的易用、可扩展、高性能智能体强化学习框架（PPO & DAP）
 - name: PowerInfer
   url: https://github.com/Tiiny-AI/PowerInfer
   category: ai-infra
   description:
     en: High-speed Large Language Model Serving for Local Deployment
     ru: Высокоскоростной сервинг LLM для локального деплоя
+    zh: 用于本地部署的高速大语言模型服务
 - name: anomaly-detection-resources
   url: https://github.com/yzhao062/anomaly-detection-resources
   category: learning-resources
   description:
     en: Anomaly detection related books, papers, videos, and toolboxes
     ru: Книги, статьи, видео и тулбоксы по обнаружению аномалий
+    zh: 异常检测相关书籍、论文、视频和工具集
 - name: deeplake
   url: https://github.com/activeloopai/deeplake
   category: ai-infra
   description:
     en: Deeplake is AI Data Runtime for Agents
     ru: AI Data Runtime для агентов
+    zh: Deeplake 是 AI 数据运行时，用于智能体
 - name: VAR
   url: https://github.com/FoundationVision/VAR
   category: needs-review
   description:
     en: 'Visual Autoregressive Modeling - next-scale prediction for image generation'
-    ru: 'Visual Autoregressive Modeling - next-scale prediction for image generation'
+    ru: 'Визуальное авторегрессионное моделирование — предсказание следующего масштаба для генерации изображений'
+    zh: 视觉自回归建模——用于图像生成的下一级预测
 - name: awesome-LLM-resources
   url: https://github.com/WangRongsheng/awesome-LLM-resources
   category: learning-resources
   description:
     en: Summary of the world's best LLM resources - agents, coding, MCP, multimodal
     ru: 🧑‍🚀 全世界最好的LLM资料总结（多模态生成、Agent、辅助编程、AI审稿、数据处理、模型训练、模型推理、o1 模型、MCP、小语言模型、视觉语言模型） | Summary of the world's best LLM resources.
+    zh: 全球最佳 LLM 资源总结——智能体、编程、MCP、多模态
 - name: optimate
   url: https://github.com/nebuly-ai/optimate
   category: ai-infra
   description:
     en: A collection of libraries to optimise AI model performances
     ru: Коллекция библиотек оптимизации производительности AI-моделей
+    zh: 用于优化 AI 模型性能的库集合
 - name: n8n
   url: https://github.com/n8n-io/n8n
   category: app-builders-low-code
   description:
     en: Fair-code workflow automation platform with native AI capabilities
     ru: Платформа автоматизации воркфлоу с нативными AI-возможностями
+    zh: 具有原生 AI 功能的公平代码工作流自动化平台
 - name: prompts.chat
   url: https://github.com/f/prompts.chat
   category: agent-skills-prompts
   description:
     en: Awesome ChatGPT Prompts - share, discover and collect prompts from the community
     ru: f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
+    zh: 精选的 ChatGPT 提示词——与社区分享、发现和收集提示词
 - name: generative-ai-for-beginners
   url: https://github.com/microsoft/generative-ai-for-beginners
   category: learning-resources
   description:
     en: Lessons to get started building with Generative AI
     ru: GenAI для начинающих
+    zh: 生成式 AI 入门课程
 - name: gemini-cli
   url: https://github.com/google-gemini/gemini-cli
   category: cli-agents
   description:
     en: An open-source AI agent that brings the power of Gemini directly into your terminal.
     ru: 'Open-source AI-агент: brings Gemini прямо в терминал'
+    zh: 开源 AI 智能体，将 Gemini 的强大功能直接带入您的终端
 - name: caveman
   url: https://github.com/JuliusBrussee/caveman
   category: agent-skills-prompts
   description:
     en: Claude Code skill that cuts 65% of tokens by talking like a caveman
     ru: 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
+    zh: Claude Code 技能，通过像原始人一样说话来减少 65% 的令牌
 - name: Prompt-Engineering-Guide
   url: https://github.com/dair-ai/Prompt-Engineering-Guide
   category: learning-resources
   description:
     en: 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context enginee
     ru: Гайды, статьи, ноутбуки по prompt engineering
+    zh: 提示工程、上下文工程等的指南、论文、课程、笔记本和资源
 - name: Scrapling
   url: https://github.com/D4Vinci/Scrapling
   category: browser-automation
   description:
     en: 🕷️ An adaptive Web Scraping framework that handles everything from a single request to a f
     ru: Адаптивный фреймворк веб-скрейпинга — от запроса до пайплайна
+    zh: 自适应网页抓取框架，处理从单个请求到完整爬取的所有内容
 - name: TrendRadar
   url: https://github.com/sansan0/TrendRadar
   category: docs-research
   description:
     en: AI-driven public opinion and trend monitor with multi-platform aggregation and alerts
     ru: ⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。
+    zh: 基于 AI 的舆论和趋势监控，支持多平台聚合和告警
 - name: headroom
   url: https://github.com/headroomlabs-ai/headroom
   category: context-memory
   description:
     en: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM
     ru: Сжатие выводов инструментов, логов и RAG-чанков до LLM
+    zh: 在工具输出、日志、文件和 RAG 块到达 LLM 之前进行压缩
 - name: system_prompts_leaks
   url: https://github.com/asgeirtj/system_prompts_leaks
   category: agent-skills-prompts
   description:
     en: Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude De
     ru: 'Извлечённые системные промпты Anthropic: Claude Fable 5, Opus 4.8 и др.'
+    zh: 来自 Anthropic 的已提取系统提示词——Claude Fable 5、Opus 4.8、Claude Code、Claude Dev 等
 - name: chrome-devtools-mcp
   url: https://github.com/ChromeDevTools/chrome-devtools-mcp
   category: browser-automation
   description:
     en: Chrome DevTools for coding agents
     ru: Chrome DevTools для кодинг-агентов
+    zh: 用于编码智能体的 Chrome DevTools
 - name: CL4R1T4S
   url: https://github.com/elder-plinius/CL4R1T4S
   category: agent-skills-prompts
   description:
     en: LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL
     ru: Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
+    zh: ChatGPT、Claude、Gemini、Grok、Perplexity、Cursor、Lovable、Repliq 等的已泄露系统提示词
 - name: UI-TARS-desktop
   url: https://github.com/bytedance/UI-TARS-desktop
   category: design-frontend
   description:
     en: 'The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Inf'
     ru: 'Open-source мультимодальный AI-агент-стек: модели и агентная инфраструктура'
+    zh: 开源多模态 AI 智能体栈：连接前沿 AI 模型与智能体基础设施
 - name: awesome-copilot
   url: https://github.com/github/awesome-copilot
   category: agent-skills-prompts
   description:
     en: Community-contributed instructions, agents, skills, and configurations to help you make th
     ru: Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot
+    zh: 社区贡献的说明、智能体、技能和配置，帮助您构建自己的 Copilot
 - name: academic-research-skills
   url: https://github.com/Imbad0202/academic-research-skills
   category: agent-skills-prompts
   description:
     en: 'Academic Research Skills for Claude Code: research → write → review → revise → finalize'
     ru: Навыки академических исследований для Claude Code
+    zh: Claude Code 学术研究技能：研究→撰写→评审→修订→定稿
 - name: prompt-optimizer
   url: https://github.com/linshenkx/prompt-optimizer
   category: agent-skills-prompts
   description:
     en: An AI prompt optimizer for writing better prompts and getting better AI results.
     ru: AI-оптимизатор промптов для лучших результатов
+    zh: AI 提示词优化器，用于编写更好的提示词并获得更好的 AI 结果
 - name: gpt-researcher
   url: https://github.com/assafelovic/gpt-researcher
   category: docs-research
   description:
     en: An autonomous agent that conducts deep research on any data using any LLM providers
     ru: Автономный агент глубоких исследований на любых LLM
+    zh: 自主智能体，使用任何 LLM 提供商对任何数据进行深度研究
 - name: mlflow
   url: https://github.com/mlflow/mlflow
   category: observability-eval
   description:
     en: The open source AI engineering platform for agents, LLMs, and ML models
     ru: Open-source AI-инжиниринг платформа для агентов, LLM и ML-моделей
+    zh: 面向智能体、LLM 和 ML 模型的开源 AI 工程平台
 - name: codebase-memory-mcp
   url: https://github.com/DeusData/codebase-memory-mcp
   category: context-memory
   description:
     en: High-performance code intelligence MCP server
     ru: Высокопроизводительный MCP-сервер интеллекта кодовой базы
+    zh: 高性能代码智能 MCP 服务器
 - name: activepieces
   url: https://github.com/activepieces/activepieces
   category: app-builders-low-code
   description:
     en: AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automati
     ru: AI-агенты, MCP и автоматизация воркфлоу (~400 MCP-серверов)
+    zh: AI 智能体、MCP 服务器与 AI 工作流自动化 •（约 400 个用于 AI 智能体的 MCP 服务器）• AI 自动化
 - name: n8n-mcp
   url: https://github.com/czlonkowski/n8n-mcp
   category: app-builders-low-code
   description:
     en: A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you
     ru: 'MCP для Claude Desktop/Code/Windsurf/Cursor: строит n8n-воркфлоу'
+    zh: 用于 Claude Desktop / Claude Code / Windsurf / Cursor 的 MCP，为您构建 n8n 工作流
 - name: MaxKB
   url: https://github.com/1Panel-dev/MaxKB
   category: app-builders-low-code
   description:
     en: 🔥 MaxKB is an open-source platform for building enterprise-grade agents
     ru: Open-source платформа для enterprise-агентов
+    zh: MaxKB 是用于构建企业级智能体的开源平台
 - name: FinGPT
   url: https://github.com/AI4Finance-Foundation/FinGPT
   category: domain-agents
   description:
     en: 'FinGPT: Open-Source Financial Large Language Models!  Revolutionize 🔥    We release the tr'
     ru: FinGPT — open-source финансовые большие языковые модели
+    zh: FinGPT：开源金融大语言模型
 - name: opik
   url: https://github.com/comet-ml/opik
   category: observability-eval
   description:
     en: Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows wit
     ru: Дебаг, оценка и мониторинг LLM-приложений, RAG и агентных воркфлоу
+    zh: 调试、评估和监控 LLM 应用、RAG 系统和代理工作流
 - name: FunASR
   url: https://github.com/modelscope/FunASR
   category: needs-review
   description:
     en: 'Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diariza'
     ru: 'Industrial-grade распознавание речи: 170x realtime, 50+ языков'
+    zh: 工业级语音识别工具包：170倍实时，50+语言，说话人分离
 - name: nuclear
   url: https://github.com/nukeop/nuclear
   category: needs-review
   description:
     en: Streaming music player that finds free music for you
     ru: Стриминговый музыкальный плеер, находящий свободную музыку
+    zh: 流媒体音乐播放器，自动为您找免费音乐
 - name: mcp-for-beginners
   url: https://github.com/microsoft/mcp-for-beginners
   category: learning-resources
   description:
     en: This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) th
     ru: Open-source курс основ Model Context Protocol (MCP)
+    zh: 开源课程介绍模型上下文协议 (MCP) 的基础知识
 - name: trigger.dev
   url: https://github.com/triggerdotdev/trigger.dev
   category: devops-cloud
   description:
     en: Trigger.dev – build and deploy fully‑managed AI agents and workflows
     ru: Trigger.dev — сборка и деплой managed AI-агентов и воркфлоу
+    zh: Trigger.dev — 构建和部署完全托管的 AI 代理和工作流
 - name: xiaohongshu-mcp
   url: https://github.com/xpzouying/xiaohongshu-mcp
   category: domain-agents
   description:
     en: MCP for xiaohongshu.com
     ru: MCP для xiaohongshu.com
+    zh: 小红书的 MCP 服务器
 - name: OpenMetadata
   url: https://github.com/open-metadata/OpenMetadata
   category: context-memory
   description:
     en: The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building t
     ru: 'Open Context Layer для данных и AI: построение траста данных'
+    zh: 数据和 AI 的开放上下文层，构建元数据的开放平台
 - name: outlines
   url: https://github.com/dottxt-ai/outlines
   category: ai-infra
   description:
     en: Structured Outputs
     ru: Структурированные выводы
+    zh: LLM 的结构化输出
 - name: Skill_Seekers
   url: https://github.com/yusufkaraaslan/Skill_Seekers
   category: agent-skills-prompts
   description:
     en: Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with a
     ru: Конвертация сайтов-документаций, GitHub-репо и PDF в Claude AI-навыки
+    zh: 将文档网站、GitHub 仓库和 PDF 转换为 Claude AI 技能
 - name: Auto-claude-code-research-in-sleep
   url: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
   category: agent-skills-prompts
   description:
     en: ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML rese
     ru: ARIS — лёгкие Markdown-навыки автономных ML-исследований
+    zh: ARIS — 用于自主 ML 研究的轻量级纯 Markdown 技能
 - name: awesome-nano-banana-pro-prompts
   url: https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts
   category: agent-skills-prompts
   description:
     en: 🍌 World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview im
     ru: Крупнейшая библиотека промптов Nano Banana Pro — 10000+ с превью
+    zh: 世界最大的 Nano Banana Pro 提示词库 — 10,000+ 精选提示词带预览图
 - name: LangGPT
   url: https://github.com/langgptai/LangGPT
   category: agent-skills-prompts
   description:
     en: 'LangGPT: Empowering everyone to become a prompt expert! 🚀  📌 结构化提示词（Structured Prompt）提出者'
     ru: LangGPT — структурированные промпты для каждого
+    zh: LangGPT：赋能所有人成为提示词专家，结构化提示词
 - name: fastapi_mcp
   url: https://github.com/tadata-org/fastapi_mcp
   category: mcp
   description:
     en: Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!
     ru: Экспонирует эндпоинты FastAPI как MCP-инструменты с Auth
+    zh: 将 FastAPI 端点暴露为 MCP 工具，支持认证
 - name: XHS-Downloader
   url: https://github.com/JoeanAmier/XHS-Downloader
   category: needs-review
   description:
     en: XiaoHongShu (RedNote) link extractor and content downloader
     ru: Загрузчик контента Xiaohongshu (RedNote)
+    zh: 小红书链接提取器和内容下载器
 - name: awesome-chatgpt-zh
   url: https://github.com/EmbraceAGI/awesome-chatgpt-zh
   category: learning-resources
   description:
     en: ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀
     ru: 'ChatGPT китайский гайд: инструкции, разработка приложений, ресурсы'
+    zh: ChatGPT 中文指南 — 提示词、资源、应用开发
 - name: nginx-ui
   url: https://github.com/0xJacky/nginx-ui
   category: devops-cloud
   description:
     en: Yet another WebUI for Nginx
     ru: Ещё один WebUI для Nginx
+    zh: Nginx 的 WebUI
 - name: promptflow
   url: https://github.com/microsoft/promptflow
   category: ai-infra
   description:
     en: Build high-quality LLM apps - from prototyping, testing to production deployment and monit
     ru: 'Создание качественных LLM-приложений: прототип, тест, продакшн'
+    zh: 构建高质量 LLM 应用 — 从原型到生产部署和监控
 - name: chatgpt_system_prompt
   url: https://github.com/LouisShark/chatgpt_system_prompt
   category: agent-skills-prompts
   description:
     en: A collection of GPT system prompts and various prompt injection/leaking knowledge.
     ru: Коллекция системных промптов GPT и знаний о prompt injection
+    zh: GPT 系统提示词集合及提示词注入/泄露知识
 - name: phoenix
   url: https://github.com/Arize-ai/phoenix
   category: observability-eval
   description:
     en: AI Observability & Evaluation
     ru: Наблюдаемость и оценка AI
+    zh: AI 可观测性和评估
 - name: mcp-use
   url: https://github.com/mcp-use/mcp-use
   category: mcp
   description:
     en: The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI
     ru: Fullstack MCP-фреймворк для разработки MCP-приложений
+    zh: 全栈 MCP 框架，为 ChatGPT/Claude 开发 MCP 应用和 MCP 服务器
 - name: awesome-nanobanana-pro
   url: https://github.com/ZeroLu/awesome-nanobanana-pro
   category: agent-skills-prompts
   description:
     en: 🚀 An awesome list of curated Nano Banana pro prompts and examples
     ru: Кураторский список промптов и примеров Nano Banana pro
+    zh: 精选 Nano Banana Pro 提示词和示例的列表
 - name: prompt-master
   url: https://github.com/nidhinjs/prompt-master
   category: agent-skills-prompts
   description:
     en: A Claude skill that writes the accurate prompts for any AI tool
     ru: Навык Claude, пишущий точные промпты для любого AI-инструмента
+    zh: 为任何 AI 工具编写精确提示词的 Claude 技能
 - name: hexstrike-ai
   url: https://github.com/0x4m4/hexstrike-ai
   category: security-agents
   description:
     en: HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilo
     ru: HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot)
+    zh: HexStrike AI MCP 代理 — 高级 MCP 服务器，支持 AI 代理
 - name: xiaozhi-esp32-server
   url: https://github.com/xinnan-tech/xiaozhi-esp32-server
   category: needs-review
   description:
     en: Backend service for xiaozhi-esp32 - build an ESP32 device control server
     ru: 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.
+    zh: xiaozhi-esp32 的后端服务 — ESP32 设备控制服务器
 - name: ida-pro-mcp
   url: https://github.com/mrexodia/ida-pro-mcp
   category: security-agents
   description:
     en: AI-powered reverse engineering assistant that bridges IDA Pro with language models through
     ru: 'AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей'
+    zh: 通过 MCP 将 IDA Pro 与语言模型连接的 AI 逆向工程助手
 - name: mcp
   url: https://github.com/awslabs/mcp
   category: devops-cloud
   description:
     en: Open source MCP Servers for AWS
     ru: Open-source MCP-серверы для AWS
+    zh: AWS 的开源 MCP 服务器
 - name: QuantDinger
   url: https://github.com/brokermr810/QuantDinger
   category: domain-agents
   description:
     en: AI quantitative trading platform for crypto, stocks, and forex with backtesting, live trad
     ru: AI-платформа количественного трейдинга crypto/акций/форекс
+    zh: AI 量化交易平台，支持加密货币、股票和外汇，含回测和实盘交易
 - name: evolver
   url: https://github.com/EvoMap/evolver
   category: ai-assistants
   description:
     en: The GEP-powered self-evolving engine for AI agents
     ru: GEP-powered самоэволюционирующий движок для AI-агентов
+    zh: 基于 GEP 的 AI 代理自演化引擎
 - name: ChatGPT-Shortcut
   url: https://github.com/rockbenben/ChatGPT-Shortcut
   category: agent-skills-prompts
   description:
     en: 🚀💪Maximize your efficiency and productivity
     ru: Максимизируйте эффективность и продуктивность
+    zh: 最大化效率和生产力
 - name: awesome-prompts
   url: https://github.com/ai-boost/awesome-prompts
   category: agent-skills-prompts
   description:
     en: Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store
     ru: Кураторский список промптов ChatGPT из топовых GPTs Store
+    zh: 来自 GPT Store 顶级 GPT 的精选 ChatGPT 提示词列表
 - name: awesome-gpt-image-2
   url: https://github.com/freestylefly/awesome-gpt-image-2
   category: agent-skills-prompts
   description:
     en: Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中
     ru: 'Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов'
+    zh: 提示词即代码 | GPT-Image2 工业级提示词引擎和模板库，470+ 案例，20+ 模板
 - name: awesome-gpt4o-images
   url: https://github.com/jamez-bondos/awesome-gpt4o-images
   category: agent-skills-prompts
   description:
     en: Awesome curated collection of images and prompts generated by GPT-4o and gpt-image-1
     ru: Подборка изображений и промптов, сгенерированных GPT-4o и gpt-image-1
+    zh: GPT-4o 和 gpt-image-1 生成的精选图像和提示词集合
 - name: YouMind-OpenLab/awesome-gpt-image-2
   url: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
   category: agent-skills-prompts
   description:
     en: 🚀 World's largest GPT Image 2 prompt library, updated daily — 2000+ curated prompts with p
     ru: Крупнейшая библиотека промптов GPT Image 2 — 2000+, ежедневное обновление
+    zh: 世界最大的 GPT Image 2 提示词库，每日更新 — 2,000+ 精选提示词
 - name: lamda
   url: https://github.com/firerpa/lamda
   category: browser-automation
   description:
     en: 'Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matc'
     ru: 'Платформа full-stack управления Android-устройствами: WebRTC-десктоп, UI/OCR'
+    zh: Android 全栈设备控制平台：WebRTC/H.264 远程桌面，UI/OCR/图像匹配
 - name: Prompt_Engineering
   url: https://github.com/NirDiamant/Prompt_Engineering
   category: agent-skills-prompts
   description:
     en: Prompt engineering techniques with hands-on Jupyter Notebook tutorials
     ru: 22 prompt engineering techniques with hands-on Jupyter Notebook tutorials, from fundamental concepts to advanced strategies for leveraging LLMs.
+    zh: 提示词工程技术，包含 Jupyter Notebook 实战教程
 - name: FinRobot
   url: https://github.com/AI4Finance-Foundation/FinRobot
   category: domain-agents
   description:
     en: 'FinRobot: An Open-Source AI Agent Platform for Financial Analysis using LLMs 🚀 🚀 🚀'
     ru: FinRobot — open-source AI-агент для финансового анализа на LLM
+    zh: FinRobot：使用 LLM 的金融分析开源 AI 代理平台
 - name: Awesome-MCP-ZH
   url: https://github.com/yzfly/Awesome-MCP-ZH
   category: mcp
   description:
     en: MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients
     ru: 'MCP ресурсы на китайском: гайд, Claude MCP, серверы, клиенты'
+    zh: MCP 资源精选、MCP 指南、Claude MCP、MCP 服务器和客户端
 - name: browser-tools-mcp
   url: https://github.com/AgentDeskAI/browser-tools-mcp
   category: browser-automation
   description:
     en: Monitor browser logs directly from Cursor and other MCP compatible IDEs.
     ru: Мониторинг логов браузера из Cursor и других MCP-IDE
+    zh: 直接从 Cursor 和其他 MCP 兼容 IDE 监控浏览器日志
 - name: swarms
   url: https://github.com/kyegomez/swarms
   category: ai-assistants
   description:
     en: The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework
     ru: Enterprise-grade мультиагентный фреймворк оркестрации для продакшна
+    zh: 企业级生产就绪的多代理编排框架
 - name: firecrawl-mcp-server
   url: https://github.com/firecrawl/firecrawl-mcp-server
   category: browser-automation
   description:
     en: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude
     ru: Официальный Firecrawl MCP — веб-скрейпинг и поиск в Cursor, Claude
+    zh: 官方 Firecrawl MCP 服务器 — 为 Cursor、Claude 添加强大的网页抓取和搜索
 - name: BrowserMCP/mcp
   url: https://github.com/BrowserMCP/mcp
   category: browser-automation
   description:
     en: Browser MCP is a Model Context Provider (MCP) server that allows AI applications to contro
     ru: Browser MCP — MCP-сервер управления браузером для AI-приложений
+    zh: Browser MCP — 让 AI 应用程序能够控制浏览器的 MCP 服务器
 - name: unstract
   url: https://github.com/Zipstack/unstract
   category: ai-infra
   description:
     en: LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work
     ru: LLM-извлечение неструктурированных данных для API-деплоя и ETL
+    zh: LLM 驱动的非结构化数据提取 — 用于 API 部署和 ETL 管道
 - name: osaurus
   url: https://github.com/osaurus-ai/osaurus
   category: ai-infra
   description:
     en: Own your AI
     ru: Владейте своим AI
+    zh: 拥有您的 AI
 - name: SuperPrompt
   url: https://github.com/NeoVertex1/SuperPrompt
   category: agent-skills-prompts
   description:
     en: SuperPrompt is an attempt to engineer prompts that might help us understand AI agents.
     ru: SuperPrompt — промпты, помогающие понять AI-агентов
+    zh: SuperPrompt — 旨在帮助我们理解 AI 代理的提示词工程尝试
 - name: ai-notes
   url: https://github.com/swyxio/ai-notes
   category: agent-skills-prompts
   description:
     en: Notes for software engineers getting up to speed on new AI developments
     ru: notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references under the /Resources folder.
+    zh: 帮助软件工程师了解最新AI发展的笔记
 - name: bifrost
   url: https://github.com/maximhq/bifrost
   category: ai-infra
   description:
     en: Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust
     ru: Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM)
+    zh: 最快的企业级AI网关（比LiteLLM快50倍），具有自适应负载均衡器、集群
 - name: aim
   url: https://github.com/aimhubio/aim
   category: observability-eval
   description:
     en: Aim 💫 — An easy-to-use & supercharged open-source experiment tracker.
     ru: Aim — простой open-source трекер экспериментов
+    zh: Aim — 易用且增强的开源实验追踪工具。
 - name: wonderful-prompts
   url: https://github.com/langgptai/wonderful-prompts
   category: agent-skills-prompts
   description:
     en: Curated Chinese ChatGPT prompts - usage guide to boost playability and usability
     ru: 🔥中文 prompt 精选🔥，ChatGPT 使用指南，提升 ChatGPT 可玩性和可用性！🚀
+    zh: 精选的中文ChatGPT提示词 — 使用指南，提升可玩性和易用性
 - name: Awesome-Prompt-Engineering
   url: https://github.com/promptslab/Awesome-Prompt-Engineering
   category: agent-skills-prompts
   description:
     en: This repository contains a hand-curated resources for Prompt Engineering with a focus on G
     ru: Ручная подборка ресурсов по prompt engineering
+    zh: 此存储库包含精选的Prompt Engineering资源，重点关注G
 - name: XcodeBuildMCP
   url: https://github.com/getsentry/XcodeBuildMCP
   category: code-review-testing
   description:
     en: A Model Context Protocol (MCP) server and CLI that provides tools for agent use when worki
     ru: MCP-сервер и CLI для работы с Xcode-проектами агентами
+    zh: 模型上下文协议（MCP）服务器和CLI，在代理使用时提供工具
 - name: ell
   url: https://github.com/MadcowD/ell
   category: agent-skills-prompts
   description:
     en: A language model programming library.
     ru: Библиотека программирования языковых моделей
+    zh: 语言模型编程库。
 - name: learn-ai-engineering
   url: https://github.com/ashishps1/learn-ai-engineering
   category: learning-resources
   description:
     en: Learn AI and LLMs from scratch using free resources
     ru: Изучите AI и LLM с нуля по бесплатным ресурсам
+    zh: 使用免费资源从零开始学习AI和大型语言模型
 - name: klavis
   url: https://github.com/Klavis-AI/klavis
   category: mcp
   description:
     en: 'Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale'
     ru: Klavis AI — платформа MCP-интеграции для надёжных инструментов агентов
+    zh: Klavis AI：MCP集成平台，让AI代理在任何规模下可靠地使用工具
 - name: semble
   url: https://github.com/MinishLab/semble
   category: context-memory
   description:
     en: Fast and Accurate Code Search for Agents
     ru: Быстрый и точный поиск кода для агентов
+    zh: 为代理提供快速准确的代码搜索
 - name: Learning-Prompt
   url: https://github.com/thinkingjimmy/Learning-Prompt
   category: agent-skills-prompts
   description:
     en: Free prompt engineering online course
     ru: Бесплатный онлайн-курс prompt engineering
+    zh: 免费提示工程在线课程
 - name: Viper
   url: https://github.com/FunnyWolf/Viper
   category: security-agents
   description:
     en: Adversary simulation and Red teaming platform with AI
     ru: Симуляция противника и Red Teaming платформа с AI
+    zh: 具有AI的对抗模拟和红队平台
 - name: FinanceToolkit
   url: https://github.com/JerBouma/FinanceToolkit
   category: domain-agents
   description:
     en: Transparent and Efficient Financial Analysis
     ru: Прозрачный и эффективный финансовый анализ
+    zh: 透明高效的财务分析
 - name: lemonade
   url: https://github.com/lemonade-sdk/lemonade
   category: ai-infra
   description:
     en: Lemonade helps users discover and run local AI apps by serving optimized LLMs right from t
     ru: Lemonade — обнаружение и запуск локальных AI-приложений с оптимизированными LLM
+    zh: Lemonade帮助用户发现和运行本地AI应用，直接从优化的LLM提供服务
 - name: exa-mcp-server
   url: https://github.com/exa-labs/exa-mcp-server
   category: browser-automation
   description:
     en: Exa MCP for web search and web crawling!
     ru: Exa MCP для веб-поиска и краулинга
+    zh: Exa MCP 用于网络搜索和网络爬虫！
 - name: deep-research
   url: https://github.com/u14app/deep-research
   category: docs-research
   description:
     en: Use any LLMs (Large Language Models) for Deep Research
     ru: Глубокие исследования на любых LLM
+    zh: 使用任何大型语言模型进行深度研究
 - name: ENScan_GO
   url: https://github.com/wgpsec/ENScan_GO
   category: security-agents
   description:
     en: Enterprise information collection tool - gathers ICP, APP and WeChat data via APIs
     ru: 一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入
+    zh: 企业信息收集工具 - 通过API收集ICP、APP和微信数据
 - name: kubernetes-mcp-server
   url: https://github.com/containers/kubernetes-mcp-server
   category: devops-cloud
   description:
     en: Model Context Protocol (MCP) server for Kubernetes and OpenShift
     ru: MCP-сервер для Kubernetes и OpenShift
+    zh: Kubernetes 和 OpenShift 的模型上下文协议（MCP）服务器
 - name: claude-debugs-for-you
   url: https://github.com/jasonjmcghee/claude-debugs-for-you
   category: code-review-testing
   description:
     en: Enable any LLM (e.g
     ru: Включает любой LLM в отладчик
+    zh: 启用任何大型语言模型（例如
 - name: awesome-design-md
   url: https://github.com/VoltAgent/awesome-design-md
   category: design-frontend
   description:
     en: A collection of DESIGN.md files analysis by popular brand design systems
     ru: Подборка DESIGN.md-файлов систем дизайна брендов
+    zh: 热门品牌设计系统的 DESIGN.md 文件分析集合
 - name: open-design
   url: https://github.com/nexu-io/open-design
   category: design-frontend
   description:
     en: 🎨 Local-first, open-source Claude Design alternative
     ru: Local-first open-source альтернатива Claude Design
+    zh: 本地优先、开源的Claude Design替代方案
 - name: Understand-Anything
   url: https://github.com/Egonex-AI/Understand-Anything
   category: docs-research
   description:
     en: Graphs that teach > graphs that impress
     ru: Графы, которые обучают, а не просто впечатляют
+    zh: 教学的图表 > 令人印象深刻的图表
 - name: claude-code-best-practice
   url: https://github.com/shanraisshan/claude-code-best-practice
   category: agent-skills-prompts
   description:
     en: From vibe coding to agentic engineering - practice makes Claude perfect
     ru: from vibe coding to agentic engineering - practice makes claude perfect
+    zh: 从vibe coding到代理工程 — 实践让Claude完美
 - name: context7
   url: https://github.com/upstash/context7
   category: docs-research
   description:
     en: Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors
     ru: Context7 — актуальная документация кода для LLM и AI-редакторов
+    zh: Context7平台 — 为大型语言模型和AI代码编辑器提供最新代码文档
 - name: cherry-studio
   url: https://github.com/CherryHQ/cherry-studio
   category: agent-skills-prompts
   description:
     en: AI productivity studio with smart chat, autonomous agents, and 300+ assistants
     ru: 'AI-студия продуктивности: умный чат, агенты, 300+ ассистентов'
+    zh: AI生产力工作室，具有智能聊天、自主代理和300+助手
 - name: oh-my-claudecode
   url: https://github.com/Yeachan-Heo/oh-my-claudecode
   category: ai-assistants
   description:
     en: Teams-first Multi-agent orchestration for Claude Code
     ru: Teams-first мультиагентная оркестрация для Claude Code
+    zh: 以团队为中心的Claude Code多代理编排
 - name: onlook
   url: https://github.com/onlook-dev/onlook
   category: design-frontend
   description:
     en: The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, an
     ru: Cursor для дизайнеров — open-source AI-first дизайн-инструмент
+    zh: 设计师的Cursor • 开源AI优先设计工具 • 可视化构建、样式化和
 - name: serena
   url: https://github.com/oraios/serena
   category: context-memory
   description:
     en: A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities
     ru: 'Мощный MCP-тулкит для кодинга: семантический поиск и редактирование'
+    zh: 强大的编程MCP工具包，提供语义检索和编辑功能
 - name: frontend-slides
   url: https://github.com/zarazhangrui/frontend-slides
   category: design-frontend
   description:
     en: Create beautiful slides on the web using a coding agent's frontend skills
     ru: Создание красивых слайдов через фронтенд-навыки кодинг-агента
+    zh: 使用编码代理的前端技能在网上创建精美的幻灯片
 - name: GDevelop
   url: https://github.com/4ian/GDevelop
   category: game-dev
   description:
     en: 🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.
     ru: Open-source кроссплатформенный 2D/3D/мультиплеерный игровой движок
+    zh: 开源、跨平台2D/3D/多人游戏引擎，适合所有人。
 - name: vibe-coding-cn
   url: https://github.com/2025Emma/vibe-coding-cn
   category: learning-resources
   description:
     en: Curated list of vibe coding resources (Chinese)
     ru: Кураторский список ресурсов по vibe coding на китайском
+    zh: 精选vibe coding资源列表（中文）
 - name: gemini-voyager
   url: https://github.com/Nagi-ovo/gemini-voyager
   category: needs-review
   description:
     en: An all-in-one enhancement suite for Google Gemini & AI Studio - timeline navigation, folde
     ru: All-in-one набор улучшений для Google Gemini и AI Studio
+    zh: Google Gemini & AI Studio的一体化增强套件 — 时间线导航、文件夹
 - name: eliza
   url: https://github.com/elizaOS/eliza
   category: ai-assistants
   description:
     en: Open source agentic operating system
     ru: Open-source агентная операционная система
+    zh: 开源代理操作系统
 - name: context-engineering-intro
   url: https://github.com/coleam00/context-engineering-intro
   category: learning-resources
   description:
     en: Context engineering is the new vibe coding - it's the way to actually make AI coding assis
     ru: Context engineering — новый vibe coding для AI-кодинг-ассистентов
+    zh: 上下文工程是新的vibe coding — 这是真正让AI编码助手发挥效用的方法
 - name: claude-context
   url: https://github.com/zilliztech/claude-context
   category: context-memory
   description:
     en: Code search MCP for Claude Code
     ru: MCP поиска кода для Claude Code
+    zh: Claude Code的代码搜索MCP
 - name: ccpm
   url: https://github.com/automazeio/ccpm
   category: agent-skills-prompts
   description:
     en: Project management skill system for Agents that uses GitHub Issues and Git worktrees for p
     ru: Система навыков управления проектами для агентов на GitHub Issues и worktrees
+    zh: 使用GitHub Issues和Git工作树的项目管理技能系统
 - name: refly
   url: https://github.com/refly-ai/refly
   category: app-builders-low-code
   description:
     en: The first open-source agent skills builder
     ru: Первый open-source билдер навыков агентов
+    zh: 首个开源代理技能构建器
 - name: DesktopCommanderMCP
   url: https://github.com/wonderwhy-er/DesktopCommanderMCP
   category: mcp
   description:
     en: This is MCP server for Claude that gives it terminal control, file system search and diff
     ru: 'MCP-сервер для Claude: контроль терминала, поиск файловой системы, diff'
+    zh: 这是Claude的MCP服务器，为其提供终端控制、文件系统搜索和差异功能
 - name: GLM-5
   url: https://github.com/zai-org/GLM-5
   category: docs-research
   description:
     en: 'GLM-5: From Vibe Coding to Agentic Engineering'
     ru: 'GLM-5: от Vibe Coding к агентному инжинирингу'
+    zh: GLM-5：从Vibe Coding到代理工程
 - name: pyspur
   url: https://github.com/PySpur-Dev/pyspur
   category: app-builders-low-code
   description:
     en: 'A visual playground for agentic workflows: Iterate over your agents 10x faster'
     ru: Визуальная площадка агентных воркфлоу — итерируйте агентов в 10x быстрее
+    zh: 代理工作流的可视化游乐场：迭代速度提升10倍
 - name: vibe-vibe
   url: https://github.com/datawhalechina/vibe-vibe
   category: learning-resources
   description:
     en: 'AI for All: The First Systematic Vibe Coding Tutorial | From Zero to Full-Stack, Bring You'
     ru: 'AI для всех: первый систематический туториал по vibe coding'
+    zh: 面向所有人的AI：首个系统性Vibe Coding教程 | 从零到全栈，带您
 - name: awesome-ai-tools
   url: https://github.com/mahseema/awesome-ai-tools
   category: learning-resources
   description:
     en: A curated list of Artificial Intelligence Top Tools
     ru: Кураторский список топовых AI-инструментов
+    zh: 精选的人工智能顶级工具列表
 - name: Kaku
   url: https://github.com/tw93/Kaku
   category: cli-agents
   description:
     en: 🎃 A fast, out-of-the-box terminal built for AI coding.
     ru: Быстрый готовый терминал для AI-кодинга
+    zh: 专为AI编码构建的快速、开箱即用终端。
 - name: claude-code-ultimate-guide
   url: https://github.com/FlorianBruniaux/claude-code-ultimate-guide
   category: agent-skills-prompts
   description:
     en: 'The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, q'
     ru: 'Самый полный гайд по Claude Code: воркфлоу, хуки, навыки, MCP'
+    zh: 最全面的Claude Code指南：代理工作流、钩子、技能、MCP服务器、问题
 - name: vibesdk
   url: https://github.com/cloudflare/vibesdk
   category: cloud-coding-agents
   description:
     en: An open-source vibe coding platform that helps you build your own vibe-coding platform, bu
     ru: Open-source платформа vibe coding для построения своего vibe-кодинг-инструмента
+    zh: 开源vibe coding平台，帮助您构建自己的vibe-coding平台，bu
 - name: codebase-to-course
   url: https://github.com/zarazhangrui/codebase-to-course
   category: docs-research
   description:
     en: A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML
     ru: 'Навык Claude Code: превращает кодовую базу в интерактивный HTML-курс'
+    zh: Claude Code 技能，可将任何代码库转换为精美的交互式单页 HTML
 - name: byterover-cli
   url: https://github.com/campfirein/byterover-cli
   category: context-memory
   description:
     en: ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Ci
     ru: ByteRover CLI (brv) — переносимый слой памяти для автономных кодинг-агентов
+    zh: ByteRover CLI (brv) — 自主编码代理的便携式内存层（前身为 Ci）
 - name: awesome-vibe-coding
   url: https://github.com/filipecalegario/awesome-vibe-coding
   category: learning-resources
   description:
     en: A curated list of vibe coding references, collaborating with AI to write code.
     ru: Кураторский список ресурсов по vibe coding совместно с AI
+    zh: 精选 vibe 编程参考列表，与 AI 协作编写代码
 - name: vibe-coding
   url: https://github.com/EnzeD/vibe-coding
   category: learning-resources
   description:
     en: Vibe coding resources and practices collection
     ru: Подборка ресурсов и практик по vibe coding
+    zh: vibe 编程资源与实践集合
 - name: hapi
   url: https://github.com/tiann/hapi
   category: cli-agents
   description:
     en: App for Claude Code / Codex / Gemini / OpenCode, vibe coding anytime, anywhere
     ru: Апп для Claude Code/Codex/Gemini/OpenCode — vibe coding где угодно
+    zh: Claude Code / Codex / Gemini / OpenCode 应用，随时随地 vibe 编程
 - name: AdalFlow
   url: https://github.com/SylphAI-Inc/AdalFlow
   category: ai-assistants
   description:
     en: 'AdalFlow: The library to build & auto-optimize LLM applications.'
     ru: AdalFlow — библиотека построения и автооптимизации LLM-приложений
+    zh: AdalFlow：构建和自动优化 LLM 应用的库
 - name: MonkeyCode
   url: https://github.com/chaitin/MonkeyCode
   category: cloud-coding-agents
   description:
     en: AI coding platform for teams
     ru: AI-платформа кодинга для команд
+    zh: 团队 AI 编码平台
 - name: crystal
   url: https://github.com/stravu/crystal
   category: cloud-coding-agents
   description:
     en: Run multiple Codex and Claude Code AI sessions in parallel git worktrees
     ru: (Crystal is now Nimbalyst) Run multiple Codex and Claude Code AI sessions in parallel git worktrees. Test, compare approaches & manage AI-assisted development workflows in one desktop app.
+    zh: 在并行 git worktree 中运行多个 Codex 和 Claude Code AI 会话
 - name: eve
   url: https://github.com/vercel/eve
   category: ai-assistants
   description:
     en: The Framework for Building Agents
     ru: Фреймворк построения агентов
+    zh: 构建代理的框架
 - name: core
   url: https://github.com/cheshire-cat-ai/core
   category: ai-assistants
   description:
     en: AI agent microservice
     ru: AI-агент микросервис
+    zh: AI 代理微服务
 - name: Chaterm
   url: https://github.com/chaterm/Chaterm
   category: devops-cloud
   description:
     en: Open source AI terminal for cloud and infrastructure management, enabling you to deploy, t
     ru: Open-source AI-терминал управления облаком и инфраструктурой
+    zh: 云和基础设施管理的开源 AI 终端，使您能够部署、管理
 - name: ruler
   url: https://github.com/intellectronica/ruler
   category: agent-skills-prompts
   description:
     en: Ruler — apply the same rules to all coding agents
     ru: Ruler — применяйте одни правила ко всем кодинг-агентам
+    zh: Ruler — 对所有编码代理应用相同的规则
 - name: agent-of-empires
   url: https://github.com/agent-of-empires/agent-of-empires
   category: cli-agents
   description:
     en: Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mob
     ru: Управление несколькими Claude Code/OpenCode агентами из TUI или Web
+    zh: 通过 TUI 或 Web 轻松管理多个 Claude Code、OpenCode 代理，方便移动访问
 - name: aicodeguide
   url: https://github.com/automata/aicodeguide
   category: learning-resources
   description:
     en: AI Code Guide is a roadmap to start coding with AI
     ru: AI Code Guide — roadmap для старта кодинга с AI
+    zh: AI Code Guide 是使用 AI 开始编码的路线图
 - name: vibe-coding-prompt-template
   url: https://github.com/KhazP/vibe-coding-prompt-template
   category: agent-skills-prompts
   description:
     en: Templates and workflow for generating PRDs, Tech Designs, and MVP and more using LLMs for
     ru: Шаблоны и воркфлоу для PRD, тех-дизайнов и MVP через LLM
+    zh: 使用 LLM 生成 PRD、技术设计、MVP 等的模板和工作流
 - name: oinone-pamirs
   url: https://github.com/oinone/oinone-pamirs
   category: app-builders-low-code
   description:
     en: Oinone is an AI‑Powered low‑code framework that unifies AI and developers around a shared
     ru: Oinone — AI-powered low-code фреймворк, объединяющий AI и разработчиков
+    zh: Oinone 是 AI 驱动的低代码框架，将 AI 和开发者统一到共享环境
 - name: metamcp
   url: https://github.com/metatool-ai/metamcp
   category: mcp
   description:
     en: MCP Aggregator, Orchestrator, Middleware, Gateway in one docker
     ru: MCP-агрегатор, оркестратор, middleware и шлюз в одном docker
+    zh: MCP 聚合器、编排器、中间件和网关，集成于一个 Docker 容器
 - name: fulling
   url: https://github.com/FullAgent/fulling
   category: cloud-coding-agents
   description:
     en: Fulling is an AI-powered Full-stack Engineer Agent
     ru: Fulling — AI-powered full-stack инженер-агент
+    zh: Fulling 是 AI 驱动的全栈工程师代理
 - name: Vibe-Skills
   url: https://github.com/foryourhealth111-pixel/Vibe-Skills
   category: agent-skills-prompts
   description:
     en: Vibe-Skills is an all-in-one AI skills package
     ru: Vibe-Skills — all-in-one пакет AI-навыков
+    zh: Vibe-Skills 是一体化 AI 技能包
 - name: best-skills
   url: https://github.com/xstongxue/best-skills
   category: agent-skills-prompts
   description:
     en: High-quality Skills collection for Cursor, Claude Code, Codex and other agent tools
     ru: 通用高质量 Skills 合集🔥
+    zh: Cursor、Claude Code、Codex 和其他代理工具的高质量技能集合
 - name: awesome-ai-coding-tools
   url: https://github.com/ai-for-developers/awesome-ai-coding-tools
   category: learning-resources
   description:
     en: A curated list of AI-powered coding tools
     ru: Кураторский список AI-инструментов кодинга
+    zh: 精选 AI 编码工具列表
 - name: deepseek_ocr_app
   url: https://github.com/rdumasia303/deepseek_ocr_app
   category: needs-review
   description:
     en: A quick vibe coded app for deepseek OCR
     ru: Быстрое vibe-coded приложение для DeepSeek OCR
+    zh: 快速 vibe 编写的 deepseek OCR 应用
 - name: vibekit
   url: https://github.com/superagent-ai/vibekit
   category: cloud-coding-agents
   description:
     en: Run Claude Code, Gemini, Codex — or any coding agent — in a clean, isolated sandbox with s
     ru: Запуск Claude Code, Gemini, Codex и любого агента в чистой изолированной песочнице
+    zh: 在干净隔离的沙箱中运行 Claude Code、Gemini、Codex 或任何编码代理
