@@ -1210,7 +1210,7 @@ function renderCats() {
     b.className = "category-tab" + (active ? " active" : "");
     b.setAttribute("aria-pressed", active ? "true" : "false");
     b.innerHTML = `${esc(label)} <span class="category-count">${count}</span>`;
-    b.onclick = () => { activeCat = key; applyI18n(); };
+    b.onclick = () => { activeCat = key; currentPage = 1; applyI18n(); };
     cats.appendChild(b);
 
     const option = document.createElement("option");
