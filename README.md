@@ -30,6 +30,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Featured
 
+Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman#featured-day) — Claude Code skill that cuts 65% of tokens by talking like a caveman
 Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — Claude Code skill that cuts 65% of tokens by talking like a caveman
 
 ## AI Coding Agents and CLI
@@ -197,8 +198,8 @@ Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Search infrastructure for AI.
 - [cognee](https://github.com/topoteretes/cognee) ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&color=yellow) - Cognee is the open-source AI memory platform for agents.
 - [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Pack your whole repository into a single file for AI consumption.
-- [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - High-performance code intelligence MCP server.
+- [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities.
 - [agentmemory](https://github.com/rohitg00/agentmemory) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat&color=yellow) - Persistent memory for AI coding agents based on real-world benchmarks.
 - [OpenMetadata](https://github.com/open-metadata/OpenMetadata) ![](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=flat&color=yellow) - The Open Context Layer for Data and AI , OpenMetadata is the open platform for building t.
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - Code search MCP for Claude Code.
@@ -238,8 +239,8 @@ Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications.
 - [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Installable GitHub library of 1,800+ agentic skills for Claude Code, Cursor, Codex CLI, Ge.
-- [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Community-contributed instructions, agents, skills, and configurations to help you make th.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Academic Research Skills for Claude Code: research → write → review → revise → finalize.
+- [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Community-contributed instructions, agents, skills, and configurations to help you make th.
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Marketing skills for Claude Code and AI agents.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - An AI prompt optimizer for writing better prompts and getting better AI results.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Turn any AI agent into an AI Scientist.
@@ -272,8 +273,8 @@ Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [Awesome-Prompt-Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) ![](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat&color=yellow) - This repository contains a hand-curated resources for Prompt Engineering with a focus on G.
 - [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Curated collection of system prompts for top AI tools.
 - [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - A language model programming library.
-- [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Free prompt engineering online course.
 - [claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) ![](https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat&color=yellow) - The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, q.
+- [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Free prompt engineering online course.
 - [agents-cli](https://github.com/google/agents-cli) ![](https://img.shields.io/github/stars/google/agents-cli?style=flat&color=yellow) - The CLI and skills that turn any coding assistant into an expert at creating, evaluating,.
 - [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — apply the same rules to all coding agents.
 - [vibe-coding-prompt-template](https://github.com/KhazP/vibe-coding-prompt-template) ![](https://img.shields.io/github/stars/KhazP/vibe-coding-prompt-template?style=flat&color=yellow) - Templates and workflow for generating PRDs, Tech Designs, and MVP and more using LLMs for.
@@ -434,8 +435,8 @@ Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [PowerInfer](https://github.com/Tiiny-AI/PowerInfer) ![](https://img.shields.io/github/stars/Tiiny-AI/PowerInfer?style=flat&color=yellow) - High-speed Large Language Model Serving for Local Deployment.
 - [deeplake](https://github.com/activeloopai/deeplake) ![](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat&color=yellow) - Deeplake is AI Data Runtime for Agents.
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - A collection of libraries to optimise AI model performances.
-- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Own your AI.
+- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust.
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade helps users discover and run local AI apps by serving optimized LLMs right from t.

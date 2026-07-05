@@ -53,8 +53,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 5,
-        "source": "ranking"
+        "currentRank": 6,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/636/daily",
+        "rank": 18
       },
       {
         "kind": "week",
@@ -101,8 +103,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 2,
-        "source": "ranking"
+        "currentRank": 11,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/4530/daily",
+        "rank": 4
       },
       {
         "kind": "week",
@@ -213,8 +217,10 @@
     "badges": [
       {
         "kind": "week",
-        "currentRank": 20,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12448/weekly",
+        "rank": 12
       },
       {
         "kind": "month",
@@ -243,8 +249,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 3,
-        "source": "ranking"
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22336/daily",
+        "rank": 7
       },
       {
         "kind": "week",
@@ -284,6 +292,43 @@
     ],
     "descriptionRu": "Агентный оркестратор для параллельных агентов по кодированию — планирует задачи, порождает агентов и автономно обрабатывает исправления CI, конфликты слияния и code review",
     "descriptionZh": "并行编码代理的智能编排器——规划任务、生成代理，并自主处理 CI 修复、合并冲突和代码审查"
+  },
+  {
+    "githubUrl": "https://github.com/Agents365-ai/drawio-skill",
+    "trendshiftId": "26834",
+    "pageUrl": "https://trendshift.io/repositories/26834",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/26834/daily",
+        "rank": 16
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "agent-skills-prompts",
+    "categoryReason": "topic:agent-skills",
+    "categoryAt": "2026-07-05",
+    "description": "Generate draw.io diagrams from natural language — 6 presets, vision self-check + up to 5-round refinement, codebase-to-diagram, 10,000+ official shapes & 321 AI/LLM brand logos. Exports PNG/SVG/PDF/JPG.",
+    "language": "Python",
+    "topics": [
+      "agent-skill",
+      "agent-skills",
+      "architecture-diagram",
+      "claude-code",
+      "claude-code-skill",
+      "claude-skills",
+      "diagram",
+      "drawio",
+      "erd",
+      "flowchart",
+      "openclaw",
+      "openclaw-skills",
+      "skill-md",
+      "skillsmp",
+      "uml"
+    ]
   },
   {
     "githubUrl": "https://github.com/Alex-LeTux/perfect_dark_VR",
@@ -335,19 +380,42 @@
     "descriptionZh": "数百种模型和提供商。一条命令即可找到适合您硬件的方案"
   },
   {
+    "githubUrl": "https://github.com/Anankke/SSPanel-UIM",
+    "trendshiftId": "1832",
+    "pageUrl": "https://trendshift.io/repositories/1832",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 10,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Multi-purpose proxy service management system",
+    "language": "PHP",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/Anil-matcha/Open-Generative-AI",
     "trendshiftId": "25761",
     "pageUrl": "https://trendshift.io/repositories/25761",
     "badges": [
       {
         "kind": "day",
-        "currentRank": 24,
-        "source": "ranking"
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25761/daily",
+        "rank": 8
       },
       {
         "kind": "week",
         "currentRank": 22,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25761/weekly",
+        "rank": 19
       },
       {
         "kind": "year",
@@ -447,17 +515,23 @@
       {
         "kind": "day",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5162/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 4,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5162/weekly",
+        "rank": 9
       },
       {
         "kind": "month",
         "currentRank": 2,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5162/monthly",
+        "rank": 25
       },
       {
         "kind": "year",
@@ -487,6 +561,69 @@
     ],
     "descriptionRu": "Объединяйте проекты, вики и команды с помощью ИИ. AppFlowy — AI-совместимое рабочее пространство, где вы добиваетесь большего, не теряя контроля над данными. Ведущая open-source альтернатива Notion.",
     "descriptionZh": "用 AI 将项目、wiki 和团队聚合在一起。AppFlowy 是 AI 协作工作空间，在不失去数据控制的前提下实现更多成果。领先的开源 Notion 替代品。"
+  },
+  {
+    "githubUrl": "https://github.com/AprDeci/bili-music",
+    "trendshiftId": "29405",
+    "pageUrl": "https://trendshift.io/repositories/29405",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "design-frontend",
+    "categoryReason": "topic:flutter",
+    "categoryAt": "2026-07-05",
+    "description": "全平台B站源的音乐app",
+    "language": "Dart",
+    "topics": [
+      "all-platforms",
+      "bilibili",
+      "flutter",
+      "material-ui",
+      "music"
+    ]
+  },
+  {
+    "githubUrl": "https://github.com/ArcadeData/arcadedb",
+    "trendshiftId": "36069",
+    "pageUrl": "https://trendshift.io/repositories/36069",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "devops-cloud",
+    "categoryReason": "topic:docker",
+    "categoryAt": "2026-07-05",
+    "description": "ArcadeDB Multi-Model Database, one DBMS that supports SQL, Cypher, Gremlin, HTTP/JSON, MongoDB and Redis. ArcadeDB is a conceptual fork of OrientDB, the first Multi-Model DBMS. ArcadeDB supports Vector Embeddings.",
+    "language": "Java",
+    "topics": [
+      "arcadedb",
+      "database",
+      "dbms",
+      "distributed",
+      "docker",
+      "document",
+      "embedded",
+      "graph",
+      "k8s",
+      "key-value",
+      "kubernetes",
+      "multi-model",
+      "orientdb",
+      "search-engine",
+      "similarity-search",
+      "time-series",
+      "vector-database",
+      "vector-search"
+    ]
   },
   {
     "githubUrl": "https://github.com/ArchiveTuneApp/ArchiveTune",
@@ -699,8 +836,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 25,
-        "source": "ranking"
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11885/daily",
+        "rank": 6
       },
       {
         "kind": "week",
@@ -752,8 +891,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 14,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/671/daily",
+        "rank": 25
       }
     ],
     "updatedAt": "2026-07-05",
@@ -944,6 +1085,48 @@
     "descriptionZh": "面向开发者的 Kubernetes PaaS 平台"
   },
   {
+    "githubUrl": "https://github.com/Cateners/tiny_container",
+    "trendshiftId": "12166",
+    "pageUrl": "https://trendshift.io/repositories/12166",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 19,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Click-to-run debian 13 with desktop environment on android!",
+    "language": "Kotlin",
+    "topics": [
+      "android",
+      "proot-android",
+      "termux-proot"
+    ]
+  },
+  {
+    "githubUrl": "https://github.com/Celechron/Celechron",
+    "trendshiftId": "14052",
+    "pageUrl": "https://trendshift.io/repositories/14052",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 12,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "服务于浙大学生的时间管理器",
+    "language": "Dart",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/Chaelsoo/Hollow",
     "trendshiftId": "69019",
     "pageUrl": "https://trendshift.io/repositories/69019",
@@ -1081,8 +1264,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 2,
-        "source": "ranking"
+        "currentRank": 25,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14452/daily",
+        "rank": 12
       },
       {
         "kind": "week",
@@ -1313,8 +1498,10 @@
       },
       {
         "kind": "week",
-        "currentRank": 21,
-        "source": "ranking"
+        "currentRank": 20,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12738/weekly",
+        "rank": 13
       }
     ],
     "updatedAt": "2026-07-05",
@@ -1351,8 +1538,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 19,
-        "source": "ranking"
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22891/daily",
+        "rank": 11
       },
       {
         "kind": "week",
@@ -1675,6 +1864,25 @@
     "descriptionZh": "现代 Android 音乐应用，支持无广告流媒体、同步歌词、离线播放和直观用户体验"
   },
   {
+    "githubUrl": "https://github.com/Enginex0/TEESimulator-RS",
+    "trendshiftId": "56657",
+    "pageUrl": "https://trendshift.io/repositories/56657",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 22,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Software simulation for Android hardware-backed key pairs with key attestation | https://t.me/superpowers9",
+    "language": "Kotlin",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/Eugeny/tabby",
     "trendshiftId": "589",
     "pageUrl": "https://trendshift.io/repositories/589",
@@ -1708,6 +1916,11 @@
     "trendshiftId": "69819",
     "pageUrl": "https://trendshift.io/repositories/69819",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      },
       {
         "kind": "month",
         "currentRank": 17,
@@ -1834,6 +2047,55 @@
     ],
     "descriptionRu": "s&box — современный игровой движок, созданный на Source 2 от Valve и последних технологиях .NET, предоставляющий современный интуитивный редактор для создания игр",
     "descriptionZh": "s&box 是基于 Valve Source 2 和最新 .NET 技术构建的现代游戏引擎，提供直观的现代编辑器用于游戏创作"
+  },
+  {
+    "githubUrl": "https://github.com/FongMi/TV",
+    "trendshiftId": "3245",
+    "pageUrl": "https://trendshift.io/repositories/3245",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 7,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "language": "Java",
+    "topics": [
+      "ffmpeg",
+      "media3",
+      "mpvplayer"
+    ]
+  },
+  {
+    "githubUrl": "https://github.com/FoxSensei001/LoveIwara",
+    "trendshiftId": "16449",
+    "pageUrl": "https://trendshift.io/repositories/16449",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 7,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "design-frontend",
+    "categoryReason": "topic:flutter",
+    "categoryAt": "2026-07-05",
+    "description": "Love Iwara (i-iwara or 2i). An unofficial iwara flutter app - Supporting multiple platforms and devices including mobile phones, tablets and computers. Compatible with Android, Windows and other systems. 第三方的Iwara应用 - 支持多个平台和设备，包括手机、平板和计算机。兼容 安卓、IOS、Windows、MacOS等系统。",
+    "language": "Dart",
+    "topics": [
+      "android",
+      "flutter",
+      "ios",
+      "iwara",
+      "macos",
+      "multiscreen-apps",
+      "windows"
+    ]
   },
   {
     "githubUrl": "https://github.com/FractalFir/crustc",
@@ -1981,6 +2243,24 @@
     "descriptionZh": "在 iOS 27 上完全在设备上安装 Sidestore 的应用"
   },
   {
+    "githubUrl": "https://github.com/Gentleman-Programming/gentle-ai",
+    "trendshiftId": "24855",
+    "pageUrl": "https://trendshift.io/repositories/24855",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 12,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "language": "Go",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/Genymobile/scrcpy",
     "trendshiftId": "681",
     "pageUrl": "https://trendshift.io/repositories/681",
@@ -1988,7 +2268,9 @@
       {
         "kind": "day",
         "currentRank": 6,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/681/daily",
+        "rank": 7
       },
       {
         "kind": "week",
@@ -2194,6 +2476,29 @@
     "descriptionZh": "Vibe-Trading：您的个人交易代理"
   },
   {
+    "githubUrl": "https://github.com/HMCL-dev/HMCL",
+    "trendshiftId": "6783",
+    "pageUrl": "https://trendshift.io/repositories/6783",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 17,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "A Minecraft Launcher which is multi-functional, cross-platform and popular",
+    "language": "Java",
+    "topics": [
+      "javafx",
+      "minecraft",
+      "minecraft-launcher"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
     "trendshiftId": "71250",
     "pageUrl": "https://trendshift.io/repositories/71250",
@@ -2278,6 +2583,36 @@
     "descriptionZh": "使用 libdragon 和 tiny3d 的 N64 游戏引擎和编辑器"
   },
   {
+    "githubUrl": "https://github.com/HakanSeven12/OpenCADStudio",
+    "trendshiftId": "58069",
+    "pageUrl": "https://trendshift.io/repositories/58069",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 4,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "A CAD application built with Rust — 2D/3D drawing, DWG/DXF support, and GPU-accelerated rendering",
+    "language": "Rust",
+    "topics": [
+      "2d-cad",
+      "3d-cad",
+      "cad",
+      "dwg",
+      "dxf",
+      "engineering",
+      "gpu-rendering",
+      "iced",
+      "rust",
+      "wgpu"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/HalFrgrd/flyline",
     "trendshiftId": "70399",
     "pageUrl": "https://trendshift.io/repositories/70399",
@@ -2321,8 +2656,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15479/daily",
+        "rank": 15
       },
       {
         "kind": "week",
@@ -2544,8 +2881,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 11,
-        "source": "ranking"
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11795/daily",
+        "rank": 19
       },
       {
         "kind": "month",
@@ -2803,6 +3142,46 @@
     "descriptionZh": "用于 @ziglang 的最小化 2D/3D 游戏框架"
   },
   {
+    "githubUrl": "https://github.com/Jackett/Jackett",
+    "trendshiftId": "1808",
+    "pageUrl": "https://trendshift.io/repositories/1808",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "API Support for your favorite torrent trackers",
+    "language": "C#",
+    "topics": [
+      "api",
+      "couchpotato",
+      "duckietv",
+      "hacktoberfest",
+      "indexer",
+      "jackett",
+      "lidarr",
+      "medusa",
+      "mylar3",
+      "nefarious",
+      "newznab",
+      "proxy",
+      "radarr",
+      "rss",
+      "rss-proxy",
+      "sickrage",
+      "sonarr",
+      "torrent",
+      "torznab",
+      "trackers"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/Jane-xiaoer/claude-skill-web-clone",
     "trendshiftId": "68836",
     "pageUrl": "https://trendshift.io/repositories/68836",
@@ -2844,12 +3223,16 @@
       {
         "kind": "day",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17458/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 13,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17458/weekly",
+        "rank": 14
       },
       {
         "kind": "month",
@@ -2919,6 +3302,13 @@
     "pageUrl": "https://trendshift.io/repositories/13323",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 6,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13323/daily",
+        "rank": 7
+      },
+      {
         "kind": "week",
         "currentRank": 25,
         "source": "ranking"
@@ -2976,18 +3366,24 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 9,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6410/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 9,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6410/weekly",
+        "rank": 4
       },
       {
         "kind": "month",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 8,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6410/monthly",
+        "rank": 4
       },
       {
         "kind": "year",
@@ -3167,6 +3563,25 @@
     "descriptionZh": "小于 25MB 的最先进 TTS 模型"
   },
   {
+    "githubUrl": "https://github.com/Kodiqa-Solutions/VaultS3",
+    "trendshiftId": "65332",
+    "pageUrl": "https://trendshift.io/repositories/65332",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 5,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Lightweight, S3-compatible object storage server with built-in web dashboard. Single binary, low memory, encryption at rest.",
+    "language": "Go",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/Kulaxyz/self-learning-skills",
     "trendshiftId": "67568",
     "pageUrl": "https://trendshift.io/repositories/67568",
@@ -3216,8 +3631,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 24,
-        "source": "ranking"
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11667/daily",
+        "rank": 1
       },
       {
         "kind": "year",
@@ -3285,7 +3702,9 @@
       {
         "kind": "week",
         "currentRank": 5,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/2264/weekly",
+        "rank": 16
       },
       {
         "kind": "month",
@@ -3328,6 +3747,43 @@
     ],
     "descriptionRu": "Leantime — система управления проектами, сфокусированная на целях, для непроектных менеджеров. Разработана с учетом ADHD, аутизма и дислексии",
     "descriptionZh": "Leantime 是一个面向目标的项目管理系统，专为非项目经理设计。考虑到 ADHD、自闭症和阅读障碍"
+  },
+  {
+    "githubUrl": "https://github.com/LenovoLegionToolkit-Team/LenovoLegionToolkit",
+    "trendshiftId": "17860",
+    "pageUrl": "https://trendshift.io/repositories/17860",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Lenovo Legion Toolkit (LLT) is a Windows desktop utility created for Lenovo gaming laptops that replaces Lenovo Vantage, Legion Zone, and Legion Space.",
+    "language": "C#",
+    "topics": [
+      "bloatware-alternative",
+      "customization",
+      "gaming-laptop",
+      "hardware-control",
+      "hardware-monitoring",
+      "legion",
+      "legion-space",
+      "legion-zone",
+      "lenovo",
+      "lenovo-legion",
+      "lenovo-vantage",
+      "lightweight",
+      "llt",
+      "performance-tuning",
+      "toolkit",
+      "utility",
+      "windows"
+    ]
   },
   {
     "githubUrl": "https://github.com/LiYanan2004/MarkdownView",
@@ -3438,6 +3894,45 @@
     "descriptionZh": "LinkStack —— 创建个性化专业主页的最佳解决方案。在一个地方展示所有重要链接，摆脱社交媒体单个链接的限制。只需几次点击即可在自己的服务器上设置个人网站"
   },
   {
+    "githubUrl": "https://github.com/LinwoodDev/Butterfly",
+    "trendshiftId": "12949",
+    "pageUrl": "https://trendshift.io/repositories/12949",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 22,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "design-frontend",
+    "categoryReason": "topic:flutter",
+    "categoryAt": "2026-07-05",
+    "description": "🎨 Powerful, minimalistic, cross-platform, opensource note-taking app",
+    "language": "Dart",
+    "topics": [
+      "android",
+      "app",
+      "cross-platform",
+      "customizable",
+      "dart",
+      "dartlang",
+      "drawing",
+      "flutter",
+      "linux",
+      "note",
+      "note-taking",
+      "notes",
+      "notes-app",
+      "onenote",
+      "opensource",
+      "productivity",
+      "web",
+      "windows",
+      "writing"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/LiveContainer/LiveContainer",
     "trendshiftId": "18903",
     "pageUrl": "https://trendshift.io/repositories/18903",
@@ -3465,8 +3960,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 22,
-        "source": "ranking"
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/708/daily",
+        "rank": 20
       },
       {
         "kind": "week",
@@ -3777,8 +4274,10 @@
     "badges": [
       {
         "kind": "week",
-        "currentRank": 21,
-        "source": "ranking"
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/23823/weekly",
+        "rank": 10
       },
       {
         "kind": "year",
@@ -3792,6 +4291,32 @@
     "categoryAt": "2026-07-05-manual",
     "language": "C#",
     "topics": []
+  },
+  {
+    "githubUrl": "https://github.com/Modak-Labs/modak",
+    "trendshiftId": "73185",
+    "pageUrl": "https://trendshift.io/repositories/73185",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 4,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Tier-aware data federation between Postgres and Apache Iceberg",
+    "language": "Java",
+    "topics": [
+      "analytics",
+      "cdc",
+      "iceberg",
+      "paimon",
+      "postgres",
+      "realtime"
+    ]
   },
   {
     "githubUrl": "https://github.com/ModernRelay/omnigraph",
@@ -3953,8 +4478,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1740/daily",
+        "rank": 12
       },
       {
         "kind": "week",
@@ -3993,8 +4520,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 2,
-        "source": "ranking"
+        "currentRank": 9,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/16001/daily",
+        "rank": 8
       }
     ],
     "updatedAt": "2026-07-05",
@@ -4077,6 +4606,31 @@
     "topics": [],
     "descriptionRu": "Проект кибербезопасности для облачного командного взаимодействия через Spotify плейлисты и Telegram",
     "descriptionZh": "网络安全项目，通过 Spotify 播放列表进行命令检索，Telegram 输出交付"
+  },
+  {
+    "githubUrl": "https://github.com/Notsfsssf/pixez-flutter",
+    "trendshiftId": "9728",
+    "pageUrl": "https://trendshift.io/repositories/9728",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 19,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "design-frontend",
+    "categoryReason": "topic:flutter",
+    "categoryAt": "2026-07-05",
+    "description": "一个支持免代理直连及查看动图的第三方Pixiv flutter客户端",
+    "language": "Dart",
+    "topics": [
+      "android",
+      "flutter",
+      "ios",
+      "pixez",
+      "pixiv"
+    ]
   },
   {
     "githubUrl": "https://github.com/Novals83/5min-btc-polymarket",
@@ -4218,6 +4772,25 @@
     ],
     "descriptionRu": "Классическая библиотека отправки электронной почты для PHP",
     "descriptionZh": "PHP 的经典邮件发送库"
+  },
+  {
+    "githubUrl": "https://github.com/PSP-Arkfive/FasterARK",
+    "trendshiftId": "72285",
+    "pageUrl": "https://trendshift.io/repositories/72285",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "ARK loader/installer for PSP/Vita.",
+    "language": "C",
+    "topics": []
   },
   {
     "githubUrl": "https://github.com/PX4/PX4-Autopilot",
@@ -4364,6 +4937,20 @@
     "pageUrl": "https://trendshift.io/repositories/15102",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 15,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15102/daily",
+        "rank": 5
+      },
+      {
+        "kind": "week",
+        "currentRank": 24,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15102/weekly",
+        "rank": 15
+      },
+      {
         "kind": "month",
         "currentRank": 21,
         "source": "ranking"
@@ -4400,6 +4987,11 @@
         "source": "ranking"
       },
       {
+        "kind": "week",
+        "currentRank": 25,
+        "source": "ranking"
+      },
+      {
         "kind": "year",
         "currentRank": 20,
         "source": "ranking"
@@ -4414,6 +5006,25 @@
     "topics": [],
     "descriptionRu": "Приватный музыкальный плеер на Android с Material 3 Expressive. Офлайн-проигрывание, синхронизация текстов, точная настройка через эквалайзер и трансляция на ваши устройства",
     "descriptionZh": "隐私优先的 Android 音乐播放器，采用 Material 3 Expressive 设计。离线播放、歌词同步、均衡器预设精细调校、投屏到您的设备"
+  },
+  {
+    "githubUrl": "https://github.com/PokemonTCG/pokemon-tcg-data",
+    "trendshiftId": "17105",
+    "pageUrl": "https://trendshift.io/repositories/17105",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "The data found within the Pokémon TCG API",
+    "language": "Ruby",
+    "topics": []
   },
   {
     "githubUrl": "https://github.com/PowerShell/PowerShell",
@@ -4457,8 +5068,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 2,
-        "source": "ranking"
+        "currentRank": 4,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11432/daily",
+        "rank": 6
       },
       {
         "kind": "week",
@@ -4496,6 +5109,27 @@
     "descriptionZh": "基于自定义规则的番剧采集 APP，支持流媒体在线观看、弹幕和实时超分辨率"
   },
   {
+    "githubUrl": "https://github.com/QL-Win/QuickLook",
+    "trendshiftId": "3258",
+    "pageUrl": "https://trendshift.io/repositories/3258",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Bring macOS “Quick Look” feature to Windows",
+    "language": "C#",
+    "topics": [
+      "quicklook"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/Qloapps/QloApps",
     "trendshiftId": "10321",
     "pageUrl": "https://trendshift.io/repositories/10321",
@@ -4508,7 +5142,9 @@
       {
         "kind": "week",
         "currentRank": 11,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/10321/weekly",
+        "rank": 17
       },
       {
         "kind": "month",
@@ -4663,6 +5299,34 @@
     "topics": [],
     "descriptionRu": "Хеш-подписи для пост-квантовой криптографии на Rust",
     "descriptionZh": "Rust 中的哈希后量子签名"
+  },
+  {
+    "githubUrl": "https://github.com/RSS-Bridge/rss-bridge",
+    "trendshiftId": "2880",
+    "pageUrl": "https://trendshift.io/repositories/2880",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 9,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "The RSS feed for websites missing it",
+    "language": "PHP",
+    "topics": [
+      "atom-feed",
+      "hacktoberfest",
+      "json-feed",
+      "php",
+      "rss",
+      "rss-bridge",
+      "rss-feed",
+      "unlicense"
+    ]
   },
   {
     "githubUrl": "https://github.com/RakuenSoftware/aimee",
@@ -4895,7 +5559,9 @@
       {
         "kind": "day",
         "currentRank": 17,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/642/daily",
+        "rank": 24
       },
       {
         "kind": "week",
@@ -4945,6 +5611,25 @@
     "descriptionZh": "免费开源应用，一键击键即可捕获或录制屏幕任意区域。支持将图像、文本和各种文件类型上传到多种目标"
   },
   {
+    "githubUrl": "https://github.com/Shopify/liquid",
+    "trendshiftId": "373",
+    "pageUrl": "https://trendshift.io/repositories/373",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Liquid markup language. Safe, customer facing template language for flexible web apps. ",
+    "language": "Ruby",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/ShubhamJ010/ScreenshotJanitor",
     "trendshiftId": "62840",
     "pageUrl": "https://trendshift.io/repositories/62840",
@@ -4979,6 +5664,32 @@
     ],
     "descriptionRu": "Автоматически убирайте захламление скриншотами. SsJanitor обнаруживает новые скриншоты, позволяет архивировать или удалять их из уведомления и очищает остальное по расписанию. Material 3 Expressive дизайн",
     "descriptionZh": "自动清理截图杂乱。ssJanitor 检测新截图，通过通知归档或删除，定时清理其余内容。Material 3 Expressive 设计"
+  },
+  {
+    "githubUrl": "https://github.com/Silentely/eSIM-Tools",
+    "trendshiftId": "31717",
+    "pageUrl": "https://trendshift.io/repositories/31717",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/31717/daily",
+        "rank": 9
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "专为已有 Giffgaff 和 Simyo 号码的用户设计的现代化 eSIM 管理工具集，支持将物理 SIM 卡转换为 eSIM、设备更换和二维码生成。(A modern set of eSIM management tools designed specifically for users who already have Giffgaff and Simyo numbers, offering support for converting physical SIM cards to eSIMs, device replacements, and QR code generation.)",
+    "language": "JavaScript",
+    "topics": [
+      "esim",
+      "giffgaff",
+      "simyo",
+      "tools"
+    ]
   },
   {
     "githubUrl": "https://github.com/SirDiabo/GithubLauncher",
@@ -5054,6 +5765,34 @@
     ],
     "descriptionRu": "Создайте лёгкие (менее 5M) десктопные и мобильные приложения из любого сайта/HTML/Vue/React за пару минут",
     "descriptionZh": "几分钟内轻松将任意网站/HTML/Vue/React 等项目构建为轻量级（小于 5M）多端桌面和手机应用"
+  },
+  {
+    "githubUrl": "https://github.com/SkriptLang/Skript",
+    "trendshiftId": "10833",
+    "pageUrl": "https://trendshift.io/repositories/10833",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 8,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Skript is a Paper plugin which allows server admins to customize their server easily, but without the hassle of programming a plugin or asking/paying someone to program a plugin for them.",
+    "language": "Java",
+    "topics": [
+      "bukkit",
+      "gradle",
+      "hacktoberfest",
+      "java",
+      "minecraft",
+      "scripting-language",
+      "skript",
+      "spigot"
+    ]
   },
   {
     "githubUrl": "https://github.com/Sle2p/AniCh",
@@ -5261,6 +6000,25 @@
     "descriptionZh": "GitHub 上最强大的开源调整工具，用于微调 Windows 10 和 Windows 11"
   },
   {
+    "githubUrl": "https://github.com/Spotui/Spotui",
+    "trendshiftId": "72955",
+    "pageUrl": "https://trendshift.io/repositories/72955",
+    "badges": [
+      {
+        "kind": "month",
+        "currentRank": 15,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Spotify clone with deep integration ",
+    "language": "Kotlin",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/Starmel/OpenSuperWhisper",
     "trendshiftId": "14391",
     "pageUrl": "https://trendshift.io/repositories/14391",
@@ -5340,23 +6098,31 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 4,
-        "source": "ranking"
+        "currentRank": 2,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6483/daily",
+        "rank": 1
       },
       {
         "kind": "week",
-        "currentRank": 2,
-        "source": "ranking"
+        "currentRank": 3,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6483/weekly",
+        "rank": 2
       },
       {
         "kind": "month",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6483/monthly",
+        "rank": 7
       },
       {
         "kind": "year",
         "currentRank": 5,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6483/yearly",
+        "rank": 15
       }
     ],
     "updatedAt": "2026-07-05",
@@ -5403,6 +6169,27 @@
     "topics": [],
     "descriptionRu": "Редактор субтитров :)",
     "descriptionZh": "字幕编辑器 :)"
+  },
+  {
+    "githubUrl": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+    "trendshiftId": "22691",
+    "pageUrl": "https://trendshift.io/repositories/22691",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22691/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.",
+    "language": "Python",
+    "topics": []
   },
   {
     "githubUrl": "https://github.com/SuperJJ007/CSswitch",
@@ -5511,6 +6298,43 @@
     ],
     "descriptionRu": "Мощное приложение для продвинутой обработки изображений. Десятки функций от базовых инструментов вроде обрезки и рисования до фильтров, OCR и широкого спектра возможностей обработки изображений",
     "descriptionZh": "强大的高级图像处理应用。提供数十种功能，从裁剪绘制等基础工具到滤镜、OCR 和广泛的图像处理选项"
+  },
+  {
+    "githubUrl": "https://github.com/TNT-Likely/BeeCount",
+    "trendshiftId": "15616",
+    "pageUrl": "https://trendshift.io/repositories/15616",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 2,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "ai-infra",
+    "categoryReason": "topic:ai",
+    "categoryAt": "2026-07-05",
+    "description": "Local-first bookkeeping for iOS/Android/Web · Self-hosted cloud + iCloud/WebDAV/S3 sync · AI capture · MCP | 本地优先的跨端记账 · 自建云 + iCloud/WebDAV/S3 同步 · AI 记账 · MCP",
+    "language": "Dart",
+    "topics": [
+      "accounting",
+      "ai",
+      "android",
+      "bookkeeping",
+      "chinese",
+      "expense-tracker",
+      "finance-app",
+      "flutter",
+      "ios",
+      "local-first",
+      "mcp",
+      "offline-first",
+      "personal-finance",
+      "privacy-first",
+      "self-hosted",
+      "supabase",
+      "webdav"
+    ]
   },
   {
     "githubUrl": "https://github.com/TableProApp/TablePro",
@@ -5837,6 +6661,41 @@
     "descriptionZh": "最新 CVE PoC 和复现脚本。专注 Linux 内核、Windows、macOS 等高危漏洞。"
   },
   {
+    "githubUrl": "https://github.com/Usagi-org/ai-goofish-monitor",
+    "trendshiftId": "17190",
+    "pageUrl": "https://trendshift.io/repositories/17190",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 2,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17190/daily",
+        "rank": 3
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "ai-infra",
+    "categoryReason": "topic:ai",
+    "categoryAt": "2026-07-05",
+    "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "language": "Python",
+    "topics": [
+      "ai",
+      "ai-assistant",
+      "ai-tools",
+      "automation",
+      "gemini",
+      "goofish",
+      "open-source",
+      "openai",
+      "playwright",
+      "tool",
+      "xian-yu",
+      "xianyu",
+      "xianyu-bot"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/V4bel/dirtyfrag",
     "trendshiftId": "27931",
     "pageUrl": "https://trendshift.io/repositories/27931",
@@ -5924,6 +6783,31 @@
     ],
     "descriptionRu": "Sub2API — единая open-source платформа-агрегатор для Claude, OpenAI, Gemini, Grok. Поддерживает совместные подписки и эффективное разделение расходов, нативные инструменты работают бесшовно.",
     "descriptionZh": "Sub2API 一站式开源中转服务，统一接入 Claude、OpenAI、Gemini、Grok 订阅，支持拼车共享、高效分摊成本，原生工具无缝使用。"
+  },
+  {
+    "githubUrl": "https://github.com/WiVRn/WiVRn",
+    "trendshiftId": "15405",
+    "pageUrl": "https://trendshift.io/repositories/15405",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 14,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "The Linux OpenXR streaming application to standalone headsets",
+    "language": "C++",
+    "topics": [
+      "oculus",
+      "oculus-quest",
+      "oculus-quest-2",
+      "openxr",
+      "vr"
+    ]
   },
   {
     "githubUrl": "https://github.com/WordPress/mcp-adapter",
@@ -6064,8 +6948,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 11,
-        "source": "ranking"
+        "currentRank": 13,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/66089/daily",
+        "rank": 19
       },
       {
         "kind": "week",
@@ -6087,6 +6973,32 @@
     "topics": [],
     "descriptionRu": "Модифицирует координаты ответа сетевой локации Apple (gs-loc). Поддержка Surge/Quantumult X/Loon/Stash, ярлык для одношаговой установки/восстановления локации.",
     "descriptionZh": "修改 Apple 网络定位（gs-loc）返回坐标。支持 Surge/Quantumult X/Loon/Stash，快捷指令一键设置/恢复定位。"
+  },
+  {
+    "githubUrl": "https://github.com/YuJunZhiXue/qwen2API",
+    "trendshiftId": "50766",
+    "pageUrl": "https://trendshift.io/repositories/50766",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "devops-cloud",
+    "categoryReason": "topic:docker",
+    "categoryAt": "2026-07-05",
+    "description": "A project converting the Qwen web page to an API.  ",
+    "language": "Go",
+    "topics": [
+      "2api",
+      "docker",
+      "go",
+      "openai",
+      "typescript",
+      "vite"
+    ]
   },
   {
     "githubUrl": "https://github.com/Yuan1z0825/nature-skills",
@@ -6154,6 +7066,42 @@
     ],
     "descriptionRu": "RuoYi-Vue Pro — официальная рекомендация. Полностью оптимизированная и реструктурированная версия на Spring Boot + MyBatis Plus + Vue & Element. Поддерживает RBAC-разрешения, данные-разрешения, SaaS-мультитенантность, Flowable workflow, OAuth-вход, оплату, SMS, e-commerce, CRM, ERP, MES, IM, AI-модели, IoT.",
     "descriptionZh": "RuoYi-Vue 全新 Pro 版，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue & Element 的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城、CRM、ERP、MES、IM、AI 大模型、IoT 物联网等功能。"
+  },
+  {
+    "githubUrl": "https://github.com/YunaiV/yudao-cloud",
+    "trendshiftId": "572",
+    "pageUrl": "https://trendshift.io/repositories/572",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 15,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "ruoyi-vue-pro 全新 Cloud 版本，优化重构所有功能。基于 Spring Cloud Alibaba + MyBatis Plus + Vue & Element 实现的后台管理系统 + 用户小程序，支持 RBAC 动态权限、多租户、数据权限、工作流、三方登录、支付、短信、商城、CRM、ERP、MES、IM、AI 大模型、IoT 物联网等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！",
+    "language": "Java",
+    "topics": [
+      "dubbo",
+      "elasticsearch",
+      "mall",
+      "mysql",
+      "nacos",
+      "redis",
+      "rocketmq",
+      "seata",
+      "sharding-sphere",
+      "skywalking",
+      "spring-cloud",
+      "spring-cloud-alibaba",
+      "springboot",
+      "springcloud",
+      "xxl-job",
+      "zookeeper"
+    ]
   },
   {
     "githubUrl": "https://github.com/Zackriya-Solutions/meetily",
@@ -6360,6 +7308,45 @@
     "descriptionZh": "SkyStream 是受 CloudStream 启发的现代跨平台媒体流客户端。使用自定义 JavaScript 运行时支持插件，允许从单一代码库在 Android、iOS、Windows、macOS 和 Linux 上抓取和流式传输各类来源的内容。"
   },
   {
+    "githubUrl": "https://github.com/akshay2211/DrawBox",
+    "trendshiftId": "40007",
+    "pageUrl": "https://trendshift.io/repositories/40007",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Kotlin Multiplatform drawing library with SVG export, undo/redo & shapes for Android, iOS, Web & Desktop.",
+    "language": "Kotlin",
+    "topics": [
+      "android-canvas",
+      "canvas",
+      "composable",
+      "compose",
+      "cross-platform",
+      "drawing-app",
+      "drawing-library",
+      "drawing-on-canvas",
+      "drawingboard",
+      "hacktoberfest",
+      "jetpack-compose",
+      "kotlin",
+      "kotlin-library",
+      "kotlin-multiplatform",
+      "png-export",
+      "shapes",
+      "signature-pad",
+      "svg-export",
+      "undo-redo"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/alibaba/open-code-review",
     "trendshiftId": "41087",
     "pageUrl": "https://trendshift.io/repositories/41087",
@@ -6437,6 +7424,37 @@
     "descriptionZh": "JavaScript 页面内 GUI 代理，用自然语言控制 Web 界面。"
   },
   {
+    "githubUrl": "https://github.com/alibaba/spring-ai-alibaba",
+    "trendshiftId": "12434",
+    "pageUrl": "https://trendshift.io/repositories/12434",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 10,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12434/daily",
+        "rank": 18
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "cli-agents",
+    "categoryReason": "topic:agentic",
+    "categoryAt": "2026-07-05",
+    "description": "Agentic AI Framework for Java Developers",
+    "language": "Java",
+    "topics": [
+      "agentic",
+      "artificial-intelligence",
+      "context-engineering",
+      "graph",
+      "java",
+      "multi-agent",
+      "reactagent",
+      "spring-ai",
+      "workflow"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/alibaba/zvec",
     "trendshiftId": "20830",
     "pageUrl": "https://trendshift.io/repositories/20830",
@@ -6454,7 +7472,9 @@
       {
         "kind": "month",
         "currentRank": 17,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/20830/monthly",
+        "rank": 19
       },
       {
         "kind": "year",
@@ -6550,8 +7570,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 5,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/16601/daily",
+        "rank": 10
       },
       {
         "kind": "week",
@@ -6624,6 +7646,66 @@
     "descriptionZh": "加速下载的下载管理器。"
   },
   {
+    "githubUrl": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad",
+    "trendshiftId": "73021",
+    "pageUrl": "https://trendshift.io/repositories/73021",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 9,
+        "source": "ranking"
+      },
+      {
+        "kind": "week",
+        "currentRank": 22,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Command & Conquer Generals: Zero Hour running natively on macOS, iPhone & iPad — real engine (EA GPL v3 source, via GeneralsX), DXVK/MoltenVK renderer, RTS touch controls. No game assets included.",
+    "language": "C++",
+    "topics": [
+      "apple-silicon",
+      "command-and-conquer",
+      "dxvk",
+      "game-port",
+      "generals-zero-hour",
+      "ios",
+      "ipad",
+      "macos",
+      "moltenvk",
+      "open-source-game",
+      "rts",
+      "sdl3"
+    ]
+  },
+  {
+    "githubUrl": "https://github.com/andreknieriem/headunit-revived",
+    "trendshiftId": "21365",
+    "pageUrl": "https://trendshift.io/repositories/21365",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Headunit App for displaying Android Auto",
+    "language": "Kotlin",
+    "topics": [
+      "android",
+      "androidauto",
+      "headunit"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/anomalyco/opencode",
     "trendshiftId": "17001",
     "pageUrl": "https://trendshift.io/repositories/17001",
@@ -6664,6 +7746,29 @@
     "topics": [],
     "descriptionRu": "Открытый исходный кодовый агент.",
     "descriptionZh": "开源编码代理。"
+  },
+  {
+    "githubUrl": "https://github.com/anonaddy/anonaddy",
+    "trendshiftId": "5503",
+    "pageUrl": "https://trendshift.io/repositories/5503",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 11,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Anonymous email forwarding",
+    "language": "PHP",
+    "topics": [
+      "email",
+      "pgp",
+      "privacy"
+    ]
   },
   {
     "githubUrl": "https://github.com/ansible/ansible",
@@ -6752,12 +7857,16 @@
       {
         "kind": "day",
         "currentRank": 5,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27084/daily",
+        "rank": 3
       },
       {
         "kind": "week",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27084/weekly",
+        "rank": 11
       },
       {
         "kind": "month",
@@ -6787,13 +7896,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 2,
-        "source": "ranking"
+        "currentRank": 4,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14196/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 12,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14196/weekly",
+        "rank": 6
       },
       {
         "kind": "month",
@@ -6821,6 +7934,11 @@
     "trendshiftId": "5389",
     "pageUrl": "https://trendshift.io/repositories/5389",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 14,
+        "source": "ranking"
+      },
       {
         "kind": "week",
         "currentRank": 21,
@@ -6966,17 +8084,23 @@
       {
         "kind": "day",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14789/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14789/weekly",
+        "rank": 1
       },
       {
         "kind": "month",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14789/monthly",
+        "rank": 5
       },
       {
         "kind": "year",
@@ -7002,7 +8126,9 @@
       {
         "kind": "day",
         "currentRank": 2,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/2558/daily",
+        "rank": 13
       },
       {
         "kind": "week",
@@ -7026,10 +8152,34 @@
     "descriptionZh": "资源监控器。"
   },
   {
+    "githubUrl": "https://github.com/armanmaurya/InternetRadio",
+    "trendshiftId": "62515",
+    "pageUrl": "https://trendshift.io/repositories/62515",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 15,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Discover and listen to thousands of free internet radio stations worldwide.",
+    "language": "Kotlin",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/aseprite/aseprite",
     "trendshiftId": "784",
     "pageUrl": "https://trendshift.io/repositories/784",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking"
+      },
       {
         "kind": "week",
         "currentRank": 22,
@@ -7097,8 +8247,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 11,
-        "source": "ranking"
+        "currentRank": 23,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/9355/daily",
+        "rank": 7
       },
       {
         "kind": "week",
@@ -7152,7 +8304,9 @@
       {
         "kind": "week",
         "currentRank": 16,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/4923/weekly",
+        "rank": 15
       },
       {
         "kind": "month",
@@ -7217,6 +8371,33 @@
     "descriptionZh": "🦄独角数卡（自动售货系统）—开源站长自动化售货解决方案、高效、稳定、快速！🚀🚀🎉🎉"
   },
   {
+    "githubUrl": "https://github.com/athledev-labs/opennook",
+    "trendshiftId": "71521",
+    "pageUrl": "https://trendshift.io/repositories/71521",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "An open-source framework for building macOS notch apps.",
+    "language": "Swift",
+    "topics": [
+      "dynamic-island",
+      "macos",
+      "menu-bar",
+      "notch",
+      "swift",
+      "swift-package",
+      "swiftui"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/aureuserp/aureuserp",
     "trendshiftId": "17861",
     "pageUrl": "https://trendshift.io/repositories/17861",
@@ -7229,7 +8410,9 @@
       {
         "kind": "week",
         "currentRank": 6,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17861/weekly",
+        "rank": 19
       },
       {
         "kind": "month",
@@ -7385,8 +8568,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 8,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5269/daily",
+        "rank": 19
       },
       {
         "kind": "week",
@@ -7429,7 +8614,9 @@
       {
         "kind": "week",
         "currentRank": 7,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/31/weekly",
+        "rank": 21
       },
       {
         "kind": "month",
@@ -7561,8 +8748,10 @@
     "badges": [
       {
         "kind": "week",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 9,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/9012/weekly",
+        "rank": 17
       },
       {
         "kind": "month",
@@ -7645,6 +8834,13 @@
     "pageUrl": "https://trendshift.io/repositories/15436",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15436/daily",
+        "rank": 1
+      },
+      {
         "kind": "year",
         "currentRank": 16,
         "source": "ranking"
@@ -7664,6 +8860,27 @@
     ],
     "descriptionRu": "Канбан такой, каким должен быть. Не таким, каким был.",
     "descriptionZh": "真正的看板。不是过去的那个样子。"
+  },
+  {
+    "githubUrl": "https://github.com/basecamp/kamal",
+    "trendshiftId": "4",
+    "pageUrl": "https://trendshift.io/repositories/4",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 12,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/4/daily",
+        "rank": 13
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Deploy web apps anywhere.",
+    "language": "Ruby",
+    "topics": []
   },
   {
     "githubUrl": "https://github.com/basecamp/upright",
@@ -7725,6 +8942,13 @@
     "pageUrl": "https://trendshift.io/repositories/19893",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 20,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19893/daily",
+        "rank": 10
+      },
+      {
         "kind": "year",
         "currentRank": 12,
         "source": "ranking"
@@ -7759,8 +8983,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 5,
-        "source": "ranking"
+        "currentRank": 11,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14533/daily",
+        "rank": 16
       },
       {
         "kind": "week",
@@ -7836,8 +9062,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 20,
-        "source": "ranking"
+        "currentRank": 2,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1851/daily",
+        "rank": 10
       }
     ],
     "updatedAt": "2026-07-05",
@@ -7980,6 +9208,27 @@
     "descriptionZh": "让 Claude 能够观看任何视频。/watch 下载、提取帧、转录，并将所有内容交给 Claude"
   },
   {
+    "githubUrl": "https://github.com/breezy-weather/breezy-weather",
+    "trendshiftId": "13466",
+    "pageUrl": "https://trendshift.io/repositories/13466",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13466/daily",
+        "rank": 9
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "A feature-rich weather app with good visualizations and more than 50 sources.",
+    "language": "Kotlin",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/browser-use/video-use",
     "trendshiftId": "26040",
     "pageUrl": "https://trendshift.io/repositories/26040",
@@ -8019,8 +9268,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 25,
-        "source": "ranking"
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1719/daily",
+        "rank": 25
       }
     ],
     "updatedAt": "2026-07-05",
@@ -8124,6 +9375,24 @@
     "descriptionZh": "一份能让你受益匪浅的高级指南"
   },
   {
+    "githubUrl": "https://github.com/calesthio/BreakoutAnalysis",
+    "trendshiftId": "68487",
+    "pageUrl": "https://trendshift.io/repositories/68487",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 11,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "language": "Python",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/canopy-network/canopy",
     "trendshiftId": "21774",
     "pageUrl": "https://trendshift.io/repositories/21774",
@@ -8138,7 +9407,9 @@
       {
         "kind": "week",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21774/weekly",
+        "rank": 16
       },
       {
         "kind": "month",
@@ -8260,8 +9531,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 25,
-        "source": "ranking"
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14720/daily",
+        "rank": 2
       }
     ],
     "updatedAt": "2026-07-05",
@@ -8280,6 +9553,27 @@
     "descriptionZh": "面向所有人的迷人代理编程"
   },
   {
+    "githubUrl": "https://github.com/chatfire-AI/huobao-drama",
+    "trendshiftId": "19678",
+    "pageUrl": "https://trendshift.io/repositories/19678",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19678/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "🎬 火宝短剧 - 基于AI的一站式短剧生成平台 《一句话生成完整短剧，从剧本到成片全自动化》  Huobao Drama - An AI-Powered End-to-End Short Drama Generator \"One Sentence to Complete Drama: Fully Automated from Script to Final Video\"",
+    "language": "TypeScript",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/chatwoot/chatwoot",
     "trendshiftId": "21",
     "pageUrl": "https://trendshift.io/repositories/21",
@@ -8287,7 +9581,9 @@
       {
         "kind": "day",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21/daily",
+        "rank": 15
       },
       {
         "kind": "week",
@@ -8373,17 +9669,23 @@
       {
         "kind": "day",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11303/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11303/weekly",
+        "rank": 5
       },
       {
         "kind": "month",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/11303/monthly",
+        "rank": 14
       },
       {
         "kind": "year",
@@ -8689,6 +9991,25 @@
     "descriptionZh": "基于 Tauri 的现代 GUI 客户端，专为在 Windows、macOS 和 Linux 上运行而定制的代理体验"
   },
   {
+    "githubUrl": "https://github.com/cloudflare/agentic-inbox",
+    "trendshiftId": "26244",
+    "pageUrl": "https://trendshift.io/repositories/26244",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 19,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers",
+    "language": "TypeScript",
+    "topics": []
+  },
+  {
     "githubUrl": "https://github.com/cloudflare/security-audit-skill",
     "trendshiftId": "64056",
     "pageUrl": "https://trendshift.io/repositories/64056",
@@ -8716,8 +10037,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 22,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/37276/daily",
+        "rank": 12
       },
       {
         "kind": "week",
@@ -8753,13 +10076,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 7,
-        "source": "ranking"
+        "currentRank": 9,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50831/daily",
+        "rank": 6
       },
       {
         "kind": "week",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 10,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50831/weekly",
+        "rank": 23
       },
       {
         "kind": "month",
@@ -8902,6 +10229,42 @@
     "descriptionZh": "公开反馈讨论社区：GitHub Mobile、GitHub Discussions、GitHub Codespaces、GitHub Sponsors、GitHub Issues 等！"
   },
   {
+    "githubUrl": "https://github.com/conductor-oss/conductor",
+    "trendshiftId": "6022",
+    "pageUrl": "https://trendshift.io/repositories/6022",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6022/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Conductor is an event driven agentic workflow engine providing durable and highly resilient execution engine for applications and AI Agents",
+    "language": "Java",
+    "topics": [
+      "distributed-systems",
+      "durable-execution",
+      "grpc",
+      "java",
+      "javascript",
+      "microservice-orchestration",
+      "orchestration-engine",
+      "orchestrator",
+      "reactjs",
+      "spring-boot",
+      "workflow-automation",
+      "workflow-engine",
+      "workflow-management",
+      "workflows"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/containers/bubblewrap",
     "trendshiftId": "9328",
     "pageUrl": "https://trendshift.io/repositories/9328",
@@ -8933,17 +10296,23 @@
       {
         "kind": "day",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/634/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/634/weekly",
+        "rank": 4
       },
       {
         "kind": "month",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/634/monthly",
+        "rank": 1
       },
       {
         "kind": "year",
@@ -9004,6 +10373,28 @@
     "descriptionZh": "您的代理集成层。"
   },
   {
+    "githubUrl": "https://github.com/crimera/piko",
+    "trendshiftId": "13866",
+    "pageUrl": "https://trendshift.io/repositories/13866",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 5,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "morphe patches for twitter",
+    "language": "Java",
+    "topics": [
+      "morphe",
+      "morphe-patches"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/crosspoint-reader/crosspoint-reader",
     "trendshiftId": "54429",
     "pageUrl": "https://trendshift.io/repositories/54429",
@@ -9023,6 +10414,39 @@
     "topics": [],
     "descriptionRu": "Прошивка для электронных читалок Xteink X3 и X4.",
     "descriptionZh": "Xteink X3 和 X4 电子阅读器固件。"
+  },
+  {
+    "githubUrl": "https://github.com/crynta/terax-ai",
+    "trendshiftId": "27746",
+    "pageUrl": "https://trendshift.io/repositories/27746",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 11,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27746/daily",
+        "rank": 12
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "cli-agents",
+    "categoryReason": "topic:agents",
+    "categoryAt": "2026-07-05",
+    "description": "Lightweight (7MB) Terminal-first AI-native dev workspace",
+    "language": "TypeScript",
+    "topics": [
+      "agents",
+      "ai",
+      "code-editor",
+      "linux",
+      "macos",
+      "reactjs",
+      "rust",
+      "tauri",
+      "terminal",
+      "windows",
+      "xterm-js"
+    ]
   },
   {
     "githubUrl": "https://github.com/ctxrs/ctx",
@@ -9106,6 +10530,13 @@
     "pageUrl": "https://trendshift.io/repositories/5310",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5310/daily",
+        "rank": 24
+      },
+      {
         "kind": "week",
         "currentRank": 20,
         "source": "ranking"
@@ -9153,8 +10584,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 10,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12224/daily",
+        "rank": 19
       },
       {
         "kind": "week",
@@ -9240,8 +10673,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 4,
-        "source": "ranking"
+        "currentRank": 3,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/627/daily",
+        "rank": 12
       },
       {
         "kind": "week",
@@ -9305,10 +10740,39 @@
     "descriptionZh": "macOS 菜单栏应用，用通俗英语告诉您插入 Mac 的每根 USB-C 线缆实际能做什么。"
   },
   {
+    "githubUrl": "https://github.com/dart-lang/sdk",
+    "trendshiftId": "9403",
+    "pageUrl": "https://trendshift.io/repositories/9403",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.",
+    "language": "Dart",
+    "topics": [
+      "dart",
+      "language",
+      "programming-language",
+      "sdk"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/david-vanderson/dvui",
     "trendshiftId": "19131",
     "pageUrl": "https://trendshift.io/repositories/19131",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 14,
+        "source": "ranking"
+      },
       {
         "kind": "week",
         "currentRank": 16,
@@ -9434,18 +10898,24 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 17,
-        "source": "ranking"
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22628/daily",
+        "rank": 6
       },
       {
         "kind": "week",
         "currentRank": 11,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22628/weekly",
+        "rank": 15
       },
       {
         "kind": "month",
-        "currentRank": 16,
-        "source": "ranking"
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22628/monthly",
+        "rank": 25
       },
       {
         "kind": "year",
@@ -9828,7 +11298,9 @@
       {
         "kind": "week",
         "currentRank": 2,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/544/weekly",
+        "rank": 12
       },
       {
         "kind": "month",
@@ -9944,7 +11416,9 @@
       {
         "kind": "day",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24972/daily",
+        "rank": 25
       },
       {
         "kind": "week",
@@ -10067,8 +11541,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 12,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/8902/daily",
+        "rank": 9
       }
     ],
     "updatedAt": "2026-07-05",
@@ -10109,8 +11585,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 16,
-        "source": "ranking"
+        "currentRank": 10,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/41519/daily",
+        "rank": 23
       },
       {
         "kind": "week",
@@ -10209,6 +11687,31 @@
     "descriptionZh": "免费开源分布式 RESTful 搜索引擎。"
   },
   {
+    "githubUrl": "https://github.com/elder-plinius/T3MP3ST",
+    "trendshiftId": "73214",
+    "pageUrl": "https://trendshift.io/repositories/73214",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 1,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "cli-agents",
+    "categoryReason": "topic:agents",
+    "categoryAt": "2026-07-05",
+    "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
+    "language": "TypeScript",
+    "topics": [
+      "agents",
+      "ai",
+      "multi-agent",
+      "offensive-security",
+      "redteam"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/elithrar/xgecu-web",
     "trendshiftId": "72893",
     "pageUrl": "https://trendshift.io/repositories/72893",
@@ -10300,12 +11803,16 @@
       {
         "kind": "week",
         "currentRank": 11,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/8260/weekly",
+        "rank": 10
       },
       {
         "kind": "month",
         "currentRank": 7,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/8260/monthly",
+        "rank": 18
       },
       {
         "kind": "year",
@@ -10478,8 +11985,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 21,
-        "source": "ranking"
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/8137/daily",
+        "rank": 16
       }
     ],
     "updatedAt": "2026-07-05",
@@ -10514,8 +12023,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 16,
-        "source": "ranking"
+        "currentRank": 15,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/10927/daily",
+        "rank": 3
       },
       {
         "kind": "month",
@@ -10580,10 +12091,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 8,
+        "currentRank": 22,
         "source": "ranking",
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/65106/daily",
-        "rank": 7
+        "rank": 6
       },
       {
         "kind": "week",
@@ -10746,6 +12257,11 @@
     "pageUrl": "https://trendshift.io/repositories/238",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 15,
+        "source": "ranking"
+      },
+      {
         "kind": "week",
         "currentRank": 9,
         "source": "ranking"
@@ -10882,6 +12398,30 @@
     "descriptionZh": "Firefly III 是个人财务管理工具"
   },
   {
+    "githubUrl": "https://github.com/flarum/flarum",
+    "trendshiftId": "8402",
+    "pageUrl": "https://trendshift.io/repositories/8402",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 2,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05",
+    "category": "needs-review",
+    "categoryReason": "uncategorized",
+    "categoryAt": "2026-07-05",
+    "description": "Simple forum software for building great communities.",
+    "language": "PHP",
+    "topics": [
+      "flarum",
+      "forum",
+      "laravel",
+      "php"
+    ]
+  },
+  {
     "githubUrl": "https://github.com/floci-io/floci",
     "trendshiftId": "25152",
     "pageUrl": "https://trendshift.io/repositories/25152",
@@ -10889,12 +12429,16 @@
       {
         "kind": "day",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25152/daily",
+        "rank": 1
       },
       {
         "kind": "week",
-        "currentRank": 3,
-        "source": "ranking"
+        "currentRank": 2,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25152/weekly",
+        "rank": 8
       },
       {
         "kind": "month",
@@ -10929,14 +12473,29 @@
     "descriptionZh": "Floci 是 AWS 本地模拟器的轻量级替代方案，永久免费"
   },
   {
+    "githubUrl": "https://github.com/flomesh-io/ztm",
+    "trendshiftId": "71787",
+    "pageUrl": "https://trendshift.io/repositories/71787",
+    "badges": [
+      {
+        "kind": "month",
+        "currentRank": 19,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/flutter/flutter",
     "trendshiftId": "3477",
     "pageUrl": "https://trendshift.io/repositories/3477",
     "badges": [
       {
         "kind": "day",
-        "currentRank": 20,
-        "source": "ranking"
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/3477/daily",
+        "rank": 14
       },
       {
         "kind": "week",
@@ -11050,8 +12609,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 23,
-        "source": "ranking"
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/23253/daily",
+        "rank": 1
       },
       {
         "kind": "year",
@@ -11159,6 +12720,19 @@
     "descriptionZh": "Arcane 是现代 Docker 管理工具，为所有人设计"
   },
   {
+    "githubUrl": "https://github.com/getgrav/grav",
+    "trendshiftId": "3281",
+    "pageUrl": "https://trendshift.io/repositories/3281",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 19,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/ggbond268/MacTools",
     "trendshiftId": "36547",
     "pageUrl": "https://trendshift.io/repositories/36547",
@@ -11196,8 +12770,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 1,
-        "source": "ranking"
+        "currentRank": 3,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12971/daily",
+        "rank": 10
       },
       {
         "kind": "week",
@@ -11234,13 +12810,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 13,
-        "source": "ranking"
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13346/daily",
+        "rank": 3
       },
       {
         "kind": "week",
-        "currentRank": 18,
-        "source": "ranking"
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13346/weekly",
+        "rank": 17
       },
       {
         "kind": "month",
@@ -11304,17 +12884,23 @@
       {
         "kind": "day",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14091/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14091/weekly",
+        "rank": 1
       },
       {
         "kind": "month",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14091/monthly",
+        "rank": 5
       },
       {
         "kind": "year",
@@ -11570,14 +13156,31 @@
     "descriptionZh": "GKD 是基于辅助功能、高级选择器和订阅规则的 Android 自定义屏幕点击应用"
   },
   {
+    "githubUrl": "https://github.com/glanceapp/glance",
+    "trendshiftId": "10072",
+    "pageUrl": "https://trendshift.io/repositories/10072",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 16,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/10072/daily",
+        "rank": 1
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/godotengine/godot",
     "trendshiftId": "94",
     "pageUrl": "https://trendshift.io/repositories/94",
     "badges": [
       {
         "kind": "day",
-        "currentRank": 5,
-        "source": "ranking"
+        "currentRank": 6,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/94/daily",
+        "rank": 14
       },
       {
         "kind": "week",
@@ -11799,6 +13402,19 @@
     ],
     "descriptionRu": "Google Workspace CLI — единый инструмент командной строки для Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin и других сервисов, включая навыки AI-агента",
     "descriptionZh": "Google Workspace CLI 是 Drive、Gmail、Calendar、Sheets、Docs、Chat、Admin 等服务的统一命令行工具，包含 AI 代理技能"
+  },
+  {
+    "githubUrl": "https://github.com/govctl-org/govctl",
+    "trendshiftId": "47401",
+    "pageUrl": "https://trendshift.io/repositories/47401",
+    "badges": [
+      {
+        "kind": "month",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/grimmory-tools/grimmory",
@@ -12365,14 +13981,31 @@
     "descriptionZh": "zig 游戏引擎和图形工具包 — https://code.hexops.com/hexops/mach 镜像"
   },
   {
+    "githubUrl": "https://github.com/heygen-com/hyperframes",
+    "trendshiftId": "26131",
+    "pageUrl": "https://trendshift.io/repositories/26131",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/26131/daily",
+        "rank": 1
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/hiddify/hiddify-app",
     "trendshiftId": "12110",
     "pageUrl": "https://trendshift.io/repositories/12110",
     "badges": [
       {
         "kind": "day",
-        "currentRank": 17,
-        "source": "ranking"
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12110/daily",
+        "rank": 6
       },
       {
         "kind": "week",
@@ -12455,6 +14088,13 @@
     "trendshiftId": "104",
     "pageUrl": "https://trendshift.io/repositories/104",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 13,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/104/daily",
+        "rank": 25
+      },
       {
         "kind": "week",
         "currentRank": 14,
@@ -12716,6 +14356,13 @@
         "source": "ranking",
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1398/daily",
         "rank": 1
+      },
+      {
+        "kind": "week",
+        "currentRank": 25,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1398/weekly",
+        "rank": 5
       }
     ],
     "updatedAt": "2026-07-05",
@@ -12752,13 +14399,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 17,
-        "source": "ranking"
+        "currentRank": 15,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14983/daily",
+        "rank": 3
       },
       {
         "kind": "week",
         "currentRank": 16,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14983/weekly",
+        "rank": 9
       },
       {
         "kind": "month",
@@ -12848,6 +14499,19 @@
     "topics": [],
     "descriptionRu": "https://polymatch.online",
     "descriptionZh": "https://polymatch.online"
+  },
+  {
+    "githubUrl": "https://github.com/invoiceninja/invoiceninja",
+    "trendshiftId": "52",
+    "pageUrl": "https://trendshift.io/repositories/52",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 18,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/isaacsa51/Minus",
@@ -12991,6 +14655,19 @@
     "descriptionZh": "一份通俗易懂、风趣幽默的 Java 学习指南，涵盖 Java 基础、并发编程、JVM、企业级开发和面试等核心知识点。"
   },
   {
+    "githubUrl": "https://github.com/jackielii/skhd.zig",
+    "trendshiftId": "19464",
+    "pageUrl": "https://trendshift.io/repositories/19464",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 10,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/jamesob/local-llm",
     "trendshiftId": "71981",
     "pageUrl": "https://trendshift.io/repositories/71981",
@@ -13089,6 +14766,19 @@
     "descriptionZh": "开源 AI 语音工作室。克隆、听写、创作。"
   },
   {
+    "githubUrl": "https://github.com/janishar/mit-deep-learning-book-pdf",
+    "trendshiftId": "2851",
+    "pageUrl": "https://trendshift.io/repositories/2851",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/jarrodwatts/claude-hud",
     "trendshiftId": "21837",
     "pageUrl": "https://trendshift.io/repositories/21837",
@@ -13145,13 +14835,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 10,
-        "source": "ranking"
+        "currentRank": 11,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/630/daily",
+        "rank": 2
       },
       {
         "kind": "week",
         "currentRank": 17,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/630/weekly",
+        "rank": 10
       },
       {
         "kind": "month",
@@ -13226,6 +14920,11 @@
     "pageUrl": "https://trendshift.io/repositories/789",
     "badges": [
       {
+        "kind": "week",
+        "currentRank": 24,
+        "source": "ranking"
+      },
+      {
         "kind": "month",
         "currentRank": 17,
         "source": "ranking"
@@ -13255,8 +14954,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 16,
-        "source": "ranking"
+        "currentRank": 12,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/971/daily",
+        "rank": 15
       },
       {
         "kind": "week",
@@ -13332,6 +15033,13 @@
     "pageUrl": "https://trendshift.io/repositories/1069",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1069/daily",
+        "rank": 13
+      },
+      {
         "kind": "year",
         "currentRank": 25,
         "source": "ranking"
@@ -13350,6 +15058,32 @@
     ],
     "descriptionRu": "Простой терминальный интерфейс для команд git",
     "descriptionZh": "git 命令的简单终端界面"
+  },
+  {
+    "githubUrl": "https://github.com/jiangtian616/JHenTai",
+    "trendshiftId": "9393",
+    "pageUrl": "https://trendshift.io/repositories/9393",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 13,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
+    "githubUrl": "https://github.com/jksalcedo/tend",
+    "trendshiftId": "72877",
+    "pageUrl": "https://trendshift.io/repositories/72877",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 12,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/jlcodes99/cockpit-tools",
@@ -13789,6 +15523,21 @@
     "descriptionZh": "AI 智能体在单 GPU 上自动运行 nanochat 训练的研究任务。"
   },
   {
+    "githubUrl": "https://github.com/karpathy/nanoGPT",
+    "trendshiftId": "1018",
+    "pageUrl": "https://trendshift.io/repositories/1018",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1018/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/kasothaphie/GenRecon",
     "trendshiftId": "70962",
     "pageUrl": "https://trendshift.io/repositories/70962",
@@ -13841,6 +15590,21 @@
     "descriptionZh": "KeePassXC 是 Windows 应用 KeePass Password Safe 的跨平台社区驱动移植版本。"
   },
   {
+    "githubUrl": "https://github.com/keiyoushi/extensions-source",
+    "trendshiftId": "6826",
+    "pageUrl": "https://trendshift.io/repositories/6826",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6826/daily",
+        "rank": 16
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/kerlenton/mcpsnoop",
     "trendshiftId": "72048",
     "pageUrl": "https://trendshift.io/repositories/72048",
@@ -13884,6 +15648,19 @@
     ],
     "descriptionRu": "Wireshark для MCP. Прозрачный прокси, показывающий все реальные tool-вызовы между AI клиентом и MCP серверами, live в терминале.",
     "descriptionZh": "MCP 的 Wireshark。透明代理，在终端实时显示 AI 客户端与 MCP 服务器之间的所有真实工具调用。"
+  },
+  {
+    "githubUrl": "https://github.com/kewuaa/kwm",
+    "trendshiftId": "23690",
+    "pageUrl": "https://trendshift.io/repositories/23690",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/keycloak/keycloak",
@@ -13941,6 +15718,19 @@
     ],
     "descriptionRu": "Курируемый список инженерных блогов",
     "descriptionZh": "精心策划的工程博客列表。"
+  },
+  {
+    "githubUrl": "https://github.com/kimai/kimai",
+    "trendshiftId": "3345",
+    "pageUrl": "https://trendshift.io/repositories/3345",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 12,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/kitsumed/ShizuCallRecorder",
@@ -14009,6 +15799,19 @@
     "descriptionZh": "实时全球情报仪表板。AI 驱动的新闻聚合、地缘政治监控和基础设施跟踪，集成于统一的态势感知界面。"
   },
   {
+    "githubUrl": "https://github.com/komikku-app/komikku",
+    "trendshiftId": "13696",
+    "pageUrl": "https://trendshift.io/repositories/13696",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 20,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/kousen/claude-code-training",
     "trendshiftId": "21024",
     "pageUrl": "https://trendshift.io/repositories/21024",
@@ -14042,12 +15845,16 @@
       {
         "kind": "week",
         "currentRank": 13,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/480/weekly",
+        "rank": 1
       },
       {
         "kind": "month",
         "currentRank": 12,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/480/monthly",
+        "rank": 2
       },
       {
         "kind": "year",
@@ -14160,8 +15967,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 13,
-        "source": "ranking"
+        "currentRank": 8,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27829/daily",
+        "rank": 4
       },
       {
         "kind": "week",
@@ -14183,6 +15992,19 @@
     "topics": [],
     "descriptionRu": "git push no-mistakes",
     "descriptionZh": "git push no-mistakes"
+  },
+  {
+    "githubUrl": "https://github.com/kunchenguid/treehouse",
+    "trendshiftId": "62350",
+    "pageUrl": "https://trendshift.io/repositories/62350",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/kurikomi-labs/komi-store",
@@ -14243,8 +16065,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 3,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/70339/daily",
+        "rank": 4
       },
       {
         "kind": "week",
@@ -14346,12 +16170,16 @@
       {
         "kind": "week",
         "currentRank": 1,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13996/weekly",
+        "rank": 1
       },
       {
         "kind": "month",
-        "currentRank": 18,
-        "source": "ranking"
+        "currentRank": 23,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13996/monthly",
+        "rank": 3
       }
     ],
     "updatedAt": "2026-07-05",
@@ -14383,17 +16211,23 @@
       {
         "kind": "day",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12815/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 3,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12815/weekly",
+        "rank": 6
       },
       {
         "kind": "month",
         "currentRank": 4,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/12815/monthly",
+        "rank": 23
       },
       {
         "kind": "year",
@@ -14445,6 +16279,19 @@
     "topics": [],
     "descriptionRu": "Каркас для создания кастомных инструментов для Light Phone III",
     "descriptionZh": "为 Light Phone III 构建自定义工具的脚手架。"
+  },
+  {
+    "githubUrl": "https://github.com/lineofflight/frankfurter",
+    "trendshiftId": "15293",
+    "pageUrl": "https://trendshift.io/repositories/15293",
+    "badges": [
+      {
+        "kind": "week",
+        "currentRank": 23,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/livewire/blaze",
@@ -14547,8 +16394,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 16,
-        "source": "ranking"
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/9608/daily",
+        "rank": 7
       }
     ],
     "updatedAt": "2026-07-05",
@@ -14575,6 +16424,11 @@
       {
         "kind": "day",
         "currentRank": 22,
+        "source": "ranking"
+      },
+      {
+        "kind": "week",
+        "currentRank": 17,
         "source": "ranking"
       },
       {
@@ -14794,7 +16648,9 @@
       {
         "kind": "week",
         "currentRank": 25,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6407/weekly",
+        "rank": 12
       }
     ],
     "updatedAt": "2026-07-05",
@@ -14870,6 +16726,19 @@
     ],
     "descriptionRu": "GitHub плагин китайификации, китайифицированный интерфейс GitHub.",
     "descriptionZh": "GitHub 汉化插件，GitHub 中文化界面。"
+  },
+  {
+    "githubUrl": "https://github.com/macrozheng/mall",
+    "trendshiftId": "170",
+    "pageUrl": "https://trendshift.io/repositories/170",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 19,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/maddada/Ghostex",
@@ -15094,6 +16963,19 @@
     ],
     "descriptionRu": "Программа аудита WiFi-безопасности, основанная на наборе инструментов aircrack-ng",
     "descriptionZh": "基于 aircrack-ng 工具套件的 WiFi 安全审计软件"
+  },
+  {
+    "githubUrl": "https://github.com/marvinvr/docktail",
+    "trendshiftId": "16518",
+    "pageUrl": "https://trendshift.io/repositories/16518",
+    "badges": [
+      {
+        "kind": "month",
+        "currentRank": 17,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/masterking32/MasterDnsVPN",
@@ -15412,6 +17294,24 @@
     "descriptionZh": "Mautic：开源营销自动化软件。"
   },
   {
+    "githubUrl": "https://github.com/maximqaxd/wince-dc",
+    "trendshiftId": "72814",
+    "pageUrl": "https://trendshift.io/repositories/72814",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 9,
+        "source": "ranking"
+      },
+      {
+        "kind": "month",
+        "currentRank": 23,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/maxprokopp/film-space",
     "trendshiftId": "68286",
     "pageUrl": "https://trendshift.io/repositories/68286",
@@ -15449,13 +17349,17 @@
       },
       {
         "kind": "week",
-        "currentRank": 22,
-        "source": "ranking"
+        "currentRank": 21,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6835/weekly",
+        "rank": 1
       },
       {
         "kind": "month",
         "currentRank": 23,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/6835/monthly",
+        "rank": 6
       }
     ],
     "updatedAt": "2026-07-05",
@@ -15652,6 +17556,19 @@
     "descriptionZh": "优化、自定义和增强 Windows 体验的应用程序。"
   },
   {
+    "githubUrl": "https://github.com/meshcore-dev/MeshCore",
+    "trendshiftId": "20455",
+    "pageUrl": "https://trendshift.io/repositories/20455",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 20,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/meszmate/zigzag",
     "trendshiftId": "26368",
     "pageUrl": "https://trendshift.io/repositories/26368",
@@ -15679,6 +17596,19 @@
     ],
     "descriptionRu": "Крупнейшая TUI-платформа для Zig",
     "descriptionZh": "最大的 Zig TUI 框架"
+  },
+  {
+    "githubUrl": "https://github.com/metasfresh/metasfresh",
+    "trendshiftId": "13587",
+    "pageUrl": "https://trendshift.io/repositories/13587",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 9,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/mewebstudio/captcha",
@@ -15809,13 +17739,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 12,
-        "source": "ranking"
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1705/daily",
+        "rank": 9
       },
       {
         "kind": "week",
         "currentRank": 15,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1705/weekly",
+        "rank": 17
       },
       {
         "kind": "month",
@@ -15880,7 +17814,9 @@
       {
         "kind": "week",
         "currentRank": 15,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/13817/weekly",
+        "rank": 1
       }
     ],
     "updatedAt": "2026-07-05",
@@ -15987,13 +17923,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 4,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/7028/daily",
+        "rank": 1
       },
       {
         "kind": "week",
-        "currentRank": 24,
-        "source": "ranking"
+        "currentRank": 23,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/7028/weekly",
+        "rank": 9
       },
       {
         "kind": "month",
@@ -16149,8 +18089,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 18,
-        "source": "ranking"
+        "currentRank": 2,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/71348/daily",
+        "rank": 14
       },
       {
         "kind": "week",
@@ -16365,18 +18307,24 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 21,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24695/daily",
+        "rank": 5
       },
       {
         "kind": "week",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 10,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24695/weekly",
+        "rank": 11
       },
       {
         "kind": "month",
         "currentRank": 10,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24695/monthly",
+        "rank": 14
       },
       {
         "kind": "year",
@@ -16393,6 +18341,21 @@
     "topics": [],
     "descriptionRu": "Платформа управляемых агентов с открытым исходным кодом. Превращайте кодинговых агентов в настоящих тиммейтов — назначайте задачи, отслеживайте прогресс, комбинируйте скиллы.",
     "descriptionZh": "开源托管智能体平台。将编码智能体转变为真正的队友 — 分配任务、跟踪进度、组合技能。"
+  },
+  {
+    "githubUrl": "https://github.com/mvanhorn/cli-printing-press",
+    "trendshiftId": "30998",
+    "pageUrl": "https://trendshift.io/repositories/30998",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/30998/daily",
+        "rank": 18
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/mvanhorn/last30days-skill",
@@ -16606,6 +18569,21 @@
     "descriptionZh": "IronClaw 是一个注重隐私、安全和可扩展性的 Agent 操作系统"
   },
   {
+    "githubUrl": "https://github.com/netbirdio/netbird",
+    "trendshiftId": "2309",
+    "pageUrl": "https://trendshift.io/repositories/2309",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 20,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/2309/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/neurocyte/flow",
     "trendshiftId": "19463",
     "pageUrl": "https://trendshift.io/repositories/19463",
@@ -16650,8 +18628,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 12,
-        "source": "ranking"
+        "currentRank": 7,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19120/daily",
+        "rank": 22
       },
       {
         "kind": "week",
@@ -16769,7 +18749,9 @@
       {
         "kind": "week",
         "currentRank": 4,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1194/weekly",
+        "rank": 7
       },
       {
         "kind": "month",
@@ -16882,8 +18864,10 @@
     "badges": [
       {
         "kind": "week",
-        "currentRank": 21,
-        "source": "ranking"
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/465/weekly",
+        "rank": 10
       },
       {
         "kind": "month",
@@ -17088,8 +19072,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 24,
-        "source": "ranking"
+        "currentRank": 17,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21830/daily",
+        "rank": 3
       },
       {
         "kind": "week",
@@ -17127,6 +19113,11 @@
     "trendshiftId": "66773",
     "pageUrl": "https://trendshift.io/repositories/66773",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 3,
+        "source": "ranking"
+      },
       {
         "kind": "week",
         "currentRank": 8,
@@ -17212,8 +19203,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 17,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1005/daily",
+        "rank": 9
       },
       {
         "kind": "year",
@@ -17369,6 +19362,19 @@
     "descriptionZh": "思想的容器"
   },
   {
+    "githubUrl": "https://github.com/omniauth/omniauth",
+    "trendshiftId": "4075",
+    "pageUrl": "https://trendshift.io/repositories/4075",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/omnimind-ai/OpenOmniBot",
     "trendshiftId": "26966",
     "pageUrl": "https://trendshift.io/repositories/26966",
@@ -17434,6 +19440,19 @@
     ],
     "descriptionRu": "Постквантовая распределенная приватная база данных",
     "descriptionZh": "后量子分布式私有数据库"
+  },
+  {
+    "githubUrl": "https://github.com/open-gsd/gsd-core",
+    "trendshiftId": "36545",
+    "pageUrl": "https://trendshift.io/repositories/36545",
+    "badges": [
+      {
+        "kind": "week",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/openai/codex",
@@ -17603,8 +19622,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 24,
-        "source": "ranking"
+        "currentRank": 20,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19374/daily",
+        "rank": 1
       },
       {
         "kind": "week",
@@ -17690,13 +19711,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 12,
-        "source": "ranking"
+        "currentRank": 6,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21917/daily",
+        "rank": 2
       },
       {
         "kind": "week",
-        "currentRank": 14,
-        "source": "ranking"
+        "currentRank": 15,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21917/weekly",
+        "rank": 12
       },
       {
         "kind": "month",
@@ -17739,6 +19764,34 @@
     ],
     "descriptionRu": "PDF-парсер для AI-готовых данных. Автоматизация доступности PDF. Открытый исходный код",
     "descriptionZh": "AI 就绪数据的 PDF 解析器。自动化 PDF 无障碍功能。开源"
+  },
+  {
+    "githubUrl": "https://github.com/openemr/openemr",
+    "trendshiftId": "673",
+    "pageUrl": "https://trendshift.io/repositories/673",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 4,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/673/daily",
+        "rank": 18
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
+    "githubUrl": "https://github.com/openfoodfacts/smooth-app",
+    "trendshiftId": "10194",
+    "pageUrl": "https://trendshift.io/repositories/10194",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 21,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/openrocket/openrocket",
@@ -17805,6 +19858,19 @@
     "descriptionZh": "开源分布式 RESTful 搜索引擎"
   },
   {
+    "githubUrl": "https://github.com/opentripplanner/OpenTripPlanner",
+    "trendshiftId": "12465",
+    "pageUrl": "https://trendshift.io/repositories/12465",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 13,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/opf/openproject",
     "trendshiftId": "851",
     "pageUrl": "https://trendshift.io/repositories/851",
@@ -17812,7 +19878,9 @@
       {
         "kind": "day",
         "currentRank": 10,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/851/daily",
+        "rank": 23
       },
       {
         "kind": "week",
@@ -17859,6 +19927,47 @@
     "descriptionZh": "OpenProject 是领先的开源项目管理软件"
   },
   {
+    "githubUrl": "https://github.com/opnsense/core",
+    "trendshiftId": "4166",
+    "pageUrl": "https://trendshift.io/repositories/4166",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 17,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
+    "githubUrl": "https://github.com/organicmaps/organicmaps",
+    "trendshiftId": "2327",
+    "pageUrl": "https://trendshift.io/repositories/2327",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/2327/daily",
+        "rank": 19
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
+    "githubUrl": "https://github.com/orgzly-revived/orgzly-android-revived",
+    "trendshiftId": "73046",
+    "pageUrl": "https://trendshift.io/repositories/73046",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 1,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/palemoky/chinese-poetry-api",
     "trendshiftId": "69501",
     "pageUrl": "https://trendshift.io/repositories/69501",
@@ -17896,13 +20005,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 11,
-        "source": "ranking"
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/41342/daily",
+        "rank": 2
       },
       {
         "kind": "week",
         "currentRank": 15,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/41342/weekly",
+        "rank": 7
       },
       {
         "kind": "month",
@@ -17980,6 +20093,19 @@
     "descriptionZh": "管理工作代理的开源应用"
   },
   {
+    "githubUrl": "https://github.com/pass-with-high-score/universal-installer",
+    "trendshiftId": "26614",
+    "pageUrl": "https://trendshift.io/repositories/26614",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/pbakaus/impeccable",
     "trendshiftId": "22581",
     "pageUrl": "https://trendshift.io/repositories/22581",
@@ -17987,12 +20113,16 @@
       {
         "kind": "day",
         "currentRank": 10,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22581/daily",
+        "rank": 6
       },
       {
         "kind": "week",
         "currentRank": 13,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22581/weekly",
+        "rank": 11
       },
       {
         "kind": "month",
@@ -18091,13 +20221,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 14,
-        "source": "ranking"
+        "currentRank": 20,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/43167/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 12,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/43167/weekly",
+        "rank": 1
       },
       {
         "kind": "month",
@@ -18119,6 +20253,32 @@
     "topics": [],
     "descriptionRu": "Самодостаточное рабочее пространство AI.",
     "descriptionZh": "自托管 AI 工作空间。"
+  },
+  {
+    "githubUrl": "https://github.com/phpipam/phpipam",
+    "trendshiftId": "6118",
+    "pageUrl": "https://trendshift.io/repositories/6118",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 16,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
+    "githubUrl": "https://github.com/phpstan/phpstan",
+    "trendshiftId": "361",
+    "pageUrl": "https://trendshift.io/repositories/361",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 5,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/pinchtab/pinchtab",
@@ -18303,6 +20463,21 @@
     ],
     "descriptionRu": "Видно как дышит ваша сеть",
     "descriptionZh": "让您的网络可视化"
+  },
+  {
+    "githubUrl": "https://github.com/projectdiscovery/nuclei",
+    "trendshiftId": "1938",
+    "pageUrl": "https://trendshift.io/repositories/1938",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 22,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1938/daily",
+        "rank": 16
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/ps5-linux/ps5-linux-loader",
@@ -18512,6 +20687,19 @@
     ],
     "descriptionRu": "Первая отечественная платформа автоматизации с несколькими агентами для ИТ-операций на корпоративном уровне — решение на основе больших языковых моделей.",
     "descriptionZh": "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案"
+  },
+  {
+    "githubUrl": "https://github.com/quantavil/edge-morphe-patches",
+    "trendshiftId": "55397",
+    "pageUrl": "https://trendshift.io/repositories/55397",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 13,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/rails/rails",
@@ -18729,10 +20917,30 @@
     "descriptionZh": "Qt 6 for Zig"
   },
   {
+    "githubUrl": "https://github.com/reactos/reactos",
+    "trendshiftId": "449",
+    "pageUrl": "https://trendshift.io/repositories/449",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/redis/redis",
     "trendshiftId": "305",
     "pageUrl": "https://trendshift.io/repositories/305",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/305/daily",
+        "rank": 17
+      },
       {
         "kind": "month",
         "currentRank": 25,
@@ -19432,10 +21640,30 @@
     "descriptionZh": "Ruby 编程语言"
   },
   {
+    "githubUrl": "https://github.com/rue-language/rue",
+    "trendshiftId": "57936",
+    "pageUrl": "https://trendshift.io/repositories/57936",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 3,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/rustdesk/rustdesk",
     "trendshiftId": "1317",
     "pageUrl": "https://trendshift.io/repositories/1317",
     "badges": [
+      {
+        "kind": "week",
+        "currentRank": 24,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1317/weekly",
+        "rank": 6
+      },
       {
         "kind": "month",
         "currentRank": 25,
@@ -19647,17 +21875,23 @@
       {
         "kind": "day",
         "currentRank": 15,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25195/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 5,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25195/weekly",
+        "rank": 3
       },
       {
         "kind": "month",
         "currentRank": 7,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25195/monthly",
+        "rank": 8
       },
       {
         "kind": "year",
@@ -19730,6 +21964,21 @@
     ],
     "descriptionRu": "Бесплатная метапоисковая система SearXNG, агрегирующая результаты из различных сервисов без отслеживания пользователей.",
     "descriptionZh": "SearXNG 是一个免费的互联网元搜索引擎，聚合各种搜索服务的结果，不跟踪也不分析用户。"
+  },
+  {
+    "githubUrl": "https://github.com/seaweedfs/seaweedfs",
+    "trendshiftId": "4936",
+    "pageUrl": "https://trendshift.io/repositories/4936",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/4936/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/sermuns/ratatuefi",
@@ -19886,6 +22135,19 @@
     ],
     "descriptionRu": "Создавайте потрясающие демо бесплатно: Open Source без подписей, водяных знаков, для коммерческого использования. Альтернатива Screen Studio.",
     "descriptionZh": "免费创建精美演示：开源、无订阅、无水印、可商用，Screen Studio 的替代方案。"
+  },
+  {
+    "githubUrl": "https://github.com/simonoppowa/OpenNutriTracker",
+    "trendshiftId": "12625",
+    "pageUrl": "https://trendshift.io/repositories/12625",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 24,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/sipeed/picoclaw",
@@ -20373,6 +22635,19 @@
     "descriptionZh": "Orca 是用于管理并行代理代理的 ADE。使用自己的订阅运行任何编码代理，支持桌面和移动端。"
   },
   {
+    "githubUrl": "https://github.com/stackryze/FreeDomains",
+    "trendshiftId": "44275",
+    "pageUrl": "https://trendshift.io/repositories/44275",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 16,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/steipete/CodexBar",
     "trendshiftId": "19295",
     "pageUrl": "https://trendshift.io/repositories/19295",
@@ -20380,7 +22655,9 @@
       {
         "kind": "day",
         "currentRank": 2,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19295/daily",
+        "rank": 11
       },
       {
         "kind": "week",
@@ -20446,8 +22723,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 21,
-        "source": "ranking"
+        "currentRank": 19,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21173/daily",
+        "rank": 18
       },
       {
         "kind": "week",
@@ -20637,6 +22916,19 @@
     "descriptionZh": "超快速、设备端多语言 TTS — 通过 ONNX 本地运行。"
   },
   {
+    "githubUrl": "https://github.com/sylearn/AIUsage",
+    "trendshiftId": "29490",
+    "pageUrl": "https://trendshift.io/repositories/29490",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 20,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/symfony/symfony",
     "trendshiftId": "35",
     "pageUrl": "https://trendshift.io/repositories/35",
@@ -20822,8 +23114,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 11,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/762/daily",
+        "rank": 19
       },
       {
         "kind": "week",
@@ -21029,6 +23323,19 @@
     "descriptionZh": "从 Kafka 中移除 Java 依赖。"
   },
   {
+    "githubUrl": "https://github.com/thunderbird/thunderbird-android",
+    "trendshiftId": "13345",
+    "pageUrl": "https://trendshift.io/repositories/13345",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 18,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/tiann/KernelSU",
     "trendshiftId": "982",
     "pageUrl": "https://trendshift.io/repositories/982",
@@ -21062,13 +23369,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 7,
-        "source": "ranking"
+        "currentRank": 8,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/8113/daily",
+        "rank": 3
       },
       {
         "kind": "week",
-        "currentRank": 8,
-        "source": "ranking"
+        "currentRank": 9,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/8113/weekly",
+        "rank": 11
       },
       {
         "kind": "month",
@@ -21126,6 +23437,19 @@
     "descriptionZh": "DeepSeek-V4 开源 TypeScript 终端编码代理 — 利用 DeepSeek 的强性价比和超低价缓存，工程化字节稳定前缀和缓存复用分叉，跨会话记忆和持续自我纠正层几乎无 token 成本；1M 上下文，Skills/MCP/Hooks，Claude Code 配置兼容。"
   },
   {
+    "githubUrl": "https://github.com/tikurahul/block-linked-list",
+    "trendshiftId": "73144",
+    "pageUrl": "https://trendshift.io/repositories/73144",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 2,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/timeframe/ha-addon",
     "trendshiftId": "25689",
     "pageUrl": "https://trendshift.io/repositories/25689",
@@ -21158,7 +23482,9 @@
       {
         "kind": "week",
         "currentRank": 19,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/26591/weekly",
+        "rank": 23
       }
     ],
     "updatedAt": "2026-07-05",
@@ -21300,6 +23626,11 @@
     "pageUrl": "https://trendshift.io/repositories/18843",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 9,
+        "source": "ranking"
+      },
+      {
         "kind": "year",
         "currentRank": 13,
         "source": "ranking"
@@ -21362,12 +23693,16 @@
       {
         "kind": "day",
         "currentRank": 4,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/571/daily",
+        "rank": 7
       },
       {
         "kind": "week",
         "currentRank": 4,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/571/weekly",
+        "rank": 17
       },
       {
         "kind": "month",
@@ -21415,6 +23750,19 @@
     ],
     "descriptionRu": "Основ асинхронного PHP в виде основного расширения, реализующего ABI TrueAsync",
     "descriptionZh": "异步 PHP 的核心，以核心扩展形式提供，实现 TrueAsync ABI"
+  },
+  {
+    "githubUrl": "https://github.com/tuist/tuist",
+    "trendshiftId": "10730",
+    "pageUrl": "https://trendshift.io/repositories/10730",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 25,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/tw93/Pake",
@@ -21472,8 +23820,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 14,
-        "source": "ranking"
+        "currentRank": 4,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1726/daily",
+        "rank": 11
       }
     ],
     "updatedAt": "2026-07-05",
@@ -21508,19 +23858,38 @@
     "descriptionZh": "Algolia + Pinecone 的开源替代品，比 ElasticSearch 更易用 — 快速、容错、内存中的模糊搜索引擎，用于构建出色的搜索体验"
   },
   {
+    "githubUrl": "https://github.com/typst/typst",
+    "trendshiftId": "122",
+    "pageUrl": "https://trendshift.io/repositories/122",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 1,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/122/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/ubicloud/ubicloud",
     "trendshiftId": "5086",
     "pageUrl": "https://trendshift.io/repositories/5086",
     "badges": [
       {
         "kind": "day",
-        "currentRank": 5,
-        "source": "ranking"
+        "currentRank": 14,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5086/daily",
+        "rank": 1
       },
       {
         "kind": "month",
         "currentRank": 25,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/5086/monthly",
+        "rank": 25
       }
     ],
     "updatedAt": "2026-07-05",
@@ -21645,7 +24014,9 @@
       {
         "kind": "week",
         "currentRank": 12,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15310/weekly",
+        "rank": 20
       },
       {
         "kind": "month",
@@ -21679,14 +24050,29 @@
     "descriptionZh": "基于 Laravel 的免费开源产品信息管理（PIM）系统，帮助企业从单一平台管理和丰富产品数据。可扩展至 1000 万+ 产品，现已演进出代理式 PIM 能力"
   },
   {
+    "githubUrl": "https://github.com/use-novamira/novamira",
+    "trendshiftId": "69528",
+    "pageUrl": "https://trendshift.io/repositories/69528",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 13,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/usememos/memos",
     "trendshiftId": "1854",
     "pageUrl": "https://trendshift.io/repositories/1854",
     "badges": [
       {
         "kind": "day",
-        "currentRank": 23,
-        "source": "ranking"
+        "currentRank": 13,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1854/daily",
+        "rank": 1
       },
       {
         "kind": "year",
@@ -21815,8 +24201,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 22,
-        "source": "ranking"
+        "currentRank": 5,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14497/daily",
+        "rank": 11
       },
       {
         "kind": "week",
@@ -21896,8 +24284,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 6,
-        "source": "ranking"
+        "currentRank": 9,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21215/daily",
+        "rank": 25
       },
       {
         "kind": "month",
@@ -22011,8 +24401,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 20,
-        "source": "ranking"
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/713/daily",
+        "rank": 4
       },
       {
         "kind": "week",
@@ -22148,6 +24540,13 @@
     "trendshiftId": "28473",
     "pageUrl": "https://trendshift.io/repositories/28473",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 11,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/28473/daily",
+        "rank": 1
+      },
       {
         "kind": "week",
         "currentRank": 15,
@@ -22288,8 +24687,10 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 9,
-        "source": "ranking"
+        "currentRank": 12,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/53716/daily",
+        "rank": 20
       },
       {
         "kind": "week",
@@ -22484,13 +24885,17 @@
     "badges": [
       {
         "kind": "day",
-        "currentRank": 4,
-        "source": "ranking"
+        "currentRank": 2,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15623/daily",
+        "rank": 1
       },
       {
         "kind": "week",
         "currentRank": 5,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15623/weekly",
+        "rank": 21
       },
       {
         "kind": "month",
@@ -22635,6 +25040,11 @@
     "pageUrl": "https://trendshift.io/repositories/37",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 7,
+        "source": "ranking"
+      },
+      {
         "kind": "week",
         "currentRank": 15,
         "source": "ranking"
@@ -22665,6 +25075,19 @@
     "descriptionZh": "基于 WordPress 的可定制开源电商平台。构建您可以想象的任何商业解决方案"
   },
   {
+    "githubUrl": "https://github.com/wxxsfxyzm/InstallerX-Revived",
+    "trendshiftId": "14412",
+    "pageUrl": "https://trendshift.io/repositories/14412",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 23,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/xai-org/x-algorithm",
     "trendshiftId": "18476",
     "pageUrl": "https://trendshift.io/repositories/18476",
@@ -22684,6 +25107,19 @@
     "topics": [],
     "descriptionRu": "Алгоритм, управляющий лентой For You в X",
     "descriptionZh": "X 平台 For You 信息流的算法"
+  },
+  {
+    "githubUrl": "https://github.com/xbow-engineering/validation-benchmarks",
+    "trendshiftId": "22893",
+    "pageUrl": "https://trendshift.io/repositories/22893",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 6,
+        "source": "ranking"
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/xiaojieonly/Ehviewer_CN_SXJ",
@@ -22737,6 +25173,11 @@
     "trendshiftId": "71384",
     "pageUrl": "https://trendshift.io/repositories/71384",
     "badges": [
+      {
+        "kind": "day",
+        "currentRank": 22,
+        "source": "ranking"
+      },
       {
         "kind": "month",
         "currentRank": 21,
@@ -22930,7 +25371,9 @@
       {
         "kind": "week",
         "currentRank": 2,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/10461/weekly",
+        "rank": 8
       },
       {
         "kind": "month",
@@ -22987,6 +25430,21 @@
     ],
     "descriptionRu": "Сборка Android TV TV-приложений со всего интернета — фильмы, прямые трансляции, караоке, инструменты, игры; качественные APK-ресурсы с удобной загрузкой и автообновлением.",
     "descriptionZh": "全网 Android TV 电视盒应用合集，涵盖影视、直播、K歌、工具、游戏；优质 APK 资源，支持便捷下载与自动更新。"
+  },
+  {
+    "githubUrl": "https://github.com/yt-dlp/yt-dlp",
+    "trendshiftId": "711",
+    "pageUrl": "https://trendshift.io/repositories/711",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 13,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/711/daily",
+        "rank": 2
+      }
+    ],
+    "updatedAt": "2026-07-05"
   },
   {
     "githubUrl": "https://github.com/yuaotian/antigravity-proxy",
@@ -23143,6 +25601,21 @@
     "descriptionZh": "写起来像高级语言，运行像 C。"
   },
   {
+    "githubUrl": "https://github.com/zhongerxin/cowart",
+    "trendshiftId": "60229",
+    "pageUrl": "https://trendshift.io/repositories/60229",
+    "badges": [
+      {
+        "kind": "day",
+        "currentRank": 12,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/60229/daily",
+        "rank": 5
+      }
+    ],
+    "updatedAt": "2026-07-05"
+  },
+  {
     "githubUrl": "https://github.com/ziglang/zig",
     "trendshiftId": "780",
     "pageUrl": "https://trendshift.io/repositories/780",
@@ -23245,9 +25718,18 @@
     "pageUrl": "https://trendshift.io/repositories/19123",
     "badges": [
       {
+        "kind": "day",
+        "currentRank": 18,
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19123/daily",
+        "rank": 3
+      },
+      {
         "kind": "week",
         "currentRank": 19,
-        "source": "ranking"
+        "source": "ranking",
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/19123/weekly",
+        "rank": 24
       },
       {
         "kind": "month",
