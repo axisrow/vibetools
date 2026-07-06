@@ -98,6 +98,11 @@
   .site-header {
     background: var(--vt-header-bg);
     backdrop-filter: saturate(160%) blur(12px);
+    /* backdrop-filter создаёт stacking context; без явного z-index заголовок
+       уходит под positioned-карточки списка, и дропдаун категорий (внутри
+       header) просвечивает сквозь них. Поднимаем весь header над main. */
+    position: relative;
+    z-index: 20;
   }
   .site-wrap {
     max-width: 1180px;
