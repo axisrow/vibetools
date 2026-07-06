@@ -1214,14 +1214,10 @@ function renderCats() {
   const listEl = $("category-options");
   listEl.innerHTML = "";
 
-  // Пункты — только реальные категории (без «all»): пустой selectedCats = все.
-  DATA.categories.forEach(c => {
-    const count = counts[c.key] || 0;
-    const label = catTitle(c.key);
-    const checked = selectedCats.has(c.key);
+  const mk = (key, label, count, checked) => {
     const li = document.createElement("li");
     li.className = "category-option" + (checked ? " active" : "");
-    li.dataset.key = c.key;
+    li.dataset.key = key;
     li.dataset.label = label.toLowerCase();
     li.setAttribute("role", "option");
     li.setAttribute("aria-selected", checked ? "true" : "false");
@@ -1230,14 +1226,18 @@ function renderCats() {
       `<span class="category-check" aria-hidden="true">✓</span>` +
       `<span class="category-option-label">${esc(label)}</span>` +
       `<span class="category-count">${count}</span>`;
-    li.addEventListener("click", () => toggleCat(c.key));
+    li.addEventListener("click", () => toggleCat(key));
     li.addEventListener("keydown", e => {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleCat(c.key); }
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleCat(key); }
     });
     listEl.appendChild(li);
-  });
+  };
 
-  // Счётчик на закрытой кнопке: скрыт когда пусто, «· N» при выборе.
+  // «All» первым: отмечен, когда ни одна конкретная категория не выбрана.
+  mk("all", t("all"), DATA.tools.length, selectedCats.size === 0);
+  DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0, selectedCats.has(c.key)));
+
+  // Счётчик на закрытой кнопке: скрыт при «all», «· N» при выборе категорий.
   const badge = $("category-count");
   if (selectedCats.size > 0) {
     badge.textContent = "· " + selectedCats.size;
@@ -1251,10 +1251,16 @@ function renderCats() {
   filterCategoryOptions($("category-search").value);
 }
 
-// Тоггл одной категории. Пустой Set после снятия последней = авто-возврат к «все».
+// Тоггл категории. «all» = радио-сброс (снять все → показать всё). Выбор любой
+// конкретной категории снимает «all» автоматически (пустой Set ⇔ «all»).
 function toggleCat(key) {
-  if (selectedCats.has(key)) selectedCats.delete(key);
-  else selectedCats.add(key);
+  if (key === "all") {
+    selectedCats.clear();
+  } else if (selectedCats.has(key)) {
+    selectedCats.delete(key);
+  } else {
+    selectedCats.add(key);
+  }
   currentPage = 1;
   renderCats();  // перерисовать галочки + счётчик кнопки
   render();      // лёгкий ре-рендер списка (applyI18n не нужен — язык не менялся)
