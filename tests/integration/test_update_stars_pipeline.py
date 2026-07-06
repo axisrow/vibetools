@@ -116,7 +116,7 @@ def test_update_stars_regenerates_with_meta_history_trendshift(tmp_repo):
     responses.add(responses.GET, LO_API, json={"stargazers_count": 5}, status=200)
     responses.add(responses.GET, EDITOR_API, json={"stargazers_count": 50}, status=200)
 
-    # history даёт положительную недельную дельту для HI → Featured(week).
+    # history даёт положительную недельную дельту для HI → starsPerWeek на сайте.
     today = datetime.date.today()
     tmp_repo["history_file"].write_text(json.dumps({
         HI_URL: {(today - datetime.timedelta(days=7)).isoformat(): 1000}}), encoding="utf-8")
@@ -133,21 +133,21 @@ def test_update_stars_regenerates_with_meta_history_trendshift(tmp_repo):
                      trendshift_repos_file=tmp_repo["trendshift_repos_file"])
     assert rc == 0
 
-    # README обогащён created_at из meta → HiStars свежий (2 дня) → [new].
+    # README регенерирован на tmp-данных (не реальных) — meta_file доходит до
+    # gen_main (контракт тест-изоляции). Секция Featured убрана из README.
     readme = (tmp_repo["root"] / "README.md").read_text(encoding="utf-8")
-    # is_new рендерится только блоком Featured в README, но не инлайн-меткой;
-    # Featured(week) присутствует благодаря проброшенному history_file.
-    assert "## Featured" in readme
+    assert "HiStars" in readme
     assert "caveman" not in readme  # sanity: данные из tmp, не реальные
+    assert "## Featured" not in readme  # Featured-секция удалена
 
-    # Сайт несёт Featured (history) и trendshift (trendshift_file). Payload
-    # теперь в docs/data.json (вынесен из inline window.__DATA__).
+    # Сайт: meta createdAt и trendshift доходят через инъектируемые пути.
+    # Payload теперь в docs/data.json (вынесен из inline window.__DATA__).
     payload = json.loads(
         (tmp_repo["root"] / "docs" / "data.json").read_text(encoding="utf-8"))
-    featured_urls = {e["url"] for e in payload["featured"]}
-    assert HI_URL in featured_urls  # history добрался до site
+    assert "featured" not in payload  # DATA.featured убран (блок → клиентский рандом)
     hi = next(t for t in payload["tools"] if t["name"] == "HiStars")
     assert hi["isNew"] is True  # meta createdAt добрался → isNew вычислен верно
+    assert hi["starsPerWeek"] == 100  # history добрался (1100 - 1000)
     assert hi["trendshift"]["badges"][0]["kind"] == "week"  # trendshift добрался
 
 

@@ -68,21 +68,26 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "filter-toggle" in html
     assert "featured-strip" in html
     assert "featured-list" in html
-    assert "featured-achievements" in html
-    assert "featured-achievement-day" in html
-    assert "featured-achievement-week" in html
+    # Featured-блок рендерит ОДИН случайный trendshift-репо клиентским JS через
+    # ту же карточку, что и список (renderToolCard). См. renderFeatured в шаблоне.
+    assert "renderToolCard" in html
+    assert "Math.random" in html
     assert "trendshift-achievements" in html
     assert "trendshift-achievement-day" in html
     assert "trendshift-achievement-week" in html
     assert "trendshiftDay" in html
     assert "trendshiftWeek" in html
-    assert "featuredDelta" in html
     assert "bi-sprite" in html
     assert "bi-star-fill" in html
     assert "bi-trophy-fill" in html
     assert "bi-award-fill" in html
     assert "bi-calendar-week-fill" in html
     assert "bi-git" in html
+    # Старые star-growth featured-хуки удалены — regression guards.
+    assert "featuredDelta" not in html
+    assert "featuredAchievementHtml" not in html
+    assert "DATA.featured" not in html
+    assert "featured-achievement-day" not in html
     assert "featured-overline" not in html
     assert "featuredBadges" not in html
     assert "state-badge-featured" not in html
@@ -221,7 +226,8 @@ def test_site_cjk_search(tmp_tools_yml, tmp_path):
 def test_build_data_json_structure(tmp_repo):
     """build_data_json возвращает ожидаемую структуру (без verified/added)."""
     data = build_data_json(tmp_repo["tools_yml"], tmp_repo["stars_file"])
-    assert set(data.keys()) >= {"generatedAt", "categories", "featured", "tools"}
+    assert set(data.keys()) >= {"generatedAt", "categories", "tools"}
+    assert "featured" not in data
     tool = data["tools"][0]
     # verified/added убраны; добавлены forks/createdAt/topics/rank/starsPerWeek.
     assert set(tool.keys()) >= {
@@ -229,35 +235,6 @@ def test_build_data_json_structure(tmp_repo):
         "stars", "starsPerWeek", "starsUrl", "forks", "openIssues",
         "createdAt", "archived", "topics", "rank", "desc", "search"}
     assert "verified" not in tool and "added" not in tool
-
-
-def test_build_data_json_featured_from_history(tmp_repo):
-    """Сайт получает тот же featured-сигнал, что README: day/week из истории звёзд."""
-    today = datetime.date.today()
-    history = {
-        "https://github.com/a/hi": {
-            (today - datetime.timedelta(days=1)).isoformat(): 900,
-            (today - datetime.timedelta(days=7)).isoformat(): 700,
-        },
-        "https://github.com/a/lo": {
-            (today - datetime.timedelta(days=1)).isoformat(): 9,
-            (today - datetime.timedelta(days=7)).isoformat(): 5,
-        },
-    }
-    tmp_repo["history_file"].write_text(json.dumps(history), encoding="utf-8")
-
-    data = build_data_json(
-        tmp_repo["tools_yml"],
-        tmp_repo["stars_file"],
-        history_file=tmp_repo["history_file"],
-    )
-
-    assert data["featured"] == [
-        {"kind": "day", "url": "https://github.com/a/hi",
-         "delta": 100, "days": 1, "windowComplete": True},
-        {"kind": "week", "url": "https://github.com/a/hi",
-         "delta": 300, "days": 7, "windowComplete": True},
-    ]
 
 
 def test_build_data_json_surfaces_trendshift_cache(tmp_repo):

@@ -6,7 +6,6 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Contents
 
-- [Featured](#featured)
 - [AI Coding Agents and CLI](#ai-coding-agents-and-cli)
 - [Cloud Coding Agents](#cloud-coding-agents)
 - [Editor Integrations](#editor-integrations)
@@ -27,11 +26,6 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [AI Infra and Model Platforms](#ai-infra-and-model-platforms)
 - [Domain-Specific Agents](#domain-specific-agents)
 - [Needs Review](#needs-review)
-
-## Featured
-
-Repo of the day: [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks#featured-day) — Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude De
-Repo of the week (3-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — Claude Code skill that cuts 65% of tokens by talking like a caveman
 
 ## AI Coding Agents and CLI
 

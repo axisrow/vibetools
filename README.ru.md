@@ -6,7 +6,6 @@
 
 ## Содержание
 
-- [Избранное](#избранное)
 - [AI-агенты кодинга и CLI](#ai-агенты-кодинга-и-cli)
 - [Облачные coding-агенты](#облачные-coding-агенты)
 - [Интеграции в редакторы](#интеграции-в-редакторы)
@@ -27,11 +26,6 @@
 - [AI-инфра и модельные платформы](#ai-инфра-и-модельные-платформы)
 - [Доменные AI-агенты](#доменные-ai-агенты)
 - [Требует ревью](#требует-ревью)
-
-## Избранное
-
-Репозиторий дня: [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks#featured-day) — Извлечённые системные промпты Anthropic: Claude Fable 5, Opus 4.8 и др.
-Репозиторий недели (рост за 3 дн.): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
 
 ## AI-агенты кодинга и CLI
 

@@ -382,64 +382,7 @@
     line-height: 1.35;
   }
   .featured-list {
-    display: grid;
-    gap: .35rem;
-  }
-  .featured-item {
-    align-items: start;
-    border-top: 1px solid var(--vt-border);
-    display: grid;
-    gap: .85rem;
-    grid-template-columns: minmax(0, 1fr) auto;
-    padding-top: .72rem;
-  }
-  .featured-tool {
-    color: var(--bs-body-color);
-    font-size: 1rem;
-    font-weight: 760;
-    line-height: 1.16;
-    overflow-wrap: anywhere;
-  }
-  .featured-tool:hover {
-    color: var(--vt-accent);
-  }
-  .featured-desc {
-    color: var(--vt-ink-soft);
-    font-size: .86rem;
-    line-height: 1.42;
-    margin-top: .28rem;
-  }
-  .featured-achievements {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .38rem;
-    line-height: 1;
-  }
-  .featured-achievement {
-    align-items: center;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    display: inline-flex;
-    font-size: .72rem;
-    font-weight: 760;
-    gap: .3rem;
-    letter-spacing: .01em;
-    padding: .25rem .42rem;
-    text-transform: uppercase;
-  }
-  .featured-achievement-day {
-    background: var(--vt-achievement-day-bg);
-    border-color: var(--vt-achievement-day-border);
-    color: var(--vt-achievement-day-text);
-  }
-  .featured-achievement-week {
-    background: var(--vt-achievement-week-bg);
-    border-color: var(--vt-achievement-week-border);
-    color: var(--vt-achievement-week-text);
-  }
-  .featured-achievement .vt-icon {
-    font-size: .9em;
+    margin-top: .35rem;
   }
   .trendshift-achievements {
     align-items: center;
@@ -496,17 +439,6 @@
   }
   .trendshift-achievement .vt-icon {
     font-size: .9em;
-  }
-  .featured-metrics {
-    align-items: center;
-    color: var(--vt-ink-soft);
-    display: flex;
-    flex-wrap: wrap;
-    font-size: .76rem;
-    gap: .1rem .45rem;
-    justify-content: flex-end;
-    line-height: 1.3;
-    white-space: nowrap;
   }
   .tool-list {
     border-top: 1px solid var(--vt-border);
@@ -815,14 +747,6 @@
     .featured-strip {
       padding-bottom: .85rem;
     }
-    .featured-item {
-      gap: .45rem;
-      grid-template-columns: 1fr;
-    }
-    .featured-metrics {
-      justify-content: flex-start;
-      white-space: normal;
-    }
     .tool-record {
       grid-template-columns: 1fr;
     }
@@ -968,7 +892,7 @@
         <h2 class="featured-title mb-1" id="featured-title" data-i18n="featuredTitle">Fastest movers</h2>
         <p class="featured-note mb-0" data-i18n="featuredNote">Repos with the strongest recent star growth.</p>
       </div>
-      <div class="featured-list" id="featured-list"></div>
+      <ul class="list-group list-group-flush tool-list featured-list mb-0" id="featured-list"></ul>
     </div>
   </section>
   <div class="results-line d-flex flex-wrap align-items-center justify-content-between gap-2 pb-2">
@@ -1011,18 +935,14 @@ const I18N = {
     allLanguages: "All languages",
     allYears: "All years",
     yearFilter: "Year",
-    featuredKicker: "Featured",
-    featuredTitle: "Fastest movers",
-    featuredNote: "Repos with the strongest recent star growth from the daily cache.",
-    featuredDay: "Repo of the day",
-    featuredWeek: "Repo of the week",
+    featuredKicker: "Trending",
+    featuredTitle: "Trending on Trendshift",
+    featuredNote: "A random repo from the trendshift.io ranking — reload for another.",
     trendshiftPrefix: "Trendshift",
     trendshiftDay: "Day",
     trendshiftWeek: "Week",
     trendshiftMonth: "Month",
     trendshiftYear: "Year",
-    dayGrowth: "day",
-    weekGrowth: "week",
     generated: date => `Updated ${date}`,
     filterCategory: label => `Category: ${label}`,
     filterYear: year => `Year: ${year}`,
@@ -1052,18 +972,14 @@ const I18N = {
     allLanguages: "Все языки",
     allYears: "Все годы",
     yearFilter: "Год",
-    featuredKicker: "Избранное",
-    featuredTitle: "Самый быстрый рост",
-    featuredNote: "Репозитории с самым сильным свежим ростом звёзд по daily cache.",
-    featuredDay: "Репозиторий дня",
-    featuredWeek: "Репозиторий недели",
+    featuredKicker: "В тренде",
+    featuredTitle: "В тренде на Trendshift",
+    featuredNote: "Случайный репозиторий из рейтинга trendshift.io — обновите для другого.",
     trendshiftPrefix: "Trendshift",
     trendshiftDay: "день",
     trendshiftWeek: "неделя",
     trendshiftMonth: "месяц",
     trendshiftYear: "год",
-    dayGrowth: "день",
-    weekGrowth: "неделя",
     generated: date => `Обновлено ${date}`,
     filterCategory: label => `Категория: ${label}`,
     filterYear: year => `Год: ${year}`,
@@ -1093,18 +1009,14 @@ const I18N = {
     allLanguages: "所有语言",
     allYears: "所有年份",
     yearFilter: "年份",
-    featuredKicker: "精选",
-    featuredTitle: "增长最快",
-    featuredNote: "来自每日缓存的近期星标增长最高的仓库。",
-    featuredDay: "今日仓库",
-    featuredWeek: "本周仓库",
+    featuredKicker: "热门",
+    featuredTitle: "Trendshift 热门",
+    featuredNote: "来自 trendshift.io 榜单的随机仓库 — 刷新换一个。",
     trendshiftPrefix: "Trendshift",
     trendshiftDay: "日榜",
     trendshiftWeek: "周榜",
     trendshiftMonth: "月榜",
     trendshiftYear: "年榜",
-    dayGrowth: "日",
-    weekGrowth: "周",
     generated: date => `更新 ${date}`,
     filterCategory: label => `分类：${label}`,
     filterYear: year => `年份：${year}`,
@@ -1127,10 +1039,9 @@ const I18N = {
 // перезаписать → "TypeError: bootstrap is not a function" на fetch-resolve.
 function bootstrapApp(DATA) {
 const CATS = Object.fromEntries(DATA.categories.map(c => [c.key, c]));
-const TOOLS_BY_URL = new Map(DATA.tools.map(tool => [tool.url, tool]));
 // Precompute производных от статичных DATA.tools ОДИН раз при загрузке —
 // filtered() ходит по всем тулзам на каждом keystroke/toggle, пересчитывать
-// их каждый render — лишняя работа. Образец — TOOLS_BY_URL выше.
+// их каждый render — лишняя работа. Образец — CATS выше.
 // TREND_KINDS объявлен ПЕРВЫМ: на него ссылается TRENDSHIFT_URLS ниже
 // (eager-вычисление), а const в TDZ до своей декларации → ссылка выше
 // объявления бросила бы ReferenceError и убила весь скрипт при загрузке.
@@ -1144,6 +1055,14 @@ const YEARS = Array.from(new Set(TOOL_YEAR.values().filter(Boolean))).sort((a, b
 const TRENDSHIFT_URLS = new Set(DATA.tools
   .filter(tool => ((tool.trendshift && tool.trendshift.badges) || []).some(badge => badge && TREND_KINDS.includes(badge.kind)))
   .map(tool => tool.url));
+// Featured-блок: один случайный trendshift-репо, выбранный ОДИН раз при загрузке
+// страницы. Фиксируется на весь сеанс (не прыгает при смене языка/фильтра, т.к.
+// applyI18n→renderFeatured вызывается многократно); меняется только при перезагрузке.
+// Пул — тот же критерий, что у фильтра каталога (toolHasTrendshift), единый источник.
+const _trendshiftPool = DATA.tools.filter(toolHasTrendshift);
+const featuredTool = _trendshiftPool.length
+  ? _trendshiftPool[Math.floor(Math.random() * _trendshiftPool.length)]
+  : null;
 const LANGUAGES = {
   en: { label: "English", short: "EN" },
   ru: { label: "Русский", short: "RU" },
@@ -1296,20 +1215,6 @@ function starHtml(tool, className = "stars") {
   return tool.starsUrl ? `<span class="${className}"><img src="${tool.starsUrl}" alt="stars"></span>` : "";
 }
 
-function featuredLabel(kind) {
-  if (kind === "day") return t("featuredDay");
-  if (kind === "week") return t("featuredWeek");
-  return kind;
-}
-
-function featuredIcon(kind) {
-  return kind === "week" ? "calendar-week-fill" : "trophy-fill";
-}
-
-function featuredAchievementHtml(entry) {
-  return `<span class="featured-achievement featured-achievement-${esc(entry.kind)}">${icon(featuredIcon(entry.kind))}${esc(featuredLabel(entry.kind))}</span>`;
-}
-
 function trendshiftPeriod(kind) {
   if (kind === "day") return t("trendshiftDay");
   if (kind === "week") return t("trendshiftWeek");
@@ -1346,54 +1251,27 @@ function trendshiftAchievementsHtml(tool) {
   return badges ? `<span class="trendshift-achievements">${badges}</span>` : "";
 }
 
-function featuredWindow(entry) {
-  if (!entry.days) return entry.kind === "week" ? "7d" : "1d";
-  return `${entry.days}d`;
-}
+// Классы <li> строки-каталога — единый источник для списка (render) и
+// Featured-блока (renderFeatured), чтобы chrome карточки жил в одном месте.
+const TOOL_LI_CLASS = "list-group-item tool-item py-4";
 
-function featuredDelta(entry) {
-  if (entry.delta == null) return "";
-  const label = entry.kind === "week" ? t("weekGrowth") : t("dayGrowth");
-  return mobileMetric(label, `+${fmtStars(entry.delta)} / ${featuredWindow(entry)}`);
+function toolListItemHtml(tool) {
+  return `<li class="${TOOL_LI_CLASS}">${renderToolCard(tool)}</li>`;
 }
 
 function renderFeatured() {
   const root = $("featured");
   const target = $("featured-list");
-  const grouped = new Map();
-  (DATA.featured || []).forEach(entry => {
-    const tool = TOOLS_BY_URL.get(entry.url);
-    if (!tool || !entry.kind) return;
-    if (!grouped.has(entry.url)) grouped.set(entry.url, { tool, entries: [] });
-    grouped.get(entry.url).entries.push(entry);
-  });
-  const items = Array.from(grouped.values());
-  if (!items.length) {
+  if (!featuredTool) {
     root.classList.add("d-none");
     target.innerHTML = "";
     return;
   }
   root.classList.remove("d-none");
-  target.innerHTML = items.map(item => {
-    const tool = item.tool;
-    const desc = tool.desc[lang] || tool.desc.en;
-    const achievements = item.entries.map(featuredAchievementHtml).join("");
-    const metrics = [
-      starHtml(tool, "mobile-star"),
-      mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
-      mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
-      ...item.entries.map(featuredDelta),
-    ].join("");
-    return `
-      <div class="featured-item">
-        <div class="min-w-0">
-          <div class="featured-achievements mb-2">${achievements}</div>
-          <a class="featured-tool text-decoration-none" href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a>
-          <div class="featured-desc">${esc(desc)}</div>
-        </div>
-        <div class="featured-metrics">${metrics}</div>
-      </div>`;
-  }).join("");
+  // #featured-list — тот же <ul class="tool-list">, что и #list (задан в шаблоне),
+  // заполняем одним <li> через общий toolListItemHtml → вёрстка/бордеры/мобильная
+  // раскладка идентичны строкам каталога.
+  target.innerHTML = toolListItemHtml(featuredTool);
 }
 
 function filtered() {
@@ -1427,6 +1305,52 @@ function mobileMetric(label, value, iconName = "", kind = "") {
   return `<span class="mobile-metric${kind ? ` mobile-metric-${esc(kind)}` : ""}">${iconName ? icon(iconName) : ""}${esc(label)} <strong>${esc(value)}</strong></span>`;
 }
 
+function renderToolCard(tool) {
+  const desc = tool.desc[lang] || tool.desc.en;
+  const starsHtml = starHtml(tool);
+  const mobileStarsHtml = starHtml(tool, "mobile-star");
+  const stateTags = [];
+  if (tool.isNew) stateTags.push(`<span class="state-badge state-badge-new">${t("new")}</span>`);
+  if (tool.archived) stateTags.push(`<span class="state-badge state-badge-archived">${t("archived")}</span>`);
+  const trendshiftHtml = trendshiftAchievementsHtml(tool);
+  const topicTags = Array.isArray(tool.topics) ? tool.topics.slice(0, 3) : [];
+  const submetaParts = [
+    esc(catTitle(tool.category)),
+    ...(tool.language ? [esc(tool.language)] : []),
+    ...topicTags.map(topic => esc(topic)),
+  ];
+  const submeta = submetaParts
+    .map(part => `<span>${part}</span>`)
+    .join('<span class="submeta-separator"> / </span>');
+  const metrics = [
+    metric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
+    metric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
+    metric(t("growth"), tool.starsPerWeek != null ? `+${tool.starsPerWeek}/w` : ""),
+    metric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
+  ].join("");
+  const mobileMetrics = [
+    mobileStarsHtml,
+    mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
+    mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
+    mobileMetric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
+  ].join("");
+
+  return `
+      <div class="tool-record">
+        <div class="tool-body min-w-0">
+          <div class="tool-heading d-flex align-items-center flex-wrap gap-2 mb-2">
+            <a class="tool-name text-decoration-none" href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a>
+            ${stateTags.join("")}
+            ${trendshiftHtml}
+          </div>
+          <p class="tool-desc mb-2">${esc(desc)}</p>
+          <div class="tool-submeta mb-0">${submeta}</div>
+          <div class="mobile-metrics">${mobileMetrics}</div>
+        </div>
+        <div class="metric-panel">${starsHtml}<div class="metric-list">${metrics}</div></div>
+      </div>`;
+}
+
 function render() {
   const list = filtered();
   $("meta").textContent = t("results")(list.length);
@@ -1448,50 +1372,8 @@ function render() {
   const frag = document.createDocumentFragment();
   pageItems.forEach(tool => {
     const li = document.createElement("li");
-    li.className = "list-group-item tool-item py-4";
-    const desc = tool.desc[lang] || tool.desc.en;
-    const starsHtml = starHtml(tool);
-    const mobileStarsHtml = starHtml(tool, "mobile-star");
-    const stateTags = [];
-    if (tool.isNew) stateTags.push(`<span class="state-badge state-badge-new">${t("new")}</span>`);
-    if (tool.archived) stateTags.push(`<span class="state-badge state-badge-archived">${t("archived")}</span>`);
-    const trendshiftHtml = trendshiftAchievementsHtml(tool);
-    const topicTags = Array.isArray(tool.topics) ? tool.topics.slice(0, 3) : [];
-    const submetaParts = [
-      esc(catTitle(tool.category)),
-      ...(tool.language ? [esc(tool.language)] : []),
-      ...topicTags.map(topic => esc(topic)),
-    ];
-    const submeta = submetaParts
-      .map(part => `<span>${part}</span>`)
-      .join('<span class="submeta-separator"> / </span>');
-    const metrics = [
-      metric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
-      metric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
-      metric(t("growth"), tool.starsPerWeek != null ? `+${tool.starsPerWeek}/w` : ""),
-      metric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
-    ].join("");
-    const mobileMetrics = [
-      mobileStarsHtml,
-      mobileMetric(t("rank"), tool.rank != null ? `#${tool.rank}` : "", "award-fill", "rank"),
-      mobileMetric(t("forks"), tool.forks != null ? fmtStars(tool.forks) : "", "git", "forks"),
-      mobileMetric(t("year"), tool.createdAt ? tool.createdAt.slice(0, 4) : ""),
-    ].join("");
-
-    li.innerHTML = `
-      <div class="tool-record">
-        <div class="tool-body min-w-0">
-          <div class="tool-heading d-flex align-items-center flex-wrap gap-2 mb-2">
-            <a class="tool-name text-decoration-none" href="${tool.url}" target="_blank" rel="noopener">${esc(tool.name)}</a>
-            ${stateTags.join("")}
-            ${trendshiftHtml}
-          </div>
-          <p class="tool-desc mb-2">${esc(desc)}</p>
-          <div class="tool-submeta mb-0">${submeta}</div>
-          <div class="mobile-metrics">${mobileMetrics}</div>
-        </div>
-        <div class="metric-panel">${starsHtml}<div class="metric-list">${metrics}</div></div>
-      </div>`;
+    li.className = TOOL_LI_CLASS;
+    li.innerHTML = renderToolCard(tool);
     frag.appendChild(li);
   });
   ul.innerHTML = "";
