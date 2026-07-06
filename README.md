@@ -30,8 +30,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Featured
 
-Repo of the day: [caveman](https://github.com/JuliusBrussee/caveman#featured-day) — Claude Code skill that cuts 65% of tokens by talking like a caveman
-Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — Claude Code skill that cuts 65% of tokens by talking like a caveman
+Repo of the day: [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks#featured-day) — Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude De
+Repo of the week (3-day growth): [caveman](https://github.com/JuliusBrussee/caveman#featured-week) — Claude Code skill that cuts 65% of tokens by talking like a caveman
 
 ## AI Coding Agents and CLI
 
@@ -235,13 +235,13 @@ Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/cave
 - [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - From vibe coding to agentic engineering - practice makes Claude perfect.
 - [taste-skill](https://github.com/Leonxlnx/taste-skill) ![](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat&color=yellow) - Taste-Skill - gives your AI good taste.
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) ![](https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks?style=flat&color=yellow) - Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude De.
-- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI productivity studio with smart chat, autonomous agents, and 300+ assistants.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications.
+- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI productivity studio with smart chat, autonomous agents, and 300+ assistants.
 - [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Installable GitHub library of 1,800+ agentic skills for Claude Code, Cursor, Codex CLI, Ge.
+- [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Marketing skills for Claude Code and AI agents.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Academic Research Skills for Claude Code: research → write → review → revise → finalize.
 - [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Community-contributed instructions, agents, skills, and configurations to help you make th.
-- [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Marketing skills for Claude Code and AI agents.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - An AI prompt optimizer for writing better prompts and getting better AI results.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Turn any AI agent into an AI Scientist.
 - [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) ![](https://img.shields.io/github/stars/VoltAgent/awesome-agent-skills?style=flat&color=yellow) - A curated collection of 1000+ agent skills from official dev teams and the community, comp.
@@ -346,8 +346,8 @@ Repo of the week (2-day growth): [caveman](https://github.com/JuliusBrussee/cave
 
 ## Docs, Research and Knowledge Work
 
-- [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Practical UI for GPT/GLM LLMs - optimized for paper reading, polishing and writing.
 - [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) ![](https://img.shields.io/github/stars/Egonex-AI/Understand-Anything?style=flat&color=yellow) - Graphs that teach > graphs that impress.
+- [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Practical UI for GPT/GLM LLMs - optimized for paper reading, polishing and writing.
 - [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ![](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&color=yellow) - Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1.
 - [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion and trend monitor with multi-platform aggregation and alerts.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - Spec-driven development (SDD) for AI coding assistants.
