@@ -48,6 +48,16 @@ def test_main_toc_anchors_resolve_to_sections(tmp_repo):
     assert not unresolved, f"TOC-якоря без секции: {unresolved}"
 
 
+def test_main_no_featured_section(tmp_repo):
+    """Секция Featured/Избранное убрана из обоих README (регрессия)."""
+    main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])
+    en = (tmp_repo["root"] / "README.md").read_text(encoding="utf-8")
+    ru = (tmp_repo["root"] / "README.ru.md").read_text(encoding="utf-8")
+    assert "## Featured" not in en
+    assert "## Избранное" not in ru
+    assert "#featured" not in en and "#featured" not in ru
+
+
 def test_main_sorting_reflected_in_output(tmp_repo):
     """Внутри cli-agents HiStars (1000) идёт раньше LoStars (10)."""
     main(tmp_repo["tools_yml"], tmp_repo["stars_file"], out_dir=tmp_repo["root"])

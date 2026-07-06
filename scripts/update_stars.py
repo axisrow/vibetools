@@ -411,13 +411,14 @@ def main(
           f"pruned={len(ts_pruned_urls)}, budget_remaining={budget.get('remaining')}")
 
     # Перегенерируем README — прямой вызов (быстрее и тестируемее subprocess).
-    # out_dir пробрасывается, чтобы при вызове из тестов README писался в tmp.
-    # Все инъектируемые пути пробрасываем дальше (контракт тест-изоляции):
-    # иначе README/site регенерируются из реальных data/*.json, а сайт теряет
-    # Featured (нужен history_file), [new] (нужен meta_file) и trendshift-бейджи.
+    # Инъектируемые пути пробрасываем по ключу (контракт тест-изоляции): иначе
+    # README регенерируется из реальных data/*.json — [new]-метки берутся из
+    # дефолтной meta вместо переданной (mock-leak, см. CLAUDE.md). README больше
+    # не использует history_file (секция Featured убрана) — сайт получает history
+    # отдельно ниже через site_main.
     if regenerate:
         from generate_readme import main as gen_main
-        gen_main(tools_yml, stars_file, out_dir, history_file, meta_file=meta_file)
+        gen_main(tools_yml, stars_file, out_dir=out_dir, meta_file=meta_file)
         # Статический сайт (docs/index.html) — тоже из обновлённых данных.
         # trendshift_repos_file пробрасывается, чтобы сайт подмешивал обнаруженные
         # репо (stage 4); в тестах указывает в tmp (test-isolation).

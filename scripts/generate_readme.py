@@ -32,7 +32,7 @@ from common import github_slug, load_json_or_default  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS_YML = ROOT / "data" / "tools.yml"
 STARS_FILE = ROOT / "data" / "stars.json"  # кэш звёзд от update-stars.py (опционален)
-HISTORY_FILE = ROOT / "data" / "stars-history.json"  # срезы 1d/7d для дельт
+HISTORY_FILE = ROOT / "data" / "stars-history.json"  # dated-срезы звёзд (starsPerWeek в generate_site)
 META_FILE = ROOT / "data" / "repos-meta.json"  # метаданные (createdAt и т.п.) от update-stars
 
 # Порядок и подписи категорий. Каждый ключ должен совпадать со значениями
@@ -207,21 +207,6 @@ SHIELDS_STARS = "https://img.shields.io/github/stars/{owner}/{repo}?style=flat&c
 
 NEW_DAYS = 14  # [new] если добавлено ≤ N дней назад (поле added)
 
-# Окна выбора «репо дня/недели» (ключ → дней назад). Единый контракт:
-# update_stars.HISTORY_DAYS должен покрывать max(FEATURED_WINDOWS.values())+1.
-FEATURED_WINDOWS = {"day": 1, "week": 7}
-
-# Название секции Featured по языку — единый источник, чтобы заголовок секции
-# (## Featured) и пункт оглавления (#featured) всегда совпадали (иначе
-# remark-lint:awesome-toc ловит рассинхрон). Текст без «## » — префикс добавляет
-# вызывающая сторона (заголовок) либо использует как есть (текст ссылки/якорь).
-FEATURED_TITLES = {"en": "Featured", "ru": "Избранное"}
-
-
-def featured_heading(lang: str, prefix: str = "") -> str:
-    """Заголовок секции Featured: «## Featured» / «Избранное» и т. п."""
-    return f"{prefix}{FEATURED_TITLES[lang]}"
-
 
 def load_tools(tools_yml: Path = TOOLS_YML) -> list[dict]:
     """Загружает и валидирует утилиты из YAML."""
@@ -249,19 +234,12 @@ def load_history(history_file: Path = HISTORY_FILE) -> dict[str, dict]:
     return load_json_or_default(history_file, {}) or {}
 
 
-def _delta(cur, history: dict, days_ago: int) -> int | None:
-    """Дельта cur vs точного среза за days_ago дней назад."""
-    delta = _window_delta(cur, history, "day" if days_ago == 1 else "week",
-                          days_ago)
-    return delta["delta"] if delta else None
-
-
 def _window_delta(cur: int, history: dict, kind: str, days_ago: int,
                   today=None) -> dict | None:
-    """Дельта для featured-окна.
+    """Дельта звёзд за окно (используется generate_site для starsPerWeek).
 
     day требует точный вчерашний срез. week использует самый старый доступный
-    срез в пределах 7 дней, чтобы ранние daily cache не скрывали неделю.
+    срез в пределах days_ago, чтобы пропущенный daily-срез не обнулял неделю.
     """
     today = today or datetime.date.today()
     target = today - datetime.timedelta(days=days_ago)
@@ -289,101 +267,6 @@ def _window_delta(cur: int, history: dict, kind: str, days_ago: int,
     days = (today - snap_date).days
     return {"delta": cur - snap, "days": days,
             "windowComplete": days == days_ago}
-
-
-def pick_featured_entries(tools: list[dict], stars: dict[str, int],
-                          history: dict[str, dict]) -> list[dict]:
-    """Выбирает featured entries с метаданными окна и дельты.
-
-    Возвращает список в порядке FEATURED_WINDOWS:
-    {"kind": "day"|"week", "url": str, "delta": int, "days": int,
-     "windowComplete": bool}.
-    """
-    entries: list[dict] = []
-    for kind, days_ago in FEATURED_WINDOWS.items():
-        best = None
-        for t in tools:
-            cur = stars.get(t["url"])
-            if cur is None:
-                continue
-            delta = _window_delta(cur, history.get(t["url"], {}), kind,
-                                  days_ago)
-            if not delta or delta["delta"] <= 0:
-                continue
-            if best is None or delta["delta"] > best["delta"]:
-                best = {"kind": kind, "url": t["url"], **delta}
-        if best:
-            entries.append(best)
-    return entries
-
-
-def pick_featured(tools: list[dict], stars: dict[str, int],
-                  history: dict[str, dict]) -> dict[str, set[str]]:
-    """Выбирает репо дня и недели.
-
-    history: {url: {"YYYY-MM-DD": stars}}. Возвращает {url: {"day"} | {"week"}}.
-    Если истории нет или все дельты ≤ 0 — пустой dict (блок не рендерится).
-    """
-    featured: dict[str, set[str]] = {}
-    for entry in pick_featured_entries(tools, stars, history):
-        featured.setdefault(entry["url"], set()).add(entry["kind"])
-    return featured
-
-
-def _featured_entries(featured) -> list[dict]:
-    """Нормализует новый entries-формат и legacy url->marks dict."""
-    if isinstance(featured, list):
-        return featured
-    entries = []
-    for kind in FEATURED_WINDOWS:
-        url = next((u for u, marks in featured.items() if kind in marks), None)
-        if url:
-            entries.append({"kind": kind, "url": url})
-    return entries
-
-
-def _featured_label(lang: str, entry: dict) -> str:
-    labels = {
-        ("en", "day"): "Repo of the day",
-        ("en", "week"): "Repo of the week",
-        ("ru", "day"): "Репозиторий дня",
-        ("ru", "week"): "Репозиторий недели",
-    }
-    label = labels[(lang, entry["kind"])]
-    if entry.get("kind") == "week" and entry.get("days") and not entry.get("windowComplete", True):
-        days = entry["days"]
-        if lang == "en":
-            return f"{label} ({days}-day growth)"
-        return f"{label} (рост за {days} дн.)"
-    return label
-
-
-def render_featured(featured, tools_by_url: dict[str, dict], lang: str) -> str:
-    """Рендерит блок «Repo of the day / Repo of the week» вверху README.
-
-    Пустая строка, если нет ни дня, ни недели. Идёт по FEATURED_WINDOWS,
-    чтобы порядок и состав меток были единым источником.
-    """
-    entries = _featured_entries(featured)
-    if not entries:
-        return ""
-    lines = []
-    for entry in entries:
-        url = entry["url"]
-        t = tools_by_url.get(url)
-        if not t:
-            continue
-        # Anchor #featured-{kind} отличает ссылку от её вхождения в категории:
-        # тот же репо легитимно показан несколько раз (блок Featured + своя
-        # категория, а внутри Featured — отдельно repo-of-day и repo-of-week).
-        # Без различия remark-lint:double-link считает дубликатом. Привязка anchor
-        # к типу (day/week) делает уникальными даже два featured-вхождения одного
-        # репо; stripHash:false правила → URL'ы с разным hash формально различны.
-        featured_url = f"{url}#featured-{entry['kind']}"
-        lines.append(f"{_featured_label(lang, entry)}: [{t['name']}]({featured_url}) — {t['description'][lang]}")
-    if not lines:
-        return ""
-    return featured_heading(lang, "## ") + "\n\n" + "\n".join(lines) + "\n\n"
 
 
 def _is_emoji(c: str) -> bool:
@@ -476,14 +359,12 @@ def group_by_category(tools: list[dict], stars: dict[str, int]) -> dict[str, lis
     return groups
 
 
-def render_section(groups, lang, stars=None, featured=None):
+def render_section(groups, lang, stars=None):
     """Рендерит тело списка по категориям.
 
     stars — dict url→int (для порогов звёзд).
-    featured — dict url→set[day|week] (отметки репо дня/недели).
     """
     stars = stars or {}
-    featured = featured or {}
     title_key = f"title_{lang}"
     lines = []
     for cat_key, meta in CATEGORIES:
@@ -493,9 +374,7 @@ def render_section(groups, lang, stars=None, featured=None):
         lines.append(f"## {meta[title_key]}\n")
         for tool in items:
             url = tool["url"]
-            marks = set(featured.get(url, ()))
-            if is_new(tool):
-                marks.add("new")
+            marks = {"new"} if is_new(tool) else set()
             lines.append(render_line(tool, lang, stars.get(url, 0), marks))
         lines.append("")  # пустая строка между категориями
     return "\n".join(lines).rstrip() + "\n"
@@ -550,16 +429,9 @@ def gh_anchor(text: str) -> str:
     return re.sub(r"-+", "-", collapsed)
 
 
-def build_toc(groups, lang, with_featured: bool = False) -> str:
+def build_toc(groups, lang) -> str:
     title_key = f"title_{lang}"
     items = []
-    # Секция Featured идёт между Contents и категориями — ToC обязан её
-    # перечислять, иначе remark-lint:awesome-toc ругается на первый пункт
-    # (ожидает Featured, видит AI Coding Agents). Пункт добавляем только когда
-    # featured-блок реально рендерится (есть day/week), иначе якорь будет битым.
-    if with_featured:
-        title = FEATURED_TITLES[lang]
-        items.append(f"- [{title}](#{gh_anchor(title)})")
     for cat_key, meta in CATEGORIES:
         if not groups.get(cat_key):
             continue
@@ -572,12 +444,10 @@ def main(
     tools_yml: Path = TOOLS_YML,
     stars_file: Path = STARS_FILE,
     out_dir: Path = ROOT,
-    history_file: Path = HISTORY_FILE,
     meta_file: Path = META_FILE,
 ) -> None:
     tools = load_tools(tools_yml)
     stars = load_stars(stars_file)
-    history = load_history(history_file)
     meta = load_json_or_default(meta_file, {}) or {}
     # Обогащаем tool-dict созданием created_at из repos-meta (для is_new).
     for t in tools:
@@ -585,22 +455,17 @@ def main(
         if isinstance(m, dict) and m.get("createdAt"):
             t["created_at"] = m["createdAt"]
     groups = group_by_category(tools, stars)
-    featured_entries = pick_featured_entries(tools, stars, history)
-    featured = pick_featured(tools, stars, history)
-    tools_by_url = {t["url"]: t for t in tools}
 
     for lang, header, footer, out_name in (
         ("en", HEADER_EN, FOOTER_EN, "README.md"),
         ("ru", HEADER_RU, FOOTER_RU, "README.ru.md"),
     ):
-        featured_block = render_featured(featured_entries, tools_by_url, lang)
-        toc = build_toc(groups, lang, with_featured=bool(featured_block))
-        body = render_section(groups, lang, stars, featured)
-        content = header.format(toc=toc) + featured_block + body + footer
+        toc = build_toc(groups, lang)
+        body = render_section(groups, lang, stars)
+        content = header.format(toc=toc) + body + footer
         out_path = out_dir / out_name
         out_path.write_text(content, encoding="utf-8")
-        print(f"✓ {out_name}: {len(tools)} утилит, {len([c for c in CATEGORIES if groups[c[0]]])} категорий"
-              + (f", featured: {[e['kind'] for e in featured_entries]}" if featured_entries else ", featured: none"))
+        print(f"✓ {out_name}: {len(tools)} утилит, {len([c for c in CATEGORIES if groups[c[0]]])} категорий")
 
 
 if __name__ == "__main__":
