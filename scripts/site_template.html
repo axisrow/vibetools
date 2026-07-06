@@ -1266,11 +1266,13 @@ function toggleCat(key) {
   render();      // лёгкий ре-рендер списка (applyI18n не нужен — язык не менялся)
 }
 
-// Client-side фильтр пунктов дропдауна по подстроке названия.
+// Client-side фильтр пунктов дропдауна по подстроке названия. Пункт «all» —
+// не категория, а сброс: держим его всегда видимым, чтобы поиск не прятал
+// единственную кнопку возврата к «показать всё».
 function filterCategoryOptions(term) {
   const q = (term || "").trim().toLowerCase();
   $("category-options").querySelectorAll(".category-option").forEach(li => {
-    li.hidden = q !== "" && !li.dataset.label.includes(q);
+    li.hidden = q !== "" && li.dataset.key !== "all" && !li.dataset.label.includes(q);
   });
 }
 
