@@ -751,20 +751,20 @@
       max-width: none;
       width: 100%;
     }
+    /* Ровная сетка 2×N: контролы парами, Категории — на всю ширину.
+       Звёзды|50, Годы|Языки, Новые|Trendshift, Категории (full). */
     .filter-rail {
       display: grid !important;
       flex: 1 1 100%;
       gap: .42rem !important;
-      grid-template-columns: minmax(0, 1fr) auto auto;
+      grid-template-columns: 1fr 1fr;
       width: 100%;
     }
-    .toolbar-select {
+    .toolbar-select,
+    .year-select {
       flex: 1 1 auto;
       min-width: 0;
       width: 100%;
-    }
-    .year-select {
-      grid-column: 1 / 2;
     }
     .search-field .input-group-text {
       display: none;
@@ -781,27 +781,24 @@
       padding-right: .78rem;
     }
     .filter-toggle {
-      min-width: 3.7rem;
+      min-width: 0;
       padding: .36rem .58rem;
+      width: 100%;
     }
-    #sort {
-      grid-column: 1 / 2;
-    }
-    #f-new {
-      grid-column: 2 / 3;
-    }
-    #f-trendshift {
-      grid-column: 3 / 4;
-      min-width: 5.8rem;
-    }
-    #f-language {
-      grid-column: 2 / 4;
-    }
+    /* Явные строки: DOM-порядок (sort, new, trendshift, year, lang, page-size)
+       не совпадает с визуальными парами, поэтому фиксируем и row, и column —
+       иначе auto-placement оставит «50» одиноко в ряду. */
+    #sort        { grid-area: 1 / 1 / 2 / 2; }
     #f-page-size {
-      grid-column: 1 / 2;
+      grid-area: 1 / 2 / 2 / 3;
+      max-width: none;  /* снять десктопный .page-size-select max-width: 5rem */
     }
+    .year-select { grid-area: 2 / 1 / 3 / 2; }
+    #f-language  { grid-area: 2 / 2 / 3 / 3; }
+    #f-new       { grid-area: 3 / 1 / 4 / 2; }
+    #f-trendshift{ grid-area: 3 / 2 / 4 / 3; }
     .category-menu {
-      grid-column: 1 / -1;
+      grid-area: 4 / 1 / 5 / 3;
       width: 100%;
     }
     .category-menu .category-toggle {
