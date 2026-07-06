@@ -314,8 +314,8 @@ def render_line(tool: dict, lang: str, stars: int = 0, marks: set[str] | None = 
         - [Name](url) <badge> - Description.
 
     stars/marks не выводятся в строке (awesome-lint диктует строгий формат);
-    stars влияют только на сортировку (group_by_category), new/day/week
-    вычисляются и используются блоком Featured, но не инлайн-метками.
+    stars влияют только на сортировку (group_by_category). marks (сейчас лишь
+    {"new"}) вычисляются в render_section, но в awesome-list-строку не попадают.
     """
     del stars, marks  # не используются в выводе; в сигнатуре для совместимости
     name = tool["name"]
