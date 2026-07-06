@@ -244,7 +244,6 @@
   .search-field .input-group-text,
   .search-field .form-control,
   .toolbar-select,
-  .mobile-category .form-select,
   .filter-toggle {
     border-color: var(--vt-border);
     min-height: 2.42rem;
@@ -260,9 +259,6 @@
   }
   .year-select {
     flex-basis: 7rem;
-  }
-  .mobile-category {
-    display: none;
   }
   .filter-toggle {
     align-items: center;
@@ -324,88 +320,99 @@
   [data-bs-theme="dark"] .filter-toggle:focus-visible {
     box-shadow: 0 0 0 .14rem rgba(88, 166, 255, .22);
   }
-  .category-tabs {
+  .category-toggle {
     align-items: center;
-    gap: .4rem;
-    margin-top: .85rem;
-    overflow: visible;
-    padding-inline: clamp(1rem, 1.8vw, 1.35rem);
-  }
-  .category-tab {
-    align-items: center;
-    background: var(--vt-bg-soft);
-    border: 1px solid var(--vt-border);
-    border-radius: 999px;
-    color: var(--vt-ink-soft);
     display: inline-flex;
-    font-size: .82rem;
-    font-weight: 600;
-    gap: .34rem;
-    line-height: 1.1;
-    padding: .3rem .62rem;
-    transition: background-color .12s ease, border-color .12s ease, color .12s ease;
-    white-space: nowrap;
+    gap: .32rem;
   }
-  .category-tab:hover {
+  .category-toggle-count {
+    color: var(--vt-accent);
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+  }
+  .category-toggle[aria-expanded="true"] {
     background: var(--vt-surface);
-    border-color: var(--vt-ink-muted);
-    color: var(--bs-body-color);
+    border-color: var(--vt-accent);
   }
-  .category-tab:focus {
-    box-shadow: none;
-    outline: none;
+  [data-bs-theme="dark"] .category-toggle[aria-expanded="true"] {
+    background: rgba(240, 246, 252, .08);
+    border-color: var(--vt-accent);
   }
-  .category-tab:focus-visible {
+  .category-dropdown {
+    border-color: var(--vt-border);
+    border-radius: 10px;
+    box-shadow: 0 18px 48px rgba(31, 35, 40, .12);
+    max-width: 20rem;
+    min-width: 15rem;
+    padding: .4rem;
+  }
+  [data-bs-theme="dark"] .category-dropdown {
+    box-shadow: 0 18px 48px rgba(1, 4, 9, .45);
+  }
+  .category-search-wrap {
+    padding: .1rem .1rem .4rem;
+  }
+  .category-search {
+    border-color: var(--vt-border);
+    font-size: .88rem;
+    min-height: 2.1rem;
+  }
+  .category-search:focus {
     border-color: var(--vt-accent);
     box-shadow: 0 0 0 .14rem rgba(9, 105, 218, .18);
-    outline: none;
   }
-  .category-tab.active,
-  .category-tab.active:hover {
-    background: var(--vt-accent-soft);
-    border-color: var(--vt-accent);
-    color: var(--vt-accent);
-  }
-  .category-count {
-    background: rgba(31, 35, 40, .06);
-    border-radius: 999px;
-    color: var(--vt-ink-soft);
-    font-size: .72rem;
-    font-variant-numeric: tabular-nums;
-    font-weight: 600;
-    line-height: 1;
-    padding: .1rem .34rem;
-  }
-  .category-tab.active .category-count {
-    background: rgba(9, 105, 218, .16);
-    color: var(--vt-accent);
-  }
-  [data-bs-theme="dark"] .category-tab {
-    background: rgba(240, 246, 252, .04);
-    border-color: var(--vt-border);
-    color: #8b949e;
-  }
-  [data-bs-theme="dark"] .category-tab:hover {
-    background: rgba(240, 246, 252, .08);
-    border-color: #6e7681;
-    color: #f0f6fc;
-  }
-  [data-bs-theme="dark"] .category-tab.active,
-  [data-bs-theme="dark"] .category-tab.active:hover {
-    background: rgba(88, 166, 255, .16);
-    border-color: var(--vt-accent);
-    color: #79c0ff;
-  }
-  [data-bs-theme="dark"] .category-tab:focus-visible {
+  [data-bs-theme="dark"] .category-search:focus {
     box-shadow: 0 0 0 .14rem rgba(88, 166, 255, .22);
   }
-  [data-bs-theme="dark"] .category-count {
-    background: rgba(240, 246, 252, .1);
-    color: #8b949e;
+  .category-options {
+    list-style: none;
+    margin: 0;
+    max-height: 17rem;
+    overflow-y: auto;
+    padding: 0;
+    scrollbar-width: thin;
   }
-  [data-bs-theme="dark"] .category-tab.active .category-count {
-    background: rgba(88, 166, 255, .22);
-    color: #79c0ff;
+  .category-option {
+    align-items: center;
+    border-radius: 7px;
+    color: var(--bs-body-color);
+    cursor: pointer;
+    display: flex;
+    font-size: .9rem;
+    gap: .55rem;
+    padding: .42rem .5rem;
+  }
+  .category-option:hover {
+    background: var(--vt-hover);
+  }
+  .category-option.active {
+    background: var(--vt-accent-soft);
+  }
+  .category-option:focus-visible {
+    outline: 2px solid var(--vt-accent);
+    outline-offset: -2px;
+  }
+  .category-check {
+    color: var(--vt-accent);
+    flex: 0 0 auto;
+    font-weight: 700;
+    text-align: center;
+    visibility: hidden;
+    width: .9rem;
+  }
+  .category-option.active .category-check {
+    visibility: visible;
+  }
+  .category-option-label {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .category-count {
+    color: var(--vt-ink-soft);
+    flex: 0 0 auto;
+    font-size: .78rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
   }
   .results-line {
     color: var(--vt-ink-soft);
@@ -757,7 +764,6 @@
     }
     .search-field .form-control,
     .toolbar-select,
-    .mobile-category .form-select,
     .filter-toggle {
       font-size: .86rem;
       line-height: 1.1;
@@ -787,16 +793,13 @@
     #f-page-size {
       grid-column: 1 / 2;
     }
-    .mobile-category {
-      display: block;
+    .category-menu {
       grid-column: 1 / -1;
       width: 100%;
     }
-    .mobile-category .form-select {
+    .category-menu .category-toggle {
+      justify-content: center;
       width: 100%;
-    }
-    .category-tabs {
-      display: none !important;
     }
     .featured-strip {
       padding-bottom: .85rem;
@@ -926,14 +929,23 @@
             <option value="50">50</option>
             <option value="100">100</option>
           </select>
-          <div class="mobile-category">
-            <label class="visually-hidden" for="category-select" data-i18n="category">category</label>
-            <select class="form-select" id="category-select" aria-label="Category"></select>
+          <div class="dropdown category-menu">
+            <button class="btn filter-toggle category-toggle" type="button" id="category-menu"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" aria-label="Categories">
+              <span class="category-toggle-label" data-i18n="categoryFilter">Categories</span>
+              <span class="category-toggle-count" id="category-count" hidden></span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end category-dropdown" aria-labelledby="category-menu">
+              <div class="category-search-wrap">
+                <input type="search" class="form-control category-search" id="category-search"
+                       autocomplete="off" data-i18n-ph="categorySearchPlaceholder" placeholder="Filter categories...">
+              </div>
+              <ul class="category-options" id="category-options" role="listbox" aria-multiselectable="true"></ul>
+            </div>
           </div>
         </div>
       </div>
-
-      <nav class="category-tabs d-flex flex-nowrap flex-md-wrap overflow-auto" id="cats" aria-label="Categories"></nav>
     </div>
   </div>
 </header>
@@ -985,6 +997,8 @@ const I18N = {
     year: "year",
     stars: "stars",
     category: "category",
+    categoryFilter: "Categories",
+    categorySearchPlaceholder: "Filter categories...",
     language: "Language",
     allLanguages: "All languages",
     allYears: "All years",
@@ -1022,6 +1036,8 @@ const I18N = {
     year: "год",
     stars: "звезды",
     category: "категория",
+    categoryFilter: "Категории",
+    categorySearchPlaceholder: "Поиск категории...",
     language: "Язык",
     allLanguages: "Все языки",
     allYears: "Все годы",
@@ -1059,6 +1075,8 @@ const I18N = {
     year: "年份",
     stars: "星标",
     category: "分类",
+    categoryFilter: "分类",
+    categorySearchPlaceholder: "筛选分类...",
     language: "语言",
     allLanguages: "所有语言",
     allYears: "所有年份",
@@ -1128,7 +1146,9 @@ const LANGUAGES = {
 // Поэтому сбрасываем всё, что не входит в {en, ru, zh}, на «en».
 let lang = localStorage.getItem("lang");
 if (!Object.prototype.hasOwnProperty.call(I18N, lang)) lang = "en";
-let activeCat = "all";
+// Мультивыбор категорий. Пустой Set = «все» (фильтр не применяется).
+// Не персистится в localStorage (как и было у прежнего одиночного выбора).
+let selectedCats = new Set();
 let activeLang = "all";
 let activeTrendshift = false;
 let activeYear = "all";
@@ -1184,28 +1204,61 @@ function applyI18n() {
 function renderCats() {
   const counts = {};
   DATA.tools.forEach(tool => counts[tool.category] = (counts[tool.category] || 0) + 1);
-  const cats = $("cats");
-  const categorySelect = $("category-select");
-  cats.innerHTML = "";
-  categorySelect.innerHTML = "";
-  const mk = (key, label, count) => {
-    const b = document.createElement("button");
-    const active = activeCat === key;
-    b.type = "button";
-    b.className = "category-tab" + (active ? " active" : "");
-    b.setAttribute("aria-pressed", active ? "true" : "false");
-    b.innerHTML = `${esc(label)} <span class="category-count">${count}</span>`;
-    b.onclick = () => { activeCat = key; currentPage = 1; applyI18n(); };
-    cats.appendChild(b);
+  const listEl = $("category-options");
+  listEl.innerHTML = "";
 
-    const option = document.createElement("option");
-    option.value = key;
-    option.textContent = `${label} (${count})`;
-    option.selected = active;
-    categorySelect.appendChild(option);
-  };
-  mk("all", t("all"), DATA.tools.length);
-  DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0));
+  // Пункты — только реальные категории (без «all»): пустой selectedCats = все.
+  DATA.categories.forEach(c => {
+    const count = counts[c.key] || 0;
+    const label = catTitle(c.key);
+    const checked = selectedCats.has(c.key);
+    const li = document.createElement("li");
+    li.className = "category-option" + (checked ? " active" : "");
+    li.dataset.key = c.key;
+    li.dataset.label = label.toLowerCase();
+    li.setAttribute("role", "option");
+    li.setAttribute("aria-selected", checked ? "true" : "false");
+    li.tabIndex = 0;
+    li.innerHTML =
+      `<span class="category-check" aria-hidden="true">✓</span>` +
+      `<span class="category-option-label">${esc(label)}</span>` +
+      `<span class="category-count">${count}</span>`;
+    li.addEventListener("click", () => toggleCat(c.key));
+    li.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleCat(c.key); }
+    });
+    listEl.appendChild(li);
+  });
+
+  // Счётчик на закрытой кнопке: скрыт когда пусто, «· N» при выборе.
+  const badge = $("category-count");
+  if (selectedCats.size > 0) {
+    badge.textContent = "· " + selectedCats.size;
+    badge.hidden = false;
+  } else {
+    badge.textContent = "";
+    badge.hidden = true;
+  }
+
+  // Повторно применяем текущий фильтр поиска по пунктам (если поле не пустое).
+  filterCategoryOptions($("category-search").value);
+}
+
+// Тоггл одной категории. Пустой Set после снятия последней = авто-возврат к «все».
+function toggleCat(key) {
+  if (selectedCats.has(key)) selectedCats.delete(key);
+  else selectedCats.add(key);
+  currentPage = 1;
+  renderCats();  // перерисовать галочки + счётчик кнопки
+  render();      // лёгкий ре-рендер списка (applyI18n не нужен — язык не менялся)
+}
+
+// Client-side фильтр пунктов дропдауна по подстроке названия.
+function filterCategoryOptions(term) {
+  const q = (term || "").trim().toLowerCase();
+  $("category-options").querySelectorAll(".category-option").forEach(li => {
+    li.hidden = q ? !li.dataset.label.includes(q) : false;
+  });
 }
 
 function renderLanguages() {
@@ -1247,7 +1300,12 @@ function toolHasTrendshift(tool) {
 
 function activeFilterSummary() {
   const parts = [];
-  if (activeCat !== "all") parts.push(t("filterCategory")(catTitle(activeCat)));
+  if (selectedCats.size > 0) {
+    const names = DATA.categories
+      .filter(c => selectedCats.has(c.key))
+      .map(c => catTitle(c.key));
+    parts.push(t("filterCategory")(names.join(", ")));
+  }
   if ($("f-new").getAttribute("aria-pressed") === "true") parts.push(t("new"));
   if (activeTrendshift) parts.push(t("trendshiftPrefix"));
   if (activeYear !== "all") parts.push(t("filterYear")(activeYear));
@@ -1332,7 +1390,7 @@ function filtered() {
   const q = query.trim().toLowerCase();
   const onlyNew = $("f-new").getAttribute("aria-pressed") === "true";
   let list = DATA.tools.filter(tool => {
-    if (activeCat !== "all" && tool.category !== activeCat) return false;
+    if (selectedCats.size > 0 && !selectedCats.has(tool.category)) return false;
     if (activeLang !== "all" && tool.language !== activeLang) return false;
     if (onlyNew && !tool.isNew) return false;
     if (activeTrendshift && !toolHasTrendshift(tool)) return false;
@@ -1519,10 +1577,12 @@ $("f-trendshift").addEventListener("click", e => {
   currentPage = 1;
   render();
 });
-$("category-select").addEventListener("change", e => {
-  activeCat = e.target.value;
-  currentPage = 1;
-  applyI18n();
+$("category-search").addEventListener("input", e => filterCategoryOptions(e.target.value));
+$("category-menu").addEventListener("shown.bs.dropdown", () => {
+  const s = $("category-search");
+  s.value = "";
+  filterCategoryOptions("");
+  s.focus();
 });
 document.querySelectorAll(".language-option").forEach(option => {
   option.addEventListener("click", () => {

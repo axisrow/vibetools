@@ -94,7 +94,17 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "Day pick" not in html
     assert "Week pick" not in html
     assert "trendshift-badge-img" not in html
-    assert "category-select" in html
+    # Категории — мультивыбор через компактный Bootstrap-дропдаун (#26 → мультивыбор).
+    # Старые одиночные хуки (мобильный <select id="category-select">, десктоп-чипы
+    # .category-tab) удалены; теперь кнопка-дропдаун с чекбокс-пунктами.
+    assert 'id="category-menu"' in html
+    assert "category-dropdown" in html
+    assert "category-option" in html
+    assert "category-check" in html
+    assert "categoryFilter" in html
+    assert 'data-bs-auto-close="outside"' in html
+    assert "selectedCats" in html
+    assert "category-select" not in html
     # Языковой фильтр (#11) должен пережить редизайн — regression guard.
     assert 'id="f-language"' in html
     assert 'id="f-trendshift"' in html
@@ -110,7 +120,7 @@ def test_site_has_directory_redesign_hooks(tmp_repo):
     assert "Все годы" in html
     assert 'id="f-achievement"' not in html
     assert "All achievements" not in html
-    assert "category-tab" in html
+    assert "category-tab" not in html
     assert "tool-record" in html
     assert "tool-heading" in html
     assert "font-size: 1.22rem" in html
