@@ -752,12 +752,19 @@
       width: 100%;
     }
     /* Ровная сетка 2×N: контролы парами, Категории — на всю ширину.
-       Звёзды|50, Годы|Языки, Новые|Trendshift, Категории (full). */
+       Именованные области держат раскладку независимо от DOM-порядка
+       (sort, new, trendshift, year, lang, page-size), который с парами не
+       совпадает; добавить фильтр = одна строка в areas, без пересчёта line-ов. */
     .filter-rail {
       display: grid !important;
       flex: 1 1 100%;
       gap: .42rem !important;
       grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "sort   pagesize"
+        "year   lang"
+        "new    trendshift"
+        "cats   cats";
       width: 100%;
     }
     .toolbar-select,
@@ -785,20 +792,17 @@
       padding: .36rem .58rem;
       width: 100%;
     }
-    /* Явные строки: DOM-порядок (sort, new, trendshift, year, lang, page-size)
-       не совпадает с визуальными парами, поэтому фиксируем и row, и column —
-       иначе auto-placement оставит «50» одиноко в ряду. */
-    #sort        { grid-area: 1 / 1 / 2 / 2; }
+    #sort        { grid-area: sort; }
     #f-page-size {
-      grid-area: 1 / 2 / 2 / 3;
+      grid-area: pagesize;
       max-width: none;  /* снять десктопный .page-size-select max-width: 5rem */
     }
-    .year-select { grid-area: 2 / 1 / 3 / 2; }
-    #f-language  { grid-area: 2 / 2 / 3 / 3; }
-    #f-new       { grid-area: 3 / 1 / 4 / 2; }
-    #f-trendshift{ grid-area: 3 / 2 / 4 / 3; }
+    .year-select { grid-area: year; }
+    #f-language  { grid-area: lang; }
+    #f-new       { grid-area: new; }
+    #f-trendshift{ grid-area: trendshift; }
     .category-menu {
-      grid-area: 4 / 1 / 5 / 3;
+      grid-area: cats;
       width: 100%;
     }
     .category-menu .category-toggle {
@@ -1000,7 +1004,6 @@ const I18N = {
     rank: "rank",
     year: "year",
     stars: "stars",
-    category: "category",
     categoryFilter: "Categories",
     categorySearchPlaceholder: "Filter categories...",
     language: "Language",
@@ -1039,7 +1042,6 @@ const I18N = {
     rank: "ранг",
     year: "год",
     stars: "звезды",
-    category: "категория",
     categoryFilter: "Категории",
     categorySearchPlaceholder: "Поиск категории...",
     language: "Язык",
@@ -1078,7 +1080,6 @@ const I18N = {
     rank: "排名",
     year: "年份",
     stars: "星标",
-    category: "分类",
     categoryFilter: "分类",
     categorySearchPlaceholder: "筛选分类...",
     language: "语言",
@@ -1128,6 +1129,10 @@ function _yearOf(tool) {
 }
 const TOOL_YEAR = new Map(DATA.tools.map(tool => [tool.url, _yearOf(tool)]));
 const YEARS = Array.from(new Set(TOOL_YEAR.values().filter(Boolean))).sort((a, b) => b.localeCompare(a));
+// Кол-во инструментов в каждой категории — статично (категории на клиенте не
+// меняются), считаем один раз, а не на каждый клик галочки в renderCats.
+const CAT_COUNTS = {};
+DATA.tools.forEach(tool => CAT_COUNTS[tool.category] = (CAT_COUNTS[tool.category] || 0) + 1);
 const TRENDSHIFT_URLS = new Set(DATA.tools
   .filter(tool => ((tool.trendshift && tool.trendshift.badges) || []).some(badge => badge && TREND_KINDS.includes(badge.kind)))
   .map(tool => tool.url));
@@ -1206,8 +1211,6 @@ function applyI18n() {
 }
 
 function renderCats() {
-  const counts = {};
-  DATA.tools.forEach(tool => counts[tool.category] = (counts[tool.category] || 0) + 1);
   const listEl = $("category-options");
   listEl.innerHTML = "";
 
@@ -1232,7 +1235,7 @@ function renderCats() {
 
   // «All» первым: отмечен, когда ни одна конкретная категория не выбрана.
   mk("all", t("all"), DATA.tools.length, selectedCats.size === 0);
-  DATA.categories.forEach(c => mk(c.key, catTitle(c.key), counts[c.key] || 0, selectedCats.has(c.key)));
+  DATA.categories.forEach(c => mk(c.key, catTitle(c.key), CAT_COUNTS[c.key] || 0, selectedCats.has(c.key)));
 
   // Счётчик на закрытой кнопке: скрыт при «all», «· N» при выборе категорий.
   const badge = $("category-count");
@@ -1267,7 +1270,7 @@ function toggleCat(key) {
 function filterCategoryOptions(term) {
   const q = (term || "").trim().toLowerCase();
   $("category-options").querySelectorAll(".category-option").forEach(li => {
-    li.hidden = q ? !li.dataset.label.includes(q) : false;
+    li.hidden = q !== "" && !li.dataset.label.includes(q);
   });
 }
 
