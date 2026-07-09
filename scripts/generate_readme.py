@@ -229,6 +229,9 @@ def load_stars(stars_file: Path = STARS_FILE) -> dict[str, int]:
     return load_json_or_default(stars_file, {}) or {}
 
 
+# load_history / _window_delta (и HISTORY_FILE) оставлены здесь как общий
+# helper; потребитель — generate_site (starsPerWeek), README history больше
+# не использует.
 def load_history(history_file: Path = HISTORY_FILE) -> dict[str, dict]:
     """Загружает dated-срезы звёзд {url: {"YYYY-MM-DD": stars}}, если есть."""
     return load_json_or_default(history_file, {}) or {}
@@ -238,18 +241,11 @@ def _window_delta(cur: int, history: dict, kind: str, days_ago: int,
                   today=None) -> dict | None:
     """Дельта звёзд за окно (используется generate_site для starsPerWeek).
 
-    day требует точный вчерашний срез. week использует самый старый доступный
-    срез в пределах days_ago, чтобы пропущенный daily-срез не обнулял неделю.
+    week использует самый старый доступный срез в пределах days_ago, чтобы
+    пропущенный daily-срез не обнулял неделю.
     """
     today = today or datetime.date.today()
     target = today - datetime.timedelta(days=days_ago)
-
-    if kind == "day":
-        snap = history.get(target.isoformat())
-        if not isinstance(snap, int):
-            return None
-        return {"delta": cur - snap, "days": days_ago,
-                "windowComplete": True}
 
     candidates = []
     for raw_date, snap in history.items():

@@ -1133,14 +1133,15 @@ const YEARS = Array.from(new Set(TOOL_YEAR.values().filter(Boolean))).sort((a, b
 // меняются), считаем один раз, а не на каждый клик галочки в renderCats.
 const CAT_COUNTS = {};
 DATA.tools.forEach(tool => CAT_COUNTS[tool.category] = (CAT_COUNTS[tool.category] || 0) + 1);
-const TRENDSHIFT_URLS = new Set(DATA.tools
-  .filter(tool => ((tool.trendshift && tool.trendshift.badges) || []).some(badge => badge && TREND_KINDS.includes(badge.kind)))
-  .map(tool => tool.url));
+// Один проход по DATA.tools: пул trendshift-тулз (объекты) для Featured-блока
+// И источник для Set URL-ов (TRENDSHIFT_URLS) — тот же критерий, что у фильтра
+// каталога (toolHasTrendshift = TRENDSHIFT_URLS.has), единый источник.
+const _trendshiftPool = DATA.tools
+  .filter(tool => ((tool.trendshift && tool.trendshift.badges) || []).some(badge => badge && TREND_KINDS.includes(badge.kind)));
+const TRENDSHIFT_URLS = new Set(_trendshiftPool.map(tool => tool.url));
 // Featured-блок: один случайный trendshift-репо, выбранный ОДИН раз при загрузке
 // страницы. Фиксируется на весь сеанс (не прыгает при смене языка/фильтра, т.к.
 // applyI18n→renderFeatured вызывается многократно); меняется только при перезагрузке.
-// Пул — тот же критерий, что у фильтра каталога (toolHasTrendshift), единый источник.
-const _trendshiftPool = DATA.tools.filter(toolHasTrendshift);
 const featuredTool = _trendshiftPool.length
   ? _trendshiftPool[Math.floor(Math.random() * _trendshiftPool.length)]
   : null;
