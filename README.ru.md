@@ -63,8 +63,8 @@
 
 ## Облачные coding-агенты
 
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Безопасная эластичная инфраструктура для AI-сгенерированного кода.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - Open-source бэкенд-платформа для агентного кодинга.
@@ -189,8 +189,8 @@
 - [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Простое и быстрое дополненное получение.
 - [Vane](https://github.com/ItzCrazyKns/Vane) ![](https://img.shields.io/github/stars/ItzCrazyKns/Vane?style=flat&color=yellow) - AI-powered поисковый движок ответов.
 - [PageIndex](https://github.com/VectifyAI/PageIndex) ![](https://img.shields.io/github/stars/VectifyAI/PageIndex?style=flat&color=yellow) - Индекс документов для reasoning-based RAG без векторов.
-- [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Поисковая инфраструктура для AI.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - Высокопроизводительный MCP-сервер интеллекта кодовой базы.
+- [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Поисковая инфраструктура для AI.
 - [cognee](https://github.com/topoteretes/cognee) ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&color=yellow) - Open-source AI-платформа памяти для агентов.
 - [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Упаковывает весь репозиторий в один файл для подсчёта контекста AI.
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - Мощный MCP-тулкит для кодинга: семантический поиск и редактирование.

@@ -63,8 +63,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Cloud Coding Agents
 
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Prompt, run, edit and deploy full-stack web apps from the browser.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - The all-in-one, open-source backend platform for agentic coding.
@@ -189,8 +189,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Simple and Fast Retrieval-Augmented Generation.
 - [Vane](https://github.com/ItzCrazyKns/Vane) ![](https://img.shields.io/github/stars/ItzCrazyKns/Vane?style=flat&color=yellow) - Vane is an AI-powered answering engine.
 - [PageIndex](https://github.com/VectifyAI/PageIndex) ![](https://img.shields.io/github/stars/VectifyAI/PageIndex?style=flat&color=yellow) - PageIndex: Document Index for Vectorless, Reasoning-based RAG.
-- [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Search infrastructure for AI.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - High-performance code intelligence MCP server.
+- [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Search infrastructure for AI.
 - [cognee](https://github.com/topoteretes/cognee) ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&color=yellow) - Cognee is the open-source AI memory platform for agents.
 - [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Pack your whole repository into a single file for AI consumption.
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities.
