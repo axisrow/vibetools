@@ -42,8 +42,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [nanobot](https://github.com/HKUDS/nanobot) ![](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&color=yellow) - Lightweight, open-source AI agent for your tools, chats, and workflows.
 - [CodeWhale](https://github.com/Hmbown/CodeWhale) ![](https://img.shields.io/github/stars/Hmbown/CodeWhale?style=flat&color=yellow) - Open-source, community-driven agent harness.
 - [vibe-kanban](https://github.com/BloopAI/vibe-kanban) ![](https://img.shields.io/github/stars/BloopAI/vibe-kanban?style=flat&color=yellow) - Get 10X more out of Claude Code, Codex or any coding agent.
-- [agenticSeek](https://github.com/Fosowl/agenticSeek) ![](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat&color=yellow) - Fully Local Manus AI.
 - [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) ![](https://img.shields.io/github/stars/esengine/DeepSeek-Reasonix?style=flat&color=yellow) - DeepSeek-native AI coding agent for your terminal.
+- [agenticSeek](https://github.com/Fosowl/agenticSeek) ![](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat&color=yellow) - Fully Local Manus AI.
 - [qwen-code](https://github.com/QwenLM/qwen-code) ![](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=yellow) - An open-source AI coding agent that lives in your terminal.
 - [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin.
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI coding agent for the terminal - hash-anchored edits, LSP and subagents.
@@ -63,8 +63,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Cloud Coding Agents
 
-- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
+- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Prompt, run, edit and deploy full-stack web apps from the browser.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - The all-in-one, open-source backend platform for agentic coding.
@@ -249,8 +249,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview im.
 - [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT: Empowering everyone to become a prompt expert! 结构化提示词（Structured Prompt）提出者.
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - A collection of GPT system prompts and various prompt injection/leaking knowledge.
-- [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Universal skills loader for AI coding agents - npm i -g openskills.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Comprehensive open-source library of AI research and engineering skills for any AI model.
+- [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Universal skills loader for AI coding agents - npm i -g openskills.
 - [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - A Claude skill that writes the accurate prompts for any AI tool.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - An awesome list of curated Nano Banana pro prompts and examples.
 - [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) ![](https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=flat&color=yellow) - Maximize your efficiency and productivity.
@@ -458,8 +458,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 ## Needs Review
 
 - [ChatTTS](https://github.com/2noise/ChatTTS) ![](https://img.shields.io/github/stars/2noise/ChatTTS?style=flat&color=yellow) - A generative speech model for daily dialogue.
-- [gemini-voyager](https://github.com/Nagi-ovo/gemini-voyager) ![](https://img.shields.io/github/stars/Nagi-ovo/gemini-voyager?style=flat&color=yellow) - An all-in-one enhancement suite for Google Gemini & AI Studio - timeline navigation, folde.
 - [FunASR](https://github.com/modelscope/FunASR) ![](https://img.shields.io/github/stars/modelscope/FunASR?style=flat&color=yellow) - Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diariza.
+- [gemini-voyager](https://github.com/Nagi-ovo/gemini-voyager) ![](https://img.shields.io/github/stars/Nagi-ovo/gemini-voyager?style=flat&color=yellow) - An all-in-one enhancement suite for Google Gemini & AI Studio - timeline navigation, folde.
 - [nuclear](https://github.com/nukeop/nuclear) ![](https://img.shields.io/github/stars/nukeop/nuclear?style=flat&color=yellow) - Streaming music player that finds free music for you.
 - [CVPR2024-Paper-Code-Interpretation](https://github.com/extreme-assistant/CVPR2024-Paper-Code-Interpretation) ![](https://img.shields.io/github/stars/extreme-assistant/CVPR2024-Paper-Code-Interpretation?style=flat&color=yellow) - CVPR papers collection with code and interpretations.
 - [XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader) ![](https://img.shields.io/github/stars/JoeanAmier/XHS-Downloader?style=flat&color=yellow) - XiaoHongShu (RedNote) link extractor and content downloader.
