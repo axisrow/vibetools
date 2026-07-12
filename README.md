@@ -212,8 +212,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [FastMCP](https://github.com/PrefectHQ/fastmcp) ![](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=flat&color=yellow) - Fast, Pythonic framework for building MCP servers and clients.
 - [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) ![](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat&color=yellow) - Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth.
 - [mcp-use](https://github.com/mcp-use/mcp-use) ![](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat&color=yellow) - The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI.
-- [Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH) ![](https://img.shields.io/github/stars/yzfly/Awesome-MCP-ZH?style=flat&color=yellow) - MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients.
 - [DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) ![](https://img.shields.io/github/stars/wonderwhy-er/DesktopCommanderMCP?style=flat&color=yellow) - This is MCP server for Claude that gives it terminal control, file system search and diff.
+- [Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH) ![](https://img.shields.io/github/stars/yzfly/Awesome-MCP-ZH?style=flat&color=yellow) - MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients.
 - [klavis](https://github.com/Klavis-AI/klavis) ![](https://img.shields.io/github/stars/Klavis-AI/klavis?style=flat&color=yellow) - Klavis AI: MCP integration platforms that let AI agents use tools reliably at any scale.
 - [metamcp](https://github.com/metatool-ai/metamcp) ![](https://img.shields.io/github/stars/metatool-ai/metamcp?style=flat&color=yellow) - MCP Aggregator, Orchestrator, Middleware, Gateway in one docker.
 
@@ -430,8 +430,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [deeplake](https://github.com/activeloopai/deeplake) ![](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat&color=yellow) - Deeplake is AI Data Runtime for Agents.
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - A collection of libraries to optimise AI model performances.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Own your AI.
-- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,.
+- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust.
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade helps users discover and run local AI apps by serving optimized LLMs right from t.
 

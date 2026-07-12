@@ -212,8 +212,8 @@
 - [FastMCP](https://github.com/PrefectHQ/fastmcp) ![](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=flat&color=yellow) - Быстрый питонический фреймворк для создания MCP-серверов и клиентов.
 - [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) ![](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat&color=yellow) - Экспонирует эндпоинты FastAPI как MCP-инструменты с Auth.
 - [mcp-use](https://github.com/mcp-use/mcp-use) ![](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat&color=yellow) - Fullstack MCP-фреймворк для разработки MCP-приложений.
-- [Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH) ![](https://img.shields.io/github/stars/yzfly/Awesome-MCP-ZH?style=flat&color=yellow) - MCP ресурсы на китайском: гайд, Claude MCP, серверы, клиенты.
 - [DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) ![](https://img.shields.io/github/stars/wonderwhy-er/DesktopCommanderMCP?style=flat&color=yellow) - MCP-сервер для Claude: контроль терминала, поиск файловой системы, diff.
+- [Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH) ![](https://img.shields.io/github/stars/yzfly/Awesome-MCP-ZH?style=flat&color=yellow) - MCP ресурсы на китайском: гайд, Claude MCP, серверы, клиенты.
 - [klavis](https://github.com/Klavis-AI/klavis) ![](https://img.shields.io/github/stars/Klavis-AI/klavis?style=flat&color=yellow) - Klavis AI — платформа MCP-интеграции для надёжных инструментов агентов.
 - [metamcp](https://github.com/metatool-ai/metamcp) ![](https://img.shields.io/github/stars/metatool-ai/metamcp?style=flat&color=yellow) - MCP-агрегатор, оркестратор, middleware и шлюз в одном docker.
 
@@ -430,8 +430,8 @@
 - [deeplake](https://github.com/activeloopai/deeplake) ![](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat&color=yellow) - AI Data Runtime для агентов.
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - Коллекция библиотек оптимизации производительности AI-моделей.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Владейте своим AI.
-- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - AI-native прокси и дата-плоскость для агентных приложений.
+- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM).
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade — обнаружение и запуск локальных AI-приложений с оптимизированными LLM.
 
