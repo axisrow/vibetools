@@ -180,8 +180,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 ## Context, Memory and Codebase Indexing
 
 - [claude-mem](https://github.com/thedotmack/claude-mem) ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&color=yellow) - Persistent Context Across Sessions for Every Agent – Captures everything your agent does.
-- [ragflow](https://github.com/infiniflow/ragflow) ![](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat&color=yellow) - RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cu.
 - [graphify](https://github.com/safishamsi/graphify) ![](https://img.shields.io/github/stars/safishamsi/graphify?style=flat&color=yellow) - AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more).
+- [ragflow](https://github.com/infiniflow/ragflow) ![](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat&color=yellow) - RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cu.
 - [mem0](https://github.com/mem0ai/mem0) ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&color=yellow) - Universal memory layer for AI Agents.
 - [headroom](https://github.com/headroomlabs-ai/headroom) ![](https://img.shields.io/github/stars/headroomlabs-ai/headroom?style=flat&color=yellow) - Compress tool outputs, logs, files, and RAG chunks before they reach the LLM.
 - [mempalace](https://github.com/MemPalace/mempalace) ![](https://img.shields.io/github/stars/MemPalace/mempalace?style=flat&color=yellow) - The best-benchmarked open-source AI memory system.
@@ -343,8 +343,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) ![](https://img.shields.io/github/stars/Egonex-AI/Understand-Anything?style=flat&color=yellow) - Graphs that teach > graphs that impress.
 - [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Practical UI for GPT/GLM LLMs - optimized for paper reading, polishing and writing.
 - [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ![](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&color=yellow) - Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1.
-- [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion and trend monitor with multi-platform aggregation and alerts.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - Spec-driven development (SDD) for AI coding assistants.
+- [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion and trend monitor with multi-platform aggregation and alerts.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors.
 - [storm](https://github.com/stanford-oval/storm) ![](https://img.shields.io/github/stars/stanford-oval/storm?style=flat&color=yellow) - An LLM-powered knowledge curation system that researches a topic and generates a full-leng.
 - [gpt-researcher](https://github.com/assafelovic/gpt-researcher) ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&color=yellow) - An autonomous agent that conducts deep research on any data using any LLM providers.
