@@ -33,8 +33,8 @@
 - [Claude Code](https://github.com/anthropics/claude-code) ![](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&color=yellow) - Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу.
 - [cc-switch](https://github.com/farion1231/cc-switch) ![](https://img.shields.io/github/stars/farion1231/cc-switch?style=flat&color=yellow) - Кроссплатформенный desktop All-in-One для Claude Code, Codex, OpenCode.
 - [gemini-cli](https://github.com/google-gemini/gemini-cli) ![](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat&color=yellow) - Open-source AI-агент: brings Gemini прямо в терминал.
-- [rtk](https://github.com/rtk-ai/rtk) ![](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) - CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах.
 - [pi](https://github.com/earendil-works/pi) ![](https://img.shields.io/github/stars/earendil-works/pi?style=flat&color=yellow) - AI-агент тулкит: единый LLM API, agent loop, TUI, CLI кодинг-агент.
+- [rtk](https://github.com/rtk-ai/rtk) ![](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) - CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах.
 - [Goose](https://github.com/block/goose) ![](https://img.shields.io/github/stars/block/goose?style=flat&color=yellow) - Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код.
 - [goose](https://github.com/aaif-goose/goose) ![](https://img.shields.io/github/stars/aaif-goose/goose?style=flat&color=yellow) - An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM.
 - [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI-парное программирование в терминале, правит код в любом git-репозитории.
@@ -248,8 +248,8 @@
 - [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=flat&color=yellow) - ARIS — лёгкие Markdown-навыки автономных ML-исследований.
 - [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - Крупнейшая библиотека промптов Nano Banana Pro — 10000+ с превью.
 - [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT — структурированные промпты для каждого.
-- [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - Коллекция системных промптов GPT и знаний о prompt injection.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Библиотека AI-research и инженерных навыков для любой модели.
+- [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - Коллекция системных промптов GPT и знаний о prompt injection.
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Универсальный загрузчик навыков для AI-агентов кодинга.
 - [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - Навык Claude, пишущий точные промпты для любого AI-инструмента.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - Кураторский список промптов и примеров Nano Banana pro.
@@ -466,8 +466,8 @@
 - [xiaozhi-esp32-server](https://github.com/xinnan-tech/xiaozhi-esp32-server) ![](https://img.shields.io/github/stars/xinnan-tech/xiaozhi-esp32-server?style=flat&color=yellow) - 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.
 - [VAR](https://github.com/FoundationVision/VAR) ![](https://img.shields.io/github/stars/FoundationVision/VAR?style=flat&color=yellow) - Визуальное авторегрессионное моделирование — предсказание следующего масштаба для генерации изображений.
 - [ICCV2023-Paper-Code-Interpretation](https://github.com/extreme-assistant/ICCV2023-Paper-Code-Interpretation) ![](https://img.shields.io/github/stars/extreme-assistant/ICCV2023-Paper-Code-Interpretation?style=flat&color=yellow) - Подборка статей/кода/разборов ICCV 2023/2021/2019/2017.
-- [deepseek_ocr_app](https://github.com/rdumasia303/deepseek_ocr_app) ![](https://img.shields.io/github/stars/rdumasia303/deepseek_ocr_app?style=flat&color=yellow) - Быстрое vibe-coded приложение для DeepSeek OCR.
 - [natively-cluely-ai-assistant](https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant) ![](https://img.shields.io/github/stars/Natively-AI-assistant/natively-cluely-ai-assistant?style=flat&color=yellow) - Free open-source AI-ассистент встреч, интервью и заметок.
+- [deepseek_ocr_app](https://github.com/rdumasia303/deepseek_ocr_app) ![](https://img.shields.io/github/stars/rdumasia303/deepseek_ocr_app?style=flat&color=yellow) - Быстрое vibe-coded приложение для DeepSeek OCR.
 - [global-stock-data](https://github.com/simonlin1212/global-stock-data) ![](https://img.shields.io/github/stars/simonlin1212/global-stock-data?style=flat&color=yellow) - 美股港股全栈数据工具包 (AI Skill) — 7层架构 · 17端点 · 5数据源 · 零鉴权 | US & HK Stock Full-Stack Data Toolkit for AI Coding Assistants.
 
 ## Контрибьютинг
