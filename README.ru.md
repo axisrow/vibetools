@@ -190,8 +190,8 @@
 - [Vane](https://github.com/ItzCrazyKns/Vane) ![](https://img.shields.io/github/stars/ItzCrazyKns/Vane?style=flat&color=yellow) - AI-powered поисковый движок ответов.
 - [PageIndex](https://github.com/VectifyAI/PageIndex) ![](https://img.shields.io/github/stars/VectifyAI/PageIndex?style=flat&color=yellow) - Индекс документов для reasoning-based RAG без векторов.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - Высокопроизводительный MCP-сервер интеллекта кодовой базы.
-- [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Поисковая инфраструктура для AI.
 - [cognee](https://github.com/topoteretes/cognee) ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&color=yellow) - Open-source AI-платформа памяти для агентов.
+- [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Поисковая инфраструктура для AI.
 - [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Упаковывает весь репозиторий в один файл для подсчёта контекста AI.
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - Мощный MCP-тулкит для кодинга: семантический поиск и редактирование.
 - [agentmemory](https://github.com/rohitg00/agentmemory) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat&color=yellow) - 1 Persistent memory for AI coding agents based on real-world benchmarks.
@@ -347,8 +347,8 @@
 - [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts. 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 + AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - Context7 — актуальная документация кода для LLM и AI-редакторов.
 - [storm](https://github.com/stanford-oval/storm) ![](https://img.shields.io/github/stars/stanford-oval/storm?style=flat&color=yellow) - LLM-система курирования знаний: исследование темы и генерация статьи.
-- [gpt-researcher](https://github.com/assafelovic/gpt-researcher) ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&color=yellow) - Автономный агент глубоких исследований на любых LLM.
 - [DeepTutor](https://github.com/HKUDS/DeepTutor) ![](https://img.shields.io/github/stars/HKUDS/DeepTutor?style=flat&color=yellow) - Agent-native персонализированный тьютор.
+- [gpt-researcher](https://github.com/assafelovic/gpt-researcher) ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&color=yellow) - Автономный агент глубоких исследований на любых LLM.
 - [GLM-5](https://github.com/zai-org/GLM-5) ![](https://img.shields.io/github/stars/zai-org/GLM-5?style=flat&color=yellow) - GLM-5: от Vibe Coding к агентному инжинирингу.
 - [codebase-to-course](https://github.com/zarazhangrui/codebase-to-course) ![](https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat&color=yellow) - Навык Claude Code: превращает кодовую базу в интерактивный HTML-курс.
 - [claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) ![](https://img.shields.io/github/stars/Galaxy-Dawn/claude-scholar?style=flat&color=yellow) - Полуавтоматический исследовательский ассистент для науки и разработки.
@@ -374,8 +374,8 @@
 - [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Открытая книга по ML-инжинирингу.
 - [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Vibe coding 2026 | Your First Modern Coding course beginners to master step by step.
 - [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ![](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat&color=yellow) - Подборка по мультимодальным большим языковым моделям.
-- [generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) ![](https://img.shields.io/github/stars/GoogleCloudPlatform/generative-ai?style=flat&color=yellow) - Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini.
 - [ai-guide](https://github.com/liyupi/ai-guide) ![](https://img.shields.io/github/stars/liyupi/ai-guide?style=flat&color=yellow) - AI-гид: ресурсы по vibe coding на китайском.
+- [generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) ![](https://img.shields.io/github/stars/GoogleCloudPlatform/generative-ai?style=flat&color=yellow) - Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini.
 - [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) ![](https://img.shields.io/github/stars/microsoft/mcp-for-beginners?style=flat&color=yellow) - Open-source курс основ Model Context Protocol (MCP).
 - [context-engineering-intro](https://github.com/coleam00/context-engineering-intro) ![](https://img.shields.io/github/stars/coleam00/context-engineering-intro?style=flat&color=yellow) - Context engineering — новый vibe coding для AI-кодинг-ассистентов.
 - [open-llms](https://github.com/eugeneyan/open-llms) ![](https://img.shields.io/github/stars/eugeneyan/open-llms?style=flat&color=yellow) - Список открытых LLM, доступных для коммерческого использования.
