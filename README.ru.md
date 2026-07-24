@@ -63,8 +63,8 @@
 
 ## Облачные coding-агенты
 
-- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
+- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Безопасная эластичная инфраструктура для AI-сгенерированного кода.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - Open-source бэкенд-платформа для агентного кодинга.
@@ -147,8 +147,8 @@
 - [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) ![](https://img.shields.io/github/stars/thedaviddias/Front-End-Checklist?style=flat&color=yellow) - Обязательный чеклист современной веб-разработки для людей и AI.
 - [UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ![](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat&color=yellow) - Open-source мультимодальный AI-агент-стек: модели и агентная инфраструктура.
 - [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) ![](https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat&color=yellow) - Клонирование любого сайта одной командой через AI-агентов.
-- [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - Cursor для дизайнеров — open-source AI-first дизайн-инструмент.
 - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) ![](https://img.shields.io/github/stars/zarazhangrui/frontend-slides?style=flat&color=yellow) - Создание красивых слайдов через фронтенд-навыки кодинг-агента.
+- [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - Cursor для дизайнеров — open-source AI-first дизайн-инструмент.
 - [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) ![](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&color=yellow) - MCP-сервер: отдаёт вёрстку Figma AI-агентам (Cursor и др.).
 - [gsap-skills](https://github.com/greensock/gsap-skills) ![](https://img.shields.io/github/stars/greensock/gsap-skills?style=flat&color=yellow) - Официальные AI-навыки для GSAP.
 - [html-anything](https://github.com/nexu-io/html-anything) ![](https://img.shields.io/github/stars/nexu-io/html-anything?style=flat&color=yellow) - Агентный HTML-редактор — локальный AI-агент пишет HTML.
@@ -182,8 +182,8 @@
 - [graphify](https://github.com/safishamsi/graphify) ![](https://img.shields.io/github/stars/safishamsi/graphify?style=flat&color=yellow) - Навык AI-ассистента кодинга (Claude Code, Codex, Cursor, Gemini).
 - [claude-mem](https://github.com/thedotmack/claude-mem) ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&color=yellow) - Постоянный контекст между сессиями для любого AI-агента.
 - [ragflow](https://github.com/infiniflow/ragflow) ![](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat&color=yellow) - Open-source RAG-движок, объединяющий глубокое понимание документов.
-- [mem0](https://github.com/mem0ai/mem0) ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&color=yellow) - Универсальный слой памяти для AI-агентов.
 - [headroom](https://github.com/headroomlabs-ai/headroom) ![](https://img.shields.io/github/stars/headroomlabs-ai/headroom?style=flat&color=yellow) - Сжатие выводов инструментов, логов и RAG-чанков до LLM.
+- [mem0](https://github.com/mem0ai/mem0) ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&color=yellow) - Универсальный слой памяти для AI-агентов.
 - [mempalace](https://github.com/MemPalace/mempalace) ![](https://img.shields.io/github/stars/MemPalace/mempalace?style=flat&color=yellow) - Лучший по бенчмаркам open-source AI-слой памяти.
 - [llama_index](https://github.com/run-llama/llama_index) ![](https://img.shields.io/github/stars/run-llama/llama_index?style=flat&color=yellow) - Ведущая платформа document-агентов и OCR.
 - [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Простое и быстрое дополненное получение.
@@ -254,8 +254,8 @@
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Универсальный загрузчик навыков для AI-агентов кодинга.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - Кураторский список промптов и примеров Nano Banana pro.
 - [YouMind-OpenLab/awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-gpt-image-2?style=flat&color=yellow) - Крупнейшая библиотека промптов GPT Image 2 — 2000+, ежедневное обновление.
-- [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) ![](https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=flat&color=yellow) - Максимизируйте эффективность и продуктивность.
 - [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов.
+- [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) ![](https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=flat&color=yellow) - Максимизируйте эффективность и продуктивность.
 - [awesome-prompts](https://github.com/ai-boost/awesome-prompts) ![](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat&color=yellow) - Кураторский список промптов ChatGPT из топовых GPTs Store.
 - [ccpm](https://github.com/automazeio/ccpm) ![](https://img.shields.io/github/stars/automazeio/ccpm?style=flat&color=yellow) - Система навыков управления проектами для агентов на GitHub Issues и worktrees.
 - [awesome-gpt4o-images](https://github.com/jamez-bondos/awesome-gpt4o-images) ![](https://img.shields.io/github/stars/jamez-bondos/awesome-gpt4o-images?style=flat&color=yellow) - Подборка изображений и промптов, сгенерированных GPT-4o и gpt-image-1.
@@ -371,8 +371,8 @@
 - [awesome-generative-ai-guide](https://github.com/aishwaryanr/awesome-generative-ai-guide) ![](https://img.shields.io/github/stars/aishwaryanr/awesome-generative-ai-guide?style=flat&color=yellow) - Единый репо: GenAI-исследования, интервью, ноутбуки.
 - [Hands-On-Large-Language-Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) ![](https://img.shields.io/github/stars/HandsOnLLM/Hands-On-Large-Language-Models?style=flat&color=yellow) - Код к книге O'Reilly «Hands-On Large Language Models».
 - [vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn) ![](https://img.shields.io/github/stars/2025Emma/vibe-coding-cn?style=flat&color=yellow) - Кураторский список ресурсов по vibe coding на китайском.
-- [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Открытая книга по ML-инжинирингу.
 - [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Vibe coding 2026 | Your First Modern Coding course beginners to master step by step.
+- [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Открытая книга по ML-инжинирингу.
 - [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ![](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat&color=yellow) - Подборка по мультимодальным большим языковым моделям.
 - [ai-guide](https://github.com/liyupi/ai-guide) ![](https://img.shields.io/github/stars/liyupi/ai-guide?style=flat&color=yellow) - AI-гид: ресурсы по vibe coding на китайском.
 - [generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) ![](https://img.shields.io/github/stars/GoogleCloudPlatform/generative-ai?style=flat&color=yellow) - Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini.

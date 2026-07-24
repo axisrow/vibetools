@@ -63,8 +63,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Cloud Coding Agents
 
-- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
+- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Prompt, run, edit and deploy full-stack web apps from the browser.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - The all-in-one, open-source backend platform for agentic coding.
@@ -147,8 +147,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) ![](https://img.shields.io/github/stars/thedaviddias/Front-End-Checklist?style=flat&color=yellow) - The essential checklist for modern web development, for humans and AI agents.
 - [UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) ![](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat&color=yellow) - The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Inf.
 - [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) ![](https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat&color=yellow) - Clone any website with one command using AI coding agents.
-- [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, an.
 - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) ![](https://img.shields.io/github/stars/zarazhangrui/frontend-slides?style=flat&color=yellow) - Create beautiful slides on the web using a coding agent's frontend skills.
+- [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, an.
 - [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) ![](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&color=yellow) - MCP server to provide Figma layout information to AI coding agents like Cursor.
 - [gsap-skills](https://github.com/greensock/gsap-skills) ![](https://img.shields.io/github/stars/greensock/gsap-skills?style=flat&color=yellow) - Official AI skills for GSAP.
 - [html-anything](https://github.com/nexu-io/html-anything) ![](https://img.shields.io/github/stars/nexu-io/html-anything?style=flat&color=yellow) - The agentic HTML editor — your local AI agent writes the HTML, you ship it.
@@ -182,8 +182,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [graphify](https://github.com/safishamsi/graphify) ![](https://img.shields.io/github/stars/safishamsi/graphify?style=flat&color=yellow) - AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more).
 - [claude-mem](https://github.com/thedotmack/claude-mem) ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&color=yellow) - Persistent Context Across Sessions for Every Agent – Captures everything your agent does.
 - [ragflow](https://github.com/infiniflow/ragflow) ![](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat&color=yellow) - RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cu.
-- [mem0](https://github.com/mem0ai/mem0) ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&color=yellow) - Universal memory layer for AI Agents.
 - [headroom](https://github.com/headroomlabs-ai/headroom) ![](https://img.shields.io/github/stars/headroomlabs-ai/headroom?style=flat&color=yellow) - Compress tool outputs, logs, files, and RAG chunks before they reach the LLM.
+- [mem0](https://github.com/mem0ai/mem0) ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&color=yellow) - Universal memory layer for AI Agents.
 - [mempalace](https://github.com/MemPalace/mempalace) ![](https://img.shields.io/github/stars/MemPalace/mempalace?style=flat&color=yellow) - The best-benchmarked open-source AI memory system.
 - [llama_index](https://github.com/run-llama/llama_index) ![](https://img.shields.io/github/stars/run-llama/llama_index?style=flat&color=yellow) - LlamaIndex is the leading document agent and OCR platform.
 - [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Simple and Fast Retrieval-Augmented Generation.
@@ -254,8 +254,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Universal skills loader for AI coding agents - npm i -g openskills.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - An awesome list of curated Nano Banana pro prompts and examples.
 - [YouMind-OpenLab/awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-gpt-image-2?style=flat&color=yellow) - World's largest GPT Image 2 prompt library, updated daily — 2000+ curated prompts with p.
-- [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) ![](https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=flat&color=yellow) - Maximize your efficiency and productivity.
 - [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中.
+- [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) ![](https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=flat&color=yellow) - Maximize your efficiency and productivity.
 - [awesome-prompts](https://github.com/ai-boost/awesome-prompts) ![](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat&color=yellow) - Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store.
 - [ccpm](https://github.com/automazeio/ccpm) ![](https://img.shields.io/github/stars/automazeio/ccpm?style=flat&color=yellow) - Project management skill system for Agents that uses GitHub Issues and Git worktrees for p.
 - [awesome-gpt4o-images](https://github.com/jamez-bondos/awesome-gpt4o-images) ![](https://img.shields.io/github/stars/jamez-bondos/awesome-gpt4o-images?style=flat&color=yellow) - Awesome curated collection of images and prompts generated by GPT-4o and gpt-image-1.
@@ -371,8 +371,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [awesome-generative-ai-guide](https://github.com/aishwaryanr/awesome-generative-ai-guide) ![](https://img.shields.io/github/stars/aishwaryanr/awesome-generative-ai-guide?style=flat&color=yellow) - A one stop repository for generative AI research updates, interview resources, notebooks a.
 - [Hands-On-Large-Language-Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) ![](https://img.shields.io/github/stars/HandsOnLLM/Hands-On-Large-Language-Models?style=flat&color=yellow) - Official code repo for the O'Reilly Book - "Hands-On Large Language Models".
 - [vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn) ![](https://img.shields.io/github/stars/2025Emma/vibe-coding-cn?style=flat&color=yellow) - Curated list of vibe coding resources (Chinese).
-- [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Machine Learning Engineering Open Book.
 - [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Vibe coding course - build apps step by step from beginner to master.
+- [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Machine Learning Engineering Open Book.
 - [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ![](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat&color=yellow) - Latest advances on Multimodal Large Language Models - surveys and benchmarks.
 - [ai-guide](https://github.com/liyupi/ai-guide) ![](https://img.shields.io/github/stars/liyupi/ai-guide?style=flat&color=yellow) - AI resources hub and vibe coding tutorial - DeepSeek, GPT, Gemini, Claude and GLM guides.
 - [generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) ![](https://img.shields.io/github/stars/GoogleCloudPlatform/generative-ai?style=flat&color=yellow) - Sample code and notebooks for Generative AI on Google Cloud, with Gemini Enterprise Agent.
