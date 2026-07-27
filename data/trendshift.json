@@ -9,20 +9,13 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/14921",
     "trendshiftId": "14921",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/ComposioHQ/awesome-claude-skills": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18117/daily",
-        "currentRank": 8,
-        "kind": "day",
-        "rank": 1,
-        "source": "ranking"
-      },
-      {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18117/weekly",
-        "currentRank": 7,
+        "currentRank": 24,
         "kind": "week",
         "rank": 3,
         "source": "ranking"
@@ -35,7 +28,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/18117",
     "trendshiftId": "18117",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/D4Vinci/Scrapling": {
     "badges": [
@@ -47,20 +40,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/14244",
     "trendshiftId": "14244",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/DeusData/codebase-memory-mcp": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/23635/daily",
-        "currentRank": 3,
+        "currentRank": 2,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/23635/weekly",
-        "currentRank": 1,
+        "currentRank": 2,
         "kind": "week",
         "rank": 3,
         "source": "ranking"
@@ -78,20 +71,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/23635",
     "trendshiftId": "23635",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/DietrichGebert/ponytail": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/daily",
-        "currentRank": 12,
+        "currentRank": 10,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/50668/weekly",
-        "currentRank": 3,
+        "currentRank": 4,
         "kind": "week",
         "rank": 1,
         "source": "ranking"
@@ -109,7 +102,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/50668",
     "trendshiftId": "50668",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/Egonex-AI/Understand-Anything": {
     "badges": [
@@ -121,7 +114,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/23482",
     "trendshiftId": "23482",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/Fincept-Corporation/FinceptTerminal": {
     "badges": [
@@ -134,7 +127,7 @@
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17028/weekly",
-        "currentRank": 7,
+        "currentRank": 4,
         "kind": "week",
         "rank": 6,
         "source": "ranking"
@@ -154,7 +147,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/17028",
     "trendshiftId": "17028",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/Fission-AI/OpenSpec": {
     "badges": [
@@ -166,20 +159,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/18789",
     "trendshiftId": "18789",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/HKUDS/DeepTutor": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17099/daily",
-        "currentRank": 12,
+        "currentRank": 9,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/17099/weekly",
-        "currentRank": 25,
+        "currentRank": 12,
         "kind": "week",
         "rank": 6,
         "source": "ranking"
@@ -194,7 +187,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/17099",
     "trendshiftId": "17099",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/Hmbown/CodeWhale": {
     "badges": [
@@ -206,46 +199,39 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/26455",
     "trendshiftId": "26455",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/JCodesMore/ai-website-cloner-template": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24302/weekly",
-        "currentRank": 24,
-        "kind": "week",
-        "rank": 10,
-        "source": "ranking"
-      },
-      {
-        "currentRank": 20,
+        "currentRank": 22,
         "kind": "month",
         "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/24302",
     "trendshiftId": "24302",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/JuliusBrussee/caveman": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/daily",
-        "currentRank": 16,
+        "currentRank": 18,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/weekly",
-        "currentRank": 6,
+        "currentRank": 12,
         "kind": "week",
         "rank": 4,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25391/monthly",
-        "currentRank": 23,
+        "currentRank": 24,
         "kind": "month",
         "rank": 6,
         "source": "ranking"
@@ -258,20 +244,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/25391",
     "trendshiftId": "25391",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/Leonxlnx/taste-skill": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21681/daily",
-        "currentRank": 7,
+        "currentRank": 12,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21681/weekly",
-        "currentRank": 4,
+        "currentRank": 9,
         "kind": "week",
         "rank": 3,
         "source": "ranking"
@@ -289,39 +275,39 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/21681",
     "trendshiftId": "21681",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/MemPalace/mempalace": {
     "badges": [
       {
-        "currentRank": 22,
+        "currentRank": 23,
         "kind": "year",
         "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/25725",
     "trendshiftId": "25725",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/NousResearch/hermes-agent": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22055/daily",
-        "currentRank": 25,
+        "currentRank": 11,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22055/weekly",
-        "currentRank": 9,
+        "currentRank": 11,
         "kind": "week",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22055/monthly",
-        "currentRank": 10,
+        "currentRank": 11,
         "kind": "month",
         "rank": 2,
         "source": "ranking"
@@ -334,7 +320,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/22055",
     "trendshiftId": "22055",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/TauricResearch/TradingAgents": {
     "badges": [
@@ -346,7 +332,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/16192",
     "trendshiftId": "16192",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/VoltAgent/awesome-design-md": {
     "badges": [
@@ -358,7 +344,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/25016",
     "trendshiftId": "25016",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/Yeachan-Heo/oh-my-claudecode": {
     "badges": [
@@ -370,14 +356,21 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/19033",
     "trendshiftId": "19033",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/ZhuLinsen/daily_stock_analysis": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18527/daily",
-        "currentRank": 25,
+        "currentRank": 13,
         "kind": "day",
+        "rank": 3,
+        "source": "ranking"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18527/weekly",
+        "currentRank": 17,
+        "kind": "week",
         "rank": 3,
         "source": "ranking"
       },
@@ -396,7 +389,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/18527",
     "trendshiftId": "18527",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/aaif-goose/goose": {
     "badges": [
@@ -408,20 +401,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/25298",
     "trendshiftId": "25298",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/addyosmani/agent-skills": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25200/daily",
-        "currentRank": 25,
+        "currentRank": 14,
         "kind": "day",
         "rank": 2,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/25200/weekly",
-        "currentRank": 14,
+        "currentRank": 11,
         "kind": "week",
         "rank": 2,
         "source": "ranking"
@@ -441,20 +434,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/25200",
     "trendshiftId": "25200",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/affaan-m/ECC": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21488/daily",
-        "currentRank": 3,
+        "currentRank": 7,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/21488/weekly",
-        "currentRank": 5,
+        "currentRank": 6,
         "kind": "week",
         "rank": 1,
         "source": "ranking"
@@ -474,7 +467,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/21488",
     "trendshiftId": "21488",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/aishwaryanr/awesome-generative-ai-guide": {
     "badges": [
@@ -486,7 +479,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/7663",
     "trendshiftId": "7663",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/anthropics/claude-code": {
     "badges": [
@@ -498,20 +491,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/13856",
     "trendshiftId": "13856",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/asgeirtj/system_prompts_leaks": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14577/daily",
-        "currentRank": 11,
+        "currentRank": 9,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14577/weekly",
-        "currentRank": 10,
+        "currentRank": 8,
         "kind": "week",
         "rank": 1,
         "source": "ranking"
@@ -531,7 +524,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/14577",
     "trendshiftId": "14577",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/bytedance/deer-flow": {
     "badges": [
@@ -543,26 +536,38 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/14699",
     "trendshiftId": "14699",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/calesthio/OpenMontage": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24682/weekly",
-        "currentRank": 23,
-        "kind": "week",
-        "rank": 1,
-        "source": "ranking"
-      },
-      {
-        "currentRank": 13,
+        "currentRank": 15,
         "kind": "month",
         "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/24682",
     "trendshiftId": "24682",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
+  },
+  "https://github.com/can1357/oh-my-pi": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/30057/daily",
+        "currentRank": 13,
+        "kind": "day",
+        "rank": 16,
+        "source": "ranking"
+      },
+      {
+        "currentRank": 13,
+        "kind": "week",
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/30057",
+    "trendshiftId": "30057",
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/chenhg5/cc-connect": {
     "badges": [
@@ -574,7 +579,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/23266",
     "trendshiftId": "23266",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/code-yeongyu/oh-my-openagent": {
     "badges": [
@@ -586,26 +591,26 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/22584",
     "trendshiftId": "22584",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/coreyhaines31/marketingskills": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18529/daily",
-        "currentRank": 8,
+        "currentRank": 19,
         "kind": "day",
         "rank": 2,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/18529/weekly",
-        "currentRank": 23,
+        "currentRank": 18,
         "kind": "week",
         "rank": 8,
         "source": "ranking"
       },
       {
-        "currentRank": 9,
+        "currentRank": 10,
         "kind": "month",
         "source": "ranking"
       },
@@ -617,7 +622,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/18529",
     "trendshiftId": "18529",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/datawhalechina/easy-vibe": {
     "badges": [
@@ -629,10 +634,24 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/22079",
     "trendshiftId": "22079",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/datawhalechina/hello-agents": {
     "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15520/daily",
+        "currentRank": 24,
+        "kind": "day",
+        "rank": 3,
+        "source": "ranking"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15520/weekly",
+        "currentRank": 22,
+        "kind": "week",
+        "rank": 6,
+        "source": "ranking"
+      },
       {
         "currentRank": 13,
         "kind": "year",
@@ -641,27 +660,27 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/15520",
     "trendshiftId": "15520",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/earendil-works/pi": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15471/daily",
-        "currentRank": 7,
+        "currentRank": 18,
         "kind": "day",
         "rank": 2,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15471/weekly",
-        "currentRank": 19,
+        "currentRank": 17,
         "kind": "week",
         "rank": 10,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15471/monthly",
-        "currentRank": 13,
+        "currentRank": 12,
         "kind": "month",
         "rank": 8,
         "source": "ranking"
@@ -674,13 +693,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/15471",
     "trendshiftId": "15471",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/esengine/DeepSeek-Reasonix": {
     "badges": [
       {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27020/daily",
+        "currentRank": 15,
+        "kind": "day",
+        "rank": 2,
+        "source": "ranking"
+      },
+      {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27020/weekly",
-        "currentRank": 18,
+        "currentRank": 14,
         "kind": "week",
         "rank": 5,
         "source": "ranking"
@@ -700,20 +726,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/27020",
     "trendshiftId": "27020",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/farion1231/cc-switch": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15372/daily",
-        "currentRank": 7,
+        "currentRank": 4,
         "kind": "day",
         "rank": 5,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15372/weekly",
-        "currentRank": 11,
+        "currentRank": 3,
         "kind": "week",
         "rank": 7,
         "source": "ranking"
@@ -733,20 +759,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/15372",
     "trendshiftId": "15372",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/firecrawl/firecrawl": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14644/daily",
-        "currentRank": 11,
+        "currentRank": 14,
         "kind": "day",
         "rank": 2,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14644/weekly",
-        "currentRank": 15,
+        "currentRank": 11,
         "kind": "week",
         "rank": 7,
         "source": "ranking"
@@ -760,7 +786,7 @@
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/14644/yearly",
-        "currentRank": 7,
+        "currentRank": 6,
         "kind": "year",
         "rank": 15,
         "source": "ranking"
@@ -768,17 +794,31 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/14644",
     "trendshiftId": "14644",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
+  },
+  "https://github.com/freestylefly/awesome-gpt-image-2": {
+    "badges": [
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/28623/daily",
+        "currentRank": 8,
+        "kind": "day",
+        "rank": 17,
+        "source": "ranking"
+      },
+      {
+        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/28623/weekly",
+        "currentRank": 13,
+        "kind": "week",
+        "rank": 22,
+        "source": "ranking"
+      }
+    ],
+    "pageUrl": "https://trendshift.io/repositories/28623",
+    "trendshiftId": "28623",
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/headroomlabs-ai/headroom": {
     "badges": [
-      {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/20881/weekly",
-        "currentRank": 19,
-        "kind": "week",
-        "rank": 2,
-        "source": "ranking"
-      },
       {
         "currentRank": 17,
         "kind": "year",
@@ -787,7 +827,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/20881",
     "trendshiftId": "20881",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/iOfficeAI/AionUi": {
     "badges": [
@@ -799,20 +839,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/15423",
     "trendshiftId": "15423",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/infiniflow/ragflow": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/9064/daily",
-        "currentRank": 17,
+        "currentRank": 19,
         "kind": "day",
         "rank": 1,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/9064/weekly",
-        "currentRank": 10,
+        "currentRank": 15,
         "kind": "week",
         "rank": 7,
         "source": "ranking"
@@ -832,7 +872,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/9064",
     "trendshiftId": "9064",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/jackwener/OpenCLI": {
     "badges": [
@@ -844,26 +884,19 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/23541",
     "trendshiftId": "23541",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/kestra-io/kestra": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/2714/weekly",
         "currentRank": 21,
-        "kind": "week",
-        "rank": 11,
-        "source": "ranking"
-      },
-      {
-        "currentRank": 20,
         "kind": "month",
         "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/2714",
     "trendshiftId": "2714",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/liyupi/ai-guide": {
     "badges": [
@@ -875,19 +908,19 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/19039",
     "trendshiftId": "19039",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/manaflow-ai/cmux": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/27053/daily",
-        "currentRank": 21,
+        "currentRank": 7,
         "kind": "day",
         "rank": 5,
         "source": "ranking"
       },
       {
-        "currentRank": 7,
+        "currentRank": 6,
         "kind": "week",
         "source": "ranking"
       },
@@ -904,7 +937,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/27053",
     "trendshiftId": "27053",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/maximhq/bifrost": {
     "badges": [
@@ -916,41 +949,13 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/14529",
     "trendshiftId": "14529",
-    "updatedAt": "2026-07-26"
-  },
-  "https://github.com/n8n-io/n8n": {
-    "badges": [
-      {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/1391/daily",
-        "currentRank": 24,
-        "kind": "day",
-        "rank": 2,
-        "source": "ranking"
-      }
-    ],
-    "pageUrl": "https://trendshift.io/repositories/1391",
-    "trendshiftId": "1391",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/nexu-io/open-design": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/26691/daily",
-        "currentRank": 15,
-        "kind": "day",
-        "rank": 2,
-        "source": "ranking"
-      },
-      {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/26691/weekly",
-        "currentRank": 23,
-        "kind": "week",
-        "rank": 3,
-        "source": "ranking"
-      },
-      {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/26691/monthly",
-        "currentRank": 19,
+        "currentRank": 20,
         "kind": "month",
         "rank": 1,
         "source": "ranking"
@@ -963,34 +968,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/26691",
     "trendshiftId": "26691",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/ollama/ollama": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/7239/daily",
-        "currentRank": 15,
-        "kind": "day",
-        "rank": 2,
-        "source": "ranking"
-      },
-      {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/7239/weekly",
-        "currentRank": 15,
-        "kind": "week",
-        "rank": 3,
-        "source": "ranking"
-      },
-      {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/7239/monthly",
-        "currentRank": 20,
+        "currentRank": 19,
         "kind": "month",
         "rank": 10,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/7239/yearly",
-        "currentRank": 16,
+        "currentRank": 17,
         "kind": "year",
         "rank": 1,
         "source": "ranking"
@@ -998,15 +989,10 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/7239",
     "trendshiftId": "7239",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/osaurus-ai/osaurus": {
     "badges": [
-      {
-        "currentRank": 20,
-        "kind": "week",
-        "source": "ranking"
-      },
       {
         "currentRank": 17,
         "kind": "month",
@@ -1020,20 +1006,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/22454",
     "trendshiftId": "22454",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/rohitg00/ai-engineering-from-scratch": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24667/daily",
-        "currentRank": 19,
+        "currentRank": 14,
         "kind": "day",
         "rank": 2,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/24667/weekly",
-        "currentRank": 21,
+        "currentRank": 13,
         "kind": "week",
         "rank": 5,
         "source": "ranking"
@@ -1041,20 +1027,13 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/24667",
     "trendshiftId": "24667",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/rtk-ai/rtk": {
     "badges": [
       {
-        "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22339/daily",
-        "currentRank": 13,
-        "kind": "day",
-        "rank": 11,
-        "source": "ranking"
-      },
-      {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/22339/weekly",
-        "currentRank": 16,
+        "currentRank": 22,
         "kind": "week",
         "rank": 18,
         "source": "ranking"
@@ -1074,19 +1053,19 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/22339",
     "trendshiftId": "22339",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/ruvnet/ruflo": {
     "badges": [
       {
-        "currentRank": 6,
+        "currentRank": 7,
         "kind": "year",
         "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/22017",
     "trendshiftId": "22017",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/shanraisshan/claude-code-best-practice": {
     "badges": [
@@ -1098,7 +1077,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/20530",
     "trendshiftId": "20530",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/shareAI-lab/learn-claude-code": {
     "badges": [
@@ -1110,20 +1089,20 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/19746",
     "trendshiftId": "19746",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/thedotmack/claude-mem": {
     "badges": [
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15496/weekly",
-        "currentRank": 22,
+        "currentRank": 24,
         "kind": "week",
         "rank": 3,
         "source": "ranking"
       },
       {
         "badgeUrl": "https://trendshift.io/api/badge/trendshift/repositories/15496/monthly",
-        "currentRank": 22,
+        "currentRank": 23,
         "kind": "month",
         "rank": 6,
         "source": "ranking"
@@ -1136,19 +1115,19 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/15496",
     "trendshiftId": "15496",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/wonderwhy-er/DesktopCommanderMCP": {
     "badges": [
       {
-        "currentRank": 22,
+        "currentRank": 24,
         "kind": "month",
         "source": "ranking"
       }
     ],
     "pageUrl": "https://trendshift.io/repositories/13251",
     "trendshiftId": "13251",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/xbtlin/ai-berkshire": {
     "badges": [
@@ -1160,7 +1139,7 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/63696",
     "trendshiftId": "63696",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   },
   "https://github.com/zarazhangrui/frontend-slides": {
     "badges": [
@@ -1172,6 +1151,6 @@
     ],
     "pageUrl": "https://trendshift.io/repositories/22051",
     "trendshiftId": "22051",
-    "updatedAt": "2026-07-26"
+    "updatedAt": "2026-07-27"
   }
 }
