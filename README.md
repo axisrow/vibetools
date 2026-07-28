@@ -187,8 +187,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [mempalace](https://github.com/MemPalace/mempalace) ![](https://img.shields.io/github/stars/MemPalace/mempalace?style=flat&color=yellow) - The best-benchmarked open-source AI memory system.
 - [llama_index](https://github.com/run-llama/llama_index) ![](https://img.shields.io/github/stars/run-llama/llama_index?style=flat&color=yellow) - LlamaIndex is the leading document agent and OCR platform.
 - [LightRAG](https://github.com/HKUDS/LightRAG) ![](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat&color=yellow) - Simple and Fast Retrieval-Augmented Generation.
-- [Vane](https://github.com/ItzCrazyKns/Vane) ![](https://img.shields.io/github/stars/ItzCrazyKns/Vane?style=flat&color=yellow) - Vane is an AI-powered answering engine.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat&color=yellow) - High-performance code intelligence MCP server.
+- [Vane](https://github.com/ItzCrazyKns/Vane) ![](https://img.shields.io/github/stars/ItzCrazyKns/Vane?style=flat&color=yellow) - Vane is an AI-powered answering engine.
 - [PageIndex](https://github.com/VectifyAI/PageIndex) ![](https://img.shields.io/github/stars/VectifyAI/PageIndex?style=flat&color=yellow) - PageIndex: Document Index for Vectorless, Reasoning-based RAG.
 - [cognee](https://github.com/topoteretes/cognee) ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&color=yellow) - Cognee is the open-source AI memory platform for agents.
 - [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Search infrastructure for AI.
@@ -346,8 +346,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - Spec-driven development (SDD) for AI coding assistants.
 - [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion and trend monitor with multi-platform aggregation and alerts.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors.
-- [storm](https://github.com/stanford-oval/storm) ![](https://img.shields.io/github/stars/stanford-oval/storm?style=flat&color=yellow) - An LLM-powered knowledge curation system that researches a topic and generates a full-leng.
 - [DeepTutor](https://github.com/HKUDS/DeepTutor) ![](https://img.shields.io/github/stars/HKUDS/DeepTutor?style=flat&color=yellow) - DeepTutor: Agent-native Personalized Tutoring.
+- [storm](https://github.com/stanford-oval/storm) ![](https://img.shields.io/github/stars/stanford-oval/storm?style=flat&color=yellow) - An LLM-powered knowledge curation system that researches a topic and generates a full-leng.
 - [gpt-researcher](https://github.com/assafelovic/gpt-researcher) ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&color=yellow) - An autonomous agent that conducts deep research on any data using any LLM providers.
 - [GLM-5](https://github.com/zai-org/GLM-5) ![](https://img.shields.io/github/stars/zai-org/GLM-5?style=flat&color=yellow) - GLM-5: From Vibe Coding to Agentic Engineering.
 - [codebase-to-course](https://github.com/zarazhangrui/codebase-to-course) ![](https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat&color=yellow) - A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML.
