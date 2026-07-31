@@ -307,8 +307,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - PraisonAI — Hire a 24/7 AI Workforce.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework.
 - [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops.
-- [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow: The library to build & auto-optimize LLM applications.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - The Framework for Building Agents.
+- [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow: The library to build & auto-optimize LLM applications.
 - [core](https://github.com/cheshire-cat-ai/core) ![](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat&color=yellow) - AI agent microservice.
 - [helixent](https://github.com/MagicCube/helixent) ![](https://img.shields.io/github/stars/MagicCube/helixent?style=flat&color=yellow) - Helixent is a small library for building ReAct-style AI agent loops based on the Bun stack.
 
@@ -431,8 +431,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - A collection of libraries to optimise AI model performances.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Own your AI.
 - [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
-- [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust.
+- [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,.
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade helps users discover and run local AI apps by serving optimized LLMs right from t.
 
 ## Domain-Specific Agents
@@ -447,8 +447,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) ![](https://img.shields.io/github/stars/xpzouying/xiaohongshu-mcp?style=flat&color=yellow) - MCP for xiaohongshu.com.
 - [ai-berkshire](https://github.com/xbtlin/ai-berkshire) ![](https://img.shields.io/github/stars/xbtlin/ai-berkshire?style=flat&color=yellow) - AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berk.
 - [QuantDinger](https://github.com/brokermr810/QuantDinger) ![](https://img.shields.io/github/stars/brokermr810/QuantDinger?style=flat&color=yellow) - AI quantitative trading platform for crypto, stocks, and forex with backtesting, live trad.
-- [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=flat&color=yellow) - FinRobot: An Open-Source AI Agent Platform for Financial Analysis using LLMs.
 - [claude-ads](https://github.com/AgriciDaniel/claude-ads) ![](https://img.shields.io/github/stars/AgriciDaniel/claude-ads?style=flat&color=yellow) - Comprehensive paid advertising audit & optimization skill for Claude Code.
+- [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=flat&color=yellow) - FinRobot: An Open-Source AI Agent Platform for Financial Analysis using LLMs.
 - [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) ![](https://img.shields.io/github/stars/JerBouma/FinanceToolkit?style=flat&color=yellow) - Transparent and Efficient Financial Analysis.
 - [arc-kit](https://github.com/tractorjuice/arc-kit) ![](https://img.shields.io/github/stars/tractorjuice/arc-kit?style=flat&color=yellow) - The Enterprise Architecture Governance Harness — strategy, architecture, delivery, and ass.
 - [aso-skills](https://github.com/Eronred/aso-skills) ![](https://img.shields.io/github/stars/Eronred/aso-skills?style=flat&color=yellow) - AI agent skills for App Store Optimization (ASO) and app marketing.

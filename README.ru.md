@@ -307,8 +307,8 @@
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - Нанимайте AI-рабочую силу 24/7.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - Enterprise-grade мультиагентный фреймворк оркестрации для продакшна.
 - [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org.
-- [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow — библиотека построения и автооптимизации LLM-приложений.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - Фреймворк построения агентов.
+- [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow — библиотека построения и автооптимизации LLM-приложений.
 - [core](https://github.com/cheshire-cat-ai/core) ![](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat&color=yellow) - AI-агент микросервис.
 - [helixent](https://github.com/MagicCube/helixent) ![](https://img.shields.io/github/stars/MagicCube/helixent?style=flat&color=yellow) - Маленькая библиотека для ReAct-style циклов AI-агентов на Bun.
 
@@ -431,8 +431,8 @@
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - Коллекция библиотек оптимизации производительности AI-моделей.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Владейте своим AI.
 - [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
-- [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - AI-native прокси и дата-плоскость для агентных приложений.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM).
+- [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - AI-native прокси и дата-плоскость для агентных приложений.
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade — обнаружение и запуск локальных AI-приложений с оптимизированными LLM.
 
 ## Доменные AI-агенты
@@ -447,8 +447,8 @@
 - [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) ![](https://img.shields.io/github/stars/xpzouying/xiaohongshu-mcp?style=flat&color=yellow) - MCP для xiaohongshu.com.
 - [ai-berkshire](https://github.com/xbtlin/ai-berkshire) ![](https://img.shields.io/github/stars/xbtlin/ai-berkshire?style=flat&color=yellow) - Berkshire эпохи AI: фреймворк стоимостного инвестирования на Claude Code/Codex.
 - [QuantDinger](https://github.com/brokermr810/QuantDinger) ![](https://img.shields.io/github/stars/brokermr810/QuantDinger?style=flat&color=yellow) - AI-платформа количественного трейдинга crypto/акций/форекс.
-- [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=flat&color=yellow) - FinRobot — open-source AI-агент для финансового анализа на LLM.
 - [claude-ads](https://github.com/AgriciDaniel/claude-ads) ![](https://img.shields.io/github/stars/AgriciDaniel/claude-ads?style=flat&color=yellow) - Навык аудита и оптимизации платной рекламы для Claude Code.
+- [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=flat&color=yellow) - FinRobot — open-source AI-агент для финансового анализа на LLM.
 - [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) ![](https://img.shields.io/github/stars/JerBouma/FinanceToolkit?style=flat&color=yellow) - Прозрачный и эффективный финансовый анализ.
 - [arc-kit](https://github.com/tractorjuice/arc-kit) ![](https://img.shields.io/github/stars/tractorjuice/arc-kit?style=flat&color=yellow) - Харнес архитектурного управления предприятием: стратегия, архитектура, доставка.
 - [aso-skills](https://github.com/Eronred/aso-skills) ![](https://img.shields.io/github/stars/Eronred/aso-skills?style=flat&color=yellow) - AI-навыки для App Store Optimization (ASO) и маркетинга приложений.
