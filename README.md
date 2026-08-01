@@ -327,8 +327,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [openllmetry](https://github.com/traceloop/openllmetry) ![](https://img.shields.io/github/stars/traceloop/openllmetry?style=flat&color=yellow) - Open-source observability for your GenAI or LLM application, based on OpenTelemetry.
 - [aim](https://github.com/aimhubio/aim) ![](https://img.shields.io/github/stars/aimhubio/aim?style=flat&color=yellow) - Aim — An easy-to-use & supercharged open-source experiment tracker.
 - [Helicone](https://github.com/Helicone/helicone) ![](https://img.shields.io/github/stars/Helicone/helicone?style=flat&color=yellow) - Open-source LLM observability with monitoring, eval and experiments.
-- [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - AI observability platform for production LLM and agent systems.
 - [agenta](https://github.com/Agenta-AI/agenta) ![](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat&color=yellow) - The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and.
+- [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - AI observability platform for production LLM and agent systems.
 - [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - OpenTelemetry-native LLM observability, GPU monitoring and guardrails.
 - [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) ![](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=flat&color=yellow) - Framework for large language model evaluations by the AI Safety Institute.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - Trench — Open-Source Analytics Infrastructure.

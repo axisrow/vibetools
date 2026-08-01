@@ -327,8 +327,8 @@
 - [openllmetry](https://github.com/traceloop/openllmetry) ![](https://img.shields.io/github/stars/traceloop/openllmetry?style=flat&color=yellow) - Open-source наблюдаемость для GenAI/LLM на базе OpenTelemetry.
 - [aim](https://github.com/aimhubio/aim) ![](https://img.shields.io/github/stars/aimhubio/aim?style=flat&color=yellow) - Aim — простой open-source трекер экспериментов.
 - [Helicone](https://github.com/Helicone/helicone) ![](https://img.shields.io/github/stars/Helicone/helicone?style=flat&color=yellow) - Open-source наблюдаемость LLM: мониторинг, оценка и эксперименты.
-- [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - Платформа наблюдаемости для production LLM и агентных систем.
 - [agenta](https://github.com/Agenta-AI/agenta) ![](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat&color=yellow) - Open-source LLMOps: prompt playground, оценка LLM, управление.
+- [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - Платформа наблюдаемости для production LLM и агентных систем.
 - [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
 - [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) ![](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=flat&color=yellow) - Фреймворк для оценки LLM от Института безопасности ИИ.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - Open-source инфраструктура аналитики.
