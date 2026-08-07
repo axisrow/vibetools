@@ -192,8 +192,8 @@
 - [PageIndex](https://github.com/VectifyAI/PageIndex) ![](https://img.shields.io/github/stars/VectifyAI/PageIndex?style=flat&color=yellow) - Индекс документов для reasoning-based RAG без векторов.
 - [cognee](https://github.com/topoteretes/cognee) ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&color=yellow) - Open-source AI-платформа памяти для агентов.
 - [chroma](https://github.com/chroma-core/chroma) ![](https://img.shields.io/github/stars/chroma-core/chroma?style=flat&color=yellow) - Поисковая инфраструктура для AI.
-- [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Упаковывает весь репозиторий в один файл для подсчёта контекста AI.
 - [serena](https://github.com/oraios/serena) ![](https://img.shields.io/github/stars/oraios/serena?style=flat&color=yellow) - Мощный MCP-тулкит для кодинга: семантический поиск и редактирование.
+- [Repomix](https://github.com/yamadashy/repomix) ![](https://img.shields.io/github/stars/yamadashy/repomix?style=flat&color=yellow) - Упаковывает весь репозиторий в один файл для подсчёта контекста AI.
 - [agentmemory](https://github.com/rohitg00/agentmemory) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat&color=yellow) - 1 Persistent memory for AI coding agents based on real-world benchmarks.
 - [OpenMetadata](https://github.com/open-metadata/OpenMetadata) ![](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=flat&color=yellow) - Open Context Layer для данных и AI: построение траста данных.
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - MCP поиска кода для Claude Code.
@@ -444,8 +444,8 @@
 - [FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal) ![](https://img.shields.io/github/stars/Fincept-Corporation/FinceptTerminal?style=flat&color=yellow) - Современное финанс-приложение: аналитика рынков, инвестиции.
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinGPT?style=flat&color=yellow) - FinGPT — open-source финансовые большие языковые модели.
 - [machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading) ![](https://img.shields.io/github/stars/stefan-jansen/machine-learning-for-trading?style=flat&color=yellow) - Код к «Machine Learning for Trading», 3-е издание.
-- [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) ![](https://img.shields.io/github/stars/xpzouying/xiaohongshu-mcp?style=flat&color=yellow) - MCP для xiaohongshu.com.
 - [ai-berkshire](https://github.com/xbtlin/ai-berkshire) ![](https://img.shields.io/github/stars/xbtlin/ai-berkshire?style=flat&color=yellow) - Berkshire эпохи AI: фреймворк стоимостного инвестирования на Claude Code/Codex.
+- [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) ![](https://img.shields.io/github/stars/xpzouying/xiaohongshu-mcp?style=flat&color=yellow) - MCP для xiaohongshu.com.
 - [QuantDinger](https://github.com/brokermr810/QuantDinger) ![](https://img.shields.io/github/stars/brokermr810/QuantDinger?style=flat&color=yellow) - AI-платформа количественного трейдинга crypto/акций/форекс.
 - [claude-ads](https://github.com/AgriciDaniel/claude-ads) ![](https://img.shields.io/github/stars/AgriciDaniel/claude-ads?style=flat&color=yellow) - Навык аудита и оптимизации платной рекламы для Claude Code.
 - [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=flat&color=yellow) - FinRobot — open-source AI-агент для финансового анализа на LLM.
