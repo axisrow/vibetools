@@ -303,8 +303,8 @@
 - [PocketFlow-Tutorial-Codebase-Knowledge](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge?style=flat&color=yellow) - Pocket Flow — от кодовой базы к туториалу.
 - [PocketFlow](https://github.com/The-Pocket/PocketFlow) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow?style=flat&color=yellow) - Pocket Flow — LLM-фреймворк на 100 строк.
 - [evolver](https://github.com/EvoMap/evolver) ![](https://img.shields.io/github/stars/EvoMap/evolver?style=flat&color=yellow) - GEP-powered самоэволюционирующий движок для AI-агентов.
-- [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - Open-source Go-тулкит для создания, оценки и деплоя agent-приложений.
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - Нанимайте AI-рабочую силу 24/7.
+- [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - Open-source Go-тулкит для создания, оценки и деплоя agent-приложений.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - Enterprise-grade мультиагентный фреймворк оркестрации для продакшна.
 - [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - Фреймворк построения агентов.
@@ -362,8 +362,8 @@
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) ![](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch?style=flat&color=yellow) - Реализация LLM типа ChatGPT на PyTorch с нуля, шаг за шагом.
 - [llm-course](https://github.com/mlabonne/llm-course) ![](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat&color=yellow) - Курс по большим языковым моделям с roadmap и Colab-ноутбуками.
 - [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Гайды, статьи, ноутбуки по prompt engineering.
-- [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - AI-агенты для начинающих.
 - [hello-agents](https://github.com/datawhalechina/hello-agents) ![](https://img.shields.io/github/stars/datawhalechina/hello-agents?style=flat&color=yellow) - 《从零开始构建智能体》——从零开始的智能体原理与实践教程.
+- [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - AI-агенты для начинающих.
 - [BMAD-METHOD](https://github.com/bmad-code-org/bmad-method) ![](https://img.shields.io/github/stars/bmad-code-org/bmad-method?style=flat&color=yellow) - Агентная методология и IDE-промпты для полного цикла AI-разработки продукта.
 - [ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) ![](https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat&color=yellow) - AI-инжиниринг с нуля.
 - [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) ![](https://img.shields.io/github/stars/ashishpatel26/500-AI-Agents-Projects?style=flat&color=yellow) - Подборка 500 кейсов AI-агентов в разных индустриях.
@@ -430,8 +430,8 @@
 - [deeplake](https://github.com/activeloopai/deeplake) ![](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat&color=yellow) - AI Data Runtime для агентов.
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - Коллекция библиотек оптимизации производительности AI-моделей.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Владейте своим AI.
-- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM).
+- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - AI-native прокси и дата-плоскость для агентных приложений.
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade — обнаружение и запуск локальных AI-приложений с оптимизированными LLM.
 

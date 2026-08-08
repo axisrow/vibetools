@@ -303,8 +303,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [PocketFlow-Tutorial-Codebase-Knowledge](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge?style=flat&color=yellow) - Pocket Flow: Codebase to Tutorial.
 - [PocketFlow](https://github.com/The-Pocket/PocketFlow) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow?style=flat&color=yellow) - Pocket Flow: 100-line LLM framework.
 - [evolver](https://github.com/EvoMap/evolver) ![](https://img.shields.io/github/stars/EvoMap/evolver?style=flat&color=yellow) - The GEP-powered self-evolving engine for AI agents.
-- [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate.
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - PraisonAI — Hire a 24/7 AI Workforce.
+- [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework.
 - [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - The Framework for Building Agents.
@@ -362,8 +362,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) ![](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch?style=flat&color=yellow) - Implement a ChatGPT-like LLM in PyTorch from scratch, step by step.
 - [llm-course](https://github.com/mlabonne/llm-course) ![](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat&color=yellow) - Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.
 - [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Guides, papers, lessons, notebooks and resources for prompt engineering, context enginee.
-- [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - Lessons to get started building AI agents.
 - [hello-agents](https://github.com/datawhalechina/hello-agents) ![](https://img.shields.io/github/stars/datawhalechina/hello-agents?style=flat&color=yellow) - Building AI agents from scratch - principles and practice tutorial.
+- [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - Lessons to get started building AI agents.
 - [BMAD-METHOD](https://github.com/bmad-code-org/bmad-method) ![](https://img.shields.io/github/stars/bmad-code-org/bmad-method?style=flat&color=yellow) - Agentic methodology and IDE prompts for full-cycle AI product development.
 - [ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) ![](https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat&color=yellow) - Learn it.
 - [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) ![](https://img.shields.io/github/stars/ashishpatel26/500-AI-Agents-Projects?style=flat&color=yellow) - The 500 AI Agents Projects is a curated collection of AI agent use cases across various in.
@@ -430,8 +430,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [deeplake](https://github.com/activeloopai/deeplake) ![](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat&color=yellow) - Deeplake is AI Data Runtime for Agents.
 - [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - A collection of libraries to optimise AI model performances.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Own your AI.
-- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, clust.
+- [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Work.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration,.
 - [lemonade](https://github.com/lemonade-sdk/lemonade) ![](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&color=yellow) - Lemonade helps users discover and run local AI apps by serving optimized LLMs right from t.
 
