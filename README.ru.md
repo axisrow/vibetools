@@ -250,9 +250,9 @@
 - [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT — структурированные промпты для каждого.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Библиотека AI-research и инженерных навыков для любой модели.
 - [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - Навык Claude, пишущий точные промпты для любого AI-инструмента.
+- [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов.
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - Коллекция системных промптов GPT и знаний о prompt injection.
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Универсальный загрузчик навыков для AI-агентов кодинга.
-- [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - Кураторский список промптов и примеров Nano Banana pro.
 - [YouMind-OpenLab/awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-gpt-image-2?style=flat&color=yellow) - Крупнейшая библиотека промптов GPT Image 2 — 2000+, ежедневное обновление.
 - [awesome-prompts](https://github.com/ai-boost/awesome-prompts) ![](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat&color=yellow) - Кураторский список промптов ChatGPT из топовых GPTs Store.
@@ -272,8 +272,8 @@
 - [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Бесплатный онлайн-курс prompt engineering.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - Навыки Claude Code для Go.
 - [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — применяйте одни правила ко всем кодинг-агентам.
-- [vibe-coding-prompt-template](https://github.com/KhazP/vibe-coding-prompt-template) ![](https://img.shields.io/github/stars/KhazP/vibe-coding-prompt-template?style=flat&color=yellow) - Шаблоны и воркфлоу для PRD, тех-дизайнов и MVP через LLM.
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) ![](https://img.shields.io/github/stars/foryourhealth111-pixel/Vibe-Skills?style=flat&color=yellow) - Vibe-Skills — all-in-one пакет AI-навыков.
+- [vibe-coding-prompt-template](https://github.com/KhazP/vibe-coding-prompt-template) ![](https://img.shields.io/github/stars/KhazP/vibe-coding-prompt-template?style=flat&color=yellow) - Шаблоны и воркфлоу для PRD, тех-дизайнов и MVP через LLM.
 - [best-skills](https://github.com/xstongxue/best-skills) ![](https://img.shields.io/github/stars/xstongxue/best-skills?style=flat&color=yellow) - 通用高质量 Skills 合集.
 - [Sunbeam](https://github.com/pomdtr/sunbeam) ![](https://img.shields.io/github/stars/pomdtr/sunbeam?style=flat&color=yellow) - Просмотр и поиск библиотек промптов с конвертацией в любой формат.
 
@@ -372,8 +372,8 @@
 - [Hands-On-Large-Language-Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) ![](https://img.shields.io/github/stars/HandsOnLLM/Hands-On-Large-Language-Models?style=flat&color=yellow) - Код к книге O'Reilly «Hands-On Large Language Models».
 - [vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn) ![](https://img.shields.io/github/stars/2025Emma/vibe-coding-cn?style=flat&color=yellow) - Кураторский список ресурсов по vibe coding на китайском.
 - [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Vibe coding 2026 | Your First Modern Coding course beginners to master step by step.
-- [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Открытая книга по ML-инжинирингу.
 - [ai-guide](https://github.com/liyupi/ai-guide) ![](https://img.shields.io/github/stars/liyupi/ai-guide?style=flat&color=yellow) - AI-гид: ресурсы по vibe coding на китайском.
+- [ml-engineering](https://github.com/stas00/ml-engineering) ![](https://img.shields.io/github/stars/stas00/ml-engineering?style=flat&color=yellow) - Открытая книга по ML-инжинирингу.
 - [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) ![](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat&color=yellow) - Подборка по мультимодальным большим языковым моделям.
 - [generative-ai](https://github.com/GoogleCloudPlatform/generative-ai) ![](https://img.shields.io/github/stars/GoogleCloudPlatform/generative-ai?style=flat&color=yellow) - Примеры кода и ноутбуки для GenAI на Google Cloud с Gemini.
 - [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) ![](https://img.shields.io/github/stars/microsoft/mcp-for-beginners?style=flat&color=yellow) - Open-source курс основ Model Context Protocol (MCP).
