@@ -45,8 +45,8 @@
 - [vibe-kanban](https://github.com/BloopAI/vibe-kanban) ![](https://img.shields.io/github/stars/BloopAI/vibe-kanban?style=flat&color=yellow) - Получите в 10 раз больше от Claude Code, Codex и любого кодинг-агента.
 - [qwen-code](https://github.com/QwenLM/qwen-code) ![](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=yellow) - Open-source AI-агент кодинга в терминале.
 - [agenticSeek](https://github.com/Fosowl/agenticSeek) ![](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat&color=yellow) - Полностью локальный аналог Manus AI.
-- [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open-source терминал macOS на Ghostty с вкладками для AI-кодинга.
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more.
+- [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open-source терминал macOS на Ghostty с вкладками для AI-кодинга.
 - [plandex](https://github.com/plandex-ai/plandex) ![](https://img.shields.io/github/stars/plandex-ai/plandex?style=flat&color=yellow) - Open-source AI-агент кодинга.
 - [cc-connect](https://github.com/chenhg5/cc-connect) ![](https://img.shields.io/github/stars/chenhg5/cc-connect?style=flat&color=yellow) - Мост от локальных AI-агентов (Claude Code, Cursor) к мессенджерам.
 - [superset](https://github.com/superset-sh/superset) ![](https://img.shields.io/github/stars/superset-sh/superset?style=flat&color=yellow) - Редактор кода эпохи AI-агентов — армия Claude Code, Codex и др.
@@ -114,8 +114,8 @@
 
 ## Security и pentest-агенты
 
-- [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) ![](https://img.shields.io/github/stars/CloakHQ/CloakBrowser?style=flat&color=yellow) - Стелс-Chromium, проходящий любые проверки на ботов.
 - [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ![](https://img.shields.io/github/stars/mukul975/Anthropic-Cybersecurity-Skills?style=flat&color=yellow) - Навыки кибербезопасности Anthropic.
+- [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) ![](https://img.shields.io/github/stars/CloakHQ/CloakBrowser?style=flat&color=yellow) - Стелс-Chromium, проходящий любые проверки на ботов.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) ![](https://img.shields.io/github/stars/GreyDGL/PentestGPT?style=flat&color=yellow) - Агентный фреймворк автоматического пентеста на базе LLM.
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей.
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot).
@@ -249,8 +249,8 @@
 - [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - Крупнейшая библиотека промптов Nano Banana Pro — 10000+ с превью.
 - [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT — структурированные промпты для каждого.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Библиотека AI-research и инженерных навыков для любой модели.
-- [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - Навык Claude, пишущий точные промпты для любого AI-инструмента.
 - [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов.
+- [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - Навык Claude, пишущий точные промпты для любого AI-инструмента.
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - Коллекция системных промптов GPT и знаний о prompt injection.
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Универсальный загрузчик навыков для AI-агентов кодинга.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - Кураторский список промптов и примеров Nano Banana pro.
@@ -400,8 +400,8 @@
 - [transformers](https://github.com/huggingface/transformers) ![](https://img.shields.io/github/stars/huggingface/transformers?style=flat&color=yellow) - Фреймворк определения моделей для state-of-the-art ML.
 - [open-webui](https://github.com/open-webui/open-webui) ![](https://img.shields.io/github/stars/open-webui/open-webui?style=flat&color=yellow) - Удобный AI-интерфейс (Ollama, OpenAI API и др.).
 - [vllm](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm?style=flat&color=yellow) - Высокопроизводительный движок инференса и сервинга LLM.
-- [LlamaFactory](https://github.com/hiyouga/LlamaFactory) ![](https://img.shields.io/github/stars/hiyouga/LlamaFactory?style=flat&color=yellow) - Унифицированный эффективный fine-tuning 100+ LLM и VLM (ACL 2024).
 - [unsloth](https://github.com/unslothai/unsloth) ![](https://img.shields.io/github/stars/unslothai/unsloth?style=flat&color=yellow) - Веб-UI для обучения и запуска open-моделей (Gemma, Qwen, DeepSeek).
+- [LlamaFactory](https://github.com/hiyouga/LlamaFactory) ![](https://img.shields.io/github/stars/hiyouga/LlamaFactory?style=flat&color=yellow) - Унифицированный эффективный fine-tuning 100+ LLM и VLM (ACL 2024).
 - [anything-llm](https://github.com/Mintplex-Labs/anything-llm) ![](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=flat&color=yellow) - Перестаньте арендовать свой интеллект.
 - [llm-app](https://github.com/pathwaycom/llm-app) ![](https://img.shields.io/github/stars/pathwaycom/llm-app?style=flat&color=yellow) - Готовые облачные шаблоны для RAG, AI-пайплайнов и enterprise-поиска.
 - [litellm](https://github.com/BerriAI/litellm) ![](https://img.shields.io/github/stars/BerriAI/litellm?style=flat&color=yellow) - Python SDK и прокси-сервер для 100+ LLM API в формате OpenAI.

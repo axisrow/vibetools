@@ -45,8 +45,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [vibe-kanban](https://github.com/BloopAI/vibe-kanban) ![](https://img.shields.io/github/stars/BloopAI/vibe-kanban?style=flat&color=yellow) - Get 10X more out of Claude Code, Codex or any coding agent.
 - [qwen-code](https://github.com/QwenLM/qwen-code) ![](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=yellow) - An open-source AI coding agent that lives in your terminal.
 - [agenticSeek](https://github.com/Fosowl/agenticSeek) ![](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat&color=yellow) - Fully Local Manus AI.
-- [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin.
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI coding agent for the terminal - hash-anchored edits, LSP and subagents.
+- [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin.
 - [plandex](https://github.com/plandex-ai/plandex) ![](https://img.shields.io/github/stars/plandex-ai/plandex?style=flat&color=yellow) - Open source AI coding agent.
 - [cc-connect](https://github.com/chenhg5/cc-connect) ![](https://img.shields.io/github/stars/chenhg5/cc-connect?style=flat&color=yellow) - Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platfo.
 - [superset](https://github.com/superset-sh/superset) ![](https://img.shields.io/github/stars/superset-sh/superset?style=flat&color=yellow) - Code Editor for the AI Agents Era - Run an army of Claude Code, Codex, etc.
@@ -114,8 +114,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Security and Pentest Agents
 
-- [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) ![](https://img.shields.io/github/stars/CloakHQ/CloakBrowser?style=flat&color=yellow) - Stealth Chromium that passes every bot detection test.
 - [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ![](https://img.shields.io/github/stars/mukul975/Anthropic-Cybersecurity-Skills?style=flat&color=yellow) - Provides 817 structured cybersecurity skills for AI agents across 6 frameworks.
+- [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) ![](https://img.shields.io/github/stars/CloakHQ/CloakBrowser?style=flat&color=yellow) - Stealth Chromium that passes every bot detection test.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) ![](https://img.shields.io/github/stars/GreyDGL/PentestGPT?style=flat&color=yellow) - Automated Penetration Testing Agentic Framework Powered by Large Language Models.
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-powered reverse engineering assistant that bridges IDA Pro with language models through.
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilo.
@@ -249,8 +249,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview im.
 - [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT: Empowering everyone to become a prompt expert! 结构化提示词（Structured Prompt）提出者.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Comprehensive open-source library of AI research and engineering skills for any AI model.
-- [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - A Claude skill that writes the accurate prompts for any AI tool.
 - [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中.
+- [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - A Claude skill that writes the accurate prompts for any AI tool.
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - A collection of GPT system prompts and various prompt injection/leaking knowledge.
 - [openskills](https://github.com/numman-ali/openskills) ![](https://img.shields.io/github/stars/numman-ali/openskills?style=flat&color=yellow) - Universal skills loader for AI coding agents - npm i -g openskills.
 - [awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) ![](https://img.shields.io/github/stars/ZeroLu/awesome-nanobanana-pro?style=flat&color=yellow) - An awesome list of curated Nano Banana pro prompts and examples.
@@ -400,8 +400,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [transformers](https://github.com/huggingface/transformers) ![](https://img.shields.io/github/stars/huggingface/transformers?style=flat&color=yellow) - Transformers: the model-definition framework for state-of-the-art machine learning model.
 - [open-webui](https://github.com/open-webui/open-webui) ![](https://img.shields.io/github/stars/open-webui/open-webui?style=flat&color=yellow) - User-friendly AI Interface (Supports Ollama, OpenAI API, ...).
 - [vllm](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm?style=flat&color=yellow) - A high-throughput and memory-efficient inference and serving engine for LLMs.
-- [LlamaFactory](https://github.com/hiyouga/LlamaFactory) ![](https://img.shields.io/github/stars/hiyouga/LlamaFactory?style=flat&color=yellow) - Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024).
 - [unsloth](https://github.com/unslothai/unsloth) ![](https://img.shields.io/github/stars/unslothai/unsloth?style=flat&color=yellow) - Unsloth Studio is a web UI for training and running open models like Gemma 4, Qwen3.6, Dee.
+- [LlamaFactory](https://github.com/hiyouga/LlamaFactory) ![](https://img.shields.io/github/stars/hiyouga/LlamaFactory?style=flat&color=yellow) - Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024).
 - [anything-llm](https://github.com/Mintplex-Labs/anything-llm) ![](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=flat&color=yellow) - Stop renting your intelligence.
 - [llm-app](https://github.com/pathwaycom/llm-app) ![](https://img.shields.io/github/stars/pathwaycom/llm-app?style=flat&color=yellow) - Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data.
 - [litellm](https://github.com/BerriAI/litellm) ![](https://img.shields.io/github/stars/BerriAI/litellm?style=flat&color=yellow) - Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format,.
