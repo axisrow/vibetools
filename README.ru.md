@@ -159,8 +159,8 @@
 ## App builders и low-code
 
 - [n8n](https://github.com/n8n-io/n8n) ![](https://img.shields.io/github/stars/n8n-io/n8n?style=flat&color=yellow) - Платформа автоматизации воркфлоу с нативными AI-возможностями.
-- [langflow](https://github.com/langflow-ai/langflow) ![](https://img.shields.io/github/stars/langflow-ai/langflow?style=flat&color=yellow) - Мощный инструмент создания и деплоя AI-агентов и воркфлоу.
 - [dify](https://github.com/langgenius/dify) ![](https://img.shields.io/github/stars/langgenius/dify?style=flat&color=yellow) - Production-готовая платформа для разработки агентных воркфлоу.
+- [langflow](https://github.com/langflow-ai/langflow) ![](https://img.shields.io/github/stars/langflow-ai/langflow?style=flat&color=yellow) - Мощный инструмент создания и деплоя AI-агентов и воркфлоу.
 - [Flowise](https://github.com/FlowiseAI/Flowise) ![](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=flat&color=yellow) - Визуальное построение AI-агентов.
 - [JeecgBoot](https://github.com/jeecgboot/JeecgBoot) ![](https://img.shields.io/github/stars/jeecgboot/JeecgBoot?style=flat&color=yellow) - AI low-code платформа: низкий + нулевой код, генерация систем одной фразой.
 - [activepieces](https://github.com/activepieces/activepieces) ![](https://img.shields.io/github/stars/activepieces/activepieces?style=flat&color=yellow) - AI-агенты, MCP и автоматизация воркфлоу (~400 MCP-серверов).
@@ -235,8 +235,8 @@
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Маркетинговые навыки для Claude Code и AI-агентов.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Навыки академических исследований для Claude Code.
-- [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Превращает любой AI-агент в AI-учёного.
+- [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - AI-оптимизатор промптов для лучших результатов.
 - [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) ![](https://img.shields.io/github/stars/VoltAgent/awesome-agent-skills?style=flat&color=yellow) - Подборка 1000+ агентных навыков от команд и сообщества.
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) ![](https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&color=yellow) - Постоянное файловое планирование для AI-агентов кодинга.
@@ -272,8 +272,8 @@
 - [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Бесплатный онлайн-курс prompt engineering.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - Навыки Claude Code для Go.
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) ![](https://img.shields.io/github/stars/foryourhealth111-pixel/Vibe-Skills?style=flat&color=yellow) - Vibe-Skills — all-in-one пакет AI-навыков.
-- [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — применяйте одни правила ко всем кодинг-агентам.
 - [vibe-coding-prompt-template](https://github.com/KhazP/vibe-coding-prompt-template) ![](https://img.shields.io/github/stars/KhazP/vibe-coding-prompt-template?style=flat&color=yellow) - Шаблоны и воркфлоу для PRD, тех-дизайнов и MVP через LLM.
+- [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — применяйте одни правила ко всем кодинг-агентам.
 - [best-skills](https://github.com/xstongxue/best-skills) ![](https://img.shields.io/github/stars/xstongxue/best-skills?style=flat&color=yellow) - 通用高质量 Skills 合集.
 - [Sunbeam](https://github.com/pomdtr/sunbeam) ![](https://img.shields.io/github/stars/pomdtr/sunbeam?style=flat&color=yellow) - Просмотр и поиск библиотек промптов с конвертацией в любой формат.
 
@@ -387,8 +387,8 @@
 - [anomaly-detection-resources](https://github.com/yzhao062/anomaly-detection-resources) ![](https://img.shields.io/github/stars/yzhao062/anomaly-detection-resources?style=flat&color=yellow) - Книги, статьи, видео и тулбоксы по обнаружению аномалий.
 - [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) ![](https://img.shields.io/github/stars/WangRongsheng/awesome-LLM-resources?style=flat&color=yellow) - ‍ 全世界最好的LLM资料总结（多模态生成、Agent、辅助编程、AI审稿、数据处理、模型训练、模型推理、o1 模型、MCP、小语言模型、视觉语言模型） | Summary of the world's best LLM resources.
 - [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) ![](https://img.shields.io/github/stars/mahseema/awesome-ai-tools?style=flat&color=yellow) - Кураторский список топовых AI-инструментов.
-- [learn-ai-engineering](https://github.com/ashishps1/learn-ai-engineering) ![](https://img.shields.io/github/stars/ashishps1/learn-ai-engineering?style=flat&color=yellow) - Изучите AI и LLM с нуля по бесплатным ресурсам.
 - [vibe-vibe](https://github.com/datawhalechina/vibe-vibe) ![](https://img.shields.io/github/stars/datawhalechina/vibe-vibe?style=flat&color=yellow) - AI для всех: первый систематический туториал по vibe coding.
+- [learn-ai-engineering](https://github.com/ashishps1/learn-ai-engineering) ![](https://img.shields.io/github/stars/ashishps1/learn-ai-engineering?style=flat&color=yellow) - Изучите AI и LLM с нуля по бесплатным ресурсам.
 - [awesome-vibe-coding](https://github.com/filipecalegario/awesome-vibe-coding) ![](https://img.shields.io/github/stars/filipecalegario/awesome-vibe-coding?style=flat&color=yellow) - Кураторский список ресурсов по vibe coding совместно с AI.
 - [vibe-coding](https://github.com/EnzeD/vibe-coding) ![](https://img.shields.io/github/stars/EnzeD/vibe-coding?style=flat&color=yellow) - Подборка ресурсов и практик по vibe coding.
 - [aicodeguide](https://github.com/automata/aicodeguide) ![](https://img.shields.io/github/stars/automata/aicodeguide?style=flat&color=yellow) - AI Code Guide — roadmap для старта кодинга с AI.
