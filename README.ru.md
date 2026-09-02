@@ -63,8 +63,8 @@
 
 ## Облачные coding-агенты
 
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Безопасная эластичная инфраструктура для AI-сгенерированного кода.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - Open-source бэкенд-платформа для агентного кодинга.
@@ -266,8 +266,8 @@
 - [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - 中文 prompt 精选，ChatGPT 使用指南，提升 ChatGPT 可玩性和可用性！.
 - [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references under the /Resources folder.
 - [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Кураторская подборка системных промптов топовых AI-инструментов.
-- [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - Библиотека программирования языковых моделей.
 - [claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) ![](https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat&color=yellow) - Самый полный гайд по Claude Code: воркфлоу, хуки, навыки, MCP.
+- [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - Библиотека программирования языковых моделей.
 - [agents-cli](https://github.com/google/agents-cli) ![](https://img.shields.io/github/stars/google/agents-cli?style=flat&color=yellow) - CLI и навыки, превращающие AI-ассистента в эксперта по агентам.
 - [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Бесплатный онлайн-курс prompt engineering.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - Навыки Claude Code для Go.
@@ -284,9 +284,9 @@
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ![](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=flat&color=yellow) - AutoGPT — доступный AI для всех: использование и развитие.
 - [langchain](https://github.com/langchain-ai/langchain) ![](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat&color=yellow) - Платформа agent-инжиниринга.
 - [deer-flow](https://github.com/bytedance/deer-flow) ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat&color=yellow) - Open-source харнес SuperAgent: исследования, код, креатив.
-- [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - Мультиагентный фреймворк: первая AI software-компания.
 - [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Оркестрация роя агентов Claude Code для сложных задач.
 - [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - Ведущий мета-харнес для агентов.
+- [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - Мультиагентный фреймворк: первая AI software-компания.
 - [crewAI](https://github.com/crewAIInc/crewAI) ![](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat&color=yellow) - Фреймворк оркестрации ролевых автономных AI-агентов.
 - [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Создание, запуск и управление agent-платформами.
 - [langgraph](https://github.com/langchain-ai/langgraph) ![](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat&color=yellow) - Построение устойчивых агентов.

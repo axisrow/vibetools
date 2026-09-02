@@ -63,8 +63,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Cloud Coding Agents
 
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Prompt, run, edit and deploy full-stack web apps from the browser.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - The all-in-one, open-source backend platform for agentic coding.
@@ -266,8 +266,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - Curated Chinese ChatGPT prompts - usage guide to boost playability and usability.
 - [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Notes for software engineers getting up to speed on new AI developments.
 - [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Curated collection of system prompts for top AI tools.
-- [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - A language model programming library.
 - [claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) ![](https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat&color=yellow) - The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, q.
+- [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - A language model programming library.
 - [agents-cli](https://github.com/google/agents-cli) ![](https://img.shields.io/github/stars/google/agents-cli?style=flat&color=yellow) - The CLI and skills that turn any coding assistant into an expert at creating, evaluating,.
 - [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Free prompt engineering online course.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - A collection of Golang agentic skills for coding assistants.
@@ -284,9 +284,9 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ![](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=flat&color=yellow) - AutoGPT is the vision of accessible AI for everyone, to use and to build on.
 - [langchain](https://github.com/langchain-ai/langchain) ![](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat&color=yellow) - The agent engineering platform.
 - [deer-flow](https://github.com/bytedance/deer-flow) ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat&color=yellow) - An open-source long-horizon SuperAgent harness that researches, codes, and creates.
-- [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programmi.
 - [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Orchestrate swarms of Claude Code agents on complex tasks.
 - [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - The leading agent meta-harness.
+- [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programmi.
 - [crewAI](https://github.com/crewAIInc/crewAI) ![](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat&color=yellow) - Framework for orchestrating role-playing, autonomous AI agents.
 - [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Build, run, and manage agent platforms.
 - [langgraph](https://github.com/langchain-ai/langgraph) ![](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat&color=yellow) - Build resilient agents.
