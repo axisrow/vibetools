@@ -53,8 +53,8 @@
 - [llm](https://github.com/simonw/llm) ![](https://img.shields.io/github/stars/simonw/llm?style=flat&color=yellow) - Доступ к большим языковым моделям из командной строки и пайплайнов.
 - [claude-squad](https://github.com/smtg-ai/claude-squad) ![](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat&color=yellow) - Управление несколькими AI-терминал-агентами (Claude Code, Codex, OpenCode).
 - [Kaku](https://github.com/tw93/Kaku) ![](https://img.shields.io/github/stars/tw93/Kaku?style=flat&color=yellow) - Быстрый готовый терминал для AI-кодинга.
-- [cc-switch-cli](https://github.com/SaladDay/cc-switch-cli) ![](https://img.shields.io/github/stars/SaladDay/cc-switch-cli?style=flat&color=yellow) - CLI-версия cc-switch.
 - [hapi](https://github.com/tiann/hapi) ![](https://img.shields.io/github/stars/tiann/hapi?style=flat&color=yellow) - Апп для Claude Code/Codex/Gemini/OpenCode — vibe coding где угодно.
+- [cc-switch-cli](https://github.com/SaladDay/cc-switch-cli) ![](https://img.shields.io/github/stars/SaladDay/cc-switch-cli?style=flat&color=yellow) - CLI-версия cc-switch.
 - [agent-of-empires](https://github.com/agent-of-empires/agent-of-empires) ![](https://img.shields.io/github/stars/agent-of-empires/agent-of-empires?style=flat&color=yellow) - Управление несколькими Claude Code/OpenCode агентами из TUI или Web.
 - [zclaw](https://github.com/tnm/zclaw) ![](https://img.shields.io/github/stars/tnm/zclaw?style=flat&color=yellow) - Личный AI-ассистент на 888 KiB (~35 КБ кода).
 - [Cougar-CLI](https://github.com/dulikaifazr/Cougar-CLI) ![](https://img.shields.io/github/stars/dulikaifazr/Cougar-CLI?style=flat&color=yellow) - AI-программирующий агент для командной строки.
@@ -292,8 +292,8 @@
 - [langgraph](https://github.com/langchain-ai/langgraph) ![](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat&color=yellow) - Построение устойчивых агентов.
 - [wshobson/agents](https://github.com/wshobson/agents) ![](https://img.shields.io/github/stars/wshobson/agents?style=flat&color=yellow) - Библиотека специализированных сабагентов Claude Code для агентных воркфлоу.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) ![](https://img.shields.io/github/stars/Yeachan-Heo/oh-my-claudecode?style=flat&color=yellow) - Teams-first мультиагентная оркестрация для Claude Code.
-- [nanoclaw](https://github.com/nanocoai/nanoclaw) ![](https://img.shields.io/github/stars/nanocoai/nanoclaw?style=flat&color=yellow) - Легковесная альтернатива OpenClaw в контейнерах для безопасности.
 - [agentscope](https://github.com/agentscope-ai/agentscope) ![](https://img.shields.io/github/stars/agentscope-ai/agentscope?style=flat&color=yellow) - Создание и запуск агентов, которым видно, понимаешь и доверяешь.
+- [nanoclaw](https://github.com/nanocoai/nanoclaw) ![](https://img.shields.io/github/stars/nanocoai/nanoclaw?style=flat&color=yellow) - Легковесная альтернатива OpenClaw в контейнерах для безопасности.
 - [composio](https://github.com/ComposioHQ/composio) ![](https://img.shields.io/github/stars/ComposioHQ/composio?style=flat&color=yellow) - 1000+ тулкитов, поиск инструментов, контекст и аутентификация для агентов.
 - [haystack](https://github.com/deepset-ai/haystack) ![](https://img.shields.io/github/stars/deepset-ai/haystack?style=flat&color=yellow) - Open-source AI-фреймворк оркестрации для production LLM-приложений.
 - [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) ![](https://img.shields.io/github/stars/humanlayer/12-factor-agents?style=flat&color=yellow) - Принципы создания production-готового ПО на LLM-агентах.
