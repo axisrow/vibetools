@@ -101,6 +101,7 @@
 - [APIAuto](https://github.com/TommyLemon/APIAuto) ![](https://img.shields.io/github/stars/TommyLemon/APIAuto?style=flat&color=yellow) - 敏捷开发最强大易用的接口工具，机器学习零代码测试与 AI 问答、生成代码与静态检查、生成文档与光标悬浮注释，腾讯、华为、SHEIN、传音、工行等使用 The most advanced tool for HTTP API. Machine learning no-code testing and AI assistant, generating codes and static analysis, generating comments and floating hints. Used by Tencent, Huawei, SHEIN, TRANSSION, ICBC, etc.
 - [rockpack](https://github.com/AlexSergey/rockpack) ![](https://img.shields.io/github/stars/AlexSergey/rockpack?style=flat&color=yellow) - Zero-config React со встроенным SSR и AI-ready структурой проекта.
 - [claude-debugs-for-you](https://github.com/jasonjmcghee/claude-debugs-for-you) ![](https://img.shields.io/github/stars/jasonjmcghee/claude-debugs-for-you?style=flat&color=yellow) - Включает любой LLM в отладчик.
+- [Agent QA](https://github.com/vostride/agent-qa) ![](https://img.shields.io/github/stars/vostride/agent-qa?style=flat&color=yellow) - Тесты веба, Android и iOS на естественном языке; лицензия FSL-1.1-ALv2.
 
 ## DevOps и облачная автоматизация
 
