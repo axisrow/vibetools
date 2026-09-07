@@ -60,6 +60,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [Cougar-CLI](https://github.com/dulikaifazr/Cougar-CLI) ![](https://img.shields.io/github/stars/dulikaifazr/Cougar-CLI?style=flat&color=yellow) - Cougar CLI - An AI programming agent for the command line.
 - [clawcodex](https://github.com/agentforce314/clawcodex) ![](https://img.shields.io/github/stars/agentforce314/clawcodex?style=flat&color=yellow) - Token efficient Claude Code full Python rebuild.
 - [mycoder](https://github.com/bhouston/mycoder) ![](https://img.shields.io/github/stars/bhouston/mycoder?style=flat&color=yellow) - Simple to install, powerful command-line based AI agent system for coding.
+- [Superagent](https://github.com/pungme/superagent-desktop) ![](https://img.shields.io/github/stars/pungme/superagent-desktop?style=flat&color=yellow) - MacOS desktop app giving Claude Code and Codex a real browser and iOS Simulator.
 
 ## Cloud Coding Agents
 
