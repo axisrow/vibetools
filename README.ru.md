@@ -53,8 +53,8 @@
 - [llm](https://github.com/simonw/llm) ![](https://img.shields.io/github/stars/simonw/llm?style=flat&color=yellow) - Доступ к большим языковым моделям из командной строки и пайплайнов.
 - [claude-squad](https://github.com/smtg-ai/claude-squad) ![](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat&color=yellow) - Управление несколькими AI-терминал-агентами (Claude Code, Codex, OpenCode).
 - [Kaku](https://github.com/tw93/Kaku) ![](https://img.shields.io/github/stars/tw93/Kaku?style=flat&color=yellow) - Быстрый готовый терминал для AI-кодинга.
-- [cc-switch-cli](https://github.com/SaladDay/cc-switch-cli) ![](https://img.shields.io/github/stars/SaladDay/cc-switch-cli?style=flat&color=yellow) - CLI-версия cc-switch.
 - [hapi](https://github.com/tiann/hapi) ![](https://img.shields.io/github/stars/tiann/hapi?style=flat&color=yellow) - Апп для Claude Code/Codex/Gemini/OpenCode — vibe coding где угодно.
+- [cc-switch-cli](https://github.com/SaladDay/cc-switch-cli) ![](https://img.shields.io/github/stars/SaladDay/cc-switch-cli?style=flat&color=yellow) - CLI-версия cc-switch.
 - [agent-of-empires](https://github.com/agent-of-empires/agent-of-empires) ![](https://img.shields.io/github/stars/agent-of-empires/agent-of-empires?style=flat&color=yellow) - Управление несколькими Claude Code/OpenCode агентами из TUI или Web.
 - [zclaw](https://github.com/tnm/zclaw) ![](https://img.shields.io/github/stars/tnm/zclaw?style=flat&color=yellow) - Личный AI-ассистент на 888 KiB (~35 КБ кода).
 - [Cougar-CLI](https://github.com/dulikaifazr/Cougar-CLI) ![](https://img.shields.io/github/stars/dulikaifazr/Cougar-CLI?style=flat&color=yellow) - AI-программирующий агент для командной строки.
@@ -231,8 +231,8 @@
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) ![](https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks?style=flat&color=yellow) - Извлечённые системные промпты Anthropic: Claude Fable 5, Opus 4.8 и др.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - Кураторский список навыков, хуков, команд и оркестраторов Claude Code.
 - [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
-- [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Маркетинговые навыки для Claude Code и AI-агентов.
+- [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Навыки академических исследований для Claude Code.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Превращает любой AI-агент в AI-учёного.
@@ -267,8 +267,8 @@
 - [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references under the /Resources folder.
 - [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Кураторская подборка системных промптов топовых AI-инструментов.
 - [claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) ![](https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat&color=yellow) - Самый полный гайд по Claude Code: воркфлоу, хуки, навыки, MCP.
-- [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - Библиотека программирования языковых моделей.
 - [agents-cli](https://github.com/google/agents-cli) ![](https://img.shields.io/github/stars/google/agents-cli?style=flat&color=yellow) - CLI и навыки, превращающие AI-ассистента в эксперта по агентам.
+- [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - Библиотека программирования языковых моделей.
 - [Learning-Prompt](https://github.com/thinkingjimmy/Learning-Prompt) ![](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat&color=yellow) - Бесплатный онлайн-курс prompt engineering.
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) ![](https://img.shields.io/github/stars/foryourhealth111-pixel/Vibe-Skills?style=flat&color=yellow) - Vibe-Skills — all-in-one пакет AI-навыков.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - Навыки Claude Code для Go.
