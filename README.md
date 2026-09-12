@@ -63,8 +63,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Cloud Coding Agents
 
-- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
+- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Prompt, run, edit and deploy full-stack web apps from the browser.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - The all-in-one, open-source backend platform for agentic coding.
@@ -231,8 +231,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) ![](https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks?style=flat&color=yellow) - Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude De.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications.
 - [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI productivity studio with smart chat, autonomous agents, and 300+ assistants.
-- [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL.
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Marketing skills for Claude Code and AI agents.
+- [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Academic Research Skills for Claude Code: research → write → review → revise → finalize.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Installable GitHub library of 1,800+ agentic skills for Claude Code, Cursor, Codex CLI, Ge.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Turn any AI agent into an AI Scientist.
@@ -387,8 +387,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [anomaly-detection-resources](https://github.com/yzhao062/anomaly-detection-resources) ![](https://img.shields.io/github/stars/yzhao062/anomaly-detection-resources?style=flat&color=yellow) - Anomaly detection related books, papers, videos, and toolboxes.
 - [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) ![](https://img.shields.io/github/stars/WangRongsheng/awesome-LLM-resources?style=flat&color=yellow) - Summary of the world's best LLM resources - agents, coding, MCP, multimodal.
 - [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) ![](https://img.shields.io/github/stars/mahseema/awesome-ai-tools?style=flat&color=yellow) - A curated list of Artificial Intelligence Top Tools.
-- [vibe-vibe](https://github.com/datawhalechina/vibe-vibe) ![](https://img.shields.io/github/stars/datawhalechina/vibe-vibe?style=flat&color=yellow) - AI for All: The First Systematic Vibe Coding Tutorial | From Zero to Full-Stack, Bring You.
 - [learn-ai-engineering](https://github.com/ashishps1/learn-ai-engineering) ![](https://img.shields.io/github/stars/ashishps1/learn-ai-engineering?style=flat&color=yellow) - Learn AI and LLMs from scratch using free resources.
+- [vibe-vibe](https://github.com/datawhalechina/vibe-vibe) ![](https://img.shields.io/github/stars/datawhalechina/vibe-vibe?style=flat&color=yellow) - AI for All: The First Systematic Vibe Coding Tutorial | From Zero to Full-Stack, Bring You.
 - [awesome-vibe-coding](https://github.com/filipecalegario/awesome-vibe-coding) ![](https://img.shields.io/github/stars/filipecalegario/awesome-vibe-coding?style=flat&color=yellow) - A curated list of vibe coding references, collaborating with AI to write code.
 - [vibe-coding](https://github.com/EnzeD/vibe-coding) ![](https://img.shields.io/github/stars/EnzeD/vibe-coding?style=flat&color=yellow) - Vibe coding resources and practices collection.
 - [aicodeguide](https://github.com/automata/aicodeguide) ![](https://img.shields.io/github/stars/automata/aicodeguide?style=flat&color=yellow) - AI Code Guide is a roadmap to start coding with AI.
