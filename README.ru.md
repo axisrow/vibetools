@@ -227,8 +227,8 @@
 - [taste-skill](https://github.com/Leonxlnx/taste-skill) ![](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat&color=yellow) - Taste-Skill — даёт AI хороший вкус.
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) ![](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-skills?style=flat&color=yellow) - Кураторский список Claude Skills, ресурсов и инструментов.
 - [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) ![](https://img.shields.io/github/stars/code-yeongyu/oh-my-openagent?style=flat&color=yellow) - Omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode.
-- [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - From vibe coding to agentic engineering - practice makes claude perfect.
 - [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) ![](https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks?style=flat&color=yellow) - Извлечённые системные промпты Anthropic: Claude Fable 5, Opus 4.8 и др.
+- [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - From vibe coding to agentic engineering - practice makes claude perfect.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - Кураторский список навыков, хуков, команд и оркестраторов Claude Code.
 - [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Маркетинговые навыки для Claude Code и AI-агентов.
@@ -284,8 +284,8 @@
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ![](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=flat&color=yellow) - AutoGPT — доступный AI для всех: использование и развитие.
 - [langchain](https://github.com/langchain-ai/langchain) ![](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat&color=yellow) - Платформа agent-инжиниринга.
 - [deer-flow](https://github.com/bytedance/deer-flow) ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat&color=yellow) - Open-source харнес SuperAgent: исследования, код, креатив.
-- [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Оркестрация роя агентов Claude Code для сложных задач.
 - [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - Ведущий мета-харнес для агентов.
+- [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Оркестрация роя агентов Claude Code для сложных задач.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - Мультиагентный фреймворк: первая AI software-компания.
 - [crewAI](https://github.com/crewAIInc/crewAI) ![](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat&color=yellow) - Фреймворк оркестрации ролевых автономных AI-агентов.
 - [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Создание, запуск и управление agent-платформами.
@@ -329,8 +329,8 @@
 - [Helicone](https://github.com/Helicone/helicone) ![](https://img.shields.io/github/stars/Helicone/helicone?style=flat&color=yellow) - Open-source наблюдаемость LLM: мониторинг, оценка и эксперименты.
 - [agenta](https://github.com/Agenta-AI/agenta) ![](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat&color=yellow) - Open-source LLMOps: prompt playground, оценка LLM, управление.
 - [logfire](https://github.com/pydantic/logfire) ![](https://img.shields.io/github/stars/pydantic/logfire?style=flat&color=yellow) - Платформа наблюдаемости для production LLM и агентных систем.
-- [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
 - [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) ![](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=flat&color=yellow) - Фреймворк для оценки LLM от Института безопасности ИИ.
+- [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - Open-source инфраструктура аналитики.
 - [ClaudeBar](https://github.com/tddworks/ClaudeBar) ![](https://img.shields.io/github/stars/tddworks/ClaudeBar?style=flat&color=yellow) - MacOS-меню приложение: мониторинг квот AI-ассистентов кодинга.
 - [sniffly](https://github.com/chiphuyen/sniffly) ![](https://img.shields.io/github/stars/chiphuyen/sniffly?style=flat&color=yellow) - Дашборд Claude Code: статистика использования, анализ ошибок.
