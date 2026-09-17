@@ -403,8 +403,8 @@
 - [unsloth](https://github.com/unslothai/unsloth) ![](https://img.shields.io/github/stars/unslothai/unsloth?style=flat&color=yellow) - Веб-UI для обучения и запуска open-моделей (Gemma, Qwen, DeepSeek).
 - [LlamaFactory](https://github.com/hiyouga/LlamaFactory) ![](https://img.shields.io/github/stars/hiyouga/LlamaFactory?style=flat&color=yellow) - Унифицированный эффективный fine-tuning 100+ LLM и VLM (ACL 2024).
 - [anything-llm](https://github.com/Mintplex-Labs/anything-llm) ![](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=flat&color=yellow) - Перестаньте арендовать свой интеллект.
-- [llm-app](https://github.com/pathwaycom/llm-app) ![](https://img.shields.io/github/stars/pathwaycom/llm-app?style=flat&color=yellow) - Готовые облачные шаблоны для RAG, AI-пайплайнов и enterprise-поиска.
 - [litellm](https://github.com/BerriAI/litellm) ![](https://img.shields.io/github/stars/BerriAI/litellm?style=flat&color=yellow) - Python SDK и прокси-сервер для 100+ LLM API в формате OpenAI.
+- [llm-app](https://github.com/pathwaycom/llm-app) ![](https://img.shields.io/github/stars/pathwaycom/llm-app?style=flat&color=yellow) - Готовые облачные шаблоны для RAG, AI-пайплайнов и enterprise-поиска.
 - [LocalAI](https://github.com/mudler/LocalAI) ![](https://img.shields.io/github/stars/mudler/LocalAI?style=flat&color=yellow) - Open-source AI-движок для локального запуска.
 - [milvus](https://github.com/milvus-io/milvus) ![](https://img.shields.io/github/stars/milvus-io/milvus?style=flat&color=yellow) - Высокопроизводительная cloud-native векторная БД для масштабного ANN-поиска.
 - [jan](https://github.com/janhq/jan) ![](https://img.shields.io/github/stars/janhq/jan?style=flat&color=yellow) - Open-source аналог ChatGPT, работающий оффлайн на вашем компьютере.
