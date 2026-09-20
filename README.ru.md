@@ -45,8 +45,8 @@
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more.
 - [vibe-kanban](https://github.com/BloopAI/vibe-kanban) ![](https://img.shields.io/github/stars/BloopAI/vibe-kanban?style=flat&color=yellow) - Получите в 10 раз больше от Claude Code, Codex и любого кодинг-агента.
 - [qwen-code](https://github.com/QwenLM/qwen-code) ![](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=yellow) - Open-source AI-агент кодинга в терминале.
-- [agenticSeek](https://github.com/Fosowl/agenticSeek) ![](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat&color=yellow) - Полностью локальный аналог Manus AI.
 - [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open-source терминал macOS на Ghostty с вкладками для AI-кодинга.
+- [agenticSeek](https://github.com/Fosowl/agenticSeek) ![](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat&color=yellow) - Полностью локальный аналог Manus AI.
 - [plandex](https://github.com/plandex-ai/plandex) ![](https://img.shields.io/github/stars/plandex-ai/plandex?style=flat&color=yellow) - Open-source AI-агент кодинга.
 - [cc-connect](https://github.com/chenhg5/cc-connect) ![](https://img.shields.io/github/stars/chenhg5/cc-connect?style=flat&color=yellow) - Мост от локальных AI-агентов (Claude Code, Cursor) к мессенджерам.
 - [superset](https://github.com/superset-sh/superset) ![](https://img.shields.io/github/stars/superset-sh/superset?style=flat&color=yellow) - Редактор кода эпохи AI-агентов — армия Claude Code, Codex и др.
@@ -350,8 +350,8 @@
 - [storm](https://github.com/stanford-oval/storm) ![](https://img.shields.io/github/stars/stanford-oval/storm?style=flat&color=yellow) - LLM-система курирования знаний: исследование темы и генерация статьи.
 - [gpt-researcher](https://github.com/assafelovic/gpt-researcher) ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&color=yellow) - Автономный агент глубоких исследований на любых LLM.
 - [GLM-5](https://github.com/zai-org/GLM-5) ![](https://img.shields.io/github/stars/zai-org/GLM-5?style=flat&color=yellow) - GLM-5: от Vibe Coding к агентному инжинирингу.
-- [codebase-to-course](https://github.com/zarazhangrui/codebase-to-course) ![](https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat&color=yellow) - Навык Claude Code: превращает кодовую базу в интерактивный HTML-курс.
 - [claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) ![](https://img.shields.io/github/stars/Galaxy-Dawn/claude-scholar?style=flat&color=yellow) - Полуавтоматический исследовательский ассистент для науки и разработки.
+- [codebase-to-course](https://github.com/zarazhangrui/codebase-to-course) ![](https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat&color=yellow) - Навык Claude Code: превращает кодовую базу в интерактивный HTML-курс.
 - [deep-research](https://github.com/u14app/deep-research) ![](https://img.shields.io/github/stars/u14app/deep-research?style=flat&color=yellow) - Глубокие исследования на любых LLM.
 - [agentic-ai-prompt-research](https://github.com/Leonxlnx/agentic-ai-prompt-research) ![](https://img.shields.io/github/stars/Leonxlnx/agentic-ai-prompt-research?style=flat&color=yellow) - Исследование работы агентных AI-ассистентов кодинга.
 - [apple-docs-mcp](https://github.com/kimsungwhee/apple-docs-mcp) ![](https://img.shields.io/github/stars/kimsungwhee/apple-docs-mcp?style=flat&color=yellow) - MCP-сервер документации Apple: iOS/macOS/SwiftUI, видео WWDC.
