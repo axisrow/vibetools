@@ -220,8 +220,8 @@
 ## Skills, промпты и правила агентов
 
 - [prompts.chat](https://github.com/f/prompts.chat) ![](https://img.shields.io/github/stars/f/prompts.chat?style=flat&color=yellow) - F.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-- [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) ![](https://img.shields.io/github/stars/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat&color=yellow) - Системные промпты и модели AI-инструментов (Augment, Claude Code, Cursor и др.).
 - [ponytail](https://github.com/DietrichGebert/ponytail) ![](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=flat&color=yellow) - Заставляет AI-агента думать как самый ленивый senior-разработчик.
+- [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) ![](https://img.shields.io/github/stars/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat&color=yellow) - Системные промпты и модели AI-инструментов (Augment, Claude Code, Cursor и др.).
 - [caveman](https://github.com/JuliusBrussee/caveman) ![](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat&color=yellow) - Why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman.
 - [agent-skills](https://github.com/addyosmani/agent-skills) ![](https://img.shields.io/github/stars/addyosmani/agent-skills?style=flat&color=yellow) - Продакшн-навыки инженерии для AI-агентов кодинга.
 - [taste-skill](https://github.com/Leonxlnx/taste-skill) ![](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat&color=yellow) - Taste-Skill — даёт AI хороший вкус.
@@ -247,8 +247,8 @@
 - [notebooklm-py](https://github.com/teng-lin/notebooklm-py) ![](https://img.shields.io/github/stars/teng-lin/notebooklm-py?style=flat&color=yellow) - Неофициальный Python API и навык для Google NotebookLM.
 - [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=flat&color=yellow) - ARIS — лёгкие Markdown-навыки автономных ML-исследований.
 - [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) ![](https://img.shields.io/github/stars/yusufkaraaslan/Skill_Seekers?style=flat&color=yellow) - Конвертация сайтов-документаций, GitHub-репо и PDF в Claude AI-навыки.
-- [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - Крупнейшая библиотека промптов Nano Banana Pro — 10000+ с превью.
 - [prompt-master](https://github.com/nidhinjs/prompt-master) ![](https://img.shields.io/github/stars/nidhinjs/prompt-master?style=flat&color=yellow) - Навык Claude, пишущий точные промпты для любого AI-инструмента.
+- [awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) ![](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat&color=yellow) - Крупнейшая библиотека промптов Nano Banana Pro — 10000+ с превью.
 - [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat&color=yellow) - Библиотека AI-research и инженерных навыков для любой модели.
 - [LangGPT](https://github.com/langgptai/LangGPT) ![](https://img.shields.io/github/stars/langgptai/LangGPT?style=flat&color=yellow) - LangGPT — структурированные промпты для каждого.
 - [chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) ![](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat&color=yellow) - Коллекция системных промптов GPT и знаний о prompt injection.
@@ -333,8 +333,8 @@
 - [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - Open-source инфраструктура аналитики.
 - [ClaudeBar](https://github.com/tddworks/ClaudeBar) ![](https://img.shields.io/github/stars/tddworks/ClaudeBar?style=flat&color=yellow) - MacOS-меню приложение: мониторинг квот AI-ассистентов кодинга.
-- [sniffly](https://github.com/chiphuyen/sniffly) ![](https://img.shields.io/github/stars/chiphuyen/sniffly?style=flat&color=yellow) - Дашборд Claude Code: статистика использования, анализ ошибок.
 - [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - Создание, управление и оценка LLM-промптов для AI-приложений.
+- [sniffly](https://github.com/chiphuyen/sniffly) ![](https://img.shields.io/github/stars/chiphuyen/sniffly?style=flat&color=yellow) - Дашборд Claude Code: статистика использования, анализ ошибок.
 - [langtrace](https://github.com/Scale3-Labs/langtrace) ![](https://img.shields.io/github/stars/Scale3-Labs/langtrace?style=flat&color=yellow) - Open-source end-to-end наблюдаемость LLM на OpenTelemetry.
 - [langkit](https://github.com/whylabs/langkit) ![](https://img.shields.io/github/stars/whylabs/langkit?style=flat&color=yellow) - Open-source тулкит мониторинга больших языковых моделей.
 
