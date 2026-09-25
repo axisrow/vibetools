@@ -410,8 +410,8 @@
 - [jan](https://github.com/janhq/jan) ![](https://img.shields.io/github/stars/janhq/jan?style=flat&color=yellow) - Open-source аналог ChatGPT, работающий оффлайн на вашем компьютере.
 - [ray](https://github.com/ray-project/ray) ![](https://img.shields.io/github/stars/ray-project/ray?style=flat&color=yellow) - Движок AI-вычислений.
 - [quivr](https://github.com/QuivrHQ/quivr) ![](https://img.shields.io/github/stars/QuivrHQ/quivr?style=flat&color=yellow) - Opinionated RAG для интеграции GenAI в приложения.
-- [Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat) ![](https://img.shields.io/github/stars/chatchat-space/Langchain-Chatchat?style=flat&color=yellow) - RAG и агенты на Langchain + ChatGLM/Qwen/Llama.
 - [langextract](https://github.com/google/langextract) ![](https://img.shields.io/github/stars/google/langextract?style=flat&color=yellow) - Python-библиотека извлечения структуры из текста через LLM.
+- [Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat) ![](https://img.shields.io/github/stars/chatchat-space/Langchain-Chatchat?style=flat&color=yellow) - RAG и агенты на Langchain + ChatGLM/Qwen/Llama.
 - [Qwen](https://github.com/QwenLM/Qwen) ![](https://img.shields.io/github/stars/QwenLM/Qwen?style=flat&color=yellow) - Официальный репо Qwen (通义千问) — чат и предобученные LLM от Alibaba.
 - [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) ![](https://img.shields.io/github/stars/ymcui/Chinese-LLaMA-Alpaca?style=flat&color=yellow) - Chinese-LLaMA-Alpaca: LLaMA/Alpaca для китайского.
 - [Megatron-LM](https://github.com/NVIDIA/Megatron-LM) ![](https://img.shields.io/github/stars/NVIDIA/Megatron-LM?style=flat&color=yellow) - Текущие исследования обучения трансформеров в масштабе.
@@ -428,8 +428,8 @@
 - [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) ![](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=flat&color=yellow) - Простой, масштабируемый и быстрый агентный RL-фреймворк на Ray (PPO и DAP).
 - [PowerInfer](https://github.com/Tiiny-AI/PowerInfer) ![](https://img.shields.io/github/stars/Tiiny-AI/PowerInfer?style=flat&color=yellow) - Высокоскоростной сервинг LLM для локального деплоя.
 - [deeplake](https://github.com/activeloopai/deeplake) ![](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat&color=yellow) - AI Data Runtime для агентов.
-- [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - Коллекция библиотек оптимизации производительности AI-моделей.
 - [bifrost](https://github.com/maximhq/bifrost) ![](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&color=yellow) - Самый быстрый enterprise AI-шлюз (50x быстрее LiteLLM).
+- [optimate](https://github.com/nebuly-ai/optimate) ![](https://img.shields.io/github/stars/nebuly-ai/optimate?style=flat&color=yellow) - Коллекция библиотек оптимизации производительности AI-моделей.
 - [osaurus](https://github.com/osaurus-ai/osaurus) ![](https://img.shields.io/github/stars/osaurus-ai/osaurus?style=flat&color=yellow) - Владейте своим AI.
 - [unstract](https://github.com/Zipstack/unstract) ![](https://img.shields.io/github/stars/Zipstack/unstract?style=flat&color=yellow) - LLM-извлечение неструктурированных данных для API-деплоя и ETL.
 - [plano](https://github.com/katanemo/plano) ![](https://img.shields.io/github/stars/katanemo/plano?style=flat&color=yellow) - AI-native прокси и дата-плоскость для агентных приложений.
