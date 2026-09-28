@@ -288,8 +288,8 @@
 - [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - Ведущий мета-харнес для агентов.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - Мультиагентный фреймворк: первая AI software-компания.
 - [crewAI](https://github.com/crewAIInc/crewAI) ![](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat&color=yellow) - Фреймворк оркестрации ролевых автономных AI-агентов.
-- [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Создание, запуск и управление agent-платформами.
 - [langgraph](https://github.com/langchain-ai/langgraph) ![](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat&color=yellow) - Построение устойчивых агентов.
+- [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Создание, запуск и управление agent-платформами.
 - [wshobson/agents](https://github.com/wshobson/agents) ![](https://img.shields.io/github/stars/wshobson/agents?style=flat&color=yellow) - Библиотека специализированных сабагентов Claude Code для агентных воркфлоу.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) ![](https://img.shields.io/github/stars/Yeachan-Heo/oh-my-claudecode?style=flat&color=yellow) - Teams-first мультиагентная оркестрация для Claude Code.
 - [agentscope](https://github.com/agentscope-ai/agentscope) ![](https://img.shields.io/github/stars/agentscope-ai/agentscope?style=flat&color=yellow) - Создание и запуск агентов, которым видно, понимаешь и доверяешь.
@@ -333,8 +333,8 @@
 - [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - LLM-наблюдаемость на базе OpenTelemetry: GPU-мониторинг и гардраилы.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - Open-source инфраструктура аналитики.
 - [ClaudeBar](https://github.com/tddworks/ClaudeBar) ![](https://img.shields.io/github/stars/tddworks/ClaudeBar?style=flat&color=yellow) - MacOS-меню приложение: мониторинг квот AI-ассистентов кодинга.
-- [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - Создание, управление и оценка LLM-промптов для AI-приложений.
 - [sniffly](https://github.com/chiphuyen/sniffly) ![](https://img.shields.io/github/stars/chiphuyen/sniffly?style=flat&color=yellow) - Дашборд Claude Code: статистика использования, анализ ошибок.
+- [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - Создание, управление и оценка LLM-промптов для AI-приложений.
 - [langtrace](https://github.com/Scale3-Labs/langtrace) ![](https://img.shields.io/github/stars/Scale3-Labs/langtrace?style=flat&color=yellow) - Open-source end-to-end наблюдаемость LLM на OpenTelemetry.
 - [langkit](https://github.com/whylabs/langkit) ![](https://img.shields.io/github/stars/whylabs/langkit?style=flat&color=yellow) - Open-source тулкит мониторинга больших языковых моделей.
 

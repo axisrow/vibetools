@@ -288,8 +288,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - The leading agent meta-harness.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programmi.
 - [crewAI](https://github.com/crewAIInc/crewAI) ![](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat&color=yellow) - Framework for orchestrating role-playing, autonomous AI agents.
-- [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Build, run, and manage agent platforms.
 - [langgraph](https://github.com/langchain-ai/langgraph) ![](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat&color=yellow) - Build resilient agents.
+- [agno](https://github.com/agno-agi/agno) ![](https://img.shields.io/github/stars/agno-agi/agno?style=flat&color=yellow) - Build, run, and manage agent platforms.
 - [wshobson/agents](https://github.com/wshobson/agents) ![](https://img.shields.io/github/stars/wshobson/agents?style=flat&color=yellow) - Library of specialized Claude Code subagents for agentic workflows.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) ![](https://img.shields.io/github/stars/Yeachan-Heo/oh-my-claudecode?style=flat&color=yellow) - Teams-first Multi-agent orchestration for Claude Code.
 - [agentscope](https://github.com/agentscope-ai/agentscope) ![](https://img.shields.io/github/stars/agentscope-ai/agentscope?style=flat&color=yellow) - Build and run agents you can see, understand and trust.
@@ -333,8 +333,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [OpenLit](https://github.com/openlit/openlit) ![](https://img.shields.io/github/stars/openlit/openlit?style=flat&color=yellow) - OpenTelemetry-native LLM observability, GPU monitoring and guardrails.
 - [trench](https://github.com/FrigadeHQ/trench) ![](https://img.shields.io/github/stars/FrigadeHQ/trench?style=flat&color=yellow) - Trench — Open-Source Analytics Infrastructure.
 - [ClaudeBar](https://github.com/tddworks/ClaudeBar) ![](https://img.shields.io/github/stars/tddworks/ClaudeBar?style=flat&color=yellow) - A macOS menu bar application that monitors AI coding assistant usage quotas.
-- [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - Prompty makes it easy to create, manage, debug, and evaluate LLM prompts for your AI appli.
 - [sniffly](https://github.com/chiphuyen/sniffly) ![](https://img.shields.io/github/stars/chiphuyen/sniffly?style=flat&color=yellow) - Claude Code dashboard with usage stats, error analysis, and sharable feature.
+- [prompty](https://github.com/microsoft/prompty) ![](https://img.shields.io/github/stars/microsoft/prompty?style=flat&color=yellow) - Prompty makes it easy to create, manage, debug, and evaluate LLM prompts for your AI appli.
 - [langtrace](https://github.com/Scale3-Labs/langtrace) ![](https://img.shields.io/github/stars/Scale3-Labs/langtrace?style=flat&color=yellow) - Langtrace is an open-source, Open Telemetry based end-to-end observability tool for LLM.
 - [langkit](https://github.com/whylabs/langkit) ![](https://img.shields.io/github/stars/whylabs/langkit?style=flat&color=yellow) - LangKit: An open-source toolkit for monitoring Large Language Models (LLMs).
 
