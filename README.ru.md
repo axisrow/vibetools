@@ -60,6 +60,7 @@
 - [Cougar-CLI](https://github.com/dulikaifazr/Cougar-CLI) ![](https://img.shields.io/github/stars/dulikaifazr/Cougar-CLI?style=flat&color=yellow) - AI-программирующий агент для командной строки.
 - [clawcodex](https://github.com/agentforce314/clawcodex) ![](https://img.shields.io/github/stars/agentforce314/clawcodex?style=flat&color=yellow) - Эффективный по токенам полный Python-ребилд Claude Code.
 - [mycoder](https://github.com/bhouston/mycoder) ![](https://img.shields.io/github/stars/bhouston/mycoder?style=flat&color=yellow) - Простой в установке мощный консольный AI-агент для кодинга.
+- [Superagent](https://github.com/pungme/superagent-desktop) ![](https://img.shields.io/github/stars/pungme/superagent-desktop?style=flat&color=yellow) - Десктоп-приложение macOS с реальным браузером и iOS-симулятором для Claude Code и Codex.
 
 ## Облачные coding-агенты
 
