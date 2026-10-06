@@ -149,8 +149,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) ![](https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat&color=yellow) - Clone any website with one command using AI coding agents.
 - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) ![](https://img.shields.io/github/stars/zarazhangrui/frontend-slides?style=flat&color=yellow) - Create beautiful slides on the web using a coding agent's frontend skills.
 - [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, an.
-- [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) ![](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&color=yellow) - MCP server to provide Figma layout information to AI coding agents like Cursor.
 - [gsap-skills](https://github.com/greensock/gsap-skills) ![](https://img.shields.io/github/stars/greensock/gsap-skills?style=flat&color=yellow) - Official AI skills for GSAP.
+- [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) ![](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&color=yellow) - MCP server to provide Figma layout information to AI coding agents like Cursor.
 - [html-anything](https://github.com/nexu-io/html-anything) ![](https://img.shields.io/github/stars/nexu-io/html-anything?style=flat&color=yellow) - The agentic HTML editor — your local AI agent writes the HTML, you ship it.
 - [cursor-talk-to-figma-mcp](https://github.com/grab/cursor-talk-to-figma-mcp) ![](https://img.shields.io/github/stars/grab/cursor-talk-to-figma-mcp?style=flat&color=yellow) - TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code, Codex) and Figma, allo.
 - [WordPress/agent-skills](https://github.com/WordPress/agent-skills) ![](https://img.shields.io/github/stars/WordPress/agent-skills?style=flat&color=yellow) - Expert-level WordPress knowledge for AI coding assistants - blocks, themes, plugins, and b.
@@ -273,8 +273,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) ![](https://img.shields.io/github/stars/foryourhealth111-pixel/Vibe-Skills?style=flat&color=yellow) - Vibe-Skills is an all-in-one AI skills package.
 - [cc-skills-golang](https://github.com/samber/cc-skills-golang) ![](https://img.shields.io/github/stars/samber/cc-skills-golang?style=flat&color=yellow) - A collection of Golang agentic skills for coding assistants.
 - [vibe-coding-prompt-template](https://github.com/KhazP/vibe-coding-prompt-template) ![](https://img.shields.io/github/stars/KhazP/vibe-coding-prompt-template?style=flat&color=yellow) - Templates and workflow for generating PRDs, Tech Designs, and MVP and more using LLMs for.
-- [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — apply the same rules to all coding agents.
 - [best-skills](https://github.com/xstongxue/best-skills) ![](https://img.shields.io/github/stars/xstongxue/best-skills?style=flat&color=yellow) - High-quality Skills collection for Cursor, Claude Code, Codex and other agent tools.
+- [ruler](https://github.com/intellectronica/ruler) ![](https://img.shields.io/github/stars/intellectronica/ruler?style=flat&color=yellow) - Ruler — apply the same rules to all coding agents.
 - [Sunbeam](https://github.com/pomdtr/sunbeam) ![](https://img.shields.io/github/stars/pomdtr/sunbeam?style=flat&color=yellow) - Browse and search prompt libraries and convert them to any format.
 
 ## AI Assistants
@@ -302,8 +302,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [camel](https://github.com/camel-ai/camel) ![](https://img.shields.io/github/stars/camel-ai/camel?style=flat&color=yellow) - CAMEL: The first and the best multi-agent framework.
 - [PocketFlow-Tutorial-Codebase-Knowledge](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge?style=flat&color=yellow) - Pocket Flow: Codebase to Tutorial.
 - [PocketFlow](https://github.com/The-Pocket/PocketFlow) ![](https://img.shields.io/github/stars/The-Pocket/PocketFlow?style=flat&color=yellow) - Pocket Flow: 100-line LLM framework.
-- [evolver](https://github.com/EvoMap/evolver) ![](https://img.shields.io/github/stars/EvoMap/evolver?style=flat&color=yellow) - The GEP-powered self-evolving engine for AI agents.
 - [PraisonAI](https://github.com/MervinPraison/PraisonAI) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat&color=yellow) - PraisonAI — Hire a 24/7 AI Workforce.
+- [evolver](https://github.com/EvoMap/evolver) ![](https://img.shields.io/github/stars/EvoMap/evolver?style=flat&color=yellow) - The GEP-powered self-evolving engine for AI agents.
 - [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework.
 - [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops.
