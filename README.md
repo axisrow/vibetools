@@ -342,8 +342,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 - [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) ![](https://img.shields.io/github/stars/Egonex-AI/Understand-Anything?style=flat&color=yellow) - Graphs that teach > graphs that impress.
 - [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ![](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&color=yellow) - Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1.
-- [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Practical UI for GPT/GLM LLMs - optimized for paper reading, polishing and writing.
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec) ![](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&color=yellow) - Spec-driven development (SDD) for AI coding assistants.
+- [gpt_academic](https://github.com/binary-husky/gpt_academic) ![](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat&color=yellow) - Practical UI for GPT/GLM LLMs - optimized for paper reading, polishing and writing.
 - [context7](https://github.com/upstash/context7) ![](https://img.shields.io/github/stars/upstash/context7?style=flat&color=yellow) - Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors.
 - [TrendRadar](https://github.com/sansan0/TrendRadar) ![](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&color=yellow) - AI-driven public opinion and trend monitor with multi-platform aggregation and alerts.
 - [DeepTutor](https://github.com/HKUDS/DeepTutor) ![](https://img.shields.io/github/stars/HKUDS/DeepTutor?style=flat&color=yellow) - DeepTutor: Agent-native Personalized Tutoring.
