@@ -199,8 +199,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - Code search MCP for Claude Code.
 - [code2prompt](https://github.com/mufeedvh/code2prompt) ![](https://img.shields.io/github/stars/mufeedvh/code2prompt?style=flat&color=yellow) - CLI that converts a codebase into a single Markdown prompt for LLMs.
 - [semble](https://github.com/MinishLab/semble) ![](https://img.shields.io/github/stars/MinishLab/semble?style=flat&color=yellow) - Fast and Accurate Code Search for Agents.
-- [byterover-cli](https://github.com/campfirein/byterover-cli) ![](https://img.shields.io/github/stars/campfirein/byterover-cli?style=flat&color=yellow) - ByteRover CLI (brv) - The portable memory layer for autonomous coding agents (formerly Ci.
 - [Zep](https://github.com/getzep/zep) ![](https://img.shields.io/github/stars/getzep/zep?style=flat&color=yellow) - Long-term memory service for conversational and agentic AI.
+- [byterover-cli](https://github.com/campfirein/byterover-cli) ![](https://img.shields.io/github/stars/campfirein/byterover-cli?style=flat&color=yellow) - ByteRover CLI (brv) - The portable memory layer for autonomous coding agents (formerly Ci.
 - [CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) ![](https://img.shields.io/github/stars/CodeGraphContext/CodeGraphContext?style=flat&color=yellow) - An MCP server plus a CLI tool that indexes local code into a graph database to provide con.
 - [RooFlow](https://github.com/GreatScottyMac/RooFlow) ![](https://img.shields.io/github/stars/GreatScottyMac/RooFlow?style=flat&color=yellow) - RooFlow - Enhanced Memory Bank System with Footgun Power Next-gen Memory Bank system.
 
@@ -438,8 +438,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 ## Domain-Specific Agents
 
 - [TradingAgents](https://github.com/TauricResearch/TradingAgents) ![](https://img.shields.io/github/stars/TauricResearch/TradingAgents?style=flat&color=yellow) - TradingAgents: Multi-Agents LLM Financial Trading Framework.
-- [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) ![](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=flat&color=yellow) - LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis.
 - [OpenMontage](https://github.com/calesthio/OpenMontage) ![](https://img.shields.io/github/stars/calesthio/OpenMontage?style=flat&color=yellow) - World's first open-source, agentic video production system.
+- [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) ![](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=flat&color=yellow) - LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis.
 - [LibreChat](https://github.com/danny-avila/LibreChat) ![](https://img.shields.io/github/stars/danny-avila/LibreChat?style=flat&color=yellow) - Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Re.
 - [FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal) ![](https://img.shields.io/github/stars/Fincept-Corporation/FinceptTerminal?style=flat&color=yellow) - FinceptTerminal is a modern finance application offering advanced market analytics, invest.
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinGPT?style=flat&color=yellow) - FinGPT: Open-Source Financial Large Language Models! Revolutionize We release the tr.

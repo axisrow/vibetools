@@ -199,8 +199,8 @@
 - [claude-context](https://github.com/zilliztech/claude-context) ![](https://img.shields.io/github/stars/zilliztech/claude-context?style=flat&color=yellow) - MCP поиска кода для Claude Code.
 - [code2prompt](https://github.com/mufeedvh/code2prompt) ![](https://img.shields.io/github/stars/mufeedvh/code2prompt?style=flat&color=yellow) - CLI: превращает кодовую базу в один Markdown-промпт для LLM.
 - [semble](https://github.com/MinishLab/semble) ![](https://img.shields.io/github/stars/MinishLab/semble?style=flat&color=yellow) - Быстрый и точный поиск кода для агентов.
-- [byterover-cli](https://github.com/campfirein/byterover-cli) ![](https://img.shields.io/github/stars/campfirein/byterover-cli?style=flat&color=yellow) - ByteRover CLI (brv) — переносимый слой памяти для автономных кодинг-агентов.
 - [Zep](https://github.com/getzep/zep) ![](https://img.shields.io/github/stars/getzep/zep?style=flat&color=yellow) - Сервис долговременной памяти для диалогового и агентного AI.
+- [byterover-cli](https://github.com/campfirein/byterover-cli) ![](https://img.shields.io/github/stars/campfirein/byterover-cli?style=flat&color=yellow) - ByteRover CLI (brv) — переносимый слой памяти для автономных кодинг-агентов.
 - [CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) ![](https://img.shields.io/github/stars/CodeGraphContext/CodeGraphContext?style=flat&color=yellow) - MCP-сервер + CLI: индексирует код в графовую БД для контекста.
 - [RooFlow](https://github.com/GreatScottyMac/RooFlow) ![](https://img.shields.io/github/stars/GreatScottyMac/RooFlow?style=flat&color=yellow) - Улучшенная система Memory Bank для агентов.
 
@@ -438,8 +438,8 @@
 ## Доменные AI-агенты
 
 - [TradingAgents](https://github.com/TauricResearch/TradingAgents) ![](https://img.shields.io/github/stars/TauricResearch/TradingAgents?style=flat&color=yellow) - Мультиагентный LLM-фреймворк для финансового трейдинга.
-- [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) ![](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=flat&color=yellow) - LLM-система анализа акций: мульти-рынок, новости, дашборд, авто-пуш.
 - [OpenMontage](https://github.com/calesthio/OpenMontage) ![](https://img.shields.io/github/stars/calesthio/OpenMontage?style=flat&color=yellow) - Первая open-source агентная система видеопроизводства.
+- [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) ![](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=flat&color=yellow) - LLM-система анализа акций: мульти-рынок, новости, дашборд, авто-пуш.
 - [LibreChat](https://github.com/danny-avila/LibreChat) ![](https://img.shields.io/github/stars/danny-avila/LibreChat?style=flat&color=yellow) - Расширенный клон ChatGPT: агенты, MCP, навыки, DeepSeek, Anthropic, OpenAI.
 - [FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal) ![](https://img.shields.io/github/stars/Fincept-Corporation/FinceptTerminal?style=flat&color=yellow) - Современное финанс-приложение: аналитика рынков, инвестиции.
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinGPT?style=flat&color=yellow) - FinGPT — open-source финансовые большие языковые модели.
