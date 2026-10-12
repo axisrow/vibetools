@@ -2680,3 +2680,10 @@ tools:
     en: Run Claude Code, Gemini, Codex — or any coding agent — in a clean, isolated sandbox with s
     ru: Запуск Claude Code, Gemini, Codex и любого агента в чистой изолированной песочнице
     zh: 在干净隔离的沙箱中运行 Claude Code、Gemini、Codex 或任何编码代理
+- name: Superagent
+  url: https://github.com/pungme/superagent-desktop
+  category: cli-agents
+  description:
+    en: macOS desktop app giving Claude Code and Codex a real browser and iOS Simulator
+    ru: Десктоп-приложение macOS с реальным браузером и iOS-симулятором для Claude Code и Codex
+    zh: macOS 桌面应用，为 Claude Code 和 Codex 提供真实浏览器和 iOS 模拟器
