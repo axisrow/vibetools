@@ -2316,13 +2316,6 @@ tools:
     en: Use any LLMs (Large Language Models) for Deep Research
     ru: Глубокие исследования на любых LLM
     zh: 使用任何大型语言模型进行深度研究
-- name: ENScan_GO
-  url: https://github.com/wgpsec/ENScan_GO
-  category: security-agents
-  description:
-    en: Enterprise information collection tool - gathers ICP, APP and WeChat data via APIs
-    ru: 一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入
-    zh: 企业信息收集工具 - 通过API收集ICP、APP和微信数据
 - name: kubernetes-mcp-server
   url: https://github.com/containers/kubernetes-mcp-server
   category: devops-cloud

@@ -120,7 +120,6 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-powered reverse engineering assistant that bridges IDA Pro with language models through.
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilo.
 - [Viper](https://github.com/FunnyWolf/Viper) ![](https://img.shields.io/github/stars/FunnyWolf/Viper?style=flat&color=yellow) - Adversary simulation and Red teaming platform with AI.
-- [ENScan_GO](https://github.com/wgpsec/ENScan_GO) ![](https://img.shields.io/github/stars/wgpsec/ENScan_GO?style=flat&color=yellow) - Enterprise information collection tool - gathers ICP, APP and WeChat data via APIs.
 - [pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) ![](https://img.shields.io/github/stars/0xSteph/pentest-ai-agents?style=flat&color=yellow) - Turn Claude Code into your offensive security research assistant.
 - [EvilClippy](https://github.com/outflanknl/EvilClippy) ![](https://img.shields.io/github/stars/outflanknl/EvilClippy?style=flat&color=yellow) - A cross-platform assistant for creating malicious MS Office documents.
 

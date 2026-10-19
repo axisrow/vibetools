@@ -120,7 +120,6 @@
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей.
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot).
 - [Viper](https://github.com/FunnyWolf/Viper) ![](https://img.shields.io/github/stars/FunnyWolf/Viper?style=flat&color=yellow) - Симуляция противника и Red Teaming платформа с AI.
-- [ENScan_GO](https://github.com/wgpsec/ENScan_GO) ![](https://img.shields.io/github/stars/wgpsec/ENScan_GO?style=flat&color=yellow) - 一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入.
 - [pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) ![](https://img.shields.io/github/stars/0xSteph/pentest-ai-agents?style=flat&color=yellow) - Превращает Claude Code в ассистента offensive-security-исследований.
 - [EvilClippy](https://github.com/outflanknl/EvilClippy) ![](https://img.shields.io/github/stars/outflanknl/EvilClippy?style=flat&color=yellow) - Кроссплатформенный ассистент для создания вредоносных MS Office документов.
 
