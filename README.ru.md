@@ -41,8 +41,8 @@
 - [nanobot](https://github.com/HKUDS/nanobot) ![](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&color=yellow) - Легковесный open-source AI-агент для инструментов, чатов и воркфлоу.
 - [CowAgent](https://github.com/zhayujie/CowAgent) ![](https://img.shields.io/github/stars/zhayujie/CowAgent?style=flat&color=yellow) - Open-source супер-AI-ассистент и agent-харнес.
 - [CodeWhale](https://github.com/Hmbown/CodeWhale) ![](https://img.shields.io/github/stars/Hmbown/CodeWhale?style=flat&color=yellow) - Open-source community-driven agent-харнес.
-- [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) ![](https://img.shields.io/github/stars/esengine/DeepSeek-Reasonix?style=flat&color=yellow) - DeepSeek-native AI-агент кодинга для терминала.
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more.
+- [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) ![](https://img.shields.io/github/stars/esengine/DeepSeek-Reasonix?style=flat&color=yellow) - DeepSeek-native AI-агент кодинга для терминала.
 - [qwen-code](https://github.com/QwenLM/qwen-code) ![](https://img.shields.io/github/stars/QwenLM/qwen-code?style=flat&color=yellow) - Open-source AI-агент кодинга в терминале.
 - [vibe-kanban](https://github.com/BloopAI/vibe-kanban) ![](https://img.shields.io/github/stars/BloopAI/vibe-kanban?style=flat&color=yellow) - Получите в 10 раз больше от Claude Code, Codex и любого кодинг-агента.
 - [cmux](https://github.com/manaflow-ai/cmux) ![](https://img.shields.io/github/stars/manaflow-ai/cmux?style=flat&color=yellow) - Open-source терминал macOS на Ghostty с вкладками для AI-кодинга.
@@ -231,9 +231,9 @@
 - [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ![](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&color=yellow) - From vibe coding to agentic engineering - practice makes claude perfect.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - Кураторский список навыков, хуков, команд и оркестраторов Claude Code.
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) ![](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat&color=yellow) - Маркетинговые навыки для Claude Code и AI-агентов.
-- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Навыки академических исследований для Claude Code.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Превращает любой AI-агент в AI-учёного.
+- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
 - [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex.
 - [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot.
@@ -284,8 +284,8 @@
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ![](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=flat&color=yellow) - AutoGPT — доступный AI для всех: использование и развитие.
 - [langchain](https://github.com/langchain-ai/langchain) ![](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat&color=yellow) - Платформа agent-инжиниринга.
 - [deer-flow](https://github.com/bytedance/deer-flow) ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat&color=yellow) - Open-source харнес SuperAgent: исследования, код, креатив.
-- [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - Ведущий мета-харнес для агентов.
 - [Claude Flow](https://github.com/ruvnet/claude-flow) ![](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&color=yellow) - Оркестрация роя агентов Claude Code для сложных задач.
+- [ruflo](https://github.com/ruvnet/ruflo) ![](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&color=yellow) - Ведущий мета-харнес для агентов.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) ![](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=flat&color=yellow) - Мультиагентный фреймворк: первая AI software-компания.
 - [crewAI](https://github.com/crewAIInc/crewAI) ![](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat&color=yellow) - Фреймворк оркестрации ролевых автономных AI-агентов.
 - [langgraph](https://github.com/langchain-ai/langgraph) ![](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat&color=yellow) - Построение устойчивых агентов.
@@ -416,8 +416,8 @@
 - [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) ![](https://img.shields.io/github/stars/ymcui/Chinese-LLaMA-Alpaca?style=flat&color=yellow) - Chinese-LLaMA-Alpaca: LLaMA/Alpaca для китайского.
 - [Megatron-LM](https://github.com/NVIDIA/Megatron-LM) ![](https://img.shields.io/github/stars/NVIDIA/Megatron-LM?style=flat&color=yellow) - Текущие исследования обучения трансформеров в масштабе.
 - [outlines](https://github.com/dottxt-ai/outlines) ![](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat&color=yellow) - Структурированные выводы.
-- [ChatGLM2-6B](https://github.com/zai-org/ChatGLM2-6B) ![](https://img.shields.io/github/stars/zai-org/ChatGLM2-6B?style=flat&color=yellow) - ChatGLM2-6B — open-source билингвальный чат-LM.
 - [ggml](https://github.com/ggml-org/ggml) ![](https://img.shields.io/github/stars/ggml-org/ggml?style=flat&color=yellow) - Тензорная библиотека для машинного обучения.
+- [ChatGLM2-6B](https://github.com/zai-org/ChatGLM2-6B) ![](https://img.shields.io/github/stars/zai-org/ChatGLM2-6B?style=flat&color=yellow) - ChatGLM2-6B — open-source билингвальный чат-LM.
 - [DeepLearningExamples](https://github.com/NVIDIA/DeepLearningExamples) ![](https://img.shields.io/github/stars/NVIDIA/DeepLearningExamples?style=flat&color=yellow) - State-of-the-Art скрипты глубокого обучения, организованные по моделям.
 - [litgpt](https://github.com/Lightning-AI/litgpt) ![](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=flat&color=yellow) - 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 - [txtai](https://github.com/neuml/txtai) ![](https://img.shields.io/github/stars/neuml/txtai?style=flat&color=yellow) - All-in-one AI-фреймворк: семантический поиск, оркестрация LLM.
