@@ -17,6 +17,7 @@ import datetime
 import json
 import re
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html import unescape
 from pathlib import Path
@@ -107,13 +108,21 @@ def fetch_url(url: str, headers: dict | None = None) -> str | None:
     User-Agent: trendshift.io отдаёт 403 на bare urllib/requests без UA.
     Явный headers (для README-фетча через github_headers()) имеет приоритет.
     """
-    try:
-        response = requests.get(url, headers=headers or _DEFAULT_HEADERS, timeout=10)
-    except requests.RequestException as exc:
-        print(f"  ! {url}: fetch failed: {exc}", file=sys.stderr)
-        return None
-    if response.status_code == 200:
-        return response.text
+    for attempt in range(3):
+        try:
+            response = requests.get(url, headers=headers or _DEFAULT_HEADERS, timeout=10)
+        except requests.RequestException as exc:
+            if attempt < 2:
+                time.sleep(attempt + 1)
+                continue
+            print(f"  ! {url}: fetch failed after 3 attempts: {exc}", file=sys.stderr)
+            return None
+        if response.status_code == 200:
+            return response.text
+        # Retry transient server errors, but return promptly for permanent client errors.
+        if response.status_code < 500 or attempt == 2:
+            return None
+        time.sleep(attempt + 1)
     return None
 
 
