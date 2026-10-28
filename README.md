@@ -173,8 +173,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Game Development
 
-- [GDevelop](https://github.com/4ian/GDevelop) ![](https://img.shields.io/github/stars/4ian/GDevelop?style=flat&color=yellow) - Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.
 - [Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) ![](https://img.shields.io/github/stars/Donchitos/Claude-Code-Game-Studios?style=flat&color=yellow) - Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a com.
+- [GDevelop](https://github.com/4ian/GDevelop) ![](https://img.shields.io/github/stars/4ian/GDevelop?style=flat&color=yellow) - Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.
 
 ## Context, Memory and Codebase Indexing
 
@@ -263,8 +263,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [SuperPrompt](https://github.com/NeoVertex1/SuperPrompt) ![](https://img.shields.io/github/stars/NeoVertex1/SuperPrompt?style=flat&color=yellow) - SuperPrompt is an attempt to engineer prompts that might help us understand AI agents.
 - [Awesome-Prompt-Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) ![](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat&color=yellow) - This repository contains a hand-curated resources for Prompt Engineering with a focus on G.
 - [wonderful-prompts](https://github.com/langgptai/wonderful-prompts) ![](https://img.shields.io/github/stars/langgptai/wonderful-prompts?style=flat&color=yellow) - Curated Chinese ChatGPT prompts - usage guide to boost playability and usability.
-- [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Curated collection of system prompts for top AI tools.
 - [claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) ![](https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat&color=yellow) - The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, q.
+- [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) ![](https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts?style=flat&color=yellow) - Curated collection of system prompts for top AI tools.
 - [ai-notes](https://github.com/swyxio/ai-notes) ![](https://img.shields.io/github/stars/swyxio/ai-notes?style=flat&color=yellow) - Notes for software engineers getting up to speed on new AI developments.
 - [agents-cli](https://github.com/google/agents-cli) ![](https://img.shields.io/github/stars/google/agents-cli?style=flat&color=yellow) - The CLI and skills that turn any coding assistant into an expert at creating, evaluating,.
 - [ell](https://github.com/MadcowD/ell) ![](https://img.shields.io/github/stars/MadcowD/ell?style=flat&color=yellow) - A language model programming library.
