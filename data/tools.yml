@@ -160,6 +160,13 @@ tools:
     en: Framework for large language model evaluations by the AI Safety Institute
     ru: Фреймворк для оценки LLM от Института безопасности ИИ
     zh: AI Safety Institute开发的大型语言模型评估框架
+- name: Agent QA
+  url: https://github.com/vostride/agent-qa
+  category: code-review-testing
+  description:
+    en: Natural-language web, Android and iOS application tests; FSL-1.1-ALv2
+    ru: Тесты веба, Android и iOS на естественном языке; лицензия FSL-1.1-ALv2
+    zh: 用自然语言测试网页、Android 和 iOS 应用；采用 FSL-1.1-ALv2 许可证
 - name: Claude Code Action
   url: https://github.com/anthropics/claude-code-action
   category: code-review-testing
