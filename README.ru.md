@@ -81,8 +81,8 @@
 
 - [Cline](https://github.com/cline/cline) ![](https://img.shields.io/github/stars/cline/cline?style=flat&color=yellow) - Автономный агент-кодер в виде расширения для VS Code.
 - [Continue](https://github.com/continuedev/continue) ![](https://img.shields.io/github/stars/continuedev/continue?style=flat&color=yellow) - Открытый AI-ассистент для кода в VS Code и JetBrains.
-- [tabby](https://github.com/TabbyML/tabby) ![](https://img.shields.io/github/stars/TabbyML/tabby?style=flat&color=yellow) - Self-hosted AI-ассистент кодинга.
 - [AionUi](https://github.com/iOfficeAI/AionUi) ![](https://img.shields.io/github/stars/iOfficeAI/AionUi?style=flat&color=yellow) - Free локальный 24/7 Cowork-апп для Claude Code, Codex, OpenCode.
+- [tabby](https://github.com/TabbyML/tabby) ![](https://img.shields.io/github/stars/TabbyML/tabby?style=flat&color=yellow) - Self-hosted AI-ассистент кодинга.
 - [Roo Code](https://github.com/RooCodeInc/Roo-Code) ![](https://img.shields.io/github/stars/RooCodeInc/Roo-Code?style=flat&color=yellow) - AI-агент-кодер для VS Code с кастомными режимами и контролем инструментов.
 - [avante.nvim](https://github.com/yetone/avante.nvim) ![](https://img.shields.io/github/stars/yetone/avante.nvim?style=flat&color=yellow) - AI-кодинг в духе Cursor прямо внутри Neovim.
 - [sweep](https://github.com/sweepai/sweep) ![](https://img.shields.io/github/stars/sweepai/sweep?style=flat&color=yellow) - AI-ассистент кодинга для JetBrains.
@@ -117,8 +117,8 @@
 - [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ![](https://img.shields.io/github/stars/mukul975/Anthropic-Cybersecurity-Skills?style=flat&color=yellow) - Навыки кибербезопасности Anthropic.
 - [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) ![](https://img.shields.io/github/stars/CloakHQ/CloakBrowser?style=flat&color=yellow) - Стелс-Chromium, проходящий любые проверки на ботов.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) ![](https://img.shields.io/github/stars/GreyDGL/PentestGPT?style=flat&color=yellow) - Агентный фреймворк автоматического пентеста на базе LLM.
-- [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей.
 - [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot).
+- [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей.
 - [Viper](https://github.com/FunnyWolf/Viper) ![](https://img.shields.io/github/stars/FunnyWolf/Viper?style=flat&color=yellow) - Симуляция противника и Red Teaming платформа с AI.
 - [pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) ![](https://img.shields.io/github/stars/0xSteph/pentest-ai-agents?style=flat&color=yellow) - Превращает Claude Code в ассистента offensive-security-исследований.
 - [EvilClippy](https://github.com/outflanknl/EvilClippy) ![](https://img.shields.io/github/stars/outflanknl/EvilClippy?style=flat&color=yellow) - Кроссплатформенный ассистент для создания вредоносных MS Office документов.
@@ -305,8 +305,8 @@
 - [adk-go](https://github.com/google/adk-go) ![](https://img.shields.io/github/stars/google/adk-go?style=flat&color=yellow) - Open-source Go-тулкит для создания, оценки и деплоя agent-приложений.
 - [evolver](https://github.com/EvoMap/evolver) ![](https://img.shields.io/github/stars/EvoMap/evolver?style=flat&color=yellow) - GEP-powered самоэволюционирующий движок для AI-агентов.
 - [swarms](https://github.com/kyegomez/swarms) ![](https://img.shields.io/github/stars/kyegomez/swarms?style=flat&color=yellow) - Enterprise-grade мультиагентный фреймворк оркестрации для продакшна.
-- [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org.
 - [eve](https://github.com/vercel/eve) ![](https://img.shields.io/github/stars/vercel/eve?style=flat&color=yellow) - Фреймворк построения агентов.
+- [openagent](https://github.com/the-open-agent/openagent) ![](https://img.shields.io/github/stars/the-open-agent/openagent?style=flat&color=yellow) - Next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org.
 - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) ![](https://img.shields.io/github/stars/SylphAI-Inc/AdalFlow?style=flat&color=yellow) - AdalFlow — библиотека построения и автооптимизации LLM-приложений.
 - [core](https://github.com/cheshire-cat-ai/core) ![](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat&color=yellow) - AI-агент микросервис.
 - [helixent](https://github.com/MagicCube/helixent) ![](https://img.shields.io/github/stars/MagicCube/helixent?style=flat&color=yellow) - Маленькая библиотека для ReAct-style циклов AI-агентов на Bun.
