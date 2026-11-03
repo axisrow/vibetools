@@ -117,8 +117,8 @@
 - [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ![](https://img.shields.io/github/stars/mukul975/Anthropic-Cybersecurity-Skills?style=flat&color=yellow) - Навыки кибербезопасности Anthropic.
 - [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) ![](https://img.shields.io/github/stars/CloakHQ/CloakBrowser?style=flat&color=yellow) - Стелс-Chromium, проходящий любые проверки на ботов.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) ![](https://img.shields.io/github/stars/GreyDGL/PentestGPT?style=flat&color=yellow) - Агентный фреймворк автоматического пентеста на базе LLM.
-- [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot).
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat&color=yellow) - AI-ассистент реверс-инжиниринга: мост IDA Pro и языковых моделей.
+- [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) ![](https://img.shields.io/github/stars/0x4m4/hexstrike-ai?style=flat&color=yellow) - HexStrike AI MCP — продвинутый MCP-сервер для AI-агентов (Claude, GPT, Copilot).
 - [Viper](https://github.com/FunnyWolf/Viper) ![](https://img.shields.io/github/stars/FunnyWolf/Viper?style=flat&color=yellow) - Симуляция противника и Red Teaming платформа с AI.
 - [pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) ![](https://img.shields.io/github/stars/0xSteph/pentest-ai-agents?style=flat&color=yellow) - Превращает Claude Code в ассистента offensive-security-исследований.
 - [EvilClippy](https://github.com/outflanknl/EvilClippy) ![](https://img.shields.io/github/stars/outflanknl/EvilClippy?style=flat&color=yellow) - Кроссплатформенный ассистент для создания вредоносных MS Office документов.
