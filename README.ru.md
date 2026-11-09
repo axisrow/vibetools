@@ -235,8 +235,8 @@
 - [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
 - [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex.
-- [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - AI-оптимизатор промптов для лучших результатов.
+- [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot.
 - [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) ![](https://img.shields.io/github/stars/VoltAgent/awesome-agent-skills?style=flat&color=yellow) - Подборка 1000+ агентных навыков от команд и сообщества.
 - [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) ![](https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat&color=yellow) - Промпт как код: промышленный движок промптов GPT-Image2, 470+ кейсов.
 - [context-mode](https://github.com/mksglu/context-mode) ![](https://img.shields.io/github/stars/mksglu/context-mode?style=flat&color=yellow) - Оптимизация контекстного окна для AI-агентов кодинга.
@@ -449,8 +449,8 @@
 - [claude-ads](https://github.com/AgriciDaniel/claude-ads) ![](https://img.shields.io/github/stars/AgriciDaniel/claude-ads?style=flat&color=yellow) - Навык аудита и оптимизации платной рекламы для Claude Code.
 - [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) ![](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=flat&color=yellow) - FinRobot — open-source AI-агент для финансового анализа на LLM.
 - [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) ![](https://img.shields.io/github/stars/JerBouma/FinanceToolkit?style=flat&color=yellow) - Прозрачный и эффективный финансовый анализ.
-- [arc-kit](https://github.com/tractorjuice/arc-kit) ![](https://img.shields.io/github/stars/tractorjuice/arc-kit?style=flat&color=yellow) - Харнес архитектурного управления предприятием: стратегия, архитектура, доставка.
 - [aso-skills](https://github.com/Eronred/aso-skills) ![](https://img.shields.io/github/stars/Eronred/aso-skills?style=flat&color=yellow) - AI-навыки для App Store Optimization (ASO) и маркетинга приложений.
+- [arc-kit](https://github.com/tractorjuice/arc-kit) ![](https://img.shields.io/github/stars/tractorjuice/arc-kit?style=flat&color=yellow) - Харнес архитектурного управления предприятием: стратегия, архитектура, доставка.
 - [ai-legal-claude](https://github.com/zubair-trabzada/ai-legal-claude) ![](https://img.shields.io/github/stars/zubair-trabzada/ai-legal-claude?style=flat&color=yellow) - AI-юридический ассистент — навык для Claude Code.
 - [mathcode](https://github.com/math-ai-org/mathcode) ![](https://img.shields.io/github/stars/math-ai-org/mathcode?style=flat&color=yellow) - Frontier математический кодинг-агент.
 
