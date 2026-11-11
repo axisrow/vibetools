@@ -101,6 +101,7 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [APIAuto](https://github.com/TommyLemon/APIAuto) ![](https://img.shields.io/github/stars/TommyLemon/APIAuto?style=flat&color=yellow) - The most advanced HTTP API tool - zero-code testing, AI Q&A, code generation and docs.
 - [rockpack](https://github.com/AlexSergey/rockpack) ![](https://img.shields.io/github/stars/AlexSergey/rockpack?style=flat&color=yellow) - Zero-config React with built-in SSR, automated quality gates, and AI-ready project structu.
 - [claude-debugs-for-you](https://github.com/jasonjmcghee/claude-debugs-for-you) ![](https://img.shields.io/github/stars/jasonjmcghee/claude-debugs-for-you?style=flat&color=yellow) - Enable any LLM (e.g.
+- [Agent QA](https://github.com/vostride/agent-qa) ![](https://img.shields.io/github/stars/vostride/agent-qa?style=flat&color=yellow) - Natural-language web, Android and iOS application tests; FSL-1.1-ALv2.
 
 ## DevOps and Cloud Automation
 
