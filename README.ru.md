@@ -133,8 +133,8 @@
 - [Stagehand](https://github.com/browserbase/stagehand) ![](https://img.shields.io/github/stars/browserbase/stagehand?style=flat&color=yellow) - SDK для надёжных браузерных агентов на простых AI-примитивах.
 - [lamda](https://github.com/firerpa/lamda) ![](https://img.shields.io/github/stars/firerpa/lamda?style=flat&color=yellow) - Платформа full-stack управления Android-устройствами: WebRTC-десктоп, UI/OCR.
 - [firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) ![](https://img.shields.io/github/stars/firecrawl/firecrawl-mcp-server?style=flat&color=yellow) - Официальный Firecrawl MCP — веб-скрейпинг и поиск в Cursor, Claude.
-- [browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp) ![](https://img.shields.io/github/stars/AgentDeskAI/browser-tools-mcp?style=flat&color=yellow) - Мониторинг логов браузера из Cursor и других MCP-IDE.
 - [BrowserMCP/mcp](https://github.com/BrowserMCP/mcp) ![](https://img.shields.io/github/stars/BrowserMCP/mcp?style=flat&color=yellow) - Browser MCP — MCP-сервер управления браузером для AI-приложений.
+- [browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp) ![](https://img.shields.io/github/stars/AgentDeskAI/browser-tools-mcp?style=flat&color=yellow) - Мониторинг логов браузера из Cursor и других MCP-IDE.
 - [exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) ![](https://img.shields.io/github/stars/exa-labs/exa-mcp-server?style=flat&color=yellow) - Exa MCP для веб-поиска и краулинга.
 - [mcp-crawl4ai-rag](https://github.com/coleam00/mcp-crawl4ai-rag) ![](https://img.shields.io/github/stars/coleam00/mcp-crawl4ai-rag?style=flat&color=yellow) - Веб-краулинг и RAG для AI-агентов и кодинг-ассистентов.
 - [GreasyFork-Scripts](https://github.com/F9y4ng/GreasyFork-Scripts) ![](https://img.shields.io/github/stars/F9y4ng/GreasyFork-Scripts?style=flat&color=yellow) - Open-source userscripts (скрипты Tampermonkey) для десктоп-браузеров.
