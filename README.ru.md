@@ -414,8 +414,8 @@
 - [Qwen](https://github.com/QwenLM/Qwen) ![](https://img.shields.io/github/stars/QwenLM/Qwen?style=flat&color=yellow) - Официальный репо Qwen (通义千问) — чат и предобученные LLM от Alibaba.
 - [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) ![](https://img.shields.io/github/stars/ymcui/Chinese-LLaMA-Alpaca?style=flat&color=yellow) - Chinese-LLaMA-Alpaca: LLaMA/Alpaca для китайского.
 - [Megatron-LM](https://github.com/NVIDIA/Megatron-LM) ![](https://img.shields.io/github/stars/NVIDIA/Megatron-LM?style=flat&color=yellow) - Текущие исследования обучения трансформеров в масштабе.
-- [outlines](https://github.com/dottxt-ai/outlines) ![](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat&color=yellow) - Структурированные выводы.
 - [ggml](https://github.com/ggml-org/ggml) ![](https://img.shields.io/github/stars/ggml-org/ggml?style=flat&color=yellow) - Тензорная библиотека для машинного обучения.
+- [outlines](https://github.com/dottxt-ai/outlines) ![](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat&color=yellow) - Структурированные выводы.
 - [ChatGLM2-6B](https://github.com/zai-org/ChatGLM2-6B) ![](https://img.shields.io/github/stars/zai-org/ChatGLM2-6B?style=flat&color=yellow) - ChatGLM2-6B — open-source билингвальный чат-LM.
 - [DeepLearningExamples](https://github.com/NVIDIA/DeepLearningExamples) ![](https://img.shields.io/github/stars/NVIDIA/DeepLearningExamples?style=flat&color=yellow) - State-of-the-Art скрипты глубокого обучения, организованные по моделям.
 - [litgpt](https://github.com/Lightning-AI/litgpt) ![](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=flat&color=yellow) - 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
