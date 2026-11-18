@@ -37,8 +37,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [rtk](https://github.com/rtk-ai/rtk) ![](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) - CLI proxy that reduces LLM token consumption by 60-90% on common dev commands.
 - [Goose](https://github.com/block/goose) ![](https://img.shields.io/github/stars/block/goose?style=flat&color=yellow) - Open-source extensible AI agent that can install, execute, edit and test code.
 - [goose](https://github.com/aaif-goose/goose) ![](https://img.shields.io/github/stars/aaif-goose/goose?style=flat&color=yellow) - An open source, extensible AI agent that goes beyond code suggestions.
-- [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI pair programming in the terminal that edits code in any git repo.
 - [nanobot](https://github.com/HKUDS/nanobot) ![](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&color=yellow) - Lightweight, open-source AI agent for your tools, chats, and workflows.
+- [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI pair programming in the terminal that edits code in any git repo.
 - [CowAgent](https://github.com/zhayujie/CowAgent) ![](https://img.shields.io/github/stars/zhayujie/CowAgent?style=flat&color=yellow) - Open-source super AI assistant & Agent Harness.
 - [CodeWhale](https://github.com/Hmbown/CodeWhale) ![](https://img.shields.io/github/stars/Hmbown/CodeWhale?style=flat&color=yellow) - Open-source, community-driven agent harness.
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI coding agent for the terminal - hash-anchored edits, LSP and subagents.
@@ -63,8 +63,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 
 ## Cloud Coding Agents
 
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands: AI-Driven Development.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Autonomous coding agent that runs as a self-hosted always-on engineering team.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Prompt, run, edit and deploy full-stack web apps from the browser.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - The all-in-one, open-source backend platform for agentic coding.
@@ -232,8 +232,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Turn any AI agent into an AI Scientist.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Academic Research Skills for Claude Code: research → write → review → revise → finalize.
-- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI productivity studio with smart chat, autonomous agents, and 300+ assistants.
 - [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPL.
+- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI productivity studio with smart chat, autonomous agents, and 300+ assistants.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Installable GitHub library of 1,800+ agentic skills for Claude Code, Cursor, Codex CLI, Ge.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - An AI prompt optimizer for writing better prompts and getting better AI results.
 - [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Community-contributed instructions, agents, skills, and configurations to help you make th.
@@ -361,8 +361,8 @@ A list should be a **curation, not a collection**: every entry is hand-picked, h
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) ![](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch?style=flat&color=yellow) - Implement a ChatGPT-like LLM in PyTorch from scratch, step by step.
 - [hello-agents](https://github.com/datawhalechina/hello-agents) ![](https://img.shields.io/github/stars/datawhalechina/hello-agents?style=flat&color=yellow) - Building AI agents from scratch - principles and practice tutorial.
 - [llm-course](https://github.com/mlabonne/llm-course) ![](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat&color=yellow) - Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.
-- [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Guides, papers, lessons, notebooks and resources for prompt engineering, context enginee.
 - [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - Lessons to get started building AI agents.
+- [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Guides, papers, lessons, notebooks and resources for prompt engineering, context enginee.
 - [ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) ![](https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat&color=yellow) - Learn it.
 - [BMAD-METHOD](https://github.com/bmad-code-org/bmad-method) ![](https://img.shields.io/github/stars/bmad-code-org/bmad-method?style=flat&color=yellow) - Agentic methodology and IDE prompts for full-cycle AI product development.
 - [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) ![](https://img.shields.io/github/stars/ashishpatel26/500-AI-Agents-Projects?style=flat&color=yellow) - The 500 AI Agents Projects is a curated collection of AI agent use cases across various in.

@@ -37,8 +37,8 @@
 - [rtk](https://github.com/rtk-ai/rtk) ![](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) - CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах.
 - [Goose](https://github.com/block/goose) ![](https://img.shields.io/github/stars/block/goose?style=flat&color=yellow) - Открытый расширяемый AI-агент: умеет устанавливать, запускать, править и тестировать код.
 - [goose](https://github.com/aaif-goose/goose) ![](https://img.shields.io/github/stars/aaif-goose/goose?style=flat&color=yellow) - An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM.
-- [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI-парное программирование в терминале, правит код в любом git-репозитории.
 - [nanobot](https://github.com/HKUDS/nanobot) ![](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&color=yellow) - Легковесный open-source AI-агент для инструментов, чатов и воркфлоу.
+- [Aider](https://github.com/Aider-AI/aider) ![](https://img.shields.io/github/stars/Aider-AI/aider?style=flat&color=yellow) - AI-парное программирование в терминале, правит код в любом git-репозитории.
 - [CowAgent](https://github.com/zhayujie/CowAgent) ![](https://img.shields.io/github/stars/zhayujie/CowAgent?style=flat&color=yellow) - Open-source супер-AI-ассистент и agent-харнес.
 - [CodeWhale](https://github.com/Hmbown/CodeWhale) ![](https://img.shields.io/github/stars/Hmbown/CodeWhale?style=flat&color=yellow) - Open-source community-driven agent-харнес.
 - [oh-my-pi](https://github.com/can1357/oh-my-pi) ![](https://img.shields.io/github/stars/can1357/oh-my-pi?style=flat&color=yellow) - AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more.
@@ -63,8 +63,8 @@
 
 ## Облачные coding-агенты
 
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Безопасная эластичная инфраструктура для AI-сгенерированного кода.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - Open-source бэкенд-платформа для агентного кодинга.
@@ -232,8 +232,8 @@
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) ![](https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat&color=yellow) - Кураторский список навыков, хуков, команд и оркестраторов Claude Code.
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) ![](https://img.shields.io/github/stars/K-Dense-AI/scientific-agent-skills?style=flat&color=yellow) - Превращает любой AI-агент в AI-учёного.
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) ![](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=flat&color=yellow) - Навыки академических исследований для Claude Code.
-- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
 - [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) ![](https://img.shields.io/github/stars/elder-plinius/CL4R1T4S?style=flat&color=yellow) - Утечки системных промптов ChatGPT, Claude, Gemini, Grok, Cursor и др.
+- [cherry-studio](https://github.com/CherryHQ/cherry-studio) ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&color=yellow) - AI-студия продуктивности: умный чат, агенты, 300+ ассистентов.
 - [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) ![](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&color=yellow) - Библиотека 1800+ агентных навыков для Claude Code, Cursor, Codex.
 - [prompt-optimizer](https://github.com/linshenkx/prompt-optimizer) ![](https://img.shields.io/github/stars/linshenkx/prompt-optimizer?style=flat&color=yellow) - AI-оптимизатор промптов для лучших результатов.
 - [awesome-copilot](https://github.com/github/awesome-copilot) ![](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&color=yellow) - Инструкции, агенты, навыки и конфиги сообщества для GitHub Copilot.
@@ -361,8 +361,8 @@
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) ![](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch?style=flat&color=yellow) - Реализация LLM типа ChatGPT на PyTorch с нуля, шаг за шагом.
 - [hello-agents](https://github.com/datawhalechina/hello-agents) ![](https://img.shields.io/github/stars/datawhalechina/hello-agents?style=flat&color=yellow) - 《从零开始构建智能体》——从零开始的智能体原理与实践教程.
 - [llm-course](https://github.com/mlabonne/llm-course) ![](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat&color=yellow) - Курс по большим языковым моделям с roadmap и Colab-ноутбуками.
-- [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Гайды, статьи, ноутбуки по prompt engineering.
 - [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) ![](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&color=yellow) - AI-агенты для начинающих.
+- [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) ![](https://img.shields.io/github/stars/dair-ai/Prompt-Engineering-Guide?style=flat&color=yellow) - Гайды, статьи, ноутбуки по prompt engineering.
 - [ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) ![](https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat&color=yellow) - AI-инжиниринг с нуля.
 - [BMAD-METHOD](https://github.com/bmad-code-org/bmad-method) ![](https://img.shields.io/github/stars/bmad-code-org/bmad-method?style=flat&color=yellow) - Агентная методология и IDE-промпты для полного цикла AI-разработки продукта.
 - [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) ![](https://img.shields.io/github/stars/ashishpatel26/500-AI-Agents-Projects?style=flat&color=yellow) - Подборка 500 кейсов AI-агентов в разных индустриях.
