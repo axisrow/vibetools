@@ -63,8 +63,8 @@
 
 ## Облачные coding-агенты
 
-- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) ![](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat&color=yellow) - Автономный агент-кодер — самохостинговая инженерная команда, работающая 24/7.
+- [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat&color=yellow) - OpenHands — разработка на базе AI.
 - [daytona](https://github.com/daytonaio/daytona) ![](https://img.shields.io/github/stars/daytonaio/daytona?style=flat&color=yellow) - Безопасная эластичная инфраструктура для AI-сгенерированного кода.
 - [Bolt.new](https://github.com/stackblitz/bolt.new) ![](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat&color=yellow) - Создание, запуск, правка и деплой full-stack веб-приложений из браузера.
 - [InsForge](https://github.com/InsForge/InsForge) ![](https://img.shields.io/github/stars/InsForge/InsForge?style=flat&color=yellow) - Open-source бэкенд-платформа для агентного кодинга.
@@ -466,8 +466,8 @@
 - [VAR](https://github.com/FoundationVision/VAR) ![](https://img.shields.io/github/stars/FoundationVision/VAR?style=flat&color=yellow) - Визуальное авторегрессионное моделирование — предсказание следующего масштаба для генерации изображений.
 - [natively-cluely-ai-assistant](https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant) ![](https://img.shields.io/github/stars/Natively-AI-assistant/natively-cluely-ai-assistant?style=flat&color=yellow) - Free open-source AI-ассистент встреч, интервью и заметок.
 - [ICCV2023-Paper-Code-Interpretation](https://github.com/extreme-assistant/ICCV2023-Paper-Code-Interpretation) ![](https://img.shields.io/github/stars/extreme-assistant/ICCV2023-Paper-Code-Interpretation?style=flat&color=yellow) - Подборка статей/кода/разборов ICCV 2023/2021/2019/2017.
-- [deepseek_ocr_app](https://github.com/rdumasia303/deepseek_ocr_app) ![](https://img.shields.io/github/stars/rdumasia303/deepseek_ocr_app?style=flat&color=yellow) - Быстрое vibe-coded приложение для DeepSeek OCR.
 - [global-stock-data](https://github.com/simonlin1212/global-stock-data) ![](https://img.shields.io/github/stars/simonlin1212/global-stock-data?style=flat&color=yellow) - 美股港股全栈数据工具包 (AI Skill) — 7层架构 · 17端点 · 5数据源 · 零鉴权 | US & HK Stock Full-Stack Data Toolkit for AI Coding Assistants.
+- [deepseek_ocr_app](https://github.com/rdumasia303/deepseek_ocr_app) ![](https://img.shields.io/github/stars/rdumasia303/deepseek_ocr_app?style=flat&color=yellow) - Быстрое vibe-coded приложение для DeepSeek OCR.
 
 ## Контрибьютинг
 
