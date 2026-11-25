@@ -30,8 +30,8 @@
 ## AI-агенты кодинга и CLI
 
 - [OpenCode](https://github.com/sst/opencode) ![](https://img.shields.io/github/stars/sst/opencode?style=flat&color=yellow) - Open-source AI-агент для терминала с поддержкой любых провайдеров моделей.
-- [Claude Code](https://github.com/anthropics/claude-code) ![](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&color=yellow) - Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу.
 - [cc-switch](https://github.com/farion1231/cc-switch) ![](https://img.shields.io/github/stars/farion1231/cc-switch?style=flat&color=yellow) - Кроссплатформенный desktop All-in-One для Claude Code, Codex, OpenCode.
+- [Claude Code](https://github.com/anthropics/claude-code) ![](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&color=yellow) - Агент-кодер от Anthropic, живёт в терминале и понимает вашу кодовую базу.
 - [pi](https://github.com/earendil-works/pi) ![](https://img.shields.io/github/stars/earendil-works/pi?style=flat&color=yellow) - AI-агент тулкит: единый LLM API, agent loop, TUI, CLI кодинг-агент.
 - [gemini-cli](https://github.com/google-gemini/gemini-cli) ![](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat&color=yellow) - Open-source AI-агент: brings Gemini прямо в терминал.
 - [rtk](https://github.com/rtk-ai/rtk) ![](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) - CLI-прокси: снижает потребление токенов LLM на 60–90% в dev-командах.
@@ -367,8 +367,8 @@
 - [BMAD-METHOD](https://github.com/bmad-code-org/bmad-method) ![](https://img.shields.io/github/stars/bmad-code-org/bmad-method?style=flat&color=yellow) - Агентная методология и IDE-промпты для полного цикла AI-разработки продукта.
 - [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) ![](https://img.shields.io/github/stars/ashishpatel26/500-AI-Agents-Projects?style=flat&color=yellow) - Подборка 500 кейсов AI-агентов в разных индустриях.
 - [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) ![](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=flat&color=yellow) - Кураторский список автономных AI-агентов и агентных фреймворков.
-- [awesome-generative-ai-guide](https://github.com/aishwaryanr/awesome-generative-ai-guide) ![](https://img.shields.io/github/stars/aishwaryanr/awesome-generative-ai-guide?style=flat&color=yellow) - Единый репо: GenAI-исследования, интервью, ноутбуки.
 - [Hands-On-Large-Language-Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) ![](https://img.shields.io/github/stars/HandsOnLLM/Hands-On-Large-Language-Models?style=flat&color=yellow) - Код к книге O'Reilly «Hands-On Large Language Models».
+- [awesome-generative-ai-guide](https://github.com/aishwaryanr/awesome-generative-ai-guide) ![](https://img.shields.io/github/stars/aishwaryanr/awesome-generative-ai-guide?style=flat&color=yellow) - Единый репо: GenAI-исследования, интервью, ноутбуки.
 - [vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn) ![](https://img.shields.io/github/stars/2025Emma/vibe-coding-cn?style=flat&color=yellow) - Кураторский список ресурсов по vibe coding на китайском.
 - [ai-guide](https://github.com/liyupi/ai-guide) ![](https://img.shields.io/github/stars/liyupi/ai-guide?style=flat&color=yellow) - AI-гид: ресурсы по vibe coding на китайском.
 - [easy-vibe](https://github.com/datawhalechina/easy-vibe) ![](https://img.shields.io/github/stars/datawhalechina/easy-vibe?style=flat&color=yellow) - Vibe coding 2026 | Your First Modern Coding course beginners to master step by step.
