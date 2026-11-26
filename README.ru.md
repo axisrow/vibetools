@@ -149,8 +149,8 @@
 - [frontend-slides](https://github.com/zarazhangrui/frontend-slides) ![](https://img.shields.io/github/stars/zarazhangrui/frontend-slides?style=flat&color=yellow) - Создание красивых слайдов через фронтенд-навыки кодинг-агента.
 - [onlook](https://github.com/onlook-dev/onlook) ![](https://img.shields.io/github/stars/onlook-dev/onlook?style=flat&color=yellow) - Cursor для дизайнеров — open-source AI-first дизайн-инструмент.
 - [gsap-skills](https://github.com/greensock/gsap-skills) ![](https://img.shields.io/github/stars/greensock/gsap-skills?style=flat&color=yellow) - Официальные AI-навыки для GSAP.
-- [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) ![](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&color=yellow) - MCP-сервер: отдаёт вёрстку Figma AI-агентам (Cursor и др.).
 - [html-anything](https://github.com/nexu-io/html-anything) ![](https://img.shields.io/github/stars/nexu-io/html-anything?style=flat&color=yellow) - Агентный HTML-редактор — локальный AI-агент пишет HTML.
+- [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) ![](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&color=yellow) - MCP-сервер: отдаёт вёрстку Figma AI-агентам (Cursor и др.).
 - [cursor-talk-to-figma-mcp](https://github.com/grab/cursor-talk-to-figma-mcp) ![](https://img.shields.io/github/stars/grab/cursor-talk-to-figma-mcp?style=flat&color=yellow) - MCP-интеграция между AI-агентом (Cursor, Claude Code) и Figma.
 - [WordPress/agent-skills](https://github.com/WordPress/agent-skills) ![](https://img.shields.io/github/stars/WordPress/agent-skills?style=flat&color=yellow) - Экспертные знания WordPress для AI-ассистентов кодинга.
 - [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) ![](https://img.shields.io/github/stars/callstackincubator/agent-skills?style=flat&color=yellow) - React Native навыки для AI-ассистентов кодинга.
